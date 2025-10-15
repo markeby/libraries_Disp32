@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_57cec1657851407c6cc354408c5a57b6" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw</compoundname>
+    <innerdir refid="dir_7d6e305c956516e1e23676b7f53b3613">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/arm2d</innerdir>
+    <innerdir refid="dir_88e08798c2db3e1800dd2d436af6a926">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp</innerdir>
+    <innerdir refid="dir_b3864db47dd0fe1cbd970a78d3d7e77f">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas</innerdir>
+    <innerdir refid="dir_0e3c392b78d80c8cca9bd188462c97da">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl</innerdir>
+    <innerdir refid="dir_4583bf22af19a8f4bac6b8749f3d46d6">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d</innerdir>
+    <innerdir refid="dir_6c7f3f0827e822425eb41c114e6d6be4">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw</innerdir>
+    <innerdir refid="dir_eaa2f563caa25a55dcde7fb72d519049">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/swm341_dma2d</innerdir>
+    <innerfile refid="lv__draw_8h">lv_draw.h</innerfile>
+    <innerfile refid="lv__draw__arc_8h">lv_draw_arc.h</innerfile>
+    <innerfile refid="lv__draw__img_8h">lv_draw_img.h</innerfile>
+    <innerfile refid="lv__draw__label_8h">lv_draw_label.h</innerfile>
+    <innerfile refid="lv__draw__layer_8h">lv_draw_layer.h</innerfile>
+    <innerfile refid="lv__draw__line_8h">lv_draw_line.h</innerfile>
+    <innerfile refid="lv__draw__mask_8h">lv_draw_mask.h</innerfile>
+    <innerfile refid="lv__draw__rect_8h">lv_draw_rect.h</innerfile>
+    <innerfile refid="lv__draw__transform_8h">lv_draw_transform.h</innerfile>
+    <innerfile refid="lv__draw__triangle_8h">lv_draw_triangle.h</innerfile>
+    <innerfile refid="lv__img__buf_8h">lv_img_buf.h</innerfile>
+    <innerfile refid="lv__img__cache_8h">lv_img_cache.h</innerfile>
+    <innerfile refid="lv__img__decoder_8h">lv_img_decoder.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/"/>
+  </compounddef>
+</doxygen>

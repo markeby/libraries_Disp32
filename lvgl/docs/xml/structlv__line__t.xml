@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__line__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_line_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__line__t_1ae2d50f75ea77ddd961ba020c049776de" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_line_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" line="38" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__line__t_1a1bdd714245058450b6e60453a08b6a0a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+        <definition>const lv_point_t* lv_line_t::point_array</definition>
+        <argsstring></argsstring>
+        <name>point_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to an array with the points of the line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" line="39" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__line__t_1aae262846c157c18ad3eb35423942dd8e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_line_t::point_num</definition>
+        <argsstring></argsstring>
+        <name>point_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of points in &apos;point_array&apos; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" line="40" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__line__t_1a437b26e9de1a417342e09c6f588ad3e0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_line_t::y_inv</definition>
+        <argsstring></argsstring>
+        <name>y_inv</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: y == 0 will be on the bottom </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" line="41" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="1">
+        <label>lv_line_t</label>
+        <link refid="structlv__line__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>point_array</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" line="31" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_line.h" bodystart="31" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structlv__line__t_1ae2d50f75ea77ddd961ba020c049776de" prot="public" virt="non-virtual"><scope>lv_line_t</scope><name>obj</name></member>
+      <member refid="structlv__line__t_1a1bdd714245058450b6e60453a08b6a0a" prot="public" virt="non-virtual"><scope>lv_line_t</scope><name>point_array</name></member>
+      <member refid="structlv__line__t_1aae262846c157c18ad3eb35423942dd8e" prot="public" virt="non-virtual"><scope>lv_line_t</scope><name>point_num</name></member>
+      <member refid="structlv__line__t_1a437b26e9de1a417342e09c6f588ad3e0" prot="public" virt="non-virtual"><scope>lv_line_t</scope><name>y_inv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

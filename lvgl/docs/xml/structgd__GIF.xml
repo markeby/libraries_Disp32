@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structgd__GIF" kind="struct" language="C++" prot="public">
+    <compoundname>gd_GIF</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgd__GIF_1a35406d1e920a32f523cf84b0f31d6622" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref></type>
+        <definition>lv_fs_file_t gd_GIF::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="25" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1ad399ae1f14567fb8132ce0fa53e5ba9c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* gd_GIF::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="26" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a80e3b17df036ac28bcc1e3e3b3e3872a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gd_GIF::is_file</definition>
+        <argsstring></argsstring>
+        <name>is_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="27" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1af897d3414d49aa7fa7fd39c27ef5ac47" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gd_GIF::f_rw_p</definition>
+        <argsstring></argsstring>
+        <name>f_rw_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="28" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a84ae89f0be45fb8049738af0c0f1a5f2" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t gd_GIF::anim_start</definition>
+        <argsstring></argsstring>
+        <name>anim_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="29" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a8539c56d989fa90474ac5b7ffa38a87d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gd_GIF::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="30" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a34279410536962cfe5aa1dc1d5c02673" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gd_GIF::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="30" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a6701d670df0930ea18e79f9dea855af5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gd_GIF::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="31" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a75203cffbd32b114852c5b345ae04064" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t gd_GIF::loop_count</definition>
+        <argsstring></argsstring>
+        <name>loop_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="32" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1ac2c53127427fb99001949faa7a8ab0b1" prot="public" static="no" mutable="no">
+        <type><ref refid="structgd__GCE" kindref="compound">gd_GCE</ref></type>
+        <definition>gd_GCE gd_GIF::gce</definition>
+        <argsstring></argsstring>
+        <name>gce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="33" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a2c5c576c73466e660af9b40c8725cd63" prot="public" static="no" mutable="no">
+        <type><ref refid="structgd__Palette" kindref="compound">gd_Palette</ref> *</type>
+        <definition>gd_Palette* gd_GIF::palette</definition>
+        <argsstring></argsstring>
+        <name>palette</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="34" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a9f87754fd73a131e87dd5a842c4bbacb" prot="public" static="no" mutable="no">
+        <type><ref refid="structgd__Palette" kindref="compound">gd_Palette</ref></type>
+        <definition>gd_Palette gd_GIF::lct</definition>
+        <argsstring></argsstring>
+        <name>lct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="35" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1abfc5ecfc4b3e7693e35db3c1446725ca" prot="public" static="no" mutable="no">
+        <type><ref refid="structgd__Palette" kindref="compound">gd_Palette</ref></type>
+        <definition>gd_Palette gd_GIF::gct</definition>
+        <argsstring></argsstring>
+        <name>gct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="35" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a7a3ac10759f531cfb3ade6f112ff78e3" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* gd_GIF::plain_text) (struct gd_GIF *gif, uint16_t tx, uint16_t ty, uint16_t tw, uint16_t th, uint8_t cw, uint8_t ch, uint8_t fg, uint8_t bg)</definition>
+        <argsstring>)(struct gd_GIF *gif, uint16_t tx, uint16_t ty, uint16_t tw, uint16_t th, uint8_t cw, uint8_t ch, uint8_t fg, uint8_t bg)</argsstring>
+        <name>plain_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="36" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a96d0327bc585002c84e0d6f88db7da73" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* gd_GIF::comment) (struct gd_GIF *gif)</definition>
+        <argsstring>)(struct gd_GIF *gif)</argsstring>
+        <name>comment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="41" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a14266a12b867142dd733127bd54be240" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* gd_GIF::application) (struct gd_GIF *gif, char id[8], char auth[3])</definition>
+        <argsstring>)(struct gd_GIF *gif, char id[8], char auth[3])</argsstring>
+        <name>application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="42" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a33be940b9c76174882250c260cef2f07" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gd_GIF::fx</definition>
+        <argsstring></argsstring>
+        <name>fx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="43" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1aaa6afd80885ab06edec6fc88edc92d9a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gd_GIF::fy</definition>
+        <argsstring></argsstring>
+        <name>fy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="43" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a7758481fa96d3a10d25bc81260ff9b57" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gd_GIF::fw</definition>
+        <argsstring></argsstring>
+        <name>fw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="43" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a3753da9559a1c83cde13a99319669baf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gd_GIF::fh</definition>
+        <argsstring></argsstring>
+        <name>fh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="43" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1afdc337bda17ecc028dc83cd6b3f2edf6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gd_GIF::bgindex</definition>
+        <argsstring></argsstring>
+        <name>bgindex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="44" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a584629446cc26d33a0edad823014ef0d" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* gd_GIF::canvas</definition>
+        <argsstring></argsstring>
+        <name>canvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="45" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GIF_1a2343d81d1399b736be19cf59e33f04cd" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t * gd_GIF::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="45" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gd_GIF</label>
+        <link refid="structgd__GIF"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gce</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>gct</edgelabel>
+          <edgelabel>lct</edgelabel>
+          <edgelabel>palette</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>fd</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>_lv_fs_drv_t</label>
+        <link refid="struct__lv__fs__drv__t"/>
+      </node>
+      <node id="3">
+        <label>gd_Palette</label>
+        <link refid="structgd__Palette"/>
+      </node>
+      <node id="5">
+        <label>lv_fs_file_cache_t</label>
+        <link refid="structlv__fs__file__cache__t"/>
+      </node>
+      <node id="2">
+        <label>gd_GCE</label>
+        <link refid="structgd__GCE"/>
+      </node>
+      <node id="4">
+        <label>lv_fs_file_t</label>
+        <link refid="structlv__fs__file__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>drv</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="24" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="24" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structgd__GIF_1a84ae89f0be45fb8049738af0c0f1a5f2" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>anim_start</name></member>
+      <member refid="structgd__GIF_1a14266a12b867142dd733127bd54be240" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>application</name></member>
+      <member refid="structgd__GIF_1afdc337bda17ecc028dc83cd6b3f2edf6" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>bgindex</name></member>
+      <member refid="structgd__GIF_1a584629446cc26d33a0edad823014ef0d" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>canvas</name></member>
+      <member refid="structgd__GIF_1a96d0327bc585002c84e0d6f88db7da73" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>comment</name></member>
+      <member refid="structgd__GIF_1ad399ae1f14567fb8132ce0fa53e5ba9c" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>data</name></member>
+      <member refid="structgd__GIF_1a6701d670df0930ea18e79f9dea855af5" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>depth</name></member>
+      <member refid="structgd__GIF_1af897d3414d49aa7fa7fd39c27ef5ac47" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>f_rw_p</name></member>
+      <member refid="structgd__GIF_1a35406d1e920a32f523cf84b0f31d6622" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>fd</name></member>
+      <member refid="structgd__GIF_1a3753da9559a1c83cde13a99319669baf" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>fh</name></member>
+      <member refid="structgd__GIF_1a2343d81d1399b736be19cf59e33f04cd" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>frame</name></member>
+      <member refid="structgd__GIF_1a7758481fa96d3a10d25bc81260ff9b57" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>fw</name></member>
+      <member refid="structgd__GIF_1a33be940b9c76174882250c260cef2f07" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>fx</name></member>
+      <member refid="structgd__GIF_1aaa6afd80885ab06edec6fc88edc92d9a" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>fy</name></member>
+      <member refid="structgd__GIF_1ac2c53127427fb99001949faa7a8ab0b1" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>gce</name></member>
+      <member refid="structgd__GIF_1abfc5ecfc4b3e7693e35db3c1446725ca" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>gct</name></member>
+      <member refid="structgd__GIF_1a34279410536962cfe5aa1dc1d5c02673" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>height</name></member>
+      <member refid="structgd__GIF_1a80e3b17df036ac28bcc1e3e3b3e3872a" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>is_file</name></member>
+      <member refid="structgd__GIF_1a9f87754fd73a131e87dd5a842c4bbacb" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>lct</name></member>
+      <member refid="structgd__GIF_1a75203cffbd32b114852c5b345ae04064" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>loop_count</name></member>
+      <member refid="structgd__GIF_1a2c5c576c73466e660af9b40c8725cd63" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>palette</name></member>
+      <member refid="structgd__GIF_1a7a3ac10759f531cfb3ade6f112ff78e3" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>plain_text</name></member>
+      <member refid="structgd__GIF_1a8539c56d989fa90474ac5b7ffa38a87d" prot="public" virt="non-virtual"><scope>gd_GIF</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

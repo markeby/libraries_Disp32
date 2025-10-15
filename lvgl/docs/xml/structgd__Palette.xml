@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structgd__Palette" kind="struct" language="C++" prot="public">
+    <compoundname>gd_Palette</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgd__Palette_1ab9dc3cfb25f772f3cb202f797a078ccc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gd_Palette::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="10" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__Palette_1ac1c035f1f4bf7f2ae5584877d24cd1b5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gd_Palette::colors[0x100 *3]</definition>
+        <argsstring>[0x100 *3]</argsstring>
+        <name>colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="11" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="9" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structgd__Palette_1ac1c035f1f4bf7f2ae5584877d24cd1b5" prot="public" virt="non-virtual"><scope>gd_Palette</scope><name>colors</name></member>
+      <member refid="structgd__Palette_1ab9dc3cfb25f772f3cb202f797a078ccc" prot="public" virt="non-virtual"><scope>gd_Palette</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

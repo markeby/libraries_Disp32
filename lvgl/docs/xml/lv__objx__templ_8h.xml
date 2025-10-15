@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__objx__templ_8h" kind="file" language="C++">
+    <compoundname>lv_objx_templ.h</compoundname>
+    <innerclass refid="structlv__templ__t" prot="public">lv_templ_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__objx__templ_8h_1a0eb2b51047ba20c27040a204cdd98dfd" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_templ_class</definition>
+        <argsstring></argsstring>
+        <name>lv_templ_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h" line="42" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h" declline="42" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__objx__templ_8h_1a02e8dcd3c1dffa09044a1d23179ee151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_templ_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_templ_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a templ object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new templ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created bar </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h" line="53" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h" declline="53" declcolumn="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>LV_TEMPL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_TEMPL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_TEMPL<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../core/lv_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*Data<sp/>of<sp/>template*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structlv__templ__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_ANCESTOR_t<sp/>ancestor;<sp/></highlight><highlight class="comment">/*The<sp/>ancestor<sp/>widget,<sp/>e.g.<sp/>lv_slider_t<sp/>slider*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*New<sp/>data<sp/>for<sp/>this<sp/>type*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/><ref refid="structlv__templ__t" kindref="compound">lv_templ_t</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_templ_class;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>lv_templ_create(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*======================</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>Add/remove<sp/>functions</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*=====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>Other<sp/>functions</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_TEMPL*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_TEMPL_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h"/>
+  </compounddef>
+</doxygen>

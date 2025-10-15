@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__chart__series__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_chart_series_t</compoundname>
+    <includes refid="lv__chart_8h" local="no">lv_chart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__chart__series__t_1aad2ec08c871f90e1bdea2134216d4d21" prot="public" static="no" mutable="no">
+        <type>lv_coord_t *</type>
+        <definition>lv_coord_t* lv_chart_series_t::x_points</definition>
+        <argsstring></argsstring>
+        <name>x_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="72" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__series__t_1a8473b421b3fc0d8535c1191da3d29ff0" prot="public" static="no" mutable="no">
+        <type>lv_coord_t *</type>
+        <definition>lv_coord_t* lv_chart_series_t::y_points</definition>
+        <argsstring></argsstring>
+        <name>y_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="73" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__series__t_1ab998e579db24aa8522b84b686ac65bac" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_chart_series_t::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="74" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__series__t_1ad98c186d0f75bab086140f59dc24f833" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_series_t::start_point</definition>
+        <argsstring></argsstring>
+        <name>start_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="75" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__series__t_1a36bca1693831a7b81de49c94f5098659" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_chart_series_t::hidden</definition>
+        <argsstring></argsstring>
+        <name>hidden</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="76" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__series__t_1aa1cb06726066312e2df23616542726df" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_chart_series_t::x_ext_buf_assigned</definition>
+        <argsstring></argsstring>
+        <name>x_ext_buf_assigned</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="77" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__series__t_1aaa501e1d9f909a62a2e1890295e5544a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_chart_series_t::y_ext_buf_assigned</definition>
+        <argsstring></argsstring>
+        <name>y_ext_buf_assigned</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="78" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__series__t_1ae934e2ff1c6843310a055708c214415b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_chart_series_t::x_axis_sec</definition>
+        <argsstring></argsstring>
+        <name>x_axis_sec</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="79" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__series__t_1acefeadc04c6a49e9522310a32bf4046c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_chart_series_t::y_axis_sec</definition>
+        <argsstring></argsstring>
+        <name>y_axis_sec</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="80" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Descriptor a chart series </para>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="71" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="71" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structlv__chart__series__t_1ab998e579db24aa8522b84b686ac65bac" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>color</name></member>
+      <member refid="structlv__chart__series__t_1a36bca1693831a7b81de49c94f5098659" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>hidden</name></member>
+      <member refid="structlv__chart__series__t_1ad98c186d0f75bab086140f59dc24f833" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>start_point</name></member>
+      <member refid="structlv__chart__series__t_1ae934e2ff1c6843310a055708c214415b" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>x_axis_sec</name></member>
+      <member refid="structlv__chart__series__t_1aa1cb06726066312e2df23616542726df" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>x_ext_buf_assigned</name></member>
+      <member refid="structlv__chart__series__t_1aad2ec08c871f90e1bdea2134216d4d21" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>x_points</name></member>
+      <member refid="structlv__chart__series__t_1acefeadc04c6a49e9522310a32bf4046c" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>y_axis_sec</name></member>
+      <member refid="structlv__chart__series__t_1aaa501e1d9f909a62a2e1890295e5544a" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>y_ext_buf_assigned</name></member>
+      <member refid="structlv__chart__series__t_1a8473b421b3fc0d8535c1191da3d29ff0" prot="public" virt="non-virtual"><scope>lv_chart_series_t</scope><name>y_points</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__imgbtn__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_imgbtn_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__imgbtn__t_1a91136f4234ea8c1d92274e728d728329" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_imgbtn_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" line="40" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__imgbtn__t_1a91a06ab8391563a1f785a2b7e93d2b4b" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_imgbtn_t::img_src_mid[_LV_IMGBTN_STATE_NUM]</definition>
+        <argsstring>[_LV_IMGBTN_STATE_NUM]</argsstring>
+        <name>img_src_mid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" line="41" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__imgbtn__t_1a7452e67f5fa5c763828604e4bacaaea8" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_imgbtn_t::img_src_left[_LV_IMGBTN_STATE_NUM]</definition>
+        <argsstring>[_LV_IMGBTN_STATE_NUM]</argsstring>
+        <name>img_src_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" line="42" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__imgbtn__t_1a2a98cadfe385ac783c047f255fcd4adb" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_imgbtn_t::img_src_right[_LV_IMGBTN_STATE_NUM]</definition>
+        <argsstring>[_LV_IMGBTN_STATE_NUM]</argsstring>
+        <name>img_src_right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" line="43" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__imgbtn__t_1af1541dc34495958f28849de236c1fad3" prot="public" static="no" mutable="no">
+        <type>lv_img_cf_t</type>
+        <definition>lv_img_cf_t lv_imgbtn_t::act_cf</definition>
+        <argsstring></argsstring>
+        <name>act_cf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" line="44" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lv_imgbtn_t</label>
+        <link refid="structlv__imgbtn__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" line="37" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h" bodystart="37" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structlv__imgbtn__t_1af1541dc34495958f28849de236c1fad3" prot="public" virt="non-virtual"><scope>lv_imgbtn_t</scope><name>act_cf</name></member>
+      <member refid="structlv__imgbtn__t_1a7452e67f5fa5c763828604e4bacaaea8" prot="public" virt="non-virtual"><scope>lv_imgbtn_t</scope><name>img_src_left</name></member>
+      <member refid="structlv__imgbtn__t_1a91a06ab8391563a1f785a2b7e93d2b4b" prot="public" virt="non-virtual"><scope>lv_imgbtn_t</scope><name>img_src_mid</name></member>
+      <member refid="structlv__imgbtn__t_1a2a98cadfe385ac783c047f255fcd4adb" prot="public" virt="non-virtual"><scope>lv_imgbtn_t</scope><name>img_src_right</name></member>
+      <member refid="structlv__imgbtn__t_1a91136f4234ea8c1d92274e728d728329" prot="public" virt="non-virtual"><scope>lv_imgbtn_t</scope><name>obj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

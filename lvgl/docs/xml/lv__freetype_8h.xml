@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__freetype_8h" kind="file" language="C++">
+    <compoundname>lv_freetype.h</compoundname>
+    <innerclass refid="structlv__ft__info__t" prot="public">lv_ft_info_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__freetype_8h_1a1ba84fb8ade4d4c103a7f9d3521a02f9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LV_FT_FONT_STYLE</name>
+        <enumvalue id="lv__freetype_8h_1a1ba84fb8ade4d4c103a7f9d3521a02f9abf4126e5116be22fe4c0af0ff336b186" prot="public">
+          <name>FT_FONT_STYLE_NORMAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__freetype_8h_1a1ba84fb8ade4d4c103a7f9d3521a02f9aa703d47cf40ebeccde18785f528a96e2" prot="public">
+          <name>FT_FONT_STYLE_ITALIC</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__freetype_8h_1a1ba84fb8ade4d4c103a7f9d3521a02f9a1f361569958a1ecf690aa777f1f37d87" prot="public">
+          <name>FT_FONT_STYLE_BOLD</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="25" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" bodystart="25" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__freetype_8h_1a8ca334813647721c3fcdbbb1ce443fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_freetype_init</definition>
+        <argsstring>(uint16_t max_faces, uint16_t max_sizes, uint32_t max_bytes)</argsstring>
+        <name>lv_freetype_init</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_faces</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_sizes</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>max_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init freetype library <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_faces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of opened FT_Face objects managed by this cache instance. Use 0 for defaults. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_sizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of opened FT_Size objects managed by this cache instance. Use 0 for defaults. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of bytes to use for cached data nodes. Use 0 for defaults. Note that this value does not account for managed FT_Face and FT_Size objects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="52" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" declline="52" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__freetype_8h_1a7ce3c9bfea8f9e0459c56a8b4cb7fa79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_freetype_destroy</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_freetype_destroy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy freetype library </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="57" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__freetype_8h_1af8c1c5dfb3d8484c67914966f496fa5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_ft_font_init</definition>
+        <argsstring>(lv_ft_info_t *info)</argsstring>
+        <name>lv_ft_font_init</name>
+        <param>
+          <type><ref refid="structlv__ft__info__t" kindref="compound">lv_ft_info_t</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a font with info parameter specified. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See <ref refid="structlv__ft__info__t" kindref="compound">lv_ft_info_t</ref> for details. when success, lv_ft_info_t-&gt;font point to the font you created. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="65" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" declline="65" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__freetype_8h_1a14e8da96c428a2a3659b18ac7c548a5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_ft_font_destroy</definition>
+        <argsstring>(lv_font_t *font)</argsstring>
+        <name>lv_ft_font_destroy</name>
+        <param>
+          <type><ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy a font that has been created. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to font. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="71" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" declline="71" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>LV_FREETYPE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_FREETYPE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lvgl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_FREETYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>FT_FONT_STYLE_NORMAL<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>FT_FONT_STYLE_ITALIC<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>FT_FONT_STYLE_BOLD<sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/>LV_FT_FONT_STYLE;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structlv__ft__info__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>name;<sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>name<sp/>of<sp/>the<sp/>font<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>mem;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>pointer<sp/>of<sp/>the<sp/>font<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>mem_size;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>size<sp/>of<sp/>the<sp/>memory<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/>font;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>point<sp/>to<sp/>lvgl<sp/>font<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>weight;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>font<sp/>size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>style;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>font<sp/>style<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="structlv__ft__info__t" kindref="compound">lv_ft_info_t</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__freetype_8h_1a8ca334813647721c3fcdbbb1ce443fb6" kindref="member">lv_freetype_init</ref>(uint16_t<sp/>max_faces,<sp/>uint16_t<sp/>max_sizes,<sp/>uint32_t<sp/>max_bytes);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__freetype_8h_1a7ce3c9bfea8f9e0459c56a8b4cb7fa79" kindref="member">lv_freetype_destroy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__freetype_8h_1af8c1c5dfb3d8484c67914966f496fa5d" kindref="member">lv_ft_font_init</ref>(<ref refid="structlv__ft__info__t" kindref="compound">lv_ft_info_t</ref><sp/>*<sp/>info);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__freetype_8h_1a14e8da96c428a2a3659b18ac7c548a5d" kindref="member">lv_ft_font_destroy</ref>(<ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/>font);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_FREETYPE*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LV_FREETYPE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h"/>
+  </compounddef>
+</doxygen>

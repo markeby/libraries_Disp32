@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__obj__draw_8h" kind="file" language="C++">
+    <compoundname>lv_obj_draw.h</compoundname>
+    <innerclass refid="structlv__obj__draw__part__dsc__t" prot="public">lv_obj_draw_part_dsc_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__obj__draw_8h_1ab574311d5f23b50737c863f8c6259a41" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_cover_res_t</name>
+        <enumvalue id="lv__obj__draw_8h_1ab574311d5f23b50737c863f8c6259a41a8e420e84dc7f1e5036469721270f7eb6" prot="public">
+          <name>LV_COVER_RES_COVER</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__draw_8h_1ab574311d5f23b50737c863f8c6259a41abc6d14becf0d8485a91607fbb300e754" prot="public">
+          <name>LV_COVER_RES_NOT_COVER</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__draw_8h_1ab574311d5f23b50737c863f8c6259a41a377d981a1d974fde8f3336971bc965c3" prot="public">
+          <name>LV_COVER_RES_MASKED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cover check results. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="30" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__obj__draw_8h_1aaeb21c6eea41dba9d1140ace157efce8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_layer_type_t</name>
+        <enumvalue id="lv__obj__draw_8h_1aaeb21c6eea41dba9d1140ace157efce8ae6c31fcf1bae357fddd693a18017521a" prot="public">
+          <name>LV_LAYER_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__draw_8h_1aaeb21c6eea41dba9d1140ace157efce8a45d68dba59547d6869f93925a165be3b" prot="public">
+          <name>LV_LAYER_TYPE_SIMPLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__draw_8h_1aaeb21c6eea41dba9d1140ace157efce8a5d08ea9309ab0a6b5cd9ef38534af514" prot="public">
+          <name>LV_LAYER_TYPE_TRANSFORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="36" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__obj__draw_8h_1a656a13bab9a5d209572609ed9c09fb42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_init_draw_rect_dsc</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t part, lv_draw_rect_dsc_t *draw_dsc)</argsstring>
+        <name>lv_obj_init_draw_rect_dsc</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__draw__rect__dsc__t" kindref="compound">lv_draw_rect_dsc_t</ref> *</type>
+          <declname>draw_dsc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a rectangle draw descriptor from an object&apos;s styles in its current state <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>part of the object, e.g. <computeroutput>LV_PART_MAIN</computeroutput>, <computeroutput>LV_PART_SCROLLBAR</computeroutput>, <computeroutput>LV_PART_KNOB</computeroutput>, etc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the descriptor to initialize. If an <computeroutput>..._opa</computeroutput> field is set to <computeroutput>LV_OPA_TRANSP</computeroutput> the related properties won&apos;t be initialized. Should be initialized with <computeroutput>lv_draw_rect_dsc_init(draw_dsc)</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Only the relevant fields will be set. E.g. if <computeroutput>border width == 0</computeroutput> the other border properties won&apos;t be evaluated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="83" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="83" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1ad41e98adf6695ca75c8fde9a621a4f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_init_draw_label_dsc</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t part, lv_draw_label_dsc_t *draw_dsc)</argsstring>
+        <name>lv_obj_init_draw_label_dsc</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__draw__label__dsc__t" kindref="compound">lv_draw_label_dsc_t</ref> *</type>
+          <declname>draw_dsc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a label draw descriptor from an object&apos;s styles in its current state <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>part of the object, e.g. <computeroutput>LV_PART_MAIN</computeroutput>, <computeroutput>LV_PART_SCROLLBAR</computeroutput>, <computeroutput>LV_PART_KNOB</computeroutput>, etc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the descriptor to initialize. If the <computeroutput>opa</computeroutput> field is set to or the property is equal to <computeroutput>LV_OPA_TRANSP</computeroutput> the rest won&apos;t be initialized. Should be initialized with <computeroutput>lv_draw_label_dsc_init(draw_dsc)</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="93" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="93" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1aad7230198aeea78f88670d3a84855bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_init_draw_img_dsc</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t part, lv_draw_img_dsc_t *draw_dsc)</argsstring>
+        <name>lv_obj_init_draw_img_dsc</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref> *</type>
+          <declname>draw_dsc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an image draw descriptor from an object&apos;s styles in its current state <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>part of the object, e.g. <computeroutput>LV_PART_MAIN</computeroutput>, <computeroutput>LV_PART_SCROLLBAR</computeroutput>, <computeroutput>LV_PART_KNOB</computeroutput>, etc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the descriptor to initialize. Should be initialized with <computeroutput>lv_draw_image_dsc_init(draw_dsc)</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="102" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="102" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1a42ff732c89b7f469b8c69fb3a0f16fe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_init_draw_line_dsc</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t part, lv_draw_line_dsc_t *draw_dsc)</argsstring>
+        <name>lv_obj_init_draw_line_dsc</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__draw__line__dsc__t" kindref="compound">lv_draw_line_dsc_t</ref> *</type>
+          <declname>draw_dsc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a line draw descriptor from an object&apos;s styles in its current state <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>part of the object, e.g. <computeroutput>LV_PART_MAIN</computeroutput>, <computeroutput>LV_PART_SCROLLBAR</computeroutput>, <computeroutput>LV_PART_KNOB</computeroutput>, etc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the descriptor to initialize. Should be initialized with <computeroutput>lv_draw_line_dsc_init(draw_dsc)</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="111" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="111" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1a5c040db5e36c48ca477fa9cda3f870fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_init_draw_arc_dsc</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t part, lv_draw_arc_dsc_t *draw_dsc)</argsstring>
+        <name>lv_obj_init_draw_arc_dsc</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__draw__arc__dsc__t" kindref="compound">lv_draw_arc_dsc_t</ref> *</type>
+          <declname>draw_dsc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an arc draw descriptor from an object&apos;s styles in its current state <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>part of the object, e.g. <computeroutput>LV_PART_MAIN</computeroutput>, <computeroutput>LV_PART_SCROLLBAR</computeroutput>, <computeroutput>LV_PART_KNOB</computeroutput>, etc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the descriptor to initialize. Should be initialized with <computeroutput>lv_draw_arc_dsc_init(draw_dsc)</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="120" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="120" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1a15944f73f804f4b8897c80bb833a5ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_calculate_ext_draw_size</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_calculate_ext_draw_size</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the required extra size (around the object&apos;s part) to draw shadow, outline, value etc. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>part of the object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the extra size required around the object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="128" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="128" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1a575e3726e6d30791f0aa9d63767e80f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_draw_dsc_init</definition>
+        <argsstring>(lv_obj_draw_part_dsc_t *dsc, lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>lv_obj_draw_dsc_init</name>
+        <param>
+          <type><ref refid="structlv__obj__draw__part__dsc__t" kindref="compound">lv_obj_draw_part_dsc_t</ref> *</type>
+          <declname>dsc</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a draw descriptor used in events. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a descriptor. Later it should be passed as parameter to an <computeroutput>LV_EVENT_DRAW_PART_BEGIN/END</computeroutput> event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current draw context. (usually returned by <computeroutput>lv_event_get_draw_ctx(e)</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="135" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="135" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1adeb10dad1f684d965ecdc4ad934bf2f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_draw_part_check_type</definition>
+        <argsstring>(lv_obj_draw_part_dsc_t *dsc, const struct _lv_obj_class_t *class_p, uint32_t type)</argsstring>
+        <name>lv_obj_draw_part_check_type</name>
+        <param>
+          <type><ref refid="structlv__obj__draw__part__dsc__t" kindref="compound">lv_obj_draw_part_dsc_t</ref> *</type>
+          <declname>dsc</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__class__t" kindref="compound">_lv_obj_class_t</ref> *</type>
+          <declname>class_p</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check the type obj a part draw descriptor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the descriptor (normally the event parameter) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>class_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to class to which <computeroutput>type</computeroutput> is related </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element of <computeroutput>lv_&lt;name&gt;_draw_part_type_t</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if ::dsc is related to ::class_p and ::type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="144" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="144" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1a43bac59e1dcdc1c83ceb23df161d984a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_refresh_ext_draw_size</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_refresh_ext_draw_size</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a &apos;LV_EVENT_REFR_EXT_DRAW_SIZE&apos; Call the ancestor&apos;s event handler to the object to refresh the value of the extended draw size. The result will be saved in <computeroutput>obj</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="151" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="151" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1aeca31fdd018d4f7d948546b753266a4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_obj_get_ext_draw_size</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>_lv_obj_get_ext_draw_size</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the extended draw area of an object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the size extended draw area around the real coordinates </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="158" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="158" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__draw_8h_1a53ed2d21ab5038b6fa5312fec1d61404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_layer_type_t</type>
+        <definition>lv_layer_type_t _lv_obj_get_layer_type</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>_lv_obj_get_layer_type</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="160" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" declline="160" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_OBJ_DRAW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_OBJ_DRAW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../draw/lv_draw.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__class__t" kindref="compound">_lv_obj_class_t</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="lv__obj__draw_8h_1ab574311d5f23b50737c863f8c6259a41" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_COVER_RES_COVER<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_COVER_RES_NOT_COVER<sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_COVER_RES_MASKED<sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="lv__obj__draw_8h_1ab574311d5f23b50737c863f8c6259a41" kindref="member">lv_cover_res_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_LAYER_TYPE_NONE,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_LAYER_TYPE_SIMPLE,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_LAYER_TYPE_TRANSFORM,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/>lv_layer_type_t;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structlv__obj__draw__part__dsc__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43" refid="structlv__obj__draw__part__dsc__t_1a38e09025499b1087f56d6402a0404202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a38e09025499b1087f56d6402a0404202" kindref="member">draw_ctx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="structlv__obj__draw__part__dsc__t_1a369f77530d63ba2f746509aab679c3ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__class__t" kindref="compound">_lv_obj_class_t</ref><sp/>*<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a369f77530d63ba2f746509aab679c3ed" kindref="member">class_p</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="structlv__obj__draw__part__dsc__t_1a189881350ac98d5fecba96b353f501be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a189881350ac98d5fecba96b353f501be" kindref="member">type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structlv__obj__draw__part__dsc__t_1a9101d813965c1fa5ebe8a597ef629444" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a9101d813965c1fa5ebe8a597ef629444" kindref="member">draw_area</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__draw__rect__dsc__t" kindref="compound">lv_draw_rect_dsc_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="48" refid="structlv__obj__draw__part__dsc__t_1a890dfc7829e4cf749b975a5f0f1ee73a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__obj__draw__part__dsc__t_1a890dfc7829e4cf749b975a5f0f1ee73a" kindref="member">rect_dsc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__draw__label__dsc__t" kindref="compound">lv_draw_label_dsc_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="50" refid="structlv__obj__draw__part__dsc__t_1a13ef9df5d2947c39cb39d69a7b4197de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__obj__draw__part__dsc__t_1a13ef9df5d2947c39cb39d69a7b4197de" kindref="member">label_dsc</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__draw__line__dsc__t" kindref="compound">lv_draw_line_dsc_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="52" refid="structlv__obj__draw__part__dsc__t_1a5fc1d10af81624e1157926143346623f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__obj__draw__part__dsc__t_1a5fc1d10af81624e1157926143346623f" kindref="member">line_dsc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/><sp/>*</highlight></codeline>
+<codeline lineno="54" refid="structlv__obj__draw__part__dsc__t_1a1dc6d797401696ce0433e67362abc16d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__obj__draw__part__dsc__t_1a1dc6d797401696ce0433e67362abc16d" kindref="member">img_dsc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__draw__arc__dsc__t" kindref="compound">lv_draw_arc_dsc_t</ref><sp/><sp/>*</highlight></codeline>
+<codeline lineno="56" refid="structlv__obj__draw__part__dsc__t_1a6d94fb42d76569e8cd959285fdbfbb61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__obj__draw__part__dsc__t_1a6d94fb42d76569e8cd959285fdbfbb61" kindref="member">arc_dsc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="58" refid="structlv__obj__draw__part__dsc__t_1a6d0898b3ba8ec5d21124e8a805c2a59f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__obj__draw__part__dsc__t_1a6d0898b3ba8ec5d21124e8a805c2a59f" kindref="member">p1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="structlv__obj__draw__part__dsc__t_1a5503bac64b2dfaa43d3b034894794fdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a5503bac64b2dfaa43d3b034894794fdf" kindref="member">p2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="structlv__obj__draw__part__dsc__t_1a70b5d68f3c0b469fb6d27e141e8612aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a70b5d68f3c0b469fb6d27e141e8612aa" kindref="member">text</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="structlv__obj__draw__part__dsc__t_1ab0ea5ce2c4c4de3d648c78d89cfdad16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlv__obj__draw__part__dsc__t_1ab0ea5ce2c4c4de3d648c78d89cfdad16" kindref="member">text_length</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="structlv__obj__draw__part__dsc__t_1afd4837df6558644ecbc1b024df952f8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlv__obj__draw__part__dsc__t_1afd4837df6558644ecbc1b024df952f8e" kindref="member">part</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="structlv__obj__draw__part__dsc__t_1a42de730be272f85fd21e5c7c7cbbd029" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a42de730be272f85fd21e5c7c7cbbd029" kindref="member">id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="structlv__obj__draw__part__dsc__t_1a558145826bf54e9f785ce4d2e4e2be2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a558145826bf54e9f785ce4d2e4e2be2d" kindref="member">radius</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="structlv__obj__draw__part__dsc__t_1a1fa86da634787ec8eaef51501c581bf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a1fa86da634787ec8eaef51501c581bf0" kindref="member">value</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="structlv__obj__draw__part__dsc__t_1a593f8542f3189368ffc2ddb12620560e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structlv__obj__draw__part__dsc__t_1a593f8542f3189368ffc2ddb12620560e" kindref="member">sub_part_ptr</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="structlv__obj__draw__part__dsc__t" kindref="compound">lv_obj_draw_part_dsc_t</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__draw_8h_1a656a13bab9a5d209572609ed9c09fb42" kindref="member">lv_obj_init_draw_rect_dsc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part,<sp/><ref refid="structlv__draw__rect__dsc__t" kindref="compound">lv_draw_rect_dsc_t</ref><sp/>*<sp/>draw_dsc);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__draw_8h_1ad41e98adf6695ca75c8fde9a621a4f9b" kindref="member">lv_obj_init_draw_label_dsc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part,<sp/><ref refid="structlv__draw__label__dsc__t" kindref="compound">lv_draw_label_dsc_t</ref><sp/>*<sp/>draw_dsc);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__draw_8h_1aad7230198aeea78f88670d3a84855bb5" kindref="member">lv_obj_init_draw_img_dsc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part,<sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/>*<sp/>draw_dsc);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__draw_8h_1a42ff732c89b7f469b8c69fb3a0f16fe5" kindref="member">lv_obj_init_draw_line_dsc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part,<sp/><ref refid="structlv__draw__line__dsc__t" kindref="compound">lv_draw_line_dsc_t</ref><sp/>*<sp/>draw_dsc);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__draw_8h_1a5c040db5e36c48ca477fa9cda3f870fc" kindref="member">lv_obj_init_draw_arc_dsc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part,<sp/><ref refid="structlv__draw__arc__dsc__t" kindref="compound">lv_draw_arc_dsc_t</ref><sp/>*<sp/>draw_dsc);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__draw_8h_1a15944f73f804f4b8897c80bb833a5ff8" kindref="member">lv_obj_calculate_ext_draw_size</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__draw_8h_1a575e3726e6d30791f0aa9d63767e80f0" kindref="member">lv_obj_draw_dsc_init</ref>(<ref refid="structlv__obj__draw__part__dsc__t" kindref="compound">lv_obj_draw_part_dsc_t</ref><sp/>*<sp/>dsc,<sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__draw_8h_1adeb10dad1f684d965ecdc4ad934bf2f4" kindref="member">lv_obj_draw_part_check_type</ref>(<ref refid="structlv__obj__draw__part__dsc__t" kindref="compound">lv_obj_draw_part_dsc_t</ref><sp/>*<sp/>dsc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">_lv_obj_class_t</ref><sp/>*<sp/>class_p,<sp/>uint32_t<sp/>type);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__draw_8h_1a43bac59e1dcdc1c83ceb23df161d984a" kindref="member">lv_obj_refresh_ext_draw_size</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__draw_8h_1aeca31fdd018d4f7d948546b753266a4b" kindref="member">_lv_obj_get_ext_draw_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">lv_layer_type_t<sp/>_lv_obj_get_layer_type(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_OBJ_DRAW_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h"/>
+  </compounddef>
+</doxygen>

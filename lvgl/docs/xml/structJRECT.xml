@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structJRECT" kind="struct" language="C++" prot="public">
+    <compoundname>JRECT</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structJRECT_1abb124f9cf265d986a7c93b8a9cda0f69" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t JRECT::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="40" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJRECT_1ab654ecdc28d5dc6cf7cb046a93aa8a0a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t JRECT::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="41" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJRECT_1a736bfa4c8178f381d01d34046fd9033b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t JRECT::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="42" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJRECT_1aa34c5310562f5efff208b5da1ad97e12" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t JRECT::bottom</definition>
+        <argsstring></argsstring>
+        <name>bottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="43" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="39" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="39" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structJRECT_1aa34c5310562f5efff208b5da1ad97e12" prot="public" virt="non-virtual"><scope>JRECT</scope><name>bottom</name></member>
+      <member refid="structJRECT_1abb124f9cf265d986a7c93b8a9cda0f69" prot="public" virt="non-virtual"><scope>JRECT</scope><name>left</name></member>
+      <member refid="structJRECT_1ab654ecdc28d5dc6cf7cb046a93aa8a0a" prot="public" virt="non-virtual"><scope>JRECT</scope><name>right</name></member>
+      <member refid="structJRECT_1a736bfa4c8178f381d01d34046fd9033b" prot="public" virt="non-virtual"><scope>JRECT</scope><name>top</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

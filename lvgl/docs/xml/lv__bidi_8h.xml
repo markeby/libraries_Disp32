@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__bidi_8h" kind="file" language="C++">
+    <compoundname>lv_bidi.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__bidi_8h_1a900dca9b26de42491763226e12dcd47b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@54</name>
+        <enumvalue id="lv__bidi_8h_1a900dca9b26de42491763226e12dcd47baad937bea5c51227e2ab7678f4ad672dd" prot="public">
+          <name>LV_BASE_DIR_LTR</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__bidi_8h_1a900dca9b26de42491763226e12dcd47baa5df7b3439002a3269eb188f04070719" prot="public">
+          <name>LV_BASE_DIR_RTL</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__bidi_8h_1a900dca9b26de42491763226e12dcd47baf66c5f168005a679602b49a0c46abeec" prot="public">
+          <name>LV_BASE_DIR_AUTO</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__bidi_8h_1a900dca9b26de42491763226e12dcd47bad698f17ed36f638cb13a2880ac1b9529" prot="public">
+          <name>LV_BASE_DIR_NEUTRAL</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__bidi_8h_1a900dca9b26de42491763226e12dcd47baf1adf87c7128063bd233c137606325a1" prot="public">
+          <name>LV_BASE_DIR_WEAK</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" line="33" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" bodystart="33" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__bidi_8h_1adf77ab11b1ee24f462aae136634a216c" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_base_dir_t</definition>
+        <argsstring></argsstring>
+        <name>lv_base_dir_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" line="42" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__bidi_8h_1afa964985a95dd76108e1f93d6287f866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_bidi_process</definition>
+        <argsstring>(const char *str_in, char *str_out, lv_base_dir_t base_dir)</argsstring>
+        <name>_lv_bidi_process</name>
+        <param>
+          <type>const char *</type>
+          <declname>str_in</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str_out</declname>
+        </param>
+        <param>
+          <type>lv_base_dir_t</type>
+          <declname>base_dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a text to get the characters in the correct visual order according to Unicode Bidirectional Algorithm <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the text to process </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>store the result here. Has the be <computeroutput>strlen(str_in)</computeroutput> length </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>LV_BASE_DIR_LTR</computeroutput> or <computeroutput>LV_BASE_DIR_RTL</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" line="56" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" declline="56" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__bidi_8h_1a646f20471309bd3a21de9b6077f8ece2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_base_dir_t</type>
+        <definition>lv_base_dir_t _lv_bidi_detect_base_dir</definition>
+        <argsstring>(const char *txt)</argsstring>
+        <name>_lv_bidi_detect_base_dir</name>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Auto-detect the direction of a text based on the first strong character <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the text to process </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>LV_BASE_DIR_LTR</computeroutput> or <computeroutput>LV_BASE_DIR_RTL</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" line="63" column="15" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" declline="63" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__bidi_8h_1a14593be9b58b54348b826274d3a60f11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t _lv_bidi_get_logical_pos</definition>
+        <argsstring>(const char *str_in, char **bidi_txt, uint32_t len, lv_base_dir_t base_dir, uint32_t visual_pos, bool *is_rtl)</argsstring>
+        <name>_lv_bidi_get_logical_pos</name>
+        <param>
+          <type>const char *</type>
+          <declname>str_in</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>bidi_txt</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>lv_base_dir_t</type>
+          <declname>base_dir</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>visual_pos</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>is_rtl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the logical position of a character in a line <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the input string. Can be only one line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bidi_txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>internally the text is bidi processed which buffer can be get here. If not required anymore has to freed with <computeroutput><ref refid="lv__mem_8h_1ae99a4f8aefb6da04e976f2da45521cb4" kindref="member">lv_mem_free()</ref></computeroutput> Can be <computeroutput>NULL</computeroutput> is unused </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the line in character count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base direction of the text: <computeroutput>LV_BASE_DIR_LTR</computeroutput> or <computeroutput>LV_BASE_DIR_RTL</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visual_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the visual character position which logical position should be get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_rtl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tell the char at <computeroutput>visual_pos</computeroutput> is RTL or LTR context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the logical character position </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" line="77" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" declline="77" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__bidi_8h_1ab8bdcab93e2b2e25e2d77fe9f6365b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t _lv_bidi_get_visual_pos</definition>
+        <argsstring>(const char *str_in, char **bidi_txt, uint16_t len, lv_base_dir_t base_dir, uint32_t logical_pos, bool *is_rtl)</argsstring>
+        <name>_lv_bidi_get_visual_pos</name>
+        <param>
+          <type>const char *</type>
+          <declname>str_in</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>bidi_txt</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>lv_base_dir_t</type>
+          <declname>base_dir</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>logical_pos</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>is_rtl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the visual position of a character in a line <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the input string. Can be only one line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bidi_txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>internally the text is bidi processed which buffer can be get here. If not required anymore has to freed with <computeroutput><ref refid="lv__mem_8h_1ae99a4f8aefb6da04e976f2da45521cb4" kindref="member">lv_mem_free()</ref></computeroutput> Can be <computeroutput>NULL</computeroutput> is unused </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the line in character count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base direction of the text: <computeroutput>LV_BASE_DIR_LTR</computeroutput> or <computeroutput>LV_BASE_DIR_RTL</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logical_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the logical character position which visual position should be get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_rtl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tell the char at <computeroutput>logical_pos</computeroutput> is RTL or LTR context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the visual character position </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" line="92" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" declline="92" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__bidi_8h_1a8a36764203609c4fd7967ca7e9a96c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_bidi_process_paragraph</definition>
+        <argsstring>(const char *str_in, char *str_out, uint32_t len, lv_base_dir_t base_dir, uint16_t *pos_conv_out, uint16_t pos_conv_len)</argsstring>
+        <name>_lv_bidi_process_paragraph</name>
+        <param>
+          <type>const char *</type>
+          <declname>str_in</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str_out</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>lv_base_dir_t</type>
+          <declname>base_dir</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>pos_conv_out</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pos_conv_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bidi process a paragraph of text <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to process </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>store the result here </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base dir of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos_conv_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <computeroutput>uint16_t</computeroutput> array to store the related logical position of the character. Can be <computeroutput>NULL</computeroutput> is unused </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos_conv_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of <computeroutput>pos_conv_out</computeroutput> in element count </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" line="105" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" declline="105" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__bidi_8h_1ad51acfc66e5ff3375ccf5e9619b9c9e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_bidi_calculate_align</definition>
+        <argsstring>(lv_text_align_t *align, lv_base_dir_t *base_dir, const char *txt)</argsstring>
+        <name>lv_bidi_calculate_align</name>
+        <param>
+          <type>lv_text_align_t *</type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type>lv_base_dir_t *</type>
+          <declname>base_dir</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the real text alignment from the a text alignment, base direction and a text. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_TEXT_ALIGN_..., write back the calculated align here (LV_TEXT_ALIGN_LEFT/RIGHT/CENTER) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_BASE_DIR_..., write the calculated base dir here (LV_BASE_DIR_LTR/RTL) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a text, used with LV_BASE_DIR_AUTO to determine the base direction</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+For compatibility if LV_USE_BIDI = 0 Get the real text alignment from the a text alignment, base direction and a text. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For LV_TEXT_ALIGN_AUTO give LV_TEXT_ALIGN_LEFT else leave unchanged, write back the calculated align here </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unused </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unused </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" line="128" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" bodystart="128" bodyend="133" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h" declline="114" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_BIDI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_BIDI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__txt_8h" kindref="compound">lv_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*Special<sp/>non<sp/>printable<sp/>strong<sp/>characters.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*They<sp/>can<sp/>be<sp/>inserted<sp/>to<sp/>texts<sp/>to<sp/>affect<sp/>the<sp/>run&apos;s<sp/>direction*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_BIDI_LRO<sp/><sp/>&quot;\xE2\x80\xAD&quot;<sp/></highlight><highlight class="comment">/*U+202D*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_BIDI_RLO<sp/><sp/>&quot;\xE2\x80\xAE&quot;<sp/></highlight><highlight class="comment">/*U+202E*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BASE_DIR_LTR<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BASE_DIR_RTL<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BASE_DIR_AUTO<sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BASE_DIR_NEUTRAL<sp/><sp/>=<sp/>0x20,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BASE_DIR_WEAK<sp/><sp/><sp/><sp/><sp/>=<sp/>0x21,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_base_dir_t;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_BIDI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__bidi_8h_1afa964985a95dd76108e1f93d6287f866" kindref="member">_lv_bidi_process</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>str_in,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>str_out,<sp/>lv_base_dir_t<sp/>base_dir);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">lv_base_dir_t<sp/><ref refid="lv__bidi_8h_1a646f20471309bd3a21de9b6077f8ece2" kindref="member">_lv_bidi_detect_base_dir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">uint16_t<sp/><ref refid="lv__bidi_8h_1a14593be9b58b54348b826274d3a60f11" kindref="member">_lv_bidi_get_logical_pos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>str_in,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>bidi_txt,<sp/>uint32_t<sp/>len,<sp/>lv_base_dir_t<sp/>base_dir,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>visual_pos,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*<sp/>is_rtl);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">uint16_t<sp/><ref refid="lv__bidi_8h_1ab8bdcab93e2b2e25e2d77fe9f6365b68" kindref="member">_lv_bidi_get_visual_pos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>str_in,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>bidi_txt,<sp/>uint16_t<sp/>len,<sp/>lv_base_dir_t<sp/>base_dir,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>logical_pos,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*<sp/>is_rtl);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__bidi_8h_1a8a36764203609c4fd7967ca7e9a96c41" kindref="member">_lv_bidi_process_paragraph</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>str_in,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>str_out,<sp/>uint32_t<sp/>len,<sp/>lv_base_dir_t<sp/>base_dir,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>*<sp/>pos_conv_out,<sp/>uint16_t<sp/>pos_conv_len);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__bidi_8h_1ad51acfc66e5ff3375ccf5e9619b9c9e4" kindref="member">lv_bidi_calculate_align</ref>(lv_text_align_t<sp/>*<sp/>align,<sp/>lv_base_dir_t<sp/>*<sp/>base_dir,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*LV_USE_BIDI*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="lv__bidi_8h_1ad51acfc66e5ff3375ccf5e9619b9c9e4" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__bidi_8h_1ad51acfc66e5ff3375ccf5e9619b9c9e4" kindref="member">lv_bidi_calculate_align</ref>(lv_text_align_t<sp/>*<sp/>align,<sp/>lv_base_dir_t<sp/>*<sp/>base_dir,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_UNUSED(txt);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_UNUSED(base_dir);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*align<sp/>==<sp/><ref refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cead4aa5792e36e4a2d8c20dc1d0db50b9e" kindref="member">LV_TEXT_ALIGN_AUTO</ref>)<sp/>*<sp/>align<sp/>=<sp/><ref refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cea5edadbd8d013ede5656687584755c833" kindref="member">LV_TEXT_ALIGN_LEFT</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_BIDI*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_BIDI_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_bidi.h"/>
+  </compounddef>
+</doxygen>

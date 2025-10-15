@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__draw__transform_8h" kind="file" language="C++">
+    <compoundname>lv_draw_transform.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__draw__transform_8h_1a4024ff6fa38979b2a49f3217ee67b029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_transform</definition>
+        <argsstring>(struct _lv_draw_ctx_t *draw_ctx, const lv_area_t *dest_area, const void *src_buf, lv_coord_t src_w, lv_coord_t src_h, lv_coord_t src_stride, const lv_draw_img_dsc_t *draw_dsc, lv_img_cf_t cf, lv_color_t *cbuf, lv_opa_t *abuf)</argsstring>
+        <name>lv_draw_transform</name>
+        <param>
+          <type>struct <ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>dest_area</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src_buf</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>src_w</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>src_h</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>src_stride</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref> *</type>
+          <declname>draw_dsc</declname>
+        </param>
+        <param>
+          <type>lv_img_cf_t</type>
+          <declname>cf</declname>
+        </param>
+        <param>
+          <type>lv_color_t *</type>
+          <declname>cbuf</declname>
+        </param>
+        <param>
+          <type>lv_opa_t *</type>
+          <declname>abuf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_transform.h" line="32" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_transform.h" declline="32" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_DRAW_TRANSFORM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DRAW_TRANSFORM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_area.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_transform(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>dest_area,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>src_buf,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>src_w,<sp/>lv_coord_t<sp/>src_h,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>src_stride,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/>*<sp/>draw_dsc,<sp/>lv_img_cf_t<sp/>cf,<sp/>lv_color_t<sp/>*<sp/>cbuf,<sp/>lv_opa_t<sp/>*<sp/>abuf);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_DRAW_TRANSFORM_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_transform.h"/>
+  </compounddef>
+</doxygen>

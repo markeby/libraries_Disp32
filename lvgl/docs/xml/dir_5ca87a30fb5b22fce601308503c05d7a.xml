@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_5ca87a30fb5b22fce601308503c05d7a" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra</compoundname>
+    <innerdir refid="dir_402d704a5b7d6335844c8f8e90966925">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts</innerdir>
+    <innerdir refid="dir_5a4f8e8d9d324540184a5772dbd4dcf2">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs</innerdir>
+    <innerdir refid="dir_dc057f33713765b533adb0d33a7a0cef">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others</innerdir>
+    <innerdir refid="dir_da7a00ddfc6553d5135dd14f05570ba8">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/themes</innerdir>
+    <innerdir refid="dir_c29156f6f2ce8fb34575d697fb7db380">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets</innerdir>
+    <innerfile refid="lv__extra_8h">lv_extra.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/"/>
+  </compounddef>
+</doxygen>

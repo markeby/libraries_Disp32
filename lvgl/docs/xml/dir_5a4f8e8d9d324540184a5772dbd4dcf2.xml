@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_5a4f8e8d9d324540184a5772dbd4dcf2" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs</compoundname>
+    <innerdir refid="dir_190fd3f9132f599502720e321f472fec">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/bmp</innerdir>
+    <innerdir refid="dir_4f150f0363b19b54bdf782ca3841c7df">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/ffmpeg</innerdir>
+    <innerdir refid="dir_196a79e09c6a456e550037e158be3423">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype</innerdir>
+    <innerdir refid="dir_c05d5dc906b5dfdaf1d2db8031b881cf">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/fsdrv</innerdir>
+    <innerdir refid="dir_10c1d05e053100553176e092c5fec732">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif</innerdir>
+    <innerdir refid="dir_1261edb1ab7f28aafc09e43579417ef3">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png</innerdir>
+    <innerdir refid="dir_e1c058ea186e34dab2846b3a315b3d91">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode</innerdir>
+    <innerdir refid="dir_4bb8b6c5eaf68182d07688ebcb6c0fec">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie</innerdir>
+    <innerdir refid="dir_b4be070bb2dcf256619bc2977f194ff7">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg</innerdir>
+    <innerdir refid="dir_c69c2c0aa1b0fdb9ee70eb2d0b6197a8">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf</innerdir>
+    <innerfile refid="lv__libs_8h">lv_libs.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/"/>
+  </compounddef>
+</doxygen>

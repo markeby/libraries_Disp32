@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__animimg__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_animimg_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__animimg__t_1a11f2c57baf1847239742802a49365b7c" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__img__t" kindref="compound">lv_img_t</ref></type>
+        <definition>lv_img_t lv_animimg_t::img</definition>
+        <argsstring></argsstring>
+        <name>img</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" line="37" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__animimg__t_1a534e4115b19de9143ceb3e1b5aad44a4" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1a94df93c022dc57ee917b4757e50ebe22" kindref="member">lv_anim_t</ref></type>
+        <definition>lv_anim_t lv_animimg_t::anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" line="38" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__animimg__t_1a4528d8686a5630e3bcdd49ab5700318b" prot="public" static="no" mutable="no">
+        <type>const void **</type>
+        <definition>const void** lv_animimg_t::dsc</definition>
+        <argsstring></argsstring>
+        <name>dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" line="40" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__animimg__t_1a4fdc885dcc31d617be328898dd68b619" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t lv_animimg_t::pic_count</definition>
+        <argsstring></argsstring>
+        <name>pic_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" line="41" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="4">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_img_t</label>
+        <link refid="structlv__img__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>offset</edgelabel>
+          <edgelabel>pivot</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="1">
+        <label>lv_animimg_t</label>
+        <link refid="structlv__animimg__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>anim</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>img</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="14">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_anim_t</label>
+        <link refid="struct__lv__anim__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>start_cb</edgelabel>
+          <edgelabel>ready_cb</edgelabel>
+          <edgelabel>path_cb</edgelabel>
+          <edgelabel>get_value_cb</edgelabel>
+          <edgelabel>deleted_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="5">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" line="36" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg/lv_animimg.h" bodystart="36" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structlv__animimg__t_1a534e4115b19de9143ceb3e1b5aad44a4" prot="public" virt="non-virtual"><scope>lv_animimg_t</scope><name>anim</name></member>
+      <member refid="structlv__animimg__t_1a4528d8686a5630e3bcdd49ab5700318b" prot="public" virt="non-virtual"><scope>lv_animimg_t</scope><name>dsc</name></member>
+      <member refid="structlv__animimg__t_1a11f2c57baf1847239742802a49365b7c" prot="public" virt="non-virtual"><scope>lv_animimg_t</scope><name>img</name></member>
+      <member refid="structlv__animimg__t_1a4fdc885dcc31d617be328898dd68b619" prot="public" virt="non-virtual"><scope>lv_animimg_t</scope><name>pic_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

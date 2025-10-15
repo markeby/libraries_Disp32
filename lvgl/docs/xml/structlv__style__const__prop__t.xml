@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__style__const__prop__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_style_const_prop_t</compoundname>
+    <includes refid="lv__style_8h" local="no">lv_style.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__style__const__prop__t_1a4b2661ac1fe7070d7176d6668c4881ce" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t lv_style_const_prop_t::prop</definition>
+        <argsstring></argsstring>
+        <name>prop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="312" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__const__prop__t_1a842bc179e1d28935ca87514ced2a2beb" prot="public" static="no" mutable="no">
+        <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></type>
+        <definition>lv_style_value_t lv_style_const_prop_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="313" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Descriptor of a constant style property. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="1">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="311" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="311" bodyend="314"/>
+    <listofallmembers>
+      <member refid="structlv__style__const__prop__t_1a4b2661ac1fe7070d7176d6668c4881ce" prot="public" virt="non-virtual"><scope>lv_style_const_prop_t</scope><name>prop</name></member>
+      <member refid="structlv__style__const__prop__t_1a842bc179e1d28935ca87514ced2a2beb" prot="public" virt="non-virtual"><scope>lv_style_const_prop_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

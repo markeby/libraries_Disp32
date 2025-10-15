@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__font__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_font_t</compoundname>
+    <includes refid="lv__font_8h" local="no">lv_font.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__font__t_1aece216b8a527a9b02a4792c0969da627" prot="public" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* _lv_font_t::get_glyph_dsc) (const struct _lv_font_t *, lv_font_glyph_dsc_t *, uint32_t letter, uint32_t letter_next)</definition>
+        <argsstring>)(const struct _lv_font_t *, lv_font_glyph_dsc_t *, uint32_t letter, uint32_t letter_next)</argsstring>
+        <name>get_glyph_dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a glyph&apos;s descriptor from a font </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="66" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1ad3d9dbea8a754672b71ce5159eca1f6d" prot="public" static="no" mutable="no">
+        <type>const uint8_t *(*</type>
+        <definition>const uint8_t*(* _lv_font_t::get_glyph_bitmap) (const struct _lv_font_t *, uint32_t)</definition>
+        <argsstring>)(const struct _lv_font_t *, uint32_t)</argsstring>
+        <name>get_glyph_bitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a glyph&apos;s bitmap from a font </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="69" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1a8e44ee38f2e34a77a6284170d5ed9f97" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_font_t::line_height</definition>
+        <argsstring></argsstring>
+        <name>line_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The real line height where any text fits </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="72" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1a0f7f29ac4959ea5d56b9b14d039aad65" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_font_t::base_line</definition>
+        <argsstring></argsstring>
+        <name>base_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Base line measured from the top of the line_height </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="73" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1a62cac7b3459d7b6bd30dc6be36496d1a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_font_t::subpx</definition>
+        <argsstring></argsstring>
+        <name>subpx</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An element of <computeroutput>lv_font_subpx_t</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="74" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1ab2258a95078b11bdcf8b2d252bf672af" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t _lv_font_t::underline_position</definition>
+        <argsstring></argsstring>
+        <name>underline_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distance between the top of the underline and base line (&lt; 0 means below the base line) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="76" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1adea4d8eba7ab794c6f44a1968228a7b0" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t _lv_font_t::underline_thickness</definition>
+        <argsstring></argsstring>
+        <name>underline_thickness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Thickness of the underline </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="77" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1aa5f86862e4ba544cb3ad4d5d247bcee8" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* _lv_font_t::dsc</definition>
+        <argsstring></argsstring>
+        <name>dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store implementation specific or run_time data or caching here </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="79" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1a7171c59d9b74c3b7526b78d8b6523f15" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct__lv__font__t" kindref="compound">_lv_font_t</ref> *</type>
+        <definition>const struct _lv_font_t* _lv_font_t::fallback</definition>
+        <argsstring></argsstring>
+        <name>fallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fallback font for missing glyph. Resolved recursively </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="80" column="28" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__font__t_1a85cc417e44c78d8f8bbb2b6a58860b03" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_font_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom user data for font. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="82" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe the properties of a font </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_lv_font_t</label>
+        <link refid="struct__lv__font__t"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>fallback</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="64" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="64" bodyend="84"/>
+    <listofallmembers>
+      <member refid="struct__lv__font__t_1a0f7f29ac4959ea5d56b9b14d039aad65" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>base_line</name></member>
+      <member refid="struct__lv__font__t_1aa5f86862e4ba544cb3ad4d5d247bcee8" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>dsc</name></member>
+      <member refid="struct__lv__font__t_1a7171c59d9b74c3b7526b78d8b6523f15" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>fallback</name></member>
+      <member refid="struct__lv__font__t_1ad3d9dbea8a754672b71ce5159eca1f6d" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>get_glyph_bitmap</name></member>
+      <member refid="struct__lv__font__t_1aece216b8a527a9b02a4792c0969da627" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>get_glyph_dsc</name></member>
+      <member refid="struct__lv__font__t_1a8e44ee38f2e34a77a6284170d5ed9f97" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>line_height</name></member>
+      <member refid="struct__lv__font__t_1a62cac7b3459d7b6bd30dc6be36496d1a" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>subpx</name></member>
+      <member refid="struct__lv__font__t_1ab2258a95078b11bdcf8b2d252bf672af" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>underline_position</name></member>
+      <member refid="struct__lv__font__t_1adea4d8eba7ab794c6f44a1968228a7b0" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>underline_thickness</name></member>
+      <member refid="struct__lv__font__t_1a85cc417e44c78d8f8bbb2b6a58860b03" prot="public" virt="non-virtual"><scope>_lv_font_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

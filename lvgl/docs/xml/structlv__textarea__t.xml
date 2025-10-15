@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__textarea__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_textarea_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__textarea__t_1a197441c4f3532fc0178c41b9ab4c5e23" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_textarea_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="43" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1aa9ca1925b1cad4f774967ed302bdf283" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_textarea_t::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="44" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a45ed2db441acbc727dc7f6bdd3a1d47b" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* lv_textarea_t::placeholder_txt</definition>
+        <argsstring></argsstring>
+        <name>placeholder_txt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="45" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a486facde875e18d1c9b207696620bad3" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* lv_textarea_t::pwd_tmp</definition>
+        <argsstring></argsstring>
+        <name>pwd_tmp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="46" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a437cba533535328d5f26b4959b75985f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* lv_textarea_t::pwd_bullet</definition>
+        <argsstring></argsstring>
+        <name>pwd_bullet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="47" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a577937d280b90e8f9e85e7fbb847d016" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* lv_textarea_t::accepted_chars</definition>
+        <argsstring></argsstring>
+        <name>accepted_chars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="48" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a38d0f273fb286313268945bbc323d905" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_textarea_t::max_length</definition>
+        <argsstring></argsstring>
+        <name>max_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="49" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a41ffc99243942b02760b9094e44ee93f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_textarea_t::pwd_show_time</definition>
+        <argsstring></argsstring>
+        <name>pwd_show_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="50" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a7511872acd61c600c3ac449cf03d1cb1" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_textarea_t::valid_x</definition>
+        <argsstring></argsstring>
+        <name>valid_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="52" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a7e0a597ce9f10054272ce4704935b793" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_textarea_t::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="54" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a7347be1846abb5053e6c7f9608e201bc" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref></type>
+        <definition>lv_area_t lv_textarea_t::area</definition>
+        <argsstring></argsstring>
+        <name>area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="56" column="19" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a464421713dd092745394051ca1f9d372" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_textarea_t::txt_byte_pos</definition>
+        <argsstring></argsstring>
+        <name>txt_byte_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="57" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a799d5ee72c9ee4568bb663a24142fdcf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_textarea_t::show</definition>
+        <argsstring></argsstring>
+        <name>show</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="58" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a26fedcc0d3ae31633aafe43ce7b10c45" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_textarea_t::click_pos</definition>
+        <argsstring></argsstring>
+        <name>click_pos</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="59" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1acf644736799374ee2b377740a1884b7b" prot="public" static="no" mutable="no">
+        <type>struct lv_textarea_t::@83</type>
+        <definition>struct lv_textarea_t::@83 lv_textarea_t::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="60" column="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1aeed54f8a28e4a3e40dffcf796ab51957" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_textarea_t::sel_start</definition>
+        <argsstring></argsstring>
+        <name>sel_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="62" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a3349fae48393127843635638849f4e7e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_textarea_t::sel_end</definition>
+        <argsstring></argsstring>
+        <name>sel_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="63" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1ae08908208d0ba806a267b41180f34ae3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_textarea_t::text_sel_in_prog</definition>
+        <argsstring></argsstring>
+        <name>text_sel_in_prog</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="64" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1ad63f35cdd4d932956dfe08f433699cb7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_textarea_t::text_sel_en</definition>
+        <argsstring></argsstring>
+        <name>text_sel_en</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="65" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1aa8c9358edcb818be42adcf32d85a3384" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_textarea_t::pwd_mode</definition>
+        <argsstring></argsstring>
+        <name>pwd_mode</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="67" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__textarea__t_1a242f5237ee41e171e27a239b99d17be1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_textarea_t::one_line</definition>
+        <argsstring></argsstring>
+        <name>one_line</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="68" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lv_textarea_t</label>
+        <link refid="structlv__textarea__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj</edgelabel>
+          <edgelabel>label</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>area</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="40" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="40" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structlv__textarea__t_1a577937d280b90e8f9e85e7fbb847d016" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>accepted_chars</name></member>
+      <member refid="structlv__textarea__t_1a7347be1846abb5053e6c7f9608e201bc" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>area</name></member>
+      <member refid="structlv__textarea__t_1a26fedcc0d3ae31633aafe43ce7b10c45" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>click_pos</name></member>
+      <member refid="structlv__textarea__t_1acf644736799374ee2b377740a1884b7b" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>cursor</name></member>
+      <member refid="structlv__textarea__t_1aa9ca1925b1cad4f774967ed302bdf283" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>label</name></member>
+      <member refid="structlv__textarea__t_1a38d0f273fb286313268945bbc323d905" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>max_length</name></member>
+      <member refid="structlv__textarea__t_1a197441c4f3532fc0178c41b9ab4c5e23" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>obj</name></member>
+      <member refid="structlv__textarea__t_1a242f5237ee41e171e27a239b99d17be1" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>one_line</name></member>
+      <member refid="structlv__textarea__t_1a45ed2db441acbc727dc7f6bdd3a1d47b" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>placeholder_txt</name></member>
+      <member refid="structlv__textarea__t_1a7e0a597ce9f10054272ce4704935b793" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>pos</name></member>
+      <member refid="structlv__textarea__t_1a437cba533535328d5f26b4959b75985f" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>pwd_bullet</name></member>
+      <member refid="structlv__textarea__t_1aa8c9358edcb818be42adcf32d85a3384" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>pwd_mode</name></member>
+      <member refid="structlv__textarea__t_1a41ffc99243942b02760b9094e44ee93f" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>pwd_show_time</name></member>
+      <member refid="structlv__textarea__t_1a486facde875e18d1c9b207696620bad3" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>pwd_tmp</name></member>
+      <member refid="structlv__textarea__t_1a3349fae48393127843635638849f4e7e" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>sel_end</name></member>
+      <member refid="structlv__textarea__t_1aeed54f8a28e4a3e40dffcf796ab51957" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>sel_start</name></member>
+      <member refid="structlv__textarea__t_1a799d5ee72c9ee4568bb663a24142fdcf" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>show</name></member>
+      <member refid="structlv__textarea__t_1ad63f35cdd4d932956dfe08f433699cb7" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>text_sel_en</name></member>
+      <member refid="structlv__textarea__t_1ae08908208d0ba806a267b41180f34ae3" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>text_sel_in_prog</name></member>
+      <member refid="structlv__textarea__t_1a464421713dd092745394051ca1f9d372" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>txt_byte_pos</name></member>
+      <member refid="structlv__textarea__t_1a7511872acd61c600c3ac449cf03d1cb1" prot="public" virt="non-virtual"><scope>lv_textarea_t</scope><name>valid_x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

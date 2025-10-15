@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__hit__test__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_hit_test_info_t</compoundname>
+    <includes refid="lv__event_8h" local="no">lv_event.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__hit__test__info__t_1ae2eaf439cc30257bcb9703bbfdd0851f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+        <definition>const lv_point_t* lv_hit_test_info_t::point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A point relative to screen to check if it can click the object or not </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" line="120" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__hit__test__info__t_1ab59721804216b2d8c895170c5a6aff6e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lv_hit_test_info_t::res</definition>
+        <argsstring></argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>true: <computeroutput>point</computeroutput> can click the object; false: it cannot </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" line="121" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Used as the event parameter of <ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771ac8d8b62da30cda383ee339236a9744f0" kindref="member">LV_EVENT_HIT_TEST</ref> to check if an <computeroutput>point</computeroutput> can click the object or not. <computeroutput>res</computeroutput> should be set like this:<itemizedlist>
+<listitem><para>If already set to <computeroutput>false</computeroutput> an other event wants that point non clickable. If you want to respect it leave it as <computeroutput>false</computeroutput> or set <computeroutput>true</computeroutput> to overwrite it.</para>
+</listitem><listitem><para>If already set <computeroutput>true</computeroutput> and <computeroutput>point</computeroutput> shouldn&apos;t be clickable set to <computeroutput>false</computeroutput></para>
+</listitem><listitem><para>If already set to <computeroutput>true</computeroutput> you agree that <computeroutput>point</computeroutput> can click the object leave it as <computeroutput>true</computeroutput> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>lv_hit_test_info_t</label>
+        <link refid="structlv__hit__test__info__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>point</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" line="119" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" bodystart="119" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structlv__hit__test__info__t_1ae2eaf439cc30257bcb9703bbfdd0851f" prot="public" virt="non-virtual"><scope>lv_hit_test_info_t</scope><name>point</name></member>
+      <member refid="structlv__hit__test__info__t_1ab59721804216b2d8c895170c5a6aff6e" prot="public" virt="non-virtual"><scope>lv_hit_test_info_t</scope><name>res</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

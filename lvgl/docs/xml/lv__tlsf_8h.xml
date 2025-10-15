@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__tlsf_8h" kind="file" language="C++">
+    <compoundname>lv_tlsf.h</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__tlsf_8h_1ae27e2bb64b1f220647757a58490f5146" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* lv_tlsf_t</definition>
+        <argsstring></argsstring>
+        <name>lv_tlsf_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="52" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__tlsf_8h_1a2a64754faad7be1464a3717ef87717b8" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* lv_pool_t</definition>
+        <argsstring></argsstring>
+        <name>lv_pool_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="53" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__tlsf_8h_1ae167e9569d420d5292770e154c456f45" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_tlsf_walker) (void *ptr, size_t size, int used, void *user)</definition>
+        <argsstring>)(void *ptr, size_t size, int used, void *user)</argsstring>
+        <name>lv_tlsf_walker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="83" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__tlsf_8h_1a8af1c7149f4b29c5e40f06b6d4201c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_tlsf_t</type>
+        <definition>lv_tlsf_t lv_tlsf_create</definition>
+        <argsstring>(void *mem)</argsstring>
+        <name>lv_tlsf_create</name>
+        <param>
+          <type>void *</type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="56" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="56" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a579b8edc90721c7775c2b57f48a44256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_tlsf_t</type>
+        <definition>lv_tlsf_t lv_tlsf_create_with_pool</definition>
+        <argsstring>(void *mem, size_t bytes)</argsstring>
+        <name>lv_tlsf_create_with_pool</name>
+        <param>
+          <type>void *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="57" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="57" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a90b11e797f0e69b89430dc34f8e85c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_tlsf_destroy</definition>
+        <argsstring>(lv_tlsf_t tlsf)</argsstring>
+        <name>lv_tlsf_destroy</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="58" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a5a72dca124d3ec9d249398fac7f2382a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_pool_t</type>
+        <definition>lv_pool_t lv_tlsf_get_pool</definition>
+        <argsstring>(lv_tlsf_t tlsf)</argsstring>
+        <name>lv_tlsf_get_pool</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="59" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="59" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1abbcc78edd608b40f20ea03b202d8ea2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_pool_t</type>
+        <definition>lv_pool_t lv_tlsf_add_pool</definition>
+        <argsstring>(lv_tlsf_t tlsf, void *mem, size_t bytes)</argsstring>
+        <name>lv_tlsf_add_pool</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="62" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="62" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1afd20124c527ae343792e40ea6112deb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_tlsf_remove_pool</definition>
+        <argsstring>(lv_tlsf_t tlsf, lv_pool_t pool)</argsstring>
+        <name>lv_tlsf_remove_pool</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <param>
+          <type>lv_pool_t</type>
+          <declname>pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="63" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a34bfc2d1a3c42d50ac3512a45cec1d53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lv_tlsf_malloc</definition>
+        <argsstring>(lv_tlsf_t tlsf, size_t bytes)</argsstring>
+        <name>lv_tlsf_malloc</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="66" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="66" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1ac4bb81333da07baeb7df9bb7d181a0ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lv_tlsf_memalign</definition>
+        <argsstring>(lv_tlsf_t tlsf, size_t align, size_t bytes)</argsstring>
+        <name>lv_tlsf_memalign</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="67" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="67" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a024d4dcf3e0e0e959313b479c31c98d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lv_tlsf_realloc</definition>
+        <argsstring>(lv_tlsf_t tlsf, void *ptr, size_t size)</argsstring>
+        <name>lv_tlsf_realloc</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="68" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="68" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1ae8b7ef17ce0e4756acb4753360f3be1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lv_tlsf_free</definition>
+        <argsstring>(lv_tlsf_t tlsf, const void *ptr)</argsstring>
+        <name>lv_tlsf_free</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="69" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="69" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a2fcee770b002bc1ce92ab402655b9da7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lv_tlsf_block_size</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>lv_tlsf_block_size</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="72" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="72" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a589d14e130a340caec0739d5b8907f27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lv_tlsf_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_tlsf_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="75" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="75" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1ad9d645dd4a1b31826b5a65c7dd033f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lv_tlsf_align_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_tlsf_align_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="76" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="76" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1ae05c40f2297b026edf3b61f309a9d5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lv_tlsf_block_size_min</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_tlsf_block_size_min</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="77" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="77" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1ac0e9ab02e886426d1ebf6ee7301a9293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lv_tlsf_block_size_max</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_tlsf_block_size_max</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="78" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="78" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a25c6ae0de460d768758484d94ce933f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lv_tlsf_pool_overhead</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_tlsf_pool_overhead</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="79" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="79" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a96c42df38057849822c46b423e082dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lv_tlsf_alloc_overhead</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_tlsf_alloc_overhead</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="80" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="80" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1ae5e1fe0c1498144a8cdc94cb2ffbad75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_tlsf_walk_pool</definition>
+        <argsstring>(lv_pool_t pool, lv_tlsf_walker walker, void *user)</argsstring>
+        <name>lv_tlsf_walk_pool</name>
+        <param>
+          <type>lv_pool_t</type>
+          <declname>pool</declname>
+        </param>
+        <param>
+          <type>lv_tlsf_walker</type>
+          <declname>walker</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="84" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a2dc4818c3599924f3576c91b2cf71da3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lv_tlsf_check</definition>
+        <argsstring>(lv_tlsf_t tlsf)</argsstring>
+        <name>lv_tlsf_check</name>
+        <param>
+          <type>lv_tlsf_t</type>
+          <declname>tlsf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="86" column="5" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="86" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__tlsf_8h_1a24e0062af2d1b58a1ab46fb6a443f18e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lv_tlsf_check_pool</definition>
+        <argsstring>(lv_pool_t pool)</argsstring>
+        <name>lv_tlsf_check_pool</name>
+        <param>
+          <type>lv_pool_t</type>
+          <declname>pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" line="87" column="5" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h" declline="87" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_MEM_CUSTOM<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LV_TLSF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_TLSF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Two<sp/>Level<sp/>Segregated<sp/>Fit<sp/>memory<sp/>allocator,<sp/>version<sp/>3.1.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">**<sp/>Written<sp/>by<sp/>Matthew<sp/>Conte</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">**<sp/><sp/>http://tlsf.baisoku.org</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">**<sp/>Based<sp/>on<sp/>the<sp/>original<sp/>documentation<sp/>by<sp/>Miguel<sp/>Masmano:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">**<sp/><sp/>http://www.gii.upv.es/tlsf/main/docs</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">**<sp/>This<sp/>implementation<sp/>was<sp/>written<sp/>to<sp/>the<sp/>specification</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">**<sp/>of<sp/>the<sp/>document,<sp/>therefore<sp/>no<sp/>GPL<sp/>restrictions<sp/>apply.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">**<sp/>Copyright<sp/>(c)<sp/>2006-2016,<sp/>Matthew<sp/>Conte</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">**<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">**<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">**<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>copyright<sp/>holder<sp/>nor<sp/>the</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">**<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">**<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>MATTHEW<sp/>CONTE<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">**<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">**<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">**<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">**<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">**<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">**<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>lv_tlsf_t:<sp/>a<sp/>TLSF<sp/>structure.<sp/>Can<sp/>contain<sp/>1<sp/>to<sp/>N<sp/>pools.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>lv_pool_t:<sp/>a<sp/>block<sp/>of<sp/>memory<sp/>that<sp/>TLSF<sp/>can<sp/>manage.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>lv_tlsf_t;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>lv_pool_t;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Create/destroy<sp/>a<sp/>memory<sp/>pool.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">lv_tlsf_t<sp/>lv_tlsf_create(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>mem);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">lv_tlsf_t<sp/>lv_tlsf_create_with_pool(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>mem,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bytes);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_tlsf_destroy(lv_tlsf_t<sp/>tlsf);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">lv_pool_t<sp/>lv_tlsf_get_pool(lv_tlsf_t<sp/>tlsf);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Add/remove<sp/>memory<sp/>pools.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">lv_pool_t<sp/>lv_tlsf_add_pool(lv_tlsf_t<sp/>tlsf,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>mem,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bytes);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_tlsf_remove_pool(lv_tlsf_t<sp/>tlsf,<sp/>lv_pool_t<sp/>pool);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>malloc/memalign/realloc/free<sp/>replacements.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>lv_tlsf_malloc(lv_tlsf_t<sp/>tlsf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bytes);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>lv_tlsf_memalign(lv_tlsf_t<sp/>tlsf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>align,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bytes);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>lv_tlsf_realloc(lv_tlsf_t<sp/>tlsf,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lv_tlsf_free(lv_tlsf_t<sp/>tlsf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptr);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Returns<sp/>internal<sp/>block<sp/>size,<sp/>not<sp/>original<sp/>request<sp/>size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lv_tlsf_block_size(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptr);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Overheads/limits<sp/>of<sp/>internal<sp/>structures.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lv_tlsf_size(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lv_tlsf_align_size(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lv_tlsf_block_size_min(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lv_tlsf_block_size_max(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lv_tlsf_pool_overhead(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lv_tlsf_alloc_overhead(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Debugging.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*lv_tlsf_walker)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>used,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_tlsf_walk_pool(lv_pool_t<sp/>pool,<sp/>lv_tlsf_walker<sp/>walker,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Returns<sp/>nonzero<sp/>if<sp/>any<sp/>internal<sp/>consistency<sp/>check<sp/>fails.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lv_tlsf_check(lv_tlsf_t<sp/>tlsf);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lv_tlsf_check_pool(lv_pool_t<sp/>pool);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_TLSF_H*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LV_MEM_CUSTOM<sp/>==<sp/>0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_tlsf.h"/>
+  </compounddef>
+</doxygen>

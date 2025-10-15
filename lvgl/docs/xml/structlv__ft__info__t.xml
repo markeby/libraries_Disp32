@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__ft__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_ft_info_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__ft__info__t_1a553cf8a5701a8fca3c7aea5f9ad23791" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* lv_ft_info_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="32" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ft__info__t_1a087c8647c7f86ba5a43b142d8733b0bd" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_ft_info_t::mem</definition>
+        <argsstring></argsstring>
+        <name>mem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="33" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ft__info__t_1a23549db5fa70cb314a0ac19a5cc61aae" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t lv_ft_info_t::mem_size</definition>
+        <argsstring></argsstring>
+        <name>mem_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="34" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ft__info__t_1a76ba9e1f18a57250cb61b04df77b6a15" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+        <definition>lv_font_t* lv_ft_info_t::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="35" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ft__info__t_1a35fb57771e69d1f84be27bfe41e61a87" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ft_info_t::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="36" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ft__info__t_1afbd2099d6fc045edd53e5830c8cfad65" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ft_info_t::style</definition>
+        <argsstring></argsstring>
+        <name>style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="37" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_lv_font_t</label>
+        <link refid="struct__lv__font__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lv_ft_info_t</label>
+        <link refid="structlv__ft__info__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>font</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" line="31" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/freetype/lv_freetype.h" bodystart="31" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structlv__ft__info__t_1a76ba9e1f18a57250cb61b04df77b6a15" prot="public" virt="non-virtual"><scope>lv_ft_info_t</scope><name>font</name></member>
+      <member refid="structlv__ft__info__t_1a087c8647c7f86ba5a43b142d8733b0bd" prot="public" virt="non-virtual"><scope>lv_ft_info_t</scope><name>mem</name></member>
+      <member refid="structlv__ft__info__t_1a23549db5fa70cb314a0ac19a5cc61aae" prot="public" virt="non-virtual"><scope>lv_ft_info_t</scope><name>mem_size</name></member>
+      <member refid="structlv__ft__info__t_1a553cf8a5701a8fca3c7aea5f9ad23791" prot="public" virt="non-virtual"><scope>lv_ft_info_t</scope><name>name</name></member>
+      <member refid="structlv__ft__info__t_1afbd2099d6fc045edd53e5830c8cfad65" prot="public" virt="non-virtual"><scope>lv_ft_info_t</scope><name>style</name></member>
+      <member refid="structlv__ft__info__t_1a35fb57771e69d1f84be27bfe41e61a87" prot="public" virt="non-virtual"><scope>lv_ft_info_t</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

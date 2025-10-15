@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__roller_8h" kind="file" language="C++">
+    <compoundname>lv_roller.h</compoundname>
+    <innerclass refid="structlv__roller__t" prot="public">lv_roller_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__roller_8h_1a70ad55be767ca0a42c9150d24618e4ca" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@79</name>
+        <enumvalue id="lv__roller_8h_1a70ad55be767ca0a42c9150d24618e4caa4ad742124588acc96f71ae3d96dbdcaa" prot="public">
+          <name>LV_ROLLER_MODE_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Normal mode (roller ends at the end of the options). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__roller_8h_1a70ad55be767ca0a42c9150d24618e4caa6b2d94c5f50bd0eb919cb016568da9d2" prot="public">
+          <name>LV_ROLLER_MODE_INFINITE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Infinite mode (roller can be scrolled forever). </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Roller mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="37" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__roller_8h_1ad116446975998da2fa77c0aa8be39a0c" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_roller_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_roller_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="42" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__roller_8h_1adbf92d60ff18d79b9183f562127c0ecc" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_roller_class</definition>
+        <argsstring></argsstring>
+        <name>lv_roller_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="53" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="53" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__roller_8h_1a5d5afd50a8b4c5cb017245110086ac60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_roller_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_roller_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a roller object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new roller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created roller </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="64" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="64" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__roller_8h_1aa47d176962f75987b364fbcf47ec51d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_roller_set_options</definition>
+        <argsstring>(lv_obj_t *obj, const char *options, lv_roller_mode_t mode)</argsstring>
+        <name>lv_roller_set_options</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>options</declname>
+        </param>
+        <param>
+          <type>lv_roller_mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the options on a roller <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to roller object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string with &apos;<linebreak/>
+&apos; separated options. E.g. &quot;One\nTwo\nThree&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>LV_ROLLER_MODE_NORMAL</computeroutput> or <computeroutput>LV_ROLLER_MODE_INFINITE</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="76" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="76" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__roller_8h_1a607ba26b20aefe279257bab188266154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_roller_set_selected</definition>
+        <argsstring>(lv_obj_t *obj, uint16_t sel_opt, lv_anim_enable_t anim)</argsstring>
+        <name>lv_roller_set_selected</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>sel_opt</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the selected option <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a roller object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sel_opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the selected option (0 ... number of option - 1); </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON: set with animation; LV_ANOM_OFF set immediately </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="84" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__roller_8h_1ae74cf170705d3cbcda32123d57de2474" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_roller_set_visible_row_count</definition>
+        <argsstring>(lv_obj_t *obj, uint8_t row_cnt)</argsstring>
+        <name>lv_roller_set_visible_row_count</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>row_cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the height to show the given number of rows (options) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a roller object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row_cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of desired visible rows </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="91" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="91" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__roller_8h_1ad445337e4fe573e0523d2b2691988ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_roller_get_selected</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_roller_get_selected</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of the selected option <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a roller object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of the selected option (0 ... number of option - 1); </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="102" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="102" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__roller_8h_1a14b0f43f732c44d54daae89b4f3ca8c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_roller_get_selected_str</definition>
+        <argsstring>(const lv_obj_t *obj, char *buf, uint32_t buf_size)</argsstring>
+        <name>lv_roller_get_selected_str</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current selected option as a string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to ddlist object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an array to store the string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of <computeroutput>buf</computeroutput> in bytes. 0: to ignore it. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="110" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="110" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__roller_8h_1ac577da356db9b98da3c0bb8fd695d6ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_roller_get_options</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_roller_get_options</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the options of a roller <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to roller object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the options separated by &apos;<linebreak/>
+&apos;-s (E.g. &quot;Option1\nOption2\nOption3&quot;) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="117" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="117" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__roller_8h_1ad7953594fc38c2c7477b85e7ddfaacfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_roller_get_option_cnt</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_roller_get_option_cnt</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the total number of options <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a roller object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the total number of options </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" line="124" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h" declline="124" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_ROLLER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_ROLLER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_ROLLER<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*Testing<sp/>of<sp/>dependencies*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_LABEL<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;lv_roller:<sp/>lv_label<sp/>is<sp/>required.<sp/>Enable<sp/>it<sp/>in<sp/>lv_conf.h<sp/>(LV_USE_ROLLER<sp/>1)&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../core/lv_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__label_8h" kindref="compound">lv_label.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__roller_8h_1a70ad55be767ca0a42c9150d24618e4caa4ad742124588acc96f71ae3d96dbdcaa" kindref="member">LV_ROLLER_MODE_NORMAL</ref>,<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__roller_8h_1a70ad55be767ca0a42c9150d24618e4caa6b2d94c5f50bd0eb919cb016568da9d2" kindref="member">LV_ROLLER_MODE_INFINITE</ref>,<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_roller_mode_t;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="lv__roller_8h_1a70ad55be767ca0a42c9150d24618e4caa4ad742124588acc96f71ae3d96dbdcaa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45" refid="lv__roller_8h_1a70ad55be767ca0a42c9150d24618e4caa6b2d94c5f50bd0eb919cb016568da9d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="46" refid="structlv__roller__t_1a041b671a39f3b78ba6ca0b2e61a61036" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlv__roller__t_1a041b671a39f3b78ba6ca0b2e61a61036" kindref="member">option_cnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structlv__roller__t_1a427f02b2e977f6494f96d5a15acb727d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlv__roller__t_1a427f02b2e977f6494f96d5a15acb727d" kindref="member">sel_opt_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structlv__roller__t_1aea3c771e2de0c53a430423072ca01967" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlv__roller__t_1aea3c771e2de0c53a430423072ca01967" kindref="member">sel_opt_id_ori</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_roller_mode_t<sp/>mode<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>moved<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="structlv__roller__t" kindref="compound">lv_roller_t</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_roller_class;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__roller_8h_1a5d5afd50a8b4c5cb017245110086ac60" kindref="member">lv_roller_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__roller_8h_1aa47d176962f75987b364fbcf47ec51d8" kindref="member">lv_roller_set_options</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>options,<sp/>lv_roller_mode_t<sp/>mode);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__roller_8h_1a607ba26b20aefe279257bab188266154" kindref="member">lv_roller_set_selected</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint16_t<sp/>sel_opt,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__roller_8h_1ae74cf170705d3cbcda32123d57de2474" kindref="member">lv_roller_set_visible_row_count</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint8_t<sp/>row_cnt);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">uint16_t<sp/><ref refid="lv__roller_8h_1ad445337e4fe573e0523d2b2691988ed2" kindref="member">lv_roller_get_selected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__roller_8h_1a14b0f43f732c44d54daae89b4f3ca8c8" kindref="member">lv_roller_get_selected_str</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/>uint32_t<sp/>buf_size);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__roller_8h_1ac577da356db9b98da3c0bb8fd695d6ff" kindref="member">lv_roller_get_options</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">uint16_t<sp/><ref refid="lv__roller_8h_1ad7953594fc38c2c7477b85e7ddfaacfd" kindref="member">lv_roller_get_option_cnt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_ROLLER*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_ROLLER_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_roller.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__textarea_8h" kind="file" language="C++">
+    <compoundname>lv_textarea.h</compoundname>
+    <innerclass refid="structlv__textarea__t" prot="public">lv_textarea_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__textarea_8h_1a3babbf89cae9b856a12864a41506efbd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@82</name>
+        <enumvalue id="lv__textarea_8h_1a3babbf89cae9b856a12864a41506efbda1fee38b182428315a33c88f8357eb333" prot="public">
+          <name>LV_PART_TEXTAREA_PLACEHOLDER</name>
+          <initializer>= LV_PART_CUSTOM_FIRST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="71" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__textarea_8h_1a9eeb4c1eeea4587dac9732166dace7ea" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_textarea_class</definition>
+        <argsstring></argsstring>
+        <name>lv_textarea_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="69" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="69" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__textarea_8h_1ae4b1586e653023c2042acc0412447a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LV_EXPORT_CONST_INT</definition>
+        <argsstring>(LV_TEXTAREA_CURSOR_LAST)</argsstring>
+        <name>LV_EXPORT_CONST_INT</name>
+        <param>
+          <type>LV_TEXTAREA_CURSOR_LAST</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="33" column="1" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="33" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a9aa74046721399e3a0eb91d96314f8c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_textarea_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_textarea_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a text area object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new text area </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created text area </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="84" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="84" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ad588512e6e393024062306c369014040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_add_char</definition>
+        <argsstring>(lv_obj_t *obj, uint32_t c)</argsstring>
+        <name>lv_textarea_add_char</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert a character to the current cursor position. To add a wide char, e.g. &apos;Á&apos; use <lsquo/>_lv_txt_encoded_conv_wc(&apos;Á<rsquo/>)` <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a character (e.g. &apos;a&apos;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="96" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="96" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a5c675b8c0c2d366ce1b04182ff52606a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_add_text</definition>
+        <argsstring>(lv_obj_t *obj, const char *txt)</argsstring>
+        <name>lv_textarea_add_text</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert a text to the current cursor position <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a &apos;\0&apos; terminated string to insert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="103" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="103" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a6ab9ab0361fa9980e522f5e790f08073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_del_char</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_del_char</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete a the left character from the current cursor position <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="109" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="109" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1aba420f579b7d6d7c61c1a2802d48d235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_del_char_forward</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_del_char_forward</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete the right character from the current cursor position <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="115" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="115" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a08adbdd5ba257b71e3b1bbda0f722700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_text</definition>
+        <argsstring>(lv_obj_t *obj, const char *txt)</argsstring>
+        <name>lv_textarea_set_text</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the text of a text area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="126" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="126" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a09f9449e1f83d3f77e075dc982f9e6a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_placeholder_text</definition>
+        <argsstring>(lv_obj_t *obj, const char *txt)</argsstring>
+        <name>lv_textarea_set_placeholder_text</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the placeholder text of a text area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="133" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="133" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1af3da83ebd09f5f59e89de8c682267e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_cursor_pos</definition>
+        <argsstring>(lv_obj_t *obj, int32_t pos)</argsstring>
+        <name>lv_textarea_set_cursor_pos</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the cursor position <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new cursor position in character index &lt; 0 : index from the end of the text LV_TEXTAREA_CURSOR_LAST: go after the last character </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="142" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="142" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a5b98f5314187fb4cb878f96aef4f390f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_cursor_click_pos</definition>
+        <argsstring>(lv_obj_t *obj, bool en)</argsstring>
+        <name>lv_textarea_set_cursor_click_pos</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable/Disable the positioning of the cursor by clicking the text on the text area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: enable click positions; false: disable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="149" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="149" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ad667bc93313ee673183b30396aceba67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_password_mode</definition>
+        <argsstring>(lv_obj_t *obj, bool en)</argsstring>
+        <name>lv_textarea_set_password_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable/Disable password mode <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: enable, false: disable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="156" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="156" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a5502acc494bf47b5125df2af6da40e05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_password_bullet</definition>
+        <argsstring>(lv_obj_t *obj, const char *bullet)</argsstring>
+        <name>lv_textarea_set_password_bullet</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>bullet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the replacement characters to show in password mode <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bullet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the replacement text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="163" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="163" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ac18b5648b95741dc3ae9c305cf14301e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_one_line</definition>
+        <argsstring>(lv_obj_t *obj, bool en)</argsstring>
+        <name>lv_textarea_set_one_line</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure the text area to one line or back to normal <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: one line, false: normal </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="170" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="170" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ad22627f685c20a24dd228d4020d61433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_accepted_chars</definition>
+        <argsstring>(lv_obj_t *obj, const char *list)</argsstring>
+        <name>lv_textarea_set_accepted_chars</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a list of characters. Only these characters will be accepted by the text area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of characters. Only the pointer is saved. E.g. &quot;+-.,0123456789&quot; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="177" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="177" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ac82c6b9187cd91bc8122c7a6ab205e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_max_length</definition>
+        <argsstring>(lv_obj_t *obj, uint32_t num)</argsstring>
+        <name>lv_textarea_set_max_length</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set max length of a Text Area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximal number of characters can be added (<computeroutput>lv_textarea_set_text</computeroutput> ignores it) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="184" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="184" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1af49fbc6b5fdad658e5f4f2f4b6166eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_insert_replace</definition>
+        <argsstring>(lv_obj_t *obj, const char *txt)</argsstring>
+        <name>lv_textarea_set_insert_replace</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>In <computeroutput>LV_EVENT_INSERT</computeroutput> the text which planned to be inserted can be replaced by an other text. It can be used to add automatic formatting to the text area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a new string to insert. If <computeroutput>&quot;&quot;</computeroutput> no text will be added. The variable must be live after the <computeroutput>event_cb</computeroutput> exists. (Should be <computeroutput>global</computeroutput> or <computeroutput>static</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="193" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="193" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a0b6b1216a417df6f37984a91cb671965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_text_selection</definition>
+        <argsstring>(lv_obj_t *obj, bool en)</argsstring>
+        <name>lv_textarea_set_text_selection</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable/disable selection mode. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true or false to enable/disable selection mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="200" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="200" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a89b165bfb0a9ed2f032f13117c133be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_password_show_time</definition>
+        <argsstring>(lv_obj_t *obj, uint16_t time)</argsstring>
+        <name>lv_textarea_set_password_show_time</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set how long show the password before changing it to &apos;*&apos; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>show time in milliseconds. 0: hide immediately. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="207" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="207" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a3a131270dd523b080c9a1542f1f26b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_set_align</definition>
+        <argsstring>(lv_obj_t *obj, lv_text_align_t align)</argsstring>
+        <name>lv_textarea_set_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_text_align_t</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deprecated: use the normal text_align style property instead Set the label&apos;s alignment. It sets where the label is aligned (in one line mode it can be smaller than the text area) and how the lines of the area align in case of multiline text area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the align mode from ::lv_text_align_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="217" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="217" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ae2d99902b6e15a8b6c7ac4ccb9841c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_textarea_get_text</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_text</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the text of a text area. In password mode it gives the real text (not &apos;*&apos;s). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the text </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="228" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="228" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a6874b74a46717c0dca4bc92aacbed4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_textarea_get_placeholder_text</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_placeholder_text</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the placeholder text of a text area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the text </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="235" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="235" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a989f9d99c6c895b3cc09ec7af5c4185c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_textarea_get_label</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_label</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the label of a text area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the label object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="242" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="242" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a9d32423942c831913625bc895eec284b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_textarea_get_cursor_pos</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_cursor_pos</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current cursor position in character index <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the cursor position </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="249" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="249" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ac2df6217bce4b8fee2eb479e725982e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_textarea_get_cursor_click_pos</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_cursor_click_pos</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get whether the cursor click positioning is enabled or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: enable click positions; false: disable </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="256" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="256" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a0da1826580fd6b75556a76cdf8faa957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_textarea_get_password_mode</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_password_mode</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the password mode attribute <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: password mode is enabled, false: disabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="263" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="263" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a88d5849d4eaf0d5905cb03854ba9facf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_textarea_get_password_bullet</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_password_bullet</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the replacement characters to show in password mode <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the replacement text </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="270" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="270" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a85aff0a0aa3698128cbd4fd518026c19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_textarea_get_one_line</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_one_line</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the one line configuration attribute <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: one line configuration is enabled, false: disabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="277" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="277" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a2c36b22c02f1305e83eb79fd96597ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_textarea_get_accepted_chars</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_accepted_chars</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a list of accepted characters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>list of accented characters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="284" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="284" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ab19822f2323f9b0d4e7af9cd51819927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_textarea_get_max_length</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_max_length</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get max length of a Text Area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the maximal number of characters to be add </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="291" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="291" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a4644c96ce9e1bc2474cd0aca6ca45e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_textarea_text_is_selected</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_text_is_selected</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find whether text is selected or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether text is selected or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="298" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="298" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1aafa5bde651b595f2617724da499ce86d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_textarea_get_text_selection</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_text_selection</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find whether selection mode is enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: selection mode is enabled, false: disabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="305" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="305" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1aeebf538d67b2b86741cf8777ed3b6fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_textarea_get_password_show_time</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_get_password_show_time</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set how long show the password before changing it to &apos;*&apos; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>show time in milliseconds. 0: hide immediately. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="312" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="312" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1ad8b58c73f450910c7d90d712bf01f20c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_clear_selection</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_clear_selection</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear the selection on the text area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="322" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="322" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1abaa40a276709b15f6f2665c80768169d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_cursor_right</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_cursor_right</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the cursor one character right <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="328" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="328" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1a33bbd65e6e6f13843a4235d8d499abc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_cursor_left</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_cursor_left</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the cursor one character left <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="334" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="334" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1af75903c4f9fc256af5a70505683b02c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_cursor_down</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_cursor_down</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the cursor one line down <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="340" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="340" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__textarea_8h_1abc9d92ffe4f5ab02c82d1ccb3b6a4e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_textarea_cursor_up</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_textarea_cursor_up</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the cursor one line up <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text area object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" line="346" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h" declline="346" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_TEXTAREA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_TEXTAREA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_TEXTAREA<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*Testing<sp/>of<sp/>dependencies*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_LABEL<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;lv_ta:<sp/>lv_label<sp/>is<sp/>required.<sp/>Enable<sp/>it<sp/>in<sp/>lv_conf.h<sp/>(LV_USE_LABEL<sp/>1)&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../core/lv_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__label_8h" kindref="compound">lv_label.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_TEXTAREA_CURSOR_LAST<sp/>(0x7FFF)<sp/></highlight><highlight class="comment">/*Put<sp/>the<sp/>cursor<sp/>after<sp/>the<sp/>last<sp/>character*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">LV_EXPORT_CONST_INT(LV_TEXTAREA_CURSOR_LAST);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*Data<sp/>of<sp/>text<sp/>area*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structlv__textarea__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>label;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Label<sp/>of<sp/>the<sp/>text<sp/>area*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>placeholder_txt;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Place<sp/>holder<sp/>label.<sp/>only<sp/>visible<sp/>if<sp/>text<sp/>is<sp/>an<sp/>empty<sp/>string*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>pwd_tmp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Used<sp/>to<sp/>store<sp/>the<sp/>original<sp/>text<sp/>in<sp/>password<sp/>mode*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>pwd_bullet;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Replacement<sp/>characters<sp/>displayed<sp/>in<sp/>password<sp/>mode*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>accepted_chars;<sp/></highlight><highlight class="comment">/*Only<sp/>these<sp/>characters<sp/>will<sp/>be<sp/>accepted.<sp/>NULL:<sp/>accept<sp/>all*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>max_length;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>max.<sp/>number<sp/>of<sp/>characters.<sp/>0:<sp/>no<sp/>limit*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>pwd_show_time;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Time<sp/>to<sp/>show<sp/>characters<sp/>in<sp/>password<sp/>mode<sp/>before<sp/>change<sp/>them<sp/>to<sp/>&apos;*&apos;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>valid_x;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Used<sp/>when<sp/>stepping<sp/>up/down<sp/>to<sp/>a<sp/>shorter<sp/>line.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(Used<sp/>by<sp/>the<sp/>library)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>pos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>current<sp/>cursor<sp/>position</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(0:<sp/>before<sp/>1st<sp/>letter;<sp/>1:<sp/>before<sp/>2nd<sp/>letter<sp/>...)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>area;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Cursor<sp/>area<sp/>relative<sp/>to<sp/>the<sp/>Text<sp/>Area*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>txt_byte_pos;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Byte<sp/>index<sp/>of<sp/>the<sp/>letter<sp/>after<sp/>(on)<sp/>the<sp/>cursor*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>show<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Cursor<sp/>is<sp/>visible<sp/>now<sp/>or<sp/>not<sp/>(Handled<sp/>by<sp/>the<sp/>library)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>click_pos<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*1:<sp/>Enable<sp/>positioning<sp/>the<sp/>cursor<sp/>by<sp/>clicking<sp/>the<sp/>text<sp/>area*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>cursor;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_LABEL_TEXT_SELECTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sel_start;<sp/><sp/></highlight><highlight class="comment">/*Temporary<sp/>values<sp/>for<sp/>text<sp/>selection*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sel_end;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>text_sel_in_prog<sp/>:<sp/>1;<sp/></highlight><highlight class="comment">/*User<sp/>is<sp/>in<sp/>process<sp/>of<sp/>selecting*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>text_sel_en<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Text<sp/>can<sp/>be<sp/>selected<sp/>on<sp/>this<sp/>text<sp/>area*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>pwd_mode<sp/>:<sp/>1;<sp/></highlight><highlight class="comment">/*Replace<sp/>characters<sp/>with<sp/>&apos;*&apos;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>one_line<sp/>:<sp/>1;<sp/></highlight><highlight class="comment">/*One<sp/>line<sp/>mode<sp/>(ignore<sp/>line<sp/>breaks)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="structlv__textarea__t" kindref="compound">lv_textarea_t</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_textarea_class;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_PART_TEXTAREA_PLACEHOLDER<sp/>=<sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a2acbdcd5f3a8e80920f5e8551b7abe16" kindref="member">LV_PART_CUSTOM_FIRST</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__textarea_8h_1a9aa74046721399e3a0eb91d96314f8c0" kindref="member">lv_textarea_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*======================</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/>Add/remove<sp/>functions</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*=====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1ad588512e6e393024062306c369014040" kindref="member">lv_textarea_add_char</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>c);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a5c675b8c0c2d366ce1b04182ff52606a" kindref="member">lv_textarea_add_text</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a6ab9ab0361fa9980e522f5e790f08073" kindref="member">lv_textarea_del_char</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1aba420f579b7d6d7c61c1a2802d48d235" kindref="member">lv_textarea_del_char_forward</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a08adbdd5ba257b71e3b1bbda0f722700" kindref="member">lv_textarea_set_text</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a09f9449e1f83d3f77e075dc982f9e6a7" kindref="member">lv_textarea_set_placeholder_text</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1af3da83ebd09f5f59e89de8c682267e26" kindref="member">lv_textarea_set_cursor_pos</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>int32_t<sp/>pos);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a5b98f5314187fb4cb878f96aef4f390f" kindref="member">lv_textarea_set_cursor_click_pos</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1ad667bc93313ee673183b30396aceba67" kindref="member">lv_textarea_set_password_mode</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a5502acc494bf47b5125df2af6da40e05" kindref="member">lv_textarea_set_password_bullet</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>bullet);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1ac18b5648b95741dc3ae9c305cf14301e" kindref="member">lv_textarea_set_one_line</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1ad22627f685c20a24dd228d4020d61433" kindref="member">lv_textarea_set_accepted_chars</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>list);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1ac82c6b9187cd91bc8122c7a6ab205e72" kindref="member">lv_textarea_set_max_length</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>num);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1af49fbc6b5fdad658e5f4f2f4b6166eb3" kindref="member">lv_textarea_set_insert_replace</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a0b6b1216a417df6f37984a91cb671965" kindref="member">lv_textarea_set_text_selection</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a89b165bfb0a9ed2f032f13117c133be6" kindref="member">lv_textarea_set_password_show_time</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint16_t<sp/>time);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a3a131270dd523b080c9a1542f1f26b05" kindref="member">lv_textarea_set_align</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_text_align_t<sp/>align);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__textarea_8h_1ae2d99902b6e15a8b6c7ac4ccb9841c08" kindref="member">lv_textarea_get_text</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__textarea_8h_1a6874b74a46717c0dca4bc92aacbed4bf" kindref="member">lv_textarea_get_placeholder_text</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__textarea_8h_1a989f9d99c6c895b3cc09ec7af5c4185c" kindref="member">lv_textarea_get_label</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal">uint32_t<sp/><ref refid="lv__textarea_8h_1a9d32423942c831913625bc895eec284b" kindref="member">lv_textarea_get_cursor_pos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1ac2df6217bce4b8fee2eb479e725982e3" kindref="member">lv_textarea_get_cursor_click_pos</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a0da1826580fd6b75556a76cdf8faa957" kindref="member">lv_textarea_get_password_mode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__textarea_8h_1a88d5849d4eaf0d5905cb03854ba9facf" kindref="member">lv_textarea_get_password_bullet</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a85aff0a0aa3698128cbd4fd518026c19" kindref="member">lv_textarea_get_one_line</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__textarea_8h_1a2c36b22c02f1305e83eb79fd96597ba2" kindref="member">lv_textarea_get_accepted_chars</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal">uint32_t<sp/><ref refid="lv__textarea_8h_1ab19822f2323f9b0d4e7af9cd51819927" kindref="member">lv_textarea_get_max_length</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a4644c96ce9e1bc2474cd0aca6ca45e09" kindref="member">lv_textarea_text_is_selected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1aafa5bde651b595f2617724da499ce86d" kindref="member">lv_textarea_get_text_selection</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">uint16_t<sp/><ref refid="lv__textarea_8h_1aeebf538d67b2b86741cf8777ed3b6fb4" kindref="member">lv_textarea_get_password_show_time</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="315"><highlight class="comment"><sp/>*<sp/>Other<sp/>functions</highlight></codeline>
+<codeline lineno="316"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1ad8b58c73f450910c7d90d712bf01f20c" kindref="member">lv_textarea_clear_selection</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1abaa40a276709b15f6f2665c80768169d" kindref="member">lv_textarea_cursor_right</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1a33bbd65e6e6f13843a4235d8d499abc9" kindref="member">lv_textarea_cursor_left</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1af75903c4f9fc256af5a70505683b02c8" kindref="member">lv_textarea_cursor_down</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__textarea_8h_1abc9d92ffe4f5ab02c82d1ccb3b6a4e4c" kindref="member">lv_textarea_cursor_up</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="349"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="350"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_TEXTAREA_H*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_TEXTAREA_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_textarea.h"/>
+  </compounddef>
+</doxygen>

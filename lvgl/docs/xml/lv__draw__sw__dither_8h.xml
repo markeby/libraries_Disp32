@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__draw__sw__dither_8h" kind="file" language="C++">
+    <compoundname>lv_draw_sw_dither.h</compoundname>
+    <innerclass refid="structlv__scolor24__t" prot="public">lv_scolor24_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__draw__sw__dither_8h_1aa7f8f49052a67ad18b417eb379d5ea69" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_dither_func_t) (struct _lv_gradient_cache_t *grad, lv_coord_t x, lv_coord_t y, lv_coord_t w)</definition>
+        <argsstring>)(struct _lv_gradient_cache_t *grad, lv_coord_t x, lv_coord_t y, lv_coord_t w)</argsstring>
+        <name>lv_dither_func_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="37" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__draw__sw__dither_8h_1a9233878e6185d62eb76f568306a381ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dither_none</definition>
+        <argsstring>(struct _lv_gradient_cache_t *grad, lv_coord_t x, lv_coord_t y, lv_coord_t w)</argsstring>
+        <name>lv_dither_none</name>
+        <param>
+          <type>struct <ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref> *</type>
+          <declname>grad</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="46" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" declline="46" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sw__dither_8h_1a72258a078f6f85d3704c6432694e42e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dither_ordered_hor</definition>
+        <argsstring>(struct _lv_gradient_cache_t *grad, const lv_coord_t xs, const lv_coord_t y, const lv_coord_t w)</argsstring>
+        <name>lv_dither_ordered_hor</name>
+        <param>
+          <type>struct <ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref> *</type>
+          <declname>grad</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>xs</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="49" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" declline="49" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sw__dither_8h_1a6069fcc8dc4fbc7fa42674743b96cca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dither_ordered_ver</definition>
+        <argsstring>(struct _lv_gradient_cache_t *grad, const lv_coord_t xs, const lv_coord_t y, const lv_coord_t w)</argsstring>
+        <name>lv_dither_ordered_ver</name>
+        <param>
+          <type>struct <ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref> *</type>
+          <declname>grad</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>xs</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="51" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" declline="51" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sw__dither_8h_1a5449bd43dddbd994357c66f0fed8f4ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dither_err_diff_hor</definition>
+        <argsstring>(struct _lv_gradient_cache_t *grad, const lv_coord_t xs, const lv_coord_t y, const lv_coord_t w)</argsstring>
+        <name>lv_dither_err_diff_hor</name>
+        <param>
+          <type>struct <ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref> *</type>
+          <declname>grad</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>xs</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="55" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" declline="55" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sw__dither_8h_1a0ee2380daaf3e5fbdd9cc48c1a997172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dither_err_diff_ver</definition>
+        <argsstring>(struct _lv_gradient_cache_t *grad, const lv_coord_t xs, const lv_coord_t y, const lv_coord_t w)</argsstring>
+        <name>lv_dither_err_diff_ver</name>
+        <param>
+          <type>struct <ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref> *</type>
+          <declname>grad</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>xs</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="57" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" declline="57" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_DRAW_SW_DITHER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DRAW_SW_DITHER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../core/lv_obj_pos.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_COLOR_DEPTH<sp/>&lt;<sp/>32<sp/>&amp;&amp;<sp/>LV_DITHER_GRADIENT<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DITHER_GRADIENT<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DITHER_GRADIENT<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_DITHER_GRADIENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*A<sp/>signed<sp/>error<sp/>color<sp/>component*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structlv__scolor24__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/>r,<sp/>g,<sp/>b;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="structlv__scolor24__t" kindref="compound">lv_scolor24_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*lv_dither_func_t)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref><sp/>*<sp/>grad,<sp/>lv_coord_t<sp/>x,<sp/>lv_coord_t<sp/>y,<sp/>lv_coord_t<sp/><ref refid="struct__lv__gradient__cache__t_1ac59285159e5e35079561499279eac136" kindref="member">w</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_DRAW_COMPLEX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_DITHER_GRADIENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>LV_ATTRIBUTE_FAST_MEM<sp/>*/</highlight><highlight class="normal"><sp/>lv_dither_none(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref><sp/>*<sp/>grad,<sp/>lv_coord_t<sp/>x,<sp/>lv_coord_t<sp/>y,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/><ref refid="struct__lv__gradient__cache__t_1ac59285159e5e35079561499279eac136" kindref="member">w</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>LV_ATTRIBUTE_FAST_MEM<sp/>*/</highlight><highlight class="normal"><sp/>lv_dither_ordered_hor(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref><sp/>*<sp/>grad,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>xs,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/><ref refid="struct__lv__gradient__cache__t_1ac59285159e5e35079561499279eac136" kindref="member">w</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>LV_ATTRIBUTE_FAST_MEM<sp/>*/</highlight><highlight class="normal"><sp/>lv_dither_ordered_ver(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref><sp/>*<sp/>grad,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>xs,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/><ref refid="struct__lv__gradient__cache__t_1ac59285159e5e35079561499279eac136" kindref="member">w</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_DITHER_ERROR_DIFFUSION<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>LV_ATTRIBUTE_FAST_MEM<sp/>*/</highlight><highlight class="normal"><sp/>lv_dither_err_diff_hor(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref><sp/>*<sp/>grad,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>xs,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/><ref refid="struct__lv__gradient__cache__t_1ac59285159e5e35079561499279eac136" kindref="member">w</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>LV_ATTRIBUTE_FAST_MEM<sp/>*/</highlight><highlight class="normal"><sp/>lv_dither_err_diff_ver(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref><sp/>*<sp/>grad,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>xs,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/><ref refid="struct__lv__gradient__cache__t_1ac59285159e5e35079561499279eac136" kindref="member">w</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LV_DITHER_ERROR_DIFFUSION<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_DITHER_GRADIENT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h"/>
+  </compounddef>
+</doxygen>

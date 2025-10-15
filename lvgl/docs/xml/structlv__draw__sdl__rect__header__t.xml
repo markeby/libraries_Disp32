@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__draw__sdl__rect__header__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_draw_sdl_rect_header_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__draw__sdl__rect__header__t_1af780d670c2fa845656b18f359c5b7f73" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__img__header__t" kindref="compound">lv_img_header_t</ref></type>
+        <definition>lv_img_header_t lv_draw_sdl_rect_header_t::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_rect.h" line="41" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_rect.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__rect__header__t_1a1f3f52e5afbce771e9e759420ae4be88" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect lv_draw_sdl_rect_header_t::rect</definition>
+        <argsstring></argsstring>
+        <name>rect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_rect.h" line="42" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_rect.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lv_img_header_t</label>
+        <link refid="structlv__img__header__t"/>
+      </node>
+      <node id="1">
+        <label>lv_draw_sdl_rect_header_t</label>
+        <link refid="structlv__draw__sdl__rect__header__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_rect.h" line="34" column="40" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_rect.h" bodystart="34" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structlv__draw__sdl__rect__header__t_1af780d670c2fa845656b18f359c5b7f73" prot="public" virt="non-virtual"><scope>lv_draw_sdl_rect_header_t</scope><name>base</name></member>
+      <member refid="structlv__draw__sdl__rect__header__t_1a1f3f52e5afbce771e9e759420ae4be88" prot="public" virt="non-virtual"><scope>lv_draw_sdl_rect_header_t</scope><name>rect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

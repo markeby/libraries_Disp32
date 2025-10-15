@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__draw__sdl__composite_8h" kind="file" language="C++">
+    <compoundname>lv_draw_sdl_composite.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__draw__sdl__composite_8h_1ae50b7126984aa1485c7199af726d093c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_draw_sdl_composite_texture_id_t</name>
+        <enumvalue id="lv__draw__sdl__composite_8h_1ae50b7126984aa1485c7199af726d093ca5cec269fed5b3fc8087434d359bb0ece" prot="public">
+          <name>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_STREAM0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__draw__sdl__composite_8h_1ae50b7126984aa1485c7199af726d093ca8ab5cf094ab56e09e10ceb1a38e7a59e" prot="public">
+          <name>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_STREAM1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__draw__sdl__composite_8h_1ae50b7126984aa1485c7199af726d093ca93ec404dc041ac5c6edee3bb19b3bdb1" prot="public">
+          <name>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_TARGET0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__draw__sdl__composite_8h_1ae50b7126984aa1485c7199af726d093ca1a23a1f97e0c0b3631d22c5bfa13c7f1" prot="public">
+          <name>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_TARGET1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__draw__sdl__composite_8h_1ae50b7126984aa1485c7199af726d093cad973623d9411e1edb0522e131d54ed65" prot="public">
+          <name>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_TRANSFORM0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" line="33" column="48" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" bodystart="33" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__draw__sdl__composite_8h_1a3be1ff5d9d691323d4f9b2b7e7c34599" prot="public" static="no">
+        <type>enum lv_draw_sdl_composite_texture_id_t</type>
+        <definition>typedef enum lv_draw_sdl_composite_texture_id_t lv_draw_sdl_composite_texture_id_t</definition>
+        <argsstring></argsstring>
+        <name>lv_draw_sdl_composite_texture_id_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" line="39" column="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__draw__sdl__composite_8h_1a4ab2f2f008a1dbdb7f16e87d38b3869c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_draw_sdl_composite_begin</definition>
+        <argsstring>(lv_draw_sdl_ctx_t *ctx, const lv_area_t *coords_in, const lv_area_t *clip_in, const lv_area_t *extension, lv_blend_mode_t blend_mode, lv_area_t *coords_out, lv_area_t *clip_out, lv_area_t *apply_area)</argsstring>
+        <name>lv_draw_sdl_composite_begin</name>
+        <param>
+          <type><ref refid="structlv__draw__sdl__ctx__t" kindref="compound">lv_draw_sdl_ctx_t</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>coords_in</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>clip_in</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>extension</declname>
+        </param>
+        <param>
+          <type>lv_blend_mode_t</type>
+          <declname>blend_mode</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>coords_out</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>clip_out</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>apply_area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Begin drawing with mask. Render target will be switched to a temporary texture, and drawing coordinates may get clipped or translated <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Drawing context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coords_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Original coordinates </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clip_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Original clip area </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Useful for shadows or outlines, can be NULL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coords_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Translated coords </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clip_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Translated clip area </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>apply_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Area of actual composited texture will be drawn </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if there are any mask needs to be drawn, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" line="57" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sdl__composite_8h_1a14078d7df7617a57f6169f28631ccce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_sdl_composite_end</definition>
+        <argsstring>(lv_draw_sdl_ctx_t *ctx, const lv_area_t *apply_area, lv_blend_mode_t blend_mode)</argsstring>
+        <name>lv_draw_sdl_composite_end</name>
+        <param>
+          <type><ref refid="structlv__draw__sdl__ctx__t" kindref="compound">lv_draw_sdl_ctx_t</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>apply_area</declname>
+        </param>
+        <param>
+          <type>lv_blend_mode_t</type>
+          <declname>blend_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" line="61" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" declline="61" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sdl__composite_8h_1a44ea07abc4f77fe0bc190097759ad73f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* lv_draw_sdl_composite_texture_obtain</definition>
+        <argsstring>(lv_draw_sdl_ctx_t *ctx, lv_draw_sdl_composite_texture_id_t id, lv_coord_t w, lv_coord_t h, bool *texture_in_cache)</argsstring>
+        <name>lv_draw_sdl_composite_texture_obtain</name>
+        <param>
+          <type><ref refid="structlv__draw__sdl__ctx__t" kindref="compound">lv_draw_sdl_ctx_t</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>lv_draw_sdl_composite_texture_id_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>texture_in_cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Drawing context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texture ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum width needed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum height needed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>texture_in_cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output to query if the texture is in cache. If it&apos;s not in cache, you&apos;ll need to destroy it by yourself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Obtained texture </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" line="73" column="14" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h" declline="73" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_DRAW_SDL_COMPOSITE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DRAW_SDL_COMPOSITE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>LV_GPU_SDL_INCLUDE_PATH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__sdl_8h" kindref="compound">lv_draw_sdl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../misc/lv_area.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../misc/lv_color.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>lv_draw_sdl_composite_texture_id_t<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_STREAM0,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_STREAM1,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_TARGET0,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_TARGET1,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DRAW_SDL_COMPOSITE_TEXTURE_ID_TRANSFORM0,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/>lv_draw_sdl_composite_texture_id_t;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__draw__sdl__composite_8h_1a4ab2f2f008a1dbdb7f16e87d38b3869c" kindref="member">lv_draw_sdl_composite_begin</ref>(<ref refid="structlv__draw__sdl__ctx__t" kindref="compound">lv_draw_sdl_ctx_t</ref><sp/>*<sp/>ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>coords_in,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>clip_in,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>extension,<sp/>lv_blend_mode_t<sp/>blend_mode,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>coords_out,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>clip_out,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>apply_area);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_sdl_composite_end(<ref refid="structlv__draw__sdl__ctx__t" kindref="compound">lv_draw_sdl_ctx_t</ref><sp/>*<sp/>ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>apply_area,<sp/>lv_blend_mode_t<sp/>blend_mode);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">SDL_Texture<sp/>*<sp/><ref refid="lv__draw__sdl__composite_8h_1a44ea07abc4f77fe0bc190097759ad73f" kindref="member">lv_draw_sdl_composite_texture_obtain</ref>(<ref refid="structlv__draw__sdl__ctx__t" kindref="compound">lv_draw_sdl_ctx_t</ref><sp/>*<sp/>ctx,<sp/>lv_draw_sdl_composite_texture_id_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>w,<sp/>lv_coord_t<sp/>h,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*<sp/>texture_in_cache);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_DRAW_SDL_COMPOSITE_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_composite.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__menu__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_menu_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__menu__t_1a7090b11f882aef436bf2d324540e93b8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_menu_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="51" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a4039810fa3e4e8e449d3e96f3324d52b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::storage</definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="52" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a33a5bcc47e8c27eab4e97e78d6b7ac1a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::main</definition>
+        <argsstring></argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="53" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a8483a5a32574a092f76deccff4e1a6e6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::main_page</definition>
+        <argsstring></argsstring>
+        <name>main_page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="54" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1aa33752b89c50f8e32d3e99f5e9a1b397" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::main_header</definition>
+        <argsstring></argsstring>
+        <name>main_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="55" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a43ccad90969e96951bb6fd31a38b5d03" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::main_header_back_btn</definition>
+        <argsstring></argsstring>
+        <name>main_header_back_btn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="57" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1acea9714c810cd44f56906d01f505930c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::main_header_title</definition>
+        <argsstring></argsstring>
+        <name>main_header_title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="58" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1af514c309ef9b589c186684cb9cb75d03" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::sidebar</definition>
+        <argsstring></argsstring>
+        <name>sidebar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="59" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a93d020a93eb9d89e0601ccd9a398e6d9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::sidebar_page</definition>
+        <argsstring></argsstring>
+        <name>sidebar_page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="60" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a7c4a6ae93d3b6abc953748ba8f15734a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::sidebar_header</definition>
+        <argsstring></argsstring>
+        <name>sidebar_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="61" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1afa407fdd93e23b73b3e9e4426222c806" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::sidebar_header_back_btn</definition>
+        <argsstring></argsstring>
+        <name>sidebar_header_back_btn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="63" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a6baa5cc9c214b780f5d5af197a9134d8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::sidebar_header_title</definition>
+        <argsstring></argsstring>
+        <name>sidebar_header_title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="64" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1ab84ba293427f472ef3d87d800be70520" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_menu_t::selected_tab</definition>
+        <argsstring></argsstring>
+        <name>selected_tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="65" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a8fbc95ae80b0d4694b4d435fad86af62" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref></type>
+        <definition>lv_ll_t lv_menu_t::history_ll</definition>
+        <argsstring></argsstring>
+        <name>history_ll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="66" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a223728e04867b7ac157bffba18419a99" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_menu_t::cur_depth</definition>
+        <argsstring></argsstring>
+        <name>cur_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="67" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a529cbb89284be1078604d172e8386c45" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_menu_t::prev_depth</definition>
+        <argsstring></argsstring>
+        <name>prev_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="68" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1aa53498cf9d4aef526e6a02958816c465" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_menu_t::sidebar_generated</definition>
+        <argsstring></argsstring>
+        <name>sidebar_generated</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="69" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a26448551cf0acf5949923656328eeda6" prot="public" static="no" mutable="no">
+        <type>lv_menu_mode_header_t</type>
+        <definition>lv_menu_mode_header_t lv_menu_t::mode_header</definition>
+        <argsstring></argsstring>
+        <name>mode_header</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="70" column="27" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__menu__t_1a93e492b764f8767bba694089ada99959" prot="public" static="no" mutable="no">
+        <type>lv_menu_mode_root_back_btn_t</type>
+        <definition>lv_menu_mode_root_back_btn_t lv_menu_t::mode_root_back_btn</definition>
+        <argsstring></argsstring>
+        <name>mode_root_back_btn</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="71" column="34" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="1">
+        <label>lv_menu_t</label>
+        <link refid="structlv__menu__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj</edgelabel>
+          <edgelabel>selected_tab</edgelabel>
+          <edgelabel>sidebar</edgelabel>
+          <edgelabel>main_page</edgelabel>
+          <edgelabel>main_header_title</edgelabel>
+          <edgelabel>sidebar_header_back_btn</edgelabel>
+          <edgelabel>sidebar_page</edgelabel>
+          <edgelabel>main_header</edgelabel>
+          <edgelabel>main</edgelabel>
+          <edgelabel>sidebar_header_title</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>history_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" line="50" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu/lv_menu.h" bodystart="50" bodyend="72"/>
+    <listofallmembers>
+      <member refid="structlv__menu__t_1a223728e04867b7ac157bffba18419a99" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>cur_depth</name></member>
+      <member refid="structlv__menu__t_1a8fbc95ae80b0d4694b4d435fad86af62" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>history_ll</name></member>
+      <member refid="structlv__menu__t_1a33a5bcc47e8c27eab4e97e78d6b7ac1a" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>main</name></member>
+      <member refid="structlv__menu__t_1aa33752b89c50f8e32d3e99f5e9a1b397" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>main_header</name></member>
+      <member refid="structlv__menu__t_1a43ccad90969e96951bb6fd31a38b5d03" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>main_header_back_btn</name></member>
+      <member refid="structlv__menu__t_1acea9714c810cd44f56906d01f505930c" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>main_header_title</name></member>
+      <member refid="structlv__menu__t_1a8483a5a32574a092f76deccff4e1a6e6" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>main_page</name></member>
+      <member refid="structlv__menu__t_1a26448551cf0acf5949923656328eeda6" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>mode_header</name></member>
+      <member refid="structlv__menu__t_1a93e492b764f8767bba694089ada99959" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>mode_root_back_btn</name></member>
+      <member refid="structlv__menu__t_1a7090b11f882aef436bf2d324540e93b8" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>obj</name></member>
+      <member refid="structlv__menu__t_1a529cbb89284be1078604d172e8386c45" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>prev_depth</name></member>
+      <member refid="structlv__menu__t_1ab84ba293427f472ef3d87d800be70520" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>selected_tab</name></member>
+      <member refid="structlv__menu__t_1af514c309ef9b589c186684cb9cb75d03" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>sidebar</name></member>
+      <member refid="structlv__menu__t_1aa53498cf9d4aef526e6a02958816c465" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>sidebar_generated</name></member>
+      <member refid="structlv__menu__t_1a7c4a6ae93d3b6abc953748ba8f15734a" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>sidebar_header</name></member>
+      <member refid="structlv__menu__t_1afa407fdd93e23b73b3e9e4426222c806" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>sidebar_header_back_btn</name></member>
+      <member refid="structlv__menu__t_1a6baa5cc9c214b780f5d5af197a9134d8" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>sidebar_header_title</name></member>
+      <member refid="structlv__menu__t_1a93d020a93eb9d89e0601ccd9a398e6d9" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>sidebar_page</name></member>
+      <member refid="structlv__menu__t_1a4039810fa3e4e8e449d3e96f3324d52b" prot="public" virt="non-virtual"><scope>lv_menu_t</scope><name>storage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

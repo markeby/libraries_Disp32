@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_cd85d66fda5a1a6a87e168db47e0a4ce" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos</compoundname>
+    <innerdir refid="dir_4d8865ddd82d4f4b5d1d8660546da39d">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/benchmark</innerdir>
+    <innerdir refid="dir_ea24116006b490862e505f6214736265">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/keypad_encoder</innerdir>
+    <innerdir refid="dir_7063fd93ea6f3b676d13b3dd9d7a9122">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/music</innerdir>
+    <innerdir refid="dir_3a2bafa254ac39b5a9d4d998989d0d29">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/stress</innerdir>
+    <innerdir refid="dir_ade38dce6abce58880ed2af3f6645322">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/widgets</innerdir>
+    <innerfile refid="lv__demos_8h">lv_demos.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/"/>
+  </compounddef>
+</doxygen>

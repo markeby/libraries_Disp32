@@ -1,0 +1,812 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__symbol__def_8h" kind="file" language="C++">
+    <compoundname>lv_symbol_def.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@48</name>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0abdc51ac64b1e9688d74fa6de9bd671f4" prot="public">
+          <name>_LV_STR_SYMBOL_BULLET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0add0d830450633b9b0e47ebd52d357b2a" prot="public">
+          <name>_LV_STR_SYMBOL_AUDIO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0aa97f1a186b8a98ab7b16edf2060afe28" prot="public">
+          <name>_LV_STR_SYMBOL_VIDEO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0abaf97dc161ee0a0151f99a505b00044e" prot="public">
+          <name>_LV_STR_SYMBOL_LIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a6c9f610bf5559689ab14a777288a2db5" prot="public">
+          <name>_LV_STR_SYMBOL_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a8ef8c2156fa84f6754da9663f941fa44" prot="public">
+          <name>_LV_STR_SYMBOL_CLOSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0af96a4869f9ad50c37202111dcb6ede16" prot="public">
+          <name>_LV_STR_SYMBOL_POWER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0acc1b1912b8f9fe92e2135d633a61d48a" prot="public">
+          <name>_LV_STR_SYMBOL_SETTINGS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0ac83f425b514b7e6f52e8f15c9ba14f2e" prot="public">
+          <name>_LV_STR_SYMBOL_HOME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0ae64f61daa13b7fef734de758ad5c1728" prot="public">
+          <name>_LV_STR_SYMBOL_DOWNLOAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0aa5f84a6a683011fa95097648a0c54712" prot="public">
+          <name>_LV_STR_SYMBOL_DRIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a31c75191ddbf37472df2bd763b873b18" prot="public">
+          <name>_LV_STR_SYMBOL_REFRESH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a5c5303edd1bf217c6956364b0cf6b84b" prot="public">
+          <name>_LV_STR_SYMBOL_MUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a8608b2d67365d7c4f4a8da7ab275843b" prot="public">
+          <name>_LV_STR_SYMBOL_VOLUME_MID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0aaef6fcdb01916da67b06ffede21d021f" prot="public">
+          <name>_LV_STR_SYMBOL_VOLUME_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0accf0a28411948fbc604bc20d6d429e03" prot="public">
+          <name>_LV_STR_SYMBOL_IMAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0acc5d42a6b2cbd90e43c7fa6c8c1c9d23" prot="public">
+          <name>_LV_STR_SYMBOL_TINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a9c44b0ca61954eb95058ff4c06ca83c4" prot="public">
+          <name>_LV_STR_SYMBOL_PREV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0ac3ca0f4b4fd07fac9f12001d689756d1" prot="public">
+          <name>_LV_STR_SYMBOL_PLAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0adac1b6738bbb1d412f9bcaff8c24cf6f" prot="public">
+          <name>_LV_STR_SYMBOL_PAUSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0ac029f70f1321a3743c48929996d9dfa0" prot="public">
+          <name>_LV_STR_SYMBOL_STOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0aa551d461dd94a965357bb1ab197bc88b" prot="public">
+          <name>_LV_STR_SYMBOL_NEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0aa33edb22b6d2adf8556c9b6ca913f723" prot="public">
+          <name>_LV_STR_SYMBOL_EJECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a839bb7838d3a405e4c46993a32b4579d" prot="public">
+          <name>_LV_STR_SYMBOL_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0af0aaf6d567ad581ace070d248786ae46" prot="public">
+          <name>_LV_STR_SYMBOL_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a1751fc95712c60f1aa01278c53db9c1b" prot="public">
+          <name>_LV_STR_SYMBOL_PLUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a10d5baf20d2d9810fdb86d6be6bbbf8a" prot="public">
+          <name>_LV_STR_SYMBOL_MINUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a8734ee75c49814ea94d1b6ede6427835" prot="public">
+          <name>_LV_STR_SYMBOL_EYE_OPEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a1d111f0f00c4c91004e331b33c8e32ff" prot="public">
+          <name>_LV_STR_SYMBOL_EYE_CLOSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0aaf2ab5e33b44f74af20e5108b52f5402" prot="public">
+          <name>_LV_STR_SYMBOL_WARNING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a047dfd6b32186aa70c1a45fbadf7e240" prot="public">
+          <name>_LV_STR_SYMBOL_SHUFFLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a327634efa40faa6c7c4b1ad457426618" prot="public">
+          <name>_LV_STR_SYMBOL_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0ae75ddbfc3b516967e4311574999eb5e1" prot="public">
+          <name>_LV_STR_SYMBOL_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0acbc06adf660c5b66d583c7b325101061" prot="public">
+          <name>_LV_STR_SYMBOL_LOOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a445fe688c17c7faf39e36661df384ab5" prot="public">
+          <name>_LV_STR_SYMBOL_DIRECTORY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a13368dfef5a83fa724feb28e0168c95d" prot="public">
+          <name>_LV_STR_SYMBOL_UPLOAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a96e2aa99154fb74d8b2217fa9a1e11ad" prot="public">
+          <name>_LV_STR_SYMBOL_CALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0af3041fdd11c82e8ac554f30fa1fad5e6" prot="public">
+          <name>_LV_STR_SYMBOL_CUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a97b722071734324a097f9f77c7b908cb" prot="public">
+          <name>_LV_STR_SYMBOL_COPY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0ae65f18f7cea3850cb56f02cd89fd82ab" prot="public">
+          <name>_LV_STR_SYMBOL_SAVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0aee2a2d5b3a61d26ad709ed828ab3e3fc" prot="public">
+          <name>_LV_STR_SYMBOL_BARS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a58a09919562ce9a4ad49c96b99592415" prot="public">
+          <name>_LV_STR_SYMBOL_ENVELOPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a91f4d652d856379f50060ff5244cb445" prot="public">
+          <name>_LV_STR_SYMBOL_CHARGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a36e07cf07e5f55c30cb653fa46e1e3bc" prot="public">
+          <name>_LV_STR_SYMBOL_PASTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0adc800da6b9717e2228ab9f56d6e4c1ea" prot="public">
+          <name>_LV_STR_SYMBOL_BELL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a0dc712ac1733c1dfd2f402a90cb3e790" prot="public">
+          <name>_LV_STR_SYMBOL_KEYBOARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a73a61af5404be43b98c6d3372491a202" prot="public">
+          <name>_LV_STR_SYMBOL_GPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0af096ed8ea924d34a8b45400dc4ef7646" prot="public">
+          <name>_LV_STR_SYMBOL_FILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a739c2af1ff64312c21712b5122652c0a" prot="public">
+          <name>_LV_STR_SYMBOL_WIFI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a0e2e72b10907972f35fc7b5722ae97c4" prot="public">
+          <name>_LV_STR_SYMBOL_BATTERY_FULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a38258ff29d9af668ed9cd88ae3e85987" prot="public">
+          <name>_LV_STR_SYMBOL_BATTERY_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a8b5d8785166adba8167e02a4429ca419" prot="public">
+          <name>_LV_STR_SYMBOL_BATTERY_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a9175a32317c8f60406998621d0968858" prot="public">
+          <name>_LV_STR_SYMBOL_BATTERY_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a50ab95051ac5291c1c84e9ef5e8cbef0" prot="public">
+          <name>_LV_STR_SYMBOL_BATTERY_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a8ebd94d674803e0d1373553e38ec1cf8" prot="public">
+          <name>_LV_STR_SYMBOL_USB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0aa3ddac7293b8db2361af2dac430ff05c" prot="public">
+          <name>_LV_STR_SYMBOL_BLUETOOTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a3d6c46b936d1c2ba0ab50e8f98f57a98" prot="public">
+          <name>_LV_STR_SYMBOL_TRASH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a9088ed5984d243a790ef8da6e0d5f374" prot="public">
+          <name>_LV_STR_SYMBOL_EDIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a123ee77d53539c760bc5e4d85d348e2d" prot="public">
+          <name>_LV_STR_SYMBOL_BACKSPACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0ac192c2c5e4cca5979e7069037f00b0e2" prot="public">
+          <name>_LV_STR_SYMBOL_SD_CARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a24df73c646b9a53c569eb04c62b7e0bc" prot="public">
+          <name>_LV_STR_SYMBOL_NEW_LINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__symbol__def_8h_1ae8a3b6a5d0d3244ed73924ab2421a0d0a45d32feb3a90b8c8a2d5fbdf05bac949" prot="public">
+          <name>_LV_STR_SYMBOL_DUMMY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_symbol_def.h" line="283" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_symbol_def.h" bodystart="283" bodyend="346"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LV_SYMBOL_DEF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_DEF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*-------------------------------</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Symbols<sp/>from<sp/>&quot;normal&quot;<sp/>font</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*-----------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BULLET</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BULLET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xE2\x80\xA2&quot;<sp/></highlight><highlight class="comment">/*20042,<sp/>0x2022*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*-------------------------------</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Symbols<sp/>from<sp/>FontAwesome<sp/>font</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*-----------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*In<sp/>the<sp/>font<sp/>converter<sp/>use<sp/>this<sp/>list<sp/>as<sp/>range:</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>61441,<sp/>61448,<sp/>61451,<sp/>61452,<sp/>61453,<sp/>61457,<sp/>61459,<sp/>61461,<sp/>61465,<sp/>61468,</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>61473,<sp/>61478,<sp/>61479,<sp/>61480,<sp/>61502,<sp/>61507,<sp/>61512,<sp/>61515,<sp/>61516,<sp/>61517,</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>61521,<sp/>61522,<sp/>61523,<sp/>61524,<sp/>61543,<sp/>61544,<sp/>61550,<sp/>61552,<sp/>61553,<sp/>61556,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>61559,<sp/>61560,<sp/>61561,<sp/>61563,<sp/>61587,<sp/>61589,<sp/>61636,<sp/>61637,<sp/>61639,<sp/>61641,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>61664,<sp/>61671,<sp/>61674,<sp/>61683,<sp/>61724,<sp/>61732,<sp/>61787,<sp/>61931,<sp/>62016,<sp/>62017,</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>62018,<sp/>62019,<sp/>62020,<sp/>62087,<sp/>62099,<sp/>62189,<sp/>62212,<sp/>62810,<sp/>63426,<sp/>63650</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>These<sp/>symbols<sp/>can<sp/>be<sp/>prefined<sp/>in<sp/>the<sp/>lv_conf.h<sp/>file.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>If<sp/>they<sp/>are<sp/>not<sp/>predefined,<sp/>they<sp/>will<sp/>use<sp/>the<sp/>following<sp/>values</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_AUDIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_AUDIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x81&quot;<sp/></highlight><highlight class="comment">/*61441,<sp/>0xF001*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_VIDEO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_VIDEO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x88&quot;<sp/></highlight><highlight class="comment">/*61448,<sp/>0xF008*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_LIST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_LIST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x8B&quot;<sp/></highlight><highlight class="comment">/*61451,<sp/>0xF00B*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_OK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x8C&quot;<sp/></highlight><highlight class="comment">/*61452,<sp/>0xF00C*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_CLOSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_CLOSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x8D&quot;<sp/></highlight><highlight class="comment">/*61453,<sp/>0xF00D*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_POWER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_POWER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x91&quot;<sp/></highlight><highlight class="comment">/*61457,<sp/>0xF011*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_SETTINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_SETTINGS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x93&quot;<sp/></highlight><highlight class="comment">/*61459,<sp/>0xF013*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_HOME</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_HOME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x95&quot;<sp/></highlight><highlight class="comment">/*61461,<sp/>0xF015*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_DOWNLOAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_DOWNLOAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x99&quot;<sp/></highlight><highlight class="comment">/*61465,<sp/>0xF019*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_DRIVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_DRIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\x9C&quot;<sp/></highlight><highlight class="comment">/*61468,<sp/>0xF01C*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_REFRESH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_REFRESH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\xA1&quot;<sp/></highlight><highlight class="comment">/*61473,<sp/>0xF021*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_MUTE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_MUTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\xA6&quot;<sp/></highlight><highlight class="comment">/*61478,<sp/>0xF026*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_VOLUME_MID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_VOLUME_MID<sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\xA7&quot;<sp/></highlight><highlight class="comment">/*61479,<sp/>0xF027*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_VOLUME_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_VOLUME_MAX<sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\xA8&quot;<sp/></highlight><highlight class="comment">/*61480,<sp/>0xF028*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_IMAGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_IMAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x80\xBE&quot;<sp/></highlight><highlight class="comment">/*61502,<sp/>0xF03E*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_TINT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_TINT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x83&quot;<sp/></highlight><highlight class="comment">/*61507,<sp/>0xF043*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_PREV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_PREV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x88&quot;<sp/></highlight><highlight class="comment">/*61512,<sp/>0xF048*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_PLAY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_PLAY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x8B&quot;<sp/></highlight><highlight class="comment">/*61515,<sp/>0xF04B*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_PAUSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_PAUSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x8C&quot;<sp/></highlight><highlight class="comment">/*61516,<sp/>0xF04C*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_STOP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x8D&quot;<sp/></highlight><highlight class="comment">/*61517,<sp/>0xF04D*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_NEXT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_NEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x91&quot;<sp/></highlight><highlight class="comment">/*61521,<sp/>0xF051*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_EJECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_EJECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x92&quot;<sp/></highlight><highlight class="comment">/*61522,<sp/>0xF052*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_LEFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_LEFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x93&quot;<sp/></highlight><highlight class="comment">/*61523,<sp/>0xF053*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_RIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_RIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\x94&quot;<sp/></highlight><highlight class="comment">/*61524,<sp/>0xF054*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_PLUS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_PLUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xA7&quot;<sp/></highlight><highlight class="comment">/*61543,<sp/>0xF067*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_MINUS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_MINUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xA8&quot;<sp/></highlight><highlight class="comment">/*61544,<sp/>0xF068*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_EYE_OPEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_EYE_OPEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xAE&quot;<sp/></highlight><highlight class="comment">/*61550,<sp/>0xF06E*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_EYE_CLOSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_EYE_CLOSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xB0&quot;<sp/></highlight><highlight class="comment">/*61552,<sp/>0xF070*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_WARNING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_WARNING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xB1&quot;<sp/></highlight><highlight class="comment">/*61553,<sp/>0xF071*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_SHUFFLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_SHUFFLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xB4&quot;<sp/></highlight><highlight class="comment">/*61556,<sp/>0xF074*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_UP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xB7&quot;<sp/></highlight><highlight class="comment">/*61559,<sp/>0xF077*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_DOWN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xB8&quot;<sp/></highlight><highlight class="comment">/*61560,<sp/>0xF078*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_LOOP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_LOOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xB9&quot;<sp/></highlight><highlight class="comment">/*61561,<sp/>0xF079*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_DIRECTORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_DIRECTORY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x81\xBB&quot;<sp/></highlight><highlight class="comment">/*61563,<sp/>0xF07B*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_UPLOAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_UPLOAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x82\x93&quot;<sp/></highlight><highlight class="comment">/*61587,<sp/>0xF093*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_CALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_CALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x82\x95&quot;<sp/></highlight><highlight class="comment">/*61589,<sp/>0xF095*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_CUT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_CUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x83\x84&quot;<sp/></highlight><highlight class="comment">/*61636,<sp/>0xF0C4*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_COPY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_COPY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x83\x85&quot;<sp/></highlight><highlight class="comment">/*61637,<sp/>0xF0C5*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_SAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_SAVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x83\x87&quot;<sp/></highlight><highlight class="comment">/*61639,<sp/>0xF0C7*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BARS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BARS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x83\x89&quot;<sp/></highlight><highlight class="comment">/*61641,<sp/>0xF0C9*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_ENVELOPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_ENVELOPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x83\xA0&quot;<sp/></highlight><highlight class="comment">/*61664,<sp/>0xF0E0*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_CHARGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_CHARGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x83\xA7&quot;<sp/></highlight><highlight class="comment">/*61671,<sp/>0xF0E7*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_PASTE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_PASTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x83\xAA&quot;<sp/></highlight><highlight class="comment">/*61674,<sp/>0xF0EA*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BELL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BELL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x83\xB3&quot;<sp/></highlight><highlight class="comment">/*61683,<sp/>0xF0F3*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_KEYBOARD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_KEYBOARD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x84\x9C&quot;<sp/></highlight><highlight class="comment">/*61724,<sp/>0xF11C*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_GPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_GPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x84\xA4&quot;<sp/></highlight><highlight class="comment">/*61732,<sp/>0xF124*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_FILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x85\x9B&quot;<sp/></highlight><highlight class="comment">/*61787,<sp/>0xF158*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_WIFI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_WIFI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x87\xAB&quot;<sp/></highlight><highlight class="comment">/*61931,<sp/>0xF1EB*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BATTERY_FULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BATTERY_FULL<sp/><sp/><sp/><sp/>&quot;\xEF\x89\x80&quot;<sp/></highlight><highlight class="comment">/*62016,<sp/>0xF240*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BATTERY_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BATTERY_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x89\x81&quot;<sp/></highlight><highlight class="comment">/*62017,<sp/>0xF241*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BATTERY_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BATTERY_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x89\x82&quot;<sp/></highlight><highlight class="comment">/*62018,<sp/>0xF242*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BATTERY_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BATTERY_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x89\x83&quot;<sp/></highlight><highlight class="comment">/*62019,<sp/>0xF243*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BATTERY_EMPTY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BATTERY_EMPTY<sp/><sp/><sp/>&quot;\xEF\x89\x84&quot;<sp/></highlight><highlight class="comment">/*62020,<sp/>0xF244*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_USB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_USB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x8a\x87&quot;<sp/></highlight><highlight class="comment">/*62087,<sp/>0xF287*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BLUETOOTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BLUETOOTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x8a\x93&quot;<sp/></highlight><highlight class="comment">/*62099,<sp/>0xF293*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_TRASH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_TRASH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x8B\xAD&quot;<sp/></highlight><highlight class="comment">/*62189,<sp/>0xF2ED*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_EDIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_EDIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x8C\x84&quot;<sp/></highlight><highlight class="comment">/*62212,<sp/>0xF304*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_BACKSPACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_BACKSPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x95\x9A&quot;<sp/></highlight><highlight class="comment">/*62810,<sp/>0xF55A*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_SD_CARD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_SD_CARD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\x9F\x82&quot;<sp/></highlight><highlight class="comment">/*63426,<sp/>0xF7C2*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_NEW_LINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SYMBOL_NEW_LINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\xA2\xA2&quot;<sp/></highlight><highlight class="comment">/*63650,<sp/>0xF8A2*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>LV_SYMBOL_DUMMY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="preprocessor">#define<sp/>LV_SYMBOL_DUMMY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;\xEF\xA3\xBF&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"><sp/>*<sp/>The<sp/>following<sp/>list<sp/>is<sp/>generated<sp/>using</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/>*<sp/>cat<sp/>src/font/lv_symbol_def.h<sp/>|<sp/>sed<sp/>-E<sp/>-n<sp/>&apos;s/^#define\s+LV_(SYMBOL_\w+).*&quot;.*$/<sp/><sp/><sp/><sp/>_LV_STR_\1,/p&apos;</highlight></codeline>
+<codeline lineno="282"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BULLET,</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_AUDIO,</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_VIDEO,</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_LIST,</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_OK,</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_CLOSE,</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_POWER,</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_SETTINGS,</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_HOME,</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_DOWNLOAD,</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_DRIVE,</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_REFRESH,</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_MUTE,</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_VOLUME_MID,</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_VOLUME_MAX,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_IMAGE,</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_TINT,</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_PREV,</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_PLAY,</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_PAUSE,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_STOP,</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_NEXT,</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_EJECT,</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_LEFT,</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_RIGHT,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_PLUS,</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_MINUS,</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_EYE_OPEN,</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_EYE_CLOSE,</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_WARNING,</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_SHUFFLE,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_UP,</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_DOWN,</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_LOOP,</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_DIRECTORY,</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_UPLOAD,</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_CALL,</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_CUT,</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_COPY,</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_SAVE,</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BARS,</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_ENVELOPE,</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_CHARGE,</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_PASTE,</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BELL,</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_KEYBOARD,</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_GPS,</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_FILE,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_WIFI,</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BATTERY_FULL,</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BATTERY_3,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BATTERY_2,</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BATTERY_1,</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BATTERY_EMPTY,</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_USB,</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BLUETOOTH,</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_TRASH,</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_EDIT,</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_BACKSPACE,</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_SD_CARD,</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_NEW_LINE,</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STR_SYMBOL_DUMMY,</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_SYMBOL_DEF_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_symbol_def.h"/>
+  </compounddef>
+</doxygen>

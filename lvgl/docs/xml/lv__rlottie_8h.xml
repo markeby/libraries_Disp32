@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__rlottie_8h" kind="file" language="C++">
+    <compoundname>lv_rlottie.h</compoundname>
+    <innerclass refid="structlv__rlottie__t" prot="public">lv_rlottie_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__rlottie_8h_1a59d936e0348921b08df86fe86251298b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_rlottie_ctrl_t</name>
+        <enumvalue id="lv__rlottie_8h_1a59d936e0348921b08df86fe86251298baaa45b19035740250cb199039a2935552" prot="public">
+          <name>LV_RLOTTIE_CTRL_FORWARD</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__rlottie_8h_1a59d936e0348921b08df86fe86251298baa897e13f80a316bb7a139a1f3fed2296" prot="public">
+          <name>LV_RLOTTIE_CTRL_BACKWARD</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__rlottie_8h_1a59d936e0348921b08df86fe86251298babb9473d50eca00382771aee86f2eb526" prot="public">
+          <name>LV_RLOTTIE_CTRL_PAUSE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__rlottie_8h_1a59d936e0348921b08df86fe86251298bafbe34532b6b85155302229c2173b5ac5" prot="public">
+          <name>LV_RLOTTIE_CTRL_PLAY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__rlottie_8h_1a59d936e0348921b08df86fe86251298ba2da7f70a9f377a134f472cfbbf24f949" prot="public">
+          <name>LV_RLOTTIE_CTRL_LOOP</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" line="26" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" bodystart="26" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__rlottie_8h_1a899cb0cc50c483bb52a68f1aea91f6e4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_rlottie_class</definition>
+        <argsstring></argsstring>
+        <name>lv_rlottie_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" line="51" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" declline="51" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__rlottie_8h_1a6f38484770dab8ae498282cc84ee7018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_rlottie_create_from_file</definition>
+        <argsstring>(lv_obj_t *parent, lv_coord_t width, lv_coord_t height, const char *path)</argsstring>
+        <name>lv_rlottie_create_from_file</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" line="57" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" declline="57" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__rlottie_8h_1aded405f94c89f9ef0a8d5577e9662fab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_rlottie_create_from_raw</definition>
+        <argsstring>(lv_obj_t *parent, lv_coord_t width, lv_coord_t height, const char *rlottie_desc)</argsstring>
+        <name>lv_rlottie_create_from_raw</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rlottie_desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" line="59" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" declline="59" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__rlottie_8h_1a2b30dd091cf3ec11698cc5c7c2962df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_rlottie_set_play_mode</definition>
+        <argsstring>(lv_obj_t *rlottie, const lv_rlottie_ctrl_t ctrl)</argsstring>
+        <name>lv_rlottie_set_play_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>rlottie</declname>
+        </param>
+        <param>
+          <type>const lv_rlottie_ctrl_t</type>
+          <declname>ctrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" line="62" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__rlottie_8h_1a0bee636fb7987f869ae38d6d75f01171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_rlottie_set_current_frame</definition>
+        <argsstring>(lv_obj_t *rlottie, const size_t goto_frame)</argsstring>
+        <name>lv_rlottie_set_current_frame</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>rlottie</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>goto_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" line="63" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_RLOTTIE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_RLOTTIE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lvgl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_RLOTTIE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_RLOTTIE_CTRL_FORWARD<sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_RLOTTIE_CTRL_BACKWARD<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_RLOTTIE_CTRL_PAUSE<sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_RLOTTIE_CTRL_PLAY<sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">/*<sp/>Yes,<sp/>play<sp/>=<sp/>0<sp/>is<sp/>the<sp/>default<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_RLOTTIE_CTRL_LOOP<sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/>lv_rlottie_ctrl_t;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Lottie_Animation_S;</highlight></codeline>
+<codeline lineno="36" refid="structlv__rlottie__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__img__t" kindref="compound">lv_img_t</ref><sp/>img_ext;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Lottie_Animation_S<sp/>*<sp/>animation;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__timer__t" kindref="compound">lv_timer_t</ref><sp/>*<sp/>task;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__img__dsc__t" kindref="compound">lv_img_dsc_t</ref><sp/>imgdsc;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>total_frames;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>current_frame;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>framerate;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>*<sp/>allocated_buf;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>allocated_buffer_size;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>scanline_width;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_rlottie_ctrl_t<sp/>play_ctrl;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>dest_frame;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><ref refid="structlv__rlottie__t" kindref="compound">lv_rlottie_t</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_rlottie_class;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>lv_rlottie_create_from_file(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent,<sp/>lv_coord_t<sp/>width,<sp/>lv_coord_t<sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>path);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>lv_rlottie_create_from_raw(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent,<sp/>lv_coord_t<sp/>width,<sp/>lv_coord_t<sp/>height,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>rlottie_desc);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_rlottie_set_play_mode(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>rlottie,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_rlottie_ctrl_t<sp/>ctrl);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_rlottie_set_current_frame(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>rlottie,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>goto_frame);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_RLOTTIE*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_RLOTTIE_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/rlottie/lv_rlottie.h"/>
+  </compounddef>
+</doxygen>

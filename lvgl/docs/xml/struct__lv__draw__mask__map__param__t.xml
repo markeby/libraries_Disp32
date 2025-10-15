@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__draw__mask__map__param__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_draw_mask_map_param_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__draw__mask__map__param__t_1a7f66c8a3da4a7b20744bf32753e82787" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__draw__mask__common__dsc__t" kindref="compound">_lv_draw_mask_common_dsc_t</ref></type>
+        <definition>_lv_draw_mask_common_dsc_t _lv_draw_mask_map_param_t::dsc</definition>
+        <argsstring></argsstring>
+        <name>dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="195" column="32" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__map__param__t_1afbdb3d7cc940685b61d31714edec9b1a" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref></type>
+        <definition>lv_area_t _lv_draw_mask_map_param_t::coords</definition>
+        <argsstring></argsstring>
+        <name>coords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="198" column="19" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__map__param__t_1a7b26095612ce13db58eedaf08e29cdfb" prot="public" static="no" mutable="no">
+        <type>const lv_opa_t *</type>
+        <definition>const lv_opa_t* _lv_draw_mask_map_param_t::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="199" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__map__param__t_1a6df146eb19d27df77102a5fa630a7564" prot="public" static="no" mutable="no">
+        <type>struct _lv_draw_mask_map_param_t::@14</type>
+        <definition>struct _lv_draw_mask_map_param_t::@14 _lv_draw_mask_map_param_t::cfg</definition>
+        <argsstring></argsstring>
+        <name>cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="200" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="1">
+        <label>_lv_draw_mask_map_param_t</label>
+        <link refid="struct__lv__draw__mask__map__param__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dsc</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_draw_mask_common_dsc_t</label>
+        <link refid="struct__lv__draw__mask__common__dsc__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="193" column="40" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="193" bodyend="201"/>
+    <listofallmembers>
+      <member refid="struct__lv__draw__mask__map__param__t_1a6df146eb19d27df77102a5fa630a7564" prot="public" virt="non-virtual"><scope>_lv_draw_mask_map_param_t</scope><name>cfg</name></member>
+      <member refid="struct__lv__draw__mask__map__param__t_1afbdb3d7cc940685b61d31714edec9b1a" prot="public" virt="non-virtual"><scope>_lv_draw_mask_map_param_t</scope><name>coords</name></member>
+      <member refid="struct__lv__draw__mask__map__param__t_1a7f66c8a3da4a7b20744bf32753e82787" prot="public" virt="non-virtual"><scope>_lv_draw_mask_map_param_t</scope><name>dsc</name></member>
+      <member refid="struct__lv__draw__mask__map__param__t_1a7b26095612ce13db58eedaf08e29cdfb" prot="public" virt="non-virtual"><scope>_lv_draw_mask_map_param_t</scope><name>map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

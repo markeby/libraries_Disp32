@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__templ__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_templ_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__templ__t_1a85bae70962c88d98dc8b268f6372036d" prot="public" static="no" mutable="no">
+        <type>lv_ANCESTOR_t</type>
+        <definition>lv_ANCESTOR_t lv_templ_t::ancestor</definition>
+        <argsstring></argsstring>
+        <name>ancestor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h" line="44" column="19" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h" line="37" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_objx_templ.h" bodystart="37" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structlv__templ__t_1a85bae70962c88d98dc8b268f6372036d" prot="public" virt="non-virtual"><scope>lv_templ_t</scope><name>ancestor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

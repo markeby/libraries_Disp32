@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_5ad1b259f98be96c1509149f4b65f4f9" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/list</compoundname>
+    <innerfile refid="lv__list_8h">lv_list.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/list/"/>
+  </compounddef>
+</doxygen>

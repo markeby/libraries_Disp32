@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="This_01is_01a_01#ff0000_01red#_01word-example" kind="example">
+    <compoundname>This is a #ff0000 red# word</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Enable the recoloring by in-line commands <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a label object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: enable recoloring, false: disable <programlisting filename="This"></programlisting> is a #ff0000 red# word </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

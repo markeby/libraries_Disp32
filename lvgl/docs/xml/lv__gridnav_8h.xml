@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__gridnav_8h" kind="file" language="C++">
+    <compoundname>lv_gridnav.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_gridnav_ctrl_t</name>
+        <enumvalue id="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2a7efb723f474f968aa227921c9000b739" prot="public">
+          <name>LV_GRIDNAV_CTRL_NONE</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2ac0ea35e0e3ee734a3719d45b84c0eaa0" prot="public">
+          <name>LV_GRIDNAV_CTRL_ROLLOVER</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If there is no next/previous object in a direction, the focus goes to the object in the next/previous row (on left/right keys) or first/last row (on up/down keys) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2af5f64c076de8241750a708561fdaac02" prot="public">
+          <name>LV_GRIDNAV_CTRL_SCROLL_FIRST</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If an arrow is pressed and the focused object can be scrolled in that direction then it will be scrolled instead of going to the next/previous object. If there is no more room for scrolling the next/previous object will be focused normally </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" line="67" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" bodystart="67" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__gridnav_8h_1ab1e9e3d06e6eaa92a708e9ecafcb6909" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int _keep_pedantic_happy</definition>
+        <argsstring></argsstring>
+        <name>_keep_pedantic_happy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" line="20" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__gridnav_8h_1ae101687ff7ddf68f01d22a53482d1c0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_gridnav_add</definition>
+        <argsstring>(lv_obj_t *obj, lv_gridnav_ctrl_t ctrl)</argsstring>
+        <name>lv_gridnav_add</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2" kindref="member">lv_gridnav_ctrl_t</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add grid navigation feature to an object. It expects the children to be arranged into a grid-like layout. Although it&apos;s not required to have pixel perfect alignment. This feature makes possible to use keys to navigate among the children and focus them. The keys other than arrows and press/release related events are forwarded to the focused child. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object on which navigation should be applied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>control flags from <computeroutput>lv_gridnav_ctrl_t</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" line="98" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" declline="98" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gridnav_8h_1a9128ece7d3a19dc1cec3eb30526036ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_gridnav_remove</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_gridnav_remove</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove the grid navigation support from an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" line="104" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gridnav_8h_1a32630f3eae2541495719ad657c85b31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_gridnav_set_focused</definition>
+        <argsstring>(lv_obj_t *cont, lv_obj_t *to_focus, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_gridnav_set_focused</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>cont</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>to_focus</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Manually focus an object on gridnav container <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cont</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a gridnav container </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_focus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to focus </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON/OFF </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" line="112" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h" declline="112" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*This<sp/>typedef<sp/>exists<sp/>purely<sp/>to<sp/>keep<sp/>-Wpedantic<sp/>happy<sp/>when<sp/>the<sp/>file<sp/>is<sp/>empty.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*It<sp/>can<sp/>be<sp/>removed.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_keep_pedantic_happy;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>STATIC<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/>STATIC<sp/>VARIABLES</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GLOBAL<sp/>FUNCTIONS</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/><sp/>STATIC<sp/>FUNCTIONS</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>**********************/</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor">#ifndef<sp/>LV_GRIDFOCUS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_GRIDFOCUS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../core/lv_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_GRIDNAV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_GRIDNAV_CTRL_NONE<sp/>=<sp/>0x0,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2ac0ea35e0e3ee734a3719d45b84c0eaa0" kindref="member">LV_GRIDNAV_CTRL_ROLLOVER</ref><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2ac0ea35e0e3ee734a3719d45b84c0eaa0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2af5f64c076de8241750a708561fdaac02" kindref="member">LV_GRIDNAV_CTRL_SCROLL_FIRST</ref><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<sp/><ref refid="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2" kindref="member">lv_gridnav_ctrl_t</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="87" refid="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2af5f64c076de8241750a708561fdaac02" refkind="member"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__gridnav_8h_1ae101687ff7ddf68f01d22a53482d1c0d" kindref="member">lv_gridnav_add</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__gridnav_8h_1ac958c6808767b76539d82358cfa5e4b2" kindref="member">lv_gridnav_ctrl_t</ref><sp/>ctrl);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__gridnav_8h_1a9128ece7d3a19dc1cec3eb30526036ae" kindref="member">lv_gridnav_remove</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__gridnav_8h_1a32630f3eae2541495719ad657c85b31c" kindref="member">lv_gridnav_set_focused</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>cont,<sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>to_focus,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_GRIDNAV*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_GRIDFOCUS_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/gridnav/lv_gridnav.h"/>
+  </compounddef>
+</doxygen>

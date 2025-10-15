@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__draw__mask__angle__param__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_draw_mask_angle_param_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__draw__mask__angle__param__t_1ac42734aa3cf676c0d9d3d22fc7094436" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__draw__mask__common__dsc__t" kindref="compound">_lv_draw_mask_common_dsc_t</ref></type>
+        <definition>_lv_draw_mask_common_dsc_t lv_draw_mask_angle_param_t::dsc</definition>
+        <argsstring></argsstring>
+        <name>dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="140" column="32" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__mask__angle__param__t_1ae872c8002ec7032c7e9c0345da19618d" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t lv_draw_mask_angle_param_t::vertex_p</definition>
+        <argsstring></argsstring>
+        <name>vertex_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="143" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__mask__angle__param__t_1a7642e10e39556ead2826102a75cf182b" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_mask_angle_param_t::start_angle</definition>
+        <argsstring></argsstring>
+        <name>start_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="144" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__mask__angle__param__t_1af4f1bcd1afbb7dafcf7b6e314b089bf1" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_mask_angle_param_t::end_angle</definition>
+        <argsstring></argsstring>
+        <name>end_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="145" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__mask__angle__param__t_1a34e7a657bdf4e721b0f6c3d8b74a2100" prot="public" static="no" mutable="no">
+        <type>struct lv_draw_mask_angle_param_t::@11</type>
+        <definition>struct lv_draw_mask_angle_param_t::@11 lv_draw_mask_angle_param_t::cfg</definition>
+        <argsstring></argsstring>
+        <name>cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="146" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__mask__angle__param__t_1a5d4f18248557a15cf80c072ede3e71b5" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__draw__mask__line__param__t" kindref="compound">lv_draw_mask_line_param_t</ref></type>
+        <definition>lv_draw_mask_line_param_t lv_draw_mask_angle_param_t::start_line</definition>
+        <argsstring></argsstring>
+        <name>start_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="148" column="31" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__mask__angle__param__t_1a62486a0959ba7d2eb3fa91f08a73218a" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__draw__mask__line__param__t" kindref="compound">lv_draw_mask_line_param_t</ref></type>
+        <definition>lv_draw_mask_line_param_t lv_draw_mask_angle_param_t::end_line</definition>
+        <argsstring></argsstring>
+        <name>end_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="149" column="31" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__mask__angle__param__t_1a0047abc1cacbf5680708085b60e6e826" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_draw_mask_angle_param_t::delta_deg</definition>
+        <argsstring></argsstring>
+        <name>delta_deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="150" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="1">
+        <label>lv_draw_mask_angle_param_t</label>
+        <link refid="structlv__draw__mask__angle__param__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>end_line</edgelabel>
+          <edgelabel>start_line</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dsc</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>vertex_p</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lv_draw_mask_line_param_t</label>
+        <link refid="structlv__draw__mask__line__param__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dsc</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>p1</edgelabel>
+          <edgelabel>p2</edgelabel>
+          <edgelabel>origo</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_draw_mask_common_dsc_t</label>
+        <link refid="struct__lv__draw__mask__common__dsc__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="138" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="138" bodyend="151"/>
+    <listofallmembers>
+      <member refid="structlv__draw__mask__angle__param__t_1a34e7a657bdf4e721b0f6c3d8b74a2100" prot="public" virt="non-virtual"><scope>lv_draw_mask_angle_param_t</scope><name>cfg</name></member>
+      <member refid="structlv__draw__mask__angle__param__t_1a0047abc1cacbf5680708085b60e6e826" prot="public" virt="non-virtual"><scope>lv_draw_mask_angle_param_t</scope><name>delta_deg</name></member>
+      <member refid="structlv__draw__mask__angle__param__t_1ac42734aa3cf676c0d9d3d22fc7094436" prot="public" virt="non-virtual"><scope>lv_draw_mask_angle_param_t</scope><name>dsc</name></member>
+      <member refid="structlv__draw__mask__angle__param__t_1af4f1bcd1afbb7dafcf7b6e314b089bf1" prot="public" virt="non-virtual"><scope>lv_draw_mask_angle_param_t</scope><name>end_angle</name></member>
+      <member refid="structlv__draw__mask__angle__param__t_1a62486a0959ba7d2eb3fa91f08a73218a" prot="public" virt="non-virtual"><scope>lv_draw_mask_angle_param_t</scope><name>end_line</name></member>
+      <member refid="structlv__draw__mask__angle__param__t_1a7642e10e39556ead2826102a75cf182b" prot="public" virt="non-virtual"><scope>lv_draw_mask_angle_param_t</scope><name>start_angle</name></member>
+      <member refid="structlv__draw__mask__angle__param__t_1a5d4f18248557a15cf80c072ede3e71b5" prot="public" virt="non-virtual"><scope>lv_draw_mask_angle_param_t</scope><name>start_line</name></member>
+      <member refid="structlv__draw__mask__angle__param__t_1ae872c8002ec7032c7e9c0345da19618d" prot="public" virt="non-virtual"><scope>lv_draw_mask_angle_param_t</scope><name>vertex_p</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

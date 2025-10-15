@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structqrcodegen__Segment" kind="struct" language="C++" prot="public">
+    <compoundname>qrcodegen_Segment</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structqrcodegen__Segment_1aec23b42bfdb2a0468bfffca96343b513" prot="public" static="no" mutable="no">
+        <type>enum qrcodegen_Mode</type>
+        <definition>enum qrcodegen_Mode qrcodegen_Segment::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="315" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqrcodegen__Segment_1a36a92341f466a3a13acc56449943634c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int qrcodegen_Segment::numChars</definition>
+        <argsstring></argsstring>
+        <name>numChars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="116" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqrcodegen__Segment_1a0e9cd1915812ada8e06cfd49be30f8b9" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* qrcodegen_Segment::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="120" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqrcodegen__Segment_1a3f9c0e922dbb1a8aa5f8fea7fbe90ad3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int qrcodegen_Segment::bitLength</definition>
+        <argsstring></argsstring>
+        <name>bitLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="125" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="109" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" bodystart="109" bodyend="126"/>
+    <listofallmembers>
+      <member refid="structqrcodegen__Segment_1a3f9c0e922dbb1a8aa5f8fea7fbe90ad3" prot="public" virt="non-virtual"><scope>qrcodegen_Segment</scope><name>bitLength</name></member>
+      <member refid="structqrcodegen__Segment_1a0e9cd1915812ada8e06cfd49be30f8b9" prot="public" virt="non-virtual"><scope>qrcodegen_Segment</scope><name>data</name></member>
+      <member refid="structqrcodegen__Segment_1aec23b42bfdb2a0468bfffca96343b513" prot="public" virt="non-virtual"><scope>qrcodegen_Segment</scope><name>mode</name></member>
+      <member refid="structqrcodegen__Segment_1a36a92341f466a3a13acc56449943634c" prot="public" virt="non-virtual"><scope>qrcodegen_Segment</scope><name>numChars</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__monkey__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_monkey_config_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__monkey__config__t_1ad5e1ba8fd4efb76f89f0149851148a48" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5b" kindref="member">lv_indev_type_t</ref></type>
+        <definition>lv_indev_type_t lv_monkey_config_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; Input device type Monkey execution period </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="31" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__monkey__config__t_1ae6c7f9e9e8acb16fd8fea8b19a98aa54" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_monkey_config_t::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="35" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__monkey__config__t_1ac1597fad4edd47685b7abc056c0f7bb8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_monkey_config_t::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="36" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__monkey__config__t_1aacbb85157c965b100b556e3ebbf7efe1" prot="public" static="no" mutable="no">
+        <type>struct lv_monkey_config_t::@27</type>
+        <definition>struct lv_monkey_config_t::@27 lv_monkey_config_t::period_range</definition>
+        <argsstring></argsstring>
+        <name>period_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The range of input value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="39" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__monkey__config__t_1af1a1e44fd80362c765db448d1f7f95d2" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_monkey_config_t::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="41" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__monkey__config__t_1a48c015d0a5c45ad72fd367b5532723db" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_monkey_config_t::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="42" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__monkey__config__t_1a195938a63ed7465aec646f25e49c9977" prot="public" static="no" mutable="no">
+        <type>struct lv_monkey_config_t::@28</type>
+        <definition>struct lv_monkey_config_t::@28 lv_monkey_config_t::input_range</definition>
+        <argsstring></argsstring>
+        <name>input_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="43" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="29" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" bodystart="29" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structlv__monkey__config__t_1a195938a63ed7465aec646f25e49c9977" prot="public" virt="non-virtual"><scope>lv_monkey_config_t</scope><name>input_range</name></member>
+      <member refid="structlv__monkey__config__t_1ac1597fad4edd47685b7abc056c0f7bb8" prot="public" virt="non-virtual"><scope>lv_monkey_config_t</scope><name>max</name></member>
+      <member refid="structlv__monkey__config__t_1a48c015d0a5c45ad72fd367b5532723db" prot="public" virt="non-virtual"><scope>lv_monkey_config_t</scope><name>max</name></member>
+      <member refid="structlv__monkey__config__t_1ae6c7f9e9e8acb16fd8fea8b19a98aa54" prot="public" virt="non-virtual"><scope>lv_monkey_config_t</scope><name>min</name></member>
+      <member refid="structlv__monkey__config__t_1af1a1e44fd80362c765db448d1f7f95d2" prot="public" virt="non-virtual"><scope>lv_monkey_config_t</scope><name>min</name></member>
+      <member refid="structlv__monkey__config__t_1aacbb85157c965b100b556e3ebbf7efe1" prot="public" virt="non-virtual"><scope>lv_monkey_config_t</scope><name>period_range</name></member>
+      <member refid="structlv__monkey__config__t_1ad5e1ba8fd4efb76f89f0149851148a48" prot="public" virt="non-virtual"><scope>lv_monkey_config_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

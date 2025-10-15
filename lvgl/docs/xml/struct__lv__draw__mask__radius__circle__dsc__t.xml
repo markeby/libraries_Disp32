@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__draw__mask__radius__circle__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_draw_mask_radius_circle_dsc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__draw__mask__radius__circle__dsc__t_1a12c2c851ff0be97ef248ab96f99aaf51" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* _lv_draw_mask_radius_circle_dsc_t::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="154" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__radius__circle__dsc__t_1a2c0a50b77d48eae37bd80431f7eabc96" prot="public" static="no" mutable="no">
+        <type>lv_opa_t *</type>
+        <definition>lv_opa_t* _lv_draw_mask_radius_circle_dsc_t::cir_opa</definition>
+        <argsstring></argsstring>
+        <name>cir_opa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="155" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__radius__circle__dsc__t_1a9a794111a1597ac8b640b1f9016a45e9" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* _lv_draw_mask_radius_circle_dsc_t::x_start_on_y</definition>
+        <argsstring></argsstring>
+        <name>x_start_on_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="156" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__radius__circle__dsc__t_1a50a9b267eba56f0da1ccee56a7e35bc6" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* _lv_draw_mask_radius_circle_dsc_t::opa_start_on_y</definition>
+        <argsstring></argsstring>
+        <name>opa_start_on_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="157" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__radius__circle__dsc__t_1a2b614b3081fddd27bad5db83a0eea309" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_draw_mask_radius_circle_dsc_t::life</definition>
+        <argsstring></argsstring>
+        <name>life</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="158" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__radius__circle__dsc__t_1a6e70986419f38f27f4417deb4a827139" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_draw_mask_radius_circle_dsc_t::used_cnt</definition>
+        <argsstring></argsstring>
+        <name>used_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="159" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__mask__radius__circle__dsc__t_1a0765fa73d49e2c69d37ba1f757d9e7fb" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_draw_mask_radius_circle_dsc_t::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="160" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" line="153" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_mask.h" bodystart="153" bodyend="161"/>
+    <listofallmembers>
+      <member refid="struct__lv__draw__mask__radius__circle__dsc__t_1a12c2c851ff0be97ef248ab96f99aaf51" prot="public" virt="non-virtual"><scope>_lv_draw_mask_radius_circle_dsc_t</scope><name>buf</name></member>
+      <member refid="struct__lv__draw__mask__radius__circle__dsc__t_1a2c0a50b77d48eae37bd80431f7eabc96" prot="public" virt="non-virtual"><scope>_lv_draw_mask_radius_circle_dsc_t</scope><name>cir_opa</name></member>
+      <member refid="struct__lv__draw__mask__radius__circle__dsc__t_1a2b614b3081fddd27bad5db83a0eea309" prot="public" virt="non-virtual"><scope>_lv_draw_mask_radius_circle_dsc_t</scope><name>life</name></member>
+      <member refid="struct__lv__draw__mask__radius__circle__dsc__t_1a50a9b267eba56f0da1ccee56a7e35bc6" prot="public" virt="non-virtual"><scope>_lv_draw_mask_radius_circle_dsc_t</scope><name>opa_start_on_y</name></member>
+      <member refid="struct__lv__draw__mask__radius__circle__dsc__t_1a0765fa73d49e2c69d37ba1f757d9e7fb" prot="public" virt="non-virtual"><scope>_lv_draw_mask_radius_circle_dsc_t</scope><name>radius</name></member>
+      <member refid="struct__lv__draw__mask__radius__circle__dsc__t_1a6e70986419f38f27f4417deb4a827139" prot="public" virt="non-virtual"><scope>_lv_draw_mask_radius_circle_dsc_t</scope><name>used_cnt</name></member>
+      <member refid="struct__lv__draw__mask__radius__circle__dsc__t_1a9a794111a1597ac8b640b1f9016a45e9" prot="public" virt="non-virtual"><scope>_lv_draw_mask_radius_circle_dsc_t</scope><name>x_start_on_y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

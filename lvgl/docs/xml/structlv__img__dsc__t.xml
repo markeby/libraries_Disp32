@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__img__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_img_dsc_t</compoundname>
+    <includes refid="lv__img__buf_8h" local="no">lv_img_buf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__img__dsc__t_1a552a5487bb4457d4b565dfa00381a846" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__img__header__t" kindref="compound">lv_img_header_t</ref></type>
+        <definition>lv_img_header_t lv_img_dsc_t::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A header describing the basics of the image </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_buf.h" line="141" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_buf.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__img__dsc__t_1aef7de962a5e45e270151bec6bd4cdc80" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_img_dsc_t::data_size</definition>
+        <argsstring></argsstring>
+        <name>data_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the image in bytes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_buf.h" line="142" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_buf.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__img__dsc__t_1a09900b90ae9c9888e341616b611df3a0" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* lv_img_dsc_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the data of the image </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_buf.h" line="143" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_buf.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Image header it is compatible with the result from image converter utility </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>lv_img_dsc_t</label>
+        <link refid="structlv__img__dsc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lv_img_header_t</label>
+        <link refid="structlv__img__header__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_buf.h" line="140" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_buf.h" bodystart="140" bodyend="144"/>
+    <listofallmembers>
+      <member refid="structlv__img__dsc__t_1a09900b90ae9c9888e341616b611df3a0" prot="public" virt="non-virtual"><scope>lv_img_dsc_t</scope><name>data</name></member>
+      <member refid="structlv__img__dsc__t_1aef7de962a5e45e270151bec6bd4cdc80" prot="public" virt="non-virtual"><scope>lv_img_dsc_t</scope><name>data_size</name></member>
+      <member refid="structlv__img__dsc__t_1a552a5487bb4457d4b565dfa00381a846" prot="public" virt="non-virtual"><scope>lv_img_dsc_t</scope><name>header</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

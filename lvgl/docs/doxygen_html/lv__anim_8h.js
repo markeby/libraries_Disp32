@@ -1,0 +1,36 @@
+var lv__anim_8h =
+[
+    [ "_lv_anim_t", "struct__lv__anim__t.html", "struct__lv__anim__t" ],
+    [ "lv_anim_custom_exec_cb_t", "lv__anim_8h.html#a28ac56d6c3508a2d808501907531daec", null ],
+    [ "lv_anim_deleted_cb_t", "lv__anim_8h.html#ab8ece336df62a5c3fbdd8af99cb9a34f", null ],
+    [ "lv_anim_exec_xcb_t", "lv__anim_8h.html#a659b620cc7dd6a848a713b48af9a70aa", null ],
+    [ "lv_anim_get_value_cb_t", "lv__anim_8h.html#aaeec2eb1031f23a26e426036394fc99b", null ],
+    [ "lv_anim_path_cb_t", "lv__anim_8h.html#a32c487fbcd8daa37b095ddc4a34630ac", null ],
+    [ "lv_anim_ready_cb_t", "lv__anim_8h.html#aaa01402e3123828f29f0f6f19a590d8e", null ],
+    [ "lv_anim_start_cb_t", "lv__anim_8h.html#ac7164c150f9caaf978cbc97e5a3fe8d3", null ],
+    [ "lv_anim_t", "lv__anim_8h.html#a94df93c022dc57ee917b4757e50ebe22", null ],
+    [ "lv_anim_enable_t", "lv__anim_8h.html#a1ba9d18fd18b8c83da1f058155b43a71", [
+      [ "LV_ANIM_OFF", "lv__anim_8h.html#a1ba9d18fd18b8c83da1f058155b43a71a64690995c13aa084264daf0244796d42", null ],
+      [ "LV_ANIM_ON", "lv__anim_8h.html#a1ba9d18fd18b8c83da1f058155b43a71ae078e0865cfff1b8c196d4c526eb5a5e", null ]
+    ] ],
+    [ "_lv_anim_core_init", "lv__anim_8h.html#ae8276fe9608fab75e9bdc989c837d7d3", null ],
+    [ "lv_anim_count_running", "lv__anim_8h.html#a4bb557452aa3ce128eb106e2f8208bc8", null ],
+    [ "lv_anim_del", "lv__anim_8h.html#a9cb8109a832f6aac58e875fb2baa3755", null ],
+    [ "lv_anim_del_all", "lv__anim_8h.html#a4d5c5f7461ab5982a3f673531139dcc7", null ],
+    [ "lv_anim_get", "lv__anim_8h.html#a0712f2b4b92f862b9e302b0b9b26611e", null ],
+    [ "lv_anim_get_playtime", "lv__anim_8h.html#ac79c00800c817faebc7b9ace49cfdb90", null ],
+    [ "lv_anim_get_timer", "lv__anim_8h.html#a020681da160e43a3cddfc38bd908f8ac", null ],
+    [ "lv_anim_init", "lv__anim_8h.html#ab47f0c3139bbd759c1ccae268fc297e6", null ],
+    [ "lv_anim_path_bounce", "lv__anim_8h.html#abba54a9c3fdfefb0edab9be3ca28596e", null ],
+    [ "lv_anim_path_ease_in", "lv__anim_8h.html#a95b403ca1374087687179c7967600198", null ],
+    [ "lv_anim_path_ease_in_out", "lv__anim_8h.html#aa276989eca9f5bd11b2dc16d7e29c6d7", null ],
+    [ "lv_anim_path_ease_out", "lv__anim_8h.html#a6a96dd88618e4e7912fb1096036c6458", null ],
+    [ "lv_anim_path_linear", "lv__anim_8h.html#aa3e1114274e9085b8ba535420c873852", null ],
+    [ "lv_anim_path_overshoot", "lv__anim_8h.html#ac110a8857df9884ed29e79cf57389cca", null ],
+    [ "lv_anim_path_step", "lv__anim_8h.html#a448fcaf1475935df3dfc38acb245497d", null ],
+    [ "lv_anim_refr_now", "lv__anim_8h.html#a25ae5912901decafee4d960ec3584d17", null ],
+    [ "lv_anim_speed_to_time", "lv__anim_8h.html#ab51f8f472c2bffe1f77080a1e40fc939", null ],
+    [ "lv_anim_start", "lv__anim_8h.html#ad06de0b3c7bd796183793174ecb1e005", null ],
+    [ "LV_EXPORT_CONST_INT", "lv__anim_8h.html#a0a4d4fb7b1ff60cec2407e313d23bfc0", null ],
+    [ "LV_EXPORT_CONST_INT", "lv__anim_8h.html#a9fe0ffe8dbd2122f7f347149ffef55ce", null ]
+];

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structLodePNGDecoderSettings" kind="struct" language="C++" prot="public">
+    <compoundname>LodePNGDecoderSettings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1a9ae8fef9880bef97a3e932f8ea942ed8" prot="public" static="no" mutable="no">
+        <type><ref refid="structLodePNGDecompressSettings" kindref="compound">LodePNGDecompressSettings</ref></type>
+        <definition>LodePNGDecompressSettings LodePNGDecoderSettings::zlibsettings</definition>
+        <argsstring></argsstring>
+        <name>zlibsettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="644" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1a6390c403d2a5718242337bbbaf15131d" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGDecoderSettings::ignore_crc</definition>
+        <argsstring></argsstring>
+        <name>ignore_crc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="647" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1a51c3ce791f1b1d325d5e1f7e18caeeea" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGDecoderSettings::ignore_critical</definition>
+        <argsstring></argsstring>
+        <name>ignore_critical</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="648" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1aa8f3907b3dcaf09892a752806be2fc59" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGDecoderSettings::ignore_end</definition>
+        <argsstring></argsstring>
+        <name>ignore_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="649" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1af26f2b29cd338ce4476bee9571a0818a" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGDecoderSettings::color_convert</definition>
+        <argsstring></argsstring>
+        <name>color_convert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="655" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1aa1212905c3f73d9fffef2c04a220d951" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGDecoderSettings::read_text_chunks</definition>
+        <argsstring></argsstring>
+        <name>read_text_chunks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="658" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1a8775e4fc539dc457916720f52b442f27" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGDecoderSettings::remember_unknown_chunks</definition>
+        <argsstring></argsstring>
+        <name>remember_unknown_chunks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="661" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1a7f2842321dd4144180cb79ff4b5eaf5e" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t LodePNGDecoderSettings::max_text_size</definition>
+        <argsstring></argsstring>
+        <name>max_text_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="666" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecoderSettings_1a3a945371fad61a0a8becfa5ab1c9d71e" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t LodePNGDecoderSettings::max_icc_size</definition>
+        <argsstring></argsstring>
+        <name>max_icc_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="671" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>LodePNGDecoderSettings</label>
+        <link refid="structLodePNGDecoderSettings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>zlibsettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LodePNGDecompressSettings</label>
+        <link refid="structLodePNGDecompressSettings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="643" column="37" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="643" bodyend="673"/>
+    <listofallmembers>
+      <member refid="structLodePNGDecoderSettings_1af26f2b29cd338ce4476bee9571a0818a" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>color_convert</name></member>
+      <member refid="structLodePNGDecoderSettings_1a6390c403d2a5718242337bbbaf15131d" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>ignore_crc</name></member>
+      <member refid="structLodePNGDecoderSettings_1a51c3ce791f1b1d325d5e1f7e18caeeea" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>ignore_critical</name></member>
+      <member refid="structLodePNGDecoderSettings_1aa8f3907b3dcaf09892a752806be2fc59" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>ignore_end</name></member>
+      <member refid="structLodePNGDecoderSettings_1a3a945371fad61a0a8becfa5ab1c9d71e" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>max_icc_size</name></member>
+      <member refid="structLodePNGDecoderSettings_1a7f2842321dd4144180cb79ff4b5eaf5e" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>max_text_size</name></member>
+      <member refid="structLodePNGDecoderSettings_1aa1212905c3f73d9fffef2c04a220d951" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>read_text_chunks</name></member>
+      <member refid="structLodePNGDecoderSettings_1a8775e4fc539dc457916720f52b442f27" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>remember_unknown_chunks</name></member>
+      <member refid="structLodePNGDecoderSettings_1a9ae8fef9880bef97a3e932f8ea942ed8" prot="public" virt="non-virtual"><scope>LodePNGDecoderSettings</scope><name>zlibsettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

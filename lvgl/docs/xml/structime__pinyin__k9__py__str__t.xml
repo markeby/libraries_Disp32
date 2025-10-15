@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structime__pinyin__k9__py__str__t" kind="struct" language="C++" prot="public">
+    <compoundname>ime_pinyin_k9_py_str_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structime__pinyin__k9__py__str__t_1a26e01704a905e78963fe16944b02cf89" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ime_pinyin_k9_py_str_t::py_str[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>py_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="41" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="40" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="40" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structime__pinyin__k9__py__str__t_1a26e01704a905e78963fe16944b02cf89" prot="public" virt="non-virtual"><scope>ime_pinyin_k9_py_str_t</scope><name>py_str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

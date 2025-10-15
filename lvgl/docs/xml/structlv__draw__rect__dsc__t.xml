@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__draw__rect__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_draw_rect_dsc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a36ac72db31f96a94cdf528160562ede7" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_rect_dsc_t::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="35" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1abcbe5de935bae90ab9ebed214640150a" prot="public" static="no" mutable="no">
+        <type>lv_blend_mode_t</type>
+        <definition>lv_blend_mode_t lv_draw_rect_dsc_t::blend_mode</definition>
+        <argsstring></argsstring>
+        <name>blend_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="36" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a8211fe41507fda70839dde2c5df2710d" prot="public" static="no" mutable="no">
+        <type>lv_opa_t</type>
+        <definition>lv_opa_t lv_draw_rect_dsc_t::bg_opa</definition>
+        <argsstring></argsstring>
+        <name>bg_opa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="39" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1ab729b49b24e3e57974cdebfe86ee1778" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_draw_rect_dsc_t::bg_color</definition>
+        <argsstring></argsstring>
+        <name>bg_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>First element of a gradient is a color, so it maps well here </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="40" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1af1f1b88907ad151d4cf69a584e9886b7" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__grad__dsc__t" kindref="compound">lv_grad_dsc_t</ref></type>
+        <definition>lv_grad_dsc_t lv_draw_rect_dsc_t::bg_grad</definition>
+        <argsstring></argsstring>
+        <name>bg_grad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="41" column="19" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1aee275b32ad1fa734c08849c410662712" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_draw_rect_dsc_t::bg_img_src</definition>
+        <argsstring></argsstring>
+        <name>bg_img_src</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="44" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a28b4d21b9dcc315d534058f797a9ff10" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_draw_rect_dsc_t::bg_img_symbol_font</definition>
+        <argsstring></argsstring>
+        <name>bg_img_symbol_font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="45" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1ace8f4d8085a01444607001a7465a9845" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_draw_rect_dsc_t::bg_img_recolor</definition>
+        <argsstring></argsstring>
+        <name>bg_img_recolor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="46" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a5cb107822e7725ea8bdbc5d876af91b6" prot="public" static="no" mutable="no">
+        <type>lv_opa_t</type>
+        <definition>lv_opa_t lv_draw_rect_dsc_t::bg_img_opa</definition>
+        <argsstring></argsstring>
+        <name>bg_img_opa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="47" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1ad0fb63d1b85adc094e59ccaf5d1dc5c4" prot="public" static="no" mutable="no">
+        <type>lv_opa_t</type>
+        <definition>lv_opa_t lv_draw_rect_dsc_t::bg_img_recolor_opa</definition>
+        <argsstring></argsstring>
+        <name>bg_img_recolor_opa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="48" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a33061417ed01211a471e98285b78c939" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_draw_rect_dsc_t::bg_img_tiled</definition>
+        <argsstring></argsstring>
+        <name>bg_img_tiled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="49" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1aa581f7d61f8b25becb8f6c7bfd60527c" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_draw_rect_dsc_t::border_color</definition>
+        <argsstring></argsstring>
+        <name>border_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="52" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a5c67d23668577a5c42c539919274ea59" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_rect_dsc_t::border_width</definition>
+        <argsstring></argsstring>
+        <name>border_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="53" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1af3b24044cb27def83385ff8ab5a67e18" prot="public" static="no" mutable="no">
+        <type>lv_opa_t</type>
+        <definition>lv_opa_t lv_draw_rect_dsc_t::border_opa</definition>
+        <argsstring></argsstring>
+        <name>border_opa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="54" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1aab7f3b2c26d49f44c6baa5298d1f0937" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_draw_rect_dsc_t::border_post</definition>
+        <argsstring></argsstring>
+        <name>border_post</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="55" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a144d3bc8d1e46de3b82175314bbd0324" prot="public" static="no" mutable="no">
+        <type>lv_border_side_t</type>
+        <definition>lv_border_side_t lv_draw_rect_dsc_t::border_side</definition>
+        <argsstring></argsstring>
+        <name>border_side</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="56" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a5e17399d6608c9aeee8be487f8a0fbf4" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_draw_rect_dsc_t::outline_color</definition>
+        <argsstring></argsstring>
+        <name>outline_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="59" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a28789a8699137af58bb9f293a4ef4a17" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_rect_dsc_t::outline_width</definition>
+        <argsstring></argsstring>
+        <name>outline_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="60" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a750312cc028b3cdda271237b355d1128" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_rect_dsc_t::outline_pad</definition>
+        <argsstring></argsstring>
+        <name>outline_pad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="61" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1ad56193467d10fb3f2065c7a821acff1b" prot="public" static="no" mutable="no">
+        <type>lv_opa_t</type>
+        <definition>lv_opa_t lv_draw_rect_dsc_t::outline_opa</definition>
+        <argsstring></argsstring>
+        <name>outline_opa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="62" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a03e2646f63252e23bac8294344f604ba" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_draw_rect_dsc_t::shadow_color</definition>
+        <argsstring></argsstring>
+        <name>shadow_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="65" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a346ce11dfa0cc543bab244d8f80cf004" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_rect_dsc_t::shadow_width</definition>
+        <argsstring></argsstring>
+        <name>shadow_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="66" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a0f970de3c64b89491b279fc66b7d71d3" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_rect_dsc_t::shadow_ofs_x</definition>
+        <argsstring></argsstring>
+        <name>shadow_ofs_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="67" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1ae940885bfe60349acd87672f9946db10" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_rect_dsc_t::shadow_ofs_y</definition>
+        <argsstring></argsstring>
+        <name>shadow_ofs_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="68" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a337dafdd8d2950d1f94b3f27e2570861" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_draw_rect_dsc_t::shadow_spread</definition>
+        <argsstring></argsstring>
+        <name>shadow_spread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="69" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__rect__dsc__t_1a9085c27a658751e19958622cbae2d615" prot="public" static="no" mutable="no">
+        <type>lv_opa_t</type>
+        <definition>lv_opa_t lv_draw_rect_dsc_t::shadow_opa</definition>
+        <argsstring></argsstring>
+        <name>shadow_opa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="70" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lv_grad_dsc_t</label>
+        <link refid="structlv__grad__dsc__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>stops</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lv_draw_rect_dsc_t</label>
+        <link refid="structlv__draw__rect__dsc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>bg_grad</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_gradient_stop_t</label>
+        <link refid="structlv__gradient__stop__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" line="32" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_rect.h" bodystart="32" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structlv__draw__rect__dsc__t_1ab729b49b24e3e57974cdebfe86ee1778" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_color</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1af1f1b88907ad151d4cf69a584e9886b7" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_grad</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a5cb107822e7725ea8bdbc5d876af91b6" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_img_opa</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1ace8f4d8085a01444607001a7465a9845" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_img_recolor</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1ad0fb63d1b85adc094e59ccaf5d1dc5c4" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_img_recolor_opa</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1aee275b32ad1fa734c08849c410662712" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_img_src</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a28b4d21b9dcc315d534058f797a9ff10" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_img_symbol_font</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a33061417ed01211a471e98285b78c939" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_img_tiled</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a8211fe41507fda70839dde2c5df2710d" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>bg_opa</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1abcbe5de935bae90ab9ebed214640150a" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>blend_mode</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1aa581f7d61f8b25becb8f6c7bfd60527c" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>border_color</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1af3b24044cb27def83385ff8ab5a67e18" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>border_opa</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1aab7f3b2c26d49f44c6baa5298d1f0937" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>border_post</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a144d3bc8d1e46de3b82175314bbd0324" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>border_side</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a5c67d23668577a5c42c539919274ea59" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>border_width</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a5e17399d6608c9aeee8be487f8a0fbf4" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>outline_color</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1ad56193467d10fb3f2065c7a821acff1b" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>outline_opa</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a750312cc028b3cdda271237b355d1128" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>outline_pad</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a28789a8699137af58bb9f293a4ef4a17" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>outline_width</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a36ac72db31f96a94cdf528160562ede7" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>radius</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a03e2646f63252e23bac8294344f604ba" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>shadow_color</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a0f970de3c64b89491b279fc66b7d71d3" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>shadow_ofs_x</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1ae940885bfe60349acd87672f9946db10" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>shadow_ofs_y</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a9085c27a658751e19958622cbae2d615" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>shadow_opa</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a337dafdd8d2950d1f94b3f27e2570861" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>shadow_spread</name></member>
+      <member refid="structlv__draw__rect__dsc__t_1a346ce11dfa0cc543bab244d8f80cf004" prot="public" virt="non-virtual"><scope>lv_draw_rect_dsc_t</scope><name>shadow_width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

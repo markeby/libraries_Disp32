@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_70df86c4bbc9fa804ee483c04dcbb9ac" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/music/assets</compoundname>
+    <innerfile refid="spectrum__1_8h">spectrum_1.h</innerfile>
+    <innerfile refid="spectrum__2_8h">spectrum_2.h</innerfile>
+    <innerfile refid="spectrum__3_8h">spectrum_3.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/music/assets/"/>
+  </compounddef>
+</doxygen>

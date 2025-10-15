@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src</compoundname>
+    <innerdir refid="dir_aebb8dcc11953d78e620bbef0b9e2183">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core</innerdir>
+    <innerdir refid="dir_cd85d66fda5a1a6a87e168db47e0a4ce">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos</innerdir>
+    <innerdir refid="dir_57cec1657851407c6cc354408c5a57b6">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw</innerdir>
+    <innerdir refid="dir_e931c1a3f0014e624d0645a271726ad2">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples</innerdir>
+    <innerdir refid="dir_5ca87a30fb5b22fce601308503c05d7a">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra</innerdir>
+    <innerdir refid="dir_d427579e6d954d5fb6f37ea89b80f66e">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font</innerdir>
+    <innerdir refid="dir_4ce6a7f885e2866a554ba9e7335035f1">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal</innerdir>
+    <innerdir refid="dir_88826aa2a10e1882b573f502bc7f4b55">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc</innerdir>
+    <innerdir refid="dir_0abdee562046be6f5823d1ca8c3fd13c">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets</innerdir>
+    <innerfile refid="lv__api__map_8h">lv_api_map.h</innerfile>
+    <innerfile refid="lv__conf__internal_8h">lv_conf_internal.h</innerfile>
+    <innerfile refid="lv__conf__kconfig_8h">lv_conf_kconfig.h</innerfile>
+    <innerfile refid="lvgl_8h">lvgl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/"/>
+  </compounddef>
+</doxygen>

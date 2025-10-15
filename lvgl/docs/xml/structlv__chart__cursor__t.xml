@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__chart__cursor__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_chart_cursor_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__chart__cursor__t_1a50022868cecdd28cfebb7f2f983497de" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t lv_chart_cursor_t::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="84" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__cursor__t_1a7cc529cfef65d493dff3ceb2a076799a" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_cursor_t::point_id</definition>
+        <argsstring></argsstring>
+        <name>point_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="85" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__cursor__t_1adc7c21318c06a41429581a7db7bb9717" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_chart_cursor_t::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="86" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__cursor__t_1a56b2d2ec285ca447df54ba56406e1366" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+        <definition>lv_chart_series_t* lv_chart_cursor_t::ser</definition>
+        <argsstring></argsstring>
+        <name>ser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="87" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__cursor__t_1aedf67dd9f78073fb92212d341ba6cf9c" prot="public" static="no" mutable="no">
+        <type>lv_dir_t</type>
+        <definition>lv_dir_t lv_chart_cursor_t::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="88" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__cursor__t_1a92043b5e52ea02f00e50ae06e2504130" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_chart_cursor_t::pos_set</definition>
+        <argsstring></argsstring>
+        <name>pos_set</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="89" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lv_chart_series_t</label>
+        <link refid="structlv__chart__series__t"/>
+      </node>
+      <node id="1">
+        <label>lv_chart_cursor_t</label>
+        <link refid="structlv__chart__cursor__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ser</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="83" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="83" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structlv__chart__cursor__t_1adc7c21318c06a41429581a7db7bb9717" prot="public" virt="non-virtual"><scope>lv_chart_cursor_t</scope><name>color</name></member>
+      <member refid="structlv__chart__cursor__t_1aedf67dd9f78073fb92212d341ba6cf9c" prot="public" virt="non-virtual"><scope>lv_chart_cursor_t</scope><name>dir</name></member>
+      <member refid="structlv__chart__cursor__t_1a7cc529cfef65d493dff3ceb2a076799a" prot="public" virt="non-virtual"><scope>lv_chart_cursor_t</scope><name>point_id</name></member>
+      <member refid="structlv__chart__cursor__t_1a50022868cecdd28cfebb7f2f983497de" prot="public" virt="non-virtual"><scope>lv_chart_cursor_t</scope><name>pos</name></member>
+      <member refid="structlv__chart__cursor__t_1a92043b5e52ea02f00e50ae06e2504130" prot="public" virt="non-virtual"><scope>lv_chart_cursor_t</scope><name>pos_set</name></member>
+      <member refid="structlv__chart__cursor__t_1a56b2d2ec285ca447df54ba56406e1366" prot="public" virt="non-virtual"><scope>lv_chart_cursor_t</scope><name>ser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

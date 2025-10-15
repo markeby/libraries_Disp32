@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__draw__layer_8h" kind="file" language="C++">
+    <compoundname>lv_draw_layer.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__draw__layer_8h_1ae3539dc111bf00dfd23a123f2e71464e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_draw_layer_flags_t</name>
+        <enumvalue id="lv__draw__layer_8h_1ae3539dc111bf00dfd23a123f2e71464ea9baef2204b7fa2dedd86b6dac00ac06d" prot="public">
+          <name>LV_DRAW_LAYER_FLAG_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__draw__layer_8h_1ae3539dc111bf00dfd23a123f2e71464ea3a2673dd9cc44b564a1d7f74a5ab3af8" prot="public">
+          <name>LV_DRAW_LAYER_FLAG_HAS_ALPHA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__draw__layer_8h_1ae3539dc111bf00dfd23a123f2e71464ea17c4438c0ca407cccfa53aa9cf63ed16" prot="public">
+          <name>LV_DRAW_LAYER_FLAG_CAN_SUBDIVIDE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" line="28" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__draw__layer_8h_1a03e36ea605c32450e1147e1cd5401864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref> *</type>
+        <definition>struct _lv_draw_layer_ctx_t* lv_draw_layer_create</definition>
+        <argsstring>(struct _lv_draw_ctx_t *draw_ctx, const lv_area_t *layer_area, lv_draw_layer_flags_t flags)</argsstring>
+        <name>lv_draw_layer_create</name>
+        <param>
+          <type>struct <ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>layer_area</declname>
+        </param>
+        <param>
+          <type>lv_draw_layer_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new layer context. It is used to start and independent rendering session with the current draw_ctx <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the coordinates of the layer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed flags from @lv_draw_layer_flags_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the layer context, or NULL on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" line="46" column="28" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" declline="46" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__layer_8h_1af067fd9c88821913b19ce443ebf8fe7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_layer_adjust</definition>
+        <argsstring>(struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx, lv_draw_layer_flags_t flags)</argsstring>
+        <name>lv_draw_layer_adjust</name>
+        <param>
+          <type>struct <ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref> *</type>
+          <declname>layer_ctx</declname>
+        </param>
+        <param>
+          <type>lv_draw_layer_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjust the layer_ctx and/or draw_ctx based on the <computeroutput>layer_ctx-&gt;area_act</computeroutput>. It&apos;s called only if flags has <computeroutput>LV_DRAW_LAYER_FLAG_CAN_SUBDIVIDE</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a layer context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed flags from @lv_draw_layer_flags_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" line="56" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" declline="56" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__layer_8h_1a503f2d3564b4bd6bec110c23d99504e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_layer_blend</definition>
+        <argsstring>(struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx, lv_draw_img_dsc_t *draw_dsc)</argsstring>
+        <name>lv_draw_layer_blend</name>
+        <param>
+          <type>struct <ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref> *</type>
+          <declname>layer_ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref> *</type>
+          <declname>draw_dsc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blend a rendered layer to <computeroutput>layer_ctx-&gt;area_act</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a layer context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an image draw descriptor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" line="65" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" declline="65" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__layer_8h_1af8c2718b7b3fe0676aec7fd69bb86f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_layer_destroy</definition>
+        <argsstring>(struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx)</argsstring>
+        <name>lv_draw_layer_destroy</name>
+        <param>
+          <type>struct <ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref> *</type>
+          <declname>layer_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy a layer context. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a layer context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" line="73" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h" declline="73" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_DRAW_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DRAW_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DRAW_LAYER_FLAG_NONE,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DRAW_LAYER_FLAG_HAS_ALPHA,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DRAW_LAYER_FLAG_CAN_SUBDIVIDE,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/>lv_draw_layer_flags_t;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>*<sp/><ref refid="lv__draw__layer_8h_1a03e36ea605c32450e1147e1cd5401864" kindref="member">lv_draw_layer_create</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>layer_area,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_draw_layer_flags_t<sp/>flags);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__draw__layer_8h_1af067fd9c88821913b19ce443ebf8fe7e" kindref="member">lv_draw_layer_adjust</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>*<sp/>layer_ctx,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_draw_layer_flags_t<sp/>flags);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__draw__layer_8h_1a503f2d3564b4bd6bec110c23d99504e2" kindref="member">lv_draw_layer_blend</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>*<sp/>layer_ctx,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/>*<sp/>draw_dsc);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__draw__layer_8h_1af8c2718b7b3fe0676aec7fd69bb86f6b" kindref="member">lv_draw_layer_destroy</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>*<sp/>layer_ctx);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_DRAW_LAYER_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_layer.h"/>
+  </compounddef>
+</doxygen>

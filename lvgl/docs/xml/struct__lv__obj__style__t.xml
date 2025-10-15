@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__obj__style__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_obj_style_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__obj__style__t_1a8a9aff8c822600048ab7330ddb8f2889" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+        <definition>lv_style_t* _lv_obj_style_t::style</definition>
+        <argsstring></argsstring>
+        <name>style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="40" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__style__t_1a36772c69d7a8955dbc12dc8ed3e48168" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_obj_style_t::selector</definition>
+        <argsstring></argsstring>
+        <name>selector</name>
+        <bitfield> 24</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="41" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__style__t_1a26d6eeb094cc6a9a0161f06f1485c008" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_obj_style_t::is_local</definition>
+        <argsstring></argsstring>
+        <name>is_local</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="42" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__style__t_1a739ffa0a6f53e5dd930a9ac35e642024" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_obj_style_t::is_trans</definition>
+        <argsstring></argsstring>
+        <name>is_trans</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="43" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="2">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="39" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="39" bodyend="44"/>
+    <listofallmembers>
+      <member refid="struct__lv__obj__style__t_1a26d6eeb094cc6a9a0161f06f1485c008" prot="public" virt="non-virtual"><scope>_lv_obj_style_t</scope><name>is_local</name></member>
+      <member refid="struct__lv__obj__style__t_1a739ffa0a6f53e5dd930a9ac35e642024" prot="public" virt="non-virtual"><scope>_lv_obj_style_t</scope><name>is_trans</name></member>
+      <member refid="struct__lv__obj__style__t_1a36772c69d7a8955dbc12dc8ed3e48168" prot="public" virt="non-virtual"><scope>_lv_obj_style_t</scope><name>selector</name></member>
+      <member refid="struct__lv__obj__style__t_1a8a9aff8c822600048ab7330ddb8f2889" prot="public" virt="non-virtual"><scope>_lv_obj_style_t</scope><name>style</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

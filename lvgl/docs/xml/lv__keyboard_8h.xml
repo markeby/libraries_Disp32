@@ -1,0 +1,656 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__keyboard_8h" kind="file" language="C++">
+    <compoundname>lv_keyboard.h</compoundname>
+    <innerclass refid="structlv__keyboard__t" prot="public">lv_keyboard_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@35</name>
+        <enumvalue id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53a25b797b1530e3dd9c44053d218852d8f" prot="public">
+          <name>LV_KEYBOARD_MODE_TEXT_LOWER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53aff5f6d6db1ca33d9fd239b02c26180b4" prot="public">
+          <name>LV_KEYBOARD_MODE_TEXT_UPPER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53a05a9c5ebcafac4f2906875da97478cd6" prot="public">
+          <name>LV_KEYBOARD_MODE_SPECIAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53a555e4f3e39555aaa0a625587cc3840a3" prot="public">
+          <name>LV_KEYBOARD_MODE_NUMBER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53a2cedda24a65a0708e683175c10fcbddb" prot="public">
+          <name>LV_KEYBOARD_MODE_USER_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53acde17b0ecd19e93e36566b79ba2f1dad" prot="public">
+          <name>LV_KEYBOARD_MODE_USER_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53ae438db9206a48a0783e717a0306e5ed8" prot="public">
+          <name>LV_KEYBOARD_MODE_USER_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__keyboard_8h_1ab48899087cc647f0f791ed0c459adc53a61d3d1dbd9e7ba61a86bdf3fadb14d72" prot="public">
+          <name>LV_KEYBOARD_MODE_USER_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current keyboard mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="39" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" bodystart="39" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__keyboard_8h_1abbb28adb94f42dd6db1d969b6c776631" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_keyboard_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_keyboard_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="49" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__keyboard_8h_1a68df1836e21b0f166ddcbd97feddb982" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_keyboard_class</definition>
+        <argsstring></argsstring>
+        <name>lv_keyboard_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="59" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="59" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__keyboard_8h_1a5191bb1d34336ff625fc02d4126a9ef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_keyboard_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_keyboard_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a Keyboard object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new keyboard </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created keyboard </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="70" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="70" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1ae9c081fa9200d3ef7b9f42f30d19dc61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_keyboard_set_textarea</definition>
+        <argsstring>(lv_obj_t *kb, lv_obj_t *ta)</argsstring>
+        <name>lv_keyboard_set_textarea</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>kb</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>ta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a Text Area to the Keyboard. The pressed characters will be put there. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a Keyboard object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a Text Area object to write there </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="81" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="81" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1af9f7796cebb0f399fb0ba129ac11ccd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_keyboard_set_mode</definition>
+        <argsstring>(lv_obj_t *kb, lv_keyboard_mode_t mode)</argsstring>
+        <name>lv_keyboard_set_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>kb</declname>
+        </param>
+        <param>
+          <type>lv_keyboard_mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a new a mode (text or number map) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a Keyboard object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mode from &apos;lv_keyboard_mode_t&apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="88" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1a12d5c32a50aeb4a8a9f375fe304ad8e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_keyboard_set_popovers</definition>
+        <argsstring>(lv_obj_t *kb, bool en)</argsstring>
+        <name>lv_keyboard_set_popovers</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>kb</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show the button title in a popover when pressed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a Keyboard object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether &quot;popovers&quot; mode is enabled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="95" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="95" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1ad8b96a07de704d5222e359237d99d817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_keyboard_set_map</definition>
+        <argsstring>(lv_obj_t *kb, lv_keyboard_mode_t mode, const char *map[], const lv_btnmatrix_ctrl_t ctrl_map[])</argsstring>
+        <name>lv_keyboard_set_map</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>kb</declname>
+        </param>
+        <param>
+          <type>lv_keyboard_mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>map</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const lv_btnmatrix_ctrl_t</type>
+          <declname>ctrl_map</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a new map for the keyboard <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a Keyboard object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>keyboard map to alter &apos;lv_keyboard_mode_t&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a string array to describe the map. See &apos;<ref refid="lv__btnmatrix_8h_1ab3987d2f4338fa6194665a3924608c5a" kindref="member">lv_btnmatrix_set_map()</ref>&apos; for more info. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="104" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1a78fa355672c5d5ab96ab0aff6a6319d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_keyboard_get_textarea</definition>
+        <argsstring>(const lv_obj_t *kb)</argsstring>
+        <name>lv_keyboard_get_textarea</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>kb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a Text Area to the Keyboard. The pressed characters will be put there. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a Keyboard object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the assigned Text Area object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="116" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="116" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1a1efb285783ddd29679ac6ff940e10f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_keyboard_mode_t</type>
+        <definition>lv_keyboard_mode_t lv_keyboard_get_mode</definition>
+        <argsstring>(const lv_obj_t *kb)</argsstring>
+        <name>lv_keyboard_get_mode</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>kb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a new a mode (text or number map) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a Keyboard object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current mode from &apos;lv_keyboard_mode_t&apos; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="123" column="20" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="123" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1a5815e872d5c8d42e4dc5ab77820bf942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_btnmatrix_get_popovers</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_btnmatrix_get_popovers</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether &quot;popovers&quot; mode is enabled or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a Keyboard object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: &quot;popovers&quot; mode is enabled; false: disabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="130" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="130" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1acff1917a59b39d863e9f791e5668ea51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char **</type>
+        <definition>static const char** lv_keyboard_get_map_array</definition>
+        <argsstring>(const lv_obj_t *kb)</argsstring>
+        <name>lv_keyboard_get_map_array</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>kb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current map of a keyboard <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a keyboard object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="137" column="27" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1a59092890e16b589de71278d404342c55" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>static uint16_t lv_keyboard_get_selected_btn</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_keyboard_get_selected_btn</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of the lastly &quot;activated&quot; button by the user (pressed, released, focused etc) Useful in the <computeroutput>event_cb</computeroutput> to get the text of the button, check if hidden etc. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to button matrix object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of the last released button (LV_BTNMATRIX_BTN_NONE: if unset) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="148" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1a19130f8e0a92ddeae674eaf19b7b707e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* lv_keyboard_get_btn_text</definition>
+        <argsstring>(const lv_obj_t *obj, uint16_t btn_id)</argsstring>
+        <name>lv_keyboard_get_btn_text</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>btn_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the button&apos;s text <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to button matrix object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index a button not counting new line characters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>text of btn_index` button </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="159" column="27" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__keyboard_8h_1a920d6347e0f0a2355e00f23351475015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_keyboard_def_event_cb</definition>
+        <argsstring>(lv_event_t *e)</argsstring>
+        <name>lv_keyboard_def_event_cb</name>
+        <param>
+          <type><ref refid="struct__lv__event__t" kindref="compound">lv_event_t</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default keyboard event to add characters to the Text area and change the map. If a custom <computeroutput>event_cb</computeroutput> is added to the keyboard this function can be called from it to handle the button clicks <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a keyboard </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the triggering event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" line="175" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h" declline="175" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_KEYBOARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_KEYBOARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../widgets/lv_btnmatrix.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_KEYBOARD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*Testing<sp/>of<sp/>dependencies*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_BTNMATRIX<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;lv_kb:<sp/>lv_btnm<sp/>is<sp/>required.<sp/>Enable<sp/>it<sp/>in<sp/>lv_conf.h<sp/>(LV_USE_BTNMATRIX<sp/><sp/>1)<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_TEXTAREA<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;lv_kb:<sp/>lv_ta<sp/>is<sp/>required.<sp/>Enable<sp/>it<sp/>in<sp/>lv_conf.h<sp/>(LV_USE_TEXTAREA<sp/><sp/>1)<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_KEYBOARD_CTRL_BTN_FLAGS<sp/>(LV_BTNMATRIX_CTRL_NO_REPEAT<sp/>|<sp/>LV_BTNMATRIX_CTRL_CLICK_TRIG<sp/>|<sp/>LV_BTNMATRIX_CTRL_CHECKED)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_KEYBOARD_MODE_TEXT_LOWER,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_KEYBOARD_MODE_TEXT_UPPER,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_KEYBOARD_MODE_SPECIAL,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_KEYBOARD_MODE_NUMBER,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_KEYBOARD_MODE_USER_1,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_KEYBOARD_MODE_USER_2,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_KEYBOARD_MODE_USER_3,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_KEYBOARD_MODE_USER_4,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_keyboard_mode_t;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*Data<sp/>of<sp/>keyboard*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structlv__keyboard__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__btnmatrix__t" kindref="compound">lv_btnmatrix_t</ref><sp/>btnm;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>ta;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Pointer<sp/>to<sp/>the<sp/>assigned<sp/>text<sp/>area*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_keyboard_mode_t<sp/>mode;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Key<sp/>map<sp/>type*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>popovers<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Show<sp/>button<sp/>titles<sp/>in<sp/>popovers<sp/>on<sp/>press*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/><ref refid="structlv__keyboard__t" kindref="compound">lv_keyboard_t</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_keyboard_class;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__keyboard_8h_1a5191bb1d34336ff625fc02d4126a9ef2" kindref="member">lv_keyboard_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__keyboard_8h_1ae9c081fa9200d3ef7b9f42f30d19dc61" kindref="member">lv_keyboard_set_textarea</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>kb,<sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>ta);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__keyboard_8h_1af9f7796cebb0f399fb0ba129ac11ccd9" kindref="member">lv_keyboard_set_mode</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>kb,<sp/>lv_keyboard_mode_t<sp/>mode);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__keyboard_8h_1a12d5c32a50aeb4a8a9f375fe304ad8e9" kindref="member">lv_keyboard_set_popovers</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>kb,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__keyboard_8h_1ad8b96a07de704d5222e359237d99d817" kindref="member">lv_keyboard_set_map</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>kb,<sp/>lv_keyboard_mode_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>map[],</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_btnmatrix_ctrl_t<sp/>ctrl_map[]);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__keyboard_8h_1a78fa355672c5d5ab96ab0aff6a6319d9" kindref="member">lv_keyboard_get_textarea</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>kb);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">lv_keyboard_mode_t<sp/><ref refid="lv__keyboard_8h_1a1efb285783ddd29679ac6ff940e10f9e" kindref="member">lv_keyboard_get_mode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>kb);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__keyboard_8h_1a5815e872d5c8d42e4dc5ab77820bf942" kindref="member">lv_btnmatrix_get_popovers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>lv_keyboard_get_map_array(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>kb)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="lv__btnmatrix_8h_1af5256815042e67d4934bd503893a404c" kindref="member">lv_btnmatrix_get_map</ref>(kb);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint16_t<sp/>lv_keyboard_get_selected_btn(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="lv__btnmatrix_8h_1ab597f57b85824b31003b4ed6e0d4cfa6" kindref="member">lv_btnmatrix_get_selected_btn</ref>(obj);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>lv_keyboard_get_btn_text(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint16_t<sp/>btn_id)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="lv__btnmatrix_8h_1a9042f12a37a035f93a525a1802bf71fb" kindref="member">lv_btnmatrix_get_btn_text</ref>(obj,<sp/>btn_id);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/>Other<sp/>functions</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__keyboard_8h_1a920d6347e0f0a2355e00f23351475015" kindref="member">lv_keyboard_def_event_cb</ref>(<ref refid="struct__lv__event__t" kindref="compound">lv_event_t</ref><sp/>*<sp/>e);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*LV_USE_KEYBOARD*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_KEYBOARD_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard/lv_keyboard.h"/>
+  </compounddef>
+</doxygen>

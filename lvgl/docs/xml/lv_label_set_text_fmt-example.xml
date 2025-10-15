@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv_label_set_text_fmt-example" kind="example">
+    <compoundname>lv_label_set_text_fmt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Set a new formatted text for a label. Memory will be allocated to store the text by the label. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a label object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>printf</computeroutput>-like format (label1, &quot;%d user&quot;, user_num); <programlisting filename="lv_label_set_text_fmt"></programlisting> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

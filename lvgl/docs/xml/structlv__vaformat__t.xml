@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__vaformat__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_vaformat_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__vaformat__t_1a3671d0689c6d6ad57b22374024b1f51c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* lv_vaformat_t::fmt</definition>
+        <argsstring></argsstring>
+        <name>fmt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_printf.h" line="73" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_printf.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__vaformat__t_1a304c18200914eecb1a03a2ca0b87fae2" prot="public" static="no" mutable="no">
+        <type>va_list *</type>
+        <definition>va_list* lv_vaformat_t::va</definition>
+        <argsstring></argsstring>
+        <name>va</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_printf.h" line="74" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_printf.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_printf.h" line="72" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_printf.h" bodystart="72" bodyend="75"/>
+    <listofallmembers>
+      <member refid="structlv__vaformat__t_1a3671d0689c6d6ad57b22374024b1f51c" prot="public" virt="non-virtual"><scope>lv_vaformat_t</scope><name>fmt</name></member>
+      <member refid="structlv__vaformat__t_1a304c18200914eecb1a03a2ca0b87fae2" prot="public" virt="non-virtual"><scope>lv_vaformat_t</scope><name>va</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

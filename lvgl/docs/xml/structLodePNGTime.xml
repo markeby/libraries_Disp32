@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structLodePNGTime" kind="struct" language="C++" prot="public">
+    <compoundname>LodePNGTime</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLodePNGTime_1a32b68342f39f3d38ba91a721b1149b8f" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGTime::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="421" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGTime_1a295d890e862d5cd0c444e9d3a96fa9d5" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGTime::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="422" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGTime_1aa3dee3b7b3a1e730fbded7a7b8cf355e" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGTime::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="423" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGTime_1ac99cb7f3ce16a85f9f505b7f5f6e0aa7" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGTime::hour</definition>
+        <argsstring></argsstring>
+        <name>hour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="424" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGTime_1ac3045de79728f29fc61f534b062e0f13" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGTime::minute</definition>
+        <argsstring></argsstring>
+        <name>minute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="425" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGTime_1a6c691c5821e828488a8bb8a90751a2f0" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGTime::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="426" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="420" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="420" bodyend="427"/>
+    <listofallmembers>
+      <member refid="structLodePNGTime_1aa3dee3b7b3a1e730fbded7a7b8cf355e" prot="public" virt="non-virtual"><scope>LodePNGTime</scope><name>day</name></member>
+      <member refid="structLodePNGTime_1ac99cb7f3ce16a85f9f505b7f5f6e0aa7" prot="public" virt="non-virtual"><scope>LodePNGTime</scope><name>hour</name></member>
+      <member refid="structLodePNGTime_1ac3045de79728f29fc61f534b062e0f13" prot="public" virt="non-virtual"><scope>LodePNGTime</scope><name>minute</name></member>
+      <member refid="structLodePNGTime_1a295d890e862d5cd0c444e9d3a96fa9d5" prot="public" virt="non-virtual"><scope>LodePNGTime</scope><name>month</name></member>
+      <member refid="structLodePNGTime_1a6c691c5821e828488a8bb8a90751a2f0" prot="public" virt="non-virtual"><scope>LodePNGTime</scope><name>second</name></member>
+      <member refid="structLodePNGTime_1a32b68342f39f3d38ba91a721b1149b8f" prot="public" virt="non-virtual"><scope>LodePNGTime</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structLodePNGEncoderSettings" kind="struct" language="C++" prot="public">
+    <compoundname>LodePNGEncoderSettings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLodePNGEncoderSettings_1a2c5928b4172c75e27de467870f2ff946" prot="public" static="no" mutable="no">
+        <type><ref refid="structLodePNGCompressSettings" kindref="compound">LodePNGCompressSettings</ref></type>
+        <definition>LodePNGCompressSettings LodePNGEncoderSettings::zlibsettings</definition>
+        <argsstring></argsstring>
+        <name>zlibsettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="732" column="27" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGEncoderSettings_1a1203b8db6532c9ff4a5c8ee692cd327a" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGEncoderSettings::auto_convert</definition>
+        <argsstring></argsstring>
+        <name>auto_convert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="734" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGEncoderSettings_1a0d82e8f2fabcb6cebbc54b80922945f1" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGEncoderSettings::filter_palette_zero</definition>
+        <argsstring></argsstring>
+        <name>filter_palette_zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="740" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGEncoderSettings_1a5e18e4eb941763a2e3e6c65ee9f0729c" prot="public" static="no" mutable="no">
+        <type>LodePNGFilterStrategy</type>
+        <definition>LodePNGFilterStrategy LodePNGEncoderSettings::filter_strategy</definition>
+        <argsstring></argsstring>
+        <name>filter_strategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="743" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGEncoderSettings_1a4446f87b5283f25664802a1be037e76e" prot="public" static="no" mutable="no">
+        <type>const unsigned char *</type>
+        <definition>const unsigned char* LodePNGEncoderSettings::predefined_filters</definition>
+        <argsstring></argsstring>
+        <name>predefined_filters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="748" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGEncoderSettings_1a04dc9622ccd1d7c74c56291409aa512a" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGEncoderSettings::force_palette</definition>
+        <argsstring></argsstring>
+        <name>force_palette</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="752" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGEncoderSettings_1a893aa542aa7c122c32ee36dd716fbcb2" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGEncoderSettings::add_id</definition>
+        <argsstring></argsstring>
+        <name>add_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="755" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGEncoderSettings_1a6ffdcb8e85a65ea208fe027be072d710" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGEncoderSettings::text_compression</definition>
+        <argsstring></argsstring>
+        <name>text_compression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="757" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="757" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>LodePNGCompressSettings</label>
+        <link refid="structLodePNGCompressSettings"/>
+      </node>
+      <node id="1">
+        <label>LodePNGEncoderSettings</label>
+        <link refid="structLodePNGEncoderSettings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>zlibsettings</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="731" column="37" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="731" bodyend="759"/>
+    <listofallmembers>
+      <member refid="structLodePNGEncoderSettings_1a893aa542aa7c122c32ee36dd716fbcb2" prot="public" virt="non-virtual"><scope>LodePNGEncoderSettings</scope><name>add_id</name></member>
+      <member refid="structLodePNGEncoderSettings_1a1203b8db6532c9ff4a5c8ee692cd327a" prot="public" virt="non-virtual"><scope>LodePNGEncoderSettings</scope><name>auto_convert</name></member>
+      <member refid="structLodePNGEncoderSettings_1a0d82e8f2fabcb6cebbc54b80922945f1" prot="public" virt="non-virtual"><scope>LodePNGEncoderSettings</scope><name>filter_palette_zero</name></member>
+      <member refid="structLodePNGEncoderSettings_1a5e18e4eb941763a2e3e6c65ee9f0729c" prot="public" virt="non-virtual"><scope>LodePNGEncoderSettings</scope><name>filter_strategy</name></member>
+      <member refid="structLodePNGEncoderSettings_1a04dc9622ccd1d7c74c56291409aa512a" prot="public" virt="non-virtual"><scope>LodePNGEncoderSettings</scope><name>force_palette</name></member>
+      <member refid="structLodePNGEncoderSettings_1a4446f87b5283f25664802a1be037e76e" prot="public" virt="non-virtual"><scope>LodePNGEncoderSettings</scope><name>predefined_filters</name></member>
+      <member refid="structLodePNGEncoderSettings_1a6ffdcb8e85a65ea208fe027be072d710" prot="public" virt="non-virtual"><scope>LodePNGEncoderSettings</scope><name>text_compression</name></member>
+      <member refid="structLodePNGEncoderSettings_1a2c5928b4172c75e27de467870f2ff946" prot="public" virt="non-virtual"><scope>LodePNGEncoderSettings</scope><name>zlibsettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

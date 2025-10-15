@@ -1,0 +1,983 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__dropdown_8h" kind="file" language="C++">
+    <compoundname>lv_dropdown.h</compoundname>
+    <innerclass refid="structlv__dropdown__t" prot="public">lv_dropdown_t</innerclass>
+    <innerclass refid="structlv__dropdown__list__t" prot="public">lv_dropdown_list_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__dropdown_8h_1a7ed210f90174413e9866034e4abaad6f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_dropdown_class</definition>
+        <argsstring></argsstring>
+        <name>lv_dropdown_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="58" column="30" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="58" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__dropdown_8h_1a8431e5a857c112d99580bf4d30c63814" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_dropdownlist_class</definition>
+        <argsstring></argsstring>
+        <name>lv_dropdownlist_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="59" column="30" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="59" declcolumn="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__dropdown_8h_1ad884ced142dbea7d083f6001af405c68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LV_EXPORT_CONST_INT</definition>
+        <argsstring>(LV_DROPDOWN_POS_LAST)</argsstring>
+        <name>LV_EXPORT_CONST_INT</name>
+        <param>
+          <type>LV_DROPDOWN_POS_LAST</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="32" column="1" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="32" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1adc84c96588cdb13282ded170a2ec6783" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_dropdown_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_dropdown_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a drop-down list object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new drop-down list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created drop-down list </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="70" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="70" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1aaea6087e3da15bb22176d33531bb5dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_set_text</definition>
+        <argsstring>(lv_obj_t *obj, const char *txt)</argsstring>
+        <name>lv_dropdown_set_text</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set text of the drop-down list&apos;s button. If set to <computeroutput>NULL</computeroutput> the selected option&apos;s text will be displayed on the button. If set to a specific text then that text will be shown regardless of the selected option. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the text as a string (Only its pointer is saved) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="83" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="83" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1ad00b981639dc0b8a4001c90a1d8a56c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_set_options</definition>
+        <argsstring>(lv_obj_t *obj, const char *options)</argsstring>
+        <name>lv_dropdown_set_options</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the options in a drop-down list from a string. The options will be copied and saved in the object so the <computeroutput>options</computeroutput> can be destroyed after calling this function <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string with &apos;<linebreak/>
+&apos; separated options. E.g. &quot;One\nTwo\nThree&quot; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="91" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="91" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a7696e2ad568946dfbac414de0c4ed12b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_set_options_static</definition>
+        <argsstring>(lv_obj_t *obj, const char *options)</argsstring>
+        <name>lv_dropdown_set_options_static</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the options in a drop-down list from a static string (global, static or dynamically allocated). Only the pointer of the option string will be saved. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a static string with &apos;<linebreak/>
+&apos; separated options. E.g. &quot;One\nTwo\nThree&quot; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="99" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="99" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a5294b94963e1ec9359e3fe117d6d7c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_add_option</definition>
+        <argsstring>(lv_obj_t *obj, const char *option, uint32_t pos)</argsstring>
+        <name>lv_dropdown_add_option</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an options to a drop-down list from a string. Only works for non-static options. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string without &apos;<linebreak/>
+&apos;. E.g. &quot;Four&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the insert position, indexed from 0, LV_DROPDOWN_POS_LAST = end of string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="107" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="107" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a75a9a06cc301e32f08339d328ff213cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_clear_options</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_clear_options</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear all options in a drop-down list. Works with both static and dynamic options. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="113" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="113" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a7f55021851e48dfdcbbe04ad63f60d27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_set_selected</definition>
+        <argsstring>(lv_obj_t *obj, uint16_t sel_opt)</argsstring>
+        <name>lv_dropdown_set_selected</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>sel_opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the selected option <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sel_opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the selected option (0 ... number of option - 1); </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="120" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="120" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a3adabc80b73c0b36f4aef3cd0e709a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_set_dir</definition>
+        <argsstring>(lv_obj_t *obj, lv_dir_t dir)</argsstring>
+        <name>lv_dropdown_set_dir</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_dir_t</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the direction of the a drop-down list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_DIR_LEFT/RIGHT/TOP/BOTTOM </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="127" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="127" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1ae094b64d9d44116f46ab254c8f956c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_set_symbol</definition>
+        <argsstring>(lv_obj_t *obj, const void *symbol)</argsstring>
+        <name>lv_dropdown_set_symbol</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>symbol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an arrow or other symbol to display when on drop-down list&apos;s button. Typically a down caret or arrow. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a text like <computeroutput>LV_SYMBOL_DOWN</computeroutput>, an image (pointer or path) or NULL to not draw symbol icon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>angle and zoom transformation can be applied if the symbol is an image. E.g. when drop down is checked (opened) rotate the symbol by 180 degree </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="136" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="136" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a327251f0c12cea1cdc39c01b00c03b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_set_selected_highlight</definition>
+        <argsstring>(lv_obj_t *obj, bool en)</argsstring>
+        <name>lv_dropdown_set_selected_highlight</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether the selected option in the list should be highlighted or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: highlight enabled; false: disabled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="143" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="143" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a319e4417c2e070b2b3b39a7724c96359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_dropdown_get_list</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_get_list</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the list of a drop-down to allow styling or other modifications <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the list of the drop-down </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="154" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="154" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a49d9f4ebb86257d1c698e17bfe647c97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_dropdown_get_text</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_get_text</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get text of the drop-down list&apos;s button. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the text as string, <computeroutput>NULL</computeroutput> if no text </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="161" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="161" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1ad2808f260f00ec1442d6c35006a287a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_dropdown_get_options</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_get_options</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the options of a drop-down list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the options separated by &apos;<linebreak/>
+&apos;-s (E.g. &quot;Option1\nOption2\nOption3&quot;) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="168" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="168" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a6afcb12db8ccfefecb777f5db5418f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_dropdown_get_selected</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_get_selected</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of the selected option <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of the selected option (0 ... number of option - 1); </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="175" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="175" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1adc3089444996ec3adf390f4e3295d395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_dropdown_get_option_cnt</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_get_option_cnt</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the total number of options <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the total number of options in the list </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="182" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="182" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1aefeba4ae1a0b1af394ebc850702be613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_get_selected_str</definition>
+        <argsstring>(const lv_obj_t *obj, char *buf, uint32_t buf_size)</argsstring>
+        <name>lv_dropdown_get_selected_str</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current selected option as a string <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an array to store the string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of <computeroutput>buf</computeroutput> in bytes. 0: to ignore it. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="190" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="190" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a1fa7ef4d251d39bdd68baf3284fdb299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_dropdown_get_option_index</definition>
+        <argsstring>(lv_obj_t *obj, const char *option)</argsstring>
+        <name>lv_dropdown_get_option_index</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>option</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of an option. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an option as string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of <computeroutput>option</computeroutput> in the list of all options. -1 if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="198" column="9" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="198" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1ad1d796349a803b1e8d4a7b26cc88335a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_dropdown_get_symbol</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_get_symbol</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the symbol on the drop-down list. Typically a down caret or arrow. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the symbol or NULL if not enabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="205" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="205" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a37d97249d38e68fc0f44a491c38f36e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_dropdown_get_selected_highlight</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_get_selected_highlight</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get whether the selected option in the list should be highlighted or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: highlight enabled; false: disabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="212" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="212" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a8cf3f964156f5502187cebfd612ddf34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_dir_t</type>
+        <definition>lv_dir_t lv_dropdown_get_dir</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_get_dir</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the direction of the drop-down list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_DIR_LEF/RIGHT/TOP/BOTTOM </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="219" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="219" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1abc47202ceef699f04323e9ae2878d7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_open</definition>
+        <argsstring>(lv_obj_t *dropdown_obj)</argsstring>
+        <name>lv_dropdown_open</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>dropdown_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open the drop.down list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="229" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="229" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a1e8078986b69017e6f4c89adfa96a40d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_dropdown_close</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_close</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close (Collapse) the drop-down list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="235" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="235" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__dropdown_8h_1a4206fa2c3d80ce141a32ac71ab90e876" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_dropdown_is_open</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_dropdown_is_open</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells whether the list is opened or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a drop-down list object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the list os opened </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="242" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" declline="242" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_DROPDOWN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DROPDOWN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_DROPDOWN<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*Testing<sp/>of<sp/>dependencies*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_LABEL<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;lv_dropdown:<sp/>lv_label<sp/>is<sp/>required.<sp/>Enable<sp/>it<sp/>in<sp/>lv_conf.h<sp/>(LV_USE_LABEL<sp/>1)&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../widgets/lv_label.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DROPDOWN_POS_LAST<sp/>0xFFFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">LV_EXPORT_CONST_INT(LV_DROPDOWN_POS_LAST);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structlv__dropdown__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>list;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>text;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="structlv__dropdown__t_1a65bf93133bb9a636f74abe03cb85d1b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>symbol;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="structlv__dropdown__t_1ad7b514c473eca67c68f3f4e2cdfe1883" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>options;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="structlv__dropdown__t_1a0f64b0e6cc1a7ca665c744ef4d0dfbc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>option_cnt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="structlv__dropdown__t_1a7cbd3e0156080b0a8e5cadad04a74cca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>sel_opt_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structlv__dropdown__t_1a4b7454635f155de1cba822a1d5c65498" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>sel_opt_id_orig;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structlv__dropdown__t_1aaf2088f44a3e7a8bb48a8f7bc10577f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>pr_opt_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structlv__dropdown__t_1a19872bd62234fc98eee4cc7c64f83be7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_dir_t<sp/>dir<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>4;<sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structlv__dropdown__t_1a5a72c4ce96850eb79a63c3b8145012a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>static_txt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structlv__dropdown__t_1a79c4ab3debf1dd9aaf790c3c56e53066" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>selected_highlight:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structlv__dropdown__t_1a5f3bcf8ebeff868cd8a714a635149c86" refkind="member"><highlight class="normal">}<sp/><ref refid="structlv__dropdown__t" kindref="compound">lv_dropdown_t</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structlv__dropdown__t_1ae573dad8680430a861f642ff73fbbcd9" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structlv__dropdown__list__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>dropdown;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/><ref refid="structlv__dropdown__list__t" kindref="compound">lv_dropdown_list_t</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_dropdown_class;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_dropdownlist_class;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__dropdown_8h_1adc84c96588cdb13282ded170a2ec6783" kindref="member">lv_dropdown_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1aaea6087e3da15bb22176d33531bb5dd9" kindref="member">lv_dropdown_set_text</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1ad00b981639dc0b8a4001c90a1d8a56c7" kindref="member">lv_dropdown_set_options</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>options);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a7696e2ad568946dfbac414de0c4ed12b" kindref="member">lv_dropdown_set_options_static</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>options);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a5294b94963e1ec9359e3fe117d6d7c27" kindref="member">lv_dropdown_add_option</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>option,<sp/>uint32_t<sp/>pos);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a75a9a06cc301e32f08339d328ff213cb" kindref="member">lv_dropdown_clear_options</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a7f55021851e48dfdcbbe04ad63f60d27" kindref="member">lv_dropdown_set_selected</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint16_t<sp/>sel_opt);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a3adabc80b73c0b36f4aef3cd0e709a08" kindref="member">lv_dropdown_set_dir</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_dir_t<sp/>dir);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1ae094b64d9d44116f46ab254c8f956c1c" kindref="member">lv_dropdown_set_symbol</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>symbol);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a327251f0c12cea1cdc39c01b00c03b92" kindref="member">lv_dropdown_set_selected_highlight</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__dropdown_8h_1a319e4417c2e070b2b3b39a7724c96359" kindref="member">lv_dropdown_get_list</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__dropdown_8h_1a49d9f4ebb86257d1c698e17bfe647c97" kindref="member">lv_dropdown_get_text</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__dropdown_8h_1ad2808f260f00ec1442d6c35006a287a8" kindref="member">lv_dropdown_get_options</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">uint16_t<sp/><ref refid="lv__dropdown_8h_1a6afcb12db8ccfefecb777f5db5418f88" kindref="member">lv_dropdown_get_selected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">uint16_t<sp/><ref refid="lv__dropdown_8h_1adc3089444996ec3adf390f4e3295d395" kindref="member">lv_dropdown_get_option_cnt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1aefeba4ae1a0b1af394ebc850702be613" kindref="member">lv_dropdown_get_selected_str</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/>uint32_t<sp/>buf_size);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">int32_t<sp/><ref refid="lv__dropdown_8h_1a1fa7ef4d251d39bdd68baf3284fdb299" kindref="member">lv_dropdown_get_option_index</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>option);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__dropdown_8h_1ad1d796349a803b1e8d4a7b26cc88335a" kindref="member">lv_dropdown_get_symbol</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a37d97249d38e68fc0f44a491c38f36e1" kindref="member">lv_dropdown_get_selected_highlight</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal">lv_dir_t<sp/><ref refid="lv__dropdown_8h_1a8cf3f964156f5502187cebfd612ddf34" kindref="member">lv_dropdown_get_dir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/>*<sp/>Other<sp/>functions</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1abc47202ceef699f04323e9ae2878d7a2" kindref="member">lv_dropdown_open</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>dropdown_obj);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a1e8078986b69017e6f4c89adfa96a40d" kindref="member">lv_dropdown_close</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__dropdown_8h_1a4206fa2c3d80ce141a32ac71ab90e876" kindref="member">lv_dropdown_is_open</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_DROPDOWN*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_DROPDOWN_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h"/>
+  </compounddef>
+</doxygen>

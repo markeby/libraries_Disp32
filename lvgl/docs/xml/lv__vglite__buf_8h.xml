@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__vglite__buf_8h" kind="file" language="C++">
+    <compoundname>lv_vglite_buf.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__vglite__buf_8h_1a3aee995252d2aa37c02009e7643ead3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_gpu_nxp_vglite_init_buf</definition>
+        <argsstring>(const lv_color_t *buf, const lv_area_t *area, lv_coord_t stride)</argsstring>
+        <name>lv_gpu_nxp_vglite_init_buf</name>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init vglite destination buffer. It will be done once per frame.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination buffer address (does not require alignment for VG_LITE_LINEAR mode) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination buffer area (for width and height) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of destination buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" line="64" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__vglite__buf_8h_1aaa2e98a0edec5ef4056845856dd7092d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vg_lite_buffer_t *</type>
+        <definition>vg_lite_buffer_t* lv_vglite_get_dest_buf</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_vglite_get_dest_buf</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get vglite destination buffer pointer.</para>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vglite destination buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" line="71" column="19" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" declline="71" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__vglite__buf_8h_1ad8037d999d47fd7a3e05cd360ac3dbe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vg_lite_buffer_t *</type>
+        <definition>vg_lite_buffer_t* lv_vglite_get_src_buf</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_vglite_get_src_buf</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get vglite source buffer pointer.</para>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vglite source buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" line="78" column="19" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" declline="78" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__vglite__buf_8h_1a63996b96c9f95eed0b25da9634254ed9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_vglite_set_dest_buf_ptr</definition>
+        <argsstring>(const lv_color_t *buf)</argsstring>
+        <name>lv_vglite_set_dest_buf_ptr</name>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vglite destination buffer address only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination buffer address (does not require alignment for VG_LITE_LINEAR mode) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" line="85" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" declline="85" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__vglite__buf_8h_1ad315928f0298b8db91ad05e19c5d316f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_vglite_set_src_buf_ptr</definition>
+        <argsstring>(const lv_color_t *buf)</argsstring>
+        <name>lv_vglite_set_src_buf_ptr</name>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vglite source buffer address only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source buffer address </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" line="92" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" declline="92" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__vglite__buf_8h_1ad4855321126e6d3767b0b804a1c0ccf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_vglite_set_src_buf</definition>
+        <argsstring>(const lv_color_t *buf, const lv_area_t *area, lv_coord_t stride)</argsstring>
+        <name>lv_vglite_set_src_buf</name>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vglite source buffer. It will be done only if buffer addreess is different.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source buffer address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source buffer area (for width and height) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of source buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" line="101" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" declline="101" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__vglite__buf_8h_1a92c0f58f7c93d76973f781c5a19e4be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_vglite_set_buf</definition>
+        <argsstring>(vg_lite_buffer_t *vgbuf, const lv_color_t *buf, const lv_area_t *area, lv_coord_t stride)</argsstring>
+        <name>lv_vglite_set_buf</name>
+        <param>
+          <type>vg_lite_buffer_t *</type>
+          <declname>vgbuf</declname>
+        </param>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vglite buffer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vgbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the VGLite buffer object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the memory for the VGLite buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer area (for width and height) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer stride </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" line="111" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h" declline="111" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="30"><highlight class="preprocessor">#ifndef<sp/>LV_VGLITE_BUF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_VGLITE_BUF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_GPU_NXP_VG_LITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vg_lite.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../sw/lv_draw_sw.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>**********************/</highlight></codeline>
+<codeline lineno="64"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__vglite__buf_8h_1a3aee995252d2aa37c02009e7643ead3b" kindref="member">lv_gpu_nxp_vglite_init_buf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area,<sp/>lv_coord_t<sp/>stride);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">vg_lite_buffer_t<sp/>*<sp/><ref refid="lv__vglite__buf_8h_1aaa2e98a0edec5ef4056845856dd7092d" kindref="member">lv_vglite_get_dest_buf</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">vg_lite_buffer_t<sp/>*<sp/><ref refid="lv__vglite__buf_8h_1ad8037d999d47fd7a3e05cd360ac3dbe4" kindref="member">lv_vglite_get_src_buf</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__vglite__buf_8h_1a63996b96c9f95eed0b25da9634254ed9" kindref="member">lv_vglite_set_dest_buf_ptr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>buf);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__vglite__buf_8h_1ad315928f0298b8db91ad05e19c5d316f" kindref="member">lv_vglite_set_src_buf_ptr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>buf);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__vglite__buf_8h_1ad4855321126e6d3767b0b804a1c0ccf4" kindref="member">lv_vglite_set_src_buf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area,<sp/>lv_coord_t<sp/>stride);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__vglite__buf_8h_1a92c0f58f7c93d76973f781c5a19e4be4" kindref="member">lv_vglite_set_buf</ref>(vg_lite_buffer_t<sp/>*<sp/>vgbuf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>buf,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area,<sp/>lv_coord_t<sp/>stride);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_GPU_NXP_VG_LITE*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_VGLITE_BUF_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h"/>
+  </compounddef>
+</doxygen>

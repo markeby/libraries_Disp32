@@ -1,0 +1,1360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__obj__scroll_8h" kind="file" language="C++">
+    <compoundname>lv_obj_scroll.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@4</name>
+        <enumvalue id="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca46ab6ad24e62425d49b8a7b327f93f6d" prot="public">
+          <name>LV_SCROLLBAR_MODE_OFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Never show scrollbars </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca456b951bdc613e191c67480646d4383a" prot="public">
+          <name>LV_SCROLLBAR_MODE_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Always show scrollbars </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06cac1770059ee73f4a1152ca534e870f4fb" prot="public">
+          <name>LV_SCROLLBAR_MODE_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Show scroll bars when object is being scrolled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca6ac64abeecc16acfb717647c1545812c" prot="public">
+          <name>LV_SCROLLBAR_MODE_AUTO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Show scroll bars when the content is large enough to be scrolled </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scrollbar modes: shows when should the scrollbars be visible </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="32" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" bodystart="32" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@5</name>
+        <enumvalue id="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9eaed4bf40cbb2409b8b0b2604a91a2dde3" prot="public">
+          <name>LV_SCROLL_SNAP_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not align, leave where it is </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea17a2c5a6852b8535efdefe4af2edd531" prot="public">
+          <name>LV_SCROLL_SNAP_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Align to the left/top </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea203353dcb2a1c5b4f7917ddb94c619f6" prot="public">
+          <name>LV_SCROLL_SNAP_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Align to the right/bottom </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea1ca0c2b2a66ff08bc5b185720d79b069" prot="public">
+          <name>LV_SCROLL_SNAP_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Align to the center </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scroll span align options. Tells where to align the snappable children when scroll stops. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="41" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" bodystart="41" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__obj__scroll_8h_1a95747e87c64e686b3c97be371e24c780" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_scrollbar_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_scrollbar_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="38" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__obj__scroll_8h_1ae4ed7a867959d5227d693a9d1613c672" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_scroll_snap_t</definition>
+        <argsstring></argsstring>
+        <name>lv_scroll_snap_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="47" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a5fb2fe4a213880a7315532d3b9f850ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_scrollbar_mode</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_scrollbar_mode_t mode)</argsstring>
+        <name>lv_obj_set_scrollbar_mode</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_scrollbar_mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set how the scrollbars should behave. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_SCROLL_MODE_ON/OFF/AUTO/ACTIVE </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="62" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a3c67390f4267a9de1c3e96eb68037988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_scroll_dir</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_dir_t dir)</argsstring>
+        <name>lv_obj_set_scroll_dir</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_dir_t</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the object in which directions can be scrolled <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the allow scroll directions. An element or OR-ed values of <computeroutput>lv_dir_t</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="69" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1aaf2633f8acda42ffb42e50992b9b69e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_scroll_snap_x</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_scroll_snap_t align)</argsstring>
+        <name>lv_obj_set_scroll_snap_x</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_scroll_snap_t</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set where to snap the children when scrolling ends horizontally <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the snap align to set from <computeroutput>lv_scroll_snap_t</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="76" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="76" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a19843002e4811685fde4c243c9253210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_scroll_snap_y</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_scroll_snap_t align)</argsstring>
+        <name>lv_obj_set_scroll_snap_y</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_scroll_snap_t</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set where to snap the children when scrolling ends vertically <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the snap align to set from <computeroutput>lv_scroll_snap_t</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="83" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="83" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a2d8b50fc10180da251425dcefb36af7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_scrollbar_mode_t</type>
+        <definition>lv_scrollbar_mode_t lv_obj_get_scrollbar_mode</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scrollbar_mode</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current scroll mode (when to hide the scrollbars) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current scroll mode from <computeroutput>lv_scrollbar_mode_t</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="94" column="21" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="94" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a3a82713c94d5ae1eb0d1eff870b2ab72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_dir_t</type>
+        <definition>lv_dir_t lv_obj_get_scroll_dir</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_dir</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the object in which directions can be scrolled <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the allow scroll directions. An element or OR-ed values of <computeroutput>lv_dir_t</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="101" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="101" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a21883be4df9a7520b10268b29cbea3a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_scroll_snap_t</type>
+        <definition>lv_scroll_snap_t lv_obj_get_scroll_snap_x</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_snap_x</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get where to snap the children when scrolling ends horizontally <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current snap align from <computeroutput>lv_scroll_snap_t</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="108" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="108" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1adb33b3f91c664681de456fba2fbc899e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_scroll_snap_t</type>
+        <definition>lv_scroll_snap_t lv_obj_get_scroll_snap_y</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_snap_y</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get where to snap the children when scrolling ends vertically <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current snap align from <computeroutput>lv_scroll_snap_t</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="115" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="115" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1af8054f1875a56b957750058fb268241e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_scroll_x</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_x</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current X scroll position. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current scroll position from the left edge. If the object is not scrolled return 0 If scrolled return &gt; 0 If scrolled in (elastic scroll) return &lt; 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="125" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="125" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1ad85a8bf7091cd1bb087aa665a744378e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_scroll_y</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_y</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current Y scroll position. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current scroll position from the top edge. If the object is not scrolled return 0 If scrolled return &gt; 0 If scrolled inside return &lt; 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="135" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="135" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a776c9edab7a4a16af9e74586824d25b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_scroll_top</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_top</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the height of the area above the object. That is the number of pixels the object can be scrolled down. Normally positive but can be negative when scrolled inside. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the scrollable area above the object in pixels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="144" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="144" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1aeaf68b359a1d59d324b13a3a5e9ee91b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_scroll_bottom</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_bottom</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the height of the area below the object. That is the number of pixels the object can be scrolled down. Normally positive but can be negative when scrolled inside. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the scrollable area below the object in pixels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="153" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="153" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a7dfe3c662ab78cdfbd17723edc285f19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_scroll_left</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_left</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the width of the area on the left the object. That is the number of pixels the object can be scrolled down. Normally positive but can be negative when scrolled inside. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the scrollable area on the left the object in pixels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="162" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="162" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1ad0b1991788b544ff8548c5595b2a6687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_scroll_right</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_scroll_right</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the width of the area on the right the object. That is the number of pixels the object can be scrolled down. Normally positive but can be negative when scrolled inside. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the scrollable area on the right the object in pixels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="171" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="171" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a6223c77c8b9aa69ec7cbeda4474bb41f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_get_scroll_end</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_point_t *end)</argsstring>
+        <name>lv_obj_get_scroll_end</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the X and Y coordinates where the scrolling will end for this object if a scrolling animation is in progress. If no scrolling animation, give the current <computeroutput>x</computeroutput> or <computeroutput>y</computeroutput> scroll position. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to store the result </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="179" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="179" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a2802effac89773e98a22d4353bc70c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_scroll_by</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t x, lv_coord_t y, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_scroll_by</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scroll by a given amount of pixels <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to scroll </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll horizontally </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll vertically </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON: scroll with animation; LV_ANIM_OFF: scroll immediately </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>&gt; 0 value means scroll right/bottom (show the more content on the right/bottom) </para>
+</simplesect>
+<simplesect kind="note"><para>e.g. dy = -20 means scroll down 20 px </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="194" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="194" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1aa35daf6f3943be3a12a025e4039e80b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_scroll_by_bounded</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t dx, lv_coord_t dy, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_scroll_by_bounded</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scroll by a given amount of pixels. <computeroutput>dx</computeroutput> and <computeroutput>dy</computeroutput> will be limited internally to allow scrolling only on the content area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to scroll </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll horizontally </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll vertically </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON: scroll with animation; LV_ANIM_OFF: scroll immediately </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>e.g. dy = -20 means scroll down 20 px </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="205" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="205" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a261d5ac8bdbf171644657c5ad0d0ea0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_scroll_to</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t x, lv_coord_t y, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_scroll_to</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scroll to a given coordinate on an object. <computeroutput>x</computeroutput> and <computeroutput>y</computeroutput> will be limited internally to allow scrolling only on the content area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to scroll </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll horizontally </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll vertically </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON: scroll with animation; LV_ANIM_OFF: scroll immediately </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="215" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="215" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a14f5156c56456bbf47f6efc5760fe256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_scroll_to_x</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t x, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_scroll_to_x</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scroll to a given X coordinate on an object. <computeroutput>x</computeroutput> will be limited internally to allow scrolling only on the content area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to scroll </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll horizontally </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON: scroll with animation; LV_ANIM_OFF: scroll immediately </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="224" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="224" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1ae48521a767706d9a6c413cc5d6ae22d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_scroll_to_y</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t y, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_scroll_to_y</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scroll to a given Y coordinate on an object <computeroutput>y</computeroutput> will be limited internally to allow scrolling only on the content area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to scroll </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll vertically </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON: scroll with animation; LV_ANIM_OFF: scroll immediately </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="233" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="233" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1ad71515c8abbf77baa87b0ce67696bf48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_scroll_to_view</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_scroll_to_view</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scroll to an object until it becomes visible on its parent <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to scroll into view </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON: scroll with animation; LV_ANIM_OFF: scroll immediately </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="240" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="240" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a946ee743575970adcca23094f7c4e96f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_scroll_to_view_recursive</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_scroll_to_view_recursive</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scroll to an object until it becomes visible on its parent. Do the same on the parent&apos;s parent, and so on. Therefore the object will be scrolled into view even it has nested scrollable parents <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to scroll into view </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON: scroll with animation; LV_ANIM_OFF: scroll immediately </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="249" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="249" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a9b57b01db32ce34ac5dd07fe459c6b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_res_t</type>
+        <definition>lv_res_t _lv_obj_scroll_by_raw</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t x, lv_coord_t y)</argsstring>
+        <name>_lv_obj_scroll_by_raw</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Low level function to scroll by given x and y coordinates. <computeroutput>LV_EVENT_SCROLL</computeroutput> is sent. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to scroll </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll horizontally </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixels to scroll vertically </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>LV_RES_INV</computeroutput>: to object was deleted in <computeroutput>LV_EVENT_SCROLL</computeroutput>; <computeroutput>LV_RES_OK</computeroutput>: if the object is still valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="260" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="260" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a0bc0688cc0ffc3216a740817b08939ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_is_scrolling</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_is_scrolling</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether an object is being scrolled or not at this moment <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: <computeroutput>obj</computeroutput> is being scrolled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="267" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="267" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a8d0f5664f0269d9a5a597cfafcf9490a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_update_snap</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_update_snap</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check the children of <computeroutput>obj</computeroutput> and scroll <computeroutput>obj</computeroutput> to fulfill the scroll_snap settings <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an object whose children needs to checked and snapped </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON/OFF </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="274" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="274" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1a3605a1bbe24f7a365babab103495f04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_get_scrollbar_area</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_area_t *hor, lv_area_t *ver)</argsstring>
+        <name>lv_obj_get_scrollbar_area</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>hor</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>ver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the area of the scrollbars <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to store the area of the horizontal scrollbar </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to store the area of the vertical scrollbar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="282" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="282" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1ae2fc00ad1a9647765e93d3f59ee3e8b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_scrollbar_invalidate</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_scrollbar_invalidate</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Invalidate the area of the scrollbars <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="288" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="288" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__scroll_8h_1ae7cd0da7586bb511be714848e057e533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_readjust_scroll</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_anim_enable_t anim_en)</argsstring>
+        <name>lv_obj_readjust_scroll</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref></type>
+          <declname>anim_en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the content is scrolled &quot;in&quot; and adjusts it to a normal position. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LV_ANIM_ON/OFF </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" line="295" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h" declline="295" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_OBJ_SCROLL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_OBJ_SCROLL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_area.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_anim.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*Can&apos;t<sp/>include<sp/>lv_obj.h<sp/>because<sp/>it<sp/>includes<sp/>this<sp/>header<sp/>file*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca46ab6ad24e62425d49b8a7b327f93f6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca46ab6ad24e62425d49b8a7b327f93f6d" kindref="member">LV_SCROLLBAR_MODE_OFF</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca456b951bdc613e191c67480646d4383a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca456b951bdc613e191c67480646d4383a" kindref="member">LV_SCROLLBAR_MODE_ON</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06cac1770059ee73f4a1152ca534e870f4fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06cac1770059ee73f4a1152ca534e870f4fb" kindref="member">LV_SCROLLBAR_MODE_ACTIVE</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca6ac64abeecc16acfb717647c1545812c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__scroll_8h_1adc29c2ff13d900c2f185ee95427fb06ca6ac64abeecc16acfb717647c1545812c" kindref="member">LV_SCROLLBAR_MODE_AUTO</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_scrollbar_mode_t;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42" refid="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9eaed4bf40cbb2409b8b0b2604a91a2dde3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9eaed4bf40cbb2409b8b0b2604a91a2dde3" kindref="member">LV_SCROLL_SNAP_NONE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea17a2c5a6852b8535efdefe4af2edd531" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea17a2c5a6852b8535efdefe4af2edd531" kindref="member">LV_SCROLL_SNAP_START</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea203353dcb2a1c5b4f7917ddb94c619f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea203353dcb2a1c5b4f7917ddb94c619f6" kindref="member">LV_SCROLL_SNAP_END</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea1ca0c2b2a66ff08bc5b185720d79b069" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__scroll_8h_1a61dadd085c1777f559549e05962b2c9ea1ca0c2b2a66ff08bc5b185720d79b069" kindref="member">LV_SCROLL_SNAP_CENTER</ref><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_scroll_snap_t;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a5fb2fe4a213880a7315532d3b9f850ee" kindref="member">lv_obj_set_scrollbar_mode</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_scrollbar_mode_t<sp/>mode);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a3c67390f4267a9de1c3e96eb68037988" kindref="member">lv_obj_set_scroll_dir</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_dir_t<sp/>dir);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1aaf2633f8acda42ffb42e50992b9b69e0" kindref="member">lv_obj_set_scroll_snap_x</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_scroll_snap_t<sp/>align);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a19843002e4811685fde4c243c9253210" kindref="member">lv_obj_set_scroll_snap_y</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_scroll_snap_t<sp/>align);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">lv_scrollbar_mode_t<sp/><ref refid="lv__obj__scroll_8h_1a2d8b50fc10180da251425dcefb36af7e" kindref="member">lv_obj_get_scrollbar_mode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">lv_dir_t<sp/><ref refid="lv__obj__scroll_8h_1a3a82713c94d5ae1eb0d1eff870b2ab72" kindref="member">lv_obj_get_scroll_dir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">lv_scroll_snap_t<sp/><ref refid="lv__obj__scroll_8h_1a21883be4df9a7520b10268b29cbea3a2" kindref="member">lv_obj_get_scroll_snap_x</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">lv_scroll_snap_t<sp/><ref refid="lv__obj__scroll_8h_1adb33b3f91c664681de456fba2fbc899e" kindref="member">lv_obj_get_scroll_snap_y</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__scroll_8h_1af8054f1875a56b957750058fb268241e" kindref="member">lv_obj_get_scroll_x</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__scroll_8h_1ad85a8bf7091cd1bb087aa665a744378e" kindref="member">lv_obj_get_scroll_y</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__scroll_8h_1a776c9edab7a4a16af9e74586824d25b8" kindref="member">lv_obj_get_scroll_top</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__scroll_8h_1aeaf68b359a1d59d324b13a3a5e9ee91b" kindref="member">lv_obj_get_scroll_bottom</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__scroll_8h_1a7dfe3c662ab78cdfbd17723edc285f19" kindref="member">lv_obj_get_scroll_left</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__scroll_8h_1ad0b1991788b544ff8548c5595b2a6687" kindref="member">lv_obj_get_scroll_right</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a6223c77c8b9aa69ec7cbeda4474bb41f" kindref="member">lv_obj_get_scroll_end</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/><sp/>*<sp/>obj,<sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>end);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*<sp/>Other<sp/>functions</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a2802effac89773e98a22d4353bc70c87" kindref="member">lv_obj_scroll_by</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>x,<sp/>lv_coord_t<sp/>y,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1aa35daf6f3943be3a12a025e4039e80b5" kindref="member">lv_obj_scroll_by_bounded</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>dx,<sp/>lv_coord_t<sp/>dy,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a261d5ac8bdbf171644657c5ad0d0ea0c" kindref="member">lv_obj_scroll_to</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>x,<sp/>lv_coord_t<sp/>y,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a14f5156c56456bbf47f6efc5760fe256" kindref="member">lv_obj_scroll_to_x</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>x,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1ae48521a767706d9a6c413cc5d6ae22d5" kindref="member">lv_obj_scroll_to_y</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>y,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1ad71515c8abbf77baa87b0ce67696bf48" kindref="member">lv_obj_scroll_to_view</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a946ee743575970adcca23094f7c4e96f" kindref="member">lv_obj_scroll_to_view_recursive</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal">lv_res_t<sp/><ref refid="lv__obj__scroll_8h_1a9b57b01db32ce34ac5dd07fe459c6b5b" kindref="member">_lv_obj_scroll_by_raw</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>x,<sp/>lv_coord_t<sp/>y);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a0bc0688cc0ffc3216a740817b08939ba" kindref="member">lv_obj_is_scrolling</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a8d0f5664f0269d9a5a597cfafcf9490a" kindref="member">lv_obj_update_snap</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1a3605a1bbe24f7a365babab103495f04f" kindref="member">lv_obj_get_scrollbar_area</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>hor,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>ver);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1ae2fc00ad1a9647765e93d3f59ee3e8b9" kindref="member">lv_obj_scrollbar_invalidate</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__scroll_8h_1ae7cd0da7586bb511be714848e057e533" kindref="member">lv_obj_readjust_scroll</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__anim_8h_1a1ba9d18fd18b8c83da1f058155b43a71" kindref="member">lv_anim_enable_t</ref><sp/>anim_en);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="298"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_OBJ_SCROLL_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_scroll.h"/>
+  </compounddef>
+</doxygen>

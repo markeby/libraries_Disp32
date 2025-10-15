@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_d427579e6d954d5fb6f37ea89b80f66e" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font</compoundname>
+    <innerfile refid="lv__font_8h">lv_font.h</innerfile>
+    <innerfile refid="lv__font__fmt__txt_8h">lv_font_fmt_txt.h</innerfile>
+    <innerfile refid="lv__font__loader_8h">lv_font_loader.h</innerfile>
+    <innerfile refid="lv__symbol__def_8h">lv_symbol_def.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/"/>
+  </compounddef>
+</doxygen>

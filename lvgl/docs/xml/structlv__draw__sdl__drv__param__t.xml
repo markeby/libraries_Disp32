@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__draw__sdl__drv__param__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_draw_sdl_drv_param_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__draw__sdl__drv__param__t_1a5a49fa88bd5cebfc83ac169048ac7367" prot="public" static="no" mutable="no">
+        <type>SDL_Renderer *</type>
+        <definition>SDL_Renderer* lv_draw_sdl_drv_param_t::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Render for display driver </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl.h" line="45" column="19" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__drv__param__t_1afcb002b8e5d44c743bbf61de63e0b69a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* lv_draw_sdl_drv_param_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl.h" line="46" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl.h" line="41" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl.h" bodystart="41" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structlv__draw__sdl__drv__param__t_1a5a49fa88bd5cebfc83ac169048ac7367" prot="public" virt="non-virtual"><scope>lv_draw_sdl_drv_param_t</scope><name>renderer</name></member>
+      <member refid="structlv__draw__sdl__drv__param__t_1afcb002b8e5d44c743bbf61de63e0b69a" prot="public" virt="non-virtual"><scope>lv_draw_sdl_drv_param_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

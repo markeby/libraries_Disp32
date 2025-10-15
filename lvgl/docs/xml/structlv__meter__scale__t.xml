@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__meter__scale__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_meter_scale_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__meter__scale__t_1afb58ec59198237a30cacbec8236c0ad5" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_meter_scale_t::tick_color</definition>
+        <argsstring></argsstring>
+        <name>tick_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="40" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a8226c462dfc8f5b8222eb227e7df976d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_meter_scale_t::tick_cnt</definition>
+        <argsstring></argsstring>
+        <name>tick_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="41" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1ae9cc214369e1cb30285551692a492645" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_meter_scale_t::tick_length</definition>
+        <argsstring></argsstring>
+        <name>tick_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="42" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a6d101c885f99891a6c6ba858b95babcb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_meter_scale_t::tick_width</definition>
+        <argsstring></argsstring>
+        <name>tick_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="43" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1afdc79302da99752a7d8e2d61e8ad81c9" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_meter_scale_t::tick_major_color</definition>
+        <argsstring></argsstring>
+        <name>tick_major_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="45" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a2350710fad1738801b98e947035cd274" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_meter_scale_t::tick_major_nth</definition>
+        <argsstring></argsstring>
+        <name>tick_major_nth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="46" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a74bee8043b3ce338a91e71b89d1ec644" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_meter_scale_t::tick_major_length</definition>
+        <argsstring></argsstring>
+        <name>tick_major_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="47" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a9a57a00d09bcdf8bd59b3abaf1135e17" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_meter_scale_t::tick_major_width</definition>
+        <argsstring></argsstring>
+        <name>tick_major_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="48" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1aff46c6a718b62549b5d66eefc9263f1e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_meter_scale_t::label_gap</definition>
+        <argsstring></argsstring>
+        <name>label_gap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="50" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1abdd9863838c024724367292155bf6c71" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_meter_scale_t::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="52" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a6b95ac719f0d9caebb41d0cc91b867c6" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_meter_scale_t::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="53" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a41c3a72f4498734d1d06d8a8cd7e7a7c" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_meter_scale_t::r_mod</definition>
+        <argsstring></argsstring>
+        <name>r_mod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="54" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a54b4bc56ea5bbb4057eef00de7c17bf7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_meter_scale_t::angle_range</definition>
+        <argsstring></argsstring>
+        <name>angle_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="55" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__meter__scale__t_1a2b3f94c55eef4ad84bc761180f38611b" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_meter_scale_t::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="56" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="33" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="33" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structlv__meter__scale__t_1a54b4bc56ea5bbb4057eef00de7c17bf7" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>angle_range</name></member>
+      <member refid="structlv__meter__scale__t_1aff46c6a718b62549b5d66eefc9263f1e" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>label_gap</name></member>
+      <member refid="structlv__meter__scale__t_1a6b95ac719f0d9caebb41d0cc91b867c6" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>max</name></member>
+      <member refid="structlv__meter__scale__t_1abdd9863838c024724367292155bf6c71" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>min</name></member>
+      <member refid="structlv__meter__scale__t_1a41c3a72f4498734d1d06d8a8cd7e7a7c" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>r_mod</name></member>
+      <member refid="structlv__meter__scale__t_1a2b3f94c55eef4ad84bc761180f38611b" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>rotation</name></member>
+      <member refid="structlv__meter__scale__t_1a8226c462dfc8f5b8222eb227e7df976d" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>tick_cnt</name></member>
+      <member refid="structlv__meter__scale__t_1afb58ec59198237a30cacbec8236c0ad5" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>tick_color</name></member>
+      <member refid="structlv__meter__scale__t_1ae9cc214369e1cb30285551692a492645" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>tick_length</name></member>
+      <member refid="structlv__meter__scale__t_1afdc79302da99752a7d8e2d61e8ad81c9" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>tick_major_color</name></member>
+      <member refid="structlv__meter__scale__t_1a74bee8043b3ce338a91e71b89d1ec644" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>tick_major_length</name></member>
+      <member refid="structlv__meter__scale__t_1a2350710fad1738801b98e947035cd274" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>tick_major_nth</name></member>
+      <member refid="structlv__meter__scale__t_1a9a57a00d09bcdf8bd59b3abaf1135e17" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>tick_major_width</name></member>
+      <member refid="structlv__meter__scale__t_1a6d101c885f99891a6c6ba858b95babcb" prot="public" virt="non-virtual"><scope>lv_meter_scale_t</scope><name>tick_width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

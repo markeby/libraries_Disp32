@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__table__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_table_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__table__t_1a97e4b5cf54cad17ef75f07a9d77738eb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_table_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="60" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__t_1a0ca3b916c3d2afcc90db9d6d21e6e608" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_table_t::col_cnt</definition>
+        <argsstring></argsstring>
+        <name>col_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="61" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__t_1a7e57ca7b0d450781f7a0bd80f7feb6d0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_table_t::row_cnt</definition>
+        <argsstring></argsstring>
+        <name>row_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="62" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__t_1add3c794024473b031810082da0e98bb9" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__table__cell__t" kindref="compound">lv_table_cell_t</ref> **</type>
+        <definition>lv_table_cell_t** lv_table_t::cell_data</definition>
+        <argsstring></argsstring>
+        <name>cell_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="63" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__t_1aa2885f35bbb63b4f6a5beda5d699d2de" prot="public" static="no" mutable="no">
+        <type>lv_coord_t *</type>
+        <definition>lv_coord_t* lv_table_t::row_h</definition>
+        <argsstring></argsstring>
+        <name>row_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="64" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__t_1a4180d3bda0df155c81356fb5b5099a80" prot="public" static="no" mutable="no">
+        <type>lv_coord_t *</type>
+        <definition>lv_coord_t* lv_table_t::col_w</definition>
+        <argsstring></argsstring>
+        <name>col_w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="65" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__t_1a737e2dbc3a688cd28e61b61ad028ef4f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_table_t::col_act</definition>
+        <argsstring></argsstring>
+        <name>col_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="66" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__t_1a4099fd5dc4ac6cf959ecf492a3c02961" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_table_t::row_act</definition>
+        <argsstring></argsstring>
+        <name>row_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="67" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="1">
+        <label>lv_table_t</label>
+        <link refid="structlv__table__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cell_data</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="2">
+        <label>lv_table_cell_t</label>
+        <link refid="structlv__table__cell__t"/>
+      </node>
+      <node id="9">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="13">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="4">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="59" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="59" bodyend="68"/>
+    <listofallmembers>
+      <member refid="structlv__table__t_1add3c794024473b031810082da0e98bb9" prot="public" virt="non-virtual"><scope>lv_table_t</scope><name>cell_data</name></member>
+      <member refid="structlv__table__t_1a737e2dbc3a688cd28e61b61ad028ef4f" prot="public" virt="non-virtual"><scope>lv_table_t</scope><name>col_act</name></member>
+      <member refid="structlv__table__t_1a0ca3b916c3d2afcc90db9d6d21e6e608" prot="public" virt="non-virtual"><scope>lv_table_t</scope><name>col_cnt</name></member>
+      <member refid="structlv__table__t_1a4180d3bda0df155c81356fb5b5099a80" prot="public" virt="non-virtual"><scope>lv_table_t</scope><name>col_w</name></member>
+      <member refid="structlv__table__t_1a97e4b5cf54cad17ef75f07a9d77738eb" prot="public" virt="non-virtual"><scope>lv_table_t</scope><name>obj</name></member>
+      <member refid="structlv__table__t_1a4099fd5dc4ac6cf959ecf492a3c02961" prot="public" virt="non-virtual"><scope>lv_table_t</scope><name>row_act</name></member>
+      <member refid="structlv__table__t_1a7e57ca7b0d450781f7a0bd80f7feb6d0" prot="public" virt="non-virtual"><scope>lv_table_t</scope><name>row_cnt</name></member>
+      <member refid="structlv__table__t_1aa2885f35bbb63b4f6a5beda5d699d2de" prot="public" virt="non-virtual"><scope>lv_table_t</scope><name>row_h</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

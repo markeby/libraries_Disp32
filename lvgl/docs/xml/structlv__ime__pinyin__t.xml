@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__ime__pinyin__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_ime_pinyin_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a499796c697dba9cd8ecdfc21668ad1ce" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_ime_pinyin_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="46" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1aa0cd190efe8fb1aed5888248fb8ee0a1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_ime_pinyin_t::kb</definition>
+        <argsstring></argsstring>
+        <name>kb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="47" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a0148ba19975a73cadd0853474ef9e1e0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_ime_pinyin_t::cand_panel</definition>
+        <argsstring></argsstring>
+        <name>cand_panel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="48" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a23a6c30b28d0334a93496f5aabe22fc1" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__pinyin__dict__t" kindref="compound">lv_pinyin_dict_t</ref> *</type>
+        <definition>lv_pinyin_dict_t* lv_ime_pinyin_t::dict</definition>
+        <argsstring></argsstring>
+        <name>dict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="49" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a92560cfded651215cd610417e252bf29" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref></type>
+        <definition>lv_ll_t lv_ime_pinyin_t::k9_legal_py_ll</definition>
+        <argsstring></argsstring>
+        <name>k9_legal_py_ll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="50" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1adb570c6b37ede7a17f63fe84e10bd8db" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* lv_ime_pinyin_t::cand_str</definition>
+        <argsstring></argsstring>
+        <name>cand_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="51" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a45726d2f3d9b19e3d3159e011e7c6b60" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lv_ime_pinyin_t::input_char[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>input_char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="52" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a3053f11e3ae93075909f4ff87cb2d89f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lv_ime_pinyin_t::k9_input_str[LV_IME_PINYIN_K9_MAX_INPUT]</definition>
+        <argsstring>[LV_IME_PINYIN_K9_MAX_INPUT]</argsstring>
+        <name>k9_input_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="54" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a573176385c1897e796a79378c9680225" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ime_pinyin_t::k9_py_ll_pos</definition>
+        <argsstring></argsstring>
+        <name>k9_py_ll_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="55" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a68aa349a3ebeae31bf1f9d846dce085c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ime_pinyin_t::k9_legal_py_count</definition>
+        <argsstring></argsstring>
+        <name>k9_legal_py_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="56" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1ae90edeb7f66a1abeb39f5e153b550f46" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ime_pinyin_t::k9_input_str_len</definition>
+        <argsstring></argsstring>
+        <name>k9_input_str_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="57" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1ac6ea9e3457c38ddd1053e2066d345923" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ime_pinyin_t::ta_count</definition>
+        <argsstring></argsstring>
+        <name>ta_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="59" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a5d747598b9be2fa0e21169b7d0ee0d90" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ime_pinyin_t::cand_num</definition>
+        <argsstring></argsstring>
+        <name>cand_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="60" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a0fbdee4c9883a2857fca7deae5943491" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ime_pinyin_t::py_page</definition>
+        <argsstring></argsstring>
+        <name>py_page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="61" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1aa6beee6b77fdd3aa79e202c0247ade9c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ime_pinyin_t::py_num[26]</definition>
+        <argsstring>[26]</argsstring>
+        <name>py_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="62" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a5d37e00a25315fcd6f25ab32d15a5566" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_ime_pinyin_t::py_pos[26]</definition>
+        <argsstring>[26]</argsstring>
+        <name>py_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="63" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__ime__pinyin__t_1a820951f2789dff0112787b77d18e94ea" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_ime_pinyin_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="64" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="1">
+        <label>lv_ime_pinyin_t</label>
+        <link refid="structlv__ime__pinyin__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dict</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj</edgelabel>
+          <edgelabel>kb</edgelabel>
+          <edgelabel>cand_panel</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>k9_legal_py_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="9">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="2">
+        <label>lv_pinyin_dict_t</label>
+        <link refid="structlv__pinyin__dict__t"/>
+      </node>
+      <node id="13">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="4">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" line="45" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/ime/lv_ime_pinyin.h" bodystart="45" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structlv__ime__pinyin__t_1a5d747598b9be2fa0e21169b7d0ee0d90" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>cand_num</name></member>
+      <member refid="structlv__ime__pinyin__t_1a0148ba19975a73cadd0853474ef9e1e0" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>cand_panel</name></member>
+      <member refid="structlv__ime__pinyin__t_1adb570c6b37ede7a17f63fe84e10bd8db" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>cand_str</name></member>
+      <member refid="structlv__ime__pinyin__t_1a23a6c30b28d0334a93496f5aabe22fc1" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>dict</name></member>
+      <member refid="structlv__ime__pinyin__t_1a45726d2f3d9b19e3d3159e011e7c6b60" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>input_char</name></member>
+      <member refid="structlv__ime__pinyin__t_1a3053f11e3ae93075909f4ff87cb2d89f" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>k9_input_str</name></member>
+      <member refid="structlv__ime__pinyin__t_1ae90edeb7f66a1abeb39f5e153b550f46" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>k9_input_str_len</name></member>
+      <member refid="structlv__ime__pinyin__t_1a68aa349a3ebeae31bf1f9d846dce085c" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>k9_legal_py_count</name></member>
+      <member refid="structlv__ime__pinyin__t_1a92560cfded651215cd610417e252bf29" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>k9_legal_py_ll</name></member>
+      <member refid="structlv__ime__pinyin__t_1a573176385c1897e796a79378c9680225" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>k9_py_ll_pos</name></member>
+      <member refid="structlv__ime__pinyin__t_1aa0cd190efe8fb1aed5888248fb8ee0a1" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>kb</name></member>
+      <member refid="structlv__ime__pinyin__t_1a820951f2789dff0112787b77d18e94ea" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>mode</name></member>
+      <member refid="structlv__ime__pinyin__t_1a499796c697dba9cd8ecdfc21668ad1ce" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>obj</name></member>
+      <member refid="structlv__ime__pinyin__t_1aa6beee6b77fdd3aa79e202c0247ade9c" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>py_num</name></member>
+      <member refid="structlv__ime__pinyin__t_1a0fbdee4c9883a2857fca7deae5943491" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>py_page</name></member>
+      <member refid="structlv__ime__pinyin__t_1a5d37e00a25315fcd6f25ab32d15a5566" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>py_pos</name></member>
+      <member refid="structlv__ime__pinyin__t_1ac6ea9e3457c38ddd1053e2066d345923" prot="public" virt="non-virtual"><scope>lv_ime_pinyin_t</scope><name>ta_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

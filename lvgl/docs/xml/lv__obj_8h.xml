@@ -1,0 +1,1575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__obj_8h" kind="file" language="C++">
+    <compoundname>lv_obj.h</compoundname>
+    <innerclass refid="struct__lv__obj__spec__attr__t" prot="public">_lv_obj_spec_attr_t</innerclass>
+    <innerclass refid="struct__lv__obj__t" prot="public">_lv_obj_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9817cb0d3c0e422c1f63901d4d92e8c3" prot="public">
+          <name>LV_STATE_DEFAULT</name>
+          <initializer>=  0x0000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a6fc6f742b7b193d9dad585f32826afcf" prot="public">
+          <name>LV_STATE_CHECKED</name>
+          <initializer>=  0x0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a5fb9f48f09dbcf9d45b0f79675e793cb" prot="public">
+          <name>LV_STATE_FOCUSED</name>
+          <initializer>=  0x0002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7acca6130ab5129b828f55e6a7cef77086" prot="public">
+          <name>LV_STATE_FOCUS_KEY</name>
+          <initializer>=  0x0004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a57be5d3fed5ca1d0519c0302a4517e8a" prot="public">
+          <name>LV_STATE_EDITED</name>
+          <initializer>=  0x0008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7aa24f8fab93b0965e98f5ad3bafea48b8" prot="public">
+          <name>LV_STATE_HOVERED</name>
+          <initializer>=  0x0010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a69673539aa92d84848a992fb3baea649" prot="public">
+          <name>LV_STATE_PRESSED</name>
+          <initializer>=  0x0020</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7ab00530563be74cbb0a37351f9b481475" prot="public">
+          <name>LV_STATE_SCROLLED</name>
+          <initializer>=  0x0040</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a63e18d3006cf8c0e73a5062782dce94b" prot="public">
+          <name>LV_STATE_DISABLED</name>
+          <initializer>=  0x0080</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae8ad1159c50bfeb6107d028a7e7af498" prot="public">
+          <name>LV_STATE_USER_1</name>
+          <initializer>=  0x1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a0314ac5161337bf62c12bbbccb489da0" prot="public">
+          <name>LV_STATE_USER_2</name>
+          <initializer>=  0x2000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7af2a3b0edc8523431954f43be7cfd60c7" prot="public">
+          <name>LV_STATE_USER_3</name>
+          <initializer>=  0x4000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a19339a643f37faa314a3a3f1616ce38a" prot="public">
+          <name>LV_STATE_USER_4</name>
+          <initializer>=  0x8000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a801cebe920a9b6b4d341e8eab3d19780" prot="public">
+          <name>LV_STATE_ANY</name>
+          <initializer>= 0xFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Special value can be used in some functions to target all states </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible states of a widget. OR-ed values are possible </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="41" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="41" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@2</name>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a1bb7ac56fc509fb459eb8c6ef66ba103" prot="public">
+          <name>LV_PART_MAIN</name>
+          <initializer>= 0x000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A background like rectangle </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a48a8e6955fcde2f7679f5a8f6eb698b9" prot="public">
+          <name>LV_PART_SCROLLBAR</name>
+          <initializer>= 0x010000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The scrollbar(s) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ae1fb6dda668a19264aef30e0bfb0930d" prot="public">
+          <name>LV_PART_INDICATOR</name>
+          <initializer>= 0x020000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicator, e.g. for slider, bar, switch, or the tick box of the checkbox </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ac6ba6af416d9846b75ddc8b6be6192a5" prot="public">
+          <name>LV_PART_KNOB</name>
+          <initializer>= 0x030000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Like handle to grab to adjust the value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ab86fa09e396634c9a640a40e38621c40" prot="public">
+          <name>LV_PART_SELECTED</name>
+          <initializer>= 0x040000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicate the currently selected option or section </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a90487e55bc86a255ad935ca1a0403261" prot="public">
+          <name>LV_PART_ITEMS</name>
+          <initializer>= 0x050000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Used if the widget has multiple similar elements (e.g. table cells) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ae0170b805e83c2e360ccb90ba4fea9e6" prot="public">
+          <name>LV_PART_TICKS</name>
+          <initializer>= 0x060000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ticks on scale e.g. for a chart or meter </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a8416967120efaa63c3fa1ef0016fa503" prot="public">
+          <name>LV_PART_CURSOR</name>
+          <initializer>= 0x070000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mark a specific place e.g. for text area&apos;s cursor or on a chart </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a2acbdcd5f3a8e80920f5e8551b7abe16" prot="public">
+          <name>LV_PART_CUSTOM_FIRST</name>
+          <initializer>= 0x080000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Extension point for custom widgets </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a20fb4a8bd26c73f27bab2c13cca4135c" prot="public">
+          <name>LV_PART_ANY</name>
+          <initializer>= 0x0F0000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Special value can be used in some functions to target all parts </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The possible parts of widgets. The parts can be considered as the internal building block of the widgets. E.g. slider = background + indicator + knob Not all parts are used by every widget </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="68" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="68" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@3</name>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a897a3221874cb9d0e4e28a6d530755f2" prot="public">
+          <name>LV_OBJ_FLAG_HIDDEN</name>
+          <initializer>= (1L &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object hidden. (Like it wasn&apos;t there at all) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ab9ba97b9e1ae0b3a4a5eca3d763e263b" prot="public">
+          <name>LV_OBJ_FLAG_CLICKABLE</name>
+          <initializer>= (1L &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object clickable by the input devices </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04abc971d6f2cd12cf2fcdd7e8e28c964c6" prot="public">
+          <name>LV_OBJ_FLAG_CLICK_FOCUSABLE</name>
+          <initializer>= (1L &lt;&lt; 2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Add focused state to the object when clicked </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a36ad28d2b06fff88a20e95952e58c937" prot="public">
+          <name>LV_OBJ_FLAG_CHECKABLE</name>
+          <initializer>= (1L &lt;&lt; 3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Toggle checked state when the object is clicked </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acd85fb802b95208772b4e124a87546ca" prot="public">
+          <name>LV_OBJ_FLAG_SCROLLABLE</name>
+          <initializer>= (1L &lt;&lt; 4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object scrollable </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ae7d692b8ceaf005b55a1a1c70d87f315" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_ELASTIC</name>
+          <initializer>= (1L &lt;&lt; 5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow scrolling inside but with slower speed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a4fe2a1748c3b752cfad7b2f2e371f97c" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_MOMENTUM</name>
+          <initializer>= (1L &lt;&lt; 6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object scroll further when &quot;thrown&quot; </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acd235b2da2988b6673679aa0d825f97f" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_ONE</name>
+          <initializer>= (1L &lt;&lt; 7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow scrolling only one snappable children </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5a3e346064405aa442372b712aac27fb" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_CHAIN_HOR</name>
+          <initializer>= (1L &lt;&lt; 8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow propagating the horizontal scroll to a parent </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acdc9c68ac828c91967b52ce0b3ad60ce" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_CHAIN_VER</name>
+          <initializer>= (1L &lt;&lt; 9)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow propagating the vertical scroll to a parent </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aa6df5b549b49eba61dd94129a9654c5b" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_CHAIN</name>
+          <initializer>= (LV_OBJ_FLAG_SCROLL_CHAIN_HOR | LV_OBJ_FLAG_SCROLL_CHAIN_VER)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aad2d5f453aea4efc7c5c69735f8fedfc" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_ON_FOCUS</name>
+          <initializer>= (1L &lt;&lt; 10)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Automatically scroll object to make it visible when focused </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aba880a01bb4721a22b58678810e8b9f8" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_WITH_ARROW</name>
+          <initializer>= (1L &lt;&lt; 11)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow scrolling the focused object with arrow keys </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a42b8f9479a9887451214b2e745875ab7" prot="public">
+          <name>LV_OBJ_FLAG_SNAPPABLE</name>
+          <initializer>= (1L &lt;&lt; 12)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If scroll snap is enabled on the parent it can snap to this object </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5f08ee3117d5cf0ed98950557015497b" prot="public">
+          <name>LV_OBJ_FLAG_PRESS_LOCK</name>
+          <initializer>= (1L &lt;&lt; 13)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Keep the object pressed even if the press slid from the object </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ae16fa872a5e67efda3e21a2925dddd85" prot="public">
+          <name>LV_OBJ_FLAG_EVENT_BUBBLE</name>
+          <initializer>= (1L &lt;&lt; 14)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Propagate the events to the parent too </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a339e201d0291a4b7258a50141b47df3e" prot="public">
+          <name>LV_OBJ_FLAG_GESTURE_BUBBLE</name>
+          <initializer>= (1L &lt;&lt; 15)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Propagate the gestures to the parent </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aab483aa0afd58b7df0c44e10b1ed73d1" prot="public">
+          <name>LV_OBJ_FLAG_ADV_HITTEST</name>
+          <initializer>= (1L &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow performing more accurate hit (click) test. E.g. consider rounded corners. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5278a16b8d997809825817354c2a836c" prot="public">
+          <name>LV_OBJ_FLAG_IGNORE_LAYOUT</name>
+          <initializer>= (1L &lt;&lt; 17)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object position-able by the layouts </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ad6fd2a95a8ca05bd35afd3393211677b" prot="public">
+          <name>LV_OBJ_FLAG_FLOATING</name>
+          <initializer>= (1L &lt;&lt; 18)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not scroll the object when the parent scrolls and ignore layout </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a9c1f8be397c92a0cfec887a1c1315d55" prot="public">
+          <name>LV_OBJ_FLAG_OVERFLOW_VISIBLE</name>
+          <initializer>= (1L &lt;&lt; 19)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not clip the children&apos;s content to the parent&apos;s boundary </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a2a8087232ace4a32a3b84d5cceb0cf8a" prot="public">
+          <name>LV_OBJ_FLAG_LAYOUT_1</name>
+          <initializer>= (1L &lt;&lt; 23)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by layouts </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a2f926bc2c9a05243d3cefb33a6e019a2" prot="public">
+          <name>LV_OBJ_FLAG_LAYOUT_2</name>
+          <initializer>= (1L &lt;&lt; 24)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by layouts </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a56ef045b9e3adf1f9b53993181b3f519" prot="public">
+          <name>LV_OBJ_FLAG_WIDGET_1</name>
+          <initializer>= (1L &lt;&lt; 25)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by widget </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a13da2d5612d7eca837d153566fe5a88c" prot="public">
+          <name>LV_OBJ_FLAG_WIDGET_2</name>
+          <initializer>= (1L &lt;&lt; 26)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by widget </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ade26c60c22b7b72d5b7f1c198a792e38" prot="public">
+          <name>LV_OBJ_FLAG_USER_1</name>
+          <initializer>= (1L &lt;&lt; 27)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by user </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a36aff389b54ace273398714fb679d293" prot="public">
+          <name>LV_OBJ_FLAG_USER_2</name>
+          <initializer>= (1L &lt;&lt; 28)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by user </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a290cacf233e96ec97f1f9e475754def2" prot="public">
+          <name>LV_OBJ_FLAG_USER_3</name>
+          <initializer>= (1L &lt;&lt; 29)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by user </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a32304027ab6e5bbddab828424b58bfe9" prot="public">
+          <name>LV_OBJ_FLAG_USER_4</name>
+          <initializer>= (1L &lt;&lt; 30)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by user </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On/Off features controlling the object&apos;s behavior. OR-ed values are possible </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="89" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="89" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_obj_draw_part_type_t</name>
+        <enumvalue id="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaafc6e874c0671558c04c54e2f066270da" prot="public">
+          <name>LV_OBJ_DRAW_PART_RECTANGLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The main rectangle </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaa69c22513315938988b37fbd57d8df0df" prot="public">
+          <name>LV_OBJ_DRAW_PART_BORDER_POST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The border if style_border_post = true </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaae44ddaa12cc79f7b977e95ccf69fcea7" prot="public">
+          <name>LV_OBJ_DRAW_PART_SCROLLBAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The scrollbar </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>type</computeroutput> field in <computeroutput><ref refid="structlv__obj__draw__part__dsc__t" kindref="compound">lv_obj_draw_part_dsc_t</ref></computeroutput> if <computeroutput>class_p = lv_obj_class</computeroutput> Used in <computeroutput>LV_EVENT_DRAW_PART_BEGIN</computeroutput> and <computeroutput>LV_EVENT_DRAW_PART_END</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="130" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="130" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__obj_8h_1a6a2a787185848ca20a71ca29900721ff" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t lv_state_t</definition>
+        <argsstring></argsstring>
+        <name>lv_state_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="60" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__obj_8h_1a3af359a63358e5fc794a84c4d586d744" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t lv_part_t</definition>
+        <argsstring></argsstring>
+        <name>lv_part_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="83" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__obj_8h_1a8d31d58e68ad0349ffdf0c6b4f37afd7" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t lv_obj_flag_t</definition>
+        <argsstring></argsstring>
+        <name>lv_obj_flag_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="124" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__obj_8h_1a01de9a127bcf589bd7d0c695a429b158" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref></type>
+        <definition>typedef struct _lv_obj_t lv_obj_t</definition>
+        <argsstring></argsstring>
+        <name>lv_obj_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="192" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__obj_8h_1a424ca3b432ad82f98c4b05950b597d44" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_obj_class</definition>
+        <argsstring></argsstring>
+        <name>lv_obj_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make the base object&apos;s class publicly available. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="148" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="148" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__obj_8h_1a666fa58edac1e61856b2a00fe60308a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize LVGL library. Should be called before any other LVGL related function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="202" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="202" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a302a9934e9b77badac7f527b5116a156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_deinit</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_deinit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinit the &apos;lv&apos; library Currently only implemented when not using custom allocators, or GC is enabled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="210" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="210" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a548cb2278027f044b648acd7f02b2f0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_is_initialized</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_is_initialized</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether the &apos;lv&apos; library is currently initialized </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="217" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="217" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a3ec100c35eb3851993b1af37c3250dad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_obj_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_obj_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a base object (a rectangle) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a parent object. If NULL then a screen will be created. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the new object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="224" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="224" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a87fa70194789d48ea3dba01d1c28c984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_add_flag</definition>
+        <argsstring>(lv_obj_t *obj, lv_obj_flag_t f)</argsstring>
+        <name>lv_obj_add_flag</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_obj_flag_t</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set one or more flags <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>R-ed values from <computeroutput>lv_obj_flag_t</computeroutput> to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="235" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="235" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a8a45a671b0fb07c0e99639c180d25fba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_clear_flag</definition>
+        <argsstring>(lv_obj_t *obj, lv_obj_flag_t f)</argsstring>
+        <name>lv_obj_clear_flag</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_obj_flag_t</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear one or more flags <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed values from <computeroutput>lv_obj_flag_t</computeroutput> to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="242" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="242" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1adbd258635d3d653e5446336764044db1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_add_state</definition>
+        <argsstring>(lv_obj_t *obj, lv_state_t state)</argsstring>
+        <name>lv_obj_add_state</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_state_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add one or more states to the object. The other state bits will remain unchanged. If specified in the styles, transition animation will be started from the previous state to the current. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the states to add. E.g <computeroutput>LV_STATE_PRESSED | LV_STATE_FOCUSED</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="250" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="250" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1ac94c26d36140c7c83da6914d60170e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_clear_state</definition>
+        <argsstring>(lv_obj_t *obj, lv_state_t state)</argsstring>
+        <name>lv_obj_clear_state</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_state_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove one or more states to the object. The other state bits will remain unchanged. If specified in the styles, transition animation will be started from the previous state to the current. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the states to add. E.g <computeroutput>LV_STATE_PRESSED | LV_STATE_FOCUSED</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="258" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="258" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a8365f69f32a3870a2b961b8d0751aeba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_obj_set_user_data</definition>
+        <argsstring>(lv_obj_t *obj, void *user_data)</argsstring>
+        <name>lv_obj_set_user_data</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the user_data field of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new user_data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="266" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a349bf1b6dea18bd0ab189e7a1c06a662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_has_flag</definition>
+        <argsstring>(const lv_obj_t *obj, lv_obj_flag_t f)</argsstring>
+        <name>lv_obj_has_flag</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_obj_flag_t</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a given flag or all the given flags are set on an object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the flag(s) to check (OR-ed values can be used) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: all flags are set; false: not all flags are set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="282" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="282" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a29244deb39942043ee658fbb8e1a47d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_has_flag_any</definition>
+        <argsstring>(const lv_obj_t *obj, lv_obj_flag_t f)</argsstring>
+        <name>lv_obj_has_flag_any</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_obj_flag_t</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a given flag or any of the flags are set on an object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the flag(s) to check (OR-ed values can be used) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: at lest one flag flag is set; false: none of the flags are set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="290" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="290" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a512731c24ce12b0e62abb3179cbde6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_state_t</type>
+        <definition>lv_state_t lv_obj_get_state</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_state</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the state of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the state (OR-ed values from <computeroutput>lv_state_t</computeroutput>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="297" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="297" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1af6296b36dd5eddc61f5544761b1ff5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_has_state</definition>
+        <argsstring>(const lv_obj_t *obj, lv_state_t state)</argsstring>
+        <name>lv_obj_has_state</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_state_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the object is in a given state or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a state or combination of states to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: <computeroutput>obj</computeroutput> is in <computeroutput>state</computeroutput>; false: <computeroutput>obj</computeroutput> is not in <computeroutput>state</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="305" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="305" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a4096ec8a90cb787d671867b9bd43dc73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lv_obj_get_group</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_group</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the group of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pointer to group of the object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="312" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="312" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1aa5a39817d4cbee2420ee5b4d7e466d28" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* lv_obj_get_user_data</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_user_data</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the user_data field of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pointer to the user_data of the object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="320" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a1b734607bd80d900ba862375d08227cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_allocate_spec_attr</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_obj_allocate_spec_attr</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate special data for an object if not allocated yet. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="334" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="334" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a3d7bedf32977bdf5a8ddfa01f1302c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_check_type</definition>
+        <argsstring>(const lv_obj_t *obj, const lv_obj_class_t *class_p)</argsstring>
+        <name>lv_obj_check_type</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref> *</type>
+          <declname>class_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check the type of obj. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>class_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a class to check (e.g. <computeroutput>lv_slider_class</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: <computeroutput>class_p</computeroutput> is the <computeroutput>obj</computeroutput> class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="342" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="342" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a27480f49b6f82e0e2643c1dd09735e9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_has_class</definition>
+        <argsstring>(const lv_obj_t *obj, const lv_obj_class_t *class_p)</argsstring>
+        <name>lv_obj_has_class</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref> *</type>
+          <declname>class_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if any object has a given class (type). It checks the ancestor classes too. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>class_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a class to check (e.g. <computeroutput>lv_slider_class</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: <computeroutput>obj</computeroutput> has the given class </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="351" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="351" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a6e54ac8307d229a201d1239b7c14a24f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref> *</type>
+        <definition>const lv_obj_class_t* lv_obj_get_class</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_class</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the class (type) of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the class (type) of the object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="358" column="23" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="358" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a4c220acd20b632ad2d4ca7cd7a3023bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_is_valid</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_is_valid</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if any object is still &quot;alive&quot;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="365" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" declline="365" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1afd033d8537f915e7fb845f16095e050d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_obj_dpx</definition>
+        <argsstring>(const lv_obj_t *obj, lv_coord_t n)</argsstring>
+        <name>lv_obj_dpx</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale the given number of pixels (a distance or size) relative to a 160 DPI display considering the DPI of the <computeroutput>obj</computeroutput>&apos;s display. It ensures that e.g. <computeroutput>lv_dpx(100)</computeroutput> will have the same physical size regardless to the DPI of the display. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an object whose display&apos;s dpi should be considered </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of pixels to scale </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>n x current_dpi/160</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" line="376" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h" bodystart="376" bodyend="379"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_OBJ_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_OBJ_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_style.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_area.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_color.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_assert.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../hal/lv_hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_DEFAULT<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x0000,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_CHECKED<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x0001,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_FOCUSED<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x0002,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_FOCUS_KEY<sp/><sp/><sp/>=<sp/><sp/>0x0004,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_EDITED<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x0008,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_HOVERED<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x0010,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_PRESSED<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x0020,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_SCROLLED<sp/><sp/><sp/><sp/>=<sp/><sp/>0x0040,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_DISABLED<sp/><sp/><sp/><sp/>=<sp/><sp/>0x0080,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_USER_1<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x1000,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_USER_2<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x2000,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_USER_3<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x4000,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STATE_USER_4<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0x8000,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a801cebe920a9b6b4d341e8eab3d19780" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a801cebe920a9b6b4d341e8eab3d19780" kindref="member">LV_STATE_ANY</ref><sp/>=<sp/>0xFFFF,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/>lv_state_t;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a1bb7ac56fc509fb459eb8c6ef66ba103" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a1bb7ac56fc509fb459eb8c6ef66ba103" kindref="member">LV_PART_MAIN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x000000,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a48a8e6955fcde2f7679f5a8f6eb698b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a48a8e6955fcde2f7679f5a8f6eb698b9" kindref="member">LV_PART_SCROLLBAR</ref><sp/><sp/><sp/><sp/>=<sp/>0x010000,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ae1fb6dda668a19264aef30e0bfb0930d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ae1fb6dda668a19264aef30e0bfb0930d" kindref="member">LV_PART_INDICATOR</ref><sp/><sp/><sp/><sp/>=<sp/>0x020000,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ac6ba6af416d9846b75ddc8b6be6192a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ac6ba6af416d9846b75ddc8b6be6192a5" kindref="member">LV_PART_KNOB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x030000,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ab86fa09e396634c9a640a40e38621c40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ab86fa09e396634c9a640a40e38621c40" kindref="member">LV_PART_SELECTED</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x040000,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a90487e55bc86a255ad935ca1a0403261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a90487e55bc86a255ad935ca1a0403261" kindref="member">LV_PART_ITEMS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x050000,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ae0170b805e83c2e360ccb90ba4fea9e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5ae0170b805e83c2e360ccb90ba4fea9e6" kindref="member">LV_PART_TICKS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x060000,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a8416967120efaa63c3fa1ef0016fa503" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a8416967120efaa63c3fa1ef0016fa503" kindref="member">LV_PART_CURSOR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x070000,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a2acbdcd5f3a8e80920f5e8551b7abe16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a2acbdcd5f3a8e80920f5e8551b7abe16" kindref="member">LV_PART_CUSTOM_FIRST</ref><sp/>=<sp/>0x080000,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a20fb4a8bd26c73f27bab2c13cca4135c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a20fb4a8bd26c73f27bab2c13cca4135c" kindref="member">LV_PART_ANY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0F0000,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>lv_part_t;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="90" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a897a3221874cb9d0e4e28a6d530755f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a897a3221874cb9d0e4e28a6d530755f2" kindref="member">LV_OBJ_FLAG_HIDDEN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>0),<sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ab9ba97b9e1ae0b3a4a5eca3d763e263b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ab9ba97b9e1ae0b3a4a5eca3d763e263b" kindref="member">LV_OBJ_FLAG_CLICKABLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>1),<sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04abc971d6f2cd12cf2fcdd7e8e28c964c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04abc971d6f2cd12cf2fcdd7e8e28c964c6" kindref="member">LV_OBJ_FLAG_CLICK_FOCUSABLE</ref><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>2),<sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a36ad28d2b06fff88a20e95952e58c937" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a36ad28d2b06fff88a20e95952e58c937" kindref="member">LV_OBJ_FLAG_CHECKABLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>3),<sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acd85fb802b95208772b4e124a87546ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acd85fb802b95208772b4e124a87546ca" kindref="member">LV_OBJ_FLAG_SCROLLABLE</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>4),<sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ae7d692b8ceaf005b55a1a1c70d87f315" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ae7d692b8ceaf005b55a1a1c70d87f315" kindref="member">LV_OBJ_FLAG_SCROLL_ELASTIC</ref><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>5),<sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a4fe2a1748c3b752cfad7b2f2e371f97c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a4fe2a1748c3b752cfad7b2f2e371f97c" kindref="member">LV_OBJ_FLAG_SCROLL_MOMENTUM</ref><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>6),<sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acd235b2da2988b6673679aa0d825f97f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acd235b2da2988b6673679aa0d825f97f" kindref="member">LV_OBJ_FLAG_SCROLL_ONE</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>7),<sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5a3e346064405aa442372b712aac27fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5a3e346064405aa442372b712aac27fb" kindref="member">LV_OBJ_FLAG_SCROLL_CHAIN_HOR</ref><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>8),<sp/></highlight></codeline>
+<codeline lineno="99" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acdc9c68ac828c91967b52ce0b3ad60ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acdc9c68ac828c91967b52ce0b3ad60ce" kindref="member">LV_OBJ_FLAG_SCROLL_CHAIN_VER</ref><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>9),<sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_OBJ_FLAG_SCROLL_CHAIN<sp/><sp/><sp/><sp/><sp/>=<sp/>(<ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5a3e346064405aa442372b712aac27fb" kindref="member">LV_OBJ_FLAG_SCROLL_CHAIN_HOR</ref><sp/>|<sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04acdc9c68ac828c91967b52ce0b3ad60ce" kindref="member">LV_OBJ_FLAG_SCROLL_CHAIN_VER</ref>),</highlight></codeline>
+<codeline lineno="101" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aad2d5f453aea4efc7c5c69735f8fedfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aad2d5f453aea4efc7c5c69735f8fedfc" kindref="member">LV_OBJ_FLAG_SCROLL_ON_FOCUS</ref><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>10),<sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aba880a01bb4721a22b58678810e8b9f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aba880a01bb4721a22b58678810e8b9f8" kindref="member">LV_OBJ_FLAG_SCROLL_WITH_ARROW</ref><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>11),<sp/></highlight></codeline>
+<codeline lineno="103" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a42b8f9479a9887451214b2e745875ab7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a42b8f9479a9887451214b2e745875ab7" kindref="member">LV_OBJ_FLAG_SNAPPABLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>12),<sp/></highlight></codeline>
+<codeline lineno="104" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5f08ee3117d5cf0ed98950557015497b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5f08ee3117d5cf0ed98950557015497b" kindref="member">LV_OBJ_FLAG_PRESS_LOCK</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>13),<sp/></highlight></codeline>
+<codeline lineno="105" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ae16fa872a5e67efda3e21a2925dddd85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ae16fa872a5e67efda3e21a2925dddd85" kindref="member">LV_OBJ_FLAG_EVENT_BUBBLE</ref><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>14),<sp/></highlight></codeline>
+<codeline lineno="106" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a339e201d0291a4b7258a50141b47df3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a339e201d0291a4b7258a50141b47df3e" kindref="member">LV_OBJ_FLAG_GESTURE_BUBBLE</ref><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>15),<sp/></highlight></codeline>
+<codeline lineno="107" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aab483aa0afd58b7df0c44e10b1ed73d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04aab483aa0afd58b7df0c44e10b1ed73d1" kindref="member">LV_OBJ_FLAG_ADV_HITTEST</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>16),<sp/></highlight></codeline>
+<codeline lineno="108" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5278a16b8d997809825817354c2a836c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a5278a16b8d997809825817354c2a836c" kindref="member">LV_OBJ_FLAG_IGNORE_LAYOUT</ref><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="109" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ad6fd2a95a8ca05bd35afd3393211677b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ad6fd2a95a8ca05bd35afd3393211677b" kindref="member">LV_OBJ_FLAG_FLOATING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>18),<sp/></highlight></codeline>
+<codeline lineno="110" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a9c1f8be397c92a0cfec887a1c1315d55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a9c1f8be397c92a0cfec887a1c1315d55" kindref="member">LV_OBJ_FLAG_OVERFLOW_VISIBLE</ref><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>19),<sp/></highlight></codeline>
+<codeline lineno="112" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a2a8087232ace4a32a3b84d5cceb0cf8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a2a8087232ace4a32a3b84d5cceb0cf8a" kindref="member">LV_OBJ_FLAG_LAYOUT_1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>23),<sp/></highlight></codeline>
+<codeline lineno="113" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a2f926bc2c9a05243d3cefb33a6e019a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a2f926bc2c9a05243d3cefb33a6e019a2" kindref="member">LV_OBJ_FLAG_LAYOUT_2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>24),<sp/></highlight></codeline>
+<codeline lineno="115" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a56ef045b9e3adf1f9b53993181b3f519" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a56ef045b9e3adf1f9b53993181b3f519" kindref="member">LV_OBJ_FLAG_WIDGET_1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>25),<sp/></highlight></codeline>
+<codeline lineno="116" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a13da2d5612d7eca837d153566fe5a88c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a13da2d5612d7eca837d153566fe5a88c" kindref="member">LV_OBJ_FLAG_WIDGET_2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>26),<sp/></highlight></codeline>
+<codeline lineno="117" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ade26c60c22b7b72d5b7f1c198a792e38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04ade26c60c22b7b72d5b7f1c198a792e38" kindref="member">LV_OBJ_FLAG_USER_1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>27),<sp/></highlight></codeline>
+<codeline lineno="118" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a36aff389b54ace273398714fb679d293" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a36aff389b54ace273398714fb679d293" kindref="member">LV_OBJ_FLAG_USER_2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>28),<sp/></highlight></codeline>
+<codeline lineno="119" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a290cacf233e96ec97f1f9e475754def2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a290cacf233e96ec97f1f9e475754def2" kindref="member">LV_OBJ_FLAG_USER_3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>29),<sp/></highlight></codeline>
+<codeline lineno="120" refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a32304027ab6e5bbddab828424b58bfe9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1abc6126af1d45847bc59afa0aa3216b04a32304027ab6e5bbddab828424b58bfe9" kindref="member">LV_OBJ_FLAG_USER_4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1L<sp/>&lt;&lt;<sp/>30),<sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>lv_obj_flag_t;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfa" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="131" refid="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaafc6e874c0671558c04c54e2f066270da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaafc6e874c0671558c04c54e2f066270da" kindref="member">LV_OBJ_DRAW_PART_RECTANGLE</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaa69c22513315938988b37fbd57d8df0df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaa69c22513315938988b37fbd57d8df0df" kindref="member">LV_OBJ_DRAW_PART_BORDER_POST</ref>,</highlight></codeline>
+<codeline lineno="133" refid="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaae44ddaa12cc79f7b977e95ccf69fcea7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfaae44ddaa12cc79f7b977e95ccf69fcea7" kindref="member">LV_OBJ_DRAW_PART_SCROLLBAR</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}<sp/><ref refid="lv__obj_8h_1a4b405752eb666638d7ab3436ccb86cfa" kindref="member">lv_obj_draw_part_type_t</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lv_obj_tree.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__obj__pos_8h" kindref="compound">lv_obj_pos.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__obj__scroll_8h" kindref="compound">lv_obj_scroll.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__obj__style_8h" kindref="compound">lv_obj_style.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__obj__draw_8h" kindref="compound">lv_obj_draw.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__obj__class_8h" kindref="compound">lv_obj_class.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__event_8h" kindref="compound">lv_event.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__group_8h" kindref="compound">lv_group.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/><ref refid="lv__obj_8h_1a424ca3b432ad82f98c4b05950b597d44" kindref="member">lv_obj_class</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="struct__lv__obj__spec__attr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155" refid="struct__lv__obj__spec__attr__t_1a24899261813fe9686805031d6e753145" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>**<sp/><ref refid="struct__lv__obj__spec__attr__t_1a24899261813fe9686805031d6e753145" kindref="member">children</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="struct__lv__obj__spec__attr__t_1a4e00767c29ba01c4f7be7e4ca5f1d52f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1a4e00767c29ba01c4f7be7e4ca5f1d52f" kindref="member">child_cnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__group__t" kindref="compound">lv_group_t</ref><sp/>*<sp/>group_p;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="struct__lv__obj__spec__attr__t_1a41c8f14eb458a527ce93ddb14228d2e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_lv_event_dsc_t<sp/>*<sp/><ref refid="struct__lv__obj__spec__attr__t_1a41c8f14eb458a527ce93ddb14228d2e6" kindref="member">event_dsc</ref>;<sp/></highlight></codeline>
+<codeline lineno="160" refid="struct__lv__obj__spec__attr__t_1a777cd35b43ca269c6d695a1578fec43e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/><ref refid="struct__lv__obj__spec__attr__t_1a777cd35b43ca269c6d695a1578fec43e" kindref="member">scroll</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="struct__lv__obj__spec__attr__t_1a3254cf494f1cc0806aa8ccdda1a3ea83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1a3254cf494f1cc0806aa8ccdda1a3ea83" kindref="member">ext_click_pad</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="struct__lv__obj__spec__attr__t_1a73aca9ce51fdd07c6266ed5c2dba6aa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1a73aca9ce51fdd07c6266ed5c2dba6aa7" kindref="member">ext_draw_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="struct__lv__obj__spec__attr__t_1a1172b4fc8c2ebce6d338d693990550fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_scrollbar_mode_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1a1172b4fc8c2ebce6d338d693990550fc" kindref="member">scrollbar_mode</ref><sp/>:<sp/>2;<sp/></highlight></codeline>
+<codeline lineno="166" refid="struct__lv__obj__spec__attr__t_1a258fb40ccbbef31fd83d1fb7b0c61434" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_scroll_snap_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1a258fb40ccbbef31fd83d1fb7b0c61434" kindref="member">scroll_snap_x</ref><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="struct__lv__obj__spec__attr__t_1a0062a0595d0ea326aae1a0ab49785202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_scroll_snap_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1a0062a0595d0ea326aae1a0ab49785202" kindref="member">scroll_snap_y</ref><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168" refid="struct__lv__obj__spec__attr__t_1a85052ac92f99a5fc31c6e737b1fb2541" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_dir_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1a85052ac92f99a5fc31c6e737b1fb2541" kindref="member">scroll_dir</ref><sp/>:<sp/>4;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="struct__lv__obj__spec__attr__t_1afbd96383fc9f21a0f97cc04bcb5dd4cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1afbd96383fc9f21a0f97cc04bcb5dd4cd" kindref="member">event_dsc_cnt</ref><sp/>:<sp/>6;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="struct__lv__obj__spec__attr__t_1a093233c957f2e68bb1a47760adebdc86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__obj__spec__attr__t_1a093233c957f2e68bb1a47760adebdc86" kindref="member">layer_type</ref><sp/>:<sp/>2;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}<sp/><ref refid="struct__lv__obj__spec__attr__t" kindref="compound">_lv_obj_spec_attr_t</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="struct__lv__obj__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>*<sp/>class_p;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>parent;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__spec__attr__t" kindref="compound">_lv_obj_spec_attr_t</ref><sp/>*<sp/>spec_attr;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__style__t" kindref="compound">_lv_obj_style_t</ref><sp/>*<sp/>styles;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>coords;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_flag_t<sp/>flags;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_state_t<sp/>state;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>layout_inv<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>readjust_scroll_after_layout<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>scr_layout_inv<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>skip_trans<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>style_cnt<sp/><sp/>:<sp/>6;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>h_layout<sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>w_layout<sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>being_deleted<sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}<sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a666fa58edac1e61856b2a00fe60308a0" kindref="member">lv_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_ENABLE_GC<sp/>||<sp/>!LV_MEM_CUSTOM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a302a9934e9b77badac7f527b5116a156" kindref="member">lv_deinit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a548cb2278027f044b648acd7f02b2f0c" kindref="member">lv_is_initialized</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__obj_8h_1a3ec100c35eb3851993b1af37c3250dad" kindref="member">lv_obj_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a87fa70194789d48ea3dba01d1c28c984" kindref="member">lv_obj_add_flag</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_obj_flag_t<sp/>f);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a8a45a671b0fb07c0e99639c180d25fba" kindref="member">lv_obj_clear_flag</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_obj_flag_t<sp/>f);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1adbd258635d3d653e5446336764044db1" kindref="member">lv_obj_add_state</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_state_t<sp/>state);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1ac94c26d36140c7c83da6914d60170e16" kindref="member">lv_obj_clear_state</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_state_t<sp/>state);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_user_data(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>obj-&gt;user_data<sp/>=<sp/>user_data;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">/*=======================</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="274"><highlight class="comment"><sp/>*======================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a349bf1b6dea18bd0ab189e7a1c06a662" kindref="member">lv_obj_has_flag</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_obj_flag_t<sp/>f);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a29244deb39942043ee658fbb8e1a47d2" kindref="member">lv_obj_has_flag_any</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_obj_flag_t<sp/>f);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal">lv_state_t<sp/><ref refid="lv__obj_8h_1a512731c24ce12b0e62abb3179cbde6ed" kindref="member">lv_obj_get_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1af6296b36dd5eddc61f5544761b1ff5a7" kindref="member">lv_obj_has_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_state_t<sp/>state);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__obj_8h_1a4096ec8a90cb787d671867b9bd43dc73" kindref="member">lv_obj_get_group</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>lv_obj_get_user_data(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>obj-&gt;user_data;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">/*=======================</highlight></codeline>
+<codeline lineno="327"><highlight class="comment"><sp/>*<sp/>Other<sp/>functions</highlight></codeline>
+<codeline lineno="328"><highlight class="comment"><sp/>*======================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a1b734607bd80d900ba862375d08227cf" kindref="member">lv_obj_allocate_spec_attr</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a3d7bedf32977bdf5a8ddfa01f1302c08" kindref="member">lv_obj_check_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>*<sp/>class_p);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a27480f49b6f82e0e2643c1dd09735e9d" kindref="member">lv_obj_has_class</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>*<sp/>class_p);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>*<sp/><ref refid="lv__obj_8h_1a6e54ac8307d229a201d1239b7c14a24f" kindref="member">lv_obj_get_class</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj_8h_1a4c220acd20b632ad2d4ca7cd7a3023bb" kindref="member">lv_obj_is_valid</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_obj_dpx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>n)</highlight></codeline>
+<codeline lineno="377"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_LV_DPX_CALC(<ref refid="lv__hal__disp_8h_1a438d2021a713a4e495acbaadaedac2ec" kindref="member">lv_disp_get_dpi</ref>(lv_obj_get_disp(obj)),<sp/>n);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="382"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="383"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_ASSERT_OBJ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LV_ASSERT_OBJ(obj_p,<sp/>obj_class)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="387"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="388"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LV_ASSERT_MSG(obj_p<sp/>!=<sp/>NULL,<sp/>&quot;The<sp/>object<sp/>is<sp/>NULL&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="389"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LV_ASSERT_MSG(lv_obj_has_class(obj_p,<sp/>obj_class)<sp/>==<sp/>true,<sp/>&quot;Incompatible<sp/>object<sp/>type.&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="390"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LV_ASSERT_MSG(lv_obj_is_valid(obj_p)<sp/><sp/>==<sp/>true,<sp/>&quot;The<sp/>object<sp/>is<sp/>invalid,<sp/>deleted<sp/>or<sp/>corrupted?&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="391"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LV_ASSERT_OBJ(obj_p,<sp/>obj_class)<sp/>do{}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_LOG<sp/>&amp;&amp;<sp/>LV_LOG_TRACE_OBJ_CREATE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LV_TRACE_OBJ_CREATE(...)<sp/>LV_LOG_TRACE(__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LV_TRACE_OBJ_CREATE(...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_OBJ_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj.h"/>
+  </compounddef>
+</doxygen>

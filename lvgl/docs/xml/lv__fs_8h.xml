@@ -1,0 +1,1038 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__fs_8h" kind="file" language="C++">
+    <compoundname>lv_fs.h</compoundname>
+    <innerclass refid="struct__lv__fs__drv__t" prot="public">_lv_fs_drv_t</innerclass>
+    <innerclass refid="structlv__fs__file__cache__t" prot="public">lv_fs_file_cache_t</innerclass>
+    <innerclass refid="structlv__fs__file__t" prot="public">lv_fs_file_t</innerclass>
+    <innerclass refid="structlv__fs__dir__t" prot="public">lv_fs_dir_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@60</name>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aadb83c1c6f46cec603883477779145ae9" prot="public">
+          <name>LV_FS_RES_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aa77fa4663bf968acb863efb888233f707" prot="public">
+          <name>LV_FS_RES_HW_ERR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aaa8e8b3feae9ef00e4a410326775c6a11" prot="public">
+          <name>LV_FS_RES_FS_ERR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aa90092978c7bbac15595d3c6159d61a5c" prot="public">
+          <name>LV_FS_RES_NOT_EX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aaf5cb935649ee2a9b95782a82bd681550" prot="public">
+          <name>LV_FS_RES_FULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aad606d18bca0e93e19ecdde780edaac6c" prot="public">
+          <name>LV_FS_RES_LOCKED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aa187409bac9eb65eb24b57e0b6da1ce6c" prot="public">
+          <name>LV_FS_RES_DENIED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aa281318bee6fb440cdf8ad9f1efa7057e" prot="public">
+          <name>LV_FS_RES_BUSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aaa0c19b94256b548037505c3d8dcadc75" prot="public">
+          <name>LV_FS_RES_TOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aa7b6a8483614c8bf0b6c404ae017f8d83" prot="public">
+          <name>LV_FS_RES_NOT_IMP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aa83dfd99b60dd6daae89e4c7eafcd3452" prot="public">
+          <name>LV_FS_RES_OUT_OF_MEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aa528c1c214eaa1dc525d4020989ab9b5e" prot="public">
+          <name>LV_FS_RES_INV_PARAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aa156d1cebb38c8a65846c4d9c006012aaf03bed259b560859bc21026670ba0283" prot="public">
+          <name>LV_FS_RES_UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Errors in the file system module. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="34" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="34" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__fs_8h_1af8654c714018c6241d9ebd01f3fb5a26" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@61</name>
+        <enumvalue id="lv__fs_8h_1af8654c714018c6241d9ebd01f3fb5a26ad2cca4ecbe5348610a336fa2eac561d0" prot="public">
+          <name>LV_FS_MODE_WR</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1af8654c714018c6241d9ebd01f3fb5a26abb6092a0bb0d3cf8e1d344fcb5320bfd" prot="public">
+          <name>LV_FS_MODE_RD</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>File open mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="54" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_fs_whence_t</name>
+        <enumvalue id="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267baeab4de99544eff8575fed2fee38cd6c5" prot="public">
+          <name>LV_FS_SEEK_SET</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Set the position from absolutely (from the start of file) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267bae2d8f6afe283d333394a7af28e858196" prot="public">
+          <name>LV_FS_SEEK_CUR</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Set the position from the current position </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267bab0f1a6bb2458d1531627e1be79eb79ac" prot="public">
+          <name>LV_FS_SEEK_END</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Set the position from the end of the file </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seek modes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="63" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="63" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__fs_8h_1a677bb0a100477713ea7bded7e9c47290" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_fs_res_t</definition>
+        <argsstring></argsstring>
+        <name>lv_fs_res_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="49" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__fs_8h_1a7f24c7925b35cd1b9ff251a36ba21c1d" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_fs_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_fs_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="58" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__fs_8h_1ae4753375c8bf76a1c092017b5f377424" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref></type>
+        <definition>typedef struct _lv_fs_drv_t lv_fs_drv_t</definition>
+        <argsstring></argsstring>
+        <name>lv_fs_drv_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="88" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__fs_8h_1adc8beccbcb0961436c1680751ef54afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_fs_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>_lv_fs_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the File system interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="115" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="115" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a0c8cc12755f7515de54ec9064e83af75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_fs_drv_init</definition>
+        <argsstring>(lv_fs_drv_t *drv)</argsstring>
+        <name>lv_fs_drv_init</name>
+        <param>
+          <type><ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref> *</type>
+          <declname>drv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a file system driver with default values. It is used to surly have known values in the fields ant not memory junk. After it you can set the fields. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>drv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to driver variable to initialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="123" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="123" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a2540b36d20b26416d944092a818b7be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_fs_drv_register</definition>
+        <argsstring>(lv_fs_drv_t *drv)</argsstring>
+        <name>lv_fs_drv_register</name>
+        <param>
+          <type><ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref> *</type>
+          <declname>drv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new drive <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>drv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an lv_fs_drv_t structure which is inited with the corresponding function pointers. Only pointer is saved, so the driver should be static or dynamically allocated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="131" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="131" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1ae0baa7925cb2524f56035fa46047e769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref> *</type>
+        <definition>lv_fs_drv_t* lv_fs_get_drv</definition>
+        <argsstring>(char letter)</argsstring>
+        <name>lv_fs_get_drv</name>
+        <param>
+          <type>char</type>
+          <declname>letter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Give a pointer to a driver from its letter <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the driver letter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to a driver or NULL if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="138" column="14" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="138" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a4afefd5dbe151665fa2a24ad0a1eeff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_fs_is_ready</definition>
+        <argsstring>(char letter)</argsstring>
+        <name>lv_fs_is_ready</name>
+        <param>
+          <type>char</type>
+          <declname>letter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a drive is ready or not. If the <computeroutput>ready</computeroutput> function was not initialized <computeroutput>true</computeroutput> will be returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>letter of the drive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: drive is ready; false: drive is not ready </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="146" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="146" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a339d0b51618dbcec593d0f4081348e5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_open</definition>
+        <argsstring>(lv_fs_file_t *file_p, const char *path, lv_fs_mode_t mode)</argsstring>
+        <name>lv_fs_open</name>
+        <param>
+          <type><ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> *</type>
+          <declname>file_p</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>lv_fs_mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the file beginning with the driver letter (e.g. S:/folder/file.txt) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>read: FS_MODE_RD, write: FS_MODE_WR, both: FS_MODE_RD | FS_MODE_WR </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from lv_fs_res_t enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="155" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="155" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a695f81fd4c47d1ace4dce3ebb536e531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_close</definition>
+        <argsstring>(lv_fs_file_t *file_p)</argsstring>
+        <name>lv_fs_close</name>
+        <param>
+          <type><ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> *</type>
+          <declname>file_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close an already opened file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from lv_fs_res_t enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="162" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="162" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1aaeeaf5fdcf642f3d7af4828e1e74fbb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_read</definition>
+        <argsstring>(lv_fs_file_t *file_p, void *buf, uint32_t btr, uint32_t *br)</argsstring>
+        <name>lv_fs_read</name>
+        <param>
+          <type><ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> *</type>
+          <declname>file_p</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>btr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>br</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read from a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a buffer where the read bytes are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes To Read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of real read bytes (Bytes Read). NULL if unused. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from lv_fs_res_t enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="172" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="172" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a924b9bb284d7cf2681bf54851a9e5138" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_write</definition>
+        <argsstring>(lv_fs_file_t *file_p, const void *buf, uint32_t btw, uint32_t *bw)</argsstring>
+        <name>lv_fs_write</name>
+        <param>
+          <type><ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> *</type>
+          <declname>file_p</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>btw</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>bw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write into a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a buffer with the bytes to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes To Write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of real written bytes (Bytes Written). NULL if unused. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from lv_fs_res_t enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="182" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="182" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a0bfb4e9168e6d4029713ac8016dbb2a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_seek</definition>
+        <argsstring>(lv_fs_file_t *file_p, uint32_t pos, lv_fs_whence_t whence)</argsstring>
+        <name>lv_fs_seek</name>
+        <param>
+          <type><ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> *</type>
+          <declname>file_p</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267b" kindref="member">lv_fs_whence_t</ref></type>
+          <declname>whence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the position of the &apos;cursor&apos; (read write pointer) in a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new position expressed in bytes index (0: start of file) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>whence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tells from where set the position. See @lv_fs_whence_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from lv_fs_res_t enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="191" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="191" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a0d793e1972228df85d3161556d78cbde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_tell</definition>
+        <argsstring>(lv_fs_file_t *file_p, uint32_t *pos)</argsstring>
+        <name>lv_fs_tell</name>
+        <param>
+          <type><ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> *</type>
+          <declname>file_p</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Give the position of the read write pointer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to store the position of the read write pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from &apos;fs_res_t&apos; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="199" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="199" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a6380108bb1bb9c1a614e22563e5b557c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_dir_open</definition>
+        <argsstring>(lv_fs_dir_t *rddir_p, const char *path)</argsstring>
+        <name>lv_fs_dir_open</name>
+        <param>
+          <type><ref refid="structlv__fs__dir__t" kindref="compound">lv_fs_dir_t</ref> *</type>
+          <declname>rddir_p</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a &apos;fs_dir_t&apos; variable for directory reading <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rddir_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a &apos;<ref refid="structlv__fs__dir__t" kindref="compound">lv_fs_dir_t</ref>&apos; variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to a directory </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from lv_fs_res_t enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="207" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="207" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1ab9c9175c0135f2b0864edd7e30c4f633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_dir_read</definition>
+        <argsstring>(lv_fs_dir_t *rddir_p, char *fn)</argsstring>
+        <name>lv_fs_dir_read</name>
+        <param>
+          <type><ref refid="structlv__fs__dir__t" kindref="compound">lv_fs_dir_t</ref> *</type>
+          <declname>rddir_p</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the next filename form a directory. The name of the directories will begin with &apos;/&apos; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rddir_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized &apos;fs_dir_t&apos; variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a buffer to store the filename </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from lv_fs_res_t enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="216" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="216" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a11baedafbe566704ebcacc272e87e1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_fs_res_t</type>
+        <definition>lv_fs_res_t lv_fs_dir_close</definition>
+        <argsstring>(lv_fs_dir_t *rddir_p)</argsstring>
+        <name>lv_fs_dir_close</name>
+        <param>
+          <type><ref refid="structlv__fs__dir__t" kindref="compound">lv_fs_dir_t</ref> *</type>
+          <declname>rddir_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close the directory reading <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rddir_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized &apos;fs_dir_t&apos; variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_FS_RES_OK or any error from lv_fs_res_t enum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="223" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="223" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a221cb867a7811a13803d96296a1d5fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* lv_fs_get_letters</definition>
+        <argsstring>(char *buf)</argsstring>
+        <name>lv_fs_get_letters</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill a buffer with the letters of existing drivers <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to store the letters (&apos;\0&apos; added after the last letter) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="230" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="230" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a9b53b52242405c3e3243f160e024bc64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_fs_get_ext</definition>
+        <argsstring>(const char *fn)</argsstring>
+        <name>lv_fs_get_ext</name>
+        <param>
+          <type>const char *</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return with the extension of the filename <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string with a filename </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the beginning extension or empty string if no extension </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="237" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="237" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1aac3421e2489105d6d70fb96ea1db37bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* lv_fs_up</definition>
+        <argsstring>(char *path)</argsstring>
+        <name>lv_fs_up</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Step up one level <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a file name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the truncated file name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="244" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="244" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__fs_8h_1a4da43dd91d14df0d425169d9288892a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* lv_fs_get_last</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>lv_fs_get_last</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the last element of a path (e.g. U:/folder/file -&gt; file) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a file name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the beginning of the last element in the path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="251" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" declline="251" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_FS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_FS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_FS_MAX_FN_LENGTH<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_FS_MAX_PATH_LENGTH<sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_OK<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_HW_ERR,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Low<sp/>level<sp/>hardware<sp/>error*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_FS_ERR,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Error<sp/>in<sp/>the<sp/>file<sp/>system<sp/>structure*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_NOT_EX,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Driver,<sp/>file<sp/>or<sp/>directory<sp/>is<sp/>not<sp/>exists*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_FULL,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Disk<sp/>full*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_LOCKED,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>file<sp/>is<sp/>already<sp/>opened*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_DENIED,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Access<sp/>denied.<sp/>Check<sp/>&apos;fs_open&apos;<sp/>modes<sp/>and<sp/>write<sp/>protect*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_BUSY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>file<sp/>system<sp/>now<sp/>can&apos;t<sp/>handle<sp/>it,<sp/>try<sp/>later*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_TOUT,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Process<sp/>time<sp/>outed*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_NOT_IMP,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Requested<sp/>function<sp/>is<sp/>not<sp/>implemented*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_OUT_OF_MEM,<sp/></highlight><highlight class="comment">/*Not<sp/>enough<sp/>memory<sp/>for<sp/>an<sp/>internal<sp/>operation*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_INV_PARAM,<sp/><sp/></highlight><highlight class="comment">/*Invalid<sp/>parameter<sp/>among<sp/>arguments*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_RES_UNKNOWN,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Other<sp/>unknown<sp/>error*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_fs_res_t;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_MODE_WR<sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FS_MODE_RD<sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_fs_mode_t;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="64" refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267baeab4de99544eff8575fed2fee38cd6c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267baeab4de99544eff8575fed2fee38cd6c5" kindref="member">LV_FS_SEEK_SET</ref><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267bae2d8f6afe283d333394a7af28e858196" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267bae2d8f6afe283d333394a7af28e858196" kindref="member">LV_FS_SEEK_CUR</ref><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267bab0f1a6bb2458d1531627e1be79eb79ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267bab0f1a6bb2458d1531627e1be79eb79ac" kindref="member">LV_FS_SEEK_END</ref><sp/>=<sp/>0x02,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267b" kindref="member">lv_fs_whence_t</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="struct__lv__fs__drv__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>cache_size;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>(*ready_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>(*open_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>path,<sp/>lv_fs_mode_t<sp/>mode);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_fs_res_t<sp/>(*close_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>file_p);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_fs_res_t<sp/>(*read_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>file_p,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/>uint32_t<sp/>btr,<sp/>uint32_t<sp/>*<sp/>br);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_fs_res_t<sp/>(*write_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>file_p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/>uint32_t<sp/>btw,<sp/>uint32_t<sp/>*<sp/>bw);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_fs_res_t<sp/>(*seek_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>file_p,<sp/>uint32_t<sp/>pos,<sp/><ref refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267b" kindref="member">lv_fs_whence_t</ref><sp/>whence);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_fs_res_t<sp/>(*tell_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>file_p,<sp/>uint32_t<sp/>*<sp/>pos_p);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>(*dir_open_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>path);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_fs_res_t<sp/>(*dir_read_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>rddir_p,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>fn);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_fs_res_t<sp/>(*dir_close_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">_lv_fs_drv_t</ref><sp/>*<sp/>drv,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>rddir_p);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="struct__lv__fs__drv__t_1aca4f4bce7a73bebe1095fac20f7f1bd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__lv__fs__drv__t_1aca4f4bce7a73bebe1095fac20f7f1bd6" kindref="member">user_data</ref>;<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}<sp/><ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="structlv__fs__file__cache__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>start;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>end;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>file_position;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buffer;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="structlv__fs__file__cache__t" kindref="compound">lv_fs_file_cache_t</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="structlv__fs__file__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>file_d;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref><sp/>*<sp/>drv;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__fs__file__cache__t" kindref="compound">lv_fs_file_cache_t</ref><sp/>*<sp/>cache;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}<sp/><ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="structlv__fs__dir__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>dir_d;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref><sp/>*<sp/>drv;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}<sp/><ref refid="structlv__fs__dir__t" kindref="compound">lv_fs_dir_t</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__fs_8h_1adc8beccbcb0961436c1680751ef54afc" kindref="member">_lv_fs_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__fs_8h_1a0c8cc12755f7515de54ec9064e83af75" kindref="member">lv_fs_drv_init</ref>(<ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref><sp/>*<sp/>drv);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__fs_8h_1a2540b36d20b26416d944092a818b7be6" kindref="member">lv_fs_drv_register</ref>(<ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref><sp/>*<sp/>drv);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><ref refid="struct__lv__fs__drv__t" kindref="compound">lv_fs_drv_t</ref><sp/>*<sp/><ref refid="lv__fs_8h_1ae0baa7925cb2524f56035fa46047e769" kindref="member">lv_fs_get_drv</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__fs_8h_1a4afefd5dbe151665fa2a24ad0a1eeff8" kindref="member">lv_fs_is_ready</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1a339d0b51618dbcec593d0f4081348e5d" kindref="member">lv_fs_open</ref>(<ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref><sp/>*<sp/>file_p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>path,<sp/>lv_fs_mode_t<sp/>mode);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1a695f81fd4c47d1ace4dce3ebb536e531" kindref="member">lv_fs_close</ref>(<ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref><sp/>*<sp/>file_p);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1aaeeaf5fdcf642f3d7af4828e1e74fbb7" kindref="member">lv_fs_read</ref>(<ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref><sp/>*<sp/>file_p,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/>uint32_t<sp/>btr,<sp/>uint32_t<sp/>*<sp/>br);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1a924b9bb284d7cf2681bf54851a9e5138" kindref="member">lv_fs_write</ref>(<ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref><sp/>*<sp/>file_p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/>uint32_t<sp/>btw,<sp/>uint32_t<sp/>*<sp/>bw);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1a0bfb4e9168e6d4029713ac8016dbb2a5" kindref="member">lv_fs_seek</ref>(<ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref><sp/>*<sp/>file_p,<sp/>uint32_t<sp/>pos,<sp/><ref refid="lv__fs_8h_1aedf4c57e970342cb1eb2ddaeac93267b" kindref="member">lv_fs_whence_t</ref><sp/>whence);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1a0d793e1972228df85d3161556d78cbde" kindref="member">lv_fs_tell</ref>(<ref refid="structlv__fs__file__t" kindref="compound">lv_fs_file_t</ref><sp/>*<sp/>file_p,<sp/>uint32_t<sp/>*<sp/>pos);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1a6380108bb1bb9c1a614e22563e5b557c" kindref="member">lv_fs_dir_open</ref>(<ref refid="structlv__fs__dir__t" kindref="compound">lv_fs_dir_t</ref><sp/>*<sp/>rddir_p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>path);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1ab9c9175c0135f2b0864edd7e30c4f633" kindref="member">lv_fs_dir_read</ref>(<ref refid="structlv__fs__dir__t" kindref="compound">lv_fs_dir_t</ref><sp/>*<sp/>rddir_p,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>fn);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">lv_fs_res_t<sp/><ref refid="lv__fs_8h_1a11baedafbe566704ebcacc272e87e1ba" kindref="member">lv_fs_dir_close</ref>(<ref refid="structlv__fs__dir__t" kindref="compound">lv_fs_dir_t</ref><sp/>*<sp/>rddir_p);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__fs_8h_1a221cb867a7811a13803d96296a1d5fdc" kindref="member">lv_fs_get_letters</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buf);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__fs_8h_1a9b53b52242405c3e3243f160e024bc64" kindref="member">lv_fs_get_ext</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>fn);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__fs_8h_1aac3421e2489105d6d70fb96ea1db37bf" kindref="member">lv_fs_up</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>path);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__fs_8h_1a4da43dd91d14df0d425169d9288892a0" kindref="member">lv_fs_get_last</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>path);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_FS_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h"/>
+  </compounddef>
+</doxygen>

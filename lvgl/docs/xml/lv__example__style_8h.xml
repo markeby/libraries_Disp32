@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__example__style_8h" kind="file" language="C++">
+    <compoundname>lv_example_style.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__example__style_8h_1a9e61ee63a29e500879a7f67b544030e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_1</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="28" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1ab9e505cafb8081d0898edf447b39b1c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_2</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="29" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1af6ac251bff1b97e0b36d99fde827b1ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_3</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="30" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1a6bcb516533e440fec3e1401f9b0f4677" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_4</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_4</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="31" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1aea1815d2bc7e300e00125e744661be61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_5</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_5</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="32" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1a27e92e9c85abae4ce8f21def3504d4e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_6</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_6</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="33" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1a108d46cf0b4e904f74554f84617f7412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_7</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_7</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="34" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="34" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1af2292a50dfcccb0b7fbc447c760bb0d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_8</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_8</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="35" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1a88d68d334c904f2811c1bd350cb3c79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_9</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_9</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="36" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1a6e11e045dcaebce5036e8c458ab73202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_10</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_10</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="37" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1adae5ebcd8056b1d93da59a29c8d69c2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_11</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_11</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="38" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1aae65effe66fdc537cbde02e05d5e04b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_12</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_12</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="39" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1a1eafbee328b3c672192e437cccb3b7e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_13</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_13</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="40" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1a8fabd87929d2c2cd737f39dfa3afad5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_14</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_14</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="41" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__example__style_8h_1a83375ddfdd4acd7013e640fa400773ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_example_style_15</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_example_style_15</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" line="42" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h" declline="42" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_EXAMPLE_STYLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_EXAMPLE_STYLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_1(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_2(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_3(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_4(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_5(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_6(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_7(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_8(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_9(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_10(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_11(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_12(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_13(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_14(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_example_style_15(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_EXAMPLE_STYLE_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles/lv_example_style.h"/>
+  </compounddef>
+</doxygen>

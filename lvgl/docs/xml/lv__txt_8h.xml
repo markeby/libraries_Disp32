@@ -1,0 +1,1082 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__txt_8h" kind="file" language="C++">
+    <compoundname>lv_txt.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@69</name>
+        <enumvalue id="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbbac9f8f76bd0822532ab257331b5f0f027" prot="public">
+          <name>LV_TEXT_FLAG_NONE</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba0fadace61420644a94d9a952726f0ce4" prot="public">
+          <name>LV_TEXT_FLAG_RECOLOR</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable parsing of recolor command </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba520f425552fd153f0194b46d68bbd4d8" prot="public">
+          <name>LV_TEXT_FLAG_EXPAND</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ignore max-width to avoid automatic word wrapping </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba723ddad1f65d5013b204ae3484375133" prot="public">
+          <name>LV_TEXT_FLAG_FIT</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max-width is already equal to the longest line. (Used to skip some calculation) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Options for text rendering. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="42" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6ba" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@70</name>
+        <enumvalue id="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baa2b5fe999a16906b4131f8eae657a293b" prot="public">
+          <name>LV_TEXT_CMD_STATE_WAIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Waiting for command </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baa7f4be2bb77c23de87f77e962fa29ab8c" prot="public">
+          <name>LV_TEXT_CMD_STATE_PAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Processing the parameter </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baaf28008d7d78cceaba9308ac5fe353607" prot="public">
+          <name>LV_TEXT_CMD_STATE_IN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Processing the command </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State machine for text renderer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="52" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8ce" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@71</name>
+        <enumvalue id="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cead4aa5792e36e4a2d8c20dc1d0db50b9e" prot="public">
+          <name>LV_TEXT_ALIGN_AUTO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Align text auto </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cea5edadbd8d013ede5656687584755c833" prot="public">
+          <name>LV_TEXT_ALIGN_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Align text to left </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cea16eba1c936d720ced8af3a7ff51547ed" prot="public">
+          <name>LV_TEXT_ALIGN_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Align text to center </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8ceab15a170b40c38228acef2cc78e1338f5" prot="public">
+          <name>LV_TEXT_ALIGN_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Align text to right </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Label align policy </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="60" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" bodystart="60" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__txt_8h_1ade9ecc65a03df62987e7422a7a81bf42" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_text_flag_t</definition>
+        <argsstring></argsstring>
+        <name>lv_text_flag_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="48" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__txt_8h_1a639baeee89a6dc955b3543bdef32f0d7" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_text_cmd_state_t</definition>
+        <argsstring></argsstring>
+        <name>lv_text_cmd_state_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="57" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__txt_8h_1a2e760eb2c83817abc44bd01ab99eda2d" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_text_align_t</definition>
+        <argsstring></argsstring>
+        <name>lv_text_align_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="66" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__txt_8h_1a0b6eb50707360fcc64668fdc3a706adc" prot="public" static="no" mutable="no">
+        <type>uint8_t(*</type>
+        <definition>uint8_t(* _lv_txt_encoded_size) (const char *)</definition>
+        <argsstring>)(const char *)</argsstring>
+        <name>_lv_txt_encoded_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Give the size of an encoded character <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a character in a string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>length of the encoded character (1,2,3 ...). O in invalid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="195" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="195" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__txt_8h_1ae3326e8947223d3670fa583ccd4588af" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* _lv_txt_unicode_to_encoded) (uint32_t)</definition>
+        <argsstring>)(uint32_t)</argsstring>
+        <name>_lv_txt_unicode_to_encoded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a Unicode letter to encoded <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>letter_uni</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a Unicode letter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Encoded character in Little Endian to be compatible with C chars (e.g. &apos;Á&apos;, &apos;Ü&apos;) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="202" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="202" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__txt_8h_1a0937a4a7d93fa72cba5811a6bdf3fd3e" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* _lv_txt_encoded_conv_wc) (uint32_t c)</definition>
+        <argsstring>)(uint32_t c)</argsstring>
+        <name>_lv_txt_encoded_conv_wc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a wide character, e.g. &apos;Á&apos; little endian to be compatible with the encoded format. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a wide character </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>c</computeroutput> in the encoded format </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="209" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="209" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__txt_8h_1a3fe9cd02f4ec705ef849ca1842bd4c09" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* _lv_txt_encoded_next) (const char *, uint32_t *)</definition>
+        <argsstring>)(const char *, uint32_t *)</argsstring>
+        <name>_lv_txt_encoded_next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode the next encoded character from a string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to &apos;\0&apos; terminated string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start index in &apos;txt&apos; where to start. After the call it will point to the next encoded char in &apos;txt&apos;. NULL to use txt[0] as index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the decoded Unicode character or 0 on invalid data code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="219" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="219" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__txt_8h_1a90051f66330cb40365a4e1943fd7fd07" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* _lv_txt_encoded_prev) (const char *, uint32_t *)</definition>
+        <argsstring>)(const char *, uint32_t *)</argsstring>
+        <name>_lv_txt_encoded_prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the previous encoded character form a string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to &apos;\0&apos; terminated string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index in &apos;txt&apos; where to start. After the call it will point to the previous encoded char in &apos;txt&apos;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the decoded Unicode character or 0 on invalid data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="228" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="228" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__txt_8h_1a24576f7e8b53260b913ffa07cf8e829e" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* _lv_txt_encoded_get_byte_id) (const char *, uint32_t)</definition>
+        <argsstring>)(const char *, uint32_t)</argsstring>
+        <name>_lv_txt_encoded_get_byte_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a letter index (in the encoded text) to byte index. E.g. in UTF-8 &quot;AÁRT&quot; index of &apos;R&apos; is 2 but start at byte 3 because &apos;Á&apos; is 2 bytes long <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a &apos;\0&apos; terminated UTF-8 string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>letter index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>byte index of the &apos;enc_id&apos;th letter </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="237" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="237" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__txt_8h_1aa541782cfc14c074a02263e7f58e6844" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* _lv_txt_encoded_get_char_id) (const char *, uint32_t)</definition>
+        <argsstring>)(const char *, uint32_t)</argsstring>
+        <name>_lv_txt_encoded_get_char_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a byte index (in an encoded text) to character index. E.g. in UTF-8 &quot;AÁRT&quot; index of &apos;R&apos; is 2 but start at byte 3 because &apos;Á&apos; is 2 bytes long <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a &apos;\0&apos; terminated UTF-8 string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byte_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>byte index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>character index of the letter at &apos;byte_id&apos;th position </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="246" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="246" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__txt_8h_1a3ef67d93ea8beef56697746d704a1645" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* _lv_txt_get_encoded_length) (const char *)</definition>
+        <argsstring>)(const char *)</argsstring>
+        <name>_lv_txt_get_encoded_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of characters (and NOT bytes) in a string. E.g. in UTF-8 &quot;ÁBC&quot; is 3 characters (but 4 bytes) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a &apos;\0&apos; terminated char string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of characters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="254" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="254" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__txt_8h_1a8831104abda36f751dd1d2415170205f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_txt_get_size</definition>
+        <argsstring>(lv_point_t *size_res, const char *text, const lv_font_t *font, lv_coord_t letter_space, lv_coord_t line_space, lv_coord_t max_width, lv_text_flag_t flag)</argsstring>
+        <name>lv_txt_get_size</name>
+        <param>
+          <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+          <declname>size_res</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>letter_space</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>line_space</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>max_width</declname>
+        </param>
+        <param>
+          <type>lv_text_flag_t</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get size of a text <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size_res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a &apos;point_t&apos; variable to store the result </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to font of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>letter space of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>line space of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>settings for the text from ::lv_text_flag_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max width of the text (break the lines to fit this size). Set COORD_MAX to avoid line breaks </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="83" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="83" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__txt_8h_1a73979a956b3073351eaf1963bd8b2ff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_txt_get_next_line</definition>
+        <argsstring>(const char *txt, const lv_font_t *font, lv_coord_t letter_space, lv_coord_t max_width, lv_coord_t *used_width, lv_text_flag_t flag)</argsstring>
+        <name>_lv_txt_get_next_line</name>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>letter_space</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>max_width</declname>
+        </param>
+        <param>
+          <type>lv_coord_t *</type>
+          <declname>used_width</declname>
+        </param>
+        <param>
+          <type>lv_text_flag_t</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next line of text. Check line length and break chars too. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a &apos;\0&apos; terminated string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a font </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>letter space </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max width of the text (break the lines to fit this size). Set COORD_MAX to avoid line breaks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>used_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When used_width != NULL, save the width of this line if flag == LV_TEXT_FLAG_NONE, otherwise save -1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>settings for the text from &apos;txt_flag_type&apos; enum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the first char of the new line (in byte index not letter index. With UTF-8 they are different) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="99" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="99" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__txt_8h_1a2156e7298d6384159c628fdc84a61df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_txt_get_width</definition>
+        <argsstring>(const char *txt, uint32_t length, const lv_font_t *font, lv_coord_t letter_space, lv_text_flag_t flag)</argsstring>
+        <name>lv_txt_get_width</name>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>letter_space</declname>
+        </param>
+        <param>
+          <type>lv_text_flag_t</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Give the length of a text with a given font <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a &apos;\0&apos; terminate string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of &apos;txt&apos; in byte count and not characters (Á is 1 character but 2 bytes in UTF-8) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a font </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>letter space </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>settings for the text from &apos;txt_flag_t&apos; enum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>length of a char_num long text </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="112" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="112" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__txt_8h_1a41c22de91bcc0868b121ccac65291a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool _lv_txt_is_cmd</definition>
+        <argsstring>(lv_text_cmd_state_t *state, uint32_t c)</argsstring>
+        <name>_lv_txt_is_cmd</name>
+        <param>
+          <type>lv_text_cmd_state_t *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check next character in a string and decide if the character is part of the command or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a txt_cmd_state_t variable which stores the current state of command processing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current character </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: the character is part of a command and should not be written, false: the character should be written </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="123" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="123" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__txt_8h_1a888219d8003e6dc66dcfe870fd8a1a91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_txt_ins</definition>
+        <argsstring>(char *txt_buf, uint32_t pos, const char *ins_txt)</argsstring>
+        <name>_lv_txt_ins</name>
+        <param>
+          <type>char *</type>
+          <declname>txt_buf</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ins_txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert a string into an other <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the original text (must be big enough for the result text and NULL terminated) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position to insert (0: before the original text, 1: after the first char etc.) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ins_txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>text to insert, must be &apos;\0&apos; terminated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="131" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="131" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__txt_8h_1ae7c0e12204e558910a12bc4ea1cffbd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_txt_cut</definition>
+        <argsstring>(char *txt, uint32_t pos, uint32_t len)</argsstring>
+        <name>_lv_txt_cut</name>
+        <param>
+          <type>char *</type>
+          <declname>txt</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete a part of a string <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to modify, must be &apos;\0&apos; terminated and should point to a heap or stack frame, not read-only memory. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position where to start the deleting (0: before the first char, 1: after the first char etc.) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of characters to delete </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="140" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="140" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__txt_8h_1aacf6ce5fab6d9f07f6069700fcfd882b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* _lv_txt_set_text_vfmt</definition>
+        <argsstring>(const char *fmt, va_list ap) LV_FORMAT_ATTRIBUTE(1</argsstring>
+        <name>_lv_txt_set_text_vfmt</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return a new formatted text. Memory will be allocated to store the text. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>printf</computeroutput>-like format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the allocated text string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="147" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__txt_8h_1a064b4f577ce4fda916e4f7b0e7975454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char void</type>
+        <definition>char void _lv_txt_encoded_letter_next_2</definition>
+        <argsstring>(const char *txt, uint32_t *letter, uint32_t *letter_next, uint32_t *ofs)</argsstring>
+        <name>_lv_txt_encoded_letter_next_2</name>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>letter</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>letter_next</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>ofs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode two encoded character from a string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>txt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to &apos;\0&apos; terminated string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first decoded Unicode character or 0 on invalid data code </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter_next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second decoded Unicode character or 0 on invalid data code </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start index in &apos;txt&apos; where to start. After the call it will point to the next encoded char in &apos;txt&apos;. NULL to use txt[0] as index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="158" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" declline="158" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__txt_8h_1aab1df70b42dd52acf12ed26e1fb47d64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _lv_txt_is_break_char</definition>
+        <argsstring>(uint32_t letter)</argsstring>
+        <name>_lv_txt_is_break_char</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>letter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if char is break char or not (a text can broken here or not) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a letter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false: &apos;letter&apos; is not break char </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" line="165" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h" bodystart="165" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_TXT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_TXT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__area_8h" kindref="compound">lv_area.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../font/lv_font.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lv_printf.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__types_8h" kindref="compound">lv_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LV_TXT_COLOR_CMD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_TXT_COLOR_CMD<sp/>&quot;#&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_TXT_ENC_UTF8<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_TXT_ENC_ASCII<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_TEXT_FLAG_NONE<sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba0fadace61420644a94d9a952726f0ce4" kindref="member">LV_TEXT_FLAG_RECOLOR</ref><sp/>=<sp/>0x01,<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba520f425552fd153f0194b46d68bbd4d8" kindref="member">LV_TEXT_FLAG_EXPAND</ref><sp/><sp/>=<sp/>0x02,<sp/></highlight></codeline>
+<codeline lineno="46" refid="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba0fadace61420644a94d9a952726f0ce4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba723ddad1f65d5013b204ae3484375133" kindref="member">LV_TEXT_FLAG_FIT</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,<sp/></highlight></codeline>
+<codeline lineno="47" refid="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba520f425552fd153f0194b46d68bbd4d8" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48" refid="lv__txt_8h_1a109bfaad92bd6d348dab484aec11edbba723ddad1f65d5013b204ae3484375133" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_text_flag_t;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baa2b5fe999a16906b4131f8eae657a293b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baa2b5fe999a16906b4131f8eae657a293b" kindref="member">LV_TEXT_CMD_STATE_WAIT</ref>,<sp/></highlight></codeline>
+<codeline lineno="54" refid="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baa7f4be2bb77c23de87f77e962fa29ab8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baa7f4be2bb77c23de87f77e962fa29ab8c" kindref="member">LV_TEXT_CMD_STATE_PAR</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baaf28008d7d78cceaba9308ac5fe353607" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a550cb4231d535863c55643bbd2d3c6baaf28008d7d78cceaba9308ac5fe353607" kindref="member">LV_TEXT_CMD_STATE_IN</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_text_cmd_state_t;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="61" refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cead4aa5792e36e4a2d8c20dc1d0db50b9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cead4aa5792e36e4a2d8c20dc1d0db50b9e" kindref="member">LV_TEXT_ALIGN_AUTO</ref>,<sp/></highlight></codeline>
+<codeline lineno="62" refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cea5edadbd8d013ede5656687584755c833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cea5edadbd8d013ede5656687584755c833" kindref="member">LV_TEXT_ALIGN_LEFT</ref>,<sp/></highlight></codeline>
+<codeline lineno="63" refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cea16eba1c936d720ced8af3a7ff51547ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8cea16eba1c936d720ced8af3a7ff51547ed" kindref="member">LV_TEXT_ALIGN_CENTER</ref>,<sp/></highlight></codeline>
+<codeline lineno="64" refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8ceab15a170b40c38228acef2cc78e1338f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__txt_8h_1a83e8bc15645f9d99ab91a152bb3dc8ceab15a170b40c38228acef2cc78e1338f5" kindref="member">LV_TEXT_ALIGN_RIGHT</ref>,<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_text_align_t;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__txt_8h_1a8831104abda36f751dd1d2415170205f" kindref="member">lv_txt_get_size</ref>(<ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>size_res,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>text,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/>font,<sp/>lv_coord_t<sp/>letter_space,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>line_space,<sp/>lv_coord_t<sp/>max_width,<sp/>lv_text_flag_t<sp/>flag);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">uint32_t<sp/><ref refid="lv__txt_8h_1a73979a956b3073351eaf1963bd8b2ff0" kindref="member">_lv_txt_get_next_line</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/>font,<sp/>lv_coord_t<sp/>letter_space,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>max_width,<sp/>lv_coord_t<sp/>*<sp/>used_width,<sp/>lv_text_flag_t<sp/>flag);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__txt_8h_1a2156e7298d6384159c628fdc84a61df3" kindref="member">lv_txt_get_width</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt,<sp/>uint32_t<sp/>length,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/>font,<sp/>lv_coord_t<sp/>letter_space,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_text_flag_t<sp/>flag);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__txt_8h_1a41c22de91bcc0868b121ccac65291a29" kindref="member">_lv_txt_is_cmd</ref>(lv_text_cmd_state_t<sp/>*<sp/>state,<sp/>uint32_t<sp/>c);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__txt_8h_1a888219d8003e6dc66dcfe870fd8a1a91" kindref="member">_lv_txt_ins</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt_buf,<sp/>uint32_t<sp/>pos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>ins_txt);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__txt_8h_1ae7c0e12204e558910a12bc4ea1cffbd5" kindref="member">_lv_txt_cut</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt,<sp/>uint32_t<sp/>pos,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__txt_8h_1aacf6ce5fab6d9f07f6069700fcfd882b" kindref="member">_lv_txt_set_text_vfmt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>fmt,<sp/>va_list<sp/>ap)<sp/>LV_FORMAT_ATTRIBUTE(1,<sp/>0);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__txt_8h_1a064b4f577ce4fda916e4f7b0e7975454" kindref="member">_lv_txt_encoded_letter_next_2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt,<sp/>uint32_t<sp/>*<sp/>letter,<sp/>uint32_t<sp/>*<sp/>letter_next,<sp/>uint32_t<sp/>*<sp/>ofs);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_lv_txt_is_break_char(uint32_t<sp/>letter)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>i;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>each<sp/>chinese<sp/>character<sp/>can<sp/>be<sp/>break<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(letter<sp/>&gt;=<sp/>0x4E00<sp/>&amp;&amp;<sp/>letter<sp/>&lt;=<sp/>0x9FA5)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Compare<sp/>the<sp/>letter<sp/>to<sp/>TXT_BREAK_CHARS*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>LV_TXT_BREAK_CHARS[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(letter<sp/>==<sp/>(uint32_t)LV_TXT_BREAK_CHARS[i])<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">/*If<sp/>match<sp/>then<sp/>it<sp/>is<sp/>break<sp/>char*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">/***************************************************************</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*<sp/><sp/>GLOBAL<sp/>FUNCTION<sp/>POINTERS<sp/>FOR<sp/>CHARACTER<sp/>ENCODING<sp/>INTERFACE</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>***************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>(*<ref refid="lv__txt_8h_1a0b6eb50707360fcc64668fdc3a706adc" kindref="member">_lv_txt_encoded_size</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>(*<ref refid="lv__txt_8h_1ae3326e8947223d3670fa583ccd4588af" kindref="member">_lv_txt_unicode_to_encoded</ref>)(uint32_t);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>(*<ref refid="lv__txt_8h_1a0937a4a7d93fa72cba5811a6bdf3fd3e" kindref="member">_lv_txt_encoded_conv_wc</ref>)(uint32_t<sp/>c);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>(*<ref refid="lv__txt_8h_1a3fe9cd02f4ec705ef849ca1842bd4c09" kindref="member">_lv_txt_encoded_next</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/>uint32_t<sp/>*);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>(*<ref refid="lv__txt_8h_1a90051f66330cb40365a4e1943fd7fd07" kindref="member">_lv_txt_encoded_prev</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/>uint32_t<sp/>*);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>(*<ref refid="lv__txt_8h_1a24576f7e8b53260b913ffa07cf8e829e" kindref="member">_lv_txt_encoded_get_byte_id</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/>uint32_t);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>(*<ref refid="lv__txt_8h_1aa541782cfc14c074a02263e7f58e6844" kindref="member">_lv_txt_encoded_get_char_id</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/>uint32_t);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>(*<ref refid="lv__txt_8h_1a3ef67d93ea8beef56697746d704a1645" kindref="member">_lv_txt_get_encoded_length</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_TXT_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_txt.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__fs__file__cache__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_fs_file_cache_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__fs__file__cache__t_1ae9caf2dc86e95f504be0767add2622bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_fs_file_cache_t::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="91" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__fs__file__cache__t_1a863e29580bd2b70b04f7006d76337c86" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_fs_file_cache_t::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="92" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__fs__file__cache__t_1ab12ab2582c1fe87e6a23d9edc212e0f6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_fs_file_cache_t::file_position</definition>
+        <argsstring></argsstring>
+        <name>file_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="93" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__fs__file__cache__t_1ae1dac22bf59a01c943a532716b5a24ad" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* lv_fs_file_cache_t::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="94" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="90" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="90" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structlv__fs__file__cache__t_1ae1dac22bf59a01c943a532716b5a24ad" prot="public" virt="non-virtual"><scope>lv_fs_file_cache_t</scope><name>buffer</name></member>
+      <member refid="structlv__fs__file__cache__t_1a863e29580bd2b70b04f7006d76337c86" prot="public" virt="non-virtual"><scope>lv_fs_file_cache_t</scope><name>end</name></member>
+      <member refid="structlv__fs__file__cache__t_1ab12ab2582c1fe87e6a23d9edc212e0f6" prot="public" virt="non-virtual"><scope>lv_fs_file_cache_t</scope><name>file_position</name></member>
+      <member refid="structlv__fs__file__cache__t_1ae9caf2dc86e95f504be0767add2622bd" prot="public" virt="non-virtual"><scope>lv_fs_file_cache_t</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

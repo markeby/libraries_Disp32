@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__chart__tick__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_chart_tick_dsc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__chart__tick__dsc__t_1a697d590d388e5840096c09e25729871f" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_tick_dsc_t::major_len</definition>
+        <argsstring></argsstring>
+        <name>major_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="93" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__tick__dsc__t_1a9e407b28a47866b75c241e790eab552f" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_tick_dsc_t::minor_len</definition>
+        <argsstring></argsstring>
+        <name>minor_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="94" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__tick__dsc__t_1a5aa80c88278ee7195cc798172767aa82" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_tick_dsc_t::draw_size</definition>
+        <argsstring></argsstring>
+        <name>draw_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="95" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__tick__dsc__t_1afb03dd4a6522d418d7de721bab994d7b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_chart_tick_dsc_t::minor_cnt</definition>
+        <argsstring></argsstring>
+        <name>minor_cnt</name>
+        <bitfield> 15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="96" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__tick__dsc__t_1abc55cdb7d491f9658029b7b666cf0c9b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_chart_tick_dsc_t::major_cnt</definition>
+        <argsstring></argsstring>
+        <name>major_cnt</name>
+        <bitfield> 15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="97" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__tick__dsc__t_1a58611c0e4f15dfdc3752acacc4a130bc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_chart_tick_dsc_t::label_en</definition>
+        <argsstring></argsstring>
+        <name>label_en</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="98" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="92" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="92" bodyend="99"/>
+    <listofallmembers>
+      <member refid="structlv__chart__tick__dsc__t_1a5aa80c88278ee7195cc798172767aa82" prot="public" virt="non-virtual"><scope>lv_chart_tick_dsc_t</scope><name>draw_size</name></member>
+      <member refid="structlv__chart__tick__dsc__t_1a58611c0e4f15dfdc3752acacc4a130bc" prot="public" virt="non-virtual"><scope>lv_chart_tick_dsc_t</scope><name>label_en</name></member>
+      <member refid="structlv__chart__tick__dsc__t_1abc55cdb7d491f9658029b7b666cf0c9b" prot="public" virt="non-virtual"><scope>lv_chart_tick_dsc_t</scope><name>major_cnt</name></member>
+      <member refid="structlv__chart__tick__dsc__t_1a697d590d388e5840096c09e25729871f" prot="public" virt="non-virtual"><scope>lv_chart_tick_dsc_t</scope><name>major_len</name></member>
+      <member refid="structlv__chart__tick__dsc__t_1afb03dd4a6522d418d7de721bab994d7b" prot="public" virt="non-virtual"><scope>lv_chart_tick_dsc_t</scope><name>minor_cnt</name></member>
+      <member refid="structlv__chart__tick__dsc__t_1a9e407b28a47866b75c241e790eab552f" prot="public" virt="non-virtual"><scope>lv_chart_tick_dsc_t</scope><name>minor_len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

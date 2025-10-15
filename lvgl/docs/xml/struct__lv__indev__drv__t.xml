@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__indev__drv__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_indev_drv_t</compoundname>
+    <includes refid="lv__hal__indev_8h" local="no">lv_hal_indev.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1afcf65997bfa34ba6277814d214b5ef55" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5b" kindref="member">lv_indev_type_t</ref></type>
+        <definition>lv_indev_type_t _lv_indev_drv_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; Input device type Function pointer to read input device data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="89" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1ae3f9071086d4722198c38c40b6c15f57" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_indev_drv_t::read_cb) (struct _lv_indev_drv_t *indev_drv, lv_indev_data_t *data)</definition>
+        <argsstring>)(struct _lv_indev_drv_t *indev_drv, lv_indev_data_t *data)</argsstring>
+        <name>read_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="92" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a2761f98ff5415e7522b7a389f3b89e70" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_indev_drv_t::feedback_cb) (struct _lv_indev_drv_t *, uint8_t)</definition>
+        <argsstring>)(struct _lv_indev_drv_t *, uint8_t)</argsstring>
+        <name>feedback_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when an action happened on the input device. The second parameter is the event from <computeroutput>lv_event_t</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="96" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a2fc7943377dc5518efad848ae659c5a9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_indev_drv_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="99" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a4d308304de2658bd31a9c5826cd16480" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref> *</type>
+        <definition>struct _lv_disp_t* _lv_indev_drv_t::disp</definition>
+        <argsstring></argsstring>
+        <name>disp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; Pointer to the assigned display Timer to periodically read the input device </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="103" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a2bec6f260af2d2568d85dc73d5874bdf" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__timer_8h_1aab341e84d977d67aec9b766ccd6d3173" kindref="member">lv_timer_t</ref> *</type>
+        <definition>lv_timer_t* _lv_indev_drv_t::read_timer</definition>
+        <argsstring></argsstring>
+        <name>read_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of pixels to slide before actually drag the object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="106" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a54861fb3efdb2e9c8037ec5dbdd5c7a0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_drv_t::scroll_limit</definition>
+        <argsstring></argsstring>
+        <name>scroll_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Drag throw slow-down in [%]. Greater value means faster slow-down </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="109" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a23226c4cd9c78a7e8c6672b810eb45d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_drv_t::scroll_throw</definition>
+        <argsstring></argsstring>
+        <name>scroll_throw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>At least this difference should be between two points to evaluate as gesture </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="112" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a881f1834d3f8666fb3d86c37734f0e3a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_drv_t::gesture_min_velocity</definition>
+        <argsstring></argsstring>
+        <name>gesture_min_velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>At least this difference should be to send a gesture </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="115" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a2e83d20954f4d4056e2f21b67893ac7b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_drv_t::gesture_limit</definition>
+        <argsstring></argsstring>
+        <name>gesture_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Long press time in milliseconds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="118" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1aed13a62b3f85ab444db64e8f6e9fa215" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t _lv_indev_drv_t::long_press_time</definition>
+        <argsstring></argsstring>
+        <name>long_press_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Repeated trigger period in long press [ms] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="121" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__drv__t_1a29c124547dcfa94a1f119ff90bbf416b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t _lv_indev_drv_t::long_press_repeat_time</definition>
+        <argsstring></argsstring>
+        <name>long_press_repeat_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="124" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Initialized by the user and registered by &apos;lv_indev_add()&apos; </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="17">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="6">
+        <label>_lv_draw_layer_ctx_t</label>
+        <link refid="struct__lv__draw__layer__ctx__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>area_act</edgelabel>
+          <edgelabel>area_full</edgelabel>
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_disp_drv_t</label>
+        <link refid="struct__lv__disp__drv__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>draw_ctx</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>draw_buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_lv_draw_ctx_t</label>
+        <link refid="struct__lv__draw__ctx__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>layer_init</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_lv_indev_drv_t</label>
+        <link refid="struct__lv__indev__drv__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>read_timer</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>disp</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="19">
+        <label>_lv_theme_t</label>
+        <link refid="struct__lv__theme__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>disp</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>apply_cb</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>font_normal</edgelabel>
+          <edgelabel>font_small</edgelabel>
+          <edgelabel>font_large</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_timer_t</label>
+        <link refid="struct__lv__timer__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>timer_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_disp_t</label>
+        <link refid="struct__lv__disp__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>driver</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>top_layer</edgelabel>
+          <edgelabel>act_scr</edgelabel>
+          <edgelabel>sys_layer</edgelabel>
+          <edgelabel>prev_scr</edgelabel>
+          <edgelabel>screens</edgelabel>
+          <edgelabel>scr_to_load</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>refr_timer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>inv_areas</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>theme</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>sync_areas</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>_lv_font_t</label>
+        <link refid="struct__lv__font__t"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>fallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>_lv_disp_draw_buf_t</label>
+        <link refid="struct__lv__disp__draw__buf__t"/>
+      </node>
+      <node id="11">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="10">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="86" column="30" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="86" bodyend="125"/>
+    <listofallmembers>
+      <member refid="struct__lv__indev__drv__t_1a4d308304de2658bd31a9c5826cd16480" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>disp</name></member>
+      <member refid="struct__lv__indev__drv__t_1a2761f98ff5415e7522b7a389f3b89e70" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>feedback_cb</name></member>
+      <member refid="struct__lv__indev__drv__t_1a2e83d20954f4d4056e2f21b67893ac7b" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>gesture_limit</name></member>
+      <member refid="struct__lv__indev__drv__t_1a881f1834d3f8666fb3d86c37734f0e3a" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>gesture_min_velocity</name></member>
+      <member refid="struct__lv__indev__drv__t_1a29c124547dcfa94a1f119ff90bbf416b" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>long_press_repeat_time</name></member>
+      <member refid="struct__lv__indev__drv__t_1aed13a62b3f85ab444db64e8f6e9fa215" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>long_press_time</name></member>
+      <member refid="struct__lv__indev__drv__t_1ae3f9071086d4722198c38c40b6c15f57" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>read_cb</name></member>
+      <member refid="struct__lv__indev__drv__t_1a2bec6f260af2d2568d85dc73d5874bdf" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>read_timer</name></member>
+      <member refid="struct__lv__indev__drv__t_1a54861fb3efdb2e9c8037ec5dbdd5c7a0" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>scroll_limit</name></member>
+      <member refid="struct__lv__indev__drv__t_1a23226c4cd9c78a7e8c6672b810eb45d8" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>scroll_throw</name></member>
+      <member refid="struct__lv__indev__drv__t_1afcf65997bfa34ba6277814d214b5ef55" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>type</name></member>
+      <member refid="struct__lv__indev__drv__t_1a2fc7943377dc5518efad848ae659c5a9" prot="public" virt="non-virtual"><scope>_lv_indev_drv_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

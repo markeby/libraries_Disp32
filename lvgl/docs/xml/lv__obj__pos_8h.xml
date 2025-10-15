@@ -1,0 +1,2020 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__obj__pos_8h" kind="file" language="C++">
+    <compoundname>lv_obj_pos.h</compoundname>
+    <innerclass refid="structlv__layout__dsc__t" prot="public">lv_layout_dsc_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__obj__pos_8h_1a8618f2223b278e87d3d245b9f9d23a2c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_layout_update_cb_t) (struct _lv_obj_t *, void *user_data)</definition>
+        <argsstring>)(struct _lv_obj_t *, void *user_data)</argsstring>
+        <name>lv_layout_update_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="27" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__obj__pos_8h_1ade6b1d02e551220adb071c4d2d9e564a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_pos</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t x, lv_coord_t y)</argsstring>
+        <name>lv_obj_set_pos</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the position of an object relative to the set alignment. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new x coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new y coordinate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>With default alignment it&apos;s the distance from the top left corner </para>
+</simplesect>
+<simplesect kind="note"><para>E.g. LV_ALIGN_CENTER alignment it&apos;s the offset from the center of the parent </para>
+</simplesect>
+<simplesect kind="note"><para>The position is interpreted on the content area of the parent </para>
+</simplesect>
+<simplesect kind="note"><para>The values can be set in pixel or in percentage of parent size with <computeroutput>lv_pct(v)</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="47" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1ad27fe6524f1d268e3a64ac0ace6b6cf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_x</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t x)</argsstring>
+        <name>lv_obj_set_x</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the x coordinate of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new x coordinate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>With default alignment it&apos;s the distance from the top left corner </para>
+</simplesect>
+<simplesect kind="note"><para>E.g. LV_ALIGN_CENTER alignment it&apos;s the offset from the center of the parent </para>
+</simplesect>
+<simplesect kind="note"><para>The position is interpreted on the content area of the parent </para>
+</simplesect>
+<simplesect kind="note"><para>The values can be set in pixel or in percentage of parent size with <computeroutput>lv_pct(v)</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="58" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a8d25317eaa215bed69e26dc678726ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_y</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t y)</argsstring>
+        <name>lv_obj_set_y</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the y coordinate of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new y coordinate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>With default alignment it&apos;s the distance from the top left corner </para>
+</simplesect>
+<simplesect kind="note"><para>E.g. LV_ALIGN_CENTER alignment it&apos;s the offset from the center of the parent </para>
+</simplesect>
+<simplesect kind="note"><para>The position is interpreted on the content area of the parent </para>
+</simplesect>
+<simplesect kind="note"><para>The values can be set in pixel or in percentage of parent size with <computeroutput>lv_pct(v)</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="69" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a3436cc6a5db269d76ef33e070f328b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_size</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t w, lv_coord_t h)</argsstring>
+        <name>lv_obj_set_size</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the size of an object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>possible values are: pixel simple set the size accordingly LV_SIZE_CONTENT set the size to involve all children in the given direction LV_SIZE_PCT(x) to set size in percentage of the parent&apos;s content area size (the size without paddings). x should be in [0..1000]% range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="82" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a07942341477c254db2020a37efe18f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_refr_size</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_refr_size</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recalculate the size of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: the size has been changed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="89" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a02566a0d17962caeef20ccc4c9a32ff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_width</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t w)</argsstring>
+        <name>lv_obj_set_width</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the width of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new width </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>possible values are: pixel simple set the size accordingly LV_SIZE_CONTENT set the size to involve all children in the given direction lv_pct(x) to set size in percentage of the parent&apos;s content area size (the size without paddings). x should be in [0..1000]% range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="101" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="101" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a2d345c44b0b186bef1d4ce741819fb5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_height</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t h)</argsstring>
+        <name>lv_obj_set_height</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the height of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>possible values are: pixel simple set the size accordingly LV_SIZE_CONTENT set the size to involve all children in the given direction lv_pct(x) to set size in percentage of the parent&apos;s content area size (the size without paddings). x should be in [0..1000]% range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="113" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="113" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a2b4a5234d042add1bf0e46cc01868ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_content_width</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t w)</argsstring>
+        <name>lv_obj_set_content_width</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the width reduced by the left and right padding and the border width. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width without paddings in pixels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="120" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="120" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a30d2df97cb252022ab6d951cf0ae4b13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_content_height</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t h)</argsstring>
+        <name>lv_obj_set_content_height</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the height reduced by the top and bottom padding and the border width. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height without paddings in pixels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="127" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="127" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a486cddeea18ec6d66d60f1ac77392af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_layout</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t layout)</argsstring>
+        <name>lv_obj_set_layout</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a layout for an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a layout descriptor to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="134" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="134" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a0fd10534b1b4c3786a9969067e80c331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_is_layout_positioned</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_is_layout_positioned</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test whether the and object is positioned by a layout or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to test </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: positioned by a layout; false: not positioned by a layout </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="141" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="141" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a4b314720157ea85ffac421d8c499587d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_mark_layout_as_dirty</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_mark_layout_as_dirty</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark the object for layout update. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object whose children needs to be updated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="147" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="147" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1aa4402102d6ff575b829834f2f24e6401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_update_layout</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_update_layout</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the layout of an object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object whose children needs to be updated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="153" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="153" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1af06b67c5d6f402cc311a092cda4ee079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_layout_register</definition>
+        <argsstring>(lv_layout_update_cb_t cb, void *user_data)</argsstring>
+        <name>lv_layout_register</name>
+        <param>
+          <type>lv_layout_update_cb_t</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register a new layout <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the layout update callback </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>custom data that will be passed to <computeroutput>cb</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the ID of the new layout </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="161" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="161" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1af19f2402cd1bb27cfb93c4428c2e2837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_align</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_align_t align)</argsstring>
+        <name>lv_obj_set_align</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_align_t</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the alignment of an object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to align </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of alignment (see &apos;lv_align_t&apos; enum) <computeroutput>LV_ALIGN_OUT_...</computeroutput> can&apos;t be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="168" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="168" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a28390f2fdf0872dccf05082f20c48509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_align</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs)</argsstring>
+        <name>lv_obj_align</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_align_t</type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x_ofs</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y_ofs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the alignment of an object and set new coordinates. Equivalent to: lv_obj_set_align(obj, align); lv_obj_set_pos(obj, x_ofs, y_ofs); <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to align </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of alignment (see &apos;lv_align_t&apos; enum) <computeroutput>LV_ALIGN_OUT_...</computeroutput> can&apos;t be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_ofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x coordinate offset after alignment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y_ofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y coordinate offset after alignment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="180" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="180" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1aa7c0adb3614603c8277d658c685cc46f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_align_to</definition>
+        <argsstring>(struct _lv_obj_t *obj, const struct _lv_obj_t *base, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs)</argsstring>
+        <name>lv_obj_align_to</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>lv_align_t</type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x_ofs</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y_ofs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Align an object to an other object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to align </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an other object (if NULL <computeroutput>obj</computeroutput>s parent is used). &apos;obj&apos; will be aligned to it. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of alignment (see &apos;lv_align_t&apos; enum) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_ofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x coordinate offset after alignment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y_ofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y coordinate offset after alignment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>if the position or size of <computeroutput>base</computeroutput> changes <computeroutput>obj</computeroutput> needs to be aligned manually again </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="191" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="191" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a721d1e41699c54df776f902776b117e7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_obj_center</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_center</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Align an object to the center on its parent. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object to align </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>if the parent size changes <computeroutput>obj</computeroutput> needs to be aligned manually again </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="199" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1ace6067a91d592b0bca182bd5e1032c38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_get_coords</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_area_t *coords)</argsstring>
+        <name>lv_obj_get_coords</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy the coordinates of an object to an area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an area to store the coordinates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="209" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="209" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a4a39eade0ef8b116562af96a4347b15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_x</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_x</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the x coordinate of object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>distance of <computeroutput>obj</computeroutput> from the left side of its parent plus the parent&apos;s left padding </para>
+</simplesect>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<simplesect kind="note"><para>Zero return value means the object is on the left padding of the parent, and not on the left edge. </para>
+</simplesect>
+<simplesect kind="note"><para>Scrolling of the parent doesn&apos;t change the returned value. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned value is always the distance from the parent even if <computeroutput>obj</computeroutput> is positioned by a layout. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="221" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="221" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1aa35d4c42b095d1716d027cbb49226407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_x2</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_x2</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the x2 coordinate of object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>distance of <computeroutput>obj</computeroutput> from the right side of its parent plus the parent&apos;s right padding </para>
+</simplesect>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<simplesect kind="note"><para>Zero return value means the object is on the right padding of the parent, and not on the right edge. </para>
+</simplesect>
+<simplesect kind="note"><para>Scrolling of the parent doesn&apos;t change the returned value. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned value is always the distance from the parent even if <computeroutput>obj</computeroutput> is positioned by a layout. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="233" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="233" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a7359f3634058f0bd0a7e224855f0089a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_y</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_y</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the y coordinate of object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>distance of <computeroutput>obj</computeroutput> from the top side of its parent plus the parent&apos;s top padding </para>
+</simplesect>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<simplesect kind="note"><para>Zero return value means the object is on the top padding of the parent, and not on the top edge. </para>
+</simplesect>
+<simplesect kind="note"><para>Scrolling of the parent doesn&apos;t change the returned value. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned value is always the distance from the parent even if <computeroutput>obj</computeroutput> is positioned by a layout. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="245" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="245" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1ac628dd89dca68c65b3f20566b3b41de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_y2</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_y2</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the y2 coordinate of object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>distance of <computeroutput>obj</computeroutput> from the bottom side of its parent plus the parent&apos;s bottom padding </para>
+</simplesect>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<simplesect kind="note"><para>Zero return value means the object is on the bottom padding of the parent, and not on the bottom edge. </para>
+</simplesect>
+<simplesect kind="note"><para>Scrolling of the parent doesn&apos;t change the returned value. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned value is always the distance from the parent even if <computeroutput>obj</computeroutput> is positioned by a layout. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="257" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="257" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1aeb4fb7aab189c268632b4f57b60d452e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_x_aligned</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_x_aligned</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the actually set x coordinate of object, i.e. the offset form the set alignment <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the set x coordinate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="264" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="264" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a0e8f7a6e46d0821129e431535feffcf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_y_aligned</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_y_aligned</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the actually set y coordinate of object, i.e. the offset form the set alignment <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the set y coordinate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="271" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="271" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a252ca1bc43b56fe727f23ccf4197a615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_width</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_width</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the width of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<simplesect kind="return"><para>the width in pixels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="280" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="280" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a80ca7e700a9f306a1f57c9531fc89557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_height</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_height</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the height of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<simplesect kind="return"><para>the height in pixels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="289" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="289" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a874f97c6ed226154d62bd782ff501535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_content_width</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_content_width</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the width reduced by the left and right padding and the border width. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<simplesect kind="return"><para>the width which still fits into its parent without causing overflow (making the parent scrollable) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="298" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="298" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1abe75b5f3394239ed70c2ffd48084c3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_content_height</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_content_height</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the height reduced by the top and bottom padding and the border width. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<simplesect kind="return"><para>the height which still fits into the parent without causing overflow (making the parent scrollable) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="307" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="307" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a65e4981520afab6afeaaea7f79e9c6f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_get_content_coords</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_area_t *area)</argsstring>
+        <name>lv_obj_get_content_coords</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the area reduced by the paddings and the border width. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The position of the object is recalculated only on the next redraw. To force coordinate recalculation call <computeroutput>lv_obj_update_layout(obj)</computeroutput>. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the area which still fits into the parent without causing overflow (making the parent scrollable) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="316" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="316" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1af8f6ed22bd46d5aeacf7f1683f13ff0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_self_width</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_self_width</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the width occupied by the &quot;parts&quot; of the widget. E.g. the width of all columns of a table. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an objects </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the width of the virtually drawn content </para>
+</simplesect>
+<simplesect kind="note"><para>This size independent from the real size of the widget. It just tells how large the internal (&quot;virtual&quot;) content is. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="325" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="325" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1aa293040b22af94a7ada39775cf6834bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_get_self_height</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_self_height</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the height occupied by the &quot;parts&quot; of the widget. E.g. the height of all rows of a table. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an objects </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the width of the virtually drawn content </para>
+</simplesect>
+<simplesect kind="note"><para>This size independent from the real size of the widget. It just tells how large the internal (&quot;virtual&quot;) content is. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="334" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="334" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1ab53a4153a0aa38c988f5d6c884fdc46d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_refresh_self_size</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_refresh_self_size</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle if the size of the internal (&quot;virtual&quot;) content of an object has changed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false: nothing happened; true: refresh happened </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="341" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="341" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a4419b8d831413db923ba7ff63e9fd2b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_refr_pos</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_refr_pos</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="343" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="343" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a74a9a79793b9dd17edccde0d9a083601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_move_to</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t x, lv_coord_t y)</argsstring>
+        <name>lv_obj_move_to</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="345" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="345" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a106c625aefcce6ebf282231b76ce60e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_move_children_by</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t x_diff, lv_coord_t y_diff, bool ignore_floating)</argsstring>
+        <name>lv_obj_move_children_by</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x_diff</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y_diff</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_floating</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="347" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="347" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1aeb484d7004d6f41cbedc5f1e39102231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_transform_point</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_point_t *p, bool recursive, bool inv)</argsstring>
+        <name>lv_obj_transform_point</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transform a point using the angle and zoom style properties of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object whose style properties should be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a point to transform, the result will be written back here too </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>consider the transformation properties of the parents too </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>do the inverse of the transformation (-angle and 1/zoom) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="356" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="356" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1aebc4108cd16ac9ee7615cd69fdc5b65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_get_transformed_area</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_area_t *area, bool recursive, bool inv)</argsstring>
+        <name>lv_obj_get_transformed_area</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transform an area using the angle and zoom style properties of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object whose style properties should be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an area to transform, the result will be written back here too </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>consider the transformation properties of the parents too </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>do the inverse of the transformation (-angle and 1/zoom) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="365" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="365" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a12765d584934044b7f0f9d38ea9588f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_invalidate_area</definition>
+        <argsstring>(const struct _lv_obj_t *obj, const lv_area_t *area)</argsstring>
+        <name>lv_obj_invalidate_area</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark an area of an object as invalid. The area will be truncated to the object&apos;s area and marked for redraw. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the area to redraw </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="373" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="373" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a3d0c50c2a1a5e8fe98b977db19735108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_invalidate</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_invalidate</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark the object as invalid to redrawn its area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="379" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="379" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1aacb3b08b95e08a347616afc45181a3e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_area_is_visible</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_area_t *area)</argsstring>
+        <name>lv_obj_area_is_visible</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether an area of an object is visible (even partially) now or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the are to check. The visible part of the area will be written back here. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true visible; false not visible (hidden, out of parent, on other screen, etc) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="387" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="387" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a290927fa0cb0e36f1aa412e51ad803d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_is_visible</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_is_visible</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether an object is visible (even partially) now or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: visible; false not visible (hidden, out of parent, on other screen, etc) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="394" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="394" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1af087f35f16f87df141a6de1a28114175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_ext_click_area</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t size)</argsstring>
+        <name>lv_obj_set_ext_click_area</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the size of an extended clickable area <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extended clickable area in all 4 directions [px] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="401" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="401" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a8a10b2dea4414c7af16271fd9532c366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_get_click_area</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_area_t *area)</argsstring>
+        <name>lv_obj_get_click_area</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the an area where to object can be clicked. It&apos;s the object&apos;s normal area plus the extended click area. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>store the result area here </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="409" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="409" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a9f3d059a68bf9acf25a7302560148c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_hit_test</definition>
+        <argsstring>(struct _lv_obj_t *obj, const lv_point_t *point)</argsstring>
+        <name>lv_obj_hit_test</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hit-test an object given a particular point in screen space. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object to hit-test </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>screen-space point (absolute coordinate) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: if the object is considered under the point </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="417" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="417" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1af9471f738a66738b596b5de8b94f322a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_clamp_width</definition>
+        <argsstring>(lv_coord_t width, lv_coord_t min_width, lv_coord_t max_width, lv_coord_t ref_width)</argsstring>
+        <name>lv_clamp_width</name>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>min_width</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>max_width</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>ref_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clamp a width between min and max width. If the min/max width is in percentage value use the ref_width <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width to clamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimal width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximal width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the reference width used when min/max width is in percentage </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the clamped width </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="427" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="427" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__pos_8h_1a93f69971ca268aaba2e6717e6f96ca2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_clamp_height</definition>
+        <argsstring>(lv_coord_t height, lv_coord_t min_height, lv_coord_t max_height, lv_coord_t ref_height)</argsstring>
+        <name>lv_clamp_height</name>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>min_height</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>max_height</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>ref_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clamp a height between min and max height. If the min/max height is in percentage value use the ref_height <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height to clamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimal height </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximal height </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the reference height used when min/max height is in percentage </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the clamped height </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" line="437" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h" declline="437" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_OBJ_POS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_OBJ_POS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_area.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*lv_layout_update_cb_t)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline lineno="28" refid="structlv__layout__dsc__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_layout_update_cb_t<sp/>cb;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/><ref refid="structlv__layout__dsc__t" kindref="compound">lv_layout_dsc_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1ade6b1d02e551220adb071c4d2d9e564a" kindref="member">lv_obj_set_pos</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>x,<sp/>lv_coord_t<sp/>y);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1ad27fe6524f1d268e3a64ac0ace6b6cf1" kindref="member">lv_obj_set_x</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>x);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a8d25317eaa215bed69e26dc678726ce1" kindref="member">lv_obj_set_y</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>y);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a3436cc6a5db269d76ef33e070f328b72" kindref="member">lv_obj_set_size</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>w,<sp/>lv_coord_t<sp/>h);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a07942341477c254db2020a37efe18f3c" kindref="member">lv_obj_refr_size</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a02566a0d17962caeef20ccc4c9a32ff1" kindref="member">lv_obj_set_width</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>w);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a2d345c44b0b186bef1d4ce741819fb5a" kindref="member">lv_obj_set_height</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>h);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a2b4a5234d042add1bf0e46cc01868ac9" kindref="member">lv_obj_set_content_width</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>w);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a30d2df97cb252022ab6d951cf0ae4b13" kindref="member">lv_obj_set_content_height</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>h);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a486cddeea18ec6d66d60f1ac77392af5" kindref="member">lv_obj_set_layout</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>layout);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a0fd10534b1b4c3786a9969067e80c331" kindref="member">lv_obj_is_layout_positioned</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a4b314720157ea85ffac421d8c499587d" kindref="member">lv_obj_mark_layout_as_dirty</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1aa4402102d6ff575b829834f2f24e6401" kindref="member">lv_obj_update_layout</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">uint32_t<sp/><ref refid="lv__obj__pos_8h_1af06b67c5d6f402cc311a092cda4ee079" kindref="member">lv_layout_register</ref>(lv_layout_update_cb_t<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1af19f2402cd1bb27cfb93c4428c2e2837" kindref="member">lv_obj_set_align</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_align_t<sp/>align);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a28390f2fdf0872dccf05082f20c48509" kindref="member">lv_obj_align</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_align_t<sp/>align,<sp/>lv_coord_t<sp/>x_ofs,<sp/>lv_coord_t<sp/>y_ofs);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1aa7c0adb3614603c8277d658c685cc46f" kindref="member">lv_obj_align_to</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>base,<sp/>lv_align_t<sp/>align,<sp/>lv_coord_t<sp/>x_ofs,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>y_ofs);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_center(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__obj__pos_8h_1a28390f2fdf0872dccf05082f20c48509" kindref="member">lv_obj_align</ref>(obj,<sp/>LV_ALIGN_CENTER,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1ace6067a91d592b0bca182bd5e1032c38" kindref="member">lv_obj_get_coords</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>coords);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1a4a39eade0ef8b116562af96a4347b15e" kindref="member">lv_obj_get_x</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1aa35d4c42b095d1716d027cbb49226407" kindref="member">lv_obj_get_x2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1a7359f3634058f0bd0a7e224855f0089a" kindref="member">lv_obj_get_y</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1ac628dd89dca68c65b3f20566b3b41de9" kindref="member">lv_obj_get_y2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1aeb4fb7aab189c268632b4f57b60d452e" kindref="member">lv_obj_get_x_aligned</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1a0e8f7a6e46d0821129e431535feffcf3" kindref="member">lv_obj_get_y_aligned</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1a252ca1bc43b56fe727f23ccf4197a615" kindref="member">lv_obj_get_width</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1a80ca7e700a9f306a1f57c9531fc89557" kindref="member">lv_obj_get_height</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1a874f97c6ed226154d62bd782ff501535" kindref="member">lv_obj_get_content_width</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1abe75b5f3394239ed70c2ffd48084c3dd" kindref="member">lv_obj_get_content_height</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a65e4981520afab6afeaaea7f79e9c6f8" kindref="member">lv_obj_get_content_coords</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1af8f6ed22bd46d5aeacf7f1683f13ff0d" kindref="member">lv_obj_get_self_width</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1aa293040b22af94a7ada39775cf6834bc" kindref="member">lv_obj_get_self_height</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1ab53a4153a0aa38c988f5d6c884fdc46d" kindref="member">lv_obj_refresh_self_size</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_refr_pos(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_move_to(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>x,<sp/>lv_coord_t<sp/>y);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_move_children_by(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>x_diff,<sp/>lv_coord_t<sp/>y_diff,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore_floating);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1aeb484d7004d6f41cbedc5f1e39102231" kindref="member">lv_obj_transform_point</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>p,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inv);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1aebc4108cd16ac9ee7615cd69fdc5b65e" kindref="member">lv_obj_get_transformed_area</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inv);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a12765d584934044b7f0f9d38ea9588f1" kindref="member">lv_obj_invalidate_area</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a3d0c50c2a1a5e8fe98b977db19735108" kindref="member">lv_obj_invalidate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1aacb3b08b95e08a347616afc45181a3e8" kindref="member">lv_obj_area_is_visible</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a290927fa0cb0e36f1aa412e51ad803d5" kindref="member">lv_obj_is_visible</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1af087f35f16f87df141a6de1a28114175" kindref="member">lv_obj_set_ext_click_area</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>size);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a8a10b2dea4414c7af16271fd9532c366" kindref="member">lv_obj_get_click_area</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area);</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__pos_8h_1a9f3d059a68bf9acf25a7302560148c29" kindref="member">lv_obj_hit_test</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>point);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1af9471f738a66738b596b5de8b94f322a" kindref="member">lv_clamp_width</ref>(lv_coord_t<sp/>width,<sp/>lv_coord_t<sp/>min_width,<sp/>lv_coord_t<sp/>max_width,<sp/>lv_coord_t<sp/>ref_width);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__obj__pos_8h_1a93f69971ca268aaba2e6717e6f96ca2e" kindref="member">lv_clamp_height</ref>(lv_coord_t<sp/>height,<sp/>lv_coord_t<sp/>min_height,<sp/>lv_coord_t<sp/>max_height,<sp/>lv_coord_t<sp/>ref_height);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="440"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="441"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_OBJ_POS_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_pos.h"/>
+  </compounddef>
+</doxygen>

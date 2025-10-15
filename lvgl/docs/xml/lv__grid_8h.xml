@@ -1,0 +1,1285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__grid_8h" kind="file" language="C++">
+    <compoundname>lv_grid.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__grid_8h_1a5facd72ec498b70c2c9e538237a620a7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_grid_align_t</name>
+        <enumvalue id="lv__grid_8h_1a5facd72ec498b70c2c9e538237a620a7a08e1b59f16d09947ef2df001aebe34a1" prot="public">
+          <name>LV_GRID_ALIGN_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__grid_8h_1a5facd72ec498b70c2c9e538237a620a7a38fd9e0fe50314b346050648ad168faf" prot="public">
+          <name>LV_GRID_ALIGN_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__grid_8h_1a5facd72ec498b70c2c9e538237a620a7aff9bfff5387c281e99d2a1604d6b0885" prot="public">
+          <name>LV_GRID_ALIGN_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__grid_8h_1a5facd72ec498b70c2c9e538237a620a7a4213c548477a979c7d86f6006188e69d" prot="public">
+          <name>LV_GRID_ALIGN_STRETCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__grid_8h_1a5facd72ec498b70c2c9e538237a620a7aba4892d8da1523d22f0574fdb02273cf" prot="public">
+          <name>LV_GRID_ALIGN_SPACE_EVENLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__grid_8h_1a5facd72ec498b70c2c9e538237a620a7aeeb2c27781a7a79d3f07872e8a30ce2e" prot="public">
+          <name>LV_GRID_ALIGN_SPACE_AROUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__grid_8h_1a5facd72ec498b70c2c9e538237a620a7a7c4205bd5f48226cb80aaacd2b26aa75" prot="public">
+          <name>LV_GRID_ALIGN_SPACE_BETWEEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="42" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="42" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__grid_8h_1aac02e0c06b400834c3353cb9b39824c9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LV_LAYOUT_GRID</definition>
+        <argsstring></argsstring>
+        <name>LV_LAYOUT_GRID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="56" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="56" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1ab8c0861ef7a5dbbfcbd36f92a2e2d721" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_COLUMN_DSC_ARRAY</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_COLUMN_DSC_ARRAY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="57" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="57" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1a826a890752a29b43045b2aa8618b4c67" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_COLUMN_ALIGN</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_COLUMN_ALIGN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="58" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="58" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1abe97f1bae5cde33bc097e569190556b7" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_ROW_DSC_ARRAY</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_ROW_DSC_ARRAY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="59" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="59" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1a7c6cae030a6eab76cc60af418d898fd6" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_ROW_ALIGN</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_ROW_ALIGN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="60" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="60" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1adcf11d2091687c74fb3ee43f54466f08" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_CELL_COLUMN_POS</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_CELL_COLUMN_POS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="61" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="61" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1a88c99154ed5f1f3a0851abd361737f78" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_CELL_COLUMN_SPAN</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_CELL_COLUMN_SPAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="62" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="62" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1a1ac2fa7565daf4aceebd61c9feec0636" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_CELL_X_ALIGN</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_CELL_X_ALIGN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="63" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="63" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1ad029071dae8da31cd3d917bb5f23f3b8" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_CELL_ROW_POS</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_CELL_ROW_POS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="64" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="64" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1a327b7846554b2f051d8c61711882eb60" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_CELL_ROW_SPAN</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_CELL_ROW_SPAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="65" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="65" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__grid_8h_1a336c5217be32e9ecd20d9a556ea1344f" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_GRID_CELL_Y_ALIGN</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_GRID_CELL_Y_ALIGN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="66" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="66" declcolumn="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__grid_8h_1a438d3c728bece25064289666c53b47d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LV_EXPORT_CONST_INT</definition>
+        <argsstring>(LV_GRID_CONTENT)</argsstring>
+        <name>LV_EXPORT_CONST_INT</name>
+        <param>
+          <type>LV_GRID_CONTENT</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="30" column="1" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="30" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1af64115dd615ccc4b1b4064a3be74e8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LV_EXPORT_CONST_INT</definition>
+        <argsstring>(LV_GRID_TEMPLATE_LAST)</argsstring>
+        <name>LV_EXPORT_CONST_INT</name>
+        <param>
+          <type>LV_GRID_TEMPLATE_LAST</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="33" column="1" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="33" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1acf18da2e52613c4f1e0e400727c4fc8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_grid_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_grid_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="72" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="72" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a406e9cbe26d6cde9f173e8352b54b364" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_grid_dsc_array</definition>
+        <argsstring>(lv_obj_t *obj, const lv_coord_t col_dsc[], const lv_coord_t row_dsc[])</argsstring>
+        <name>lv_obj_set_grid_dsc_array</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>col_dsc</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>row_dsc</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="74" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="74" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1ac011467a368ae904ad004b11e3fce299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_grid_align</definition>
+        <argsstring>(lv_obj_t *obj, lv_grid_align_t column_align, lv_grid_align_t row_align)</argsstring>
+        <name>lv_obj_set_grid_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_grid_align_t</type>
+          <declname>column_align</declname>
+        </param>
+        <param>
+          <type>lv_grid_align_t</type>
+          <declname>row_align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="76" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="76" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1ad8f2ea26c568d729e31545649e2cfce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_grid_cell</definition>
+        <argsstring>(lv_obj_t *obj, lv_grid_align_t column_align, uint8_t col_pos, uint8_t col_span, lv_grid_align_t row_align, uint8_t row_pos, uint8_t row_span)</argsstring>
+        <name>lv_obj_set_grid_cell</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_grid_align_t</type>
+          <declname>column_align</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>col_pos</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>col_span</declname>
+        </param>
+        <param>
+          <type>lv_grid_align_t</type>
+          <declname>row_align</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>row_pos</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>row_span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the cell of an object. The object&apos;s parent needs to have grid layout, else nothing will happen <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column_align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the vertical alignment in the cell. <computeroutput>LV_GRID_START/END/CENTER/STRETCH</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>column ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col_span</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of columns to take (&gt;= 1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row_align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the horizontal alignment in the cell. <computeroutput>LV_GRID_START/END/CENTER/STRETCH</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row_span</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows to take (&gt;= 1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="88" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a95cf8cc026d24c9da911be840eb38bc2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_grid_fr</definition>
+        <argsstring>(uint8_t x)</argsstring>
+        <name>lv_grid_fr</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Just a wrapper to <computeroutput>LV_GRID_FR</computeroutput> for bindings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="94" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a9d70ef784bdc549dee657bdc50c4179f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_row_dsc_array</definition>
+        <argsstring>(lv_style_t *style, const lv_coord_t value[])</argsstring>
+        <name>lv_style_set_grid_row_dsc_array</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>value</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="99" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="99" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1adf8e6564fd507790ab5ff88db9fc3ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_column_dsc_array</definition>
+        <argsstring>(lv_style_t *style, const lv_coord_t value[])</argsstring>
+        <name>lv_style_set_grid_column_dsc_array</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>value</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="100" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="100" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1aaa645466194ddd2a760814f52c9cb5ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_row_align</definition>
+        <argsstring>(lv_style_t *style, lv_grid_align_t value)</argsstring>
+        <name>lv_style_set_grid_row_align</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_grid_align_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="101" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="101" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1aeb05f83075e494ce7bad8da1da240eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_column_align</definition>
+        <argsstring>(lv_style_t *style, lv_grid_align_t value)</argsstring>
+        <name>lv_style_set_grid_column_align</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_grid_align_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="102" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="102" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a7e6c5b9a19f233cc3a98602eb20b7af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_cell_column_pos</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_grid_cell_column_pos</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="103" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="103" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1ac73c0b985098ee7a908dcd567db4629d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_cell_column_span</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_grid_cell_column_span</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="104" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a34d5db52978ec8597c5dd4cb6c11c9c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_cell_row_pos</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_grid_cell_row_pos</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="105" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="105" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a2ce6e3400224b7389fd241905cf0e88a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_cell_row_span</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_grid_cell_row_span</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="106" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="106" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a6d5d6fd3061b71021ded99eabc850d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_cell_x_align</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_grid_cell_x_align</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="107" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="107" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a5ec6586c26032ad36aa40285873f8110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_grid_cell_y_align</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_grid_cell_y_align</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="108" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="108" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a328e95a6e7f9d278d2cadd807a2146a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_row_dsc_array</definition>
+        <argsstring>(lv_obj_t *obj, const lv_coord_t value[], lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_row_dsc_array</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>value</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="110" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="110" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1af83e38a64e6f21ab24497d6871043daa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_column_dsc_array</definition>
+        <argsstring>(lv_obj_t *obj, const lv_coord_t value[], lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_column_dsc_array</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const lv_coord_t</type>
+          <declname>value</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="111" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="111" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a00efec878997a78f0cf842f6e463484e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_row_align</definition>
+        <argsstring>(lv_obj_t *obj, lv_grid_align_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_row_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_grid_align_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="112" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="112" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1ad73e08874dc9d28c1fa5d80cde4ff908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_column_align</definition>
+        <argsstring>(lv_obj_t *obj, lv_grid_align_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_column_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_grid_align_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="113" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="113" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a0a1ac8121eaeedaf6abb5d1065b6fa4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_cell_column_pos</definition>
+        <argsstring>(lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_cell_column_pos</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="114" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="114" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a450f2dd2f006531011f40b3b5027eec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_cell_column_span</definition>
+        <argsstring>(lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_cell_column_span</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="115" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="115" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1ab794c15fce17b43baef6685ab942be68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_cell_row_pos</definition>
+        <argsstring>(lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_cell_row_pos</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="116" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="116" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a5656a2525b186d59e10ecd3c614c1a5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_cell_row_span</definition>
+        <argsstring>(lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_cell_row_span</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="117" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="117" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a6a491d0e4fad39c3945f5e9c32a5fb00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_cell_x_align</definition>
+        <argsstring>(lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_cell_x_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="118" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="118" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a0bb9f18a6d0a2821428d95f3494107cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_grid_cell_y_align</definition>
+        <argsstring>(lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_grid_cell_y_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="119" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" declline="119" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a637fd32f981555ae0b8547ce12644d75" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const lv_coord_t *</type>
+        <definition>static const lv_coord_t* lv_obj_get_style_grid_row_dsc_array</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_row_dsc_array</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="121" column="33" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a4e97100e544f60b53e8b107df9629555" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const lv_coord_t *</type>
+        <definition>static const lv_coord_t* lv_obj_get_style_grid_column_dsc_array</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_column_dsc_array</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="127" column="33" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a03322b3652a6fed895b1b906e14af5a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_grid_align_t</type>
+        <definition>static lv_grid_align_t lv_obj_get_style_grid_row_align</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_row_align</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="133" column="31" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="133" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a77f29a84277ea536f23ff434136384d8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_grid_align_t</type>
+        <definition>static lv_grid_align_t lv_obj_get_style_grid_column_align</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_column_align</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="139" column="31" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="139" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1ab6bd204796124dfcd38b0e22bd0fda8e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_obj_get_style_grid_cell_column_pos</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_cell_column_pos</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="145" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="145" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a07eec241e14329754a584da9c1e2e7f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_obj_get_style_grid_cell_column_span</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_cell_column_span</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="151" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1aeaa1a501f485bb81d0fb72b28d9dec34" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_obj_get_style_grid_cell_row_pos</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_cell_row_pos</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="157" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="157" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1a32bfb23ba8d2a6c521698e972c7e8c09" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_obj_get_style_grid_cell_row_span</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_cell_row_span</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="163" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="163" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1aaf78463f1445f3069cdba6a16e47eeb1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_obj_get_style_grid_cell_x_align</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_cell_x_align</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="169" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__grid_8h_1acb2ee3e00440249e7edf95795524716c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_obj_get_style_grid_cell_y_align</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_grid_cell_y_align</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" line="175" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h" bodystart="175" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_GRID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_GRID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../core/lv_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_GRID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*********************/</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#define<sp/>LV_GRID_FR(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(LV_COORD_MAX<sp/>-<sp/>100<sp/>+<sp/>x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_GRID_CONTENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(LV_COORD_MAX<sp/>-<sp/>101)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">LV_EXPORT_CONST_INT(LV_GRID_CONTENT);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_GRID_TEMPLATE_LAST<sp/><sp/>(LV_COORD_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">LV_EXPORT_CONST_INT(LV_GRID_TEMPLATE_LAST);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*Can&apos;t<sp/>include<sp/>lv_obj.h<sp/>because<sp/>it<sp/>includes<sp/>this<sp/>header<sp/>file*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_GRID_ALIGN_START,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_GRID_ALIGN_CENTER,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_GRID_ALIGN_END,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_GRID_ALIGN_STRETCH,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_GRID_ALIGN_SPACE_EVENLY,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_GRID_ALIGN_SPACE_AROUND,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_GRID_ALIGN_SPACE_BETWEEN,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/>lv_grid_align_t;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>VARIABLES</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint16_t<sp/>LV_LAYOUT_GRID;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_COLUMN_DSC_ARRAY;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_COLUMN_ALIGN;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_ROW_DSC_ARRAY;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_ROW_ALIGN;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_CELL_COLUMN_POS;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_CELL_COLUMN_SPAN;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_CELL_X_ALIGN;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_CELL_ROW_POS;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_CELL_ROW_SPAN;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_GRID_CELL_Y_ALIGN;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_grid_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_grid_dsc_array(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>col_dsc[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>row_dsc[]);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_grid_align(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_grid_align_t<sp/>column_align,<sp/>lv_grid_align_t<sp/>row_align);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__grid_8h_1ad8f2ea26c568d729e31545649e2cfce3" kindref="member">lv_obj_set_grid_cell</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_grid_align_t<sp/>column_align,<sp/>uint8_t<sp/>col_pos,<sp/>uint8_t<sp/>col_span,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_grid_align_t<sp/>row_align,<sp/>uint8_t<sp/>row_pos,<sp/>uint8_t<sp/>row_span);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_grid_fr(uint8_t<sp/>x)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_GRID_FR(x);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_row_dsc_array(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>value[]);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_column_dsc_array(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>value[]);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_row_align(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_grid_align_t<sp/>value);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_column_align(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_grid_align_t<sp/>value);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_cell_column_pos(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_cell_column_span(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_cell_row_pos(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_cell_row_span(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_cell_x_align(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_grid_cell_y_align(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_row_dsc_array(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>value[],<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_column_dsc_array(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>value[],<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_row_align(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_grid_align_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_column_align(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_grid_align_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_cell_column_pos(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_cell_column_span(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_cell_row_pos(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_cell_row_span(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_cell_x_align(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_grid_cell_y_align(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>*<sp/>lv_obj_get_style_grid_row_dsc_array(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_ROW_DSC_ARRAY);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>*)v.<ref refid="unionlv__style__value__t_1a1ec5ca1a76462368a2e92cebd40de345" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>*<sp/>lv_obj_get_style_grid_column_dsc_array(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_COLUMN_DSC_ARRAY);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>*)v.<ref refid="unionlv__style__value__t_1a1ec5ca1a76462368a2e92cebd40de345" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_grid_align_t<sp/>lv_obj_get_style_grid_row_align(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_ROW_ALIGN);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_grid_align_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_grid_align_t<sp/>lv_obj_get_style_grid_column_align(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_COLUMN_ALIGN);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_grid_align_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_obj_get_style_grid_cell_column_pos(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_CELL_COLUMN_POS);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_coord_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_obj_get_style_grid_cell_column_span(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_CELL_COLUMN_SPAN);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_coord_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_obj_get_style_grid_cell_row_pos(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_CELL_ROW_POS);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_coord_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_obj_get_style_grid_cell_row_span(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_CELL_ROW_SPAN);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_coord_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_obj_get_style_grid_cell_x_align(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_CELL_X_ALIGN);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_coord_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_obj_get_style_grid_cell_y_align(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_GRID_CELL_Y_ALIGN);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_coord_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>VARIABLES</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_GRID*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_GRID_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/grid/lv_grid.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__calendar__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_calendar_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__calendar__t_1af9aea2bf3c8209eb1cccc27608b80873" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_calendar_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="39" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__calendar__t_1a2aa70cf63747a9e694bb7c3620008bb1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_calendar_t::btnm</definition>
+        <argsstring></argsstring>
+        <name>btnm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="40" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__calendar__t_1a3d4be51a152db6c6bda11baedc883c63" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__calendar__date__t" kindref="compound">lv_calendar_date_t</ref></type>
+        <definition>lv_calendar_date_t lv_calendar_t::today</definition>
+        <argsstring></argsstring>
+        <name>today</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="42" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__calendar__t_1ab6be6d8e30ba4c113aed36054b0a387f" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__calendar__date__t" kindref="compound">lv_calendar_date_t</ref></type>
+        <definition>lv_calendar_date_t lv_calendar_t::showed_date</definition>
+        <argsstring></argsstring>
+        <name>showed_date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="43" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__calendar__t_1a83ec4aa1624a988f5e6a1c1430ef68a0" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__calendar__date__t" kindref="compound">lv_calendar_date_t</ref> *</type>
+        <definition>lv_calendar_date_t* lv_calendar_t::highlighted_dates</definition>
+        <argsstring></argsstring>
+        <name>highlighted_dates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="45" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__calendar__t_1a2a3849dbdb81d80382acc01c9137ffd3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_calendar_t::highlighted_dates_num</definition>
+        <argsstring></argsstring>
+        <name>highlighted_dates_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="46" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__calendar__t_1acba32ad994f1657f203535cf9404ee6a" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* lv_calendar_t::map[8 *7]</definition>
+        <argsstring>[8 *7]</argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="47" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__calendar__t_1a5670bac623feeb1e731fb3c0b0ff3b2f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lv_calendar_t::nums[7 *6][4]</definition>
+        <argsstring>[7 *6][4]</argsstring>
+        <name>nums</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="48" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="1">
+        <label>lv_calendar_t</label>
+        <link refid="structlv__calendar__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>btnm</edgelabel>
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>highlighted_dates</edgelabel>
+          <edgelabel>today</edgelabel>
+          <edgelabel>showed_date</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lv_calendar_date_t</label>
+        <link refid="structlv__calendar__date__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" line="38" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/lv_calendar.h" bodystart="38" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structlv__calendar__t_1a2aa70cf63747a9e694bb7c3620008bb1" prot="public" virt="non-virtual"><scope>lv_calendar_t</scope><name>btnm</name></member>
+      <member refid="structlv__calendar__t_1a83ec4aa1624a988f5e6a1c1430ef68a0" prot="public" virt="non-virtual"><scope>lv_calendar_t</scope><name>highlighted_dates</name></member>
+      <member refid="structlv__calendar__t_1a2a3849dbdb81d80382acc01c9137ffd3" prot="public" virt="non-virtual"><scope>lv_calendar_t</scope><name>highlighted_dates_num</name></member>
+      <member refid="structlv__calendar__t_1acba32ad994f1657f203535cf9404ee6a" prot="public" virt="non-virtual"><scope>lv_calendar_t</scope><name>map</name></member>
+      <member refid="structlv__calendar__t_1a5670bac623feeb1e731fb3c0b0ff3b2f" prot="public" virt="non-virtual"><scope>lv_calendar_t</scope><name>nums</name></member>
+      <member refid="structlv__calendar__t_1af9aea2bf3c8209eb1cccc27608b80873" prot="public" virt="non-virtual"><scope>lv_calendar_t</scope><name>obj</name></member>
+      <member refid="structlv__calendar__t_1ab6be6d8e30ba4c113aed36054b0a387f" prot="public" virt="non-virtual"><scope>lv_calendar_t</scope><name>showed_date</name></member>
+      <member refid="structlv__calendar__t_1a3d4be51a152db6c6bda11baedc883c63" prot="public" virt="non-virtual"><scope>lv_calendar_t</scope><name>today</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

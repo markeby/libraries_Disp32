@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__draw_8h" kind="file" language="C++">
+    <compoundname>lv_draw.h</compoundname>
+    <innerclass refid="structlv__draw__mask__t" prot="public">lv_draw_mask_t</innerclass>
+    <innerclass refid="struct__lv__draw__layer__ctx__t" prot="public">_lv_draw_layer_ctx_t</innerclass>
+    <innerclass refid="struct__lv__draw__ctx__t" prot="public">_lv_draw_ctx_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__draw_8h_1aa69177fde41392932b3bc6261d288250" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref></type>
+        <definition>typedef struct _lv_draw_layer_ctx_t lv_draw_layer_ctx_t</definition>
+        <argsstring></argsstring>
+        <name>lv_draw_layer_ctx_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="57" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__draw_8h_1a3c97ef426260d81bff72570b24f5b886" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref></type>
+        <definition>typedef struct _lv_draw_ctx_t lv_draw_ctx_t</definition>
+        <argsstring></argsstring>
+        <name>lv_draw_ctx_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="189" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__draw_8h_1af7a40ccee4c55b76a524fb3c212235db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_draw_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="195" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" declline="195" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw_8h_1acefe95fb984e0eca97ebbec10583b600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_wait_for_finish</definition>
+        <argsstring>(lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>lv_draw_wait_for_finish</name>
+        <param>
+          <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="197" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" declline="197" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_DRAW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DRAW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_style.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_txt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__img__decoder_8h" kindref="compound">lv_img_decoder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__img__cache_8h" kindref="compound">lv_img_cache.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__rect_8h" kindref="compound">lv_draw_rect.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__label_8h" kindref="compound">lv_draw_label.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__img_8h" kindref="compound">lv_draw_img.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__line_8h" kindref="compound">lv_draw_line.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__triangle_8h" kindref="compound">lv_draw_triangle.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__arc_8h" kindref="compound">lv_draw_arc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__mask_8h" kindref="compound">lv_draw_mask.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__transform_8h" kindref="compound">lv_draw_transform.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__layer_8h" kindref="compound">lv_draw_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structlv__draw__mask__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__lv__disp__drv__t_1af5fdca24bab6f48c437c21a6d29864bd" kindref="member">user_data</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/><ref refid="structlv__draw__mask__t" kindref="compound">lv_draw_mask_t</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="struct__lv__draw__layer__ctx__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>area_full;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>area_act;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>max_row_with_alpha;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>max_row_with_no_alpha;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>clip_area;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>buf_area;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>screen_transp;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>original;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">lv_draw_layer_ctx_t</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="struct__lv__draw__ctx__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="struct__lv__draw__ctx__t_1a90225ccbb947ba8d39a103767a1178b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__lv__draw__ctx__t_1a90225ccbb947ba8d39a103767a1178b9" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="struct__lv__draw__ctx__t_1ac28b2c5007ad8dfca640e76c0890b16c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/><ref refid="struct__lv__draw__ctx__t_1ac28b2c5007ad8dfca640e76c0890b16c" kindref="member">buf_area</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="struct__lv__draw__ctx__t_1ae15cb5a04c4b2d9a37e3f4d50c0fa773" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/><ref refid="struct__lv__draw__ctx__t_1ae15cb5a04c4b2d9a37e3f4d50c0fa773" kindref="member">clip_area</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*init_buf)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*draw_rect)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__rect__dsc__t" kindref="compound">lv_draw_rect_dsc_t</ref><sp/>*<sp/>dsc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>coords);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*draw_arc)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__arc__dsc__t" kindref="compound">lv_draw_arc_dsc_t</ref><sp/>*<sp/>dsc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>center,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>radius,<sp/><sp/>uint16_t<sp/>start_angle,<sp/>uint16_t<sp/>end_angle);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*draw_img_decoded)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/>*<sp/>dsc,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>coords,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/>map_p,<sp/>lv_img_cf_t<sp/>color_format);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_res_t<sp/>(*draw_img)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/>*<sp/>draw_dsc,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>coords,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>src);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*draw_letter)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__label__dsc__t" kindref="compound">lv_draw_label_dsc_t</ref><sp/>*<sp/>dsc,<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>pos_p,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>letter);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*draw_line)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__line__dsc__t" kindref="compound">lv_draw_line_dsc_t</ref><sp/>*<sp/>dsc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>point1,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>point2);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*draw_polygon)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__rect__dsc__t" kindref="compound">lv_draw_rect_dsc_t</ref><sp/>*<sp/>draw_dsc,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>points,<sp/>uint16_t<sp/>point_cnt);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="struct__lv__draw__ctx__t_1aa20419b1b6725fc45b276702c4fdfa1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__draw__ctx__t_1aa20419b1b6725fc45b276702c4fdfa1f" kindref="member">draw_transform</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>dest_area,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>src_buf,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>src_w,<sp/>lv_coord_t<sp/>src_h,<sp/>lv_coord_t<sp/>src_stride,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/>*<sp/>draw_dsc,<sp/>lv_img_cf_t<sp/>cf,<sp/>lv_color_t<sp/>*<sp/>cbuf,<sp/>lv_opa_t<sp/>*<sp/>abuf);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="struct__lv__draw__ctx__t_1a1d647c216a656341f42ba0337422ac64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__draw__ctx__t_1a1d647c216a656341f42ba0337422ac64" kindref="member">draw_bg</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__rect__dsc__t" kindref="compound">lv_draw_rect_dsc_t</ref><sp/>*<sp/>draw_dsc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>coords);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="struct__lv__draw__ctx__t_1a43a0e4bbf6c280dbfee726b8eea55a8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__draw__ctx__t_1a43a0e4bbf6c280dbfee726b8eea55a8d" kindref="member">wait_for_finish</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="struct__lv__draw__ctx__t_1af1ff9f8d9d4d0b8d224bebf68087dc6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__draw__ctx__t_1af1ff9f8d9d4d0b8d224bebf68087dc6b" kindref="member">buffer_copy</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>dest_buf,<sp/>lv_coord_t<sp/>dest_stride,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>dest_area,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>src_buf,<sp/>lv_coord_t<sp/>src_stride,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>src_area);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="struct__lv__draw__ctx__t_1ac3e6b18f9b78b060bab7d579acd70542" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>*<sp/>(*layer_init)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>*<sp/>layer_ctx,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_draw_layer_flags_t<sp/>flags);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="struct__lv__draw__ctx__t_1a27f124886e64c3f98d4abc38a556c638" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__draw__ctx__t_1a27f124886e64c3f98d4abc38a556c638" kindref="member">layer_adjust</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>*<sp/>layer_ctx,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_draw_layer_flags_t<sp/>flags);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="struct__lv__draw__ctx__t_1aff67c913669483854453161ee65c7c1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__draw__ctx__t_1aff67c913669483854453161ee65c7c1c" kindref="member">layer_blend</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref><sp/>*<sp/>layer_ctx,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/>*<sp/>draw_dsc);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="struct__lv__draw__ctx__t_1af848153f452f8d0d15ebc86be0b56f22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__draw__ctx__t_1af848153f452f8d0d15ebc86be0b56f22" kindref="member">layer_destroy</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__draw__ctx__t" kindref="compound">_lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">lv_draw_layer_ctx_t</ref><sp/>*<sp/>layer_ctx);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="struct__lv__draw__ctx__t_1aee6f31576615903a994bac998e7af100" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__lv__draw__ctx__t_1aee6f31576615903a994bac998e7af100" kindref="member">layer_instance_size</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}<sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_wait_for_finish(<ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/>*<sp/><sp/>GLOBAL<sp/>VARIABLES</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/>*<sp/><sp/><sp/>POST<sp/>INCLUDES</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_DRAW_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h"/>
+  </compounddef>
+</doxygen>

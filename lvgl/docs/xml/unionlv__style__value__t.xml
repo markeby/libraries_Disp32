@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="unionlv__style__value__t" kind="union" language="C++" prot="public">
+    <compoundname>lv_style_value_t</compoundname>
+    <includes refid="lv__style_8h" local="no">lv_style.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_style_value_t::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number integer number (opacity, enums, booleans or &quot;normal&quot; numbers) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="168" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlv__style__value__t_1a1ec5ca1a76462368a2e92cebd40de345" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_style_value_t::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constant pointers (font, cone text, etc) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="169" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlv__style__value__t_1aa9831331f2edec01437f22c91a0491e8" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_style_value_t::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Colors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="170" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A common type to handle all the property types in the same way. </para>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="167" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="167" bodyend="171"/>
+    <listofallmembers>
+      <member refid="unionlv__style__value__t_1aa9831331f2edec01437f22c91a0491e8" prot="public" virt="non-virtual"><scope>lv_style_value_t</scope><name>color</name></member>
+      <member refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" prot="public" virt="non-virtual"><scope>lv_style_value_t</scope><name>num</name></member>
+      <member refid="unionlv__style__value__t_1a1ec5ca1a76462368a2e92cebd40de345" prot="public" virt="non-virtual"><scope>lv_style_value_t</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

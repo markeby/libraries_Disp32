@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_c69c2c0aa1b0fdb9ee70eb2d0b6197a8" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf</compoundname>
+    <innerfile refid="lv__tiny__ttf_8h">lv_tiny_ttf.h</innerfile>
+    <innerfile refid="stb__rect__pack_8h">stb_rect_pack.h</innerfile>
+    <innerfile refid="stb__truetype__htcw_8h">stb_truetype_htcw.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/"/>
+  </compounddef>
+</doxygen>

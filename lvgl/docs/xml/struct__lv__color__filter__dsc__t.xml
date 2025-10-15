@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__color__filter__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_color_filter_dsc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__color__filter__dsc__t_1acad72beef9d5a5863ab067d62481b6ee" prot="public" static="no" mutable="no">
+        <type>lv_color_filter_cb_t</type>
+        <definition>lv_color_filter_cb_t _lv_color_filter_dsc_t::filter_cb</definition>
+        <argsstring></argsstring>
+        <name>filter_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_color.h" line="253" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_color.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__color__filter__dsc__t_1a030ca869c7f4ac5b829bb6527a424faa" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_color_filter_dsc_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_color.h" line="254" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_color.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_lv_color_filter_dsc_t</label>
+        <link refid="struct__lv__color__filter__dsc__t"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>filter_cb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_color.h" line="252" column="37" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_color.h" bodystart="252" bodyend="255"/>
+    <listofallmembers>
+      <member refid="struct__lv__color__filter__dsc__t_1acad72beef9d5a5863ab067d62481b6ee" prot="public" virt="non-virtual"><scope>_lv_color_filter_dsc_t</scope><name>filter_cb</name></member>
+      <member refid="struct__lv__color__filter__dsc__t_1a030ca869c7f4ac5b829bb6527a424faa" prot="public" virt="non-virtual"><scope>_lv_color_filter_dsc_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

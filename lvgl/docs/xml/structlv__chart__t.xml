@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__chart__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_chart_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__chart__t_1a2a1d73c81e87504238cf6ac501dc7783" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_chart_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="102" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a1e1c6909d2229a3894b89ddaca822ccc" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref></type>
+        <definition>lv_ll_t lv_chart_t::series_ll</definition>
+        <argsstring></argsstring>
+        <name>series_ll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Linked list for the series (stores <ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref>) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="103" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a6fc35f467bab1b3c83f3801565ae38aa" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref></type>
+        <definition>lv_ll_t lv_chart_t::cursor_ll</definition>
+        <argsstring></argsstring>
+        <name>cursor_ll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Linked list for the cursors (stores <ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref>) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="104" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a8b3c8d549bd924428c9adf8ac5f1c24b" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__chart__tick__dsc__t" kindref="compound">lv_chart_tick_dsc_t</ref></type>
+        <definition>lv_chart_tick_dsc_t lv_chart_t::tick[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="105" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1adccd8d3aa2647e44e561d815c6f38b71" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_t::ymin[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>ymin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="106" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1ab4158ce170652c03a48910a3df02dc2c" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_t::ymax[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>ymax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="107" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a1ce2a028147e289861398d76ecb80808" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_t::xmin[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>xmin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="108" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a255317662559e13401dc1b2d45222c14" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_t::xmax[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>xmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="109" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a3812acbea310bb50ccca8c7401dd53d9" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_chart_t::pressed_point_id</definition>
+        <argsstring></argsstring>
+        <name>pressed_point_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="110" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1af0e5db3cd182b868fb386f7358483af8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_t::hdiv_cnt</definition>
+        <argsstring></argsstring>
+        <name>hdiv_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of horizontal division lines </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="111" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a784a2762e94f3a70a96fd868e30e3548" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_t::vdiv_cnt</definition>
+        <argsstring></argsstring>
+        <name>vdiv_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of vertical division lines </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="112" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a3491fe1e6a097303ab090364e66481b4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_t::point_cnt</definition>
+        <argsstring></argsstring>
+        <name>point_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Point number in a data line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="113" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a525e9f96bf416eec593cb56d4e046528" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_t::zoom_x</definition>
+        <argsstring></argsstring>
+        <name>zoom_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="114" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a974c1a14c70b8f3103de94e72996f6d8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_t::zoom_y</definition>
+        <argsstring></argsstring>
+        <name>zoom_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="115" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1afac8a8ea212d9fa4c44469fdf7e78d85" prot="public" static="no" mutable="no">
+        <type>lv_chart_type_t</type>
+        <definition>lv_chart_type_t lv_chart_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Line or column chart </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="116" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__chart__t_1a9ef45cbde6eb0c553d8ac4540bbc23de" prot="public" static="no" mutable="no">
+        <type>lv_chart_update_mode_t</type>
+        <definition>lv_chart_update_mode_t lv_chart_t::update_mode</definition>
+        <argsstring></argsstring>
+        <name>update_mode</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="117" column="28" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="9">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="13">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lv_chart_t</label>
+        <link refid="structlv__chart__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>tick</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>cursor_ll</edgelabel>
+          <edgelabel>series_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lv_chart_tick_dsc_t</label>
+        <link refid="structlv__chart__tick__dsc__t"/>
+      </node>
+      <node id="5">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="4">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="101" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="101" bodyend="118"/>
+    <listofallmembers>
+      <member refid="structlv__chart__t_1a6fc35f467bab1b3c83f3801565ae38aa" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>cursor_ll</name></member>
+      <member refid="structlv__chart__t_1af0e5db3cd182b868fb386f7358483af8" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>hdiv_cnt</name></member>
+      <member refid="structlv__chart__t_1a2a1d73c81e87504238cf6ac501dc7783" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>obj</name></member>
+      <member refid="structlv__chart__t_1a3491fe1e6a097303ab090364e66481b4" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>point_cnt</name></member>
+      <member refid="structlv__chart__t_1a3812acbea310bb50ccca8c7401dd53d9" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>pressed_point_id</name></member>
+      <member refid="structlv__chart__t_1a1e1c6909d2229a3894b89ddaca822ccc" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>series_ll</name></member>
+      <member refid="structlv__chart__t_1a8b3c8d549bd924428c9adf8ac5f1c24b" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>tick</name></member>
+      <member refid="structlv__chart__t_1afac8a8ea212d9fa4c44469fdf7e78d85" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>type</name></member>
+      <member refid="structlv__chart__t_1a9ef45cbde6eb0c553d8ac4540bbc23de" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>update_mode</name></member>
+      <member refid="structlv__chart__t_1a784a2762e94f3a70a96fd868e30e3548" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>vdiv_cnt</name></member>
+      <member refid="structlv__chart__t_1a255317662559e13401dc1b2d45222c14" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>xmax</name></member>
+      <member refid="structlv__chart__t_1a1ce2a028147e289861398d76ecb80808" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>xmin</name></member>
+      <member refid="structlv__chart__t_1ab4158ce170652c03a48910a3df02dc2c" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>ymax</name></member>
+      <member refid="structlv__chart__t_1adccd8d3aa2647e44e561d815c6f38b71" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>ymin</name></member>
+      <member refid="structlv__chart__t_1a525e9f96bf416eec593cb56d4e046528" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>zoom_x</name></member>
+      <member refid="structlv__chart__t_1a974c1a14c70b8f3103de94e72996f6d8" prot="public" virt="non-virtual"><scope>lv_chart_t</scope><name>zoom_y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

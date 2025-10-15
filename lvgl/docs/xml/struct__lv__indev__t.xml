@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__indev__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_indev_t</compoundname>
+    <includes refid="lv__hal__indev_8h" local="no">lv_hal_indev.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__indev__t_1a5aed39e0d1027712f3894e1ba5e89d7a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref> *</type>
+        <definition>struct _lv_indev_drv_t* _lv_indev_t::driver</definition>
+        <argsstring></argsstring>
+        <name>driver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="175" column="27" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__t_1a532e74e74e6a183ee3e0fde02c9b2beb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__indev__proc__t" kindref="compound">_lv_indev_proc_t</ref></type>
+        <definition>_lv_indev_proc_t _lv_indev_t::proc</definition>
+        <argsstring></argsstring>
+        <name>proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="176" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__t_1afca94f9275c3ca669979477d56fd884d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+        <definition>struct _lv_obj_t* _lv_indev_t::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cursor for LV_INPUT_TYPE_POINTER </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="177" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__t_1abe81eefe10ba7f66ff9ffe3a48db3a31" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__group__t" kindref="compound">_lv_group_t</ref> *</type>
+        <definition>struct _lv_group_t* _lv_indev_t::group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Keypad destination group </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="178" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__t_1aa7c40dc6d671c802427db39a7181237b" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+        <definition>const lv_point_t* _lv_indev_t::btn_points</definition>
+        <argsstring></argsstring>
+        <name>btn_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array points assigned to the button ()screen will be pressed here by the buttons </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="179" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The main input device descriptor with driver, runtime data (&apos;proc&apos;) and some additional information </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="18">
+        <label>_lv_draw_layer_ctx_t</label>
+        <link refid="struct__lv__draw__layer__ctx__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>area_act</edgelabel>
+          <edgelabel>area_full</edgelabel>
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>_lv_disp_drv_t</label>
+        <link refid="struct__lv__disp__drv__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>draw_ctx</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>draw_buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>_lv_draw_ctx_t</label>
+        <link refid="struct__lv__draw__ctx__t"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>layer_init</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>_lv_indev_drv_t</label>
+        <link refid="struct__lv__indev__drv__t"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>read_timer</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>disp</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="20">
+        <label>_lv_theme_t</label>
+        <link refid="struct__lv__theme__t"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>disp</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>apply_cb</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>font_normal</edgelabel>
+          <edgelabel>font_small</edgelabel>
+          <edgelabel>font_large</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>_lv_timer_t</label>
+        <link refid="struct__lv__timer__t"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="15">
+        <label>_lv_disp_t</label>
+        <link refid="struct__lv__disp__t"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>driver</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>top_layer</edgelabel>
+          <edgelabel>act_scr</edgelabel>
+          <edgelabel>sys_layer</edgelabel>
+          <edgelabel>prev_scr</edgelabel>
+          <edgelabel>screens</edgelabel>
+          <edgelabel>scr_to_load</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>refr_timer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inv_areas</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>theme</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>sync_areas</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>_lv_font_t</label>
+        <link refid="struct__lv__font__t"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>fallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>_lv_disp_draw_buf_t</label>
+        <link refid="struct__lv__disp__draw__buf__t"/>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_lv_indev_t</label>
+        <link refid="struct__lv__indev__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cursor</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>driver</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>proc</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>btn_points</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="22">
+        <label>_lv_indev_proc_t</label>
+        <link refid="struct__lv__indev__proc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>act_obj</edgelabel>
+          <edgelabel>scroll_obj</edgelabel>
+          <edgelabel>last_obj</edgelabel>
+          <edgelabel>last_pressed</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>scroll_area</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>vect</edgelabel>
+          <edgelabel>indev_point</edgelabel>
+          <edgelabel>scroll_throw_vect</edgelabel>
+          <edgelabel>scroll_sum</edgelabel>
+          <edgelabel>act_point</edgelabel>
+          <edgelabel>gesture_sum</edgelabel>
+          <edgelabel>last_raw_point</edgelabel>
+          <edgelabel>last_point</edgelabel>
+          <edgelabel>scroll_throw_vect_ori</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="174" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="174" bodyend="181"/>
+    <listofallmembers>
+      <member refid="struct__lv__indev__t_1aa7c40dc6d671c802427db39a7181237b" prot="public" virt="non-virtual"><scope>_lv_indev_t</scope><name>btn_points</name></member>
+      <member refid="struct__lv__indev__t_1afca94f9275c3ca669979477d56fd884d" prot="public" virt="non-virtual"><scope>_lv_indev_t</scope><name>cursor</name></member>
+      <member refid="struct__lv__indev__t_1a5aed39e0d1027712f3894e1ba5e89d7a" prot="public" virt="non-virtual"><scope>_lv_indev_t</scope><name>driver</name></member>
+      <member refid="struct__lv__indev__t_1abe81eefe10ba7f66ff9ffe3a48db3a31" prot="public" virt="non-virtual"><scope>_lv_indev_t</scope><name>group</name></member>
+      <member refid="struct__lv__indev__t_1a532e74e74e6a183ee3e0fde02c9b2beb" prot="public" virt="non-virtual"><scope>_lv_indev_t</scope><name>proc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

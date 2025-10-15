@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__img__decoder__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_img_decoder_dsc_t</compoundname>
+    <includes refid="lv__img__decoder_8h" local="no">lv_img_decoder.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1a9fcb7bc1374b7c411c8d62c281ac116a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__img__decoder__t" kindref="compound">lv_img_decoder_t</ref> *</type>
+        <definition>lv_img_decoder_t* _lv_img_decoder_dsc_t::decoder</definition>
+        <argsstring></argsstring>
+        <name>decoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The decoder which was able to open the image source </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="99" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1abc78d4094f87222bdca2a7acbb2222e0" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* _lv_img_decoder_dsc_t::src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The image source. A file path like &quot;S:my_img.png&quot; or pointer to an <computeroutput><ref refid="structlv__img__dsc__t" kindref="compound">lv_img_dsc_t</ref></computeroutput> variable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="102" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1aaff7ba2bbb1d01908d5f695ec16815fe" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t _lv_img_decoder_dsc_t::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color to draw the image. USed when the image has alpha channel only </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="105" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1ad3bea2b9ea283e5c199ebb9d7e8e689d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_img_decoder_dsc_t::frame_id</definition>
+        <argsstring></argsstring>
+        <name>frame_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame of the image, using with animated images </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="108" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1a055289280caf9fc9fa2fee2736c90b28" prot="public" static="no" mutable="no">
+        <type>lv_img_src_t</type>
+        <definition>lv_img_src_t _lv_img_decoder_dsc_t::src_type</definition>
+        <argsstring></argsstring>
+        <name>src_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the source: file or variable. Can be set in <computeroutput>open</computeroutput> function if required </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="111" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1aea8323c05ea31ca3bfa88eb3b876d40d" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__img__header__t" kindref="compound">lv_img_header_t</ref></type>
+        <definition>lv_img_header_t _lv_img_decoder_dsc_t::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Info about the opened image: color format, size, etc. MUST be set in <computeroutput>open</computeroutput> function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="114" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1a332cfed3d26d92ac0c9abd44ebc750b2" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* _lv_img_decoder_dsc_t::img_data</definition>
+        <argsstring></argsstring>
+        <name>img_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a buffer where the image&apos;s data (pixels) are stored in a decoded, plain format. MUST be set in <computeroutput>open</computeroutput> function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="118" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1afd95f692ebff354b62bc01f36fda1ae8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_img_decoder_dsc_t::time_to_open</definition>
+        <argsstring></argsstring>
+        <name>time_to_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How much time did it take to open the image. [ms] If not set <computeroutput>lv_img_cache</computeroutput> will measure and set the time to open </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="122" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1af00965ee4c469ae804b3a9bdc4b616a0" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* _lv_img_decoder_dsc_t::error_msg</definition>
+        <argsstring></argsstring>
+        <name>error_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A text to display instead of the image when the image can&apos;t be opened. Can be set in <computeroutput>open</computeroutput> function or set NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="126" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__dsc__t_1af9d13759ecd7f4c6ad65aa73d553c93c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_img_decoder_dsc_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store any custom data here is required </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="129" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe an image decoding session. Stores data about the decoding </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lv_img_header_t</label>
+        <link refid="structlv__img__header__t"/>
+      </node>
+      <node id="1">
+        <label>_lv_img_decoder_dsc_t</label>
+        <link refid="struct__lv__img__decoder__dsc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>decoder</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_img_decoder_t</label>
+        <link refid="struct__lv__img__decoder__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>read_line_cb</edgelabel>
+          <edgelabel>open_cb</edgelabel>
+          <edgelabel>close_cb</edgelabel>
+          <edgelabel>info_cb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="97" column="36" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="97" bodyend="130"/>
+    <listofallmembers>
+      <member refid="struct__lv__img__decoder__dsc__t_1aaff7ba2bbb1d01908d5f695ec16815fe" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>color</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1a9fcb7bc1374b7c411c8d62c281ac116a" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>decoder</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1af00965ee4c469ae804b3a9bdc4b616a0" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>error_msg</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1ad3bea2b9ea283e5c199ebb9d7e8e689d" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>frame_id</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1aea8323c05ea31ca3bfa88eb3b876d40d" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>header</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1a332cfed3d26d92ac0c9abd44ebc750b2" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>img_data</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1abc78d4094f87222bdca2a7acbb2222e0" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>src</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1a055289280caf9fc9fa2fee2736c90b28" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>src_type</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1afd95f692ebff354b62bc01f36fda1ae8" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>time_to_open</name></member>
+      <member refid="struct__lv__img__decoder__dsc__t_1af9d13759ecd7f4c6ad65aa73d553c93c" prot="public" virt="non-virtual"><scope>_lv_img_decoder_dsc_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

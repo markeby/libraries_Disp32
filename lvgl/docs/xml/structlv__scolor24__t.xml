@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__scolor24__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_scolor24_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__scolor24__t_1a2f1ed8f6f1fa06c7a8bf811cfddd4e52" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t lv_scolor24_t::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="35" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__scolor24__t_1a6b2755464305f152b62bac9add1b95ed" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t lv_scolor24_t::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="35" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__scolor24__t_1a5aa2c1c18f49d836d073b674e9ed0bbd" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t lv_scolor24_t::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="35" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" line="32" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_dither.h" bodystart="32" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structlv__scolor24__t_1a5aa2c1c18f49d836d073b674e9ed0bbd" prot="public" virt="non-virtual"><scope>lv_scolor24_t</scope><name>b</name></member>
+      <member refid="structlv__scolor24__t_1a6b2755464305f152b62bac9add1b95ed" prot="public" virt="non-virtual"><scope>lv_scolor24_t</scope><name>g</name></member>
+      <member refid="structlv__scolor24__t_1a2f1ed8f6f1fa06c7a8bf811cfddd4e52" prot="public" virt="non-virtual"><scope>lv_scolor24_t</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

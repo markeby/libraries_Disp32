@@ -1,0 +1,2188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__style_8h" kind="file" language="C++">
+    <compoundname>lv_style.h</compoundname>
+    <innerclass refid="structlv__gradient__stop__t" prot="public">lv_gradient_stop_t</innerclass>
+    <innerclass refid="structlv__grad__dsc__t" prot="public">lv_grad_dsc_t</innerclass>
+    <innerclass refid="unionlv__style__value__t" prot="public">lv_style_value_t</innerclass>
+    <innerclass refid="structlv__style__transition__dsc__t" prot="public">lv_style_transition_dsc_t</innerclass>
+    <innerclass refid="structlv__style__const__prop__t" prot="public">lv_style_const_prop_t</innerclass>
+    <innerclass refid="structlv__style__t" prot="public">lv_style_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@62</name>
+        <enumvalue id="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3aad57a0fd5e04f5691d8f417ee5434b7e" prot="public">
+          <name>LV_BLEND_MODE_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Simply mix according to the opacity value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3aa35a45cbb14d375c4456ca9fa0bb738c" prot="public">
+          <name>LV_BLEND_MODE_ADDITIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Add the respective color channels </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a632a80f5de7303b6f69c97dde652ac75" prot="public">
+          <name>LV_BLEND_MODE_SUBTRACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Subtract the foreground from the background </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a4ebd0867a05fc12d714a937bbcfaa91e" prot="public">
+          <name>LV_BLEND_MODE_MULTIPLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Multiply the foreground and background </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a29d36360b69dffbc1d9154f953381afd" prot="public">
+          <name>LV_BLEND_MODE_REPLACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Replace background with foreground in the area </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible options how to blend opaque drawings </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="86" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="86" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__style_8h_1a531c35e38ede3ea4e5ba5afb24b29493" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@63</name>
+        <enumvalue id="lv__style_8h_1a531c35e38ede3ea4e5ba5afb24b29493a7c180b0226472d683d044c37f36cc648" prot="public">
+          <name>LV_TEXT_DECOR_NONE</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a531c35e38ede3ea4e5ba5afb24b29493a8b9bbda381a79b36884d0028c9e29361" prot="public">
+          <name>LV_TEXT_DECOR_UNDERLINE</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a531c35e38ede3ea4e5ba5afb24b29493a1d9716ac9403b2f7e3c4e757d11e3c46" prot="public">
+          <name>LV_TEXT_DECOR_STRIKETHROUGH</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Some options to apply decorations on texts. &apos;OR&apos;ed values can be used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="100" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@64</name>
+        <enumvalue id="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67a855fbe2d6a6ca1735e63379de717ab41" prot="public">
+          <name>LV_BORDER_SIDE_NONE</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67a3022f7b36b00f3903f1e89ea4dcb6ad0" prot="public">
+          <name>LV_BORDER_SIDE_BOTTOM</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67a1882c079eff65077bbcc2259a5efa139" prot="public">
+          <name>LV_BORDER_SIDE_TOP</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67a7e27afb27fd43eb2766f99c5eaf4dab1" prot="public">
+          <name>LV_BORDER_SIDE_LEFT</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67a37880a94791d409b256829c13ca4ce4b" prot="public">
+          <name>LV_BORDER_SIDE_RIGHT</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67a9cae2792fb8b898c531ed9e83f2ff79f" prot="public">
+          <name>LV_BORDER_SIDE_FULL</name>
+          <initializer>= 0x0F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67ae90b8d5d4dd0b95b34b42faa13e813a1" prot="public">
+          <name>LV_BORDER_SIDE_INTERNAL</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FOR matrix-like objects (e.g. Button matrix) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Selects on which sides border should be drawn &apos;OR&apos;ed values can be used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="112" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="112" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__style_8h_1a8628933cde20921c453a6d2607bdad62" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@65</name>
+        <enumvalue id="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a60a3da887d76575265882bdf7be3e3ae" prot="public">
+          <name>LV_GRAD_DIR_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No gradient (the <computeroutput>grad_color</computeroutput> property is ignored) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a213ea9c1af983a3b7d4dbe131e30ec67" prot="public">
+          <name>LV_GRAD_DIR_VER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vertical (top to bottom) gradient </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a79ffa390d3d116ed50fd14551298ddc2" prot="public">
+          <name>LV_GRAD_DIR_HOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Horizontal (left to right) gradient </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The direction of the gradient. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="126" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@66</name>
+        <enumvalue id="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260a02582eae16823f771c18e07455d3464c" prot="public">
+          <name>LV_DITHER_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No dithering, colors are just quantized to the output resolution </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260a9fa39743532b7075d9ccbef81e06458e" prot="public">
+          <name>LV_DITHER_ORDERED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ordered dithering. Faster to compute and use less memory but lower quality </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260ac914ec43ff59c9e73de5d7ef51cd0857" prot="public">
+          <name>LV_DITHER_ERR_DIFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error diffusion mode. Slower to compute and use more memory but give highest dither quality </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The dithering algorithm for the gradient Depends on LV_DITHER_GRADIENT </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="138" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_style_prop_t</name>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a7d81b251b187899d0ece7783b95d0176" prot="public">
+          <name>LV_STYLE_PROP_INV</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a4298794f02ddc888c235013ee512dadd" prot="public">
+          <name>LV_STYLE_WIDTH</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a6bbcfba7542ac3bf05c95181b805df0f" prot="public">
+          <name>LV_STYLE_MIN_WIDTH</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5afa697562e5fe5fe6cf3cb440b7ff1e7b" prot="public">
+          <name>LV_STYLE_MAX_WIDTH</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a183006041efa030d1f2a0513c9f69d63" prot="public">
+          <name>LV_STYLE_HEIGHT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ab8d5c9ffcbfc73ddad0cd2d72f2353e5" prot="public">
+          <name>LV_STYLE_MIN_HEIGHT</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a8dc059182c7d214476bfd6c6c00b5fe1" prot="public">
+          <name>LV_STYLE_MAX_HEIGHT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a9e77b92ca543806863b7a1c56e6174e8" prot="public">
+          <name>LV_STYLE_X</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a8b98cbd657e6631c2d8402ea636af401" prot="public">
+          <name>LV_STYLE_Y</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a95e6250f0418713e61379e57695ab87b" prot="public">
+          <name>LV_STYLE_ALIGN</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a703e553e655494b3e3aced1cbe415b79" prot="public">
+          <name>LV_STYLE_LAYOUT</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ac1c2396b3e2d419d051faf39526e0561" prot="public">
+          <name>LV_STYLE_RADIUS</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a0fe4cc8e10d82471f041ccb9192ce09f" prot="public">
+          <name>LV_STYLE_PAD_TOP</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ad190bbf3997cb12d0726049fe165fe71" prot="public">
+          <name>LV_STYLE_PAD_BOTTOM</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ad0df6ac274764ef270bbbd4e040394aa" prot="public">
+          <name>LV_STYLE_PAD_LEFT</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5aa76bbe74749e9f4dabd69bcf0c734ce9" prot="public">
+          <name>LV_STYLE_PAD_RIGHT</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a8845642416fe2e20fc360674b7ede916" prot="public">
+          <name>LV_STYLE_PAD_ROW</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a4113e3338f8a54630fda7ee75974b81d" prot="public">
+          <name>LV_STYLE_PAD_COLUMN</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a78919eef3d8073b960019b625adb76b3" prot="public">
+          <name>LV_STYLE_BASE_DIR</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a77e1e40c320f1879c531ac525e03ced7" prot="public">
+          <name>LV_STYLE_CLIP_CORNER</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a00e4bf2ad80199e8d4c664142004f4a7" prot="public">
+          <name>LV_STYLE_BG_COLOR</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a4c2d7170ecfbc7630a7f0e421218fea2" prot="public">
+          <name>LV_STYLE_BG_OPA</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a8bca78022c1b4d9b8c317a0bb4e0cac5" prot="public">
+          <name>LV_STYLE_BG_GRAD_COLOR</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5abaa3845ade9d087992ad9c3a2dc5c358" prot="public">
+          <name>LV_STYLE_BG_GRAD_DIR</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a058bc506bc1d94f401cd7782cf929ef3" prot="public">
+          <name>LV_STYLE_BG_MAIN_STOP</name>
+          <initializer>= 36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5aa2c55537a62ef103a71b9488f59b1c07" prot="public">
+          <name>LV_STYLE_BG_GRAD_STOP</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a7736767127e4bc0c9835b93c686e409a" prot="public">
+          <name>LV_STYLE_BG_GRAD</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5abb6856b762b4ddc43c1b2ed4cb661123" prot="public">
+          <name>LV_STYLE_BG_DITHER_MODE</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a3e4c6c674e1b87fdf7f3dc7b70c22340" prot="public">
+          <name>LV_STYLE_BG_IMG_SRC</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ac0005865fd78c28429b04fbc649455de" prot="public">
+          <name>LV_STYLE_BG_IMG_OPA</name>
+          <initializer>= 41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a305ba0a8ea28606f95e4be420a73e892" prot="public">
+          <name>LV_STYLE_BG_IMG_RECOLOR</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5aefc61697abc2c81ec303d03ed420be74" prot="public">
+          <name>LV_STYLE_BG_IMG_RECOLOR_OPA</name>
+          <initializer>= 43</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ac0e1801dd347404622227108c87dc1b3" prot="public">
+          <name>LV_STYLE_BG_IMG_TILED</name>
+          <initializer>= 44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a50b5a0ea0d705a85d48bc63de6ebead1" prot="public">
+          <name>LV_STYLE_BORDER_COLOR</name>
+          <initializer>= 48</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ace7f1e66aeacd83e264622fc35d9dd17" prot="public">
+          <name>LV_STYLE_BORDER_OPA</name>
+          <initializer>= 49</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a2896ef95871ce62130dba5a32f4b61cc" prot="public">
+          <name>LV_STYLE_BORDER_WIDTH</name>
+          <initializer>= 50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a9d109fabf02b0680df972bd043909cdc" prot="public">
+          <name>LV_STYLE_BORDER_SIDE</name>
+          <initializer>= 51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a7e05a7bf6905db200b5e95b433b1e035" prot="public">
+          <name>LV_STYLE_BORDER_POST</name>
+          <initializer>= 52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a650e1c12b41abb707ff8d95a55af7f5b" prot="public">
+          <name>LV_STYLE_OUTLINE_WIDTH</name>
+          <initializer>= 53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a5eaee7f66bdb8a0d9396d200d912bf54" prot="public">
+          <name>LV_STYLE_OUTLINE_COLOR</name>
+          <initializer>= 54</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5af70d2b8922ef278f56a8d234ec4958b2" prot="public">
+          <name>LV_STYLE_OUTLINE_OPA</name>
+          <initializer>= 55</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ac9cd34443d6c81578a1e6e01e546e025" prot="public">
+          <name>LV_STYLE_OUTLINE_PAD</name>
+          <initializer>= 56</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a14a7832787188fd66f7bf0e258d7f14b" prot="public">
+          <name>LV_STYLE_SHADOW_WIDTH</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ae56347eef3b03da4d85c2c8895a7cb9d" prot="public">
+          <name>LV_STYLE_SHADOW_OFS_X</name>
+          <initializer>= 65</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5aff87561ebe058451082efea93f1bfbe4" prot="public">
+          <name>LV_STYLE_SHADOW_OFS_Y</name>
+          <initializer>= 66</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ad0c045b411826cda7be9805e36a79d2c" prot="public">
+          <name>LV_STYLE_SHADOW_SPREAD</name>
+          <initializer>= 67</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a2630810170c997c645fb888aedad37c4" prot="public">
+          <name>LV_STYLE_SHADOW_COLOR</name>
+          <initializer>= 68</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a23e09366fb33c049e08fa740f18fded7" prot="public">
+          <name>LV_STYLE_SHADOW_OPA</name>
+          <initializer>= 69</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a7b8c7fde51c170dbf69f38062920b6fa" prot="public">
+          <name>LV_STYLE_IMG_OPA</name>
+          <initializer>= 70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a5f5f4003b24586b12fd84d1818bf3a9c" prot="public">
+          <name>LV_STYLE_IMG_RECOLOR</name>
+          <initializer>= 71</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5aaf3dc88d6dc4d333167fbfd21b9d4ada" prot="public">
+          <name>LV_STYLE_IMG_RECOLOR_OPA</name>
+          <initializer>= 72</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a7d14298dd68a5e003d6a92725c47f0c2" prot="public">
+          <name>LV_STYLE_LINE_WIDTH</name>
+          <initializer>= 73</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a2d8e246b389b10007c9a49f6304cb715" prot="public">
+          <name>LV_STYLE_LINE_DASH_WIDTH</name>
+          <initializer>= 74</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a9202fcd1a89ef9fc52f7e139491e73d0" prot="public">
+          <name>LV_STYLE_LINE_DASH_GAP</name>
+          <initializer>= 75</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ac29934ddf7119bd4a71cf97ed5e65129" prot="public">
+          <name>LV_STYLE_LINE_ROUNDED</name>
+          <initializer>= 76</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a77fd66346bf0071c40bc33d6d73e5900" prot="public">
+          <name>LV_STYLE_LINE_COLOR</name>
+          <initializer>= 77</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a541b3a01d2febc558ab3d3ad1d3880ad" prot="public">
+          <name>LV_STYLE_LINE_OPA</name>
+          <initializer>= 78</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a0bcb421ac733d452919bd6c0ad937f33" prot="public">
+          <name>LV_STYLE_ARC_WIDTH</name>
+          <initializer>= 80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5aec30d4fa627830cf4cd1daf0903080ff" prot="public">
+          <name>LV_STYLE_ARC_ROUNDED</name>
+          <initializer>= 81</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5adae2e85d2e707fa368c0f411a4d5bc73" prot="public">
+          <name>LV_STYLE_ARC_COLOR</name>
+          <initializer>= 82</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a59d8df8f87fd7141c03d34bff80ded0e" prot="public">
+          <name>LV_STYLE_ARC_OPA</name>
+          <initializer>= 83</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a0a35a155bcb433a4d69a06cacfcb2201" prot="public">
+          <name>LV_STYLE_ARC_IMG_SRC</name>
+          <initializer>= 84</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5afef020eaf46b86637c128b886c2ebb7e" prot="public">
+          <name>LV_STYLE_TEXT_COLOR</name>
+          <initializer>= 85</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a542321c8e9dcd11f09981dfa897b67e2" prot="public">
+          <name>LV_STYLE_TEXT_OPA</name>
+          <initializer>= 86</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5acf3784b34547b4f097afbc150c92038e" prot="public">
+          <name>LV_STYLE_TEXT_FONT</name>
+          <initializer>= 87</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a5eb48e12a28cea15b1fca641503d9257" prot="public">
+          <name>LV_STYLE_TEXT_LETTER_SPACE</name>
+          <initializer>= 88</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a8df5b2ddb21e48851984ec1ae4f532c2" prot="public">
+          <name>LV_STYLE_TEXT_LINE_SPACE</name>
+          <initializer>= 89</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a6bf173539e68d078f19d30494d69d87e" prot="public">
+          <name>LV_STYLE_TEXT_DECOR</name>
+          <initializer>= 90</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a38f6e40c61be3b8650d3c23e49cfbffe" prot="public">
+          <name>LV_STYLE_TEXT_ALIGN</name>
+          <initializer>= 91</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a4f7aa641a54c9785b1b718ab9cde1c46" prot="public">
+          <name>LV_STYLE_OPA</name>
+          <initializer>= 96</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5aebdaf8f06fa3993b05a854ef31b98aab" prot="public">
+          <name>LV_STYLE_OPA_LAYERED</name>
+          <initializer>= 97</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a09a665d3377b1fbfac4768a3fc82e58b" prot="public">
+          <name>LV_STYLE_COLOR_FILTER_DSC</name>
+          <initializer>= 98</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a015040677123f0b48d8d75efabb9d7f7" prot="public">
+          <name>LV_STYLE_COLOR_FILTER_OPA</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a12d62ae9e5712c28b124edba08f37dfc" prot="public">
+          <name>LV_STYLE_ANIM</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ab5f285f612cd680545776fc525591d8e" prot="public">
+          <name>LV_STYLE_ANIM_TIME</name>
+          <initializer>= 101</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a574a1d63330ddd9322a3db5f217c770d" prot="public">
+          <name>LV_STYLE_ANIM_SPEED</name>
+          <initializer>= 102</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a589b440938488f39cadd783b0d4203c7" prot="public">
+          <name>LV_STYLE_TRANSITION</name>
+          <initializer>= 103</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a7586dffafca0b3ca912a04aa897dcd53" prot="public">
+          <name>LV_STYLE_BLEND_MODE</name>
+          <initializer>= 104</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a309c354e04cbcd53ade911448040c566" prot="public">
+          <name>LV_STYLE_TRANSFORM_WIDTH</name>
+          <initializer>= 105</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a64b7c3f18ce60350f476c149ea6263fb" prot="public">
+          <name>LV_STYLE_TRANSFORM_HEIGHT</name>
+          <initializer>= 106</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a825c46b0e982cf4d2a74ff6fb219d510" prot="public">
+          <name>LV_STYLE_TRANSLATE_X</name>
+          <initializer>= 107</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5aac987efc8c11127afce2765e6d430a01" prot="public">
+          <name>LV_STYLE_TRANSLATE_Y</name>
+          <initializer>= 108</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ad04b87050a31f462c63bbca33d40547c" prot="public">
+          <name>LV_STYLE_TRANSFORM_ZOOM</name>
+          <initializer>= 109</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a813c5c30bcf1eb4767d85e7cd55f4887" prot="public">
+          <name>LV_STYLE_TRANSFORM_ANGLE</name>
+          <initializer>= 110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a4fb03d00382b652408d840d21190e2b1" prot="public">
+          <name>LV_STYLE_TRANSFORM_PIVOT_X</name>
+          <initializer>= 111</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a68208ae5e42b66a8c12c88de9de46986" prot="public">
+          <name>LV_STYLE_TRANSFORM_PIVOT_Y</name>
+          <initializer>= 112</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a894747b6d6aefc9a50c5df235bb3bd30" prot="public">
+          <name>_LV_STYLE_LAST_BUILT_IN_PROP</name>
+          <initializer>= 112</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a7a98efcdd4063996d639aed14a831ce3" prot="public">
+          <name>_LV_STYLE_NUM_BUILT_IN_PROPS</name>
+          <initializer>= _LV_STYLE_LAST_BUILT_IN_PROP + 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5ac23c8c352f7ce756f7ea8b76d4cfac1e" prot="public">
+          <name>LV_STYLE_PROP_ANY</name>
+          <initializer>= 0xFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5a1b5f16093270b07457693725fcaa6de3" prot="public">
+          <name>_LV_STYLE_PROP_CONST</name>
+          <initializer>= 0xFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of all built in style properties</para>
+<para>Props are split into groups of 16. When adding a new prop to a group, ensure it does not overflow into the next one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="178" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="178" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__style_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@67</name>
+        <enumvalue id="lv__style_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0a19bcce9679cd446caf2a3e72b456c663" prot="public">
+          <name>LV_STYLE_RES_NOT_FOUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0af79048f8550ba38fc26334dde122b74b" prot="public">
+          <name>LV_STYLE_RES_FOUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__style_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0aba0302103542ffdca277eea8c4890892" prot="public">
+          <name>LV_STYLE_RES_INHERIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="287" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="287" bodyend="291"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__style_8h_1ad52e4c2072a180294b961e21c82bc269" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_blend_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_blend_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="94" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__style_8h_1aadfb1a861a2761a304ab5d133e7dcde6" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_text_decor_t</definition>
+        <argsstring></argsstring>
+        <name>lv_text_decor_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="106" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__style_8h_1af66f9a2077b7c085f8d7f0052bb6b412" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_border_side_t</definition>
+        <argsstring></argsstring>
+        <name>lv_border_side_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="121" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__style_8h_1ae106149b1291811b065fbfd20dfdcfa8" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_grad_dir_t</definition>
+        <argsstring></argsstring>
+        <name>lv_grad_dir_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="132" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__style_8h_1a9df220f84b80db98e4b1c1fd4c0ca412" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_dither_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_dither_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="144" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__style_8h_1ab188121bb408f8992690324657550eb3" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_style_res_t</definition>
+        <argsstring></argsstring>
+        <name>lv_style_res_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="293" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__style_8h_1a45fcdfa00d0aca4da4f8b252f1ec2ece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LV_EXPORT_CONST_INT</definition>
+        <argsstring>(LV_IMG_ZOOM_NONE)</argsstring>
+        <name>LV_EXPORT_CONST_INT</name>
+        <param>
+          <type>LV_IMG_ZOOM_NONE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="50" column="1" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="50" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a327db2c3050bd2d1a1693aa6981205dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_init</definition>
+        <argsstring>(lv_style_t *style)</argsstring>
+        <name>lv_style_init</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a style <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a style to initialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Do not call <computeroutput>lv_style_init</computeroutput> on styles that already have some properties because this function won&apos;t free the used memory, just sets a default state for the style. In other words be sure to initialize styles only once! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="349" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="349" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1afd91dc8011c22491bae7010959267741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_reset</definition>
+        <argsstring>(lv_style_t *style)</argsstring>
+        <name>lv_style_reset</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear all properties from a style and free all allocated memories. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a style </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="355" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="355" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1ace023b040b9b555b1dcf276a08603fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t lv_style_register_prop</definition>
+        <argsstring>(uint8_t flag)</argsstring>
+        <name>lv_style_register_prop</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="370" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="370" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1aa04566bb5235a758912e3cb46a21d2e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t lv_style_get_num_custom_props</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_style_get_num_custom_props</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of custom properties that have been registered thus far. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="375" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="375" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a7d2d6138592056144847db78feba2320" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_style_remove_prop</definition>
+        <argsstring>(lv_style_t *style, lv_style_prop_t prop)</argsstring>
+        <name>lv_style_remove_prop</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a property from a style <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a style </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a style property ORed with a state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: the property was found and removed; false: the property wasn&apos;t found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="383" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="383" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a29e7e4bbafc2bcc964bbff48942d894c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_prop</definition>
+        <argsstring>(lv_style_t *style, lv_style_prop_t prop, lv_style_value_t value)</argsstring>
+        <name>lv_style_set_prop</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value of property in a style. This function shouldn&apos;t be used directly by the user. Instead use <computeroutput>lv_style_set_&lt;prop_name&gt;()</computeroutput>. E.g. <computeroutput>lv_style_set_bg_color()</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to style </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of a property (e.g. <computeroutput>LV_STYLE_BG_COLOR</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></computeroutput> variable in which a field is set according to the type of <computeroutput>prop</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="393" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="393" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a0e8a0d11e2d01d58ac1262fabb01c46d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_prop_meta</definition>
+        <argsstring>(lv_style_t *style, lv_style_prop_t prop, uint16_t meta)</argsstring>
+        <name>lv_style_set_prop_meta</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>meta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a special meta state for a property in a style. This function shouldn&apos;t be used directly by the user. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to style </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of a property (e.g. <computeroutput>LV_STYLE_BG_COLOR</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the meta value to attach to the property in the style </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="402" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="402" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a3d1f0f0816bf24c58ea748ee38fb4a2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_style_res_t</type>
+        <definition>lv_style_res_t lv_style_get_prop</definition>
+        <argsstring>(const lv_style_t *style, lv_style_prop_t prop, lv_style_value_t *value)</argsstring>
+        <name>lv_style_get_prop</name>
+        <param>
+          <type>const <ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value of a property <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a style </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of a property </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <computeroutput><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></computeroutput> variable to store the value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_RES_INV: the property wasn&apos;t found in the style (<computeroutput>value</computeroutput> is unchanged) LV_RES_OK: the property was fond, and <computeroutput>value</computeroutput> is set accordingly </para>
+</simplesect>
+<simplesect kind="note"><para>For performance reasons there are no sanity check on <computeroutput>style</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="413" column="16" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="413" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a410dd81df9cd14067e90f2db56363289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_transition_dsc_init</definition>
+        <argsstring>(lv_style_transition_dsc_t *tr, const lv_style_prop_t props[], lv_anim_path_cb_t path_cb, uint32_t time, uint32_t delay, void *user_data)</argsstring>
+        <name>lv_style_transition_dsc_init</name>
+        <param>
+          <type><ref refid="structlv__style__transition__dsc__t" kindref="compound">lv_style_transition_dsc_t</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>props</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a32c487fbcd8daa37b095ddc4a34630ac" kindref="member">lv_anim_path_cb_t</ref></type>
+          <declname>path_cb</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="428" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="428" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></type>
+        <definition>lv_style_value_t lv_style_prop_get_default</definition>
+        <argsstring>(lv_style_prop_t prop)</argsstring>
+        <name>lv_style_prop_get_default</name>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default value of a property <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of a property </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the default value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="436" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="436" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a4ab9bf8b5da9a5a6cfa991554ee74d7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_style_res_t</type>
+        <definition>static lv_style_res_t lv_style_get_prop_inlined</definition>
+        <argsstring>(const lv_style_t *style, lv_style_prop_t prop, lv_style_value_t *value)</argsstring>
+        <name>lv_style_get_prop_inlined</name>
+        <param>
+          <type>const <ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value of a property <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a style </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of a property </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <computeroutput><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></computeroutput> variable to store the value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LV_RES_INV: the property wasn&apos;t found in the style (<computeroutput>value</computeroutput> is unchanged) LV_RES_OK: the property was fond, and <computeroutput>value</computeroutput> is set accordingly </para>
+</simplesect>
+<simplesect kind="note"><para>For performance reasons there are no sanity check on <computeroutput>style</computeroutput> </para>
+</simplesect>
+<simplesect kind="note"><para>This function is the same as <ref refid="lv__style_8h_1a3d1f0f0816bf24c58ea748ee38fb4a2e" kindref="member">lv_style_get_prop</ref> but inlined. Use it only on performance critical places </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="448" column="30" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="448" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a3343d3e8d42132d6e280b80f0995eb64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_style_is_empty</definition>
+        <argsstring>(const lv_style_t *style)</argsstring>
+        <name>lv_style_is_empty</name>
+        <param>
+          <type>const <ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a style is empty (has no properties) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a style </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the style is empty </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="503" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="503" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a2843a91a10d17b909ac91509449a279c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_style_get_prop_group</definition>
+        <argsstring>(lv_style_prop_t prop)</argsstring>
+        <name>_lv_style_get_prop_group</name>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell the group of a property. If the a property from a group is set in a style the (1 &lt;&lt; group) bit of style-&gt;has_group is set. It allows early skipping the style if the property is not exists in the style at all. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a style property </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the group [0..7] 7 means all the custom properties with index &gt; 112 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="511" column="9" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="511" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a2ac9ea9edea707f93ffeea47508f5adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_style_prop_lookup_flags</definition>
+        <argsstring>(lv_style_prop_t prop)</argsstring>
+        <name>_lv_style_prop_lookup_flags</name>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the flags of a built-in or custom property.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a style property </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the flags of the property </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="519" column="9" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" declline="519" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a1a19f093c8ff1d9c0ee3363d45d6dfae" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_style_set_size</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_size</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="523" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="523" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1ac537b3da5cb5632eebedfefc48b1b534" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_style_set_pad_all</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_pad_all</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="529" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="529" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a7fae67bcb304ed4e13c21365f05488e7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_style_set_pad_hor</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_pad_hor</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="537" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="537" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a1309ff73996258602f56f4af1b68d832" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_style_set_pad_ver</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_pad_ver</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="543" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="543" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a22feaf52c9d886aeed38ecdbd11cbce9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_style_set_pad_gap</definition>
+        <argsstring>(lv_style_t *style, lv_coord_t value)</argsstring>
+        <name>lv_style_set_pad_gap</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="549" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="549" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__style_8h_1a01731917b647e24b02eb88d362d8a521" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool lv_style_prop_has_flag</definition>
+        <argsstring>(lv_style_prop_t prop, uint8_t flag)</argsstring>
+        <name>lv_style_prop_has_flag</name>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Check if the style property has a specified behavioral flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Do not pass multiple flags to this function as backwards-compatibility is not guaranteed for that.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the flag is set for this property </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="565" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="565" bodyend="568"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_STYLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../font/lv_font.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__color_8h" kindref="compound">lv_color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__area_8h" kindref="compound">lv_area.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__anim_8h" kindref="compound">lv_anim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__txt_8h" kindref="compound">lv_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__types_8h" kindref="compound">lv_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__assert_8h" kindref="compound">lv_assert.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__bidi_8h" kindref="compound">lv_bidi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_SENTINEL_VALUE<sp/><sp/><sp/><sp/><sp/>0xAABBCCDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_FLAG_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_INHERIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/><sp/></highlight><highlight class="comment">/*Inherited*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_EXT_DRAW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/><sp/></highlight><highlight class="comment">/*Requires<sp/>ext.<sp/>draw<sp/>size<sp/>update<sp/>when<sp/>changed*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_LAYOUT_REFR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/><sp/></highlight><highlight class="comment">/*Requires<sp/>layout<sp/>update<sp/>when<sp/>changed*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_PARENT_LAYOUT_REFR<sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)<sp/><sp/></highlight><highlight class="comment">/*Requires<sp/>layout<sp/>update<sp/>on<sp/>parent<sp/>when<sp/>changed*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_LAYER_REFR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>4)<sp/><sp/></highlight><highlight class="comment">/*Affects<sp/>layer<sp/>handling*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Indicating<sp/>all<sp/>flags*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor">#define<sp/>LV_IMG_ZOOM_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Value<sp/>for<sp/>not<sp/>zooming<sp/>the<sp/>image*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">LV_EXPORT_CONST_INT(LV_IMG_ZOOM_NONE);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*INDENT-OFF*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_ASSERT_STYLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_CONST_INIT(var_name,<sp/>prop_array)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>lv_style_t<sp/>var_name<sp/>=<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.sentinel<sp/>=<sp/>LV_STYLE_SENTINEL_VALUE,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.v_p<sp/>=<sp/>{<sp/>.const_props<sp/>=<sp/>prop_array<sp/>},<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.has_group<sp/>=<sp/>0xFF,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.prop1<sp/>=<sp/>LV_STYLE_PROP_ANY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.prop_cnt<sp/>=<sp/>(sizeof(prop_array)<sp/>/<sp/>sizeof((prop_array)[0])),<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_CONST_INIT(var_name,<sp/>prop_array)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>lv_style_t<sp/>var_name<sp/>=<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.v_p<sp/>=<sp/>{<sp/>.const_props<sp/>=<sp/>prop_array<sp/>},<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.has_group<sp/>=<sp/>0xFF,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.prop1<sp/>=<sp/>LV_STYLE_PROP_ANY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.prop_cnt<sp/>=<sp/>(sizeof(prop_array)<sp/>/<sp/>sizeof((prop_array)[0])),<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*INDENT-ON*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_META_INHERIT<sp/>0x8000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_META_INITIAL<sp/>0x4000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_META_MASK<sp/>(LV_STYLE_PROP_META_INHERIT<sp/>|<sp/>LV_STYLE_PROP_META_INITIAL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_ID_MASK(prop)<sp/>((lv_style_prop_t)((prop)<sp/>&amp;<sp/>~LV_STYLE_PROP_META_MASK))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3aad57a0fd5e04f5691d8f417ee5434b7e" kindref="member">LV_BLEND_MODE_NORMAL</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3aa35a45cbb14d375c4456ca9fa0bb738c" kindref="member">LV_BLEND_MODE_ADDITIVE</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3aad57a0fd5e04f5691d8f417ee5434b7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a632a80f5de7303b6f69c97dde652ac75" kindref="member">LV_BLEND_MODE_SUBTRACTIVE</ref>,</highlight></codeline>
+<codeline lineno="90" refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3aa35a45cbb14d375c4456ca9fa0bb738c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a4ebd0867a05fc12d714a937bbcfaa91e" kindref="member">LV_BLEND_MODE_MULTIPLY</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a632a80f5de7303b6f69c97dde652ac75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a29d36360b69dffbc1d9154f953381afd" kindref="member">LV_BLEND_MODE_REPLACE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a4ebd0867a05fc12d714a937bbcfaa91e" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93" refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a29d36360b69dffbc1d9154f953381afd" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_blend_mode_t;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_TEXT_DECOR_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_TEXT_DECOR_UNDERLINE<sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_TEXT_DECOR_STRIKETHROUGH<sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_text_decor_t;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_NONE<sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_BOTTOM<sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_TOP<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_LEFT<sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_RIGHT<sp/><sp/><sp/><sp/>=<sp/>0x08,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_FULL<sp/><sp/><sp/><sp/><sp/>=<sp/>0x0F,</highlight></codeline>
+<codeline lineno="119" refid="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67ae90b8d5d4dd0b95b34b42faa13e813a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67ae90b8d5d4dd0b95b34b42faa13e813a1" kindref="member">LV_BORDER_SIDE_INTERNAL</ref><sp/>=<sp/>0x10,<sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_border_side_t;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="127" refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a60a3da887d76575265882bdf7be3e3ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a60a3da887d76575265882bdf7be3e3ae" kindref="member">LV_GRAD_DIR_NONE</ref>,<sp/></highlight></codeline>
+<codeline lineno="128" refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a213ea9c1af983a3b7d4dbe131e30ec67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a213ea9c1af983a3b7d4dbe131e30ec67" kindref="member">LV_GRAD_DIR_VER</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a79ffa390d3d116ed50fd14551298ddc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a79ffa390d3d116ed50fd14551298ddc2" kindref="member">LV_GRAD_DIR_HOR</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_grad_dir_t;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="139" refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260a02582eae16823f771c18e07455d3464c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260a02582eae16823f771c18e07455d3464c" kindref="member">LV_DITHER_NONE</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260a9fa39743532b7075d9ccbef81e06458e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260a9fa39743532b7075d9ccbef81e06458e" kindref="member">LV_DITHER_ORDERED</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260ac914ec43ff59c9e73de5d7ef51cd0857" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260ac914ec43ff59c9e73de5d7ef51cd0857" kindref="member">LV_DITHER_ERR_DIFF</ref>,<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_dither_mode_t;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="structlv__gradient__stop__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150" refid="structlv__gradient__stop__t_1a7eb2e8afc8c04f93ffc718c24a8396ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/><ref refid="structlv__gradient__stop__t_1a7eb2e8afc8c04f93ffc718c24a8396ef" kindref="member">color</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="structlv__gradient__stop__t_1ae7f259746900ef125e568ddc79beda02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><ref refid="structlv__gradient__stop__t_1ae7f259746900ef125e568ddc79beda02" kindref="member">frac</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}<sp/><ref refid="structlv__gradient__stop__t" kindref="compound">lv_gradient_stop_t</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="structlv__grad__dsc__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156" refid="structlv__grad__dsc__t_1aef52df36a9ba617bf65e71ead1f94105" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__gradient__stop__t" kindref="compound">lv_gradient_stop_t</ref><sp/><sp/><sp/>stops[LV_GRADIENT_MAX_STOPS];<sp/></highlight></codeline>
+<codeline lineno="157" refid="structlv__grad__dsc__t_1a9bc6aa40e9b42a10389d99877cdb65ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__grad__dsc__t_1a9bc6aa40e9b42a10389d99877cdb65ac" kindref="member">stops_count</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="structlv__grad__dsc__t_1a63223754438f889dc8b358701f301b5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_grad_dir_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__grad__dsc__t_1a63223754438f889dc8b358701f301b5f" kindref="member">dir</ref><sp/>:<sp/>3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160" refid="structlv__grad__dsc__t_1abab13dc2759b597005b6bce3ba0b008e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_dither_mode_t<sp/><sp/><sp/><sp/><sp/><ref refid="structlv__grad__dsc__t_1abab13dc2759b597005b6bce3ba0b008e" kindref="member">dither</ref><sp/>:<sp/>3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}<sp/><ref refid="structlv__grad__dsc__t" kindref="compound">lv_grad_dsc_t</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="unionlv__style__value__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168" refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="unionlv__style__value__t_1a1ec5ca1a76462368a2e92cebd40de345" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="unionlv__style__value__t_1a1ec5ca1a76462368a2e92cebd40de345" kindref="member">ptr</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="unionlv__style__value__t_1aa9831331f2edec01437f22c91a0491e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/><ref refid="unionlv__style__value__t_1aa9831331f2edec01437f22c91a0491e8" kindref="member">color</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PROP_INV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>0*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_MIN_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_MAX_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_MIN_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_MAX_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_Y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ALIGN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LAYOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_RADIUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>1*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_TOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_BOTTOM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>17,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_LEFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>18,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_RIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>19,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_ROW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_COLUMN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>21,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BASE_DIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>22,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_CLIP_CORNER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>23,</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>2*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>32,</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>33,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_GRAD_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>34,</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_GRAD_DIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>35,</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_MAIN_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>36,</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_GRAD_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>37,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_GRAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>38,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_DITHER_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>39,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_SRC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>40,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>41,</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_RECOLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>42,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_RECOLOR_OPA<sp/><sp/><sp/><sp/><sp/>=<sp/>43,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_TILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>44,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>3*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>48,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>49,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>50,</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_SIDE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>51,</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_POST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>52,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OUTLINE_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>53,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OUTLINE_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>54,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OUTLINE_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>55,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OUTLINE_PAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>56,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>4*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>64,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_OFS_X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>65,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_OFS_Y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>66,</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_SPREAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>67,</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>68,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>69,</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_IMG_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>70,</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_IMG_RECOLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>71,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_IMG_RECOLOR_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>72,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>73,</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_DASH_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>74,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_DASH_GAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>75,</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_ROUNDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>76,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>77,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>78,</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>5*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>80,</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_ROUNDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>81,</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>82,</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>83,</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_IMG_SRC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>84,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>85,</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>86,</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_FONT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>87,</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_LETTER_SPACE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>88,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_LINE_SPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>89,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_DECOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>90,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_ALIGN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>91,</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>6*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>96,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OPA_LAYERED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>97,</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_COLOR_FILTER_DSC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>98,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_COLOR_FILTER_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>99,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ANIM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>100,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ANIM_TIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>101,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ANIM_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>102,</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSITION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>103,</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BLEND_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>104,</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>105,</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>106,</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSLATE_X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>107,</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSLATE_Y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>108,</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_ZOOM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>109,</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_ANGLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>110,</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_PIVOT_X<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>111,</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_PIVOT_Y<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>112,</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_LAST_BUILT_IN_PROP<sp/><sp/><sp/><sp/><sp/>=<sp/>112,</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_NUM_BUILT_IN_PROPS<sp/><sp/><sp/><sp/><sp/>=<sp/>_LV_STYLE_LAST_BUILT_IN_PROP<sp/>+<sp/>1,</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PROP_ANY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFFFF,</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_PROP_CONST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFFFF<sp/></highlight><highlight class="comment">/*<sp/>magic<sp/>value<sp/>for<sp/>const<sp/>styles<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref>;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_RES_NOT_FOUND,</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_RES_FOUND,</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_RES_INHERIT</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_style_res_t;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="structlv__style__transition__dsc__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="299" refid="structlv__style__transition__dsc__t_1a3140e03dc30085c0da114be4e4b5e798" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>*<sp/><ref refid="structlv__style__transition__dsc__t_1a3140e03dc30085c0da114be4e4b5e798" kindref="member">props</ref>;<sp/></highlight></codeline>
+<codeline lineno="300"><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="structlv__style__transition__dsc__t_1aa7830f3fd31d9e13f332650d9375c306" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structlv__style__transition__dsc__t_1aa7830f3fd31d9e13f332650d9375c306" kindref="member">user_data</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="structlv__style__transition__dsc__t_1ab7e4ac4109a90047977035fd5cfdc0b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__anim_8h_1a32c487fbcd8daa37b095ddc4a34630ac" kindref="member">lv_anim_path_cb_t</ref><sp/><ref refid="structlv__style__transition__dsc__t_1ab7e4ac4109a90047977035fd5cfdc0b4" kindref="member">path_xcb</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="304" refid="structlv__style__transition__dsc__t_1a10c17acddbb516b677dc09e427c6cdfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlv__style__transition__dsc__t_1a10c17acddbb516b677dc09e427c6cdfb" kindref="member">time</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="305" refid="structlv__style__transition__dsc__t_1aa6fbfa99780fab4796cea342f38a0b42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlv__style__transition__dsc__t_1aa6fbfa99780fab4796cea342f38a0b42" kindref="member">delay</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}<sp/><ref refid="structlv__style__transition__dsc__t" kindref="compound">lv_style_transition_dsc_t</ref>;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="structlv__style__const__prop__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>value;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}<sp/><ref refid="structlv__style__const__prop__t" kindref="compound">lv_style_const_prop_t</ref>;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="structlv__style__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_ASSERT_STYLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sentinel;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*If<sp/>there<sp/>is<sp/>only<sp/>one<sp/>property<sp/>store<sp/>it<sp/>directly.</highlight></codeline>
+<codeline lineno="326"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*For<sp/>more<sp/>properties<sp/>allocate<sp/>an<sp/>array*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>value1;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*<sp/>values_and_props;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__const__prop__t" kindref="compound">lv_style_const_prop_t</ref><sp/>*<sp/>const_props;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>v_p;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>prop1;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>has_group;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>prop_cnt;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}<sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="339"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="340"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a327db2c3050bd2d1a1693aa6981205dd" kindref="member">lv_style_init</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1afd91dc8011c22491bae7010959267741" kindref="member">lv_style_reset</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>lv_style_register_prop(uint8_t<sp/>flag);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/><ref refid="lv__style_8h_1aa04566bb5235a758912e3cb46a21d2e4" kindref="member">lv_style_get_num_custom_props</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a7d2d6138592056144847db78feba2320" kindref="member">lv_style_remove_prop</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a29e7e4bbafc2bcc964bbff48942d894c" kindref="member">lv_style_set_prop</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>value);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a0e8a0d11e2d01d58ac1262fabb01c46d" kindref="member">lv_style_set_prop_meta</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/>uint16_t<sp/>meta);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal">lv_style_res_t<sp/><ref refid="lv__style_8h_1a3d1f0f0816bf24c58ea748ee38fb4a2e" kindref="member">lv_style_get_prop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*<sp/>value);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_transition_dsc_init(<ref refid="structlv__style__transition__dsc__t" kindref="compound">lv_style_transition_dsc_t</ref><sp/>*<sp/>tr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>props[],</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lv__anim_8h_1a32c487fbcd8daa37b095ddc4a34630ac" kindref="member">lv_anim_path_cb_t</ref><sp/>path_cb,<sp/>uint32_t<sp/>time,<sp/>uint32_t<sp/>delay,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/><ref refid="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" kindref="member">lv_style_prop_get_default</ref>(<ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_style_res_t<sp/>lv_style_get_prop_inlined(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*<sp/>value)</highlight></codeline>
+<codeline lineno="450"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(style-&gt;prop1<sp/>==<sp/>LV_STYLE_PROP_ANY)<sp/>{</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__const__prop__t" kindref="compound">lv_style_const_prop_t</ref><sp/>*<sp/>const_prop;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>style-&gt;prop_cnt;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const_prop<sp/>=<sp/>style-&gt;v_p.const_props<sp/>+<sp/>i;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop_id<sp/>=<sp/>LV_STYLE_PROP_ID_MASK(const_prop-&gt;prop);</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prop_id<sp/>==<sp/>prop)<sp/>{</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(const_prop-&gt;prop<sp/>&amp;<sp/>LV_STYLE_PROP_META_INHERIT)</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_INHERIT;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*value<sp/>=<sp/>(const_prop-&gt;prop<sp/>&amp;<sp/>LV_STYLE_PROP_META_INITIAL)<sp/>?<sp/><ref refid="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" kindref="member">lv_style_prop_get_default</ref>(prop_id)<sp/>:<sp/>const_prop-&gt;value;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_FOUND;</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_NOT_FOUND;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(style-&gt;prop_cnt<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_NOT_FOUND;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(style-&gt;prop_cnt<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*<sp/>tmp<sp/>=<sp/>style-&gt;v_p.values_and_props<sp/>+<sp/>style-&gt;prop_cnt<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref>);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>*<sp/>props<sp/>=<sp/>(uint16_t<sp/>*)tmp;</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>style-&gt;prop_cnt;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop_id<sp/>=<sp/>LV_STYLE_PROP_ID_MASK(props[i]);</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prop_id<sp/>==<sp/>prop)<sp/>{</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(props[i]<sp/>&amp;<sp/>LV_STYLE_PROP_META_INHERIT)</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_INHERIT;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(props[i]<sp/>&amp;<sp/>LV_STYLE_PROP_META_INITIAL)</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*value<sp/>=<sp/><ref refid="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" kindref="member">lv_style_prop_get_default</ref>(prop_id);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*<sp/>values<sp/>=<sp/>(<ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*)style-&gt;v_p.values_and_props;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*value<sp/>=<sp/>values[i];</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_FOUND;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(LV_STYLE_PROP_ID_MASK(style-&gt;prop1)<sp/>==<sp/>prop)<sp/>{</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(style-&gt;prop1<sp/>&amp;<sp/>LV_STYLE_PROP_META_INHERIT)</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_INHERIT;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*value<sp/>=<sp/>(style-&gt;prop1<sp/>&amp;<sp/>LV_STYLE_PROP_META_INITIAL)<sp/>?<sp/><ref refid="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" kindref="member">lv_style_prop_get_default</ref>(LV_STYLE_PROP_ID_MASK(</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style-&gt;prop1))<sp/>:<sp/>style-&gt;v_p.value1;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_FOUND;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_NOT_FOUND;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a3343d3e8d42132d6e280b80f0995eb64" kindref="member">lv_style_is_empty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style);</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal">uint8_t<sp/><ref refid="lv__style_8h_1a2843a91a10d17b909ac91509449a279c" kindref="member">_lv_style_get_prop_group</ref>(<ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal">uint8_t<sp/><ref refid="lv__style_8h_1a2ac9ea9edea707f93ffeea47508f5adb" kindref="member">_lv_style_prop_lookup_flags</ref>(<ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lv_style_gen.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_size(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline lineno="524"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_width(style,<sp/>value);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_height(style,<sp/>value);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_pad_all(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline lineno="530"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_left(style,<sp/>value);</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_right(style,<sp/>value);</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_top(style,<sp/>value);</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_bottom(style,<sp/>value);</highlight></codeline>
+<codeline lineno="535"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_pad_hor(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline lineno="538"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_left(style,<sp/>value);</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_right(style,<sp/>value);</highlight></codeline>
+<codeline lineno="541"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_pad_ver(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline lineno="544"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_top(style,<sp/>value);</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_bottom(style,<sp/>value);</highlight></codeline>
+<codeline lineno="547"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_pad_gap(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline lineno="550"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_row(style,<sp/>value);</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_column(style,<sp/>value);</highlight></codeline>
+<codeline lineno="553"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lv_style_prop_has_flag(<ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/>uint8_t<sp/>flag)</highlight></codeline>
+<codeline lineno="566"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a2ac9ea9edea707f93ffeea47508f5adb" kindref="member">_lv_style_prop_lookup_flags</ref>(prop)<sp/>&amp;<sp/>flag;</highlight></codeline>
+<codeline lineno="568"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight><highlight class="comment">/*************************</highlight></codeline>
+<codeline lineno="571"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>GLOBAL<sp/>VARIABLES</highlight></codeline>
+<codeline lineno="572"><highlight class="comment"><sp/>*************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="575"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="576"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_ASSERT_STYLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LV_ASSERT_STYLE(style_p)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="580"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="581"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LV_ASSERT_MSG(style_p<sp/>!=<sp/>NULL,<sp/>&quot;The<sp/>style<sp/>is<sp/>NULL&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="582"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LV_ASSERT_MSG(style_p-&gt;sentinel<sp/>==<sp/>LV_STYLE_SENTINEL_VALUE,<sp/>&quot;Style<sp/>is<sp/>not<sp/>initialized<sp/>or<sp/>corrupted&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="583"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LV_ASSERT_STYLE(p)<sp/>do{}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_STYLE_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h"/>
+  </compounddef>
+</doxygen>

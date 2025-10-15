@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__anim__timeline_8h" kind="file" language="C++">
+    <compoundname>lv_anim_timeline.h</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__anim__timeline_8h_1a769fcfd75ee4426abc152fb61accab4d" prot="public" static="no">
+        <type>struct _lv_anim_timeline_t</type>
+        <definition>typedef struct _lv_anim_timeline_t lv_anim_timeline_t</definition>
+        <argsstring></argsstring>
+        <name>lv_anim_timeline_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="1" column="0" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__anim__timeline_8h_1a1771dfae22b9eaf10cbad7de17d0482d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_anim_timeline_t *</type>
+        <definition>lv_anim_timeline_t* lv_anim_timeline_create</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_anim_timeline_create</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an animation timeline. <simplesect kind="return"><para>pointer to the animation timeline. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="38" column="21" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="38" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim__timeline_8h_1a78b4f60993bb068391993b9b47547631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_timeline_del</definition>
+        <argsstring>(lv_anim_timeline_t *at)</argsstring>
+        <name>lv_anim_timeline_del</name>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete animation timeline. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation timeline. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="44" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim__timeline_8h_1a23e09991b7db860e10df90ed8d7f30e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_timeline_add</definition>
+        <argsstring>(lv_anim_timeline_t *at, uint32_t start_time, lv_anim_t *a)</argsstring>
+        <name>lv_anim_timeline_add</name>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>start_time</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a94df93c022dc57ee917b4757e50ebe22" kindref="member">lv_anim_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add animation to the animation timeline. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation timeline. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time the animation started on the timeline, note that start_time will override the value of delay. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="52" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="52" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim__timeline_8h_1a631773d63194f6443cb4fa2b80a6f055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_timeline_start</definition>
+        <argsstring>(lv_anim_timeline_t *at)</argsstring>
+        <name>lv_anim_timeline_start</name>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the animation timeline. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation timeline. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>total time spent in animation timeline. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="59" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="59" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim__timeline_8h_1a2b7ddd637862b8b7b4543f3cd29624a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_timeline_stop</definition>
+        <argsstring>(lv_anim_timeline_t *at)</argsstring>
+        <name>lv_anim_timeline_stop</name>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the animation timeline. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation timeline. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="65" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="65" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim__timeline_8h_1ad8a2f74c2b88b4cd70a9b20d8f27190e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_timeline_set_reverse</definition>
+        <argsstring>(lv_anim_timeline_t *at, bool reverse)</argsstring>
+        <name>lv_anim_timeline_set_reverse</name>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the playback direction of the animation timeline. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation timeline. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to play in reverse. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="72" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="72" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim__timeline_8h_1a220b311c65a98b559ec4ba5d2b597650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_timeline_set_progress</definition>
+        <argsstring>(lv_anim_timeline_t *at, uint16_t progress)</argsstring>
+        <name>lv_anim_timeline_set_progress</name>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>progress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the progress of the animation timeline. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation timeline. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set value 0~65535 to map 0~100% animation progress. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="79" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="79" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim__timeline_8h_1aefa7a248ae35b30bcbe6773fbe5c508d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_timeline_get_playtime</definition>
+        <argsstring>(lv_anim_timeline_t *at)</argsstring>
+        <name>lv_anim_timeline_get_playtime</name>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the time used to play the animation timeline. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation timeline. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>total time spent in animation timeline. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="86" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="86" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim__timeline_8h_1aabc8223c96f7f777898dfbf1463f6fdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_anim_timeline_get_reverse</definition>
+        <argsstring>(lv_anim_timeline_t *at)</argsstring>
+        <name>lv_anim_timeline_get_reverse</name>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get whether the animation timeline is played in reverse. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation timeline. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>return true if it is reverse playback. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" line="93" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h" declline="93" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_ANIM_TIMELINE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_ANIM_TIMELINE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__anim_8h" kindref="compound">lv_anim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_lv_anim_timeline_t;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_lv_anim_timeline_t<sp/>lv_anim_timeline_t;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">lv_anim_timeline_t<sp/>*<sp/><ref refid="lv__anim__timeline_8h_1a1771dfae22b9eaf10cbad7de17d0482d" kindref="member">lv_anim_timeline_create</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__anim__timeline_8h_1a78b4f60993bb068391993b9b47547631" kindref="member">lv_anim_timeline_del</ref>(lv_anim_timeline_t<sp/>*<sp/>at);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__anim__timeline_8h_1a23e09991b7db860e10df90ed8d7f30e7" kindref="member">lv_anim_timeline_add</ref>(lv_anim_timeline_t<sp/>*<sp/>at,<sp/>uint32_t<sp/>start_time,<sp/><ref refid="struct__lv__anim__t" kindref="compound">lv_anim_t</ref><sp/>*<sp/>a);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">uint32_t<sp/><ref refid="lv__anim__timeline_8h_1a631773d63194f6443cb4fa2b80a6f055" kindref="member">lv_anim_timeline_start</ref>(lv_anim_timeline_t<sp/>*<sp/>at);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__anim__timeline_8h_1a2b7ddd637862b8b7b4543f3cd29624a9" kindref="member">lv_anim_timeline_stop</ref>(lv_anim_timeline_t<sp/>*<sp/>at);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__anim__timeline_8h_1ad8a2f74c2b88b4cd70a9b20d8f27190e" kindref="member">lv_anim_timeline_set_reverse</ref>(lv_anim_timeline_t<sp/>*<sp/>at,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reverse);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__anim__timeline_8h_1a220b311c65a98b559ec4ba5d2b597650" kindref="member">lv_anim_timeline_set_progress</ref>(lv_anim_timeline_t<sp/>*<sp/>at,<sp/>uint16_t<sp/>progress);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">uint32_t<sp/><ref refid="lv__anim__timeline_8h_1aefa7a248ae35b30bcbe6773fbe5c508d" kindref="member">lv_anim_timeline_get_playtime</ref>(lv_anim_timeline_t<sp/>*<sp/>at);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__anim__timeline_8h_1aabc8223c96f7f777898dfbf1463f6fdd" kindref="member">lv_anim_timeline_get_reverse</ref>(lv_anim_timeline_t<sp/>*<sp/>at);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_ANIM_TIMELINE_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_anim_timeline.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__draw__sdl__cache__key__head__img__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_draw_sdl_cache_key_head_img_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__draw__sdl__cache__key__head__img__t_1a103bccfb6f22f02a00c4d56bfb84eb24" prot="public" static="no" mutable="no">
+        <type>lv_sdl_cache_key_magic_t</type>
+        <definition>lv_sdl_cache_key_magic_t lv_draw_sdl_cache_key_head_img_t::magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h" line="64" column="30" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__cache__key__head__img__t_1a28a34c6a10671e53380ec6ecf1566686" prot="public" static="no" mutable="no">
+        <type>lv_img_src_t</type>
+        <definition>lv_img_src_t lv_draw_sdl_cache_key_head_img_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h" line="65" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__cache__key__head__img__t_1a8e2316cb764b8b69242cc509ade268ff" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_draw_sdl_cache_key_head_img_t::frame_id</definition>
+        <argsstring></argsstring>
+        <name>frame_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h" line="66" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h" line="63" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h" bodystart="63" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structlv__draw__sdl__cache__key__head__img__t_1a8e2316cb764b8b69242cc509ade268ff" prot="public" virt="non-virtual"><scope>lv_draw_sdl_cache_key_head_img_t</scope><name>frame_id</name></member>
+      <member refid="structlv__draw__sdl__cache__key__head__img__t_1a103bccfb6f22f02a00c4d56bfb84eb24" prot="public" virt="non-virtual"><scope>lv_draw_sdl_cache_key_head_img_t</scope><name>magic</name></member>
+      <member refid="structlv__draw__sdl__cache__key__head__img__t_1a28a34c6a10671e53380ec6ecf1566686" prot="public" virt="non-virtual"><scope>lv_draw_sdl_cache_key_head_img_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,921 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__hal__disp_8h" kind="file" language="C++">
+    <compoundname>lv_hal_disp.h</compoundname>
+    <innerclass refid="struct__lv__disp__draw__buf__t" prot="public">_lv_disp_draw_buf_t</innerclass>
+    <innerclass refid="struct__lv__disp__drv__t" prot="public">_lv_disp_drv_t</innerclass>
+    <innerclass refid="struct__lv__disp__t" prot="public">_lv_disp_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__hal__disp_8h_1a0f69330483fab1cfa5080f3dc093ccb6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_disp_rot_t</name>
+        <enumvalue id="lv__hal__disp_8h_1a0f69330483fab1cfa5080f3dc093ccb6a2dfe7a4942493ec02e286eaebd460a68" prot="public">
+          <name>LV_DISP_ROT_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__hal__disp_8h_1a0f69330483fab1cfa5080f3dc093ccb6a6ff02d8715c54c4f5d284c3600f9b97f" prot="public">
+          <name>LV_DISP_ROT_90</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__hal__disp_8h_1a0f69330483fab1cfa5080f3dc093ccb6a2ec03874fe1b8cd9cb489a32e897e1ae" prot="public">
+          <name>LV_DISP_ROT_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__hal__disp_8h_1a0f69330483fab1cfa5080f3dc093ccb6aa0b9fa2fac54af6452dfd5e473cb460a" prot="public">
+          <name>LV_DISP_ROT_270</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="66" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="66" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__hal__disp_8h_1aabc7592e4a01c99ac13c46aa45296ca3" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__disp__draw__buf__t" kindref="compound">_lv_disp_draw_buf_t</ref></type>
+        <definition>typedef struct _lv_disp_draw_buf_t lv_disp_draw_buf_t</definition>
+        <argsstring></argsstring>
+        <name>lv_disp_draw_buf_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure for holding display buffer information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="64" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__hal__disp_8h_1ad9ffc837ed3653c57cc9c961cafe2774" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref></type>
+        <definition>typedef struct _lv_disp_drv_t lv_disp_drv_t</definition>
+        <argsstring></argsstring>
+        <name>lv_disp_drv_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Display Driver structure to be registered by HAL. Only its pointer will be saved in <computeroutput>lv_disp_t</computeroutput> so it should be declared as <computeroutput>static lv_disp_drv_t my_drv</computeroutput> or allocated dynamically. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="152" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref></type>
+        <definition>typedef struct _lv_disp_t lv_disp_t</definition>
+        <argsstring></argsstring>
+        <name>lv_disp_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Display structure. <simplesect kind="note"><para><computeroutput>lv_disp_drv_t</computeroutput> should be the first member of the structure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="195" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__hal__disp_8h_1a2a24b30cf6089a3d319bfa624e224894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_disp_drv_init</definition>
+        <argsstring>(lv_disp_drv_t *driver)</argsstring>
+        <name>lv_disp_drv_init</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1ad9ffc837ed3653c57cc9c961cafe2774" kindref="member">lv_disp_drv_t</ref> *</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a display driver with default values. It is used to have known values in the fields and not junk in memory. After it you can safely set only the fields you need. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>driver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to driver variable to initialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="207" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="207" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a06fe2e658c41b550e6ede53f1a267a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_disp_draw_buf_init</definition>
+        <argsstring>(lv_disp_draw_buf_t *draw_buf, void *buf1, void *buf2, uint32_t size_in_px_cnt)</argsstring>
+        <name>lv_disp_draw_buf_init</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1aabc7592e4a01c99ac13c46aa45296ca3" kindref="member">lv_disp_draw_buf_t</ref> *</type>
+          <declname>draw_buf</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf1</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size_in_px_cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a display buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer <computeroutput>lv_disp_draw_buf_t</computeroutput> variable to initialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A buffer to be used by LVGL to draw the image. Always has to specified and can&apos;t be NULL. Can be an array allocated by the user. E.g. <computeroutput>static lv_color_t disp_buf1[1024 * 10]</computeroutput> Or a memory address e.g. in external SRAM </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optionally specify a second buffer to make image rendering and image flushing (sending to the display) parallel. In the <computeroutput>disp_drv-&gt;flush</computeroutput> you should use DMA or similar hardware to send the image to the display in the background. It lets LVGL to render next frame into the other buffer while previous is being sent. Set to <computeroutput>NULL</computeroutput> if unused. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size_in_px_cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the <computeroutput>buf1</computeroutput> and <computeroutput>buf2</computeroutput> in pixel count. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="224" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="224" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1ac0597fcee8b04c6c9b4fa7667da2e218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+        <definition>lv_disp_t* lv_disp_drv_register</definition>
+        <argsstring>(lv_disp_drv_t *driver)</argsstring>
+        <name>lv_disp_drv_register</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1ad9ffc837ed3653c57cc9c961cafe2774" kindref="member">lv_disp_drv_t</ref> *</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register an initialized display driver. Automatically set the first display as active. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>driver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized &apos;lv_disp_drv_t&apos; variable. Only its pointer is saved! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the new display or NULL on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="232" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="232" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a0e26ace940fd5d3a9f27ffdc322f6a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_disp_drv_update</definition>
+        <argsstring>(lv_disp_t *disp, lv_disp_drv_t *new_drv)</argsstring>
+        <name>lv_disp_drv_update</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1ad9ffc837ed3653c57cc9c961cafe2774" kindref="member">lv_disp_drv_t</ref> *</type>
+          <declname>new_drv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the driver in run time. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display. (return value of <computeroutput>lv_disp_drv_register</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_drv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new driver </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="239" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="239" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1af37aec229f23769468de96750be77bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_disp_remove</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_remove</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to display </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="245" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="245" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a490ee32cbb499fb8f2e2439a8ed7fbb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_disp_set_default</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_set_default</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a default display. The new screens will be created on it by default. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="251" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="251" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a1989caf62ece629efb8962d462ebef9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+        <definition>lv_disp_t* lv_disp_get_default</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_disp_get_default</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default display <simplesect kind="return"><para>pointer to the default display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="257" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="257" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a31a32a09b2b1b6ac0ebeedcd6d6f8ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_disp_get_hor_res</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_hor_res</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the horizontal resolution of a display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the horizontal resolution of the display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="264" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="264" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1ad89a6aa4394a200d4482aa605cc57107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_disp_get_ver_res</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_ver_res</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the vertical resolution of a display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the vertical resolution of the display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="271" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="271" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a4663bc51a7c4d5e9da787bb1537dbbfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_disp_get_physical_hor_res</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_physical_hor_res</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the full / physical horizontal resolution of a display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the full / physical horizontal resolution of the display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="278" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="278" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a241e3b50cd66d7d26e7be62798b862d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_disp_get_physical_ver_res</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_physical_ver_res</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the full / physical vertical resolution of a display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the full / physical vertical resolution of the display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="285" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="285" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1aed6bc4bfa2192d86cca4a7bc07809295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_disp_get_offset_x</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_offset_x</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the horizontal offset from the full / physical display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the horizontal offset from the full / physical display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="292" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="292" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1ac7443a8c244b2f6742a413cd237b8399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_disp_get_offset_y</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_offset_y</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the vertical offset from the full / physical display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the horizontal offset from the full / physical display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="299" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="299" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1abe0f2764b9f8b355aa6df60ab75bd70f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_disp_get_antialiasing</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_antialiasing</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get if anti-aliasing is enabled for a display or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: anti-aliasing is enabled; false: disabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="306" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="306" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a438d2021a713a4e495acbaadaedac2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_disp_get_dpi</definition>
+        <argsstring>(const lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_dpi</name>
+        <param>
+          <type>const <ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the DPI of the display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>dpi of the display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="313" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="313" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a9dd8166a1c4c1904e10bea3ee105291f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_disp_set_rotation</definition>
+        <argsstring>(lv_disp_t *disp, lv_disp_rot_t rotation)</argsstring>
+        <name>lv_disp_set_rotation</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <param>
+          <type>lv_disp_rot_t</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the rotation of this display. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rotation angle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="320" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="320" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a224b7aad394be3e18e519c5f797dad15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_disp_rot_t</type>
+        <definition>lv_disp_rot_t lv_disp_get_rotation</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_rotation</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current rotation of this display. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display (NULL to use the default display) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>rotation angle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="327" column="15" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="327" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a98bd7729feac5847ea164141825e10a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+        <definition>lv_disp_t* lv_disp_get_next</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_next</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next display. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current display. NULL to initialize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the next display or NULL if no more. Give the first display when the parameter is NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="352" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="352" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a31300599f85a03e5287fdf3fb997efa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__hal__disp_8h_1aabc7592e4a01c99ac13c46aa45296ca3" kindref="member">lv_disp_draw_buf_t</ref> *</type>
+        <definition>lv_disp_draw_buf_t* lv_disp_get_draw_buf</definition>
+        <argsstring>(lv_disp_t *disp)</argsstring>
+        <name>lv_disp_get_draw_buf</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the internal buffer of a display <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a display </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the internal buffers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="359" column="21" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="359" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__disp_8h_1a619ee8c54c3ceee9e3e6be340fa9211c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_disp_drv_use_generic_set_px_cb</definition>
+        <argsstring>(lv_disp_drv_t *disp_drv, lv_img_cf_t cf)</argsstring>
+        <name>lv_disp_drv_use_generic_set_px_cb</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1ad9ffc837ed3653c57cc9c961cafe2774" kindref="member">lv_disp_drv_t</ref> *</type>
+          <declname>disp_drv</declname>
+        </param>
+        <param>
+          <type>lv_img_cf_t</type>
+          <declname>cf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="361" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" declline="361" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>@description Display Driver HAL interface header file </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>LV_HAL_DISP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_HAL_DISP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__hal_8h" kindref="compound">lv_hal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../draw/lv_draw.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_color.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_area.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_ll.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_timer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_ll.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LV_INV_BUF_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_INV_BUF_SIZE<sp/>32<sp/></highlight><highlight class="comment">/*Buffer<sp/>size<sp/>for<sp/>invalid<sp/>areas*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LV_ATTRIBUTE_FLUSH_READY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_ATTRIBUTE_FLUSH_READY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__theme__t" kindref="compound">_lv_theme_t</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="struct__lv__disp__draw__buf__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__draw__buf__t" kindref="compound">_lv_disp_draw_buf_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="52" refid="struct__lv__disp__draw__buf__t_1aaf879cfaa7bcaa2b13b4b968c0506dcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__lv__disp__draw__buf__t_1aaf879cfaa7bcaa2b13b4b968c0506dcd" kindref="member">buf1</ref>;<sp/></highlight></codeline>
+<codeline lineno="53" refid="struct__lv__disp__draw__buf__t_1ab8e7578487bb68dae44dfd0d6cc7afca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__lv__disp__draw__buf__t_1ab8e7578487bb68dae44dfd0d6cc7afca" kindref="member">buf2</ref>;<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Internal,<sp/>used<sp/>by<sp/>the<sp/>library*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf_act;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>size;<sp/></highlight><highlight class="comment">/*In<sp/>pixel<sp/>count*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*1:<sp/>flushing<sp/>is<sp/>in<sp/>progress.<sp/>(It<sp/>can&apos;t<sp/>be<sp/>a<sp/>bit<sp/>field<sp/>because<sp/>when<sp/>it&apos;s<sp/>cleared<sp/>from<sp/>IRQ<sp/>Read-Modify-Write<sp/>issue<sp/>might<sp/>occur)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flushing;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*1:<sp/>It<sp/>was<sp/>the<sp/>last<sp/>chunk<sp/>to<sp/>flush.<sp/>(It<sp/>can&apos;t<sp/>be<sp/>a<sp/>bit<sp/>field<sp/>because<sp/>when<sp/>it&apos;s<sp/>cleared<sp/>from<sp/>IRQ<sp/>Read-Modify-Write<sp/>issue<sp/>might<sp/>occur)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flushing_last;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>last_area<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1;<sp/></highlight><highlight class="comment">/*1:<sp/>the<sp/>last<sp/>area<sp/>is<sp/>being<sp/>rendered*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>last_part<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1;<sp/></highlight><highlight class="comment">/*1:<sp/>the<sp/>last<sp/>part<sp/>of<sp/>the<sp/>current<sp/>area<sp/>is<sp/>being<sp/>rendered*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/><ref refid="lv__hal__disp_8h_1aabc7592e4a01c99ac13c46aa45296ca3" kindref="member">lv_disp_draw_buf_t</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DISP_ROT_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DISP_ROT_90,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DISP_ROT_180,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_DISP_ROT_270</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}<sp/>lv_disp_rot_t;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="struct__lv__disp__drv__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct__lv__disp__drv__t_1a9a46dcf72a366efa819bccc6c243c52e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><ref refid="struct__lv__disp__drv__t_1a9a46dcf72a366efa819bccc6c243c52e" kindref="member">hor_res</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="struct__lv__disp__drv__t_1a629f3773b25f0321cf19c67983e62b75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><ref refid="struct__lv__disp__drv__t_1a629f3773b25f0321cf19c67983e62b75" kindref="member">ver_res</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t</highlight></codeline>
+<codeline lineno="84" refid="struct__lv__disp__drv__t_1a9e4127d0410de5e8401ab96ad5c7731f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__disp__drv__t_1a9e4127d0410de5e8401ab96ad5c7731f" kindref="member">physical_hor_res</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t</highlight></codeline>
+<codeline lineno="86" refid="struct__lv__disp__drv__t_1ad835a17e54002d23fe136d13ce29ad6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__disp__drv__t_1ad835a17e54002d23fe136d13ce29ad6d" kindref="member">physical_ver_res</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t</highlight></codeline>
+<codeline lineno="88" refid="struct__lv__disp__drv__t_1ab4c7bb6df22f3ea73ebad5cddfdaed3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__disp__drv__t_1ab4c7bb6df22f3ea73ebad5cddfdaed3b" kindref="member">offset_x</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="struct__lv__disp__drv__t_1a80999403d167ad631404dab2ac6f85c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><ref refid="struct__lv__disp__drv__t_1a80999403d167ad631404dab2ac6f85c6" kindref="member">offset_y</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="struct__lv__disp__drv__t_1a76b0d49876861b2e2f848c0b3f5c4792" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__disp__draw__buf__t" kindref="compound">lv_disp_draw_buf_t</ref><sp/>*<sp/><ref refid="struct__lv__disp__drv__t_1a76b0d49876861b2e2f848c0b3f5c4792" kindref="member">draw_buf</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="struct__lv__disp__drv__t_1a8c282533fa38e2c02e7bd59543ebe21a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__disp__drv__t_1a8c282533fa38e2c02e7bd59543ebe21a" kindref="member">direct_mode</ref><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="struct__lv__disp__drv__t_1acdff28b6362847710348e09a80329a8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__disp__drv__t_1acdff28b6362847710348e09a80329a8e" kindref="member">full_refresh</ref><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="struct__lv__disp__drv__t_1a292c93471eee2cd218898281273da44e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__disp__drv__t_1a292c93471eee2cd218898281273da44e" kindref="member">sw_rotate</ref><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="struct__lv__disp__drv__t_1a5140627de9920d06824f64ba22a5a245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__disp__drv__t_1a5140627de9920d06824f64ba22a5a245" kindref="member">antialiasing</ref><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="struct__lv__disp__drv__t_1aa57abbd61258b5f8fb2af5a1e2b379d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__disp__drv__t_1aa57abbd61258b5f8fb2af5a1e2b379d1" kindref="member">rotated</ref><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>screen_transp<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="struct__lv__disp__drv__t_1a45c3688e1af458041ca334d2e297adb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__disp__drv__t_1a45c3688e1af458041ca334d2e297adb6" kindref="member">dpi</ref><sp/>:<sp/>10;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="struct__lv__disp__drv__t_1a0579966c493920404caac738f467b614" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__disp__drv__t_1a0579966c493920404caac738f467b614" kindref="member">flush_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area,<sp/>lv_color_t<sp/>*<sp/>color_p);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="struct__lv__disp__drv__t_1a151ea253d8396ea15ca79662cb8de3a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__disp__drv__t_1a151ea253d8396ea15ca79662cb8de3a7" kindref="member">rounder_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>area);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="struct__lv__disp__drv__t_1a05e48a3ce29ceae24aa6106719dfc23e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__disp__drv__t_1a05e48a3ce29ceae24aa6106719dfc23e" kindref="member">set_px_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv,<sp/>uint8_t<sp/>*<sp/>buf,<sp/>lv_coord_t<sp/>buf_w,<sp/>lv_coord_t<sp/>x,<sp/>lv_coord_t<sp/>y,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_color_t<sp/>color,<sp/>lv_opa_t<sp/>opa);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*clear_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv,<sp/>uint8_t<sp/>*<sp/>buf,<sp/>uint32_t<sp/>size);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="struct__lv__disp__drv__t_1ab8e9021bc4401273f9e5e159baddc5a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__disp__drv__t_1ab8e9021bc4401273f9e5e159baddc5a3" kindref="member">monitor_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv,<sp/>uint32_t<sp/>time,<sp/>uint32_t<sp/>px);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="struct__lv__disp__drv__t_1a8a2da37af8c2236f72b54a008bb60206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__disp__drv__t_1a8a2da37af8c2236f72b54a008bb60206" kindref="member">wait_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="struct__lv__disp__drv__t_1a8f580334339f58469ce29aee4b8c97ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__disp__drv__t_1a8f580334339f58469ce29aee4b8c97ac" kindref="member">clean_dcache_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="struct__lv__disp__drv__t_1a89a4b6012925cfe99c33659131b5d269" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__disp__drv__t_1a89a4b6012925cfe99c33659131b5d269" kindref="member">drv_update_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="struct__lv__disp__drv__t_1adc85d7b0662c4ca1f1df6744d82a6850" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__disp__drv__t_1adc85d7b0662c4ca1f1df6744d82a6850" kindref="member">render_start_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="struct__lv__disp__drv__t_1adb7820a88a8b1726e7ba12e7c5538c70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/><ref refid="struct__lv__disp__drv__t_1adb7820a88a8b1726e7ba12e7c5538c70" kindref="member">color_chroma_key</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*draw_ctx_init)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv,<sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*draw_ctx_deinit)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>disp_drv,<sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>draw_ctx_size;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="struct__lv__disp__drv__t_1af5fdca24bab6f48c437c21a6d29864bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__lv__disp__drv__t_1af5fdca24bab6f48c437c21a6d29864bd" kindref="member">user_data</ref>;<sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}<sp/><ref refid="lv__hal__disp_8h_1ad9ffc837ed3653c57cc9c961cafe2774" kindref="member">lv_disp_drv_t</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="struct__lv__disp__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="160" refid="struct__lv__disp__t_1afc56043919c168bc664daa81c31a80e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/><ref refid="struct__lv__disp__t_1afc56043919c168bc664daa81c31a80e8" kindref="member">driver</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="struct__lv__disp__t_1acbc2184a1dbdecdb0c575dfd9fd98238" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__timer__t" kindref="compound">lv_timer_t</ref><sp/>*<sp/><ref refid="struct__lv__disp__t_1acbc2184a1dbdecdb0c575dfd9fd98238" kindref="member">refr_timer</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__theme__t" kindref="compound">_lv_theme_t</ref><sp/>*<sp/>theme;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="struct__lv__disp__t_1a2721d7c9aa569c24c2a65537385abafc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>**<sp/><ref refid="struct__lv__disp__t_1a2721d7c9aa569c24c2a65537385abafc" kindref="member">screens</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="struct__lv__disp__t_1aecb603a4d3699a2af7beb0943edb0026" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/><ref refid="struct__lv__disp__t_1aecb603a4d3699a2af7beb0943edb0026" kindref="member">act_scr</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="struct__lv__disp__t_1afe1c856999354e4b1d503af3a9a32a17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/><ref refid="struct__lv__disp__t_1afe1c856999354e4b1d503af3a9a32a17" kindref="member">prev_scr</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172" refid="struct__lv__disp__t_1aea061accb103f7fcb207296566cf8482" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/><ref refid="struct__lv__disp__t_1aea061accb103f7fcb207296566cf8482" kindref="member">scr_to_load</ref>;<sp/></highlight></codeline>
+<codeline lineno="173" refid="struct__lv__disp__t_1affbf46abc4c8a3631733b41c8cefaeff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/><ref refid="struct__lv__disp__t_1affbf46abc4c8a3631733b41c8cefaeff" kindref="member">top_layer</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="struct__lv__disp__t_1a6b4790d8da37e46506fa44f1e344c650" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/><ref refid="struct__lv__disp__t_1a6b4790d8da37e46506fa44f1e344c650" kindref="member">sys_layer</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>screen_cnt;</highlight></codeline>
+<codeline lineno="176" refid="struct__lv__disp__t_1ac536b30b1848bef83d946ef627955180" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__disp__t_1ac536b30b1848bef83d946ef627955180" kindref="member">draw_prev_over_act</ref><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="177" refid="struct__lv__disp__t_1a0baab85f68b677246a0be429caaa18c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__disp__t_1a0baab85f68b677246a0be429caaa18c3" kindref="member">del_prev</ref><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178" refid="struct__lv__disp__t_1a1888eac6bc93602b7ce2dd6893df16a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__disp__t_1a1888eac6bc93602b7ce2dd6893df16a3" kindref="member">rendering_in_progress</ref><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="180" refid="struct__lv__disp__t_1ab237e70d6d48769e59efd25c0086cce8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_opa_t<sp/><ref refid="struct__lv__disp__t_1ab237e70d6d48769e59efd25c0086cce8" kindref="member">bg_opa</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181" refid="struct__lv__disp__t_1ab53e72a2fd135350fca97392d34aef13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/><ref refid="struct__lv__disp__t_1ab53e72a2fd135350fca97392d34aef13" kindref="member">bg_color</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182" refid="struct__lv__disp__t_1ac24be8f60aabb76d6922ea0cd96c151e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__lv__disp__t_1ac24be8f60aabb76d6922ea0cd96c151e" kindref="member">bg_img</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185" refid="struct__lv__disp__t_1abb3662915362da5728234388d298f7b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/><ref refid="struct__lv__disp__t_1abb3662915362da5728234388d298f7b8" kindref="member">inv_areas</ref>[LV_INV_BUF_SIZE];</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>inv_area_joined[LV_INV_BUF_SIZE];</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>inv_p;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>inv_en_cnt;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="struct__lv__disp__t_1a965d69d020752b3e4701d94da8383155" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref><sp/><ref refid="struct__lv__disp__t_1a965d69d020752b3e4701d94da8383155" kindref="member">sync_areas</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Miscellaneous<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="struct__lv__disp__t_1a7218ab0ed1cf13427681ab492f1411cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__disp__t_1a7218ab0ed1cf13427681ab492f1411cc" kindref="member">last_activity_time</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}<sp/><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__disp_8h_1a2a24b30cf6089a3d319bfa624e224894" kindref="member">lv_disp_drv_init</ref>(<ref refid="struct__lv__disp__drv__t" kindref="compound">lv_disp_drv_t</ref><sp/>*<sp/>driver);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__disp_8h_1a06fe2e658c41b550e6ede53f1a267a0a" kindref="member">lv_disp_draw_buf_init</ref>(<ref refid="struct__lv__disp__draw__buf__t" kindref="compound">lv_disp_draw_buf_t</ref><sp/>*<sp/>draw_buf,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf2,<sp/>uint32_t<sp/>size_in_px_cnt);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/><ref refid="lv__hal__disp_8h_1ac0597fcee8b04c6c9b4fa7667da2e218" kindref="member">lv_disp_drv_register</ref>(<ref refid="struct__lv__disp__drv__t" kindref="compound">lv_disp_drv_t</ref><sp/>*<sp/>driver);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__disp_8h_1a0e26ace940fd5d3a9f27ffdc322f6a86" kindref="member">lv_disp_drv_update</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp,<sp/><ref refid="struct__lv__disp__drv__t" kindref="compound">lv_disp_drv_t</ref><sp/>*<sp/>new_drv);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__disp_8h_1af37aec229f23769468de96750be77bfc" kindref="member">lv_disp_remove</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__disp_8h_1a490ee32cbb499fb8f2e2439a8ed7fbb6" kindref="member">lv_disp_set_default</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/><ref refid="lv__hal__disp_8h_1a1989caf62ece629efb8962d462ebef9e" kindref="member">lv_disp_get_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__hal__disp_8h_1a31a32a09b2b1b6ac0ebeedcd6d6f8ce3" kindref="member">lv_disp_get_hor_res</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__hal__disp_8h_1ad89a6aa4394a200d4482aa605cc57107" kindref="member">lv_disp_get_ver_res</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__hal__disp_8h_1a4663bc51a7c4d5e9da787bb1537dbbfa" kindref="member">lv_disp_get_physical_hor_res</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__hal__disp_8h_1a241e3b50cd66d7d26e7be62798b862d5" kindref="member">lv_disp_get_physical_ver_res</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__hal__disp_8h_1aed6bc4bfa2192d86cca4a7bc07809295" kindref="member">lv_disp_get_offset_x</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__hal__disp_8h_1ac7443a8c244b2f6742a413cd237b8399" kindref="member">lv_disp_get_offset_y</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__hal__disp_8h_1abe0f2764b9f8b355aa6df60ab75bd70f" kindref="member">lv_disp_get_antialiasing</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__hal__disp_8h_1a438d2021a713a4e495acbaadaedac2ec" kindref="member">lv_disp_get_dpi</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__disp_8h_1a9dd8166a1c4c1904e10bea3ee105291f" kindref="member">lv_disp_set_rotation</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp,<sp/>lv_disp_rot_t<sp/>rotation);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal">lv_disp_rot_t<sp/><ref refid="lv__hal__disp_8h_1a224b7aad394be3e18e519c5f797dad15" kindref="member">lv_disp_get_rotation</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"></codeline>
+<codeline lineno="335"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>LV_ATTRIBUTE_FLUSH_READY<sp/>*/</highlight><highlight class="normal"><sp/>lv_disp_flush_ready(<ref refid="struct__lv__disp__drv__t" kindref="compound">lv_disp_drv_t</ref><sp/>*<sp/>disp_drv);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>LV_ATTRIBUTE_FLUSH_READY<sp/>*/</highlight><highlight class="normal"><sp/>lv_disp_flush_is_last(<ref refid="struct__lv__disp__drv__t" kindref="compound">lv_disp_drv_t</ref><sp/>*<sp/>disp_drv);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"></codeline>
+<codeline lineno="352"><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/><ref refid="lv__hal__disp_8h_1a98bd7729feac5847ea164141825e10a7" kindref="member">lv_disp_get_next</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><ref refid="struct__lv__disp__draw__buf__t" kindref="compound">lv_disp_draw_buf_t</ref><sp/>*<sp/><ref refid="lv__hal__disp_8h_1a31300599f85a03e5287fdf3fb997efa6" kindref="member">lv_disp_get_draw_buf</ref>(<ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>disp);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_disp_drv_use_generic_set_px_cb(<ref refid="struct__lv__disp__drv__t" kindref="compound">lv_disp_drv_t</ref><sp/>*<sp/>disp_drv,<sp/>lv_img_cf_t<sp/>cf);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="364"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="365"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h"/>
+  </compounddef>
+</doxygen>

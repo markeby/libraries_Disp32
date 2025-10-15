@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__draw__sw__gradient_8h" kind="file" language="C++">
+    <compoundname>lv_draw_sw_gradient.h</compoundname>
+    <innerclass refid="struct__lv__gradient__cache__t" prot="public">_lv_gradient_cache_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__draw__sw__gradient_8h_1aa08c4c5336d3aca4754470b147f1060c" prot="public" static="no">
+        <type><ref refid="unionlv__color32__t" kindref="compound">lv_color32_t</ref></type>
+        <definition>typedef lv_color_t lv_grad_color_t</definition>
+        <argsstring></argsstring>
+        <name>lv_grad_color_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" line="31" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__draw__sw__gradient_8h_1a2e8780dfd212edf21ea518874a60bf50" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref></type>
+        <definition>typedef struct _lv_gradient_cache_t lv_grad_t</definition>
+        <argsstring></argsstring>
+        <name>lv_grad_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid recomputing gradient for each draw operation, it&apos;s possible to cache the computation in this structure instance. Whenever possible, this structure is reused instead of recomputing the gradient map </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" line="59" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__draw__sw__gradient_8h_1a9cec1d1f549171c2ed746d056bb25315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="unionlv__color32__t" kindref="compound">lv_grad_color_t</ref></type>
+        <definition>lv_grad_color_t lv_gradient_calculate</definition>
+        <argsstring>(const lv_grad_dsc_t *dsc, lv_coord_t range, lv_coord_t frac)</argsstring>
+        <name>lv_gradient_calculate</name>
+        <param>
+          <type>const <ref refid="structlv__grad__dsc__t" kindref="compound">lv_grad_dsc_t</ref> *</type>
+          <declname>dsc</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>frac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the color in the given gradient and fraction Gradient are specified in a virtual [0-255] range, so this function scales the virtual range to the given range <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gradient descriptor to use </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The range to use in computation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current part used in the range. frac is in [0; range] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" line="70" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" declline="70" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sw__gradient_8h_1ad08efdbaed99b7b02a35ccbd360b3bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_gradient_set_cache_size</definition>
+        <argsstring>(size_t max_bytes)</argsstring>
+        <name>lv_gradient_set_cache_size</name>
+        <param>
+          <type>size_t</type>
+          <declname>max_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the gradient cache size <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max cahce size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" line="77" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" declline="77" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sw__gradient_8h_1a005ff1a4e9945250c7858fe1363a3b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_gradient_free_cache</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_gradient_free_cache</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the gradient cache </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" line="80" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" declline="80" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sw__gradient_8h_1a10bbb059df91ae561d03e184a7358820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__draw__sw__gradient_8h_1a2e8780dfd212edf21ea518874a60bf50" kindref="member">lv_grad_t</ref> *</type>
+        <definition>lv_grad_t* lv_gradient_get</definition>
+        <argsstring>(const lv_grad_dsc_t *gradient, lv_coord_t w, lv_coord_t h)</argsstring>
+        <name>lv_gradient_get</name>
+        <param>
+          <type>const <ref refid="structlv__grad__dsc__t" kindref="compound">lv_grad_dsc_t</ref> *</type>
+          <declname>gradient</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a gradient cache from the given parameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" line="83" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" declline="83" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__sw__gradient_8h_1a4557f0a7346dafca4ad642478aa9d514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_gradient_cleanup</definition>
+        <argsstring>(lv_grad_t *grad)</argsstring>
+        <name>lv_gradient_cleanup</name>
+        <param>
+          <type><ref refid="lv__draw__sw__gradient_8h_1a2e8780dfd212edf21ea518874a60bf50" kindref="member">lv_grad_t</ref> *</type>
+          <declname>grad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up the gradient item after it was get with <computeroutput>lv_grad_get_from_cache</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>grad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a gradient </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" line="89" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_DRAW_SW_GRADIENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DRAW_SW_GRADIENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../misc/lv_color.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../misc/lv_style.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__draw__sw__dither_8h" kindref="compound">lv_draw_sw_dither.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_GRADIENT_MAX_STOPS<sp/>&lt;<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>LVGL<sp/>needs<sp/>at<sp/>least<sp/>2<sp/>stops<sp/>for<sp/>gradients.<sp/>Please<sp/>increase<sp/>the<sp/>LV_GRADIENT_MAX_STOPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_DITHER_GRADIENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="unionlv__color32__t" kindref="compound">lv_color32_t</ref><sp/><ref refid="unionlv__color32__t" kindref="compound">lv_grad_color_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>lv_color_t<sp/><ref refid="unionlv__color32__t" kindref="compound">lv_grad_color_t</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="struct__lv__gradient__cache__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__gradient__cache__t" kindref="compound">_lv_gradient_cache_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="struct__lv__gradient__cache__t_1abb6f3d7d4a3fc7400065fa0e86835a42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__lv__gradient__cache__t_1abb6f3d7d4a3fc7400065fa0e86835a42" kindref="member">key</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="struct__lv__gradient__cache__t_1a5d65025e7c6a6a81059563dfb8e91481" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__lv__gradient__cache__t_1a5d65025e7c6a6a81059563dfb8e91481" kindref="member">life</ref><sp/>:<sp/>30;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="struct__lv__gradient__cache__t_1a93928df034871640a5c42dccfc0c04ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__lv__gradient__cache__t_1a93928df034871640a5c42dccfc0c04ae" kindref="member">filled</ref><sp/>:<sp/>1;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="struct__lv__gradient__cache__t_1ac8eec5eedc2f427ed08f2f2811819509" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__lv__gradient__cache__t_1ac8eec5eedc2f427ed08f2f2811819509" kindref="member">not_cached</ref>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="46" refid="struct__lv__gradient__cache__t_1a3b37c404e032bdcb5246a0aff0a80c3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/><sp/><sp/>*<sp/><sp/><ref refid="struct__lv__gradient__cache__t_1a3b37c404e032bdcb5246a0aff0a80c3a" kindref="member">map</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="struct__lv__gradient__cache__t_1a4be546c87bb34c1d1c6439f25fc43dfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__lv__gradient__cache__t_1a4be546c87bb34c1d1c6439f25fc43dfc" kindref="member">alloc_size</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="struct__lv__gradient__cache__t_1a3bbe46939f812638af0f2d52309827da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__lv__gradient__cache__t_1a3bbe46939f812638af0f2d52309827da" kindref="member">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor">#if<sp/>_DITHER_GRADIENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="struct__lv__gradient__cache__t_1adfa5b9b9d392c297f14d4895f74000ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__color32__t" kindref="compound">lv_color32_t</ref><sp/><sp/>*<sp/><ref refid="struct__lv__gradient__cache__t_1adfa5b9b9d392c297f14d4895f74000ab" kindref="member">hmap</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor">#if<sp/>LV_DITHER_ERROR_DIFFUSION<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="struct__lv__gradient__cache__t_1a16f2402c7a1fa4780dfb50c3ef42a925" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__scolor24__t" kindref="compound">lv_scolor24_t</ref><sp/>*<sp/><ref refid="struct__lv__gradient__cache__t_1a16f2402c7a1fa4780dfb50c3ef42a925" kindref="member">error_acc</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="struct__lv__gradient__cache__t_1ac59285159e5e35079561499279eac136" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__lv__gradient__cache__t_1ac59285159e5e35079561499279eac136" kindref="member">w</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/><ref refid="lv__draw__sw__gradient_8h_1a2e8780dfd212edf21ea518874a60bf50" kindref="member">lv_grad_t</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>**********************/</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="unionlv__color32__t" kindref="compound">lv_grad_color_t</ref><sp/></highlight><highlight class="comment">/*<sp/>LV_ATTRIBUTE_FAST_MEM<sp/>*/</highlight><highlight class="normal"><sp/><ref refid="lv__draw__sw__gradient_8h_1a9cec1d1f549171c2ed746d056bb25315" kindref="member">lv_gradient_calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__grad__dsc__t" kindref="compound">lv_grad_dsc_t</ref><sp/>*<sp/>dsc,<sp/>lv_coord_t<sp/>range,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>frac);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__draw__sw__gradient_8h_1ad08efdbaed99b7b02a35ccbd360b3bc6" kindref="member">lv_gradient_set_cache_size</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max_bytes);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__draw__sw__gradient_8h_1a005ff1a4e9945250c7858fe1363a3b22" kindref="member">lv_gradient_free_cache</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="struct__lv__gradient__cache__t" kindref="compound">lv_grad_t</ref><sp/>*<sp/><ref refid="lv__draw__sw__gradient_8h_1a10bbb059df91ae561d03e184a7358820" kindref="member">lv_gradient_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__grad__dsc__t" kindref="compound">lv_grad_dsc_t</ref><sp/>*<sp/>gradient,<sp/>lv_coord_t<sp/>w,<sp/>lv_coord_t<sp/>h);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__draw__sw__gradient_8h_1a4557f0a7346dafca4ad642478aa9d514" kindref="member">lv_gradient_cleanup</ref>(<ref refid="struct__lv__gradient__cache__t" kindref="compound">lv_grad_t</ref><sp/>*<sp/>grad);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_DRAW_GRADIENT_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw_gradient.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_00fd930c924f8d1f7ef79a8fbf752077" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/pxp</compoundname>
+    <innerfile refid="lv__draw__pxp_8h">lv_draw_pxp.h</innerfile>
+    <innerfile refid="lv__draw__pxp__blend_8h">lv_draw_pxp_blend.h</innerfile>
+    <innerfile refid="lv__gpu__nxp__pxp_8h">lv_gpu_nxp_pxp.h</innerfile>
+    <innerfile refid="lv__gpu__nxp__pxp__osa_8h">lv_gpu_nxp_pxp_osa.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/pxp/"/>
+  </compounddef>
+</doxygen>

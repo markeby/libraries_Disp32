@@ -1,0 +1,38 @@
+var lv__disp_8h =
+[
+    [ "lv_scr_load_anim_t", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06e", [
+      [ "LV_SCR_LOAD_ANIM_NONE", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06eac4d7241159e71b5710d9d2dfea9c9e49", null ],
+      [ "LV_SCR_LOAD_ANIM_OVER_LEFT", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06eaaf8a8c0cbd838d201013910ea07704ac", null ],
+      [ "LV_SCR_LOAD_ANIM_OVER_RIGHT", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea4451ce2c951da3d701c13b78b9110d12", null ],
+      [ "LV_SCR_LOAD_ANIM_OVER_TOP", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea8033a9cb143ebbbce6849324b3c33315", null ],
+      [ "LV_SCR_LOAD_ANIM_OVER_BOTTOM", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea84d9244e123dd83ec0e9e5401c988711", null ],
+      [ "LV_SCR_LOAD_ANIM_MOVE_LEFT", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea8e90694b82fac8a4108dfd3d2c9c513e", null ],
+      [ "LV_SCR_LOAD_ANIM_MOVE_RIGHT", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06eaf35915bc6d1ac1c08575d6492fb4b752", null ],
+      [ "LV_SCR_LOAD_ANIM_MOVE_TOP", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea7ce2102f40dd52daa98854e85a341d29", null ],
+      [ "LV_SCR_LOAD_ANIM_MOVE_BOTTOM", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06eaceab5be119341c6f2a22c91cd3a1ec52", null ],
+      [ "LV_SCR_LOAD_ANIM_FADE_IN", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea1d358cb99a2a0988f86f55613b2b93dd", null ],
+      [ "LV_SCR_LOAD_ANIM_FADE_ON", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea3e415bd11c085aff5bc42db7f945695d", null ],
+      [ "LV_SCR_LOAD_ANIM_FADE_OUT", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06eaf224127616ba0c6ee5119126bf0c5450", null ],
+      [ "LV_SCR_LOAD_ANIM_OUT_LEFT", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ead84d11515024cdffb8a3bdf95aa65b4d", null ],
+      [ "LV_SCR_LOAD_ANIM_OUT_RIGHT", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06eaaa66ccd5bfc7f682f46f34f48985e9fe", null ],
+      [ "LV_SCR_LOAD_ANIM_OUT_TOP", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea7cb51b4d1c4c6bf2eb894b6e73a812fe", null ],
+      [ "LV_SCR_LOAD_ANIM_OUT_BOTTOM", "lv__disp_8h.html#a0f753e364206eb26e1ad7c10d737b06ea8c03dccb81b7f132fa57a924f77b7adf", null ]
+    ] ],
+    [ "_lv_disp_get_refr_timer", "lv__disp_8h.html#ac7a44c2ea827ab4174a0a1a706d065c2", null ],
+    [ "lv_disp_clean_dcache", "lv__disp_8h.html#a3a3770903c53e8d7fbf47555bfdb152b", null ],
+    [ "lv_disp_enable_invalidation", "lv__disp_8h.html#aac0138ca0897ca4fd5f6a2ef9ec6c5e1", null ],
+    [ "lv_disp_get_inactive_time", "lv__disp_8h.html#a4ae9136128a901bf5b37f23672842f0d", null ],
+    [ "lv_disp_get_layer_sys", "lv__disp_8h.html#ae9a48f536aab873d71c07c313c4e433e", null ],
+    [ "lv_disp_get_layer_top", "lv__disp_8h.html#abb96745c10c7d8b5d7acc93e70584145", null ],
+    [ "lv_disp_get_scr_act", "lv__disp_8h.html#aabefd7ce9a47f468b779dcad4372df2a", null ],
+    [ "lv_disp_get_scr_prev", "lv__disp_8h.html#a5b5470e277e2802fd2ab1b39a1f18219", null ],
+    [ "lv_disp_get_theme", "lv__disp_8h.html#ade6752f9389f3e2e6aef5c0413c91934", null ],
+    [ "lv_disp_is_invalidation_enabled", "lv__disp_8h.html#ae5ea0baf9b8a52be1a609b0d84b57fe6", null ],
+    [ "lv_disp_load_scr", "lv__disp_8h.html#a77dbb02b01dd121e3ff923d7a0182341", null ],
+    [ "lv_disp_set_bg_color", "lv__disp_8h.html#aa5d66786eac6c09b625a4ad14c78b5da", null ],
+    [ "lv_disp_set_bg_image", "lv__disp_8h.html#ad4726ee5585141717f1a92d78644f9c2", null ],
+    [ "lv_disp_set_bg_opa", "lv__disp_8h.html#a80edf118ea4b29b9267c6df493123ca1", null ],
+    [ "lv_disp_set_theme", "lv__disp_8h.html#a88eb1d18c3ce9dd2de868b5b4c3347af", null ],
+    [ "lv_disp_trig_activity", "lv__disp_8h.html#a44083753547903dc975e6ec29b4ea280", null ],
+    [ "lv_scr_load_anim", "lv__disp_8h.html#a34d6349247c52a4c149cabdb1319c8a0", null ]
+];

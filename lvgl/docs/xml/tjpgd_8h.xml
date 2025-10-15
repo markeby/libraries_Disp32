@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="tjpgd_8h" kind="file" language="C++">
+    <compoundname>tjpgd.h</compoundname>
+    <innerclass refid="structJRECT" prot="public">JRECT</innerclass>
+    <innerclass refid="structJDEC" prot="public">JDEC</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>JRESULT</name>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7a385067f3b2ef0bc7a8ef7d608dec9d7a" prot="public">
+          <name>JDR_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7a0c681360e9e61fa13a20ea17930efcdc" prot="public">
+          <name>JDR_INTR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7a32738f8cc7dfc473bd08e7304864a383" prot="public">
+          <name>JDR_INP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7a3bf881c1dda2585790262b8bf90a58bc" prot="public">
+          <name>JDR_MEM1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7a1bad2c149d075898d5a2057c36944498" prot="public">
+          <name>JDR_MEM2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7a6ba2d79df76ec386fa8bb676b4fba24f" prot="public">
+          <name>JDR_PAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7abf28072708ad79d0a1f6c2e5c8272eb7" prot="public">
+          <name>JDR_FMT1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7aad33a77dec9e843adca3611d8abc3628" prot="public">
+          <name>JDR_FMT2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tjpgd_8h_1afad169fe8afac8df0e63c84451334aa7a1635eda9fa9febb37f8dcefebe7c690e" prot="public">
+          <name>JDR_FMT3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="26" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="26" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="tjpgd_8h_1a4ebe5e1cf9f156daf2e5c11ff6da274c" prot="public" static="no">
+        <type>int16_t</type>
+        <definition>typedef uint8_t jd_yuv_t</definition>
+        <argsstring></argsstring>
+        <name>jd_yuv_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="19" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tjpgd_8h_1a5d1dc0929be873a974ae89705bc0907b" prot="public" static="no">
+        <type>struct <ref refid="structJDEC" kindref="compound">JDEC</ref></type>
+        <definition>typedef struct JDEC JDEC</definition>
+        <argsstring></argsstring>
+        <name>JDEC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="21" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tjpgd_8h_1a2f2e5a506892015d12bbd9245d36aa54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>JRESULT</type>
+        <definition>JRESULT jd_prepare</definition>
+        <argsstring>(JDEC *jd, size_t(*infunc)(JDEC *, uint8_t *, size_t), void *pool, size_t sz_pool, void *dev)</argsstring>
+        <name>jd_prepare</name>
+        <param>
+          <type><ref refid="structJDEC" kindref="compound">JDEC</ref> *</type>
+          <declname>jd</declname>
+        </param>
+        <param>
+          <type>size_t(*)(<ref refid="structJDEC" kindref="compound">JDEC</ref> *, uint8_t *, size_t)</type>
+          <declname>infunc</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pool</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz_pool</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="84" column="9" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" declline="84" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="tjpgd_8h_1a2f2e5df4386ee2cf645266720e5e1381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>JRESULT</type>
+        <definition>JRESULT jd_decomp</definition>
+        <argsstring>(JDEC *jd, int(*outfunc)(JDEC *, void *, JRECT *), uint8_t scale)</argsstring>
+        <name>jd_decomp</name>
+        <param>
+          <type><ref refid="structJDEC" kindref="compound">JDEC</ref> *</type>
+          <declname>jd</declname>
+        </param>
+        <param>
+          <type>int(*)(<ref refid="structJDEC" kindref="compound">JDEC</ref> *, void *, <ref refid="structJRECT" kindref="compound">JRECT</ref> *)</type>
+          <declname>outfunc</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="85" column="9" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" declline="85" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------/</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">/<sp/>TJpgDec<sp/>-<sp/>Tiny<sp/>JPEG<sp/>Decompressor<sp/>R0.03<sp/>include<sp/>file<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(C)ChaN,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">/----------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DEF_TJPGDEC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_TJPGDEC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_SJPG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tjpgdcnf.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>JD_FASTDECODE<sp/>&gt;=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int16_t<sp/>jd_yuv_t;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>jd_yuv_t;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Error<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_OK<sp/>=<sp/>0,<sp/></highlight><highlight class="comment">/*<sp/>0:<sp/>Succeeded<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_INTR,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>1:<sp/>Interrupted<sp/>by<sp/>output<sp/>function<sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_INP,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2:<sp/>Device<sp/>error<sp/>or<sp/>wrong<sp/>termination<sp/>of<sp/>input<sp/>stream<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_MEM1,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>3:<sp/>Insufficient<sp/>memory<sp/>pool<sp/>for<sp/>the<sp/>image<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_MEM2,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>4:<sp/>Insufficient<sp/>stream<sp/>input<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_PAR,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>5:<sp/>Parameter<sp/>error<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_FMT1,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>6:<sp/>Data<sp/>format<sp/>error<sp/>(may<sp/>be<sp/>broken<sp/>data)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_FMT2,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>7:<sp/>Right<sp/>format<sp/>but<sp/>not<sp/>supported<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>JDR_FMT3<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>8:<sp/>Not<sp/>supported<sp/>JPEG<sp/>standard<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/>JRESULT;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Rectangular<sp/>region<sp/>in<sp/>the<sp/>output<sp/>image<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structJRECT" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>left;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Left<sp/>end<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>right;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Right<sp/>end<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>top;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Top<sp/>end<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>bottom;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Bottom<sp/>end<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/><ref refid="structJRECT" kindref="compound">JRECT</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Decompressor<sp/>object<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structJDEC" kindref="compound">JDEC</ref><sp/><ref refid="structJDEC" kindref="compound">JDEC</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structJDEC" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structJDEC" kindref="compound">JDEC</ref><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>dctr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>bytes<sp/>available<sp/>in<sp/>the<sp/>input<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/>dptr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>data<sp/>read<sp/>ptr<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/>inbuf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Bit<sp/>stream<sp/>input<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dbit;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>bits<sp/>availavble<sp/>in<sp/>wreg<sp/>or<sp/>reading<sp/>bit<sp/>mask<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>scale;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Output<sp/>scaling<sp/>ratio<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>msx,<sp/>msy;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>MCU<sp/>size<sp/>in<sp/>unit<sp/>of<sp/>block<sp/>(width,<sp/>height)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>qtid[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Quantization<sp/>table<sp/>ID<sp/>of<sp/>each<sp/>component,<sp/>Y,<sp/>Cb,<sp/>Cr<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ncomp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>color<sp/>components<sp/>1:grayscale,<sp/>3:color<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>dcv[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Previous<sp/>DC<sp/>element<sp/>of<sp/>each<sp/>component<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>nrst;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Restart<sp/>inverval<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>width,<sp/>height;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Size<sp/>of<sp/>the<sp/>input<sp/>image<sp/>(pixel)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/>huffbits[2][2];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Huffman<sp/>bit<sp/>distribution<sp/>tables<sp/>[id][dcac]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t*<sp/>huffcode[2][2];<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Huffman<sp/>code<sp/>word<sp/>tables<sp/>[id][dcac]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/>huffdata[2][2];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Huffman<sp/>decoded<sp/>data<sp/>tables<sp/>[id][dcac]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t*<sp/>qttbl[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Dequantizer<sp/>tables<sp/>[id]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>JD_FASTDECODE<sp/>&gt;=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>wreg;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Working<sp/>shift<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>marker;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Detected<sp/>marker<sp/>(0:None)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>JD_FASTDECODE<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>longofs[2][2];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Table<sp/>offset<sp/>of<sp/>long<sp/>code<sp/>[id][dcac]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t*<sp/>hufflut_ac[2];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fast<sp/>huffman<sp/>decode<sp/>tables<sp/>for<sp/>AC<sp/>short<sp/>code<sp/>[id]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/>hufflut_dc[2];<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fast<sp/>huffman<sp/>decode<sp/>tables<sp/>for<sp/>DC<sp/>short<sp/>code<sp/>[id]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>workbuf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Working<sp/>buffer<sp/>for<sp/>IDCT<sp/>and<sp/>RGB<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>jd_yuv_t*<sp/>mcubuf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Working<sp/>buffer<sp/>for<sp/>the<sp/>MCU<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pool;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pointer<sp/>to<sp/>available<sp/>memory<sp/>pool<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sz_pool;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Size<sp/>of<sp/>momory<sp/>pool<sp/>(bytes<sp/>available)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>size_t<sp/>(*infunc)(<ref refid="structJDEC" kindref="compound">JDEC</ref>*,<sp/>uint8_t*,<sp/>size_t);<sp/><sp/></highlight><highlight class="comment">/*<sp/>Pointer<sp/>to<sp/>jpeg<sp/>stream<sp/>input<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>device;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pointer<sp/>to<sp/>I/O<sp/>device<sp/>identifiler<sp/>for<sp/>the<sp/>session<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>TJpgDec<sp/>API<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">JRESULT<sp/>jd_prepare<sp/>(<ref refid="structJDEC" kindref="compound">JDEC</ref>*<sp/>jd,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>(*infunc)(<ref refid="structJDEC" kindref="compound">JDEC</ref>*,uint8_t*,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pool,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sz_pool,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dev);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">JRESULT<sp/>jd_decomp<sp/>(<ref refid="structJDEC" kindref="compound">JDEC</ref>*<sp/>jd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*outfunc)(<ref refid="structJDEC" kindref="compound">JDEC</ref>*,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<ref refid="structJRECT" kindref="compound">JRECT</ref>*),<sp/>uint8_t<sp/>scale);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_SJPG*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_TJPGDEC<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h"/>
+  </compounddef>
+</doxygen>

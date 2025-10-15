@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Global <ref refid="lv__lru_8h_1a9075eea287cbb4c74aefa191dba2f2b3" kindref="member">lv_lru_remove_lru_item</ref>  (<ref refid="structlv__lru__t" kindref="compound">lv_lru_t</ref> *cache)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>we can optimise this by finding the n lru items, where n = required_space / average_length </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

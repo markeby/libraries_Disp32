@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_0abdee562046be6f5823d1ca8c3fd13c" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets</compoundname>
+    <innerfile refid="lv__arc_8h">lv_arc.h</innerfile>
+    <innerfile refid="lv__bar_8h">lv_bar.h</innerfile>
+    <innerfile refid="lv__btn_8h">lv_btn.h</innerfile>
+    <innerfile refid="lv__btnmatrix_8h">lv_btnmatrix.h</innerfile>
+    <innerfile refid="lv__canvas_8h">lv_canvas.h</innerfile>
+    <innerfile refid="lv__checkbox_8h">lv_checkbox.h</innerfile>
+    <innerfile refid="lv__dropdown_8h">lv_dropdown.h</innerfile>
+    <innerfile refid="lv__img_8h">lv_img.h</innerfile>
+    <innerfile refid="lv__label_8h">lv_label.h</innerfile>
+    <innerfile refid="lv__line_8h">lv_line.h</innerfile>
+    <innerfile refid="lv__objx__templ_8h">lv_objx_templ.h</innerfile>
+    <innerfile refid="lv__roller_8h">lv_roller.h</innerfile>
+    <innerfile refid="lv__slider_8h">lv_slider.h</innerfile>
+    <innerfile refid="lv__switch_8h">lv_switch.h</innerfile>
+    <innerfile refid="lv__table_8h">lv_table.h</innerfile>
+    <innerfile refid="lv__textarea_8h">lv_textarea.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__indev__proc__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_indev_proc_t</compoundname>
+    <includes refid="lv__hal__indev_8h" local="no">lv_hal_indev.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a993ced14d531f55381346cebf8a978d8" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" kindref="member">lv_indev_state_t</ref></type>
+        <definition>lv_indev_state_t _lv_indev_proc_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current state of the input device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="131" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a69c492deb716c6f9e9ce7bd1e691c19d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_proc_t::long_pr_sent</definition>
+        <argsstring></argsstring>
+        <name>long_pr_sent</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="133" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1ab7a4b61acd0befd72fd772d2e51704f5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_proc_t::reset_query</definition>
+        <argsstring></argsstring>
+        <name>reset_query</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="134" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1af72a80aed5ad581416e5c33dfe3e93f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_proc_t::disabled</definition>
+        <argsstring></argsstring>
+        <name>disabled</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="135" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1affc96e7c25e11f103573f7d9e5fd102f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_proc_t::wait_until_release</definition>
+        <argsstring></argsstring>
+        <name>wait_until_release</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="136" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a07c31da6ce2d8bf13495979a4cfde167" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::act_point</definition>
+        <argsstring></argsstring>
+        <name>act_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current point of input device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="141" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a88c082dcae7f6fe55c81aaaad15e534e" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::indev_point</definition>
+        <argsstring></argsstring>
+        <name>indev_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="142" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a1cdaaba80366c5e69643ce39e9ccfe54" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::last_point</definition>
+        <argsstring></argsstring>
+        <name>last_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last point of input device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="143" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a5ef2276c058ae14671e0b2c95fcd0efd" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::last_raw_point</definition>
+        <argsstring></argsstring>
+        <name>last_raw_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last point read from read_cb. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="144" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a311ca773c25e7719b27ec09a36bf17e1" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::vect</definition>
+        <argsstring></argsstring>
+        <name>vect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Difference between <computeroutput>act_point</computeroutput> and <computeroutput>last_point</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="145" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a6dcf864ff00cce45de9ad7da54c25db8" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::scroll_sum</definition>
+        <argsstring></argsstring>
+        <name>scroll_sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="146" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a9bb0b055f6a7b857c3d0f77bb652cb97" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::scroll_throw_vect</definition>
+        <argsstring></argsstring>
+        <name>scroll_throw_vect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="147" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1afded21d1887b4ca6c8f14669846c2152" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::scroll_throw_vect_ori</definition>
+        <argsstring></argsstring>
+        <name>scroll_throw_vect_ori</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="148" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a418af1d0a3452e6c97d22f6a690c2927" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+        <definition>struct _lv_obj_t* _lv_indev_proc_t::act_obj</definition>
+        <argsstring></argsstring>
+        <name>act_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="149" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a31f25629da14f973a050f3723b47bb53" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+        <definition>struct _lv_obj_t* _lv_indev_proc_t::last_obj</definition>
+        <argsstring></argsstring>
+        <name>last_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="150" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a1a831877520ad18e9c57bb3f2563bd39" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+        <definition>struct _lv_obj_t* _lv_indev_proc_t::scroll_obj</definition>
+        <argsstring></argsstring>
+        <name>scroll_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="151" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a989c1d45df566aef0219fbc90f2ab628" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+        <definition>struct _lv_obj_t* _lv_indev_proc_t::last_pressed</definition>
+        <argsstring></argsstring>
+        <name>last_pressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="152" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a3ed7b15fc351350fc9cd3044d36cca11" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref></type>
+        <definition>lv_area_t _lv_indev_proc_t::scroll_area</definition>
+        <argsstring></argsstring>
+        <name>scroll_area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="153" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1ac1a0645fa105c22698920de514f3fb9b" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t _lv_indev_proc_t::gesture_sum</definition>
+        <argsstring></argsstring>
+        <name>gesture_sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="155" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1acbfc138ec3c3b93a38aae9ea5d48cb23" prot="public" static="no" mutable="no">
+        <type>lv_dir_t</type>
+        <definition>lv_dir_t _lv_indev_proc_t::scroll_dir</definition>
+        <argsstring></argsstring>
+        <name>scroll_dir</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="157" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a9511db2f0bed58a7ceca5b338154dfd5" prot="public" static="no" mutable="no">
+        <type>lv_dir_t</type>
+        <definition>lv_dir_t _lv_indev_proc_t::gesture_dir</definition>
+        <argsstring></argsstring>
+        <name>gesture_dir</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="158" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a3c3fc31c7153e86968d25218c36aa2d9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_indev_proc_t::gesture_sent</definition>
+        <argsstring></argsstring>
+        <name>gesture_sent</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="159" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a446cf05e32a422cd41ae40e5e02aba3c" prot="public" static="no" mutable="no">
+        <type>struct _lv_indev_proc_t::@49::@50</type>
+        <definition>struct _lv_indev_proc_t::@49::@50 _lv_indev_proc_t::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="160" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a85c684f0eccad01a4f7cfe4ab4ebab89" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" kindref="member">lv_indev_state_t</ref></type>
+        <definition>lv_indev_state_t _lv_indev_proc_t::last_state</definition>
+        <argsstring></argsstring>
+        <name>last_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="163" column="30" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1af5b18f4a595a9a1b74a7665b5e55f42b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_indev_proc_t::last_key</definition>
+        <argsstring></argsstring>
+        <name>last_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="164" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1adea356c6a2934e24d0800df6da95fe7a" prot="public" static="no" mutable="no">
+        <type>struct _lv_indev_proc_t::@49::@51</type>
+        <definition>struct _lv_indev_proc_t::@49::@51 _lv_indev_proc_t::keypad</definition>
+        <argsstring></argsstring>
+        <name>keypad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="165" column="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a43ddad3e37e00fe25de9abc0e083bc33" prot="public" static="no" mutable="no">
+        <type>union _lv_indev_proc_t::@49</type>
+        <definition>union _lv_indev_proc_t::@49 _lv_indev_proc_t::types</definition>
+        <argsstring></argsstring>
+        <name>types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="166" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a610fbc71cd450b55c0ad5fdf38dfaf5a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_indev_proc_t::pr_timestamp</definition>
+        <argsstring></argsstring>
+        <name>pr_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pressed time stamp </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="168" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__indev__proc__t_1a943cbd9cf549902dc4cfae4fbcea181f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_indev_proc_t::longpr_rep_timestamp</definition>
+        <argsstring></argsstring>
+        <name>longpr_rep_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Long press repeat time stamp </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="169" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Run time data of input devices Internally used by the library, you should not need to touch it. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="1">
+        <label>_lv_indev_proc_t</label>
+        <link refid="struct__lv__indev__proc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>act_obj</edgelabel>
+          <edgelabel>scroll_obj</edgelabel>
+          <edgelabel>last_obj</edgelabel>
+          <edgelabel>last_pressed</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>scroll_area</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>vect</edgelabel>
+          <edgelabel>indev_point</edgelabel>
+          <edgelabel>scroll_throw_vect</edgelabel>
+          <edgelabel>scroll_sum</edgelabel>
+          <edgelabel>act_point</edgelabel>
+          <edgelabel>gesture_sum</edgelabel>
+          <edgelabel>last_raw_point</edgelabel>
+          <edgelabel>last_point</edgelabel>
+          <edgelabel>scroll_throw_vect_ori</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="130" column="31" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="130" bodyend="170"/>
+    <listofallmembers>
+      <member refid="struct__lv__indev__proc__t_1a418af1d0a3452e6c97d22f6a690c2927" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>act_obj</name></member>
+      <member refid="struct__lv__indev__proc__t_1a07c31da6ce2d8bf13495979a4cfde167" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>act_point</name></member>
+      <member refid="struct__lv__indev__proc__t_1af72a80aed5ad581416e5c33dfe3e93f8" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>disabled</name></member>
+      <member refid="struct__lv__indev__proc__t_1a9511db2f0bed58a7ceca5b338154dfd5" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>gesture_dir</name></member>
+      <member refid="struct__lv__indev__proc__t_1a3c3fc31c7153e86968d25218c36aa2d9" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>gesture_sent</name></member>
+      <member refid="struct__lv__indev__proc__t_1ac1a0645fa105c22698920de514f3fb9b" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>gesture_sum</name></member>
+      <member refid="struct__lv__indev__proc__t_1a88c082dcae7f6fe55c81aaaad15e534e" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>indev_point</name></member>
+      <member refid="struct__lv__indev__proc__t_1adea356c6a2934e24d0800df6da95fe7a" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>keypad</name></member>
+      <member refid="struct__lv__indev__proc__t_1af5b18f4a595a9a1b74a7665b5e55f42b" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>last_key</name></member>
+      <member refid="struct__lv__indev__proc__t_1a31f25629da14f973a050f3723b47bb53" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>last_obj</name></member>
+      <member refid="struct__lv__indev__proc__t_1a1cdaaba80366c5e69643ce39e9ccfe54" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>last_point</name></member>
+      <member refid="struct__lv__indev__proc__t_1a989c1d45df566aef0219fbc90f2ab628" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>last_pressed</name></member>
+      <member refid="struct__lv__indev__proc__t_1a5ef2276c058ae14671e0b2c95fcd0efd" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>last_raw_point</name></member>
+      <member refid="struct__lv__indev__proc__t_1a85c684f0eccad01a4f7cfe4ab4ebab89" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>last_state</name></member>
+      <member refid="struct__lv__indev__proc__t_1a69c492deb716c6f9e9ce7bd1e691c19d" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>long_pr_sent</name></member>
+      <member refid="struct__lv__indev__proc__t_1a943cbd9cf549902dc4cfae4fbcea181f" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>longpr_rep_timestamp</name></member>
+      <member refid="struct__lv__indev__proc__t_1a446cf05e32a422cd41ae40e5e02aba3c" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>pointer</name></member>
+      <member refid="struct__lv__indev__proc__t_1a610fbc71cd450b55c0ad5fdf38dfaf5a" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>pr_timestamp</name></member>
+      <member refid="struct__lv__indev__proc__t_1ab7a4b61acd0befd72fd772d2e51704f5" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>reset_query</name></member>
+      <member refid="struct__lv__indev__proc__t_1a3ed7b15fc351350fc9cd3044d36cca11" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>scroll_area</name></member>
+      <member refid="struct__lv__indev__proc__t_1acbfc138ec3c3b93a38aae9ea5d48cb23" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>scroll_dir</name></member>
+      <member refid="struct__lv__indev__proc__t_1a1a831877520ad18e9c57bb3f2563bd39" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>scroll_obj</name></member>
+      <member refid="struct__lv__indev__proc__t_1a6dcf864ff00cce45de9ad7da54c25db8" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>scroll_sum</name></member>
+      <member refid="struct__lv__indev__proc__t_1a9bb0b055f6a7b857c3d0f77bb652cb97" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>scroll_throw_vect</name></member>
+      <member refid="struct__lv__indev__proc__t_1afded21d1887b4ca6c8f14669846c2152" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>scroll_throw_vect_ori</name></member>
+      <member refid="struct__lv__indev__proc__t_1a993ced14d531f55381346cebf8a978d8" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>state</name></member>
+      <member refid="struct__lv__indev__proc__t_1a43ddad3e37e00fe25de9abc0e083bc33" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>types</name></member>
+      <member refid="struct__lv__indev__proc__t_1a311ca773c25e7719b27ec09a36bf17e1" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>vect</name></member>
+      <member refid="struct__lv__indev__proc__t_1affc96e7c25e11f103573f7d9e5fd102f" prot="public" virt="non-virtual"><scope>_lv_indev_proc_t</scope><name>wait_until_release</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

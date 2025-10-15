@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__draw__ctx__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_draw_ctx_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a90225ccbb947ba8d39a103767a1178b9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_draw_ctx_t::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a buffer to draw into </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="63" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1ac28b2c5007ad8dfca640e76c0890b16c" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+        <definition>lv_area_t* _lv_draw_ctx_t::buf_area</definition>
+        <argsstring></argsstring>
+        <name>buf_area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The position and size of <computeroutput>buf</computeroutput> (absolute coordinates) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="68" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1ae15cb5a04c4b2d9a37e3f4d50c0fa773" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+        <definition>const lv_area_t* _lv_draw_ctx_t::clip_area</definition>
+        <argsstring></argsstring>
+        <name>clip_area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current clip area with absolute coordinates, always the same or smaller than <computeroutput>buf_area</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="73" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a04a921173a2b4d6ae96cfb711d17031e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::init_buf) (struct _lv_draw_ctx_t *draw_ctx)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>init_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="75" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a56c745ea551ee7f699f2acc4dc261ef8" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::draw_rect) (struct _lv_draw_ctx_t *draw_ctx, const lv_draw_rect_dsc_t *dsc, const lv_area_t *coords)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_draw_rect_dsc_t *dsc, const lv_area_t *coords)</argsstring>
+        <name>draw_rect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="77" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1ac59ca4ed564ef5c55b6d54d0dc4b9cc7" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::draw_arc) (struct _lv_draw_ctx_t *draw_ctx, const lv_draw_arc_dsc_t *dsc, const lv_point_t *center, uint16_t radius, uint16_t start_angle, uint16_t end_angle)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_draw_arc_dsc_t *dsc, const lv_point_t *center, uint16_t radius, uint16_t start_angle, uint16_t end_angle)</argsstring>
+        <name>draw_arc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="79" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a2dc46300805b3ccf3b47b794ef7c5587" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::draw_img_decoded) (struct _lv_draw_ctx_t *draw_ctx, const lv_draw_img_dsc_t *dsc, const lv_area_t *coords, const uint8_t *map_p, lv_img_cf_t color_format)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_draw_img_dsc_t *dsc, const lv_area_t *coords, const uint8_t *map_p, lv_img_cf_t color_format)</argsstring>
+        <name>draw_img_decoded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="82" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a7d7079118ba489e173f4629d9bd8c228" prot="public" static="no" mutable="no">
+        <type>lv_res_t(*</type>
+        <definition>lv_res_t(* _lv_draw_ctx_t::draw_img) (struct _lv_draw_ctx_t *draw_ctx, const lv_draw_img_dsc_t *draw_dsc, const lv_area_t *coords, const void *src)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_draw_img_dsc_t *draw_dsc, const lv_area_t *coords, const void *src)</argsstring>
+        <name>draw_img</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="85" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1afa35293b75c2629efbe58ab5055e5e58" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::draw_letter) (struct _lv_draw_ctx_t *draw_ctx, const lv_draw_label_dsc_t *dsc, const lv_point_t *pos_p, uint32_t letter)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_draw_label_dsc_t *dsc, const lv_point_t *pos_p, uint32_t letter)</argsstring>
+        <name>draw_letter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="88" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a7aeca833918db90492a832c96aeb2b5b" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::draw_line) (struct _lv_draw_ctx_t *draw_ctx, const lv_draw_line_dsc_t *dsc, const lv_point_t *point1, const lv_point_t *point2)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_draw_line_dsc_t *dsc, const lv_point_t *point1, const lv_point_t *point2)</argsstring>
+        <name>draw_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="91" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a0cfed0345c6ef1244e6d8a47f0294c0d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::draw_polygon) (struct _lv_draw_ctx_t *draw_ctx, const lv_draw_rect_dsc_t *draw_dsc, const lv_point_t *points, uint16_t point_cnt)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_draw_rect_dsc_t *draw_dsc, const lv_point_t *points, uint16_t point_cnt)</argsstring>
+        <name>draw_polygon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="94" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1aa20419b1b6725fc45b276702c4fdfa1f" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::draw_transform) (struct _lv_draw_ctx_t *draw_ctx, const lv_area_t *dest_area, const void *src_buf, lv_coord_t src_w, lv_coord_t src_h, lv_coord_t src_stride, const lv_draw_img_dsc_t *draw_dsc, lv_img_cf_t cf, lv_color_t *cbuf, lv_opa_t *abuf)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_area_t *dest_area, const void *src_buf, lv_coord_t src_w, lv_coord_t src_h, lv_coord_t src_stride, const lv_draw_img_dsc_t *draw_dsc, lv_img_cf_t cf, lv_color_t *cbuf, lv_opa_t *abuf)</argsstring>
+        <name>draw_transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an area of a transformed image (zoomed and/or rotated) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get this area of the result image. It assumes that the original image is placed to the 0;0 position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the source image in [px] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height of the source image in [px] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stride in [px]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <computeroutput><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref></computeroutput> descriptor containing the transformation parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the color format of <computeroutput>src_buf</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>place the colors of the pixels on <computeroutput>dest_area</computeroutput> here in RGB format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>place the opacity of the pixels on <computeroutput>dest_area</computeroutput> here </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="110" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a1d647c216a656341f42ba0337422ac64" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::draw_bg) (struct _lv_draw_ctx_t *draw_ctx, const lv_draw_rect_dsc_t *draw_dsc, const lv_area_t *coords)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, const lv_draw_rect_dsc_t *draw_dsc, const lv_area_t *coords)</argsstring>
+        <name>draw_bg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Replace the buffer with a rect without decoration like radius or borders </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="117" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a43a0e4bbf6c280dbfee726b8eea55a8d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::wait_for_finish) (struct _lv_draw_ctx_t *draw_ctx)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>wait_for_finish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait until all background operations are finished. (E.g. GPU operations) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="122" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1af1ff9f8d9d4d0b8d224bebf68087dc6b" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::buffer_copy) (struct _lv_draw_ctx_t *draw_ctx, void *dest_buf, lv_coord_t dest_stride, const lv_area_t *dest_area, void *src_buf, lv_coord_t src_stride, const lv_area_t *src_area)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, void *dest_buf, lv_coord_t dest_stride, const lv_area_t *dest_area, void *src_buf, lv_coord_t src_stride, const lv_area_t *src_area)</argsstring>
+        <name>buffer_copy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy an area from buffer to an other <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>copy the buffer into this buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the dest_buf in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination area </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>copy from this buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of src_buf in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source area.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>dest_area and src_area must have the same width and height but can have different x and y position. </para>
+</simplesect>
+<simplesect kind="note"><para>dest_area and src_area must be clipped to the real dimensions of the buffers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="138" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1ac3e6b18f9b78b060bab7d579acd70542" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">_lv_draw_layer_ctx_t</ref> *(*</type>
+        <definition>struct _lv_draw_layer_ctx_t*(* _lv_draw_ctx_t::layer_init) (struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx, lv_draw_layer_flags_t flags)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx, lv_draw_layer_flags_t flags)</argsstring>
+        <name>layer_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a new layer context. The original buffer and area data are already saved from <computeroutput>draw_ctx</computeroutput> to <computeroutput>layer_ctx</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the coordinates of the layer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed flags from @lv_draw_layer_flags_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the layer context, or NULL on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="138" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a27f124886e64c3f98d4abc38a556c638" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::layer_adjust) (struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx, lv_draw_layer_flags_t flags)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx, lv_draw_layer_flags_t flags)</argsstring>
+        <name>layer_adjust</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjust the layer_ctx and/or draw_ctx based on the <computeroutput>layer_ctx-&gt;area_act</computeroutput>. It&apos;s called only if flags has <computeroutput>LV_DRAW_LAYER_FLAG_CAN_SUBDIVIDE</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a layer context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed flags from @lv_draw_layer_flags_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="160" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1aff67c913669483854453161ee65c7c1c" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::layer_blend) (struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx, const lv_draw_img_dsc_t *draw_dsc)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, struct _lv_draw_layer_ctx_t *layer_ctx, const lv_draw_img_dsc_t *draw_dsc)</argsstring>
+        <name>layer_blend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blend a rendered layer to <computeroutput>layer_ctx-&gt;area_act</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a layer context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an image draw descriptor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="169" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1af848153f452f8d0d15ebc86be0b56f22" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_draw_ctx_t::layer_destroy) (struct _lv_draw_ctx_t *draw_ctx, lv_draw_layer_ctx_t *layer_ctx)</definition>
+        <argsstring>)(struct _lv_draw_ctx_t *draw_ctx, lv_draw_layer_ctx_t *layer_ctx)</argsstring>
+        <name>layer_destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy a layer context. The original buffer and area data of the <computeroutput>draw_ctx</computeroutput> will be restored and the <computeroutput>layer_ctx</computeroutput> itself will be freed automatically. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current draw context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a layer context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="178" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1aee6f31576615903a994bac998e7af100" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _lv_draw_ctx_t::layer_instance_size</definition>
+        <argsstring></argsstring>
+        <name>layer_instance_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of a layer context in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="183" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__ctx__t_1a19c64999fa8d15a9e4c851eaab0ae431" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_draw_ctx_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="186" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_lv_draw_layer_ctx_t</label>
+        <link refid="struct__lv__draw__layer__ctx__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>area_act</edgelabel>
+          <edgelabel>area_full</edgelabel>
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_lv_draw_ctx_t</label>
+        <link refid="struct__lv__draw__ctx__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>layer_init</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" line="59" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw.h" bodystart="59" bodyend="189"/>
+    <listofallmembers>
+      <member refid="struct__lv__draw__ctx__t_1a90225ccbb947ba8d39a103767a1178b9" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>buf</name></member>
+      <member refid="struct__lv__draw__ctx__t_1ac28b2c5007ad8dfca640e76c0890b16c" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>buf_area</name></member>
+      <member refid="struct__lv__draw__ctx__t_1af1ff9f8d9d4d0b8d224bebf68087dc6b" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>buffer_copy</name></member>
+      <member refid="struct__lv__draw__ctx__t_1ae15cb5a04c4b2d9a37e3f4d50c0fa773" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>clip_area</name></member>
+      <member refid="struct__lv__draw__ctx__t_1ac59ca4ed564ef5c55b6d54d0dc4b9cc7" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_arc</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a1d647c216a656341f42ba0337422ac64" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_bg</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a7d7079118ba489e173f4629d9bd8c228" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_img</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a2dc46300805b3ccf3b47b794ef7c5587" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_img_decoded</name></member>
+      <member refid="struct__lv__draw__ctx__t_1afa35293b75c2629efbe58ab5055e5e58" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_letter</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a7aeca833918db90492a832c96aeb2b5b" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_line</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a0cfed0345c6ef1244e6d8a47f0294c0d" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_polygon</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a56c745ea551ee7f699f2acc4dc261ef8" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_rect</name></member>
+      <member refid="struct__lv__draw__ctx__t_1aa20419b1b6725fc45b276702c4fdfa1f" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>draw_transform</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a04a921173a2b4d6ae96cfb711d17031e" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>init_buf</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a27f124886e64c3f98d4abc38a556c638" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>layer_adjust</name></member>
+      <member refid="struct__lv__draw__ctx__t_1aff67c913669483854453161ee65c7c1c" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>layer_blend</name></member>
+      <member refid="struct__lv__draw__ctx__t_1af848153f452f8d0d15ebc86be0b56f22" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>layer_destroy</name></member>
+      <member refid="struct__lv__draw__ctx__t_1ac3e6b18f9b78b060bab7d579acd70542" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>layer_init</name></member>
+      <member refid="struct__lv__draw__ctx__t_1aee6f31576615903a994bac998e7af100" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>layer_instance_size</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a19c64999fa8d15a9e4c851eaab0ae431" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>user_data</name></member>
+      <member refid="struct__lv__draw__ctx__t_1a43a0e4bbf6c280dbfee726b8eea55a8d" prot="public" virt="non-virtual"><scope>_lv_draw_ctx_t</scope><name>wait_for_finish</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

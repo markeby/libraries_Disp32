@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__draw__sdl__context__internals__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_draw_sdl_context_internals_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__draw__sdl__context__internals__t_1abe6ae0000f8ee10e9017b3f0e12bcc4b" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__lru__t" kindref="compound">lv_lru_t</ref> *</type>
+        <definition>lv_lru_t* lv_draw_sdl_context_internals_t::texture_cache</definition>
+        <argsstring></argsstring>
+        <name>texture_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" line="40" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__context__internals__t_1a4abfe237d330ac023777ee2635b3f99b" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* lv_draw_sdl_context_internals_t::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" line="41" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__context__internals__t_1a871413cf12e103e277ee72b7ca96a100" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* lv_draw_sdl_context_internals_t::composition</definition>
+        <argsstring></argsstring>
+        <name>composition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" line="42" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__context__internals__t_1a033b1c9fd6b6c99a4732a215c84237e5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lv_draw_sdl_context_internals_t::composition_cached</definition>
+        <argsstring></argsstring>
+        <name>composition_cached</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" line="43" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__context__internals__t_1a27e0bf8cda21be2f4614c9ecd2f0f6a2" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* lv_draw_sdl_context_internals_t::target_backup</definition>
+        <argsstring></argsstring>
+        <name>target_backup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" line="44" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sdl__context__internals__t_1a4754c381dfecec9f608a8071dbb6a4a1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_draw_sdl_context_internals_t::transform_count</definition>
+        <argsstring></argsstring>
+        <name>transform_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" line="45" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lv_lru_t</label>
+        <link refid="structlv__lru__t"/>
+      </node>
+      <node id="1">
+        <label>lv_draw_sdl_context_internals_t</label>
+        <link refid="structlv__draw__sdl__context__internals__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>texture_cache</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" line="33" column="46" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_priv.h" bodystart="33" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structlv__draw__sdl__context__internals__t_1a871413cf12e103e277ee72b7ca96a100" prot="public" virt="non-virtual"><scope>lv_draw_sdl_context_internals_t</scope><name>composition</name></member>
+      <member refid="structlv__draw__sdl__context__internals__t_1a033b1c9fd6b6c99a4732a215c84237e5" prot="public" virt="non-virtual"><scope>lv_draw_sdl_context_internals_t</scope><name>composition_cached</name></member>
+      <member refid="structlv__draw__sdl__context__internals__t_1a4abfe237d330ac023777ee2635b3f99b" prot="public" virt="non-virtual"><scope>lv_draw_sdl_context_internals_t</scope><name>mask</name></member>
+      <member refid="structlv__draw__sdl__context__internals__t_1a27e0bf8cda21be2f4614c9ecd2f0f6a2" prot="public" virt="non-virtual"><scope>lv_draw_sdl_context_internals_t</scope><name>target_backup</name></member>
+      <member refid="structlv__draw__sdl__context__internals__t_1abe6ae0000f8ee10e9017b3f0e12bcc4b" prot="public" virt="non-virtual"><scope>lv_draw_sdl_context_internals_t</scope><name>texture_cache</name></member>
+      <member refid="structlv__draw__sdl__context__internals__t_1a4754c381dfecec9f608a8071dbb6a4a1" prot="public" virt="non-virtual"><scope>lv_draw_sdl_context_internals_t</scope><name>transform_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

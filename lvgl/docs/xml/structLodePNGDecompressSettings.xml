@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structLodePNGDecompressSettings" kind="struct" language="C++" prot="public">
+    <compoundname>LodePNGDecompressSettings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLodePNGDecompressSettings_1afab4b919650b51b4d2f175a60ed6c580" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGDecompressSettings::ignore_adler32</definition>
+        <argsstring></argsstring>
+        <name>ignore_adler32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="272" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecompressSettings_1a0bdb19d05ae04b4fce7ed8c72463ab57" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGDecompressSettings::ignore_nlen</definition>
+        <argsstring></argsstring>
+        <name>ignore_nlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="273" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecompressSettings_1a44a3616151a81422c237a5334752299c" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t LodePNGDecompressSettings::max_output_size</definition>
+        <argsstring></argsstring>
+        <name>max_output_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="280" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecompressSettings_1a9dd432e46330dbd2ce3ef1929c64337d" prot="public" static="no" mutable="no">
+        <type>unsigned(*</type>
+        <definition>unsigned(* LodePNGDecompressSettings::custom_zlib) (unsigned char **, size_t *, const unsigned char *, size_t, const LodePNGDecompressSettings *)</definition>
+        <argsstring>)(unsigned char **, size_t *, const unsigned char *, size_t, const LodePNGDecompressSettings *)</argsstring>
+        <name>custom_zlib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="284" column="3" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecompressSettings_1a023aa5946c99934d40280850a4d8b204" prot="public" static="no" mutable="no">
+        <type>unsigned(*</type>
+        <definition>unsigned(* LodePNGDecompressSettings::custom_inflate) (unsigned char **, size_t *, const unsigned char *, size_t, const LodePNGDecompressSettings *)</definition>
+        <argsstring>)(unsigned char **, size_t *, const unsigned char *, size_t, const LodePNGDecompressSettings *)</argsstring>
+        <name>custom_inflate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="290" column="3" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGDecompressSettings_1a66e3608b541c64bb275c0ac1a80c3ec6" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* LodePNGDecompressSettings::custom_context</definition>
+        <argsstring></argsstring>
+        <name>custom_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="294" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="270" column="32" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="270" bodyend="295"/>
+    <listofallmembers>
+      <member refid="structLodePNGDecompressSettings_1a66e3608b541c64bb275c0ac1a80c3ec6" prot="public" virt="non-virtual"><scope>LodePNGDecompressSettings</scope><name>custom_context</name></member>
+      <member refid="structLodePNGDecompressSettings_1a023aa5946c99934d40280850a4d8b204" prot="public" virt="non-virtual"><scope>LodePNGDecompressSettings</scope><name>custom_inflate</name></member>
+      <member refid="structLodePNGDecompressSettings_1a9dd432e46330dbd2ce3ef1929c64337d" prot="public" virt="non-virtual"><scope>LodePNGDecompressSettings</scope><name>custom_zlib</name></member>
+      <member refid="structLodePNGDecompressSettings_1afab4b919650b51b4d2f175a60ed6c580" prot="public" virt="non-virtual"><scope>LodePNGDecompressSettings</scope><name>ignore_adler32</name></member>
+      <member refid="structLodePNGDecompressSettings_1a0bdb19d05ae04b4fce7ed8c72463ab57" prot="public" virt="non-virtual"><scope>LodePNGDecompressSettings</scope><name>ignore_nlen</name></member>
+      <member refid="structLodePNGDecompressSettings_1a44a3616151a81422c237a5334752299c" prot="public" virt="non-virtual"><scope>LodePNGDecompressSettings</scope><name>max_output_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

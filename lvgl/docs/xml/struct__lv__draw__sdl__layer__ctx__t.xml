@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__draw__sdl__layer__ctx__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_draw_sdl_layer_ctx_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__draw__sdl__layer__ctx__t_1ae9e0a713d3e8d8ebea476e935193d7fc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">lv_draw_layer_ctx_t</ref></type>
+        <definition>lv_draw_layer_ctx_t _lv_draw_sdl_layer_ctx_t::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" line="32" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__sdl__layer__ctx__t_1a2a6e55a2385ca9d54e2b8d75b9682f22" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* _lv_draw_sdl_layer_ctx_t::orig_target</definition>
+        <argsstring></argsstring>
+        <name>orig_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" line="34" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__sdl__layer__ctx__t_1a6eee1eb886f1337349ce0c90cba15ad9" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* _lv_draw_sdl_layer_ctx_t::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" line="35" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__sdl__layer__ctx__t_1a43c39e26045ce87c9ca8bc942a9bd9f4" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect _lv_draw_sdl_layer_ctx_t::target_rect</definition>
+        <argsstring></argsstring>
+        <name>target_rect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" line="36" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__sdl__layer__ctx__t_1adda6725435e97b87b705da2be257fd3e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _lv_draw_sdl_layer_ctx_t::target_in_cache</definition>
+        <argsstring></argsstring>
+        <name>target_in_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" line="37" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__sdl__layer__ctx__t_1ab37f765e549923c70e7e4676b004d821" prot="public" static="no" mutable="no">
+        <type>lv_draw_layer_flags_t</type>
+        <definition>lv_draw_layer_flags_t _lv_draw_sdl_layer_ctx_t::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" line="38" column="27" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_lv_draw_layer_ctx_t</label>
+        <link refid="struct__lv__draw__layer__ctx__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>area_act</edgelabel>
+          <edgelabel>area_full</edgelabel>
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="1">
+        <label>_lv_draw_sdl_layer_ctx_t</label>
+        <link refid="struct__lv__draw__sdl__layer__ctx__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" line="25" column="39" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/lv_draw_sdl_layer.h" bodystart="25" bodyend="33"/>
+    <listofallmembers>
+      <member refid="struct__lv__draw__sdl__layer__ctx__t_1ae9e0a713d3e8d8ebea476e935193d7fc" prot="public" virt="non-virtual"><scope>_lv_draw_sdl_layer_ctx_t</scope><name>base</name></member>
+      <member refid="struct__lv__draw__sdl__layer__ctx__t_1ab37f765e549923c70e7e4676b004d821" prot="public" virt="non-virtual"><scope>_lv_draw_sdl_layer_ctx_t</scope><name>flags</name></member>
+      <member refid="struct__lv__draw__sdl__layer__ctx__t_1a2a6e55a2385ca9d54e2b8d75b9682f22" prot="public" virt="non-virtual"><scope>_lv_draw_sdl_layer_ctx_t</scope><name>orig_target</name></member>
+      <member refid="struct__lv__draw__sdl__layer__ctx__t_1a6eee1eb886f1337349ce0c90cba15ad9" prot="public" virt="non-virtual"><scope>_lv_draw_sdl_layer_ctx_t</scope><name>target</name></member>
+      <member refid="struct__lv__draw__sdl__layer__ctx__t_1adda6725435e97b87b705da2be257fd3e" prot="public" virt="non-virtual"><scope>_lv_draw_sdl_layer_ctx_t</scope><name>target_in_cache</name></member>
+      <member refid="struct__lv__draw__sdl__layer__ctx__t_1a43c39e26045ce87c9ca8bc942a9bd9f4" prot="public" virt="non-virtual"><scope>_lv_draw_sdl_layer_ctx_t</scope><name>target_rect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__draw__sw__layer__ctx__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_draw_sw_layer_ctx_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__draw__sw__layer__ctx__t_1adf91f76e88eceb0b28357b353493b387" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__draw__layer__ctx__t" kindref="compound">lv_draw_layer_ctx_t</ref></type>
+        <definition>lv_draw_layer_ctx_t lv_draw_sw_layer_ctx_t::base_draw</definition>
+        <argsstring></argsstring>
+        <name>base_draw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw.h" line="40" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sw__layer__ctx__t_1a9d21df4494f12f19d8a4aac33df3a9db" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_draw_sw_layer_ctx_t::buf_size_bytes</definition>
+        <argsstring></argsstring>
+        <name>buf_size_bytes</name>
+        <bitfield> 31</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw.h" line="42" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__draw__sw__layer__ctx__t_1aafeeab001dec6bf6eeefdc27103a60c4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_draw_sw_layer_ctx_t::has_alpha</definition>
+        <argsstring></argsstring>
+        <name>has_alpha</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw.h" line="43" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_lv_draw_layer_ctx_t</label>
+        <link refid="struct__lv__draw__layer__ctx__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>area_act</edgelabel>
+          <edgelabel>area_full</edgelabel>
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="1">
+        <label>lv_draw_sw_layer_ctx_t</label>
+        <link refid="structlv__draw__sw__layer__ctx__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>base_draw</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw.h" line="39" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/lv_draw_sw.h" bodystart="39" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structlv__draw__sw__layer__ctx__t_1adf91f76e88eceb0b28357b353493b387" prot="public" virt="non-virtual"><scope>lv_draw_sw_layer_ctx_t</scope><name>base_draw</name></member>
+      <member refid="structlv__draw__sw__layer__ctx__t_1a9d21df4494f12f19d8a4aac33df3a9db" prot="public" virt="non-virtual"><scope>lv_draw_sw_layer_ctx_t</scope><name>buf_size_bytes</name></member>
+      <member refid="structlv__draw__sw__layer__ctx__t_1aafeeab001dec6bf6eeefdc27103a60c4" prot="public" virt="non-virtual"><scope>lv_draw_sw_layer_ctx_t</scope><name>has_alpha</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacelodepng" kind="namespace" language="C++">
+    <compoundname>lodepng</compoundname>
+    <innerclass refid="classlodepng_1_1State" prot="public">lodepng::State</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lodepng_8h_1a509523f546fac384daa5b9b4d19af4a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::decode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, unsigned &amp;w, unsigned &amp;h, const unsigned char *in, size_t insize, LodePNGColorType colortype=LCT_RGBA, unsigned bitdepth=8)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>insize</declname>
+        </param>
+        <param>
+          <type>LodePNGColorType</type>
+          <declname>colortype</declname>
+          <defval>LCT_RGBA</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bitdepth</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="218" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="218" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1adda65729838bc621fe277d6a8dd2b1fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::decode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, unsigned &amp;w, unsigned &amp;h, const std::vector&lt; unsigned char &gt; &amp;in, LodePNGColorType colortype=LCT_RGBA, unsigned bitdepth=8)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>LodePNGColorType</type>
+          <declname>colortype</declname>
+          <defval>LCT_RGBA</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bitdepth</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="221" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="221" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1afcb05a7cc5ad6d8161997e3006d21adf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::decode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, unsigned &amp;w, unsigned &amp;h, const std::string &amp;filename, LodePNGColorType colortype=LCT_RGBA, unsigned bitdepth=8)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>LodePNGColorType</type>
+          <declname>colortype</declname>
+          <defval>LCT_RGBA</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bitdepth</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="229" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="229" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1acceeebb8c78e128dad8bd3bc0721bb3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::encode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, const unsigned char *in, unsigned w, unsigned h, LodePNGColorType colortype=LCT_RGBA, unsigned bitdepth=8)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>LodePNGColorType</type>
+          <declname>colortype</declname>
+          <defval>LCT_RGBA</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bitdepth</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="238" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="238" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1ae676b907b46ee5cd2b242be6439df0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::encode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, const std::vector&lt; unsigned char &gt; &amp;in, unsigned w, unsigned h, LodePNGColorType colortype=LCT_RGBA, unsigned bitdepth=8)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>LodePNGColorType</type>
+          <declname>colortype</declname>
+          <defval>LCT_RGBA</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bitdepth</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="241" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="241" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a2718c0248005d71dbd52d741574ee36d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::encode</definition>
+        <argsstring>(const std::string &amp;filename, const unsigned char *in, unsigned w, unsigned h, LodePNGColorType colortype=LCT_RGBA, unsigned bitdepth=8)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>LodePNGColorType</type>
+          <declname>colortype</declname>
+          <defval>LCT_RGBA</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bitdepth</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="250" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="250" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a007c7f32cb78fb32ac7115615980a2b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::encode</definition>
+        <argsstring>(const std::string &amp;filename, const std::vector&lt; unsigned char &gt; &amp;in, unsigned w, unsigned h, LodePNGColorType colortype=LCT_RGBA, unsigned bitdepth=8)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>LodePNGColorType</type>
+          <declname>colortype</declname>
+          <defval>LCT_RGBA</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bitdepth</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="253" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="253" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a3d1378752fc66639d98cd1e8b943c6a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::decode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, unsigned &amp;w, unsigned &amp;h, State &amp;state, const unsigned char *in, size_t insize)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="classlodepng_1_1State" kindref="compound">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>insize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1009" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1009" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a3f5666a8e1899b597974288f450c5948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::decode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, unsigned &amp;w, unsigned &amp;h, State &amp;state, const std::vector&lt; unsigned char &gt; &amp;in)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="classlodepng_1_1State" kindref="compound">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1012" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1012" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a5aa6a5722c780e13a30617a1d3064444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::encode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, const unsigned char *in, unsigned w, unsigned h, State &amp;state)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="classlodepng_1_1State" kindref="compound">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1019" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1019" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a5f6a7e6a4d2081c1e3800e1c66f28517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::encode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, const std::vector&lt; unsigned char &gt; &amp;in, unsigned w, unsigned h, State &amp;state)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="classlodepng_1_1State" kindref="compound">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1022" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1022" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1aa49f2bce7d3bf7a812eb25f5ec6c8f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::load_file</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;buffer, const std::string &amp;filename)</argsstring>
+        <name>load_file</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1032" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1032" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1abb2867bd7328c216b8435084a14b0be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::save_file</definition>
+        <argsstring>(const std::vector&lt; unsigned char &gt; &amp;buffer, const std::string &amp;filename)</argsstring>
+        <name>save_file</name>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1038" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1038" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a27cfd4d40c170ca43a844384de8e14cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::decompress</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, const unsigned char *in, size_t insize, const LodePNGDecompressSettings &amp;settings=lodepng_default_decompress_settings)</argsstring>
+        <name>decompress</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>insize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structLodePNGDecompressSettings" kindref="compound">LodePNGDecompressSettings</ref> &amp;</type>
+          <declname>settings</declname>
+          <defval>lodepng_default_decompress_settings</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1045" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1045" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a17eb47da29dcaf15e8f5a30f6a0a800a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::decompress</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, const std::vector&lt; unsigned char &gt; &amp;in, const LodePNGDecompressSettings &amp;settings=lodepng_default_decompress_settings)</argsstring>
+        <name>decompress</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structLodePNGDecompressSettings" kindref="compound">LodePNGDecompressSettings</ref> &amp;</type>
+          <declname>settings</declname>
+          <defval>lodepng_default_decompress_settings</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1049" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1049" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a6fb8754e06566e13ba2642b72f0cc634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::compress</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, const unsigned char *in, size_t insize, const LodePNGCompressSettings &amp;settings=lodepng_default_compress_settings)</argsstring>
+        <name>compress</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>insize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structLodePNGCompressSettings" kindref="compound">LodePNGCompressSettings</ref> &amp;</type>
+          <declname>settings</declname>
+          <defval>lodepng_default_compress_settings</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1055" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1055" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lodepng_8h_1a16058ce598914b317d73f63443dc03b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned lodepng::compress</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;out, const std::vector&lt; unsigned char &gt; &amp;in, const LodePNGCompressSettings &amp;settings=lodepng_default_compress_settings)</argsstring>
+        <name>compress</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structLodePNGCompressSettings" kindref="compound">LodePNGCompressSettings</ref> &amp;</type>
+          <declname>settings</declname>
+          <defval>lodepng_default_compress_settings</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1059" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" declline="1059" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="214" column="17"/>
+  </compounddef>
+</doxygen>

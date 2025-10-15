@@ -1,0 +1,648 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__obj__tree_8h" kind="file" language="C++">
+    <compoundname>lv_obj_tree.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__obj__tree_8h_1ade3b8b8706f4ae3264d8ce741135e159" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_obj_tree_walk_res_t</name>
+        <enumvalue id="lv__obj__tree_8h_1ade3b8b8706f4ae3264d8ce741135e159a199951835ae79367dc67bab483fcca8b" prot="public">
+          <name>LV_OBJ_TREE_WALK_NEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__tree_8h_1ade3b8b8706f4ae3264d8ce741135e159af653c8c94068f0424a81423107c1e445" prot="public">
+          <name>LV_OBJ_TREE_WALK_SKIP_CHILDREN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__tree_8h_1ade3b8b8706f4ae3264d8ce741135e159afb1122a5bf7892aee011a407a540c676" prot="public">
+          <name>LV_OBJ_TREE_WALK_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="30" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__obj__tree_8h_1ad704dc1cca55014a50b8216240cfbc96" prot="public" static="no">
+        <type>lv_obj_tree_walk_res_t(*</type>
+        <definition>typedef lv_obj_tree_walk_res_t(* lv_obj_tree_walk_cb_t) (struct _lv_obj_t *, void *)</definition>
+        <argsstring>)(struct _lv_obj_t *, void *)</argsstring>
+        <name>lv_obj_tree_walk_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="36" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__obj__tree_8h_1acc42ae5706d6f38929e02ac8fb252e3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_del</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_del</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete an object and all of its children. Also remove the objects from their group and remove all animations (if any). Send <computeroutput>LV_EVENT_DELETED</computeroutput> to deleted objects. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="48" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1af6806d33da746f1f84d1e0dcb57fb5e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_clean</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_clean</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete all children of an object. Also remove the objects from their group and remove all animations (if any). Send <computeroutput>LV_EVENT_DELETED</computeroutput> to deleted objects. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="56" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="56" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1a57ae00997cdc472ff4d9a17f0358b5ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_del_delayed</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t delay_ms)</argsstring>
+        <name>lv_obj_del_delayed</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete an object after some delay <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time to wait before delete in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="63" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1aea6f2d4b966b06c06658c12aac2fa254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_del_anim_ready_cb</definition>
+        <argsstring>(lv_anim_t *a)</argsstring>
+        <name>lv_obj_del_anim_ready_cb</name>
+        <param>
+          <type><ref refid="lv__anim_8h_1a94df93c022dc57ee917b4757e50ebe22" kindref="member">lv_anim_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A function to be easily used in animation ready callback to delete an object when the animation is ready <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="69" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1a0080923cccf80af7b1756b0e418db547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_del_async</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_del_async</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function for asynchronously deleting objects. Useful for cases where you can&apos;t delete an object directly in an <computeroutput>LV_EVENT_DELETE</computeroutput> handler (i.e. parent). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object to delete </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="lv__async_8h_1aee44e660e597215583d71f76f9ce2564" kindref="member">lv_async_call</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="77" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="77" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1aa82c43e7a34925013855301d476e9c37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_parent</definition>
+        <argsstring>(struct _lv_obj_t *obj, struct _lv_obj_t *parent)</argsstring>
+        <name>lv_obj_set_parent</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the parent of an object. The relative coordinates will be kept.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object whose parent needs to be changed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new parent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="85" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="85" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1a36c297ea117c384778fc25e72467c6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_swap</definition>
+        <argsstring>(struct _lv_obj_t *obj1, struct _lv_obj_t *obj2)</argsstring>
+        <name>lv_obj_swap</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj1</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Swap the positions of two objects. When used in listboxes, it can be used to sort the listbox items. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the first object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the second object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="93" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="93" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1aa44c67732da59bf2e02c23e5af4baa3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_move_to_index</definition>
+        <argsstring>(struct _lv_obj_t *obj, int32_t index)</argsstring>
+        <name>lv_obj_move_to_index</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>moves the object to the given index in its parent. When used in listboxes, it can be used to sort the listbox items. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the object to be moved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new index in parent. -1 to count from the back </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>to move to the background: lv_obj_move_to_index(obj, 0) </para>
+</simplesect>
+<simplesect kind="note"><para>to move forward (up): lv_obj_move_to_index(obj, lv_obj_get_index(obj) - 1) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="103" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="103" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1af5162494518339030fb9ed30cf30578b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+        <definition>struct _lv_obj_t* lv_obj_get_screen</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_screen</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the screen of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the object&apos;s screen </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="110" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="110" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1a1e1eceb8ba702049aab21cd487a0b38e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__hal__disp_8h_1a38e817df2a5f77f36d3fe4975cf58129" kindref="member">lv_disp_t</ref> *</type>
+        <definition>lv_disp_t* lv_obj_get_disp</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_disp</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the display of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the object&apos;s display </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="117" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="117" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1aa05bead3dfbe52c5c9dfab9da05ec432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+        <definition>struct _lv_obj_t* lv_obj_get_parent</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_parent</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the parent of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parent of the object. (NULL if <computeroutput>obj</computeroutput> was a screen) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="124" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="124" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1a0efa9b2f4ec09f828362cb5f5ae31b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+        <definition>struct _lv_obj_t* lv_obj_get_child</definition>
+        <argsstring>(const struct _lv_obj_t *obj, int32_t id)</argsstring>
+        <name>lv_obj_get_child</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the child of an object by the child&apos;s index. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object whose child should be get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the child. 0: the oldest (firstly created) child 1: the second oldest child count-1: the youngest -1: the youngest -2: the second youngest </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the child or NULL if the index was invalid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="137" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="137" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1ab90a8d473553c32ba4c63146cd853725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_obj_get_child_cnt</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_child_cnt</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of children <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of children </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="144" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="144" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1a29a6bf149c29cedc42b6c7f884fbf7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_obj_get_index</definition>
+        <argsstring>(const struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_index</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of a child. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the child index of the object. E.g. 0: the oldest (firstly created child) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="152" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="152" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__tree_8h_1ad06bef5b3a86e7a076aabe4577408157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_tree_walk</definition>
+        <argsstring>(struct _lv_obj_t *start_obj, lv_obj_tree_walk_cb_t cb, void *user_data)</argsstring>
+        <name>lv_obj_tree_walk</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>start_obj</declname>
+        </param>
+        <param>
+          <type>lv_obj_tree_walk_cb_t</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate through all children of any object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start integrating from this object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>call this callback on the objects </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to any user related data (will be passed to <computeroutput>cb</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" line="160" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h" declline="160" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_OBJ_TREE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_OBJ_TREE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__class__t" kindref="compound">_lv_obj_class_t</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_OBJ_TREE_WALK_NEXT,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_OBJ_TREE_WALK_SKIP_CHILDREN,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_OBJ_TREE_WALK_END,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/>lv_obj_tree_walk_res_t;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>lv_obj_tree_walk_res_t<sp/>(*lv_obj_tree_walk_cb_t)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_del(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_clean(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_del_delayed(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>delay_ms);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_del_anim_ready_cb(<ref refid="struct__lv__anim__t" kindref="compound">lv_anim_t</ref><sp/>*<sp/>a);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_del_async(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_parent(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_swap(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj1,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj2);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_move_to_index(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>int32_t<sp/>index);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>lv_obj_get_screen(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">lv_disp_t</ref><sp/>*<sp/>lv_obj_get_disp(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>lv_obj_get_parent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>lv_obj_get_child(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>int32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">uint32_t<sp/>lv_obj_get_child_cnt(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">uint32_t<sp/>lv_obj_get_index(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_tree_walk(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>start_obj,<sp/>lv_obj_tree_walk_cb_t<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_OBJ_TREE_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_tree.h"/>
+  </compounddef>
+</doxygen>

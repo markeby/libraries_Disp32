@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__draw__label__hint__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_draw_label_hint_t</compoundname>
+    <includes refid="lv__draw__label_8h" local="no">lv_draw_label.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__draw__label__hint__t_1acd3a32f2e9639910a0a4155d2660c854" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_draw_label_hint_t::line_start</definition>
+        <argsstring></argsstring>
+        <name>line_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the line at <computeroutput>y</computeroutput> coordinate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_label.h" line="56" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_label.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__label__hint__t_1add6447c8339e284f4783948628a8207b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_draw_label_hint_t::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Give the <computeroutput>y</computeroutput> coordinate of the first letter at <computeroutput>line start</computeroutput> index. Relative to the label&apos;s coordinates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_label.h" line="59" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_label.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__draw__label__hint__t_1ac16d6b08482dbf253b54c0e76ed84e66" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_draw_label_hint_t::coord_y</definition>
+        <argsstring></argsstring>
+        <name>coord_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The &apos;y1&apos; coordinate of the label when the hint was saved. Used to invalidate the hint if the label has moved too much. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_label.h" line="63" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_label.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Store some info to speed up drawing of very large texts It takes a lot of time to get the first visible character because all the previous characters needs to be checked to calculate the positions. This structure stores an earlier (e.g. at -1000 px) coordinate and the index of that line. Therefore the calculations can start from here. </para>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_label.h" line="54" column="36" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_draw_label.h" bodystart="54" bodyend="64"/>
+    <listofallmembers>
+      <member refid="struct__lv__draw__label__hint__t_1ac16d6b08482dbf253b54c0e76ed84e66" prot="public" virt="non-virtual"><scope>_lv_draw_label_hint_t</scope><name>coord_y</name></member>
+      <member refid="struct__lv__draw__label__hint__t_1acd3a32f2e9639910a0a4155d2660c854" prot="public" virt="non-virtual"><scope>_lv_draw_label_hint_t</scope><name>line_start</name></member>
+      <member refid="struct__lv__draw__label__hint__t_1add6447c8339e284f4783948628a8207b" prot="public" virt="non-virtual"><scope>_lv_draw_label_hint_t</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

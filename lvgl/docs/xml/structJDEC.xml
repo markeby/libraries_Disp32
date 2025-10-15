@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structJDEC" kind="struct" language="C++" prot="public">
+    <compoundname>JDEC</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structJDEC_1a3c27604dbd7617ab305ea82734f43757" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t JDEC::dctr</definition>
+        <argsstring></argsstring>
+        <name>dctr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="49" column="8" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a7988586c73b67a211827455af57a93f7" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* JDEC::dptr</definition>
+        <argsstring></argsstring>
+        <name>dptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="50" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a97bfd2603e6063ca254871484bd3ebb1" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* JDEC::inbuf</definition>
+        <argsstring></argsstring>
+        <name>inbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="51" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1ae607c98e5b6cc363defcd56cec145a42" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t JDEC::dbit</definition>
+        <argsstring></argsstring>
+        <name>dbit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="52" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a7050b2be94e3ab6720fabc909fc994d3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t JDEC::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="53" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a02d762ca3b123ebfbdd6532ad8a53606" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t JDEC::msx</definition>
+        <argsstring></argsstring>
+        <name>msx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="54" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a530480b57bf75b1f6a148b51bc2d7469" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t JDEC::msy</definition>
+        <argsstring></argsstring>
+        <name>msy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="54" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1aa36003a6a978e252acca663b43d647df" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t JDEC::qtid[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>qtid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="55" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a8ef3fb8fa62e31cd3f50d3a689b5035d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t JDEC::ncomp</definition>
+        <argsstring></argsstring>
+        <name>ncomp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="56" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a8a9fb522793f7b80c73d2673b631705e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t JDEC::dcv[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>dcv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="57" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a635abba52eaf5243c5eda66e1dca4612" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t JDEC::nrst</definition>
+        <argsstring></argsstring>
+        <name>nrst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="58" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a4b0f533fee4250d294aa6a03560c730a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t JDEC::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="59" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a750ed11fc3c4938b76d1174c44558b02" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t JDEC::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="59" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1affe2f1d7e50c84cecc7f62fdfbc85876" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* JDEC::huffbits[2][2]</definition>
+        <argsstring>[2][2]</argsstring>
+        <name>huffbits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="60" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a4bf428b4bd44ade383c92251f4491f8d" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* JDEC::huffcode[2][2]</definition>
+        <argsstring>[2][2]</argsstring>
+        <name>huffcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="61" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a36ea7c3aeac221c075473783bda7f65b" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* JDEC::huffdata[2][2]</definition>
+        <argsstring>[2][2]</argsstring>
+        <name>huffdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="62" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1afa01329af10f59438f51541d7d122e28" prot="public" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* JDEC::qttbl[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>qttbl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="63" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1ad48450f43764648dd420b553509753f5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t JDEC::wreg</definition>
+        <argsstring></argsstring>
+        <name>wreg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="65" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1ab7958a5cca2183a911ef3c71d72b0557" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t JDEC::marker</definition>
+        <argsstring></argsstring>
+        <name>marker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="66" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1aadb49b1c60fcb6c9a280d65b3932847b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t JDEC::longofs[2][2]</definition>
+        <argsstring>[2][2]</argsstring>
+        <name>longofs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="68" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a52c28117766a85275ebcb3506857bc5c" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* JDEC::hufflut_ac[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>hufflut_ac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="69" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a736af55630477c3956f7e710d0fc943f" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* JDEC::hufflut_dc[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>hufflut_dc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="70" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1ab525cf85c59d93effc145ab8e131d6ba" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* JDEC::workbuf</definition>
+        <argsstring></argsstring>
+        <name>workbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="73" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a8a87813ccbc57944ca96df70b6f09b04" prot="public" static="no" mutable="no">
+        <type>jd_yuv_t *</type>
+        <definition>jd_yuv_t* JDEC::mcubuf</definition>
+        <argsstring></argsstring>
+        <name>mcubuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="74" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1afef637551a466bdca38b7e791c182a45" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* JDEC::pool</definition>
+        <argsstring></argsstring>
+        <name>pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="75" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1aded6a9f9d03dfc5205ef9c3289d05780" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t JDEC::sz_pool</definition>
+        <argsstring></argsstring>
+        <name>sz_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="76" column="8" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a415638472408132a37dda3e8ae50ba9c" prot="public" static="no" mutable="no">
+        <type>size_t(*</type>
+        <definition>size_t(* JDEC::infunc) (JDEC *, uint8_t *, size_t)</definition>
+        <argsstring>)(JDEC *, uint8_t *, size_t)</argsstring>
+        <name>infunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="77" column="1" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structJDEC_1a4af6680e796661e8564cd950c922af0a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* JDEC::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="78" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" line="48" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgd.h" bodystart="48" bodyend="79"/>
+    <listofallmembers>
+      <member refid="structJDEC_1ae607c98e5b6cc363defcd56cec145a42" prot="public" virt="non-virtual"><scope>JDEC</scope><name>dbit</name></member>
+      <member refid="structJDEC_1a3c27604dbd7617ab305ea82734f43757" prot="public" virt="non-virtual"><scope>JDEC</scope><name>dctr</name></member>
+      <member refid="structJDEC_1a8a9fb522793f7b80c73d2673b631705e" prot="public" virt="non-virtual"><scope>JDEC</scope><name>dcv</name></member>
+      <member refid="structJDEC_1a4af6680e796661e8564cd950c922af0a" prot="public" virt="non-virtual"><scope>JDEC</scope><name>device</name></member>
+      <member refid="structJDEC_1a7988586c73b67a211827455af57a93f7" prot="public" virt="non-virtual"><scope>JDEC</scope><name>dptr</name></member>
+      <member refid="structJDEC_1a750ed11fc3c4938b76d1174c44558b02" prot="public" virt="non-virtual"><scope>JDEC</scope><name>height</name></member>
+      <member refid="structJDEC_1affe2f1d7e50c84cecc7f62fdfbc85876" prot="public" virt="non-virtual"><scope>JDEC</scope><name>huffbits</name></member>
+      <member refid="structJDEC_1a4bf428b4bd44ade383c92251f4491f8d" prot="public" virt="non-virtual"><scope>JDEC</scope><name>huffcode</name></member>
+      <member refid="structJDEC_1a36ea7c3aeac221c075473783bda7f65b" prot="public" virt="non-virtual"><scope>JDEC</scope><name>huffdata</name></member>
+      <member refid="structJDEC_1a52c28117766a85275ebcb3506857bc5c" prot="public" virt="non-virtual"><scope>JDEC</scope><name>hufflut_ac</name></member>
+      <member refid="structJDEC_1a736af55630477c3956f7e710d0fc943f" prot="public" virt="non-virtual"><scope>JDEC</scope><name>hufflut_dc</name></member>
+      <member refid="structJDEC_1a97bfd2603e6063ca254871484bd3ebb1" prot="public" virt="non-virtual"><scope>JDEC</scope><name>inbuf</name></member>
+      <member refid="structJDEC_1a415638472408132a37dda3e8ae50ba9c" prot="public" virt="non-virtual"><scope>JDEC</scope><name>infunc</name></member>
+      <member refid="structJDEC_1aadb49b1c60fcb6c9a280d65b3932847b" prot="public" virt="non-virtual"><scope>JDEC</scope><name>longofs</name></member>
+      <member refid="structJDEC_1ab7958a5cca2183a911ef3c71d72b0557" prot="public" virt="non-virtual"><scope>JDEC</scope><name>marker</name></member>
+      <member refid="structJDEC_1a8a87813ccbc57944ca96df70b6f09b04" prot="public" virt="non-virtual"><scope>JDEC</scope><name>mcubuf</name></member>
+      <member refid="structJDEC_1a02d762ca3b123ebfbdd6532ad8a53606" prot="public" virt="non-virtual"><scope>JDEC</scope><name>msx</name></member>
+      <member refid="structJDEC_1a530480b57bf75b1f6a148b51bc2d7469" prot="public" virt="non-virtual"><scope>JDEC</scope><name>msy</name></member>
+      <member refid="structJDEC_1a8ef3fb8fa62e31cd3f50d3a689b5035d" prot="public" virt="non-virtual"><scope>JDEC</scope><name>ncomp</name></member>
+      <member refid="structJDEC_1a635abba52eaf5243c5eda66e1dca4612" prot="public" virt="non-virtual"><scope>JDEC</scope><name>nrst</name></member>
+      <member refid="structJDEC_1afef637551a466bdca38b7e791c182a45" prot="public" virt="non-virtual"><scope>JDEC</scope><name>pool</name></member>
+      <member refid="structJDEC_1aa36003a6a978e252acca663b43d647df" prot="public" virt="non-virtual"><scope>JDEC</scope><name>qtid</name></member>
+      <member refid="structJDEC_1afa01329af10f59438f51541d7d122e28" prot="public" virt="non-virtual"><scope>JDEC</scope><name>qttbl</name></member>
+      <member refid="structJDEC_1a7050b2be94e3ab6720fabc909fc994d3" prot="public" virt="non-virtual"><scope>JDEC</scope><name>scale</name></member>
+      <member refid="structJDEC_1aded6a9f9d03dfc5205ef9c3289d05780" prot="public" virt="non-virtual"><scope>JDEC</scope><name>sz_pool</name></member>
+      <member refid="structJDEC_1a4b0f533fee4250d294aa6a03560c730a" prot="public" virt="non-virtual"><scope>JDEC</scope><name>width</name></member>
+      <member refid="structJDEC_1ab525cf85c59d93effc145ab8e131d6ba" prot="public" virt="non-virtual"><scope>JDEC</scope><name>workbuf</name></member>
+      <member refid="structJDEC_1ad48450f43764648dd420b553509753f5" prot="public" virt="non-virtual"><scope>JDEC</scope><name>wreg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

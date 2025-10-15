@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__fs__drv__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_fs_drv_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1a1cb5b38d33c75014403bc708c08c15c4" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _lv_fs_drv_t::letter</definition>
+        <argsstring></argsstring>
+        <name>letter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="70" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1a2f1466977df43ca6fc16f62099ce5d73" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t _lv_fs_drv_t::cache_size</definition>
+        <argsstring></argsstring>
+        <name>cache_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="71" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1a1c3a00196857145003768ef69188616f" prot="public" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* _lv_fs_drv_t::ready_cb) (struct _lv_fs_drv_t *drv)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv)</argsstring>
+        <name>ready_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="72" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1aa58338252662469f91b402aacf0a5a6f" prot="public" static="no" mutable="no">
+        <type>void *(*</type>
+        <definition>void*(* _lv_fs_drv_t::open_cb) (struct _lv_fs_drv_t *drv, const char *path, lv_fs_mode_t mode)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, const char *path, lv_fs_mode_t mode)</argsstring>
+        <name>open_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="74" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1a27063e9b51ed4a4dac74b64a33fa9438" prot="public" static="no" mutable="no">
+        <type>lv_fs_res_t(*</type>
+        <definition>lv_fs_res_t(* _lv_fs_drv_t::close_cb) (struct _lv_fs_drv_t *drv, void *file_p)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, void *file_p)</argsstring>
+        <name>close_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="75" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1a4c525cb8651b04b451246c05594c8c37" prot="public" static="no" mutable="no">
+        <type>lv_fs_res_t(*</type>
+        <definition>lv_fs_res_t(* _lv_fs_drv_t::read_cb) (struct _lv_fs_drv_t *drv, void *file_p, void *buf, uint32_t btr, uint32_t *br)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, void *file_p, void *buf, uint32_t btr, uint32_t *br)</argsstring>
+        <name>read_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="76" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1ab117ba33c0378b58ca87ec55f88cc555" prot="public" static="no" mutable="no">
+        <type>lv_fs_res_t(*</type>
+        <definition>lv_fs_res_t(* _lv_fs_drv_t::write_cb) (struct _lv_fs_drv_t *drv, void *file_p, const void *buf, uint32_t btw, uint32_t *bw)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, void *file_p, const void *buf, uint32_t btw, uint32_t *bw)</argsstring>
+        <name>write_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="77" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1ad13356bd1360f45c0e62d0d3d3ca3bb2" prot="public" static="no" mutable="no">
+        <type>lv_fs_res_t(*</type>
+        <definition>lv_fs_res_t(* _lv_fs_drv_t::seek_cb) (struct _lv_fs_drv_t *drv, void *file_p, uint32_t pos, lv_fs_whence_t whence)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, void *file_p, uint32_t pos, lv_fs_whence_t whence)</argsstring>
+        <name>seek_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="78" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1ad11d5b2d3198a1a3f591e282e8c36a35" prot="public" static="no" mutable="no">
+        <type>lv_fs_res_t(*</type>
+        <definition>lv_fs_res_t(* _lv_fs_drv_t::tell_cb) (struct _lv_fs_drv_t *drv, void *file_p, uint32_t *pos_p)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, void *file_p, uint32_t *pos_p)</argsstring>
+        <name>tell_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="79" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1a728a97d53616b3b50b927e3d3ffb1f53" prot="public" static="no" mutable="no">
+        <type>void *(*</type>
+        <definition>void*(* _lv_fs_drv_t::dir_open_cb) (struct _lv_fs_drv_t *drv, const char *path)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, const char *path)</argsstring>
+        <name>dir_open_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="81" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1a203777fa9172ed9331c5540e8eba2aa2" prot="public" static="no" mutable="no">
+        <type>lv_fs_res_t(*</type>
+        <definition>lv_fs_res_t(* _lv_fs_drv_t::dir_read_cb) (struct _lv_fs_drv_t *drv, void *rddir_p, char *fn)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, void *rddir_p, char *fn)</argsstring>
+        <name>dir_read_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="82" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1a630cd3d1cebc5482d94f715838220ca8" prot="public" static="no" mutable="no">
+        <type>lv_fs_res_t(*</type>
+        <definition>lv_fs_res_t(* _lv_fs_drv_t::dir_close_cb) (struct _lv_fs_drv_t *drv, void *rddir_p)</definition>
+        <argsstring>)(struct _lv_fs_drv_t *drv, void *rddir_p)</argsstring>
+        <name>dir_close_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="83" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fs__drv__t_1aca4f4bce7a73bebe1095fac20f7f1bd6" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_fs_drv_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom file user data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="86" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" line="69" column="27" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_fs.h" bodystart="69" bodyend="88"/>
+    <listofallmembers>
+      <member refid="struct__lv__fs__drv__t_1a2f1466977df43ca6fc16f62099ce5d73" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>cache_size</name></member>
+      <member refid="struct__lv__fs__drv__t_1a27063e9b51ed4a4dac74b64a33fa9438" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>close_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1a630cd3d1cebc5482d94f715838220ca8" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>dir_close_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1a728a97d53616b3b50b927e3d3ffb1f53" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>dir_open_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1a203777fa9172ed9331c5540e8eba2aa2" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>dir_read_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1a1cb5b38d33c75014403bc708c08c15c4" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>letter</name></member>
+      <member refid="struct__lv__fs__drv__t_1aa58338252662469f91b402aacf0a5a6f" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>open_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1a4c525cb8651b04b451246c05594c8c37" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>read_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1a1c3a00196857145003768ef69188616f" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>ready_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1ad13356bd1360f45c0e62d0d3d3ca3bb2" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>seek_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1ad11d5b2d3198a1a3f591e282e8c36a35" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>tell_cb</name></member>
+      <member refid="struct__lv__fs__drv__t_1aca4f4bce7a73bebe1095fac20f7f1bd6" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>user_data</name></member>
+      <member refid="struct__lv__fs__drv__t_1ab117ba33c0378b58ca87ec55f88cc555" prot="public" virt="non-virtual"><scope>_lv_fs_drv_t</scope><name>write_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_7063fd93ea6f3b676d13b3dd9d7a9122" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/music</compoundname>
+    <innerdir refid="dir_70df86c4bbc9fa804ee483c04dcbb9ac">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/music/assets</innerdir>
+    <innerfile refid="lv__demo__music_8h">lv_demo_music.h</innerfile>
+    <innerfile refid="lv__demo__music__list_8h">lv_demo_music_list.h</innerfile>
+    <innerfile refid="lv__demo__music__main_8h">lv_demo_music_main.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/demos/music/"/>
+  </compounddef>
+</doxygen>

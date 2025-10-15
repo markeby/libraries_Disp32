@@ -1,0 +1,1578 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Key features}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Requirements}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}License}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Repository layout}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Release policy}{3}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Release cycle}{4}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Branches}{4}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Changelog}{4}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Version support}{4}{subsection.1.5.4}%
+\contentsline {section}{\numberline {1.6}FAQ}{4}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Where can I ask questions?}{4}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Is my MCU/hardware supported?}{4}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Is my display supported?}{5}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}LVGL doesn't start, randomly crashes or nothing is drawn on the display. What can be the problem?}{5}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}My display driver is not called. What have I missed?}{5}{subsection.1.6.5}%
+\contentsline {subsection}{\numberline {1.6.6}Why is the display driver called only once? Only the upper part of the display is refreshed.}{5}{subsection.1.6.6}%
+\contentsline {subsection}{\numberline {1.6.7}Why do I see only garbage on the screen?}{6}{subsection.1.6.7}%
+\contentsline {subsection}{\numberline {1.6.8}Why do I see nonsense colors on the screen?}{6}{subsection.1.6.8}%
+\contentsline {subsection}{\numberline {1.6.9}How to speed up my UI?}{6}{subsection.1.6.9}%
+\contentsline {subsection}{\numberline {1.6.10}How to reduce flash/ROM usage?}{7}{subsection.1.6.10}%
+\contentsline {subsection}{\numberline {1.6.11}How to reduce the RAM usage}{7}{subsection.1.6.11}%
+\contentsline {subsection}{\numberline {1.6.12}How to work with an operating system?}{7}{subsection.1.6.12}%
+\contentsline {chapter}{\numberline {2}Examples}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Get started}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}A button with a label and react on click event}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Create styles from scratch for buttons}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Create a slider and write its value on a label}{12}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Styles}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Size styles}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Background styles}{14}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Border styles}{15}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Outline styles}{16}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Shadow styles}{17}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Image styles}{18}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Text styles}{20}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Line styles}{21}{subsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.2.9}Transition}{22}{subsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.2.10}Using multiple styles}{23}{subsection.2.2.10}%
+\contentsline {subsection}{\numberline {2.2.11}Local styles}{25}{subsection.2.2.11}%
+\contentsline {subsection}{\numberline {2.2.12}Add styles to parts and states}{26}{subsection.2.2.12}%
+\contentsline {subsection}{\numberline {2.2.13}Extending the current theme}{27}{subsection.2.2.13}%
+\contentsline {subsection}{\numberline {2.2.14}Opacity and Transformations}{29}{subsection.2.2.14}%
+\contentsline {section}{\numberline {2.3}Animations}{30}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Start animation on an event}{30}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Playback animation}{32}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Animation timeline}{34}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Events}{40}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Button click event}{40}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Handle multiple events}{41}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Event bubbling}{42}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Layouts}{44}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Flex}{44}{subsection.2.5.1}%
+\contentsline {subsubsection}{A simple row and a column layout with flexbox}{44}{subsubsection*.3}%
+\contentsline {subsubsection}{Arrange items in rows with wrap and even spacing}{45}{subsubsection*.4}%
+\contentsline {subsubsection}{Demonstrate flex grow}{46}{subsubsection*.5}%
+\contentsline {subsubsection}{Demonstrate flex grow.}{48}{subsubsection*.6}%
+\contentsline {subsubsection}{Demonstrate column and row gap style properties}{49}{subsubsection*.7}%
+\contentsline {subsubsection}{RTL base direction changes order of the items}{50}{subsubsection*.8}%
+\contentsline {subsection}{\numberline {2.5.2}Grid}{51}{subsection.2.5.2}%
+\contentsline {subsubsection}{A simple grid}{51}{subsubsection*.9}%
+\contentsline {subsubsection}{Demonstrate cell placement and span}{53}{subsubsection*.10}%
+\contentsline {subsubsection}{Demonstrate grid's "free unit"}{55}{subsubsection*.11}%
+\contentsline {subsubsection}{Demonstrate track placement}{57}{subsubsection*.12}%
+\contentsline {subsubsection}{Demonstrate column and row gap}{58}{subsubsection*.13}%
+\contentsline {subsubsection}{Demonstrate RTL direction on grid}{60}{subsubsection*.14}%
+\contentsline {section}{\numberline {2.6}Scrolling}{61}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Nested scrolling}{61}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Snapping}{63}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Floating button}{65}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Styling the scrollbars}{67}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5}Right to left scrolling}{69}{subsection.2.6.5}%
+\contentsline {subsection}{\numberline {2.6.6}Translate on scroll}{70}{subsection.2.6.6}%
+\contentsline {section}{\numberline {2.7}Widgets}{73}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Base object}{73}{subsection.2.7.1}%
+\contentsline {subsubsection}{Base objects with custom styles}{73}{subsubsection*.15}%
+\contentsline {subsubsection}{Make an object draggable}{74}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {2.7.2}Arc}{75}{subsection.2.7.2}%
+\contentsline {subsubsection}{Simple Arc}{75}{subsubsection*.17}%
+\contentsline {subsubsection}{Loader with Arc}{76}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {2.7.3}Bar}{77}{subsection.2.7.3}%
+\contentsline {subsubsection}{Simple Bar}{77}{subsubsection*.19}%
+\contentsline {subsubsection}{Styling a bar}{78}{subsubsection*.20}%
+\contentsline {subsubsection}{Temperature meter}{79}{subsubsection*.21}%
+\contentsline {subsubsection}{Stripe pattern and range value}{80}{subsubsection*.22}%
+\contentsline {subsubsection}{Bar with LTR and RTL base direction}{82}{subsubsection*.23}%
+\contentsline {subsubsection}{Custom drawer to show the current value}{83}{subsubsection*.24}%
+\contentsline {subsection}{\numberline {2.7.4}Button}{85}{subsection.2.7.4}%
+\contentsline {subsubsection}{Simple Buttons}{85}{subsubsection*.25}%
+\contentsline {subsubsection}{Styling buttons}{86}{subsubsection*.26}%
+\contentsline {subsubsection}{Gummy button}{89}{subsubsection*.27}%
+\contentsline {subsection}{\numberline {2.7.5}Button matrix}{90}{subsection.2.7.5}%
+\contentsline {subsubsection}{Simple Button matrix}{90}{subsubsection*.28}%
+\contentsline {subsubsection}{Custom buttons}{92}{subsubsection*.29}%
+\contentsline {subsubsection}{Pagination}{95}{subsubsection*.30}%
+\contentsline {subsection}{\numberline {2.7.6}Calendar}{97}{subsection.2.7.6}%
+\contentsline {subsubsection}{Calendar with header}{97}{subsubsection*.31}%
+\contentsline {subsection}{\numberline {2.7.7}Canvas}{99}{subsection.2.7.7}%
+\contentsline {subsubsection}{Drawing on the Canvas and rotate}{99}{subsubsection*.32}%
+\contentsline {subsubsection}{Transparent Canvas with chroma keying}{101}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {2.7.8}Chart}{102}{subsection.2.7.8}%
+\contentsline {subsubsection}{Line Chart}{102}{subsubsection*.34}%
+\contentsline {subsubsection}{Faded area line chart with custom division lines}{104}{subsubsection*.35}%
+\contentsline {subsubsection}{Axis ticks and labels with scrolling}{108}{subsubsection*.36}%
+\contentsline {subsubsection}{Show the value of the pressed points}{110}{subsubsection*.37}%
+\contentsline {subsubsection}{Display 1000 data points with zooming and scrolling}{113}{subsubsection*.38}%
+\contentsline {subsubsection}{Show cursor on the clicked point}{118}{subsubsection*.39}%
+\contentsline {subsubsection}{Scatter chart}{121}{subsubsection*.40}%
+\contentsline {subsubsection}{Stacked area chart}{124}{subsubsection*.41}%
+\contentsline {subsection}{\numberline {2.7.9}Checkbox}{129}{subsection.2.7.9}%
+\contentsline {subsubsection}{Simple Checkboxes}{129}{subsubsection*.42}%
+\contentsline {subsubsection}{Checkboxes as radio buttons}{131}{subsubsection*.43}%
+\contentsline {subsection}{\numberline {2.7.10}Colorwheel}{132}{subsection.2.7.10}%
+\contentsline {subsubsection}{Simple Colorwheel}{132}{subsubsection*.44}%
+\contentsline {subsection}{\numberline {2.7.11}Dropdown}{133}{subsection.2.7.11}%
+\contentsline {subsubsection}{Simple Drop down list}{133}{subsubsection*.45}%
+\contentsline {subsubsection}{Drop down in four directions}{134}{subsubsection*.46}%
+\contentsline {subsubsection}{Menu}{135}{subsubsection*.47}%
+\contentsline {subsection}{\numberline {2.7.12}Image}{137}{subsection.2.7.12}%
+\contentsline {subsubsection}{Image from variable and symbol}{137}{subsubsection*.48}%
+\contentsline {subsubsection}{Image recoloring}{138}{subsubsection*.49}%
+\contentsline {subsubsection}{Rotate and zoom}{141}{subsubsection*.50}%
+\contentsline {subsubsection}{Image offset and styling}{143}{subsubsection*.51}%
+\contentsline {subsection}{\numberline {2.7.13}Image button}{144}{subsection.2.7.13}%
+\contentsline {subsubsection}{Simple Image button}{144}{subsubsection*.52}%
+\contentsline {subsection}{\numberline {2.7.14}Keyboard}{147}{subsection.2.7.14}%
+\contentsline {subsubsection}{Keyboard with text area}{147}{subsubsection*.53}%
+\contentsline {subsection}{\numberline {2.7.15}Label}{148}{subsection.2.7.15}%
+\contentsline {subsubsection}{Line wrap, recoloring and scrolling}{148}{subsubsection*.54}%
+\contentsline {subsubsection}{Text shadow}{149}{subsubsection*.55}%
+\contentsline {subsubsection}{Show LTR, RTL and Chinese texts}{150}{subsubsection*.56}%
+\contentsline {subsubsection}{Draw label with gradient color}{152}{subsubsection*.57}%
+\contentsline {subsubsection}{Customize circular scrolling animation}{153}{subsubsection*.58}%
+\contentsline {subsection}{\numberline {2.7.16}LED}{154}{subsection.2.7.16}%
+\contentsline {subsubsection}{LED with custom style}{154}{subsubsection*.59}%
+\contentsline {subsection}{\numberline {2.7.17}Line}{155}{subsection.2.7.17}%
+\contentsline {subsubsection}{Simple Line}{155}{subsubsection*.60}%
+\contentsline {subsection}{\numberline {2.7.18}List}{156}{subsection.2.7.18}%
+\contentsline {subsubsection}{Simple List}{156}{subsubsection*.61}%
+\contentsline {subsubsection}{Sorting a List using up and down buttons}{158}{subsubsection*.62}%
+\contentsline {subsection}{\numberline {2.7.19}Menu}{163}{subsection.2.7.19}%
+\contentsline {subsubsection}{Simple Menu}{163}{subsubsection*.63}%
+\contentsline {subsubsection}{Simple Menu with root btn}{164}{subsubsection*.64}%
+\contentsline {subsubsection}{Simple Menu with custom header}{166}{subsubsection*.65}%
+\contentsline {subsubsection}{Simple Menu with floating btn to add new menu page}{168}{subsubsection*.66}%
+\contentsline {subsubsection}{Complex Menu}{170}{subsubsection*.67}%
+\contentsline {subsection}{\numberline {2.7.20}Meter}{174}{subsection.2.7.20}%
+\contentsline {subsubsection}{Simple meter}{174}{subsubsection*.68}%
+\contentsline {subsubsection}{A meter with multiple arcs}{177}{subsubsection*.69}%
+\contentsline {subsubsection}{A clock from a meter}{179}{subsubsection*.70}%
+\contentsline {subsubsection}{Pie chart}{182}{subsubsection*.71}%
+\contentsline {subsection}{\numberline {2.7.21}Message box}{183}{subsection.2.7.21}%
+\contentsline {subsubsection}{Simple Message box}{183}{subsubsection*.72}%
+\contentsline {subsection}{\numberline {2.7.22}Roller}{184}{subsection.2.7.22}%
+\contentsline {subsubsection}{Simple Roller}{184}{subsubsection*.73}%
+\contentsline {subsubsection}{Styling the roller}{185}{subsubsection*.74}%
+\contentsline {subsubsection}{add fade mask to roller}{188}{subsubsection*.75}%
+\contentsline {subsection}{\numberline {2.7.23}Slider}{191}{subsection.2.7.23}%
+\contentsline {subsubsection}{Simple Slider}{191}{subsubsection*.76}%
+\contentsline {subsubsection}{Slider with custom style}{193}{subsubsection*.77}%
+\contentsline {subsubsection}{Slider with extended drawer}{195}{subsubsection*.78}%
+\contentsline {subsection}{\numberline {2.7.24}Span}{197}{subsection.2.7.24}%
+\contentsline {subsubsection}{Span with custom styles}{197}{subsubsection*.79}%
+\contentsline {subsection}{\numberline {2.7.25}Spinbox}{199}{subsection.2.7.25}%
+\contentsline {subsubsection}{Simple Spinbox}{199}{subsubsection*.80}%
+\contentsline {subsection}{\numberline {2.7.26}Spinner}{200}{subsection.2.7.26}%
+\contentsline {subsubsection}{Simple spinner}{200}{subsubsection*.81}%
+\contentsline {subsection}{\numberline {2.7.27}Switch}{201}{subsection.2.7.27}%
+\contentsline {subsubsection}{Simple Switch}{201}{subsubsection*.82}%
+\contentsline {subsection}{\numberline {2.7.28}Table}{202}{subsection.2.7.28}%
+\contentsline {subsubsection}{Simple table}{202}{subsubsection*.83}%
+\contentsline {subsubsection}{Lightweighted list from table}{204}{subsubsection*.84}%
+\contentsline {subsection}{\numberline {2.7.29}Tabview}{208}{subsection.2.7.29}%
+\contentsline {subsubsection}{Simple Tabview}{208}{subsubsection*.85}%
+\contentsline {subsubsection}{Tabs on the left, styling and no scrolling}{209}{subsubsection*.86}%
+\contentsline {subsection}{\numberline {2.7.30}Textarea}{211}{subsection.2.7.30}%
+\contentsline {subsubsection}{Simple Text area}{211}{subsubsection*.87}%
+\contentsline {subsubsection}{Text area with password field}{213}{subsubsection*.88}%
+\contentsline {subsubsection}{Text auto\sphinxhyphen {}formatting}{215}{subsubsection*.89}%
+\contentsline {subsection}{\numberline {2.7.31}Tabview}{216}{subsection.2.7.31}%
+\contentsline {subsubsection}{Tileview with content}{216}{subsubsection*.90}%
+\contentsline {subsection}{\numberline {2.7.32}Window}{218}{subsection.2.7.32}%
+\contentsline {subsubsection}{Simple window}{218}{subsubsection*.91}%
+\contentsline {chapter}{\numberline {3}Get started}{220}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Quick overview}{220}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Get started in a simulator}{220}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Add LVGL into your project}{221}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Learn the basics}{222}{subsection.3.1.3}%
+\contentsline {subsubsection}{Widgets}{222}{subsubsection*.92}%
+\contentsline {subsubsection}{Events}{223}{subsubsection*.93}%
+\contentsline {subsubsection}{Parts}{223}{subsubsection*.94}%
+\contentsline {subsubsection}{States}{223}{subsubsection*.95}%
+\contentsline {subsubsection}{Styles}{224}{subsubsection*.96}%
+\contentsline {subsubsection}{Themes}{225}{subsubsection*.97}%
+\contentsline {subsection}{\numberline {3.1.4}Examples}{225}{subsection.3.1.4}%
+\contentsline {subsubsection}{A button with a label and react on click event}{225}{subsubsection*.98}%
+\contentsline {subsubsection}{Create styles from scratch for buttons}{226}{subsubsection*.99}%
+\contentsline {subsubsection}{Create a slider and write its value on a label}{229}{subsubsection*.100}%
+\contentsline {subsection}{\numberline {3.1.5}Micropython}{230}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Platforms}{231}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Simulator on PC}{231}{subsection.3.2.1}%
+\contentsline {subsubsection}{Select an IDE}{231}{subsubsection*.101}%
+\contentsline {subsubsection}{Set\sphinxhyphen {}up Eclipse CDT}{231}{subsubsection*.102}%
+\contentsline {paragraph}{Install Eclipse CDT}{231}{paragraph*.103}%
+\contentsline {paragraph}{Install SDL 2}{232}{paragraph*.104}%
+\contentsline {subparagraph}{Linux}{232}{subparagraph*.105}%
+\contentsline {subparagraph}{Windows}{232}{subparagraph*.106}%
+\contentsline {subparagraph}{OSX}{232}{subparagraph*.107}%
+\contentsline {paragraph}{Pre\sphinxhyphen {}configured project}{232}{paragraph*.108}%
+\contentsline {paragraph}{Add the pre\sphinxhyphen {}configured project to Eclipse CDT}{233}{paragraph*.109}%
+\contentsline {paragraph}{Compile and Run}{233}{paragraph*.110}%
+\contentsline {subsection}{\numberline {3.2.2}NXP}{233}{subsection.3.2.2}%
+\contentsline {subsubsection}{Creating new project with LVGL}{233}{subsubsection*.111}%
+\contentsline {subsubsection}{HW acceleration for NXP iMX RT platforms}{233}{subsubsection*.112}%
+\contentsline {paragraph}{PXP accelerator}{234}{paragraph*.113}%
+\contentsline {subparagraph}{Features supported:}{234}{subparagraph*.114}%
+\contentsline {subparagraph}{Known limitations:}{234}{subparagraph*.115}%
+\contentsline {subparagraph}{Basic configuration:}{235}{subparagraph*.116}%
+\contentsline {subparagraph}{Basic initialization:}{235}{subparagraph*.117}%
+\contentsline {subparagraph}{Project setup:}{235}{subparagraph*.118}%
+\contentsline {subparagraph}{Logging:}{235}{subparagraph*.119}%
+\contentsline {subparagraph}{Advanced configuration:}{236}{subparagraph*.120}%
+\contentsline {paragraph}{VGLite accelerator}{236}{paragraph*.121}%
+\contentsline {subparagraph}{Features supported:}{236}{subparagraph*.122}%
+\contentsline {subparagraph}{Known limitations:}{237}{subparagraph*.123}%
+\contentsline {subparagraph}{Basic configuration:}{237}{subparagraph*.124}%
+\contentsline {subparagraph}{Basic initialization:}{237}{subparagraph*.125}%
+\contentsline {subparagraph}{Project setup:}{237}{subparagraph*.126}%
+\contentsline {subparagraph}{Logging:}{238}{subparagraph*.127}%
+\contentsline {subparagraph}{Advanced configuration:}{238}{subparagraph*.128}%
+\contentsline {subsection}{\numberline {3.2.3}STM32}{238}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Espressif (ESP32 chip series)}{238}{subsection.3.2.4}%
+\contentsline {subsubsection}{LVGL demo project for ESP32}{238}{subsubsection*.129}%
+\contentsline {subsubsection}{Using LVGL in your ESP\sphinxhyphen {}IDF project}{238}{subsubsection*.130}%
+\contentsline {paragraph}{Prerequisites}{238}{paragraph*.131}%
+\contentsline {paragraph}{Obtaining LVGL}{239}{paragraph*.132}%
+\contentsline {paragraph}{Configuration}{239}{paragraph*.133}%
+\contentsline {subsubsection}{Using lvgl\_esp32\_drivers in ESP\sphinxhyphen {}IDF project}{239}{subsubsection*.134}%
+\contentsline {subsection}{\numberline {3.2.5}Renesas}{239}{subsection.3.2.5}%
+\contentsline {subsubsection}{Creating new project with LVGL}{239}{subsubsection*.135}%
+\contentsline {subsubsection}{HW acceleration for Renesas RA6M3 platforms}{240}{subsubsection*.136}%
+\contentsline {paragraph}{Dave\sphinxhyphen {}2d accelerator}{240}{paragraph*.137}%
+\contentsline {paragraph}{Features supported:}{240}{paragraph*.138}%
+\contentsline {paragraph}{Basic configuration:}{240}{paragraph*.139}%
+\contentsline {paragraph}{RT\sphinxhyphen {}Thread Example:}{241}{paragraph*.140}%
+\contentsline {subsection}{\numberline {3.2.6}Arduino}{242}{subsection.3.2.6}%
+\contentsline {subsubsection}{Get the LVGL Arduino library}{242}{subsubsection*.141}%
+\contentsline {subsubsection}{Set up drivers}{243}{subsubsection*.142}%
+\contentsline {subsubsection}{Configure LVGL}{243}{subsubsection*.143}%
+\contentsline {subsubsection}{Initialize and run LVGL}{243}{subsubsection*.144}%
+\contentsline {subsubsection}{Use the examples and demos}{243}{subsubsection*.145}%
+\contentsline {subsubsection}{Debugging and logging}{244}{subsubsection*.146}%
+\contentsline {subsection}{\numberline {3.2.7}Tasmota and berry}{244}{subsection.3.2.7}%
+\contentsline {subsubsection}{What is Tasmota?}{244}{subsubsection*.147}%
+\contentsline {subsubsection}{What is Berry?}{244}{subsubsection*.148}%
+\contentsline {paragraph}{Highlights of Berry}{244}{paragraph*.149}%
+\contentsline {subsubsection}{Why LVGL + Tasmota + Berry?}{245}{subsubsection*.150}%
+\contentsline {paragraph}{Tasmota + Berry + LVGL could be used for:}{245}{paragraph*.151}%
+\contentsline {subsubsection}{So what does it look like?}{245}{subsubsection*.152}%
+\contentsline {paragraph}{A simple example}{245}{paragraph*.153}%
+\contentsline {subsubsection}{How can I use it?}{245}{subsubsection*.154}%
+\contentsline {subsubsection}{Where can I find more information?}{246}{subsubsection*.155}%
+\contentsline {subsection}{\numberline {3.2.8}CMake}{246}{subsection.3.2.8}%
+\contentsline {subsubsection}{Prerequisites}{246}{subsubsection*.156}%
+\contentsline {subsubsection}{Building LVGL with CMake}{246}{subsubsection*.157}%
+\contentsline {paragraph}{Additional CMake options}{247}{paragraph*.158}%
+\contentsline {subsubsection}{Building LVGL examples with CMake}{247}{subsubsection*.159}%
+\contentsline {subsubsection}{Building LVGL drivers and demos with CMake}{247}{subsubsection*.160}%
+\contentsline {subsection}{\numberline {3.2.9}Build shared libraries with CMake}{247}{subsection.3.2.9}%
+\contentsline {section}{\numberline {3.3}(RT)OS}{247}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}NuttX RTOS}{247}{subsection.3.3.1}%
+\contentsline {subsubsection}{What is NuttX?}{247}{subsubsection*.161}%
+\contentsline {paragraph}{Highlights of NuttX}{248}{paragraph*.162}%
+\contentsline {subsubsection}{Why NuttX + LVGL?}{248}{subsubsection*.163}%
+\contentsline {paragraph}{Here are some advantages of using LVGL in NuttX}{248}{paragraph*.164}%
+\contentsline {paragraph}{NuttX + LVGL could be used for}{248}{paragraph*.165}%
+\contentsline {subsubsection}{How to get started with NuttX and LVGL?}{249}{subsubsection*.166}%
+\contentsline {paragraph}{First you need to install the pre\sphinxhyphen {}requisites on your system}{249}{paragraph*.167}%
+\contentsline {paragraph}{Now let's create a workspace to save our files}{249}{paragraph*.168}%
+\contentsline {paragraph}{Clone the NuttX and Apps repositories:}{249}{paragraph*.169}%
+\contentsline {paragraph}{Configure NuttX to use the stm32f429i\sphinxhyphen {}disco board and the LVGL Demo}{249}{paragraph*.170}%
+\contentsline {paragraph}{Flashing the firmware in the board using OpenOCD:}{249}{paragraph*.171}%
+\contentsline {subsubsection}{Where can I find more information?}{250}{subsubsection*.172}%
+\contentsline {subsection}{\numberline {3.3.2}RT\sphinxhyphen {}Thread RTOS}{250}{subsection.3.3.2}%
+\contentsline {subsubsection}{What is RT\sphinxhyphen {}Thread?}{250}{subsubsection*.173}%
+\contentsline {paragraph}{Key features}{250}{paragraph*.174}%
+\contentsline {subsubsection}{How to run LVGL on RT\sphinxhyphen {}Thread?}{250}{subsubsection*.175}%
+\contentsline {paragraph}{Import a BSP project into RT\sphinxhyphen {}Thread Studio}{251}{paragraph*.176}%
+\contentsline {subsection}{\numberline {3.3.3}FreeRTOS}{251}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Zephyr}{251}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Bindings}{251}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Micropython}{251}{subsection.3.4.1}%
+\contentsline {subsubsection}{What is Micropython?}{251}{subsubsection*.177}%
+\contentsline {paragraph}{Highlights of Micropython}{251}{paragraph*.178}%
+\contentsline {subsubsection}{Why Micropython + LVGL?}{252}{subsubsection*.179}%
+\contentsline {paragraph}{Here are some advantages of using LVGL in Micropython:}{252}{paragraph*.180}%
+\contentsline {paragraph}{Micropython + LVGL could be used for:}{252}{paragraph*.181}%
+\contentsline {subsubsection}{So what does it look like?}{252}{subsubsection*.182}%
+\contentsline {paragraph}{A simple example}{252}{paragraph*.183}%
+\contentsline {subsubsection}{How can I use it?}{253}{subsubsection*.184}%
+\contentsline {paragraph}{Online Simulator}{253}{paragraph*.185}%
+\contentsline {paragraph}{PC Simulator}{253}{paragraph*.186}%
+\contentsline {paragraph}{Embedded platform}{253}{paragraph*.187}%
+\contentsline {subsubsection}{Where can I find more information?}{253}{subsubsection*.188}%
+\contentsline {subsection}{\numberline {3.4.2}Cpp}{253}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}Porting}{254}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Set up a project}{254}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Get the library}{254}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Add lvgl to your project}{254}{subsection.4.1.2}%
+\contentsline {subsubsection}{Automatically add files}{254}{subsubsection*.189}%
+\contentsline {subsubsection}{Make and CMake}{254}{subsubsection*.190}%
+\contentsline {subsubsection}{Other platforms and tools}{255}{subsubsection*.191}%
+\contentsline {subsubsection}{Demos and Examples}{255}{subsubsection*.192}%
+\contentsline {subsection}{\numberline {4.1.3}Configuration file}{255}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Initialization}{255}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Display interface}{256}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Draw buffer}{256}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Buffering modes}{256}{subsection.4.2.2}%
+\contentsline {subsubsection}{One buffer}{256}{subsubsection*.193}%
+\contentsline {subsubsection}{Two buffers}{257}{subsubsection*.194}%
+\contentsline {subsubsection}{Full refresh}{257}{subsubsection*.195}%
+\contentsline {subsubsection}{Direct mode}{257}{subsubsection*.196}%
+\contentsline {subsection}{\numberline {4.2.3}Display driver}{257}{subsection.4.2.3}%
+\contentsline {subsubsection}{Mandatory fields}{257}{subsubsection*.197}%
+\contentsline {subsubsection}{Optional fields}{258}{subsubsection*.198}%
+\contentsline {subsubsection}{Examples}{259}{subsubsection*.199}%
+\contentsline {subsection}{\numberline {4.2.4}Other options}{260}{subsection.4.2.4}%
+\contentsline {subsubsection}{Rotation}{260}{subsubsection*.200}%
+\contentsline {subsubsection}{Decoupling the display refresh timer}{261}{subsubsection*.201}%
+\contentsline {subsection}{\numberline {4.2.5}Further reading}{261}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}API}{261}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Input device interface}{269}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Types of input devices}{269}{subsection.4.3.1}%
+\contentsline {subsubsection}{Touchpad, mouse or any pointer}{269}{subsubsection*.402}%
+\contentsline {subsubsection}{Keypad or keyboard}{270}{subsubsection*.403}%
+\contentsline {subsubsection}{Encoder}{270}{subsubsection*.404}%
+\contentsline {paragraph}{Using buttons with Encoder logic}{271}{paragraph*.405}%
+\contentsline {subsubsection}{Button}{271}{subsubsection*.406}%
+\contentsline {subsection}{\numberline {4.3.2}Other features}{272}{subsection.4.3.2}%
+\contentsline {subsubsection}{Parameters}{272}{subsubsection*.407}%
+\contentsline {subsubsection}{Feedback}{272}{subsubsection*.408}%
+\contentsline {subsubsection}{Associating with a display}{272}{subsubsection*.409}%
+\contentsline {subsubsection}{Buffered reading}{273}{subsubsection*.410}%
+\contentsline {subsection}{\numberline {4.3.3}Further reading}{273}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}API}{273}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Tick interface}{278}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}API}{279}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Timer Handler}{279}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Sleep management}{280}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Operating system and interrupts}{280}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Tasks and threads}{280}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Interrupts}{281}{subsection.4.7.2}%
+\contentsline {section}{\numberline {4.8}Logging}{281}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Log level}{281}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Printing logs}{282}{subsection.4.8.2}%
+\contentsline {subsubsection}{Logging with printf}{282}{subsubsection*.570}%
+\contentsline {subsubsection}{Custom log function}{282}{subsubsection*.571}%
+\contentsline {subsection}{\numberline {4.8.3}Add logs}{282}{subsection.4.8.3}%
+\contentsline {section}{\numberline {4.9}Add custom GPU}{282}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Draw context}{283}{subsection.4.9.1}%
+\contentsline {subsubsection}{Fields}{283}{subsubsection*.572}%
+\contentsline {subsubsection}{Initialization}{283}{subsubsection*.573}%
+\contentsline {subsection}{\numberline {4.9.2}Software renderer}{284}{subsection.4.9.2}%
+\contentsline {subsubsection}{Blend callback}{284}{subsubsection*.574}%
+\contentsline {subsection}{\numberline {4.9.3}Extend the software renderer}{285}{subsection.4.9.3}%
+\contentsline {subsubsection}{New blend callback}{285}{subsubsection*.575}%
+\contentsline {subsubsection}{New rectangle drawer}{286}{subsubsection*.576}%
+\contentsline {subsection}{\numberline {4.9.4}Fully custom draw engine}{287}{subsection.4.9.4}%
+\contentsline {chapter}{\numberline {5}Overview}{288}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objects}{288}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Attributes}{288}{subsection.5.1.1}%
+\contentsline {subsubsection}{Basic attributes}{288}{subsubsection*.577}%
+\contentsline {subsubsection}{Specific attributes}{289}{subsubsection*.578}%
+\contentsline {subsection}{\numberline {5.1.2}Working mechanisms}{289}{subsection.5.1.2}%
+\contentsline {subsubsection}{Parent\sphinxhyphen {}child structure}{289}{subsubsection*.579}%
+\contentsline {subsubsection}{Moving together}{289}{subsubsection*.580}%
+\contentsline {subsubsection}{Visibility only on the parent}{290}{subsubsection*.581}%
+\contentsline {subsubsection}{Create and delete objects}{291}{subsubsection*.582}%
+\contentsline {subsection}{\numberline {5.1.3}Screens}{292}{subsection.5.1.3}%
+\contentsline {subsubsection}{Create screens}{292}{subsubsection*.583}%
+\contentsline {subsubsection}{Get the active screen}{292}{subsubsection*.584}%
+\contentsline {subsubsection}{Load screens}{292}{subsubsection*.585}%
+\contentsline {subsubsection}{Layers}{292}{subsubsection*.586}%
+\contentsline {paragraph}{Load screen with animation}{292}{paragraph*.587}%
+\contentsline {subsubsection}{Handling multiple displays}{293}{subsubsection*.588}%
+\contentsline {subsection}{\numberline {5.1.4}Parts}{293}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}States}{293}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Snapshot}{294}{subsection.5.1.6}%
+\contentsline {section}{\numberline {5.2}Positions, sizes, and layouts}{294}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Overview}{294}{subsection.5.2.1}%
+\contentsline {subsubsection}{Units}{294}{subsubsection*.589}%
+\contentsline {subsubsection}{Boxing model}{295}{subsubsection*.590}%
+\contentsline {subsubsection}{Important notes}{295}{subsubsection*.591}%
+\contentsline {paragraph}{Postponed coordinate calculation}{295}{paragraph*.592}%
+\contentsline {paragraph}{Removing styles}{296}{paragraph*.593}%
+\contentsline {subsection}{\numberline {5.2.2}Position}{296}{subsection.5.2.2}%
+\contentsline {subsubsection}{Simple way}{296}{subsubsection*.594}%
+\contentsline {subsubsection}{Align}{297}{subsubsection*.595}%
+\contentsline {subsection}{\numberline {5.2.3}Size}{298}{subsection.5.2.3}%
+\contentsline {subsubsection}{Simple way}{298}{subsubsection*.596}%
+\contentsline {subsection}{\numberline {5.2.4}Using styles}{299}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Translation}{299}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Transformation}{300}{subsection.5.2.6}%
+\contentsline {subsubsection}{Min and Max size}{301}{subsubsection*.597}%
+\contentsline {subsection}{\numberline {5.2.7}Layout}{301}{subsection.5.2.7}%
+\contentsline {subsubsection}{Overview}{301}{subsubsection*.598}%
+\contentsline {subsubsection}{Built\sphinxhyphen {}in layout}{301}{subsubsection*.599}%
+\contentsline {subsubsection}{Flags}{302}{subsubsection*.600}%
+\contentsline {subsubsection}{Adding new layouts}{302}{subsubsection*.601}%
+\contentsline {subsection}{\numberline {5.2.8}Examples}{303}{subsection.5.2.8}%
+\contentsline {section}{\numberline {5.3}Styles}{303}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}States}{303}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Cascading styles}{305}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Inheritance}{305}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Forced value inheritance/default value}{305}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Parts}{306}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Initialize styles and set/get properties}{306}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Add and remove styles to a widget}{307}{subsection.5.3.7}%
+\contentsline {subsubsection}{Add styles}{307}{subsubsection*.602}%
+\contentsline {subsubsection}{Remove styles}{308}{subsubsection*.603}%
+\contentsline {subsubsection}{Report style changes}{308}{subsubsection*.604}%
+\contentsline {subsubsection}{Get a property's value on an object}{308}{subsubsection*.605}%
+\contentsline {subsection}{\numberline {5.3.8}Local styles}{308}{subsection.5.3.8}%
+\contentsline {subsection}{\numberline {5.3.9}Properties}{309}{subsection.5.3.9}%
+\contentsline {subsubsection}{Typical background properties}{309}{subsubsection*.606}%
+\contentsline {subsection}{\numberline {5.3.10}Transitions}{309}{subsection.5.3.10}%
+\contentsline {subsection}{\numberline {5.3.11}Opacity, Blend modes and Transformations}{310}{subsection.5.3.11}%
+\contentsline {subsection}{\numberline {5.3.12}Color filter}{310}{subsection.5.3.12}%
+\contentsline {subsection}{\numberline {5.3.13}Themes}{310}{subsection.5.3.13}%
+\contentsline {subsubsection}{Extending themes}{311}{subsubsection*.607}%
+\contentsline {subsection}{\numberline {5.3.14}Examples}{311}{subsection.5.3.14}%
+\contentsline {subsubsection}{Size styles}{311}{subsubsection*.608}%
+\contentsline {subsubsection}{Background styles}{312}{subsubsection*.609}%
+\contentsline {subsubsection}{Border styles}{313}{subsubsection*.610}%
+\contentsline {subsubsection}{Outline styles}{314}{subsubsection*.611}%
+\contentsline {subsubsection}{Shadow styles}{315}{subsubsection*.612}%
+\contentsline {subsubsection}{Image styles}{316}{subsubsection*.613}%
+\contentsline {subsubsection}{Arc styles}{318}{subsubsection*.614}%
+\contentsline {subsubsection}{Text styles}{318}{subsubsection*.615}%
+\contentsline {subsubsection}{Line styles}{319}{subsubsection*.616}%
+\contentsline {subsubsection}{Transition}{320}{subsubsection*.617}%
+\contentsline {subsubsection}{Using multiple styles}{321}{subsubsection*.618}%
+\contentsline {subsubsection}{Local styles}{323}{subsubsection*.619}%
+\contentsline {subsubsection}{Add styles to parts and states}{324}{subsubsection*.620}%
+\contentsline {subsubsection}{Extending the current theme}{325}{subsubsection*.621}%
+\contentsline {subsubsection}{Opacity and Transformations}{327}{subsubsection*.622}%
+\contentsline {subsection}{\numberline {5.3.15}API}{328}{subsection.5.3.15}%
+\contentsline {section}{\numberline {5.4}Style properties}{351}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Size and position}{351}{subsection.5.4.1}%
+\contentsline {subsubsection}{width}{351}{subsubsection*.1848}%
+\contentsline {subsubsection}{min\_width}{351}{subsubsection*.1849}%
+\contentsline {subsubsection}{max\_width}{352}{subsubsection*.1850}%
+\contentsline {subsubsection}{height}{352}{subsubsection*.1851}%
+\contentsline {subsubsection}{min\_height}{352}{subsubsection*.1852}%
+\contentsline {subsubsection}{max\_height}{352}{subsubsection*.1853}%
+\contentsline {subsubsection}{x}{352}{subsubsection*.1854}%
+\contentsline {subsubsection}{y}{352}{subsubsection*.1855}%
+\contentsline {subsubsection}{align}{352}{subsubsection*.1856}%
+\contentsline {subsubsection}{transform\_width}{352}{subsubsection*.1857}%
+\contentsline {subsubsection}{transform\_height}{353}{subsubsection*.1858}%
+\contentsline {subsubsection}{translate\_x}{353}{subsubsection*.1859}%
+\contentsline {subsubsection}{translate\_y}{353}{subsubsection*.1860}%
+\contentsline {subsubsection}{transform\_zoom}{353}{subsubsection*.1861}%
+\contentsline {subsubsection}{transform\_angle}{353}{subsubsection*.1862}%
+\contentsline {subsubsection}{transform\_pivot\_x}{353}{subsubsection*.1863}%
+\contentsline {subsubsection}{transform\_pivot\_y}{353}{subsubsection*.1864}%
+\contentsline {subsection}{\numberline {5.4.2}Padding}{353}{subsection.5.4.2}%
+\contentsline {subsubsection}{pad\_top}{353}{subsubsection*.1865}%
+\contentsline {subsubsection}{pad\_bottom}{354}{subsubsection*.1866}%
+\contentsline {subsubsection}{pad\_left}{354}{subsubsection*.1867}%
+\contentsline {subsubsection}{pad\_right}{354}{subsubsection*.1868}%
+\contentsline {subsubsection}{pad\_row}{354}{subsubsection*.1869}%
+\contentsline {subsubsection}{pad\_column}{354}{subsubsection*.1870}%
+\contentsline {subsection}{\numberline {5.4.3}Background}{354}{subsection.5.4.3}%
+\contentsline {subsubsection}{bg\_color}{354}{subsubsection*.1871}%
+\contentsline {subsubsection}{bg\_opa}{354}{subsubsection*.1872}%
+\contentsline {subsubsection}{bg\_grad\_color}{354}{subsubsection*.1873}%
+\contentsline {subsubsection}{bg\_grad\_dir}{355}{subsubsection*.1874}%
+\contentsline {subsubsection}{bg\_main\_stop}{355}{subsubsection*.1875}%
+\contentsline {subsubsection}{bg\_grad\_stop}{355}{subsubsection*.1876}%
+\contentsline {subsubsection}{bg\_grad}{355}{subsubsection*.1877}%
+\contentsline {subsubsection}{bg\_dither\_mode}{355}{subsubsection*.1878}%
+\contentsline {subsubsection}{bg\_img\_src}{355}{subsubsection*.1879}%
+\contentsline {subsubsection}{bg\_img\_opa}{355}{subsubsection*.1880}%
+\contentsline {subsubsection}{bg\_img\_recolor}{355}{subsubsection*.1881}%
+\contentsline {subsubsection}{bg\_img\_recolor\_opa}{356}{subsubsection*.1882}%
+\contentsline {subsubsection}{bg\_img\_tiled}{356}{subsubsection*.1883}%
+\contentsline {subsection}{\numberline {5.4.4}Border}{356}{subsection.5.4.4}%
+\contentsline {subsubsection}{border\_color}{356}{subsubsection*.1884}%
+\contentsline {subsubsection}{border\_opa}{356}{subsubsection*.1885}%
+\contentsline {subsubsection}{border\_width}{356}{subsubsection*.1886}%
+\contentsline {subsubsection}{border\_side}{356}{subsubsection*.1887}%
+\contentsline {subsubsection}{border\_post}{356}{subsubsection*.1888}%
+\contentsline {subsection}{\numberline {5.4.5}Outline}{356}{subsection.5.4.5}%
+\contentsline {subsubsection}{outline\_width}{357}{subsubsection*.1889}%
+\contentsline {subsubsection}{outline\_color}{357}{subsubsection*.1890}%
+\contentsline {subsubsection}{outline\_opa}{357}{subsubsection*.1891}%
+\contentsline {subsubsection}{outline\_pad}{357}{subsubsection*.1892}%
+\contentsline {subsection}{\numberline {5.4.6}Shadow}{357}{subsection.5.4.6}%
+\contentsline {subsubsection}{shadow\_width}{357}{subsubsection*.1893}%
+\contentsline {subsubsection}{shadow\_ofs\_x}{357}{subsubsection*.1894}%
+\contentsline {subsubsection}{shadow\_ofs\_y}{357}{subsubsection*.1895}%
+\contentsline {subsubsection}{shadow\_spread}{357}{subsubsection*.1896}%
+\contentsline {subsubsection}{shadow\_color}{358}{subsubsection*.1897}%
+\contentsline {subsubsection}{shadow\_opa}{358}{subsubsection*.1898}%
+\contentsline {subsection}{\numberline {5.4.7}Image}{358}{subsection.5.4.7}%
+\contentsline {subsubsection}{img\_opa}{358}{subsubsection*.1899}%
+\contentsline {subsubsection}{img\_recolor}{358}{subsubsection*.1900}%
+\contentsline {subsubsection}{img\_recolor\_opa}{358}{subsubsection*.1901}%
+\contentsline {subsection}{\numberline {5.4.8}Line}{358}{subsection.5.4.8}%
+\contentsline {subsubsection}{line\_width}{358}{subsubsection*.1902}%
+\contentsline {subsubsection}{line\_dash\_width}{358}{subsubsection*.1903}%
+\contentsline {subsubsection}{line\_dash\_gap}{359}{subsubsection*.1904}%
+\contentsline {subsubsection}{line\_rounded}{359}{subsubsection*.1905}%
+\contentsline {subsubsection}{line\_color}{359}{subsubsection*.1906}%
+\contentsline {subsubsection}{line\_opa}{359}{subsubsection*.1907}%
+\contentsline {subsection}{\numberline {5.4.9}Arc}{359}{subsection.5.4.9}%
+\contentsline {subsubsection}{arc\_width}{359}{subsubsection*.1908}%
+\contentsline {subsubsection}{arc\_rounded}{359}{subsubsection*.1909}%
+\contentsline {subsubsection}{arc\_color}{359}{subsubsection*.1910}%
+\contentsline {subsubsection}{arc\_opa}{359}{subsubsection*.1911}%
+\contentsline {subsubsection}{arc\_img\_src}{359}{subsubsection*.1912}%
+\contentsline {subsection}{\numberline {5.4.10}Text}{360}{subsection.5.4.10}%
+\contentsline {subsubsection}{text\_color}{360}{subsubsection*.1913}%
+\contentsline {subsubsection}{text\_opa}{360}{subsubsection*.1914}%
+\contentsline {subsubsection}{text\_font}{360}{subsubsection*.1915}%
+\contentsline {subsubsection}{text\_letter\_space}{360}{subsubsection*.1916}%
+\contentsline {subsubsection}{text\_line\_space}{360}{subsubsection*.1917}%
+\contentsline {subsubsection}{text\_decor}{360}{subsubsection*.1918}%
+\contentsline {subsubsection}{text\_align}{360}{subsubsection*.1919}%
+\contentsline {subsection}{\numberline {5.4.11}Miscellaneous}{360}{subsection.5.4.11}%
+\contentsline {subsubsection}{radius}{361}{subsubsection*.1920}%
+\contentsline {subsubsection}{clip\_corner}{361}{subsubsection*.1921}%
+\contentsline {subsubsection}{opa}{361}{subsubsection*.1922}%
+\contentsline {subsubsection}{opa\_layered}{361}{subsubsection*.1923}%
+\contentsline {subsubsection}{color\_filter\_dsc}{361}{subsubsection*.1924}%
+\contentsline {subsubsection}{color\_filter\_opa}{361}{subsubsection*.1925}%
+\contentsline {subsubsection}{anim}{361}{subsubsection*.1926}%
+\contentsline {subsubsection}{anim\_time}{361}{subsubsection*.1927}%
+\contentsline {subsubsection}{anim\_speed}{362}{subsubsection*.1928}%
+\contentsline {subsubsection}{transition}{362}{subsubsection*.1929}%
+\contentsline {subsubsection}{blend\_mode}{362}{subsubsection*.1930}%
+\contentsline {subsubsection}{layout}{362}{subsubsection*.1931}%
+\contentsline {subsubsection}{base\_dir}{362}{subsubsection*.1932}%
+\contentsline {section}{\numberline {5.5}Scroll}{362}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Overview}{362}{subsection.5.5.1}%
+\contentsline {subsubsection}{Scrollbar}{362}{subsubsection*.1933}%
+\contentsline {paragraph}{Mode}{362}{paragraph*.1934}%
+\contentsline {paragraph}{Styling}{363}{paragraph*.1935}%
+\contentsline {subsubsection}{Events}{363}{subsubsection*.1936}%
+\contentsline {subsection}{\numberline {5.5.2}Basic example}{363}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Features of scrolling}{364}{subsection.5.5.3}%
+\contentsline {subsubsection}{Scrollable}{364}{subsubsection*.1937}%
+\contentsline {subsubsection}{Scroll chain}{364}{subsubsection*.1938}%
+\contentsline {subsubsection}{Scroll momentum}{364}{subsubsection*.1939}%
+\contentsline {subsubsection}{Elastic scroll}{364}{subsubsection*.1940}%
+\contentsline {subsubsection}{Snapping}{365}{subsubsection*.1941}%
+\contentsline {subsubsection}{Scroll one}{365}{subsubsection*.1942}%
+\contentsline {subsubsection}{Scroll on focus}{365}{subsubsection*.1943}%
+\contentsline {subsection}{\numberline {5.5.4}Scroll manually}{365}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.5}Self size}{366}{subsection.5.5.5}%
+\contentsline {subsection}{\numberline {5.5.6}Examples}{367}{subsection.5.5.6}%
+\contentsline {subsubsection}{Nested scrolling}{367}{subsubsection*.1944}%
+\contentsline {subsubsection}{Snapping}{368}{subsubsection*.1945}%
+\contentsline {subsubsection}{Floating button}{370}{subsubsection*.1946}%
+\contentsline {subsubsection}{Styling the scrollbars}{372}{subsubsection*.1947}%
+\contentsline {subsubsection}{Right to left scrolling}{374}{subsubsection*.1948}%
+\contentsline {subsubsection}{Translate on scroll}{375}{subsubsection*.1949}%
+\contentsline {section}{\numberline {5.6}Layers}{378}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Order of creation}{378}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Change order}{379}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Top and sys layers}{379}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Events}{380}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Add events to the object}{380}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Remove event(s) from an object}{381}{subsection.5.7.2}%
+\contentsline {subsection}{\numberline {5.7.3}Event codes}{381}{subsection.5.7.3}%
+\contentsline {subsubsection}{Input device events}{381}{subsubsection*.1950}%
+\contentsline {subsubsection}{Drawing events}{382}{subsubsection*.1951}%
+\contentsline {subsubsection}{Other events}{382}{subsubsection*.1952}%
+\contentsline {subsubsection}{Special events}{383}{subsubsection*.1953}%
+\contentsline {subsubsection}{Custom events}{383}{subsubsection*.1954}%
+\contentsline {subsection}{\numberline {5.7.4}Sending events}{383}{subsection.5.7.4}%
+\contentsline {subsubsection}{Refresh event}{383}{subsubsection*.1955}%
+\contentsline {subsection}{\numberline {5.7.5}Fields of lv\_event\_t}{383}{subsection.5.7.5}%
+\contentsline {subsection}{\numberline {5.7.6}Event bubbling}{384}{subsection.5.7.6}%
+\contentsline {subsection}{\numberline {5.7.7}Examples}{384}{subsection.5.7.7}%
+\contentsline {subsubsection}{Button click event}{384}{subsubsection*.1956}%
+\contentsline {subsubsection}{Handle multiple events}{385}{subsubsection*.1957}%
+\contentsline {subsubsection}{Event bubbling}{386}{subsubsection*.1958}%
+\contentsline {section}{\numberline {5.8}Input devices}{388}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Pointers}{388}{subsection.5.8.1}%
+\contentsline {subsubsection}{Cursor}{388}{subsubsection*.1959}%
+\contentsline {subsubsection}{Gestures}{389}{subsubsection*.1960}%
+\contentsline {subsection}{\numberline {5.8.2}Keypad and encoder}{389}{subsection.5.8.2}%
+\contentsline {subsubsection}{Groups}{389}{subsubsection*.1961}%
+\contentsline {paragraph}{Keys}{390}{paragraph*.1962}%
+\contentsline {paragraph}{Edit and navigate mode}{390}{paragraph*.1963}%
+\contentsline {paragraph}{Default group}{390}{paragraph*.1964}%
+\contentsline {subsubsection}{Styling}{391}{subsubsection*.1965}%
+\contentsline {subsection}{\numberline {5.8.3}API}{391}{subsection.5.8.3}%
+\contentsline {subsubsection}{Input device}{391}{subsubsection*.1966}%
+\contentsline {subsubsection}{Groups}{393}{subsubsection*.2024}%
+\contentsline {section}{\numberline {5.9}Displays}{398}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Multiple display support}{398}{subsection.5.9.1}%
+\contentsline {subsubsection}{Using only one display}{399}{subsubsection*.2160}%
+\contentsline {subsubsection}{Mirror display}{399}{subsubsection*.2161}%
+\contentsline {subsubsection}{Split image}{399}{subsubsection*.2162}%
+\contentsline {subsection}{\numberline {5.9.2}Screens}{399}{subsection.5.9.2}%
+\contentsline {subsubsection}{Transparent screens}{400}{subsubsection*.2163}%
+\contentsline {subsection}{\numberline {5.9.3}Features of displays}{400}{subsection.5.9.3}%
+\contentsline {subsubsection}{Inactivity}{400}{subsubsection*.2164}%
+\contentsline {subsubsection}{Background}{400}{subsubsection*.2165}%
+\contentsline {subsection}{\numberline {5.9.4}API}{401}{subsection.5.9.4}%
+\contentsline {section}{\numberline {5.10}Colors}{404}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Creating colors}{405}{subsection.5.10.1}%
+\contentsline {subsubsection}{RGB}{405}{subsubsection*.2269}%
+\contentsline {subsubsection}{HSV}{405}{subsubsection*.2270}%
+\contentsline {subsubsection}{Palette}{405}{subsubsection*.2271}%
+\contentsline {subsubsection}{Modify and mix colors}{406}{subsubsection*.2272}%
+\contentsline {subsubsection}{Built\sphinxhyphen {}in colors}{406}{subsubsection*.2273}%
+\contentsline {subsection}{\numberline {5.10.2}Opacity}{406}{subsection.5.10.2}%
+\contentsline {subsection}{\numberline {5.10.3}Color types}{407}{subsection.5.10.3}%
+\contentsline {subsubsection}{Convert color}{407}{subsubsection*.2274}%
+\contentsline {subsection}{\numberline {5.10.4}API}{408}{subsection.5.10.4}%
+\contentsline {section}{\numberline {5.11}Fonts}{413}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Unicode support}{413}{subsection.5.11.1}%
+\contentsline {subsection}{\numberline {5.11.2}Built\sphinxhyphen {}in fonts}{414}{subsection.5.11.2}%
+\contentsline {subsubsection}{Normal fonts}{414}{subsubsection*.2490}%
+\contentsline {subsubsection}{Special fonts}{414}{subsubsection*.2491}%
+\contentsline {subsection}{\numberline {5.11.3}Special features}{416}{subsection.5.11.3}%
+\contentsline {subsubsection}{Bidirectional support}{416}{subsubsection*.2492}%
+\contentsline {subsubsection}{Arabic and Persian support}{417}{subsubsection*.2493}%
+\contentsline {subsubsection}{Subpixel rendering}{417}{subsubsection*.2494}%
+\contentsline {subsubsection}{Compressed fonts}{417}{subsubsection*.2495}%
+\contentsline {subsection}{\numberline {5.11.4}Add a new font}{418}{subsection.5.11.4}%
+\contentsline {subsection}{\numberline {5.11.5}Add new symbols}{418}{subsection.5.11.5}%
+\contentsline {subsection}{\numberline {5.11.6}Load a font at run\sphinxhyphen {}time}{418}{subsection.5.11.6}%
+\contentsline {subsection}{\numberline {5.11.7}Add a new font engine}{419}{subsection.5.11.7}%
+\contentsline {subsection}{\numberline {5.11.8}Use font fallback}{420}{subsection.5.11.8}%
+\contentsline {section}{\numberline {5.12}Images}{420}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Store images}{420}{subsection.5.12.1}%
+\contentsline {subsubsection}{Variables}{420}{subsubsection*.2496}%
+\contentsline {subsubsection}{Files}{421}{subsubsection*.2497}%
+\contentsline {subsection}{\numberline {5.12.2}Color formats}{421}{subsection.5.12.2}%
+\contentsline {subsection}{\numberline {5.12.3}Add and use images}{422}{subsection.5.12.3}%
+\contentsline {subsubsection}{Online converter}{422}{subsubsection*.2498}%
+\contentsline {subsubsection}{Manually create an image}{423}{subsubsection*.2499}%
+\contentsline {subsubsection}{Use images}{423}{subsubsection*.2500}%
+\contentsline {subsection}{\numberline {5.12.4}Image decoder}{423}{subsection.5.12.4}%
+\contentsline {subsubsection}{Custom image formats}{424}{subsubsection*.2501}%
+\contentsline {subsubsection}{Register an image decoder}{424}{subsubsection*.2502}%
+\contentsline {subsubsection}{Manually use an image decoder}{426}{subsubsection*.2503}%
+\contentsline {subsection}{\numberline {5.12.5}Image caching}{426}{subsection.5.12.5}%
+\contentsline {subsubsection}{Cache size}{427}{subsubsection*.2504}%
+\contentsline {subsubsection}{Value of images}{427}{subsubsection*.2505}%
+\contentsline {subsubsection}{Memory usage}{427}{subsubsection*.2506}%
+\contentsline {subsubsection}{Clean the cache}{427}{subsubsection*.2507}%
+\contentsline {subsection}{\numberline {5.12.6}API}{427}{subsection.5.12.6}%
+\contentsline {subsubsection}{Image buffer}{427}{subsubsection*.2508}%
+\contentsline {section}{\numberline {5.13}File system}{433}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Ready to use drivers}{433}{subsection.5.13.1}%
+\contentsline {subsection}{\numberline {5.13.2}Adding a driver}{434}{subsection.5.13.2}%
+\contentsline {subsubsection}{Registering a driver}{434}{subsubsection*.2642}%
+\contentsline {subsubsection}{Implementing the callbacks}{434}{subsubsection*.2643}%
+\contentsline {paragraph}{Open callback}{434}{paragraph*.2644}%
+\contentsline {subsubsection}{Other callbacks}{435}{subsubsection*.2645}%
+\contentsline {subsection}{\numberline {5.13.3}Usage example}{435}{subsection.5.13.3}%
+\contentsline {subsection}{\numberline {5.13.4}Use drives for images}{436}{subsection.5.13.4}%
+\contentsline {subsection}{\numberline {5.13.5}API}{436}{subsection.5.13.5}%
+\contentsline {section}{\numberline {5.14}Animations}{441}{section.5.14}%
+\contentsline {subsection}{\numberline {5.14.1}Create an animation}{442}{subsection.5.14.1}%
+\contentsline {subsection}{\numberline {5.14.2}Animation path}{443}{subsection.5.14.2}%
+\contentsline {subsection}{\numberline {5.14.3}Speed vs time}{443}{subsection.5.14.3}%
+\contentsline {subsection}{\numberline {5.14.4}Delete animations}{443}{subsection.5.14.4}%
+\contentsline {subsection}{\numberline {5.14.5}Timeline}{444}{subsection.5.14.5}%
+\contentsline {subsection}{\numberline {5.14.6}Examples}{445}{subsection.5.14.6}%
+\contentsline {subsubsection}{Start animation on an event}{445}{subsubsection*.2800}%
+\contentsline {subsubsection}{Playback animation}{446}{subsubsection*.2801}%
+\contentsline {subsubsection}{Animation timeline}{448}{subsubsection*.2802}%
+\contentsline {subsection}{\numberline {5.14.7}API}{454}{subsection.5.14.7}%
+\contentsline {section}{\numberline {5.15}Timers}{462}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Create a timer}{462}{subsection.5.15.1}%
+\contentsline {subsection}{\numberline {5.15.2}Ready and Reset}{463}{subsection.5.15.2}%
+\contentsline {subsection}{\numberline {5.15.3}Set parameters}{463}{subsection.5.15.3}%
+\contentsline {subsection}{\numberline {5.15.4}Repeat count}{463}{subsection.5.15.4}%
+\contentsline {subsection}{\numberline {5.15.5}Measure idle time}{463}{subsection.5.15.5}%
+\contentsline {subsection}{\numberline {5.15.6}Asynchronous calls}{463}{subsection.5.15.6}%
+\contentsline {subsection}{\numberline {5.15.7}API}{464}{subsection.5.15.7}%
+\contentsline {section}{\numberline {5.16}Drawing}{467}{section.5.16}%
+\contentsline {subsection}{\numberline {5.16.1}Mechanism of screen refreshing}{467}{subsection.5.16.1}%
+\contentsline {subsection}{\numberline {5.16.2}Masking}{468}{subsection.5.16.2}%
+\contentsline {subsubsection}{Using masks}{469}{subsubsection*.3061}%
+\contentsline {subsection}{\numberline {5.16.3}Hook drawing}{469}{subsection.5.16.3}%
+\contentsline {subsubsection}{Main drawing}{469}{subsubsection*.3062}%
+\contentsline {paragraph}{LV\_EVENT\_DRAW\_MAIN\_BEGIN}{470}{paragraph*.3063}%
+\contentsline {paragraph}{LV\_EVENT\_DRAW\_MAIN}{470}{paragraph*.3064}%
+\contentsline {paragraph}{LV\_EVENT\_DRAW\_MAIN\_END}{470}{paragraph*.3065}%
+\contentsline {subsubsection}{Post drawing}{470}{subsubsection*.3066}%
+\contentsline {paragraph}{LV\_EVENT\_DRAW\_POST\_BEGIN}{470}{paragraph*.3067}%
+\contentsline {paragraph}{LV\_EVENT\_DRAW\_POST}{470}{paragraph*.3068}%
+\contentsline {paragraph}{LV\_EVENT\_DRAW\_POST\_END}{470}{paragraph*.3069}%
+\contentsline {subsubsection}{Part drawing}{470}{subsubsection*.3070}%
+\contentsline {paragraph}{LV\_EVENT\_DRAW\_PART\_BEGIN}{471}{paragraph*.3071}%
+\contentsline {paragraph}{LV\_EVENT\_DRAW\_PART\_END}{472}{paragraph*.3072}%
+\contentsline {subsubsection}{Others}{472}{subsubsection*.3073}%
+\contentsline {paragraph}{LV\_EVENT\_COVER\_CHECK}{472}{paragraph*.3074}%
+\contentsline {paragraph}{LV\_EVENT\_REFR\_EXT\_DRAW\_SIZE}{472}{paragraph*.3075}%
+\contentsline {section}{\numberline {5.17}Renderers and GPUs}{473}{section.5.17}%
+\contentsline {subsection}{\numberline {5.17.1}Software renderer}{473}{subsection.5.17.1}%
+\contentsline {subsection}{\numberline {5.17.2}SDL renderer}{473}{subsection.5.17.2}%
+\contentsline {subsection}{\numberline {5.17.3}Arm\sphinxhyphen {}2D GPU}{473}{subsection.5.17.3}%
+\contentsline {subsubsection}{How to Use}{473}{subsubsection*.3076}%
+\contentsline {subsubsection}{Design Considerations}{473}{subsubsection*.3077}%
+\contentsline {subsubsection}{Examples}{473}{subsubsection*.3078}%
+\contentsline {subsection}{\numberline {5.17.4}NXP PXP and VGLite GPU}{473}{subsection.5.17.4}%
+\contentsline {subsection}{\numberline {5.17.5}DMA2D GPU}{474}{subsection.5.17.5}%
+\contentsline {section}{\numberline {5.18}New widget}{474}{section.5.18}%
+\contentsline {chapter}{\numberline {6}Widgets}{475}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Base object (lv\_obj)}{475}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Overview}{475}{subsection.6.1.1}%
+\contentsline {subsubsection}{Coordinates}{475}{subsubsection*.3079}%
+\contentsline {paragraph}{Size}{475}{paragraph*.3080}%
+\contentsline {paragraph}{Position}{476}{paragraph*.3081}%
+\contentsline {paragraph}{Alignment}{476}{paragraph*.3082}%
+\contentsline {subsubsection}{Parents and children}{477}{subsubsection*.3083}%
+\contentsline {subsubsection}{Display and Screens}{477}{subsubsection*.3084}%
+\contentsline {subsubsection}{Events}{477}{subsubsection*.3085}%
+\contentsline {subsubsection}{Styles}{478}{subsubsection*.3086}%
+\contentsline {subsubsection}{Flags}{478}{subsubsection*.3087}%
+\contentsline {subsubsection}{Groups}{479}{subsubsection*.3088}%
+\contentsline {subsubsection}{Extended click area}{479}{subsubsection*.3089}%
+\contentsline {subsection}{\numberline {6.1.2}Events}{479}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Keys}{480}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Example}{480}{subsection.6.1.4}%
+\contentsline {subsubsection}{Base objects with custom styles}{480}{subsubsection*.3090}%
+\contentsline {subsubsection}{Make an object draggable}{481}{subsubsection*.3091}%
+\contentsline {subsection}{\numberline {6.1.5}API}{482}{subsection.6.1.5}%
+\contentsline {section}{\numberline {6.2}Core widgets}{491}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Arc (lv\_arc)}{491}{subsection.6.2.1}%
+\contentsline {subsubsection}{Overview}{491}{subsubsection*.3347}%
+\contentsline {subsubsection}{Parts and Styles}{491}{subsubsection*.3348}%
+\contentsline {subsubsection}{Usage}{491}{subsubsection*.3349}%
+\contentsline {paragraph}{Value and range}{491}{paragraph*.3350}%
+\contentsline {paragraph}{Rotation}{491}{paragraph*.3351}%
+\contentsline {paragraph}{Mode}{491}{paragraph*.3352}%
+\contentsline {paragraph}{Change rate}{492}{paragraph*.3353}%
+\contentsline {paragraph}{Setting the indicator manually}{492}{paragraph*.3354}%
+\contentsline {paragraph}{Advanced hit test}{492}{paragraph*.3355}%
+\contentsline {paragraph}{Place another object to the knob}{492}{paragraph*.3356}%
+\contentsline {subsubsection}{Events}{492}{subsubsection*.3357}%
+\contentsline {subsubsection}{Keys}{493}{subsubsection*.3358}%
+\contentsline {subsubsection}{Example}{493}{subsubsection*.3359}%
+\contentsline {paragraph}{Simple Arc}{493}{paragraph*.3360}%
+\contentsline {paragraph}{Loader with Arc}{494}{paragraph*.3361}%
+\contentsline {subsubsection}{API}{495}{subsubsection*.3362}%
+\contentsline {subsection}{\numberline {6.2.2}Bar (lv\_bar)}{500}{subsection.6.2.2}%
+\contentsline {subsubsection}{Overview}{500}{subsubsection*.3483}%
+\contentsline {subsubsection}{Parts and Styles}{500}{subsubsection*.3484}%
+\contentsline {subsubsection}{Usage}{501}{subsubsection*.3485}%
+\contentsline {paragraph}{Value and range}{501}{paragraph*.3486}%
+\contentsline {paragraph}{Modes}{501}{paragraph*.3487}%
+\contentsline {subsubsection}{Events}{501}{subsubsection*.3488}%
+\contentsline {subsubsection}{Keys}{501}{subsubsection*.3489}%
+\contentsline {subsubsection}{Example}{501}{subsubsection*.3490}%
+\contentsline {paragraph}{Simple Bar}{501}{paragraph*.3491}%
+\contentsline {paragraph}{Styling a bar}{502}{paragraph*.3492}%
+\contentsline {paragraph}{Temperature meter}{503}{paragraph*.3493}%
+\contentsline {paragraph}{Stripe pattern and range value}{505}{paragraph*.3494}%
+\contentsline {paragraph}{Bar with LTR and RTL base direction}{506}{paragraph*.3495}%
+\contentsline {paragraph}{Custom drawer to show the current value}{507}{paragraph*.3496}%
+\contentsline {subsubsection}{API}{509}{subsubsection*.3497}%
+\contentsline {subsection}{\numberline {6.2.3}Button (lv\_btn)}{513}{subsection.6.2.3}%
+\contentsline {subsubsection}{Overview}{513}{subsubsection*.3574}%
+\contentsline {subsubsection}{Parts and Styles}{513}{subsubsection*.3575}%
+\contentsline {subsubsection}{Usage}{513}{subsubsection*.3576}%
+\contentsline {subsubsection}{Events}{513}{subsubsection*.3577}%
+\contentsline {subsubsection}{Keys}{513}{subsubsection*.3578}%
+\contentsline {subsubsection}{Example}{513}{subsubsection*.3579}%
+\contentsline {paragraph}{Simple Buttons}{513}{paragraph*.3580}%
+\contentsline {paragraph}{Styling buttons}{515}{paragraph*.3581}%
+\contentsline {paragraph}{Gummy button}{517}{paragraph*.3582}%
+\contentsline {subsubsection}{API}{519}{subsubsection*.3583}%
+\contentsline {subsection}{\numberline {6.2.4}Button matrix (lv\_btnmatrix)}{519}{subsection.6.2.4}%
+\contentsline {subsubsection}{Overview}{519}{subsubsection*.3593}%
+\contentsline {subsubsection}{Parts and Styles}{520}{subsubsection*.3594}%
+\contentsline {subsubsection}{Usage}{520}{subsubsection*.3595}%
+\contentsline {paragraph}{Button's text}{520}{paragraph*.3596}%
+\contentsline {paragraph}{Control buttons}{520}{paragraph*.3597}%
+\contentsline {paragraph}{One check}{521}{paragraph*.3598}%
+\contentsline {subsubsection}{Events}{521}{subsubsection*.3599}%
+\contentsline {subsubsection}{Keys}{521}{subsubsection*.3600}%
+\contentsline {subsubsection}{Example}{522}{subsubsection*.3601}%
+\contentsline {paragraph}{Simple Button matrix}{522}{paragraph*.3602}%
+\contentsline {paragraph}{Custom buttons}{523}{paragraph*.3603}%
+\contentsline {paragraph}{Pagination}{526}{paragraph*.3604}%
+\contentsline {subsubsection}{API}{528}{subsubsection*.3605}%
+\contentsline {subsection}{\numberline {6.2.5}Canvas (lv\_canvas)}{533}{subsection.6.2.5}%
+\contentsline {subsubsection}{Overview}{533}{subsubsection*.3710}%
+\contentsline {subsubsection}{Parts and Styles}{533}{subsubsection*.3711}%
+\contentsline {subsubsection}{Usage}{533}{subsubsection*.3712}%
+\contentsline {paragraph}{Buffer}{533}{paragraph*.3713}%
+\contentsline {paragraph}{Indexed colors}{533}{paragraph*.3714}%
+\contentsline {paragraph}{Drawing}{534}{paragraph*.3715}%
+\contentsline {paragraph}{Transformations}{534}{paragraph*.3716}%
+\contentsline {paragraph}{Blur}{535}{paragraph*.3717}%
+\contentsline {subsubsection}{Events}{535}{subsubsection*.3718}%
+\contentsline {subsubsection}{Keys}{535}{subsubsection*.3719}%
+\contentsline {subsubsection}{Example}{535}{subsubsection*.3720}%
+\contentsline {paragraph}{Drawing on the Canvas and rotate}{535}{paragraph*.3721}%
+\contentsline {paragraph}{Transparent Canvas with chroma keying}{537}{paragraph*.3722}%
+\contentsline {subsubsection}{API}{539}{subsubsection*.3723}%
+\contentsline {subsection}{\numberline {6.2.6}Checkbox (lv\_checkbox)}{543}{subsection.6.2.6}%
+\contentsline {subsubsection}{Overview}{543}{subsubsection*.3789}%
+\contentsline {subsubsection}{Parts and Styles}{543}{subsubsection*.3790}%
+\contentsline {subsubsection}{Usage}{543}{subsubsection*.3791}%
+\contentsline {paragraph}{Text}{543}{paragraph*.3792}%
+\contentsline {paragraph}{Check, uncheck, disable}{544}{paragraph*.3793}%
+\contentsline {subsubsection}{Events}{544}{subsubsection*.3794}%
+\contentsline {subsubsection}{Keys}{544}{subsubsection*.3795}%
+\contentsline {subsubsection}{Example}{544}{subsubsection*.3796}%
+\contentsline {paragraph}{Simple Checkboxes}{544}{paragraph*.3797}%
+\contentsline {paragraph}{Checkboxes as radio buttons}{546}{paragraph*.3798}%
+\contentsline {subsubsection}{API}{548}{subsubsection*.3799}%
+\contentsline {subsection}{\numberline {6.2.7}Drop\sphinxhyphen {}down list (lv\_dropdown)}{549}{subsection.6.2.7}%
+\contentsline {subsubsection}{Overview}{549}{subsubsection*.3826}%
+\contentsline {subsubsection}{Parts and Styles}{549}{subsubsection*.3827}%
+\contentsline {paragraph}{Button}{549}{paragraph*.3828}%
+\contentsline {paragraph}{List}{549}{paragraph*.3829}%
+\contentsline {subsubsection}{Usage}{550}{subsubsection*.3830}%
+\contentsline {subsubsection}{Overview}{550}{subsubsection*.3831}%
+\contentsline {paragraph}{Set options}{550}{paragraph*.3832}%
+\contentsline {paragraph}{Get selected option}{550}{paragraph*.3833}%
+\contentsline {paragraph}{Direction}{550}{paragraph*.3834}%
+\contentsline {paragraph}{Symbol}{550}{paragraph*.3835}%
+\contentsline {paragraph}{Show selected}{550}{paragraph*.3836}%
+\contentsline {paragraph}{Manually open/close}{551}{paragraph*.3837}%
+\contentsline {subsubsection}{Events}{551}{subsubsection*.3838}%
+\contentsline {subsubsection}{Keys}{551}{subsubsection*.3839}%
+\contentsline {subsubsection}{Example}{551}{subsubsection*.3840}%
+\contentsline {paragraph}{Simple Drop down list}{551}{paragraph*.3841}%
+\contentsline {paragraph}{Drop down in four directions}{552}{paragraph*.3842}%
+\contentsline {paragraph}{Menu}{554}{paragraph*.3843}%
+\contentsline {subsubsection}{API}{556}{subsubsection*.3844}%
+\contentsline {subsection}{\numberline {6.2.8}Image (lv\_img)}{560}{subsection.6.2.8}%
+\contentsline {subsubsection}{Overview}{560}{subsubsection*.3953}%
+\contentsline {subsubsection}{Parts and Styles}{560}{subsubsection*.3954}%
+\contentsline {subsubsection}{Usage}{561}{subsubsection*.3955}%
+\contentsline {paragraph}{Image source}{561}{paragraph*.3956}%
+\contentsline {paragraph}{Label as an image}{561}{paragraph*.3957}%
+\contentsline {paragraph}{Transparency}{561}{paragraph*.3958}%
+\contentsline {paragraph}{Palette and Alpha index}{561}{paragraph*.3959}%
+\contentsline {paragraph}{Recolor}{562}{paragraph*.3960}%
+\contentsline {paragraph}{Auto\sphinxhyphen {}size}{562}{paragraph*.3961}%
+\contentsline {paragraph}{Mosaic}{562}{paragraph*.3962}%
+\contentsline {paragraph}{Offset}{562}{paragraph*.3963}%
+\contentsline {subsubsection}{Transformations}{562}{subsubsection*.3964}%
+\contentsline {paragraph}{Size mode}{563}{paragraph*.3965}%
+\contentsline {paragraph}{Rounded image}{563}{paragraph*.3966}%
+\contentsline {subsubsection}{Events}{563}{subsubsection*.3967}%
+\contentsline {subsubsection}{Keys}{563}{subsubsection*.3968}%
+\contentsline {subsubsection}{Example}{563}{subsubsection*.3969}%
+\contentsline {paragraph}{Image from variable and symbol}{563}{paragraph*.3970}%
+\contentsline {paragraph}{Image recoloring}{564}{paragraph*.3971}%
+\contentsline {paragraph}{Rotate and zoom}{567}{paragraph*.3972}%
+\contentsline {paragraph}{Image offset and styling}{569}{paragraph*.3973}%
+\contentsline {subsubsection}{API}{570}{subsubsection*.3974}%
+\contentsline {subsection}{\numberline {6.2.9}Label (lv\_label)}{574}{subsection.6.2.9}%
+\contentsline {subsubsection}{Overview}{574}{subsubsection*.4062}%
+\contentsline {subsubsection}{Parts and Styles}{574}{subsubsection*.4063}%
+\contentsline {subsubsection}{Usage}{574}{subsubsection*.4064}%
+\contentsline {paragraph}{Set text}{574}{paragraph*.4065}%
+\contentsline {paragraph}{Newline}{575}{paragraph*.4066}%
+\contentsline {paragraph}{Long modes}{575}{paragraph*.4067}%
+\contentsline {paragraph}{Text recolor}{575}{paragraph*.4068}%
+\contentsline {paragraph}{Text selection}{575}{paragraph*.4069}%
+\contentsline {paragraph}{Very long texts}{576}{paragraph*.4070}%
+\contentsline {paragraph}{Custom scrolling animations}{576}{paragraph*.4071}%
+\contentsline {paragraph}{Symbols}{576}{paragraph*.4072}%
+\contentsline {subsubsection}{Events}{576}{subsubsection*.4073}%
+\contentsline {subsubsection}{Keys}{576}{subsubsection*.4074}%
+\contentsline {subsubsection}{Example}{576}{subsubsection*.4075}%
+\contentsline {paragraph}{Line wrap, recoloring and scrolling}{576}{paragraph*.4076}%
+\contentsline {paragraph}{Text shadow}{577}{paragraph*.4077}%
+\contentsline {paragraph}{Show LTR, RTL and Chinese texts}{579}{paragraph*.4078}%
+\contentsline {paragraph}{Draw label with gradient color}{580}{paragraph*.4079}%
+\contentsline {paragraph}{Customize circular scrolling animation}{581}{paragraph*.4080}%
+\contentsline {subsubsection}{API}{582}{subsubsection*.4081}%
+\contentsline {subsection}{\numberline {6.2.10}Line (lv\_line)}{586}{subsection.6.2.10}%
+\contentsline {subsubsection}{Overview}{586}{subsubsection*.4189}%
+\contentsline {subsubsection}{Parts and Styles}{587}{subsubsection*.4190}%
+\contentsline {subsubsection}{Usage}{587}{subsubsection*.4191}%
+\contentsline {paragraph}{Set points}{587}{paragraph*.4192}%
+\contentsline {paragraph}{Auto\sphinxhyphen {}size}{587}{paragraph*.4193}%
+\contentsline {paragraph}{Invert y}{587}{paragraph*.4194}%
+\contentsline {subsubsection}{Events}{587}{subsubsection*.4195}%
+\contentsline {subsubsection}{Keys}{587}{subsubsection*.4196}%
+\contentsline {subsubsection}{Example}{587}{subsubsection*.4197}%
+\contentsline {paragraph}{Simple Line}{587}{paragraph*.4198}%
+\contentsline {subsubsection}{API}{588}{subsubsection*.4199}%
+\contentsline {subsection}{\numberline {6.2.11}Roller (lv\_roller)}{589}{subsection.6.2.11}%
+\contentsline {subsubsection}{Overview}{589}{subsubsection*.4224}%
+\contentsline {subsubsection}{Parts and Styles}{590}{subsubsection*.4225}%
+\contentsline {subsubsection}{Usage}{590}{subsubsection*.4226}%
+\contentsline {paragraph}{Set options}{590}{paragraph*.4227}%
+\contentsline {paragraph}{Get selected option}{590}{paragraph*.4228}%
+\contentsline {paragraph}{Visible rows}{590}{paragraph*.4229}%
+\contentsline {subsubsection}{Events}{590}{subsubsection*.4230}%
+\contentsline {subsubsection}{Keys}{591}{subsubsection*.4231}%
+\contentsline {subsubsection}{Example}{591}{subsubsection*.4232}%
+\contentsline {paragraph}{Simple Roller}{591}{paragraph*.4233}%
+\contentsline {paragraph}{Styling the roller}{592}{paragraph*.4234}%
+\contentsline {paragraph}{add fade mask to roller}{594}{paragraph*.4235}%
+\contentsline {subsubsection}{API}{598}{subsubsection*.4236}%
+\contentsline {subsection}{\numberline {6.2.12}Slider (lv\_slider)}{600}{subsection.6.2.12}%
+\contentsline {subsubsection}{Overview}{600}{subsubsection*.4285}%
+\contentsline {subsubsection}{Parts and Styles}{601}{subsubsection*.4286}%
+\contentsline {subsubsection}{Usage}{601}{subsubsection*.4287}%
+\contentsline {paragraph}{Value and range}{601}{paragraph*.4288}%
+\contentsline {paragraph}{Modes}{601}{paragraph*.4289}%
+\contentsline {paragraph}{Knob\sphinxhyphen {}only mode}{601}{paragraph*.4290}%
+\contentsline {subsubsection}{Events}{602}{subsubsection*.4291}%
+\contentsline {subsubsection}{Keys}{602}{subsubsection*.4292}%
+\contentsline {subsubsection}{Example}{602}{subsubsection*.4293}%
+\contentsline {paragraph}{Simple Slider}{602}{paragraph*.4294}%
+\contentsline {paragraph}{Slider with custom style}{603}{paragraph*.4295}%
+\contentsline {paragraph}{Slider with extended drawer}{605}{paragraph*.4296}%
+\contentsline {subsubsection}{API}{607}{subsubsection*.4297}%
+\contentsline {subsection}{\numberline {6.2.13}Switch (lv\_switch)}{610}{subsection.6.2.13}%
+\contentsline {subsubsection}{Overview}{610}{subsubsection*.4363}%
+\contentsline {subsubsection}{Parts and Styles}{610}{subsubsection*.4364}%
+\contentsline {subsubsection}{Usage}{611}{subsubsection*.4365}%
+\contentsline {paragraph}{Change state}{611}{paragraph*.4366}%
+\contentsline {subsubsection}{Events}{611}{subsubsection*.4367}%
+\contentsline {subsubsection}{Keys}{611}{subsubsection*.4368}%
+\contentsline {subsubsection}{Example}{611}{subsubsection*.4369}%
+\contentsline {paragraph}{Simple Switch}{611}{paragraph*.4370}%
+\contentsline {subsubsection}{API}{613}{subsubsection*.4371}%
+\contentsline {subsection}{\numberline {6.2.14}Table (lv\_table)}{613}{subsection.6.2.14}%
+\contentsline {subsubsection}{Overview}{613}{subsubsection*.4383}%
+\contentsline {subsubsection}{Parts and Styles}{613}{subsubsection*.4384}%
+\contentsline {subsubsection}{Usage}{614}{subsubsection*.4385}%
+\contentsline {paragraph}{Set cell value}{614}{paragraph*.4386}%
+\contentsline {paragraph}{Rows and Columns}{614}{paragraph*.4387}%
+\contentsline {paragraph}{Width and Height}{614}{paragraph*.4388}%
+\contentsline {paragraph}{Merge cells}{614}{paragraph*.4389}%
+\contentsline {paragraph}{Scroll}{614}{paragraph*.4390}%
+\contentsline {subsubsection}{Events}{614}{subsubsection*.4391}%
+\contentsline {subsubsection}{Keys}{615}{subsubsection*.4392}%
+\contentsline {subsubsection}{Example}{615}{subsubsection*.4393}%
+\contentsline {paragraph}{Simple table}{615}{paragraph*.4394}%
+\contentsline {paragraph}{Lightweighted list from table}{617}{paragraph*.4395}%
+\contentsline {paragraph}{MicroPython}{621}{paragraph*.4396}%
+\contentsline {subsubsection}{API}{621}{subsubsection*.4397}%
+\contentsline {subsection}{\numberline {6.2.15}Text area (lv\_textarea)}{626}{subsection.6.2.15}%
+\contentsline {subsubsection}{Overview}{626}{subsubsection*.4497}%
+\contentsline {subsubsection}{Parts and Styles}{626}{subsubsection*.4498}%
+\contentsline {subsubsection}{Usage}{626}{subsubsection*.4499}%
+\contentsline {paragraph}{Add text}{626}{paragraph*.4500}%
+\contentsline {paragraph}{Placeholder}{626}{paragraph*.4501}%
+\contentsline {paragraph}{Delete character}{627}{paragraph*.4502}%
+\contentsline {paragraph}{Move the cursor}{627}{paragraph*.4503}%
+\contentsline {paragraph}{Hide the cursor}{627}{paragraph*.4504}%
+\contentsline {paragraph}{One line mode}{627}{paragraph*.4505}%
+\contentsline {paragraph}{Password mode}{627}{paragraph*.4506}%
+\contentsline {paragraph}{Accepted characters}{628}{paragraph*.4507}%
+\contentsline {paragraph}{Max text length}{628}{paragraph*.4508}%
+\contentsline {paragraph}{Very long texts}{628}{paragraph*.4509}%
+\contentsline {paragraph}{Select text}{628}{paragraph*.4510}%
+\contentsline {subsubsection}{Events}{628}{subsubsection*.4511}%
+\contentsline {subsubsection}{Keys}{628}{subsubsection*.4512}%
+\contentsline {subsubsection}{Example}{629}{subsubsection*.4513}%
+\contentsline {paragraph}{Simple Text area}{629}{paragraph*.4514}%
+\contentsline {paragraph}{Text area with password field}{630}{paragraph*.4515}%
+\contentsline {paragraph}{Text auto\sphinxhyphen {}formatting}{632}{paragraph*.4516}%
+\contentsline {subsubsection}{API}{634}{subsubsection*.4517}%
+\contentsline {section}{\numberline {6.3}Extra widgets}{640}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Animation Image (lv\_animimg)}{640}{subsection.6.3.1}%
+\contentsline {subsubsection}{Overview}{640}{subsubsection*.4679}%
+\contentsline {subsubsection}{Parts and Styles}{640}{subsubsection*.4680}%
+\contentsline {subsubsection}{Usage}{640}{subsubsection*.4681}%
+\contentsline {paragraph}{Image sources}{640}{paragraph*.4682}%
+\contentsline {subsubsection}{Events}{640}{subsubsection*.4683}%
+\contentsline {subsubsection}{Keys}{641}{subsubsection*.4684}%
+\contentsline {subsubsection}{Example}{641}{subsubsection*.4685}%
+\contentsline {paragraph}{Simple Animation Image}{641}{paragraph*.4686}%
+\contentsline {subsubsection}{API}{642}{subsubsection*.4687}%
+\contentsline {subsection}{\numberline {6.3.2}Calendar (lv\_calendar)}{644}{subsection.6.3.2}%
+\contentsline {subsubsection}{Overview}{644}{subsubsection*.4721}%
+\contentsline {subsubsection}{Parts and Styles}{644}{subsubsection*.4722}%
+\contentsline {subsubsection}{Usage}{644}{subsubsection*.4723}%
+\contentsline {paragraph}{Current date}{645}{paragraph*.4724}%
+\contentsline {paragraph}{Shown date}{645}{paragraph*.4725}%
+\contentsline {paragraph}{Highlighted days}{645}{paragraph*.4726}%
+\contentsline {paragraph}{Name of the days}{645}{paragraph*.4727}%
+\contentsline {paragraph}{Custom year list}{645}{paragraph*.4728}%
+\contentsline {subsubsection}{Events}{645}{subsubsection*.4729}%
+\contentsline {subsubsection}{Keys}{645}{subsubsection*.4730}%
+\contentsline {subsubsection}{Headers}{646}{subsubsection*.4731}%
+\contentsline {paragraph}{Arrow buttons}{646}{paragraph*.4732}%
+\contentsline {paragraph}{Drop\sphinxhyphen {}down}{646}{paragraph*.4733}%
+\contentsline {subsubsection}{Example}{646}{subsubsection*.4734}%
+\contentsline {paragraph}{Calendar with header}{646}{paragraph*.4735}%
+\contentsline {subsubsection}{API}{648}{subsubsection*.4736}%
+\contentsline {subsection}{\numberline {6.3.3}Chart (lv\_chart)}{650}{subsection.6.3.3}%
+\contentsline {subsubsection}{Overview}{650}{subsubsection*.4798}%
+\contentsline {subsubsection}{Parts and Styles}{650}{subsubsection*.4799}%
+\contentsline {subsubsection}{Usage}{651}{subsubsection*.4800}%
+\contentsline {paragraph}{Chart type}{651}{paragraph*.4801}%
+\contentsline {paragraph}{Data series}{651}{paragraph*.4802}%
+\contentsline {paragraph}{Modify the data}{652}{paragraph*.4803}%
+\contentsline {paragraph}{Update modes}{652}{paragraph*.4804}%
+\contentsline {paragraph}{Number of points}{652}{paragraph*.4805}%
+\contentsline {subparagraph}{Handling large number of points}{652}{subparagraph*.4806}%
+\contentsline {paragraph}{Vertical range}{652}{paragraph*.4807}%
+\contentsline {paragraph}{Division lines}{653}{paragraph*.4808}%
+\contentsline {paragraph}{Override default start point for series}{653}{paragraph*.4809}%
+\contentsline {paragraph}{Tick marks and labels}{653}{paragraph*.4810}%
+\contentsline {paragraph}{Zoom}{653}{paragraph*.4811}%
+\contentsline {paragraph}{Cursor}{653}{paragraph*.4812}%
+\contentsline {subsubsection}{Events}{654}{subsubsection*.4813}%
+\contentsline {subsubsection}{Keys}{655}{subsubsection*.4814}%
+\contentsline {subsubsection}{Example}{655}{subsubsection*.4815}%
+\contentsline {paragraph}{Line Chart}{655}{paragraph*.4816}%
+\contentsline {paragraph}{Faded area line chart with custom division lines}{657}{paragraph*.4817}%
+\contentsline {paragraph}{Axis ticks and labels with scrolling}{661}{paragraph*.4818}%
+\contentsline {paragraph}{Show the value of the pressed points}{663}{paragraph*.4819}%
+\contentsline {paragraph}{Display 1000 data points with zooming and scrolling}{666}{paragraph*.4820}%
+\contentsline {paragraph}{Show cursor on the clicked point}{671}{paragraph*.4821}%
+\contentsline {paragraph}{Scatter chart}{674}{paragraph*.4822}%
+\contentsline {paragraph}{Stacked area chart}{677}{paragraph*.4823}%
+\contentsline {subsubsection}{API}{682}{subsubsection*.4824}%
+\contentsline {subsection}{\numberline {6.3.4}Color wheel (lv\_colorwheel)}{692}{subsection.6.3.4}%
+\contentsline {subsubsection}{Overview}{692}{subsubsection*.5070}%
+\contentsline {subsubsection}{Parts and Styles}{693}{subsubsection*.5071}%
+\contentsline {subsubsection}{Usage}{693}{subsubsection*.5072}%
+\contentsline {paragraph}{Create a color wheel}{693}{paragraph*.5073}%
+\contentsline {paragraph}{Set color}{693}{paragraph*.5074}%
+\contentsline {paragraph}{Color mode}{693}{paragraph*.5075}%
+\contentsline {subsubsection}{Events}{693}{subsubsection*.5076}%
+\contentsline {subsubsection}{Keys}{693}{subsubsection*.5077}%
+\contentsline {subsubsection}{Example}{694}{subsubsection*.5078}%
+\contentsline {paragraph}{Simple Colorwheel}{694}{paragraph*.5079}%
+\contentsline {subsubsection}{API}{694}{subsubsection*.5080}%
+\contentsline {subsection}{\numberline {6.3.5}Image button (lv\_imgbtn)}{697}{subsection.6.3.5}%
+\contentsline {subsubsection}{Overview}{697}{subsubsection*.5142}%
+\contentsline {subsubsection}{Parts and Styles}{697}{subsubsection*.5143}%
+\contentsline {subsubsection}{Usage}{697}{subsubsection*.5144}%
+\contentsline {paragraph}{Image sources}{697}{paragraph*.5145}%
+\contentsline {paragraph}{States}{697}{paragraph*.5146}%
+\contentsline {subsubsection}{Events}{698}{subsubsection*.5147}%
+\contentsline {subsubsection}{Keys}{698}{subsubsection*.5148}%
+\contentsline {subsubsection}{Example}{698}{subsubsection*.5149}%
+\contentsline {paragraph}{Simple Image button}{698}{paragraph*.5150}%
+\contentsline {subsubsection}{API}{700}{subsubsection*.5151}%
+\contentsline {subsection}{\numberline {6.3.6}Keyboard (lv\_keyboard)}{702}{subsection.6.3.6}%
+\contentsline {subsubsection}{Overview}{702}{subsubsection*.5200}%
+\contentsline {subsubsection}{Parts and Styles}{702}{subsubsection*.5201}%
+\contentsline {subsubsection}{Usage}{702}{subsubsection*.5202}%
+\contentsline {paragraph}{Modes}{702}{paragraph*.5203}%
+\contentsline {paragraph}{Assign Text area}{703}{paragraph*.5204}%
+\contentsline {paragraph}{Key Popovers}{703}{paragraph*.5205}%
+\contentsline {paragraph}{New Keymap}{703}{paragraph*.5206}%
+\contentsline {subsubsection}{Events}{704}{subsubsection*.5207}%
+\contentsline {subsubsection}{Keys}{704}{subsubsection*.5208}%
+\contentsline {subsubsection}{Examples}{704}{subsubsection*.5209}%
+\contentsline {paragraph}{Keyboard with text area}{704}{paragraph*.5210}%
+\contentsline {subsubsection}{API}{706}{subsubsection*.5211}%
+\contentsline {subsection}{\numberline {6.3.7}LED (lv\_led)}{708}{subsection.6.3.7}%
+\contentsline {subsubsection}{Overview}{708}{subsubsection*.5280}%
+\contentsline {subsubsection}{Parts and Styles}{709}{subsubsection*.5281}%
+\contentsline {subsubsection}{Usage}{709}{subsubsection*.5282}%
+\contentsline {paragraph}{Color}{709}{paragraph*.5283}%
+\contentsline {paragraph}{Brightness}{709}{paragraph*.5284}%
+\contentsline {paragraph}{Toggle}{709}{paragraph*.5285}%
+\contentsline {subsubsection}{Events}{709}{subsubsection*.5286}%
+\contentsline {subsubsection}{Keys}{709}{subsubsection*.5287}%
+\contentsline {subsubsection}{Example}{710}{subsubsection*.5288}%
+\contentsline {paragraph}{LED with custom style}{710}{paragraph*.5289}%
+\contentsline {subsubsection}{API}{711}{subsubsection*.5290}%
+\contentsline {subsection}{\numberline {6.3.8}List (lv\_list)}{712}{subsection.6.3.8}%
+\contentsline {subsubsection}{Overview}{712}{subsubsection*.5326}%
+\contentsline {subsubsection}{Parts and Styles}{712}{subsubsection*.5327}%
+\contentsline {subsubsection}{Usage}{712}{subsubsection*.5328}%
+\contentsline {paragraph}{Buttons}{712}{paragraph*.5329}%
+\contentsline {paragraph}{Texts}{713}{paragraph*.5330}%
+\contentsline {subsubsection}{Events}{713}{subsubsection*.5331}%
+\contentsline {subsubsection}{Keys}{713}{subsubsection*.5332}%
+\contentsline {subsubsection}{Example}{713}{subsubsection*.5333}%
+\contentsline {paragraph}{Simple List}{713}{paragraph*.5334}%
+\contentsline {paragraph}{Sorting a List using up and down buttons}{715}{paragraph*.5335}%
+\contentsline {subsubsection}{API}{720}{subsubsection*.5336}%
+\contentsline {subsection}{\numberline {6.3.9}Menu (lv\_menu)}{721}{subsection.6.3.9}%
+\contentsline {subsubsection}{Overview}{721}{subsubsection*.5355}%
+\contentsline {subsubsection}{Parts and Styles}{721}{subsubsection*.5356}%
+\contentsline {subsubsection}{Usage}{721}{subsubsection*.5357}%
+\contentsline {paragraph}{Create a menu}{721}{paragraph*.5358}%
+\contentsline {paragraph}{Header mode}{722}{paragraph*.5359}%
+\contentsline {paragraph}{Root back button mode}{722}{paragraph*.5360}%
+\contentsline {paragraph}{Create a menu page}{722}{paragraph*.5361}%
+\contentsline {paragraph}{Set a menu page in the main area}{722}{paragraph*.5362}%
+\contentsline {paragraph}{Set a menu page in the sidebar}{722}{paragraph*.5363}%
+\contentsline {paragraph}{Linking between menu pages}{722}{paragraph*.5364}%
+\contentsline {paragraph}{Create a menu container, section, separator}{723}{paragraph*.5365}%
+\contentsline {subsubsection}{Events}{723}{subsubsection*.5366}%
+\contentsline {subsubsection}{Keys}{723}{subsubsection*.5367}%
+\contentsline {subsubsection}{Example}{723}{subsubsection*.5368}%
+\contentsline {paragraph}{Simple Menu}{723}{paragraph*.5369}%
+\contentsline {paragraph}{Simple Menu with root btn}{725}{paragraph*.5370}%
+\contentsline {paragraph}{Simple Menu with custom header}{726}{paragraph*.5371}%
+\contentsline {paragraph}{Simple Menu with floating btn to add new menu page}{728}{paragraph*.5372}%
+\contentsline {paragraph}{Complex Menu}{730}{paragraph*.5373}%
+\contentsline {subsubsection}{API}{735}{subsubsection*.5374}%
+\contentsline {subsection}{\numberline {6.3.10}Meter (lv\_meter)}{740}{subsection.6.3.10}%
+\contentsline {subsubsection}{Overview}{740}{subsubsection*.5522}%
+\contentsline {subsubsection}{Parts and Styles}{740}{subsubsection*.5523}%
+\contentsline {subsubsection}{Usage}{740}{subsubsection*.5524}%
+\contentsline {paragraph}{Add a scale}{740}{paragraph*.5525}%
+\contentsline {paragraph}{Add indicators}{741}{paragraph*.5526}%
+\contentsline {subparagraph}{Needle line}{741}{subparagraph*.5527}%
+\contentsline {subparagraph}{Needle image}{741}{subparagraph*.5528}%
+\contentsline {subparagraph}{Arc}{741}{subparagraph*.5529}%
+\contentsline {subparagraph}{Scale lines (ticks)}{741}{subparagraph*.5530}%
+\contentsline {subsubsection}{Events}{742}{subsubsection*.5531}%
+\contentsline {subsubsection}{Keys}{742}{subsubsection*.5532}%
+\contentsline {subsubsection}{Example}{743}{subsubsection*.5533}%
+\contentsline {paragraph}{Simple meter}{743}{paragraph*.5534}%
+\contentsline {paragraph}{A meter with multiple arcs}{745}{paragraph*.5535}%
+\contentsline {paragraph}{A clock from a meter}{748}{paragraph*.5536}%
+\contentsline {paragraph}{Pie chart}{750}{paragraph*.5537}%
+\contentsline {subsubsection}{API}{752}{subsubsection*.5538}%
+\contentsline {subsection}{\numberline {6.3.11}Message box (lv\_msgbox)}{758}{subsection.6.3.11}%
+\contentsline {subsubsection}{Overview}{758}{subsubsection*.5677}%
+\contentsline {subsubsection}{Parts and Styles}{758}{subsubsection*.5678}%
+\contentsline {subsubsection}{Usage}{758}{subsubsection*.5679}%
+\contentsline {paragraph}{Create a message box}{758}{paragraph*.5680}%
+\contentsline {paragraph}{Get the parts}{759}{paragraph*.5681}%
+\contentsline {paragraph}{Close the message box}{759}{paragraph*.5682}%
+\contentsline {subsubsection}{Events}{759}{subsubsection*.5683}%
+\contentsline {subsubsection}{Keys}{759}{subsubsection*.5684}%
+\contentsline {subsubsection}{Example}{759}{subsubsection*.5685}%
+\contentsline {paragraph}{Simple Message box}{759}{paragraph*.5686}%
+\contentsline {subsubsection}{API}{760}{subsubsection*.5687}%
+\contentsline {subsection}{\numberline {6.3.12}Span (lv\_span)}{761}{subsection.6.3.12}%
+\contentsline {subsubsection}{Overview}{761}{subsubsection*.5738}%
+\contentsline {subsubsection}{Parts and Styles}{761}{subsubsection*.5739}%
+\contentsline {subsubsection}{Usage}{762}{subsubsection*.5740}%
+\contentsline {paragraph}{Set text and style}{762}{paragraph*.5741}%
+\contentsline {paragraph}{Retrieving a span child}{762}{paragraph*.5742}%
+\contentsline {paragraph}{Child Count}{762}{paragraph*.5743}%
+\contentsline {paragraph}{Text align}{762}{paragraph*.5744}%
+\contentsline {paragraph}{Modes}{763}{paragraph*.5745}%
+\contentsline {paragraph}{Overflow}{763}{paragraph*.5746}%
+\contentsline {paragraph}{first line indent}{763}{paragraph*.5747}%
+\contentsline {paragraph}{lines}{763}{paragraph*.5748}%
+\contentsline {subsubsection}{Events}{763}{subsubsection*.5749}%
+\contentsline {subsubsection}{Keys}{763}{subsubsection*.5750}%
+\contentsline {subsubsection}{Example}{764}{subsubsection*.5751}%
+\contentsline {paragraph}{Span with custom styles}{764}{paragraph*.5752}%
+\contentsline {subsubsection}{API}{766}{subsubsection*.5753}%
+\contentsline {subsection}{\numberline {6.3.13}Spinbox (lv\_spinbox)}{770}{subsection.6.3.13}%
+\contentsline {subsubsection}{Overview}{770}{subsubsection*.5867}%
+\contentsline {subsubsection}{Parts and Styles}{770}{subsubsection*.5868}%
+\contentsline {paragraph}{Value, range and step}{770}{paragraph*.5869}%
+\contentsline {paragraph}{Format}{771}{paragraph*.5870}%
+\contentsline {paragraph}{Rollover}{771}{paragraph*.5871}%
+\contentsline {subsubsection}{Events}{771}{subsubsection*.5872}%
+\contentsline {subsubsection}{Keys}{771}{subsubsection*.5873}%
+\contentsline {subsubsection}{Example}{771}{subsubsection*.5874}%
+\contentsline {paragraph}{Simple Spinbox}{771}{paragraph*.5875}%
+\contentsline {subsubsection}{API}{773}{subsubsection*.5876}%
+\contentsline {subsubsection}{Example}{775}{subsubsection*.5944}%
+\contentsline {subsection}{\numberline {6.3.14}Spinner (lv\_spinner)}{775}{subsection.6.3.14}%
+\contentsline {subsubsection}{Overview}{775}{subsubsection*.5945}%
+\contentsline {subsubsection}{Parts and Styles}{776}{subsubsection*.5946}%
+\contentsline {subsubsection}{Usage}{776}{subsubsection*.5947}%
+\contentsline {paragraph}{Create a spinner}{776}{paragraph*.5948}%
+\contentsline {subsubsection}{Events}{776}{subsubsection*.5949}%
+\contentsline {subsubsection}{Keys}{776}{subsubsection*.5950}%
+\contentsline {subsubsection}{Example}{776}{subsubsection*.5951}%
+\contentsline {paragraph}{Simple spinner}{776}{paragraph*.5952}%
+\contentsline {subsubsection}{API}{777}{subsubsection*.5953}%
+\contentsline {subsection}{\numberline {6.3.15}Tabview (lv\_tabview)}{777}{subsection.6.3.15}%
+\contentsline {subsubsection}{Overview}{777}{subsubsection*.5959}%
+\contentsline {subsubsection}{Parts and Styles}{777}{subsubsection*.5960}%
+\contentsline {subsubsection}{Usage}{777}{subsubsection*.5961}%
+\contentsline {paragraph}{Create a Tab view}{777}{paragraph*.5962}%
+\contentsline {paragraph}{Add tabs}{777}{paragraph*.5963}%
+\contentsline {paragraph}{Rename tabs}{778}{paragraph*.5964}%
+\contentsline {paragraph}{Change tab}{778}{paragraph*.5965}%
+\contentsline {paragraph}{Get the parts}{778}{paragraph*.5966}%
+\contentsline {subsubsection}{Events}{778}{subsubsection*.5967}%
+\contentsline {subsubsection}{Keys}{778}{subsubsection*.5968}%
+\contentsline {subsubsection}{Example}{778}{subsubsection*.5969}%
+\contentsline {paragraph}{Simple Tabview}{778}{paragraph*.5970}%
+\contentsline {paragraph}{Tabs on the left, styling and no scrolling}{780}{paragraph*.5971}%
+\contentsline {subsubsection}{API}{781}{subsubsection*.5972}%
+\contentsline {subsection}{\numberline {6.3.16}Tile view (lv\_tileview)}{782}{subsection.6.3.16}%
+\contentsline {subsubsection}{Overview}{782}{subsubsection*.6008}%
+\contentsline {subsubsection}{Parts and Styles}{782}{subsubsection*.6009}%
+\contentsline {subsubsection}{Usage}{782}{subsubsection*.6010}%
+\contentsline {paragraph}{Add a tile}{782}{paragraph*.6011}%
+\contentsline {paragraph}{Change tile}{783}{paragraph*.6012}%
+\contentsline {subsubsection}{Events}{783}{subsubsection*.6013}%
+\contentsline {subsubsection}{Keys}{783}{subsubsection*.6014}%
+\contentsline {subsubsection}{Example}{783}{subsubsection*.6015}%
+\contentsline {paragraph}{Tileview with content}{783}{paragraph*.6016}%
+\contentsline {subsubsection}{API}{785}{subsubsection*.6017}%
+\contentsline {subsection}{\numberline {6.3.17}Window (lv\_win)}{786}{subsection.6.3.17}%
+\contentsline {subsubsection}{Overview}{786}{subsubsection*.6049}%
+\contentsline {subsubsection}{Parts and Styles}{786}{subsubsection*.6050}%
+\contentsline {subsubsection}{Usage}{786}{subsubsection*.6051}%
+\contentsline {paragraph}{Create a Window}{786}{paragraph*.6052}%
+\contentsline {paragraph}{Title and buttons}{786}{paragraph*.6053}%
+\contentsline {subsubsection}{Get the parts}{786}{subsubsection*.6054}%
+\contentsline {subsubsection}{Events}{786}{subsubsection*.6055}%
+\contentsline {subsubsection}{Keys}{787}{subsubsection*.6056}%
+\contentsline {subsubsection}{Example}{787}{subsubsection*.6057}%
+\contentsline {paragraph}{Simple window}{787}{paragraph*.6058}%
+\contentsline {subsubsection}{API}{788}{subsubsection*.6059}%
+\contentsline {chapter}{\numberline {7}Layouts}{790}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Flex}{790}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Overview}{790}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Terms}{790}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Simple interface}{790}{subsection.7.1.3}%
+\contentsline {subsubsection}{Flex flow}{791}{subsubsection*.6081}%
+\contentsline {subsubsection}{Flex align}{791}{subsubsection*.6082}%
+\contentsline {subsubsection}{Flex grow}{792}{subsubsection*.6083}%
+\contentsline {subsection}{\numberline {7.1.4}Style interface}{792}{subsection.7.1.4}%
+\contentsline {subsubsection}{Internal padding}{792}{subsubsection*.6084}%
+\contentsline {subsection}{\numberline {7.1.5}Other features}{792}{subsection.7.1.5}%
+\contentsline {subsubsection}{RTL}{792}{subsubsection*.6085}%
+\contentsline {subsubsection}{New track}{793}{subsubsection*.6086}%
+\contentsline {subsection}{\numberline {7.1.6}Example}{793}{subsection.7.1.6}%
+\contentsline {subsubsection}{A simple row and a column layout with flexbox}{793}{subsubsection*.6087}%
+\contentsline {subsubsection}{Arrange items in rows with wrap and even spacing}{794}{subsubsection*.6088}%
+\contentsline {subsubsection}{Demonstrate flex grow}{795}{subsubsection*.6089}%
+\contentsline {subsubsection}{Demonstrate flex grow.}{796}{subsubsection*.6090}%
+\contentsline {subsubsection}{Demonstrate column and row gap style properties}{797}{subsubsection*.6091}%
+\contentsline {subsubsection}{RTL base direction changes order of the items}{799}{subsubsection*.6092}%
+\contentsline {subsection}{\numberline {7.1.7}API}{800}{subsection.7.1.7}%
+\contentsline {section}{\numberline {7.2}Grid}{803}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Overview}{803}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Terms}{803}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Simple interface}{803}{subsection.7.2.3}%
+\contentsline {subsubsection}{Grid descriptors}{803}{subsubsection*.6197}%
+\contentsline {subsubsection}{Grid items}{804}{subsubsection*.6198}%
+\contentsline {subsubsection}{Grid align}{804}{subsubsection*.6199}%
+\contentsline {subsection}{\numberline {7.2.4}Style interface}{804}{subsection.7.2.4}%
+\contentsline {subsubsection}{Internal padding}{805}{subsubsection*.6200}%
+\contentsline {subsection}{\numberline {7.2.5}Other features}{805}{subsection.7.2.5}%
+\contentsline {subsubsection}{RTL}{805}{subsubsection*.6201}%
+\contentsline {subsection}{\numberline {7.2.6}Example}{805}{subsection.7.2.6}%
+\contentsline {subsubsection}{A simple grid}{805}{subsubsection*.6202}%
+\contentsline {subsubsection}{Demonstrate cell placement and span}{806}{subsubsection*.6203}%
+\contentsline {subsubsection}{Demonstrate grid's "free unit"}{809}{subsubsection*.6204}%
+\contentsline {subsubsection}{Demonstrate track placement}{810}{subsubsection*.6205}%
+\contentsline {subsubsection}{Demonstrate column and row gap}{812}{subsubsection*.6206}%
+\contentsline {subsubsection}{Demonstrate RTL direction on grid}{814}{subsubsection*.6207}%
+\contentsline {subsection}{\numberline {7.2.7}API}{815}{subsection.7.2.7}%
+\contentsline {chapter}{\numberline {8}3rd party libraries}{819}{chapter.8}%
+\contentsline {section}{\numberline {8.1}File System Interfaces}{819}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Built in wrappers}{819}{subsection.8.1.1}%
+\contentsline {subsubsection}{FATFS}{819}{subsubsection*.6357}%
+\contentsline {subsubsection}{LittleFS}{819}{subsubsection*.6358}%
+\contentsline {subsubsection}{STDIO}{820}{subsubsection*.6359}%
+\contentsline {subsubsection}{POSIX}{820}{subsubsection*.6360}%
+\contentsline {subsubsection}{WIN32}{820}{subsubsection*.6361}%
+\contentsline {subsection}{\numberline {8.1.2}Usage}{820}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}BMP decoder}{820}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Limitations}{820}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Example}{821}{subsection.8.2.2}%
+\contentsline {subsubsection}{Open a BMP image from file}{821}{subsubsection*.6362}%
+\contentsline {subsection}{\numberline {8.2.3}API}{821}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}JPG decoder}{822}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Overview}{822}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Usage}{822}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Converter}{822}{subsection.8.3.3}%
+\contentsline {subsubsection}{Converting JPG to C array}{822}{subsubsection*.6366}%
+\contentsline {subsubsection}{Converting JPG to SJPG}{822}{subsubsection*.6367}%
+\contentsline {subsection}{\numberline {8.3.4}Example}{823}{subsection.8.3.4}%
+\contentsline {subsubsection}{Load an SJPG image}{823}{subsubsection*.6368}%
+\contentsline {subsection}{\numberline {8.3.5}API}{824}{subsection.8.3.5}%
+\contentsline {section}{\numberline {8.4}PNG decoder}{824}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Example}{824}{subsection.8.4.1}%
+\contentsline {subsubsection}{Open a PNG image from file and variable}{824}{subsubsection*.6372}%
+\contentsline {subsection}{\numberline {8.4.2}API}{825}{subsection.8.4.2}%
+\contentsline {section}{\numberline {8.5}GIF decoder}{825}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Convert GIF files to C array}{826}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Use GIF images from file}{826}{subsection.8.5.2}%
+\contentsline {subsection}{\numberline {8.5.3}Memory requirements}{826}{subsection.8.5.3}%
+\contentsline {subsection}{\numberline {8.5.4}Example}{826}{subsection.8.5.4}%
+\contentsline {subsubsection}{Open a GIF image from file and variable}{826}{subsubsection*.6376}%
+\contentsline {subsection}{\numberline {8.5.5}API}{827}{subsection.8.5.5}%
+\contentsline {section}{\numberline {8.6}FreeType support}{828}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Install FreeType}{828}{subsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.6.2}Add FreeType to your project}{828}{subsection.8.6.2}%
+\contentsline {subsection}{\numberline {8.6.3}Usage}{828}{subsection.8.6.3}%
+\contentsline {subsection}{\numberline {8.6.4}Example}{829}{subsection.8.6.4}%
+\contentsline {subsubsection}{Open a front with FreeType}{829}{subsubsection*.6400}%
+\contentsline {subsection}{\numberline {8.6.5}Learn more}{830}{subsection.8.6.5}%
+\contentsline {subsection}{\numberline {8.6.6}API}{830}{subsection.8.6.6}%
+\contentsline {section}{\numberline {8.7}Tiny TTF font engine}{832}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Usage}{832}{subsection.8.7.1}%
+\contentsline {subsection}{\numberline {8.7.2}API}{832}{subsection.8.7.2}%
+\contentsline {section}{\numberline {8.8}QR code}{833}{section.8.8}%
+\contentsline {subsection}{\numberline {8.8.1}Get started}{833}{subsection.8.8.1}%
+\contentsline {subsection}{\numberline {8.8.2}Notes}{833}{subsection.8.8.2}%
+\contentsline {subsection}{\numberline {8.8.3}Example}{833}{subsection.8.8.3}%
+\contentsline {subsubsection}{Create a QR Code}{833}{subsubsection*.6453}%
+\contentsline {subsection}{\numberline {8.8.4}API}{834}{subsection.8.8.4}%
+\contentsline {section}{\numberline {8.9}Lottie player}{835}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}Build Rlottie}{835}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}Usage}{835}{subsection.8.9.2}%
+\contentsline {subsubsection}{Use Rlottie from file}{836}{subsubsection*.6465}%
+\contentsline {subsubsection}{Use Rlottie from raw string data}{836}{subsubsection*.6466}%
+\contentsline {subsection}{\numberline {8.9.3}Getting animations}{836}{subsection.8.9.3}%
+\contentsline {subsection}{\numberline {8.9.4}Controlling animations}{836}{subsection.8.9.4}%
+\contentsline {subsection}{\numberline {8.9.5}Example}{837}{subsection.8.9.5}%
+\contentsline {subsubsection}{Load a Lottie animation from raw data}{837}{subsubsection*.6467}%
+\contentsline {subsubsection}{Load a Lottie animation from a file}{838}{subsubsection*.6468}%
+\contentsline {subsection}{\numberline {8.9.6}API}{838}{subsection.8.9.6}%
+\contentsline {section}{\numberline {8.10}FFmpeg support}{840}{section.8.10}%
+\contentsline {subsection}{\numberline {8.10.1}Install FFmpeg}{840}{subsection.8.10.1}%
+\contentsline {subsection}{\numberline {8.10.2}Add FFmpeg to your project}{840}{subsection.8.10.2}%
+\contentsline {subsection}{\numberline {8.10.3}Usage}{840}{subsection.8.10.3}%
+\contentsline {subsection}{\numberline {8.10.4}Example}{840}{subsection.8.10.4}%
+\contentsline {subsubsection}{Decode image}{840}{subsubsection*.6521}%
+\contentsline {subsubsection}{Decode video}{841}{subsubsection*.6522}%
+\contentsline {subsection}{\numberline {8.10.5}API}{842}{subsection.8.10.5}%
+\contentsline {chapter}{\numberline {9}Others}{844}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Snapshot}{844}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Usage}{844}{subsection.9.1.1}%
+\contentsline {subsubsection}{Free the Image}{844}{subsubsection*.6567}%
+\contentsline {subsubsection}{Use Existing Buffer}{845}{subsubsection*.6568}%
+\contentsline {subsection}{\numberline {9.1.2}Example}{845}{subsection.9.1.2}%
+\contentsline {subsubsection}{Simple snapshot example}{845}{subsubsection*.6569}%
+\contentsline {subsection}{\numberline {9.1.3}API}{847}{subsection.9.1.3}%
+\contentsline {section}{\numberline {9.2}Monkey}{848}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Usage}{848}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Example}{849}{subsection.9.2.2}%
+\contentsline {subsubsection}{Touchpad monkey example}{849}{subsubsection*.6582}%
+\contentsline {subsubsection}{Encoder monkey example}{849}{subsubsection*.6583}%
+\contentsline {subsubsection}{Button monkey example}{850}{subsubsection*.6584}%
+\contentsline {subsection}{\numberline {9.2.3}API}{850}{subsection.9.2.3}%
+\contentsline {section}{\numberline {9.3}Grid navigation}{852}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Usage}{852}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Focusable objects}{853}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Example}{853}{subsection.9.3.3}%
+\contentsline {subsubsection}{Basic grid navigation}{853}{subsubsection*.6625}%
+\contentsline {subsubsection}{Grid navigation on a list}{854}{subsubsection*.6626}%
+\contentsline {subsubsection}{Nested grid navigations}{855}{subsubsection*.6627}%
+\contentsline {subsubsection}{Simple navigation on a list widget}{857}{subsubsection*.6628}%
+\contentsline {subsection}{\numberline {9.3.4}API}{858}{subsection.9.3.4}%
+\contentsline {section}{\numberline {9.4}Fragment}{860}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Usage}{860}{subsection.9.4.1}%
+\contentsline {subsubsection}{Create Fragment Class}{860}{subsubsection*.6648}%
+\contentsline {subsubsection}{Use \sphinxstyleliteralintitle {\sphinxupquote {lv\_fragment\_manager}}}{860}{subsubsection*.6649}%
+\contentsline {subsubsection}{Fragment Based Navigation}{861}{subsubsection*.6650}%
+\contentsline {subsection}{\numberline {9.4.2}Example}{861}{subsection.9.4.2}%
+\contentsline {subsubsection}{Basic fragment usage}{861}{subsubsection*.6651}%
+\contentsline {subsubsection}{Stack navigation example}{862}{subsubsection*.6652}%
+\contentsline {subsection}{\numberline {9.4.3}API}{865}{subsection.9.4.3}%
+\contentsline {section}{\numberline {9.5}Messaging}{870}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}IDs}{870}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Send message}{871}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.5.3}Subscribe to a message}{871}{subsection.9.5.3}%
+\contentsline {subsection}{\numberline {9.5.4}Subscribe with an lv\_obj}{871}{subsection.9.5.4}%
+\contentsline {subsubsection}{Unsubscribe}{872}{subsubsection*.6775}%
+\contentsline {subsection}{\numberline {9.5.5}Example}{872}{subsection.9.5.5}%
+\contentsline {subsubsection}{Slider to label messaging}{872}{subsubsection*.6776}%
+\contentsline {subsubsection}{Handling login and its states}{873}{subsubsection*.6777}%
+\contentsline {subsubsection}{Setting the same value from many sources}{876}{subsubsection*.6778}%
+\contentsline {subsection}{\numberline {9.5.6}API}{879}{subsection.9.5.6}%
+\contentsline {section}{\numberline {9.6}Image font (imgfont)}{881}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}Usage}{881}{subsection.9.6.1}%
+\contentsline {subsection}{\numberline {9.6.2}Example}{881}{subsection.9.6.2}%
+\contentsline {subsubsection}{Use emojis in a text.}{881}{subsubsection*.6834}%
+\contentsline {subsection}{\numberline {9.6.3}API}{883}{subsection.9.6.3}%
+\contentsline {section}{\numberline {9.7}Pinyin IME}{883}{section.9.7}%
+\contentsline {subsection}{\numberline {9.7.1}Usage}{883}{subsection.9.7.1}%
+\contentsline {subsection}{\numberline {9.7.2}Custom dictionary}{884}{subsection.9.7.2}%
+\contentsline {subsubsection}{Dictionary format}{884}{subsubsection*.6843}%
+\contentsline {subsubsection}{Apply new dictionary}{885}{subsubsection*.6844}%
+\contentsline {subsection}{\numberline {9.7.3}Input modes}{885}{subsection.9.7.3}%
+\contentsline {subsection}{\numberline {9.7.4}Example}{885}{subsection.9.7.4}%
+\contentsline {subsubsection}{Pinyin IME 26 key input}{885}{subsubsection*.6845}%
+\contentsline {subsubsection}{Pinyin IME 9 key input}{886}{subsubsection*.6846}%
+\contentsline {subsection}{\numberline {9.7.5}API}{888}{subsection.9.7.5}%
+\contentsline {chapter}{\numberline {10}Contributing}{891}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduction}{891}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Pull request}{892}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}From GitHub}{892}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}From command line}{892}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Commit message format}{893}{subsection.10.2.3}%
+\contentsline {section}{\numberline {10.3}Developer Certification of Origin (DCO)}{894}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Overview}{894}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Accepted licenses and copyright notices}{894}{subsection.10.3.2}%
+\contentsline {subsubsection}{Your own work}{894}{subsubsection*.6920}%
+\contentsline {subsubsection}{Use code from online source}{894}{subsubsection*.6921}%
+\contentsline {subsubsection}{Use MIT licensed code}{895}{subsubsection*.6922}%
+\contentsline {subsubsection}{Use GPL licensed code}{895}{subsubsection*.6923}%
+\contentsline {section}{\numberline {10.4}Ways to contribute}{895}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Give LVGL a Star}{895}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Tell what you have achieved}{895}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Write examples}{896}{subsection.10.4.3}%
+\contentsline {subsection}{\numberline {10.4.4}Improve the docs}{896}{subsection.10.4.4}%
+\contentsline {subsection}{\numberline {10.4.5}Report bugs}{896}{subsection.10.4.5}%
+\contentsline {subsection}{\numberline {10.4.6}Send fixes}{896}{subsection.10.4.6}%
+\contentsline {subsection}{\numberline {10.4.7}Join the conversations in the Forum}{896}{subsection.10.4.7}%
+\contentsline {subsection}{\numberline {10.4.8}Add features}{897}{subsection.10.4.8}%
+\contentsline {subsection}{\numberline {10.4.9}Become a maintainer}{897}{subsection.10.4.9}%
+\contentsline {subsection}{\numberline {10.4.10}Move your project repository under LVGL organization}{897}{subsection.10.4.10}%
+\contentsline {chapter}{\numberline {11}Changelog}{899}{chapter.11}%
+\contentsline {section}{\numberline {11.1}v8.3.11 6 December 2023}{899}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}New Features}{899}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Fixes}{899}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.3}Docs}{900}{subsection.11.1.3}%
+\contentsline {subsection}{\numberline {11.1.4}Others}{900}{subsection.11.1.4}%
+\contentsline {section}{\numberline {11.2}v8.3.10 20 September 2023}{900}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}New Features}{900}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Fixes}{900}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Docs}{900}{subsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.2.4}CI and tests}{901}{subsection.11.2.4}%
+\contentsline {subsection}{\numberline {11.2.5}Others}{901}{subsection.11.2.5}%
+\contentsline {section}{\numberline {11.3}v8.3.9 6 August 2023}{901}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Fixes}{901}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Docs}{901}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}Others}{902}{subsection.11.3.3}%
+\contentsline {section}{\numberline {11.4}v8.3.8 5 July 2023}{902}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}New Features}{902}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}Performance}{902}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.3}Fixes}{902}{subsection.11.4.3}%
+\contentsline {subsection}{\numberline {11.4.4}Examples}{903}{subsection.11.4.4}%
+\contentsline {subsection}{\numberline {11.4.5}Docs}{903}{subsection.11.4.5}%
+\contentsline {subsection}{\numberline {11.4.6}CI and tests}{903}{subsection.11.4.6}%
+\contentsline {subsection}{\numberline {11.4.7}Others}{903}{subsection.11.4.7}%
+\contentsline {section}{\numberline {11.5}v8.3.7 3 May 2023}{903}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}New Features}{903}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.5.2}Fixes}{903}{subsection.11.5.2}%
+\contentsline {section}{\numberline {11.6}v8.3.6 3 April 2023}{904}{section.11.6}%
+\contentsline {subsection}{\numberline {11.6.1}New Features}{904}{subsection.11.6.1}%
+\contentsline {subsection}{\numberline {11.6.2}Performance}{904}{subsection.11.6.2}%
+\contentsline {subsection}{\numberline {11.6.3}Fixes}{904}{subsection.11.6.3}%
+\contentsline {subsection}{\numberline {11.6.4}Examples}{904}{subsection.11.6.4}%
+\contentsline {subsection}{\numberline {11.6.5}Docs}{904}{subsection.11.6.5}%
+\contentsline {subsection}{\numberline {11.6.6}CI and tests}{904}{subsection.11.6.6}%
+\contentsline {subsection}{\numberline {11.6.7}Others}{904}{subsection.11.6.7}%
+\contentsline {section}{\numberline {11.7}v8.3.5 7 February 2023}{905}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}Performance}{905}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.2}Fixes}{905}{subsection.11.7.2}%
+\contentsline {subsection}{\numberline {11.7.3}Examples}{905}{subsection.11.7.3}%
+\contentsline {subsection}{\numberline {11.7.4}Docs}{905}{subsection.11.7.4}%
+\contentsline {subsection}{\numberline {11.7.5}CI and tests}{905}{subsection.11.7.5}%
+\contentsline {subsection}{\numberline {11.7.6}Others}{905}{subsection.11.7.6}%
+\contentsline {section}{\numberline {11.8}v8.3.4 15 December 2022}{905}{section.11.8}%
+\contentsline {subsection}{\numberline {11.8.1}New Features}{905}{subsection.11.8.1}%
+\contentsline {subsection}{\numberline {11.8.2}Fixes}{906}{subsection.11.8.2}%
+\contentsline {section}{\numberline {11.9}v8.3.3 06 October 2022}{906}{section.11.9}%
+\contentsline {section}{\numberline {11.10}v8.3.2 27 September 2022}{906}{section.11.10}%
+\contentsline {subsection}{\numberline {11.10.1}Fixes}{906}{subsection.11.10.1}%
+\contentsline {subsection}{\numberline {11.10.2}Docs}{907}{subsection.11.10.2}%
+\contentsline {subsection}{\numberline {11.10.3}CI and tests}{907}{subsection.11.10.3}%
+\contentsline {subsection}{\numberline {11.10.4}Others}{907}{subsection.11.10.4}%
+\contentsline {section}{\numberline {11.11}v8.3.1 25 July 2022}{907}{section.11.11}%
+\contentsline {subsection}{\numberline {11.11.1}Fixes}{907}{subsection.11.11.1}%
+\contentsline {subsection}{\numberline {11.11.2}Examples}{908}{subsection.11.11.2}%
+\contentsline {subsection}{\numberline {11.11.3}Docs}{908}{subsection.11.11.3}%
+\contentsline {section}{\numberline {11.12}v8.3.0 6 July 2022}{908}{section.11.12}%
+\contentsline {subsection}{\numberline {11.12.1}Overview}{908}{subsection.11.12.1}%
+\contentsline {subsection}{\numberline {11.12.2}New Features}{908}{subsection.11.12.2}%
+\contentsline {subsection}{\numberline {11.12.3}Performance}{910}{subsection.11.12.3}%
+\contentsline {subsection}{\numberline {11.12.4}Fixes}{910}{subsection.11.12.4}%
+\contentsline {subsection}{\numberline {11.12.5}Examples}{914}{subsection.11.12.5}%
+\contentsline {subsection}{\numberline {11.12.6}Docs}{915}{subsection.11.12.6}%
+\contentsline {subsection}{\numberline {11.12.7}CI and tests}{915}{subsection.11.12.7}%
+\contentsline {section}{\numberline {11.13}v8.2.0 31 January 2022}{916}{section.11.13}%
+\contentsline {subsection}{\numberline {11.13.1}Overview}{916}{subsection.11.13.1}%
+\contentsline {subsection}{\numberline {11.13.2}Breaking Changes}{916}{subsection.11.13.2}%
+\contentsline {subsection}{\numberline {11.13.3}Architectural}{917}{subsection.11.13.3}%
+\contentsline {subsection}{\numberline {11.13.4}New Features}{917}{subsection.11.13.4}%
+\contentsline {subsection}{\numberline {11.13.5}Performance}{918}{subsection.11.13.5}%
+\contentsline {subsection}{\numberline {11.13.6}Fixes}{918}{subsection.11.13.6}%
+\contentsline {subsection}{\numberline {11.13.7}Examples}{921}{subsection.11.13.7}%
+\contentsline {subsection}{\numberline {11.13.8}Docs}{921}{subsection.11.13.8}%
+\contentsline {subsection}{\numberline {11.13.9}CI and tests}{922}{subsection.11.13.9}%
+\contentsline {section}{\numberline {11.14}v8.1.0 10 November 2021}{923}{section.11.14}%
+\contentsline {subsection}{\numberline {11.14.1}Overview}{923}{subsection.11.14.1}%
+\contentsline {subsection}{\numberline {11.14.2}Breaking Changes}{924}{subsection.11.14.2}%
+\contentsline {subsection}{\numberline {11.14.3}Architectural}{924}{subsection.11.14.3}%
+\contentsline {subsection}{\numberline {11.14.4}New Features}{924}{subsection.11.14.4}%
+\contentsline {subsection}{\numberline {11.14.5}Performance}{926}{subsection.11.14.5}%
+\contentsline {subsection}{\numberline {11.14.6}Fixes}{926}{subsection.11.14.6}%
+\contentsline {subsection}{\numberline {11.14.7}Examples}{934}{subsection.11.14.7}%
+\contentsline {subsection}{\numberline {11.14.8}Docs}{935}{subsection.11.14.8}%
+\contentsline {subsection}{\numberline {11.14.9}CI and tests}{937}{subsection.11.14.9}%
+\contentsline {subsection}{\numberline {11.14.10}Others}{938}{subsection.11.14.10}%
+\contentsline {section}{\numberline {11.15}v8.0.2 (16.07.2021)}{940}{section.11.15}%
+\contentsline {section}{\numberline {11.16}v8.0.1 (14.06.2021)}{941}{section.11.16}%
+\contentsline {section}{\numberline {11.17}v8.0.0 (01.06.2021)}{943}{section.11.17}%
+\contentsline {subsection}{\numberline {11.17.1}Directory structure}{943}{subsection.11.17.1}%
+\contentsline {subsection}{\numberline {11.17.2}Widget changes}{943}{subsection.11.17.2}%
+\contentsline {subsection}{\numberline {11.17.3}New scrolling}{943}{subsection.11.17.3}%
+\contentsline {subsection}{\numberline {11.17.4}New layouts}{944}{subsection.11.17.4}%
+\contentsline {subsection}{\numberline {11.17.5}Styles}{944}{subsection.11.17.5}%
+\contentsline {subsection}{\numberline {11.17.6}Events}{944}{subsection.11.17.6}%
+\contentsline {subsection}{\numberline {11.17.7}Driver changes}{944}{subsection.11.17.7}%
+\contentsline {subsection}{\numberline {11.17.8}Other changes}{944}{subsection.11.17.8}%
+\contentsline {subsection}{\numberline {11.17.9}New release policy}{945}{subsection.11.17.9}%
+\contentsline {subsection}{\numberline {11.17.10}Migrating from v7 to v8}{945}{subsection.11.17.10}%
+\contentsline {section}{\numberline {11.18}v7.11.0 (16.03.2021)}{945}{section.11.18}%
+\contentsline {subsection}{\numberline {11.18.1}New features}{945}{subsection.11.18.1}%
+\contentsline {subsection}{\numberline {11.18.2}Bugfixes}{945}{subsection.11.18.2}%
+\contentsline {section}{\numberline {11.19}v7.10.1 (16.02.2021)}{945}{section.11.19}%
+\contentsline {subsection}{\numberline {11.19.1}Bugfixes}{945}{subsection.11.19.1}%
+\contentsline {section}{\numberline {11.20}v7.10.0 (02.02.2021)}{946}{section.11.20}%
+\contentsline {subsection}{\numberline {11.20.1}New features}{946}{subsection.11.20.1}%
+\contentsline {subsection}{\numberline {11.20.2}Bugfixes}{946}{subsection.11.20.2}%
+\contentsline {section}{\numberline {11.21}v7.9.1 (19.01.2021)}{946}{section.11.21}%
+\contentsline {subsection}{\numberline {11.21.1}Bugfixes}{946}{subsection.11.21.1}%
+\contentsline {section}{\numberline {11.22}v7.9.0 (05.01.2021)}{946}{section.11.22}%
+\contentsline {subsection}{\numberline {11.22.1}New features}{946}{subsection.11.22.1}%
+\contentsline {subsection}{\numberline {11.22.2}Bugfixes}{947}{subsection.11.22.2}%
+\contentsline {section}{\numberline {11.23}v7.8.1 (15.12.2020)}{947}{section.11.23}%
+\contentsline {subsection}{\numberline {11.23.1}Bugfixes}{947}{subsection.11.23.1}%
+\contentsline {section}{\numberline {11.24}v7.8.0 (01.12.2020)}{947}{section.11.24}%
+\contentsline {subsection}{\numberline {11.24.1}New features}{947}{subsection.11.24.1}%
+\contentsline {subsection}{\numberline {11.24.2}Bugfixes}{947}{subsection.11.24.2}%
+\contentsline {section}{\numberline {11.25}v7.7.2 (17.11.2020)}{948}{section.11.25}%
+\contentsline {subsection}{\numberline {11.25.1}Bugfixes}{948}{subsection.11.25.1}%
+\contentsline {section}{\numberline {11.26}v7.7.1 (03.11.2020)}{948}{section.11.26}%
+\contentsline {subsection}{\numberline {11.26.1}Bugfixes}{948}{subsection.11.26.1}%
+\contentsline {section}{\numberline {11.27}v7.7.0 (20.10.2020)}{948}{section.11.27}%
+\contentsline {subsection}{\numberline {11.27.1}New features}{948}{subsection.11.27.1}%
+\contentsline {subsection}{\numberline {11.27.2}Bugfixes}{949}{subsection.11.27.2}%
+\contentsline {section}{\numberline {11.28}v7.6.1 (06.10.2020)}{949}{section.11.28}%
+\contentsline {subsection}{\numberline {11.28.1}Bugfixes}{949}{subsection.11.28.1}%
+\contentsline {section}{\numberline {11.29}v7.6.0 (22.09.2020)}{949}{section.11.29}%
+\contentsline {subsection}{\numberline {11.29.1}New features}{949}{subsection.11.29.1}%
+\contentsline {subsection}{\numberline {11.29.2}Bugfixes}{949}{subsection.11.29.2}%
+\contentsline {section}{\numberline {11.30}v7.5.0 (15.09.2020)}{950}{section.11.30}%
+\contentsline {subsection}{\numberline {11.30.1}New features}{950}{subsection.11.30.1}%
+\contentsline {subsection}{\numberline {11.30.2}Bugfixes}{950}{subsection.11.30.2}%
+\contentsline {section}{\numberline {11.31}v7.4.0 (01.09.2020)}{950}{section.11.31}%
+\contentsline {subsection}{\numberline {11.31.1}New features}{950}{subsection.11.31.1}%
+\contentsline {subsection}{\numberline {11.31.2}Bugfixes}{951}{subsection.11.31.2}%
+\contentsline {section}{\numberline {11.32}v7.3.1 (18.08.2020)}{951}{section.11.32}%
+\contentsline {subsection}{\numberline {11.32.1}Bugfixes}{951}{subsection.11.32.1}%
+\contentsline {section}{\numberline {11.33}v7.3.0 (04.08.2020)}{951}{section.11.33}%
+\contentsline {subsection}{\numberline {11.33.1}New features}{951}{subsection.11.33.1}%
+\contentsline {subsection}{\numberline {11.33.2}Bugfixes}{952}{subsection.11.33.2}%
+\contentsline {section}{\numberline {11.34}v7.2.0 (21.07.2020)}{952}{section.11.34}%
+\contentsline {subsection}{\numberline {11.34.1}New features}{952}{subsection.11.34.1}%
+\contentsline {subsection}{\numberline {11.34.2}Bugfixes}{953}{subsection.11.34.2}%
+\contentsline {section}{\numberline {11.35}v7.1.0 (07.07.2020)}{953}{section.11.35}%
+\contentsline {subsection}{\numberline {11.35.1}New features}{953}{subsection.11.35.1}%
+\contentsline {subsection}{\numberline {11.35.2}Bugfixes}{953}{subsection.11.35.2}%
+\contentsline {section}{\numberline {11.36}v7.0.2 (16.06.2020)}{954}{section.11.36}%
+\contentsline {subsection}{\numberline {11.36.1}Bugfixes}{954}{subsection.11.36.1}%
+\contentsline {section}{\numberline {11.37}v7.0.1 (01.06.2020)}{954}{section.11.37}%
+\contentsline {subsection}{\numberline {11.37.1}Bugfixes}{954}{subsection.11.37.1}%
+\contentsline {section}{\numberline {11.38}v7.0.0 (18.05.2020)}{955}{section.11.38}%
+\contentsline {subsection}{\numberline {11.38.1}Documentation}{955}{subsection.11.38.1}%
+\contentsline {subsection}{\numberline {11.38.2}Legal changes}{955}{subsection.11.38.2}%
+\contentsline {subsection}{\numberline {11.38.3}New drawing system}{955}{subsection.11.38.3}%
+\contentsline {subsection}{\numberline {11.38.4}New style system}{955}{subsection.11.38.4}%
+\contentsline {subsection}{\numberline {11.38.5}GPU integration}{956}{subsection.11.38.5}%
+\contentsline {subsection}{\numberline {11.38.6}Renames}{956}{subsection.11.38.6}%
+\contentsline {subsection}{\numberline {11.38.7}Reworked and improved object}{956}{subsection.11.38.7}%
+\contentsline {subsection}{\numberline {11.38.8}New object types}{957}{subsection.11.38.8}%
+\contentsline {subsection}{\numberline {11.38.9}Others}{957}{subsection.11.38.9}%
+\contentsline {subsection}{\numberline {11.38.10}Demos}{957}{subsection.11.38.10}%
+\contentsline {subsection}{\numberline {11.38.11}New release policy}{957}{subsection.11.38.11}%
+\contentsline {subsection}{\numberline {11.38.12}Migrating from v6 to v7}{958}{subsection.11.38.12}%
+\contentsline {chapter}{\numberline {12}Roadmap}{959}{chapter.12}%
+\contentsline {section}{\numberline {12.1}v8.2}{959}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Ideas}{959}{section.12.2}%
+\contentsline {chapter}{Index}{960}{section*.6924}%

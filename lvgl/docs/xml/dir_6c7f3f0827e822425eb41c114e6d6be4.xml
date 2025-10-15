@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_6c7f3f0827e822425eb41c114e6d6be4" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw</compoundname>
+    <innerfile refid="lv__draw__sw_8h">lv_draw_sw.h</innerfile>
+    <innerfile refid="lv__draw__sw__blend_8h">lv_draw_sw_blend.h</innerfile>
+    <innerfile refid="lv__draw__sw__dither_8h">lv_draw_sw_dither.h</innerfile>
+    <innerfile refid="lv__draw__sw__gradient_8h">lv_draw_sw_gradient.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sw/"/>
+  </compounddef>
+</doxygen>

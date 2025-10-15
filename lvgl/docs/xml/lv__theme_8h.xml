@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__theme_8h" kind="file" language="C++">
+    <compoundname>lv_theme.h</compoundname>
+    <innerclass refid="struct__lv__theme__t" prot="public">_lv_theme_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__theme_8h_1aee175627f6b196b5a887be29fac663d5" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_theme_apply_cb_t) (struct _lv_theme_t *, lv_obj_t *)</definition>
+        <argsstring>)(struct _lv_theme_t *, lv_obj_t *)</argsstring>
+        <name>lv_theme_apply_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="29" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__theme_8h_1a028e2d4002c963c60ebd3cc2641da3c1" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__theme__t" kindref="compound">_lv_theme_t</ref></type>
+        <definition>typedef struct _lv_theme_t lv_theme_t</definition>
+        <argsstring></argsstring>
+        <name>lv_theme_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="42" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__theme_8h_1a549412ae8aac0781e2bff67a2f4ead10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref> *</type>
+        <definition>lv_theme_t* lv_theme_get_from_obj</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_theme_get_from_obj</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the theme assigned to the display of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a theme object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the theme of the object&apos;s display (can be NULL) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="53" column="14" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="53" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__theme_8h_1a1189bd78ec6e36276136f9a8b0f1bbe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_theme_apply</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_theme_apply</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply the active theme on an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="59" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__theme_8h_1a454062e635ca006907cadeb784cdb991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_theme_set_parent</definition>
+        <argsstring>(lv_theme_t *new_theme, lv_theme_t *parent)</argsstring>
+        <name>lv_theme_set_parent</name>
+        <param>
+          <type><ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref> *</type>
+          <declname>new_theme</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a base theme for a theme. The styles from the base them will be added before the styles of the current theme. Arbitrary long chain of themes can be created by setting base themes. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_theme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to theme which base should be set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the base theme </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="68" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__theme_8h_1a519b48f3d3453b8087d09f706bd6bef1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_theme_set_apply_cb</definition>
+        <argsstring>(lv_theme_t *theme, lv_theme_apply_cb_t apply_cb)</argsstring>
+        <name>lv_theme_set_apply_cb</name>
+        <param>
+          <type><ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref> *</type>
+          <declname>theme</declname>
+        </param>
+        <param>
+          <type>lv_theme_apply_cb_t</type>
+          <declname>apply_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an apply callback for a theme. The apply callback is used to add styles to different objects <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>theme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to theme which callback should be set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>apply_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="76" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="76" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__theme_8h_1a066f2e235bc86ac443c6ad281ec60c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+        <definition>const lv_font_t* lv_theme_get_font_small</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_theme_get_font_small</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the small font of the theme <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the font </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="83" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="83" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__theme_8h_1ae39614a72a7bac35f6457fef5443a8a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+        <definition>const lv_font_t* lv_theme_get_font_normal</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_theme_get_font_normal</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the normal font of the theme <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the font </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="89" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="89" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__theme_8h_1ac8bb1152a5edc4b2b06cf4cb2485e63b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+        <definition>const lv_font_t* lv_theme_get_font_large</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_theme_get_font_large</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the subtitle font of the theme <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the font </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="96" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="96" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__theme_8h_1a0d54a894f6bf25edbf4995a79f195638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_theme_get_color_primary</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_theme_get_color_primary</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the primary color of the theme <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="103" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="103" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__theme_8h_1ad089978aed897d2c32fb8b2489e239aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_theme_get_color_secondary</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_theme_get_color_secondary</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the secondary color of the theme <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="110" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" declline="110" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_THEME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_THEME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../core/lv_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__theme__t" kindref="compound">_lv_theme_t</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*lv_theme_apply_cb_t)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__theme__t" kindref="compound">_lv_theme_t</ref><sp/>*,<sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="struct__lv__theme__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__theme__t" kindref="compound">_lv_theme_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_theme_apply_cb_t<sp/>apply_cb;</highlight></codeline>
+<codeline lineno="33" refid="struct__lv__theme__t_1abd82cf0edfed752683cd843b8254cd25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__theme__t" kindref="compound">_lv_theme_t</ref><sp/>*<sp/><ref refid="struct__lv__theme__t_1abd82cf0edfed752683cd843b8254cd25" kindref="member">parent</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref><sp/>*<sp/>disp;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/>color_primary;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/>color_secondary;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/>font_small;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/>font_normal;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/>font_large;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>flags;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Any<sp/>custom<sp/>flag<sp/>used<sp/>by<sp/>the<sp/>theme*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}<sp/><ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref><sp/><sp/>*<sp/><ref refid="lv__theme_8h_1a549412ae8aac0781e2bff67a2f4ead10" kindref="member">lv_theme_get_from_obj</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__theme_8h_1a1189bd78ec6e36276136f9a8b0f1bbe6" kindref="member">lv_theme_apply</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__theme_8h_1a454062e635ca006907cadeb784cdb991" kindref="member">lv_theme_set_parent</ref>(<ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref><sp/>*<sp/>new_theme,<sp/><ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__theme_8h_1a519b48f3d3453b8087d09f706bd6bef1" kindref="member">lv_theme_set_apply_cb</ref>(<ref refid="struct__lv__theme__t" kindref="compound">lv_theme_t</ref><sp/>*<sp/>theme,<sp/>lv_theme_apply_cb_t<sp/>apply_cb);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/><ref refid="lv__theme_8h_1a066f2e235bc86ac443c6ad281ec60c55" kindref="member">lv_theme_get_font_small</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/><ref refid="lv__theme_8h_1ae39614a72a7bac35f6457fef5443a8a5" kindref="member">lv_theme_get_font_normal</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__font__t" kindref="compound">lv_font_t</ref><sp/>*<sp/><ref refid="lv__theme_8h_1ac8bb1152a5edc4b2b06cf4cb2485e63b" kindref="member">lv_theme_get_font_large</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">lv_color_t<sp/><ref refid="lv__theme_8h_1a0d54a894f6bf25edbf4995a79f195638" kindref="member">lv_theme_get_color_primary</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">lv_color_t<sp/><ref refid="lv__theme_8h_1ad089978aed897d2c32fb8b2489e239aa" kindref="member">lv_theme_get_color_secondary</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_THEME_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h"/>
+  </compounddef>
+</doxygen>

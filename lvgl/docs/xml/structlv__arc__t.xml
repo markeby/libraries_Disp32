@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__arc__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_arc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__arc__t_1a4665c30288789550e7da187721947f71" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_arc_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="38" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1aa3f9d74310f649a67a2dc7e2256fad14" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_arc_t::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="39" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1ab492f6e7b54b6d28b112c9edeba0cf6c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_arc_t::indic_angle_start</definition>
+        <argsstring></argsstring>
+        <name>indic_angle_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="40" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a7f9c0816a8c1dd56fe4bbfe371e0f89d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_arc_t::indic_angle_end</definition>
+        <argsstring></argsstring>
+        <name>indic_angle_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="41" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a6fcce66d3823317b35591599b93a21e8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_arc_t::bg_angle_start</definition>
+        <argsstring></argsstring>
+        <name>bg_angle_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="42" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1ab025ebd57444f7a535c2ba429b693667" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_arc_t::bg_angle_end</definition>
+        <argsstring></argsstring>
+        <name>bg_angle_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="43" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1afbe354ff858ba1ba5610def105e6d59d" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_arc_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="44" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a24742becba23d9873fefbe583640d557" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_arc_t::min_value</definition>
+        <argsstring></argsstring>
+        <name>min_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="45" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a2d3fe98445839eccaccdca5a6d29da6a" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_arc_t::max_value</definition>
+        <argsstring></argsstring>
+        <name>max_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="46" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a63467ecc9a55e9beeeb47678ce43531e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_arc_t::dragging</definition>
+        <argsstring></argsstring>
+        <name>dragging</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="47" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a91139d175b689860e4c18753671b4d5f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_arc_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="48" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1ae473e96c37e7e71752c45e2e3933506d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_arc_t::min_close</definition>
+        <argsstring></argsstring>
+        <name>min_close</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="49" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a4c33fb192b3ef2044d1b56fca2809a31" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_arc_t::in_out</definition>
+        <argsstring></argsstring>
+        <name>in_out</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="50" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a4415ed1d4aa9b9e120488b12e0ea4af6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_arc_t::chg_rate</definition>
+        <argsstring></argsstring>
+        <name>chg_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="51" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a03883d66f1385e3bafbd3c40874e744e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_arc_t::last_tick</definition>
+        <argsstring></argsstring>
+        <name>last_tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="52" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__arc__t_1a6c85be72d8cfe490c2fa9ff9803ba272" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_arc_t::last_angle</definition>
+        <argsstring></argsstring>
+        <name>last_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="53" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="1">
+        <label>lv_arc_t</label>
+        <link refid="structlv__arc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" line="37" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_arc.h" bodystart="37" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structlv__arc__t_1ab025ebd57444f7a535c2ba429b693667" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>bg_angle_end</name></member>
+      <member refid="structlv__arc__t_1a6fcce66d3823317b35591599b93a21e8" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>bg_angle_start</name></member>
+      <member refid="structlv__arc__t_1a4415ed1d4aa9b9e120488b12e0ea4af6" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>chg_rate</name></member>
+      <member refid="structlv__arc__t_1a63467ecc9a55e9beeeb47678ce43531e" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>dragging</name></member>
+      <member refid="structlv__arc__t_1a4c33fb192b3ef2044d1b56fca2809a31" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>in_out</name></member>
+      <member refid="structlv__arc__t_1a7f9c0816a8c1dd56fe4bbfe371e0f89d" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>indic_angle_end</name></member>
+      <member refid="structlv__arc__t_1ab492f6e7b54b6d28b112c9edeba0cf6c" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>indic_angle_start</name></member>
+      <member refid="structlv__arc__t_1a6c85be72d8cfe490c2fa9ff9803ba272" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>last_angle</name></member>
+      <member refid="structlv__arc__t_1a03883d66f1385e3bafbd3c40874e744e" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>last_tick</name></member>
+      <member refid="structlv__arc__t_1a2d3fe98445839eccaccdca5a6d29da6a" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>max_value</name></member>
+      <member refid="structlv__arc__t_1ae473e96c37e7e71752c45e2e3933506d" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>min_close</name></member>
+      <member refid="structlv__arc__t_1a24742becba23d9873fefbe583640d557" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>min_value</name></member>
+      <member refid="structlv__arc__t_1a4665c30288789550e7da187721947f71" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>obj</name></member>
+      <member refid="structlv__arc__t_1aa3f9d74310f649a67a2dc7e2256fad14" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>rotation</name></member>
+      <member refid="structlv__arc__t_1a91139d175b689860e4c18753671b4d5f" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>type</name></member>
+      <member refid="structlv__arc__t_1afbe354ff858ba1ba5610def105e6d59d" prot="public" virt="non-virtual"><scope>lv_arc_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

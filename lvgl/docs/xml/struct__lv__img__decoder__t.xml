@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__img__decoder__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_img_decoder_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__img__decoder__t_1a3a6a2dde950b125b7ce6e0da1f02f0d5" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__img__decoder_8h_1ad8b0c4b2e267987a97daf24ba46a0943" kindref="member">lv_img_decoder_info_f_t</ref></type>
+        <definition>lv_img_decoder_info_f_t _lv_img_decoder_t::info_cb</definition>
+        <argsstring></argsstring>
+        <name>info_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="86" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__t_1a64f4eaa6c5e029d2a343f8fdd22aa473" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__img__decoder_8h_1acd6b23c1c1278ba67d5ff69d3198116b" kindref="member">lv_img_decoder_open_f_t</ref></type>
+        <definition>lv_img_decoder_open_f_t _lv_img_decoder_t::open_cb</definition>
+        <argsstring></argsstring>
+        <name>open_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="87" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__t_1aa52308f799de0bfb76e389a4fb3a4d8b" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__img__decoder_8h_1ad73fa4613e87cef8279fb4d2844c5932" kindref="member">lv_img_decoder_read_line_f_t</ref></type>
+        <definition>lv_img_decoder_read_line_f_t _lv_img_decoder_t::read_line_cb</definition>
+        <argsstring></argsstring>
+        <name>read_line_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="88" column="34" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__t_1a1c149628e9f9f82bdd04cbee54c8f8ec" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__img__decoder_8h_1aaa98cffe806ed879540b08eebb6f21d5" kindref="member">lv_img_decoder_close_f_t</ref></type>
+        <definition>lv_img_decoder_close_f_t _lv_img_decoder_t::close_cb</definition>
+        <argsstring></argsstring>
+        <name>close_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="89" column="30" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__img__decoder__t_1af59d048f12c2c3ead25c233d907a3304" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_img_decoder_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="92" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_lv_img_decoder_t</label>
+        <link refid="struct__lv__img__decoder__t"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>read_line_cb</edgelabel>
+          <edgelabel>open_cb</edgelabel>
+          <edgelabel>close_cb</edgelabel>
+          <edgelabel>info_cb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" line="85" column="32" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/lv_img_decoder.h" bodystart="85" bodyend="94"/>
+    <listofallmembers>
+      <member refid="struct__lv__img__decoder__t_1a1c149628e9f9f82bdd04cbee54c8f8ec" prot="public" virt="non-virtual"><scope>_lv_img_decoder_t</scope><name>close_cb</name></member>
+      <member refid="struct__lv__img__decoder__t_1a3a6a2dde950b125b7ce6e0da1f02f0d5" prot="public" virt="non-virtual"><scope>_lv_img_decoder_t</scope><name>info_cb</name></member>
+      <member refid="struct__lv__img__decoder__t_1a64f4eaa6c5e029d2a343f8fdd22aa473" prot="public" virt="non-virtual"><scope>_lv_img_decoder_t</scope><name>open_cb</name></member>
+      <member refid="struct__lv__img__decoder__t_1aa52308f799de0bfb76e389a4fb3a4d8b" prot="public" virt="non-virtual"><scope>_lv_img_decoder_t</scope><name>read_line_cb</name></member>
+      <member refid="struct__lv__img__decoder__t_1af59d048f12c2c3ead25c233d907a3304" prot="public" virt="non-virtual"><scope>_lv_img_decoder_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

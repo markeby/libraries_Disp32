@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classlodepng_1_1State" kind="class" language="C++" prot="public">
+    <compoundname>lodepng::State</compoundname>
+    <basecompoundref refid="structLodePNGState" prot="public" virt="non-virtual">LodePNGState</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlodepng_1_1State_1a071f0dc4a95d663a36544952011ab07b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lodepng::State::State</definition>
+        <argsstring>()</argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1001" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlodepng_1_1State_1af905b943f03abfc5059d22c2be60ec93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lodepng::State::State</definition>
+        <argsstring>(const State &amp;other)</argsstring>
+        <name>State</name>
+        <param>
+          <type>const <ref refid="classlodepng_1_1State" kindref="compound">State</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1002" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlodepng_1_1State_1aeec148ee9b4608dfedbfe09981207c63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lodepng::State::~State</definition>
+        <argsstring>()</argsstring>
+        <name>~State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1003" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlodepng_1_1State_1af9b38f02415db46acaeb2ac3905b6286" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlodepng_1_1State" kindref="compound">State</ref> &amp;</type>
+        <definition>State&amp; lodepng::State::operator=</definition>
+        <argsstring>(const State &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classlodepng_1_1State" kindref="compound">State</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="1004" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>LodePNGState</label>
+        <link refid="structLodePNGState"/>
+      </node>
+      <node id="1">
+        <label>lodepng::State</label>
+        <link refid="classlodepng_1_1State"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>LodePNGCompressSettings</label>
+        <link refid="structLodePNGCompressSettings"/>
+      </node>
+      <node id="4">
+        <label>LodePNGTime</label>
+        <link refid="structLodePNGTime"/>
+      </node>
+      <node id="3">
+        <label>LodePNGInfo</label>
+        <link refid="structLodePNGInfo"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LodePNGState</label>
+        <link refid="structLodePNGState"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>info_png</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>decoder</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>info_raw</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>encoder</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>LodePNGColorMode</label>
+        <link refid="structLodePNGColorMode"/>
+      </node>
+      <node id="6">
+        <label>LodePNGDecoderSettings</label>
+        <link refid="structLodePNGDecoderSettings"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>zlibsettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>LodePNGDecompressSettings</label>
+        <link refid="structLodePNGDecompressSettings"/>
+      </node>
+      <node id="8">
+        <label>LodePNGEncoderSettings</label>
+        <link refid="structLodePNGEncoderSettings"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>zlibsettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lodepng::State</label>
+        <link refid="classlodepng_1_1State"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="999" column="32" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="999" bodyend="1005"/>
+    <listofallmembers>
+      <member refid="structLodePNGState_1abd2c38ffc68f04b0e4159e1f97ba1f76" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>decoder</name></member>
+      <member refid="structLodePNGState_1ac63d91db835129d02eb83bbe81de347e" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>encoder</name></member>
+      <member refid="structLodePNGState_1a1a00a050da588cf3c2b7a6252bebb0cd" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>error</name></member>
+      <member refid="structLodePNGState_1a08d9ac43c995fcf34d72b1d37047b6fa" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>info_png</name></member>
+      <member refid="structLodePNGState_1a597bc08de787147474d43adf8b6ceacf" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>info_raw</name></member>
+      <member refid="classlodepng_1_1State_1af9b38f02415db46acaeb2ac3905b6286" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>operator=</name></member>
+      <member refid="classlodepng_1_1State_1a071f0dc4a95d663a36544952011ab07b" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>State</name></member>
+      <member refid="classlodepng_1_1State_1af905b943f03abfc5059d22c2be60ec93" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>State</name></member>
+      <member refid="classlodepng_1_1State_1aeec148ee9b4608dfedbfe09981207c63" prot="public" virt="non-virtual"><scope>lodepng::State</scope><name>~State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

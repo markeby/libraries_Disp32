@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="256-example" kind="example">
+    <compoundname>256</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Set the zoom factor of the image. Note that indexed and alpha only images can&apos;t be transformed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an image object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zoom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the zoom factor. or LV_ZOOM_IMG_NONE for no zoom <programlisting filename="256"></programlisting> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

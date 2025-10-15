@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__style__transition__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_style_transition_dsc_t</compoundname>
+    <includes refid="lv__style_8h" local="no">lv_style.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__style__transition__dsc__t_1a3140e03dc30085c0da114be4e4b5e798" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref> *</type>
+        <definition>const lv_style_prop_t* lv_style_transition_dsc_t::props</definition>
+        <argsstring></argsstring>
+        <name>props</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An array with the properties to animate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="299" column="28" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__transition__dsc__t_1aa7830f3fd31d9e13f332650d9375c306" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* lv_style_transition_dsc_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A custom user data that will be passed to the animation&apos;s user_data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="301" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__transition__dsc__t_1ab7e4ac4109a90047977035fd5cfdc0b4" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1a32c487fbcd8daa37b095ddc4a34630ac" kindref="member">lv_anim_path_cb_t</ref></type>
+        <definition>lv_anim_path_cb_t lv_style_transition_dsc_t::path_xcb</definition>
+        <argsstring></argsstring>
+        <name>path_xcb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A path for the animation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="303" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__transition__dsc__t_1a10c17acddbb516b677dc09e427c6cdfb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_style_transition_dsc_t::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duration of the transition in [ms] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="304" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__transition__dsc__t_1aa6fbfa99780fab4796cea342f38a0b42" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_style_transition_dsc_t::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delay before the transition in [ms] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="305" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Descriptor for style transitions </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>lv_style_transition_dsc_t</label>
+        <link refid="structlv__style__transition__dsc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>path_xcb</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_anim_t</label>
+        <link refid="struct__lv__anim__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>start_cb</edgelabel>
+          <edgelabel>ready_cb</edgelabel>
+          <edgelabel>path_cb</edgelabel>
+          <edgelabel>get_value_cb</edgelabel>
+          <edgelabel>deleted_cb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="298" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="298" bodyend="306"/>
+    <listofallmembers>
+      <member refid="structlv__style__transition__dsc__t_1aa6fbfa99780fab4796cea342f38a0b42" prot="public" virt="non-virtual"><scope>lv_style_transition_dsc_t</scope><name>delay</name></member>
+      <member refid="structlv__style__transition__dsc__t_1ab7e4ac4109a90047977035fd5cfdc0b4" prot="public" virt="non-virtual"><scope>lv_style_transition_dsc_t</scope><name>path_xcb</name></member>
+      <member refid="structlv__style__transition__dsc__t_1a3140e03dc30085c0da114be4e4b5e798" prot="public" virt="non-virtual"><scope>lv_style_transition_dsc_t</scope><name>props</name></member>
+      <member refid="structlv__style__transition__dsc__t_1a10c17acddbb516b677dc09e427c6cdfb" prot="public" virt="non-virtual"><scope>lv_style_transition_dsc_t</scope><name>time</name></member>
+      <member refid="structlv__style__transition__dsc__t_1aa7830f3fd31d9e13f332650d9375c306" prot="public" virt="non-virtual"><scope>lv_style_transition_dsc_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

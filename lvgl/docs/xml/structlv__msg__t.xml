@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__msg__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_msg_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__msg__t_1a19f4cf33a36c0a38eb29e87043e79369" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_msg_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="32" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__msg__t_1ace105bfaa55abce3ddbc068a547e8739" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* lv_msg_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="33" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__msg__t_1a4026a23191d60508618503e1a4918a3d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* lv_msg_t::_priv_data</definition>
+        <argsstring></argsstring>
+        <name>_priv_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="34" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__msg__t_1a6bac4fd4e6d35678681aed0aab0a88db" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_msg_t::payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="35" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="29" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="29" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structlv__msg__t_1a4026a23191d60508618503e1a4918a3d" prot="public" virt="non-virtual"><scope>lv_msg_t</scope><name>_priv_data</name></member>
+      <member refid="structlv__msg__t_1a19f4cf33a36c0a38eb29e87043e79369" prot="public" virt="non-virtual"><scope>lv_msg_t</scope><name>id</name></member>
+      <member refid="structlv__msg__t_1a6bac4fd4e6d35678681aed0aab0a88db" prot="public" virt="non-virtual"><scope>lv_msg_t</scope><name>payload</name></member>
+      <member refid="structlv__msg__t_1ace105bfaa55abce3ddbc068a547e8739" prot="public" virt="non-virtual"><scope>lv_msg_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

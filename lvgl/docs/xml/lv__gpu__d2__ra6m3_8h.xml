@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__gpu__d2__ra6m3_8h" kind="file" language="C++">
+    <compoundname>lv_gpu_d2_ra6m3.h</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__gpu__d2__ra6m3_8h_1a07ddf514105a680dc0a36ed223fd51f2" prot="public" static="no">
+        <type><ref refid="structlv__draw__sw__ctx__t" kindref="compound">lv_draw_sw_ctx_t</ref></type>
+        <definition>typedef lv_draw_sw_ctx_t lv_draw_ra6m3_dma2d_ctx_t</definition>
+        <argsstring></argsstring>
+        <name>lv_draw_ra6m3_dma2d_ctx_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" line="31" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__gpu__d2__ra6m3_8h_1abd277a3208fbbb08c090f4856f639bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_ra6m3_g2d_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_draw_ra6m3_g2d_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" line="36" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__d2__ra6m3_8h_1a30c8da62eb1038e8e23efdae610e8c9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_port_gpu_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_port_gpu_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" line="38" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__d2__ra6m3_8h_1a787ea5141e6a6e6f3d1c552ebaa6646a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_port_gpu_flush</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_port_gpu_flush</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" line="40" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__d2__ra6m3_8h_1a428ee40a236a6cf97ab9e8c76f1e240a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_port_gpu_blit</definition>
+        <argsstring>(int32_t x, int32_t y, lv_color_t *dst, const lv_area_t *fill_area)</argsstring>
+        <name>lv_port_gpu_blit</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>lv_color_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>fill_area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" line="42" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" declline="42" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__d2__ra6m3_8h_1a0240b6eb7f02839a08b7e2253a4cd6c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_ra6m3_2d_blend</definition>
+        <argsstring>(lv_draw_ctx_t *draw_ctx, const lv_draw_sw_blend_dsc_t *dsc)</argsstring>
+        <name>lv_draw_ra6m3_2d_blend</name>
+        <param>
+          <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__draw__sw__blend__dsc__t" kindref="compound">lv_draw_sw_blend_dsc_t</ref> *</type>
+          <declname>dsc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" line="44" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__d2__ra6m3_8h_1ae006878a71950aab3fbed8945e55e9e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_ra6m3_2d_ctx_init</definition>
+        <argsstring>(lv_disp_drv_t *drv, lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>lv_draw_ra6m3_2d_ctx_init</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1ad9ffc837ed3653c57cc9c961cafe2774" kindref="member">lv_disp_drv_t</ref> *</type>
+          <declname>drv</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" line="46" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" declline="46" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__d2__ra6m3_8h_1a06bda2b55aa1adc4bc2eeca743877d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_ra6m3_2d_ctx_deinit</definition>
+        <argsstring>(lv_disp_drv_t *disp, lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>lv_draw_ra6m3_2d_ctx_deinit</name>
+        <param>
+          <type><ref refid="lv__hal__disp_8h_1ad9ffc837ed3653c57cc9c961cafe2774" kindref="member">lv_disp_drv_t</ref> *</type>
+          <declname>disp</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" line="48" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>LV_GPU_D2_RA6M3_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_GPU_D2_RA6M3_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../misc/lv_color.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_GPU_RA6M3_G2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../core/lv_disp.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../sw/lv_draw_sw.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN(A,<sp/>B)<sp/>((A)<sp/>&lt;<sp/>(B)<sp/>?<sp/>(A)<sp/>:<sp/>(B))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX(A,<sp/>B)<sp/>((A)<sp/>&gt;<sp/>(B)<sp/>?<sp/>(A)<sp/>:<sp/>(B))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PI<sp/><sp/><sp/><sp/>3.1415926</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__sw__ctx__t" kindref="compound">lv_draw_sw_ctx_t</ref><sp/><ref refid="structlv__draw__sw__ctx__t" kindref="compound">lv_draw_ra6m3_dma2d_ctx_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_ra6m3_g2d_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_port_gpu_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_port_gpu_flush(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_port_gpu_blit(int32_t<sp/>x,<sp/>int32_t<sp/>y,<sp/>lv_color_t<sp/>*<sp/>dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>fill_area);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_ra6m3_2d_blend(<ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__sw__blend__dsc__t" kindref="compound">lv_draw_sw_blend_dsc_t</ref><sp/>*<sp/>dsc);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_ra6m3_2d_ctx_init(<ref refid="struct__lv__disp__drv__t" kindref="compound">lv_disp_drv_t</ref><sp/>*<sp/>drv,<sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_ra6m3_2d_ctx_deinit(<ref refid="struct__lv__disp__drv__t" kindref="compound">lv_disp_drv_t</ref><sp/>*<sp/>disp,<sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*LV_USE_GPU_GD32_IPA*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h"/>
+  </compounddef>
+</doxygen>

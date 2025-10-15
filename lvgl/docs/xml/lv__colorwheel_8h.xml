@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__colorwheel_8h" kind="file" language="C++">
+    <compoundname>lv_colorwheel.h</compoundname>
+    <innerclass refid="structlv__colorwheel__t" prot="public">lv_colorwheel_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__colorwheel_8h_1a4caf8d8f829279fba122163d961608a4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@33</name>
+        <enumvalue id="lv__colorwheel_8h_1a4caf8d8f829279fba122163d961608a4a633253671ad7227b455324090103af5f" prot="public">
+          <name>LV_COLORWHEEL_MODE_HUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__colorwheel_8h_1a4caf8d8f829279fba122163d961608a4ad2191cdcf184a71377bb3ff7a2d5b607" prot="public">
+          <name>LV_COLORWHEEL_MODE_SATURATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__colorwheel_8h_1a4caf8d8f829279fba122163d961608a4ab4df731a5952b2678bd63043cb392598" prot="public">
+          <name>LV_COLORWHEEL_MODE_VALUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="28" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__colorwheel_8h_1a037daf6c02243ed3c5f051d89a4882fa" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_colorwheel_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_colorwheel_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="33" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__colorwheel_8h_1af1fbbf5f52114183ffe2803fce9bc35f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_colorwheel_class</definition>
+        <argsstring></argsstring>
+        <name>lv_colorwheel_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="50" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="50" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__colorwheel_8h_1aa12a72a330cc83cd7a1e3a584ff89d47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_colorwheel_create</definition>
+        <argsstring>(lv_obj_t *parent, bool knob_recolor)</argsstring>
+        <name>lv_colorwheel_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>knob_recolor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a color picker object with disc shape <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new color picker </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>knob_recolor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: set the knob&apos;s color to the current color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created color picker </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="62" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="62" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__colorwheel_8h_1a314bda466747753d6e5942075993034a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_colorwheel_set_hsv</definition>
+        <argsstring>(lv_obj_t *obj, lv_color_hsv_t hsv)</argsstring>
+        <name>lv_colorwheel_set_hsv</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__color__hsv__t" kindref="compound">lv_color_hsv_t</ref></type>
+          <declname>hsv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current hsv of a color wheel. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorwheel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to color wheel object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current selected hsv </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if changed, otherwise false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="74" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="74" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__colorwheel_8h_1ab308524dc5a44dab966c3f26e9753acf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_colorwheel_set_rgb</definition>
+        <argsstring>(lv_obj_t *obj, lv_color_t color)</argsstring>
+        <name>lv_colorwheel_set_rgb</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current color of a color wheel. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorwheel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to color wheel object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current selected color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if changed, otherwise false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="82" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__colorwheel_8h_1a9dbeed5e9e22915a624a0b2336a8ec1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_colorwheel_set_mode</definition>
+        <argsstring>(lv_obj_t *obj, lv_colorwheel_mode_t mode)</argsstring>
+        <name>lv_colorwheel_set_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_colorwheel_mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current color mode. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorwheel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to color wheel object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color mode (hue/sat/val) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="89" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__colorwheel_8h_1a70ab0e02a16a51dbc27abef561468960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_colorwheel_set_mode_fixed</definition>
+        <argsstring>(lv_obj_t *obj, bool fixed)</argsstring>
+        <name>lv_colorwheel_set_mode_fixed</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fixed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set if the color mode is changed on long press on center <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorwheel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to color wheel object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fixed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color mode cannot be changed on long press </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="96" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="96" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__colorwheel_8h_1a34601ce6e5812bd1208a27c74ffae853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__hsv__t" kindref="compound">lv_color_hsv_t</ref></type>
+        <definition>lv_color_hsv_t lv_colorwheel_get_hsv</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_colorwheel_get_hsv</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current selected hsv of a color wheel. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorwheel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to color wheel object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>current selected hsv </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="107" column="16" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="107" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__colorwheel_8h_1a1285e96d789547a40a6a6b0afe3bad2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_colorwheel_get_rgb</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_colorwheel_get_rgb</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current selected color of a color wheel. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorwheel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to color wheel object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>color current selected color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="114" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="114" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__colorwheel_8h_1a3540c4391fbf1b729e61b63316e7899f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_colorwheel_mode_t</type>
+        <definition>lv_colorwheel_mode_t lv_colorwheel_get_color_mode</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_colorwheel_get_color_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current color mode. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorwheel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to color wheel object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>color mode (hue/sat/val) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="121" column="22" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="121" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__colorwheel_8h_1a10a1278e3de551332d7fdb776ccfc282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_colorwheel_get_color_mode_fixed</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_colorwheel_get_color_mode_fixed</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get if the color mode is changed on long press on center <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorwheel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to color wheel object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>mode cannot be changed on long press </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" line="128" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h" declline="128" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_COLORWHEEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_COLORWHEEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lvgl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_COLORWHEEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_COLORWHEEL_MODE_HUE,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_COLORWHEEL_MODE_SATURATION,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_COLORWHEEL_MODE_VALUE</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_colorwheel_mode_t;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*Data<sp/>of<sp/>color<sp/>picker*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structlv__colorwheel__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__color__hsv__t" kindref="compound">lv_color_hsv_t</ref><sp/>hsv;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>pos;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>recolor<sp/><sp/><sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>knob;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>last_click_time;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>last_change_time;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>last_press_point;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_colorwheel_mode_t<sp/>mode<sp/><sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>mode_fixed<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><ref refid="structlv__colorwheel__t" kindref="compound">lv_colorwheel_t</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_colorwheel_class;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__colorwheel_8h_1aa12a72a330cc83cd7a1e3a584ff89d47" kindref="member">lv_colorwheel_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>knob_recolor);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__colorwheel_8h_1a314bda466747753d6e5942075993034a" kindref="member">lv_colorwheel_set_hsv</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__color__hsv__t" kindref="compound">lv_color_hsv_t</ref><sp/>hsv);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__colorwheel_8h_1ab308524dc5a44dab966c3f26e9753acf" kindref="member">lv_colorwheel_set_rgb</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_color_t<sp/>color);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__colorwheel_8h_1a9dbeed5e9e22915a624a0b2336a8ec1f" kindref="member">lv_colorwheel_set_mode</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_colorwheel_mode_t<sp/>mode);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__colorwheel_8h_1a70ab0e02a16a51dbc27abef561468960" kindref="member">lv_colorwheel_set_mode_fixed</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fixed);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="structlv__color__hsv__t" kindref="compound">lv_color_hsv_t</ref><sp/><ref refid="lv__colorwheel_8h_1a34601ce6e5812bd1208a27c74ffae853" kindref="member">lv_colorwheel_get_hsv</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">lv_color_t<sp/><ref refid="lv__colorwheel_8h_1a1285e96d789547a40a6a6b0afe3bad2e" kindref="member">lv_colorwheel_get_rgb</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">lv_colorwheel_mode_t<sp/><ref refid="lv__colorwheel_8h_1a3540c4391fbf1b729e61b63316e7899f" kindref="member">lv_colorwheel_get_color_mode</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__colorwheel_8h_1a10a1278e3de551332d7fdb776ccfc282" kindref="member">lv_colorwheel_get_color_mode_fixed</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*LV_USE_COLORWHEEL*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_COLORWHEEL_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h"/>
+  </compounddef>
+</doxygen>

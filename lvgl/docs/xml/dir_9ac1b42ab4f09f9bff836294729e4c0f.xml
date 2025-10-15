@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_9ac1b42ab4f09f9bff836294729e4c0f" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/porting</compoundname>
+    <innerfile refid="lv__port__disp__template_8h">lv_port_disp_template.h</innerfile>
+    <innerfile refid="lv__port__fs__template_8h">lv_port_fs_template.h</innerfile>
+    <innerfile refid="lv__port__indev__template_8h">lv_port_indev_template.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/porting/"/>
+  </compounddef>
+</doxygen>

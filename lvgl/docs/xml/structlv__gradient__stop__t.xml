@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__gradient__stop__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_gradient_stop_t</compoundname>
+    <includes refid="lv__style_8h" local="no">lv_style.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__gradient__stop__t_1a7eb2e8afc8c04f93ffc718c24a8396ef" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t lv_gradient_stop_t::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The stop color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="150" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__gradient__stop__t_1ae7f259746900ef125e568ddc79beda02" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_gradient_stop_t::frac</definition>
+        <argsstring></argsstring>
+        <name>frac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The stop position in 1/255 unit </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="151" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A gradient stop definition. This matches a color and a position in a virtual 0-255 scale. </para>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="149" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="149" bodyend="152"/>
+    <listofallmembers>
+      <member refid="structlv__gradient__stop__t_1a7eb2e8afc8c04f93ffc718c24a8396ef" prot="public" virt="non-virtual"><scope>lv_gradient_stop_t</scope><name>color</name></member>
+      <member refid="structlv__gradient__stop__t_1ae7f259746900ef125e568ddc79beda02" prot="public" virt="non-virtual"><scope>lv_gradient_stop_t</scope><name>frac</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

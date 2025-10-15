@@ -1,0 +1,960 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__span_8h" kind="file" language="C++">
+    <compoundname>lv_span.h</compoundname>
+    <innerclass refid="structlv__span__t" prot="public">lv_span_t</innerclass>
+    <innerclass refid="structlv__spangroup__t" prot="public">lv_spangroup_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__span_8h_1a157d5577a5b2f5986037d0d09c7dc77d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@44</name>
+        <enumvalue id="lv__span_8h_1a157d5577a5b2f5986037d0d09c7dc77da4d317fa89120488ff249840d013d1de4" prot="public">
+          <name>LV_SPAN_OVERFLOW_CLIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__span_8h_1a157d5577a5b2f5986037d0d09c7dc77daeea5ebec0f2538dde7717563706e7358" prot="public">
+          <name>LV_SPAN_OVERFLOW_ELLIPSIS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="30" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@45</name>
+        <enumvalue id="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122add3bb07754e819938515040c39703e4d" prot="public">
+          <name>LV_SPAN_MODE_FIXED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>fixed the obj size </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122a2a63a3bda7678ee83ae9fa938cfba7bc" prot="public">
+          <name>LV_SPAN_MODE_EXPAND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Expand the object size to the text size </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122a14963c1a189e8432b491e6fcacdce03c" prot="public">
+          <name>LV_SPAN_MODE_BREAK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Keep width, break the too long lines and expand height </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="36" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__span_8h_1a620825c37828bfdfc7d3cfc7039744d4" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_span_overflow_t</definition>
+        <argsstring></argsstring>
+        <name>lv_span_overflow_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="34" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__span_8h_1ac41bef190510dd09dbe605144c034ad4" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_span_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_span_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="41" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__span_8h_1a1cf5ccd92f2d196cba42fa927faef5a9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_spangroup_class</definition>
+        <argsstring></argsstring>
+        <name>lv_spangroup_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="63" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="63" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__span_8h_1a07e17a1669fe7aa17c939857379c4bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_spangroup_create</definition>
+        <argsstring>(lv_obj_t *par)</argsstring>
+        <name>lv_spangroup_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a spangroup object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new spangroup </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created spangroup </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="74" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="74" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1ac6c9542ff4f7e46926b2c0e5c41c6cc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref> *</type>
+        <definition>lv_span_t* lv_spangroup_new_span</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_new_span</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a span string descriptor and add to spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created span. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="81" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="81" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1aa905b2929979d5aea37309c1eab58eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_spangroup_del_span</definition>
+        <argsstring>(lv_obj_t *obj, lv_span_t *span)</argsstring>
+        <name>lv_spangroup_del_span</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref> *</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove the span from the spangroup and free memory. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>span</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a span. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="88" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1a5d3d44689f25a9f52e276d1e82fa6da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_span_set_text</definition>
+        <argsstring>(lv_span_t *span, const char *text)</argsstring>
+        <name>lv_span_set_text</name>
+        <param>
+          <type><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref> *</type>
+          <declname>span</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a new text for a span. Memory will be allocated to store the text by the span. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>span</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a span. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="99" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="99" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1af5776c693dc9d8cf4fc346f657f9a87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_span_set_text_static</definition>
+        <argsstring>(lv_span_t *span, const char *text)</argsstring>
+        <name>lv_span_set_text_static</name>
+        <param>
+          <type><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref> *</type>
+          <declname>span</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a static text. It will not be saved by the span so the &apos;text&apos; variable has to be &apos;alive&apos; while the span exist. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>span</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a span. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="107" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="107" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1ab1dc0b911b05775f1488e8093841941b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_spangroup_set_align</definition>
+        <argsstring>(lv_obj_t *obj, lv_text_align_t align)</argsstring>
+        <name>lv_spangroup_set_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_text_align_t</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the align of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>see lv_text_align_t for details. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="114" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="114" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1aa213ee931162a1c5fe02d348fb804e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_spangroup_set_overflow</definition>
+        <argsstring>(lv_obj_t *obj, lv_span_overflow_t overflow)</argsstring>
+        <name>lv_spangroup_set_overflow</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_span_overflow_t</type>
+          <declname>overflow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the overflow of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>overflow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>see lv_span_overflow_t for details. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="121" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="121" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1ac1f7d0fa6b0664368cdedb66b823004e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_spangroup_set_indent</definition>
+        <argsstring>(lv_obj_t *obj, lv_coord_t indent)</argsstring>
+        <name>lv_spangroup_set_indent</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>indent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the indent of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first line indentation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="128" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="128" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1ad276f0e3571e534a42dca16c07b9fcda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_spangroup_set_mode</definition>
+        <argsstring>(lv_obj_t *obj, lv_span_mode_t mode)</argsstring>
+        <name>lv_spangroup_set_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_span_mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the mode of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>see lv_span_mode_t for details. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="135" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="135" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1abac7735200755c7e225b3070cd2b534f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_spangroup_set_lines</definition>
+        <argsstring>(lv_obj_t *obj, int32_t lines)</argsstring>
+        <name>lv_spangroup_set_lines</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>lines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set lines of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max lines that can be displayed in LV_SPAN_MODE_BREAK mode. &lt; 0 means no limit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="142" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="142" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1a459b70220989e31b711c12441323078e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref> *</type>
+        <definition>lv_span_t* lv_spangroup_get_child</definition>
+        <argsstring>(const lv_obj_t *obj, int32_t id)</argsstring>
+        <name>lv_spangroup_get_child</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a spangroup child by its index.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spangroup object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the child. 0: the oldest (firstly created) child 1: the second oldest child count-1: the youngest -1: the youngest -2: the second youngest </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The child span at index <computeroutput>id</computeroutput>, or NULL if the ID does not exist </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="160" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="160" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1aca1576ac6205310e831b5e8a822518f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_spangroup_get_child_cnt</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_get_child_cnt</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spangroup object to get the child count of. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The span count of the spangroup. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="167" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="167" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1a4facaacf22f3b00f743d13cdd2318af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_text_align_t</type>
+        <definition>lv_text_align_t lv_spangroup_get_align</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_get_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the align of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the align value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="174" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="174" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1aff77317c8770c671d563ea5f1a657f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_span_overflow_t</type>
+        <definition>lv_span_overflow_t lv_spangroup_get_overflow</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_get_overflow</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the overflow of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the overflow value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="181" column="20" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="181" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1a353f6fce552f1ebf9e5abb658fe559f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_spangroup_get_indent</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_get_indent</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the indent of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the indent value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="188" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="188" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1af8fdeaab3987ee14dcbae6d631b81598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_span_mode_t</type>
+        <definition>lv_span_mode_t lv_spangroup_get_mode</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_get_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the mode of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="194" column="16" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="194" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1a0de19fe02bcb1ed9bf1544b930555ec1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_spangroup_get_lines</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_get_lines</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get lines of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the lines value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="201" column="9" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="201" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1a42f54b93744f5b479fad0ff725dffe34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_spangroup_get_max_line_h</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_get_max_line_h</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get max line height of all span in the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="207" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="207" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1af337e2f824f7828a409ff554b7846483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_spangroup_get_expand_width</definition>
+        <argsstring>(lv_obj_t *obj, uint32_t max_width)</argsstring>
+        <name>lv_spangroup_get_expand_width</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>max_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the text content width when all span of spangroup on a line. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if text content width &gt;= max_width, return max_width to reduce computation, if max_width == 0, returns the text content width. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>text content width or max_width. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="216" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="216" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1a2777e278a9df9dd9e580fc47cdde98c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_spangroup_get_expand_height</definition>
+        <argsstring>(lv_obj_t *obj, lv_coord_t width)</argsstring>
+        <name>lv_spangroup_get_expand_height</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the text content height with width fixed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="222" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="222" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__span_8h_1ad4052a4cfd7e4526e132c2184f37bda5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_spangroup_refr_mode</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_spangroup_refr_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>update the mode of the spangroup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a spangroup object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" line="232" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h" declline="232" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_SPAN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SPAN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lvgl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_SPAN<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LV_SPAN_SNIPPET_STACK_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_SPAN_SNIPPET_STACK_SIZE<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_SPAN_OVERFLOW_CLIP,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_SPAN_OVERFLOW_ELLIPSIS,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_span_overflow_t;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122add3bb07754e819938515040c39703e4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122add3bb07754e819938515040c39703e4d" kindref="member">LV_SPAN_MODE_FIXED</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122a2a63a3bda7678ee83ae9fa938cfba7bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122a2a63a3bda7678ee83ae9fa938cfba7bc" kindref="member">LV_SPAN_MODE_EXPAND</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122a14963c1a189e8432b491e6fcacdce03c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__span_8h_1a1fb9092bcdeada2d206bdc74afbbe122a14963c1a189e8432b491e6fcacdce03c" kindref="member">LV_SPAN_MODE_BREAK</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_span_mode_t;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structlv__span__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>pointer<sp/>to<sp/>display<sp/>text<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>spangroup;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>pointer<sp/>to<sp/>spangroup<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>style;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>display<sp/>text<sp/>style<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>static_flag<sp/>:<sp/>1;</highlight><highlight class="comment">/*<sp/>the<sp/>text<sp/>is<sp/>static<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structlv__spangroup__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>lines;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>indent;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>first<sp/>line<sp/>indent<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>cache_w;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>cache<sp/>automatically<sp/>calculates<sp/>the<sp/>width<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>cache_h;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>similar<sp/>cache_w<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref><sp/><sp/>child_ll;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>mode<sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>details<sp/>see<sp/>lv_span_mode_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>overflow<sp/>:<sp/>1;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>details<sp/>see<sp/>lv_span_overflow_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>refresh<sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>spangroup<sp/>need<sp/>refresh<sp/>cache_w<sp/>and<sp/>cache_h<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/><ref refid="structlv__spangroup__t" kindref="compound">lv_spangroup_t</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_spangroup_class;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__span_8h_1a07e17a1669fe7aa17c939857379c4bee" kindref="member">lv_spangroup_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>par);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref><sp/>*<sp/><ref refid="lv__span_8h_1ac6c9542ff4f7e46926b2c0e5c41c6cc7" kindref="member">lv_spangroup_new_span</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1aa905b2929979d5aea37309c1eab58eac" kindref="member">lv_spangroup_del_span</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref><sp/>*<sp/>span);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/>Setter<sp/>functions</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1a5d3d44689f25a9f52e276d1e82fa6da0" kindref="member">lv_span_set_text</ref>(<ref refid="structlv__span__t" kindref="compound">lv_span_t</ref><sp/>*<sp/>span,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>text);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1af5776c693dc9d8cf4fc346f657f9a87e" kindref="member">lv_span_set_text_static</ref>(<ref refid="structlv__span__t" kindref="compound">lv_span_t</ref><sp/>*<sp/>span,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>text);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1ab1dc0b911b05775f1488e8093841941b" kindref="member">lv_spangroup_set_align</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_text_align_t<sp/>align);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1aa213ee931162a1c5fe02d348fb804e40" kindref="member">lv_spangroup_set_overflow</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_span_overflow_t<sp/>overflow);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1ac1f7d0fa6b0664368cdedb66b823004e" kindref="member">lv_spangroup_set_indent</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>indent);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1ad276f0e3571e534a42dca16c07b9fcda" kindref="member">lv_spangroup_set_mode</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_span_mode_t<sp/>mode);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1abac7735200755c7e225b3070cd2b534f" kindref="member">lv_spangroup_set_lines</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>int32_t<sp/>lines);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*<sp/>Getter<sp/>functions</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><ref refid="structlv__span__t" kindref="compound">lv_span_t</ref><sp/>*<sp/><ref refid="lv__span_8h_1a459b70220989e31b711c12441323078e" kindref="member">lv_spangroup_get_child</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>int32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">uint32_t<sp/><ref refid="lv__span_8h_1aca1576ac6205310e831b5e8a822518f0" kindref="member">lv_spangroup_get_child_cnt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal">lv_text_align_t<sp/><ref refid="lv__span_8h_1a4facaacf22f3b00f743d13cdd2318af4" kindref="member">lv_spangroup_get_align</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">lv_span_overflow_t<sp/><ref refid="lv__span_8h_1aff77317c8770c671d563ea5f1a657f84" kindref="member">lv_spangroup_get_overflow</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__span_8h_1a353f6fce552f1ebf9e5abb658fe559f1" kindref="member">lv_spangroup_get_indent</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">lv_span_mode_t<sp/><ref refid="lv__span_8h_1af8fdeaab3987ee14dcbae6d631b81598" kindref="member">lv_spangroup_get_mode</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal">int32_t<sp/><ref refid="lv__span_8h_1a0de19fe02bcb1ed9bf1544b930555ec1" kindref="member">lv_spangroup_get_lines</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__span_8h_1a42f54b93744f5b479fad0ff725dffe34" kindref="member">lv_spangroup_get_max_line_h</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">uint32_t<sp/><ref refid="lv__span_8h_1af337e2f824f7828a409ff554b7846483" kindref="member">lv_spangroup_get_expand_width</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>max_width);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">lv_coord_t<sp/><ref refid="lv__span_8h_1a2777e278a9df9dd9e580fc47cdde98c7" kindref="member">lv_spangroup_get_expand_height</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>width);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*<sp/>Other<sp/>functions</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__span_8h_1ad4052a4cfd7e4526e132c2184f37bda5" kindref="member">lv_spangroup_refr_mode</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_SPAN*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_SPAN_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span/lv_span.h"/>
+  </compounddef>
+</doxygen>

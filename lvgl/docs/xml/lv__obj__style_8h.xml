@@ -1,0 +1,1155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__obj__style_8h" kind="file" language="C++">
+    <compoundname>lv_obj_style.h</compoundname>
+    <innerclass refid="struct__lv__obj__style__t" prot="public">_lv_obj_style_t</innerclass>
+    <innerclass refid="struct__lv__obj__style__transition__dsc__t" prot="public">_lv_obj_style_transition_dsc_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__obj__style_8h_1aae5860a57e9ff1302f2db4f57a3c640d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_lv_style_state_cmp_t</name>
+        <enumvalue id="lv__obj__style_8h_1aae5860a57e9ff1302f2db4f57a3c640daa48685055032b458fb0ddf136a7de971" prot="public">
+          <name>_LV_STYLE_STATE_CMP_SAME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__style_8h_1aae5860a57e9ff1302f2db4f57a3c640da2e18bb4f0ae95a626c91503ea80591c4" prot="public">
+          <name>_LV_STYLE_STATE_CMP_DIFF_REDRAW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__style_8h_1aae5860a57e9ff1302f2db4f57a3c640dab463e94b3d0025097175cc4795e15329" prot="public">
+          <name>_LV_STYLE_STATE_CMP_DIFF_DRAW_PAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj__style_8h_1aae5860a57e9ff1302f2db4f57a3c640da9d18de0da85f1c925b487fdc2fcceb97" prot="public">
+          <name>_LV_STYLE_STATE_CMP_DIFF_LAYOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="30" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__obj__style_8h_1aa0a048ecb0f26f9a0976809d5ec35693" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t lv_style_selector_t</definition>
+        <argsstring></argsstring>
+        <name>lv_style_selector_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="37" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__obj__style_8h_1a06dd08ec4b467767ea5593834fd3d7a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_obj_style_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>_lv_obj_style_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the object related style manager module. Called by LVGL in <computeroutput><ref refid="lv__obj_8h_1a666fa58edac1e61856b2a00fe60308a0" kindref="member">lv_init()</ref></computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="65" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="65" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1adb2e835d6a902790ae78196c8cf213f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_add_style</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_style_t *style, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_add_style</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="75" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="75" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1aa63c74e090f9c2fdfc885bf1df279360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_remove_style</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_style_t *style, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_remove_style</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="86" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="86" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a363768945da515dc25c4bc14cac290b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_obj_remove_style_all</definition>
+        <argsstring>(struct _lv_obj_t *obj)</argsstring>
+        <name>lv_obj_remove_style_all</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all styles from an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="92" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1af31066bb732f613395d109ea853e7f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_report_style_change</definition>
+        <argsstring>(lv_style_t *style)</argsstring>
+        <name>lv_obj_report_style_change</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify all object if a style is modified <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a style. Only the objects with this style will be notified (NULL to notify all objects) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="102" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="102" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a17a2a80e1e1f4f6ab7343e0d84d7968e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_refresh_style</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_part_t part, lv_style_prop_t prop)</argsstring>
+        <name>lv_obj_refresh_style</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_part_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify an object and its children about its style is modified. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the part whose style was changed. E.g. <computeroutput>LV_PART_ANY</computeroutput>, <computeroutput>LV_PART_MAIN</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>LV_STYLE_PROP_ANY</computeroutput> or an <computeroutput>LV_STYLE_...</computeroutput> property. It is used to optimize what needs to be refreshed. <computeroutput>LV_STYLE_PROP_INV</computeroutput> to perform only a style cache update </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="112" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="112" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1aff37096e213941e398c8be8d141a7cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_enable_style_refresh</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>lv_obj_enable_style_refresh</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable automatic style refreshing when a new style is added/removed to/from an object or any other style change happens. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: enable refreshing; false: disable refreshing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="119" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="119" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></type>
+        <definition>lv_style_value_t lv_obj_get_style_prop</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_part_t part, lv_style_prop_t prop)</argsstring>
+        <name>lv_obj_get_style_prop</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_part_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value of a style property. The current state of the object will be considered. Inherited properties will be inherited. If a property is not set a default value will be returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a part from which the property should be get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the property to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the value of the property. Should be read from the correct field of the <computeroutput><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></computeroutput> according to the type of the property. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="131" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="131" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1aa896726281d89cb81af64d8b86112ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_local_style_prop</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_style_prop_t prop, lv_style_value_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_local_style_prop</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set local style property on an object&apos;s part and state. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the property </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the property. The correct element should be set according to the type of the property </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed value of parts and state for which the style should be set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="140" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="140" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a9342d6b85c75b9a95c1f832968fb526a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_local_style_prop_meta</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_style_prop_t prop, uint16_t meta, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_local_style_prop_meta</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="143" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="143" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a111932b4b6a2d7e26a02409c0b884c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_style_res_t</type>
+        <definition>lv_style_res_t lv_obj_get_local_style_prop</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_style_prop_t prop, lv_style_value_t *value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_get_local_style_prop</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="146" column="16" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="146" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a6dd0a1b463f4803f55648eed8bd2c4a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_remove_local_style_prop</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_style_prop_t prop, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_remove_local_style_prop</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a local style property from a part of an object with a given state. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a style property to remove. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed value of parts and state for which the style should be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true the property was found and removed; false: the property was not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="156" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="156" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a8c222bdc00207f3ec10ee1dc3ea99b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></type>
+        <definition>lv_style_value_t _lv_obj_style_apply_color_filter</definition>
+        <argsstring>(const struct _lv_obj_t *obj, uint32_t part, lv_style_value_t v)</argsstring>
+        <name>_lv_obj_style_apply_color_filter</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used internally for color filtering </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="161" column="18" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="161" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1af8d4e231a266ddf1da6ab893cd642c50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_obj_style_create_transition</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_part_t part, lv_state_t prev_state, lv_state_t new_state, const _lv_obj_style_transition_dsc_t *tr)</argsstring>
+        <name>_lv_obj_style_create_transition</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_part_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type>lv_state_t</type>
+          <declname>prev_state</declname>
+        </param>
+        <param>
+          <type>lv_state_t</type>
+          <declname>new_state</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__lv__obj__style__transition__dsc__t" kindref="compound">_lv_obj_style_transition_dsc_t</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used internally to create a style transition <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prev_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="171" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="171" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1ac7328dd150f2cf468f5ffdfc1bfefb83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_lv_style_state_cmp_t</type>
+        <definition>_lv_style_state_cmp_t _lv_obj_style_state_compare</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_state_t state1, lv_state_t state2)</argsstring>
+        <name>_lv_obj_style_state_compare</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_state_t</type>
+          <declname>state1</declname>
+        </param>
+        <param>
+          <type>lv_state_t</type>
+          <declname>state2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used internally to compare the appearance of an object in 2 states <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="181" column="23" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="181" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a4f30d7ed77ce3c88251e8abad8735f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_fade_in</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t time, uint32_t delay)</argsstring>
+        <name>lv_obj_fade_in</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fade in an an object and all its children. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object to fade in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time of fade </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay to start the animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="189" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="189" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a51cf0b87e9125d52b0a79f2bfdbd0892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_fade_out</definition>
+        <argsstring>(struct _lv_obj_t *obj, uint32_t time, uint32_t delay)</argsstring>
+        <name>lv_obj_fade_out</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fade out an an object and all its children. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object to fade out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time of fade </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay to start the animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="197" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="197" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1aced4cf6f8495fae0216a74e07f2415b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_state_t</type>
+        <definition>lv_state_t lv_obj_style_get_selector_state</definition>
+        <argsstring>(lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_style_get_selector_state</name>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="199" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="199" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1af2bdae4e2e76205b4ae6049086289cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_part_t</type>
+        <definition>lv_part_t lv_obj_style_get_selector_part</definition>
+        <argsstring>(lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_style_get_selector_part</name>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="201" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="201" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1aff6c2d4532839474588398a504629f51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_obj_set_style_pad_all</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_pad_all</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="205" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="205" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a64d2358d8fd9ba9e8ade3e992978cb40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_obj_set_style_pad_hor</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_pad_hor</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="213" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="213" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1aefa620724004a877d2fa3c7c62f2fe7e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_obj_set_style_pad_ver</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_pad_ver</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="219" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="219" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a7e3459c17316a795ff5356d86ccfd24d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_obj_set_style_pad_gap</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_pad_gap</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="225" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="225" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a86f39360444eac6cc4277d4250f921f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lv_obj_set_style_size</definition>
+        <argsstring>(struct _lv_obj_t *obj, lv_coord_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_size</name>
+        <param>
+          <type>struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="231" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="231" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a5be790b7f64d4902d6871a6b603eadfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_text_align_t</type>
+        <definition>lv_text_align_t lv_obj_calculate_style_text_align</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_part_t part, const char *txt)</argsstring>
+        <name>lv_obj_calculate_style_text_align</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_part_t</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="237" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="237" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a1fbf5647d105c3bba66d99a67f217e12" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_coord_t</type>
+        <definition>static lv_coord_t lv_obj_get_style_transform_zoom_safe</definition>
+        <argsstring>(const struct _lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_transform_zoom_safe</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="239" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" bodystart="239" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj__style_8h_1a5fe60e049649e0d10bd872157ca3ab67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_opa_t</type>
+        <definition>lv_opa_t lv_obj_get_style_opa_recursive</definition>
+        <argsstring>(const struct _lv_obj_t *obj, lv_part_t part)</argsstring>
+        <name>lv_obj_get_style_opa_recursive</name>
+        <param>
+          <type>const struct <ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_part_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <computeroutput>opa</computeroutput> style property from all parents and multiply and <computeroutput>&gt;&gt; 8</computeroutput> them. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object whose opacity should be get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the part whose opacity should be get. Non-MAIN parts will consider the <computeroutput>opa</computeroutput> of teh MAIN part too </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the final opacity considering the parents&apos; opacity too </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" line="251" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h" declline="251" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_OBJ_STYLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_OBJ_STYLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_bidi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*Can&apos;t<sp/>include<sp/>lv_obj.h<sp/>because<sp/>it<sp/>includes<sp/>this<sp/>header<sp/>file*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_STATE_CMP_SAME,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>style<sp/>properties<sp/>in<sp/>the<sp/>2<sp/>states<sp/>are<sp/>identical*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_STATE_CMP_DIFF_REDRAW,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>differences<sp/>can<sp/>be<sp/>shown<sp/>with<sp/>a<sp/>simple<sp/>redraw*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_STATE_CMP_DIFF_DRAW_PAD,<sp/><sp/></highlight><highlight class="comment">/*The<sp/>differences<sp/>can<sp/>be<sp/>shown<sp/>with<sp/>a<sp/>simple<sp/>redraw*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_STATE_CMP_DIFF_LAYOUT,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>differences<sp/>can<sp/>be<sp/>shown<sp/>with<sp/>a<sp/>simple<sp/>redraw*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/>_lv_style_state_cmp_t;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>lv_style_selector_t;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="struct__lv__obj__style__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>selector<sp/>:<sp/>24;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>is_local<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>is_trans<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/><ref refid="struct__lv__obj__style__t" kindref="compound">_lv_obj_style_t</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="struct__lv__obj__style__transition__dsc__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>time;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>delay;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_selector_t<sp/>selector;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__anim_8h_1a32c487fbcd8daa37b095ddc4a34630ac" kindref="member">lv_anim_path_cb_t</ref><sp/>path_cb;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/><ref refid="struct__lv__obj__style__transition__dsc__t" kindref="compound">_lv_obj_style_transition_dsc_t</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1a06dd08ec4b467767ea5593834fd3d7a5" kindref="member">_lv_obj_style_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_add_style(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_remove_style(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_remove_style_all(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_remove_style(obj,<sp/>NULL,<sp/>(lv_style_selector_t)<ref refid="lv__obj_8h_1a99fb83031ce9923c84392b4e92f956b5a20fb4a8bd26c73f27bab2c13cca4135c" kindref="member">LV_PART_ANY</ref><sp/>|<sp/>(lv_style_selector_t)<ref refid="lv__obj_8h_1adf764cbdea00d65edcd07bb9953ad2b7a801cebe920a9b6b4d341e8eab3d19780" kindref="member">LV_STATE_ANY</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1af31066bb732f613395d109ea853e7f5c" kindref="member">lv_obj_report_style_change</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1a17a2a80e1e1f4f6ab7343e0d84d7968e" kindref="member">lv_obj_refresh_style</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_part_t<sp/>part,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1aff37096e213941e398c8be8d141a7cf8" kindref="member">lv_obj_enable_style_refresh</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_part_t<sp/>part,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1aa896726281d89cb81af64d8b86112ead" kindref="member">lv_obj_set_local_style_prop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>value,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_local_style_prop_meta(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/>uint16_t<sp/>meta,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">lv_style_res_t<sp/>lv_obj_get_local_style_prop(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*<sp/>value,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1a6dd0a1b463f4803f55648eed8bd2c4a0" kindref="member">lv_obj_remove_local_style_prop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/><ref refid="lv__obj__style_8h_1a8c222bdc00207f3ec10ee1dc3ea99b18" kindref="member">_lv_obj_style_apply_color_filter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part,<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1af8d4e231a266ddf1da6ab893cd642c50" kindref="member">_lv_obj_style_create_transition</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_part_t<sp/>part,<sp/>lv_state_t<sp/>prev_state,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_state_t<sp/>new_state,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__style__transition__dsc__t" kindref="compound">_lv_obj_style_transition_dsc_t</ref><sp/>*<sp/>tr);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">_lv_style_state_cmp_t<sp/><ref refid="lv__obj__style_8h_1ac7328dd150f2cf468f5ffdfc1bfefb83" kindref="member">_lv_obj_style_state_compare</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_state_t<sp/>state1,<sp/>lv_state_t<sp/>state2);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1a4f30d7ed77ce3c88251e8abad8735f0d" kindref="member">lv_obj_fade_in</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>time,<sp/>uint32_t<sp/>delay);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__obj__style_8h_1a51cf0b87e9125d52b0a79f2bfdbd0892" kindref="member">lv_obj_fade_out</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>time,<sp/>uint32_t<sp/>delay);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">lv_state_t<sp/>lv_obj_style_get_selector_state(lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal">lv_part_t<sp/>lv_obj_style_get_selector_part(lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lv_obj_style_gen.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_pad_all(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_left(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_right(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_top(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_bottom(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_pad_hor(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_left(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_right(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_pad_ver(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_top(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_bottom(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_pad_gap(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_row(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_pad_column(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_size(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_coord_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_width(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_obj_set_style_height(obj,<sp/>value,<sp/>selector);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal">lv_text_align_t<sp/>lv_obj_calculate_style_text_align(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_part_t<sp/>part,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>txt);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_coord_t<sp/>lv_obj_get_style_transform_zoom_safe(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>zoom<sp/>=<sp/>lv_obj_get_style_transform_zoom(obj,<sp/>part);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>zoom<sp/>!=<sp/>0<sp/>?<sp/>zoom<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">lv_opa_t<sp/><ref refid="lv__obj__style_8h_1a5fe60e049649e0d10bd872157ca3ab67" kindref="member">lv_obj_get_style_opa_recursive</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_part_t<sp/>part);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_OBJ_STYLE_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_style.h"/>
+  </compounddef>
+</doxygen>

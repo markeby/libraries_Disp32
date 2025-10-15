@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="tjpgdcnf_8h" kind="file" language="C++">
+    <compoundname>tjpgdcnf.h</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>TJpgDec<sp/>System<sp/>Configurations<sp/>R0.03<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JD_SZBUF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Specifies<sp/>size<sp/>of<sp/>stream<sp/>input<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JD_FORMAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Specifies<sp/>output<sp/>pixel<sp/>format.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">/<sp/><sp/>0:<sp/>RGB888<sp/>(24-bit/pix)</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">/<sp/><sp/>1:<sp/>RGB565<sp/>(16-bit/pix)</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">/<sp/><sp/>2:<sp/>Grayscale<sp/>(8-bit/pix)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JD_USE_SCALE<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Switches<sp/>output<sp/>descaling<sp/>feature.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">/<sp/><sp/>0:<sp/>Disable</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">/<sp/><sp/>1:<sp/>Enable</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JD_TBLCLIP<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Use<sp/>table<sp/>conversion<sp/>for<sp/>saturation<sp/>arithmetic.<sp/>A<sp/>bit<sp/>faster,<sp/>but<sp/>increases<sp/>1<sp/>KB<sp/>of<sp/>code<sp/>size.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">/<sp/><sp/>0:<sp/>Disable</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">/<sp/><sp/>1:<sp/>Enable</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JD_FASTDECODE<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Optimization<sp/>level</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">/<sp/><sp/>0:<sp/>Basic<sp/>optimization.<sp/>Suitable<sp/>for<sp/>8/16-bit<sp/>MCUs.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">/<sp/><sp/>1:<sp/>+<sp/>32-bit<sp/>barrel<sp/>shifter.<sp/>Suitable<sp/>for<sp/>32-bit<sp/>MCUs.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">/<sp/><sp/>2:<sp/>+<sp/>Table<sp/>conversion<sp/>for<sp/>huffman<sp/>decoding<sp/>(wants<sp/>6<sp/>&lt;&lt;<sp/>HUFF_BIT<sp/>bytes<sp/>of<sp/>RAM)</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/sjpg/tjpgdcnf.h"/>
+  </compounddef>
+</doxygen>

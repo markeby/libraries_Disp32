@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__monkey_8h" kind="file" language="C++">
+    <compoundname>lv_monkey.h</compoundname>
+    <innerclass refid="structlv__monkey__config__t" prot="public">lv_monkey_config_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__monkey_8h_1afd53ed7ee028ed493bcb86c834de76a5" prot="public" static="no">
+        <type>struct _lv_monkey</type>
+        <definition>typedef struct _lv_monkey lv_monkey_t</definition>
+        <argsstring></argsstring>
+        <name>lv_monkey_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="1" column="0" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__monkey_8h_1aa99dcbf8ea606555e102824a5ef14a1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_monkey_config_init</definition>
+        <argsstring>(lv_monkey_config_t *config)</argsstring>
+        <name>lv_monkey_config_init</name>
+        <param>
+          <type><ref refid="structlv__monkey__config__t" kindref="compound">lv_monkey_config_t</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a monkey config with default values <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to &apos;<ref refid="structlv__monkey__config__t" kindref="compound">lv_monkey_config_t</ref>&apos; variable to initialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="54" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" declline="54" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__monkey_8h_1a970f7ad2d34220bc329427a1051c23a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_monkey_t *</type>
+        <definition>lv_monkey_t* lv_monkey_create</definition>
+        <argsstring>(const lv_monkey_config_t *config)</argsstring>
+        <name>lv_monkey_create</name>
+        <param>
+          <type>const <ref refid="structlv__monkey__config__t" kindref="compound">lv_monkey_config_t</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create monkey for test <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to &apos;<ref refid="structlv__monkey__config__t" kindref="compound">lv_monkey_config_t</ref>&apos; variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created monkey </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="61" column="14" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" declline="61" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__monkey_8h_1a64682e0707e383ddc7d8d9c6f31668a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" kindref="member">lv_indev_t</ref> *</type>
+        <definition>lv_indev_t* lv_monkey_get_indev</definition>
+        <argsstring>(lv_monkey_t *monkey)</argsstring>
+        <name>lv_monkey_get_indev</name>
+        <param>
+          <type>lv_monkey_t *</type>
+          <declname>monkey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get monkey input device <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>monkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a monkey </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the input device </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="68" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" declline="68" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__monkey_8h_1a10e9e9f45bfa3bc9d3ef928ded9b59e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_monkey_set_enable</definition>
+        <argsstring>(lv_monkey_t *monkey, bool en)</argsstring>
+        <name>lv_monkey_set_enable</name>
+        <param>
+          <type>lv_monkey_t *</type>
+          <declname>monkey</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable monkey <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>monkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a monkey </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set to true to enable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="75" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" declline="75" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__monkey_8h_1aa1b741fe19788d6d37a40adaf82d1b12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_monkey_get_enable</definition>
+        <argsstring>(lv_monkey_t *monkey)</argsstring>
+        <name>lv_monkey_get_enable</name>
+        <param>
+          <type>lv_monkey_t *</type>
+          <declname>monkey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get whether monkey is enabled <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>monkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a monkey </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>return true if monkey enabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="82" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__monkey_8h_1a807f189eba68cd4dca3cee55f6426a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_monkey_set_user_data</definition>
+        <argsstring>(lv_monkey_t *monkey, void *user_data)</argsstring>
+        <name>lv_monkey_set_user_data</name>
+        <param>
+          <type>lv_monkey_t *</type>
+          <declname>monkey</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the user_data field of the monkey <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>monkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a monkey </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new user_data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="91" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" declline="91" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__monkey_8h_1ac2f3269301da492700037c416387f4e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lv_monkey_get_user_data</definition>
+        <argsstring>(lv_monkey_t *monkey)</argsstring>
+        <name>lv_monkey_get_user_data</name>
+        <param>
+          <type>lv_monkey_t *</type>
+          <declname>monkey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the user_data field of the monkey <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>monkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a monkey </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pointer to the user_data of the monkey </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="98" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" declline="98" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__monkey_8h_1a549280b5414dd18101fb8616a6045cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_monkey_del</definition>
+        <argsstring>(lv_monkey_t *monkey)</argsstring>
+        <name>lv_monkey_del</name>
+        <param>
+          <type>lv_monkey_t *</type>
+          <declname>monkey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete monkey <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>monkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to monkey </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" line="106" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h" declline="106" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>LV_MONKEY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_MONKEY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lvgl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_MONKEY<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_lv_monkey;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_lv_monkey<sp/>lv_monkey_t;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structlv__monkey__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="structlv__monkey__config__t_1ad5e1ba8fd4efb76f89f0149851148a48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5b" kindref="member">lv_indev_type_t</ref><sp/><ref refid="structlv__monkey__config__t_1ad5e1ba8fd4efb76f89f0149851148a48" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>min;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>max;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>period_range;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>min;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>max;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>input_range;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/><ref refid="structlv__monkey__config__t" kindref="compound">lv_monkey_config_t</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__monkey_8h_1aa99dcbf8ea606555e102824a5ef14a1f" kindref="member">lv_monkey_config_init</ref>(<ref refid="structlv__monkey__config__t" kindref="compound">lv_monkey_config_t</ref><sp/>*<sp/>config);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">lv_monkey_t<sp/>*<sp/><ref refid="lv__monkey_8h_1a970f7ad2d34220bc329427a1051c23a9" kindref="member">lv_monkey_create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__monkey__config__t" kindref="compound">lv_monkey_config_t</ref><sp/>*<sp/>config);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><ref refid="struct__lv__indev__t" kindref="compound">lv_indev_t</ref><sp/>*<sp/><ref refid="lv__monkey_8h_1a64682e0707e383ddc7d8d9c6f31668a2" kindref="member">lv_monkey_get_indev</ref>(lv_monkey_t<sp/>*<sp/>monkey);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__monkey_8h_1a10e9e9f45bfa3bc9d3ef928ded9b59e8" kindref="member">lv_monkey_set_enable</ref>(lv_monkey_t<sp/>*<sp/>monkey,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__monkey_8h_1aa1b741fe19788d6d37a40adaf82d1b12" kindref="member">lv_monkey_get_enable</ref>(lv_monkey_t<sp/>*<sp/>monkey);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__monkey_8h_1a807f189eba68cd4dca3cee55f6426a48" kindref="member">lv_monkey_set_user_data</ref>(lv_monkey_t<sp/>*<sp/>monkey,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__monkey_8h_1ac2f3269301da492700037c416387f4e1" kindref="member">lv_monkey_get_user_data</ref>(lv_monkey_t<sp/>*<sp/>monkey);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="comment">/*LV_USE_USER_DATA*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__monkey_8h_1a549280b5414dd18101fb8616a6045cdc" kindref="member">lv_monkey_del</ref>(lv_monkey_t<sp/>*<sp/>monkey);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_MONKEY*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_MONKEY_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/monkey/lv_monkey.h"/>
+  </compounddef>
+</doxygen>

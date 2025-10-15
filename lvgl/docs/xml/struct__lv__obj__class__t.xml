@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__obj__class__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_obj_class_t</compoundname>
+    <includes refid="lv__obj__class_8h" local="no">lv_obj_class.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1a3f2950ef3d76f897b0842e62e1a7c21b" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct__lv__obj__class__t" kindref="compound">_lv_obj_class_t</ref> *</type>
+        <definition>const struct _lv_obj_class_t* _lv_obj_class_t::base_class</definition>
+        <argsstring></argsstring>
+        <name>base_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="49" column="33" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1a5d4f593c8076910d759d47e04066df41" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_obj_class_t::constructor_cb) (const struct _lv_obj_class_t *class_p, struct _lv_obj_t *obj)</definition>
+        <argsstring>)(const struct _lv_obj_class_t *class_p, struct _lv_obj_t *obj)</argsstring>
+        <name>constructor_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="50" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1ae4a60d91d216235210c32ec0d4c8682e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_obj_class_t::destructor_cb) (const struct _lv_obj_class_t *class_p, struct _lv_obj_t *obj)</definition>
+        <argsstring>)(const struct _lv_obj_class_t *class_p, struct _lv_obj_t *obj)</argsstring>
+        <name>destructor_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="51" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1a1966b47edcc8642c79798230de60023d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_obj_class_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="53" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1ab89f7a49dd5ecc378a7dcb79539e97c4" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_obj_class_t::event_cb) (const struct _lv_obj_class_t *class_p, struct _lv_event_t *e)</definition>
+        <argsstring>)(const struct _lv_obj_class_t *class_p, struct _lv_event_t *e)</argsstring>
+        <name>event_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Widget type specific event function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="55" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1a282f2c7fa4fda0b656636167b61efe47" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_obj_class_t::width_def</definition>
+        <argsstring></argsstring>
+        <name>width_def</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="57" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1a99c9b5cdbfc210f4aead4a177084e1b2" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_obj_class_t::height_def</definition>
+        <argsstring></argsstring>
+        <name>height_def</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="58" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1af01c8127275c5a35f031477f68d7edd1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_obj_class_t::editable</definition>
+        <argsstring></argsstring>
+        <name>editable</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value from <ref refid="lv__obj__class_8h_1a86f3f042b274542776ab1a066cfe7c82" kindref="member">lv_obj_class_editable_t</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="59" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1af262c15074538d1fe392f1d8e5cb168b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_obj_class_t::group_def</definition>
+        <argsstring></argsstring>
+        <name>group_def</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value from <ref refid="lv__obj__class_8h_1aebc1dfe87bf60e09142aea1746c6871d" kindref="member">lv_obj_class_group_def_t</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="60" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__obj__class__t_1ab07da3caa483bb2d9ecdd87a288473aa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_obj_class_t::instance_size</definition>
+        <argsstring></argsstring>
+        <name>instance_size</name>
+        <bitfield> 16</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="61" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe the common methods of every object. Similar to a C++ class. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" line="48" column="30" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_class.h" bodystart="48" bodyend="62"/>
+    <listofallmembers>
+      <member refid="struct__lv__obj__class__t_1a3f2950ef3d76f897b0842e62e1a7c21b" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>base_class</name></member>
+      <member refid="struct__lv__obj__class__t_1a5d4f593c8076910d759d47e04066df41" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>constructor_cb</name></member>
+      <member refid="struct__lv__obj__class__t_1ae4a60d91d216235210c32ec0d4c8682e" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>destructor_cb</name></member>
+      <member refid="struct__lv__obj__class__t_1af01c8127275c5a35f031477f68d7edd1" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>editable</name></member>
+      <member refid="struct__lv__obj__class__t_1ab89f7a49dd5ecc378a7dcb79539e97c4" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>event_cb</name></member>
+      <member refid="struct__lv__obj__class__t_1af262c15074538d1fe392f1d8e5cb168b" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>group_def</name></member>
+      <member refid="struct__lv__obj__class__t_1a99c9b5cdbfc210f4aead4a177084e1b2" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>height_def</name></member>
+      <member refid="struct__lv__obj__class__t_1ab07da3caa483bb2d9ecdd87a288473aa" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>instance_size</name></member>
+      <member refid="struct__lv__obj__class__t_1a1966b47edcc8642c79798230de60023d" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>user_data</name></member>
+      <member refid="struct__lv__obj__class__t_1a282f2c7fa4fda0b656636167b61efe47" prot="public" virt="non-virtual"><scope>_lv_obj_class_t</scope><name>width_def</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

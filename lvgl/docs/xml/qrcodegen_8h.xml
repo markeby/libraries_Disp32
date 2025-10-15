@@ -1,0 +1,916 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="qrcodegen_8h" kind="file" language="C++">
+    <compoundname>qrcodegen.h</compoundname>
+    <innerclass refid="structqrcodegen__Segment" prot="public">qrcodegen_Segment</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="qrcodegen_8h_1a4823d2c403f1e1ae151939d14003b65c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>qrcodegen_Ecc</name>
+        <enumvalue id="qrcodegen_8h_1a4823d2c403f1e1ae151939d14003b65caa6f4e3ad3cd16ee38110410f1d14e18a" prot="public">
+          <name>qrcodegen_Ecc_LOW</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1a4823d2c403f1e1ae151939d14003b65ca09d959a0d2081c1f9bf679d0b2aae62a" prot="public">
+          <name>qrcodegen_Ecc_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1a4823d2c403f1e1ae151939d14003b65ca5f04fea8990526759c2014f9b65cd6b3" prot="public">
+          <name>qrcodegen_Ecc_QUARTILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1a4823d2c403f1e1ae151939d14003b65ca0fc0cef57fd9214dc450fb3ad4762501" prot="public">
+          <name>qrcodegen_Ecc_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="57" column="19" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="enum" id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>qrcodegen_Mask</name>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952eaab7db72352dfe446a65025749b77c841" prot="public">
+          <name>qrcodegen_Mask_AUTO</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952ea432c7c933d09d790868926d1d0bca9f6" prot="public">
+          <name>qrcodegen_Mask_0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952ea12f7a153833c932ae55ae43f590d68bf" prot="public">
+          <name>qrcodegen_Mask_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952ea490f43ad946e38be19b6f4d7af0412d0" prot="public">
+          <name>qrcodegen_Mask_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952ead0cf7acb420259a09a04d7ea5825736d" prot="public">
+          <name>qrcodegen_Mask_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952eac73781e3dd5f9eede287feef45445284" prot="public">
+          <name>qrcodegen_Mask_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952eace0ab4d89746779385f68bec68f7eacc" prot="public">
+          <name>qrcodegen_Mask_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952ea5c6558779e1906cd16ef4a51434fd614" prot="public">
+          <name>qrcodegen_Mask_6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1ab76629ca36a731ee5fdd02ab06f6952eab511af9acf2dde5af0e9734bbba989ad" prot="public">
+          <name>qrcodegen_Mask_7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="70" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" bodystart="70" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="qrcodegen_8h_1abc07959354ad4ea91d2a97be2cce097b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>qrcodegen_Mode</name>
+        <enumvalue id="qrcodegen_8h_1abc07959354ad4ea91d2a97be2cce097ba309c8f7c2e85eb9f9510488e70f36fc6" prot="public">
+          <name>qrcodegen_Mode_NUMERIC</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1abc07959354ad4ea91d2a97be2cce097ba37a682a91826e7b640c70b85e679b9d1" prot="public">
+          <name>qrcodegen_Mode_ALPHANUMERIC</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1abc07959354ad4ea91d2a97be2cce097baa1e2b04937fdae040e1107bf3d31ea2d" prot="public">
+          <name>qrcodegen_Mode_BYTE</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1abc07959354ad4ea91d2a97be2cce097badc5fad762df1a0dff0462be08dbdb99f" prot="public">
+          <name>qrcodegen_Mode_KANJI</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrcodegen_8h_1abc07959354ad4ea91d2a97be2cce097baeb08ea4e31c49946cfbf032946fea4e5" prot="public">
+          <name>qrcodegen_Mode_ECI</name>
+          <initializer>= 0x7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="89" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" bodystart="89" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="qrcodegen_8h_1a2eb79247b6f8bed92514c1815fe0079c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qrcodegen_encodeText</definition>
+        <argsstring>(const char *text, uint8_t tempBuffer[], uint8_t qrcode[], enum qrcodegen_Ecc ecl, int minVersion, int maxVersion, enum qrcodegen_Mask mask, bool boostEcl)</argsstring>
+        <name>qrcodegen_encodeText</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>tempBuffer</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>qrcode</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>enum qrcodegen_Ecc</type>
+          <declname>ecl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minVersion</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxVersion</declname>
+        </param>
+        <param>
+          <type>enum qrcodegen_Mask</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>boostEcl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="169" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="169" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1a1cc45de66046354d5aad2ee1cc6b2581" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qrcodegen_encodeBinary</definition>
+        <argsstring>(uint8_t dataAndTemp[], size_t dataLen, uint8_t qrcode[], enum qrcodegen_Ecc ecl, int minVersion, int maxVersion, enum qrcodegen_Mask mask, bool boostEcl)</argsstring>
+        <name>qrcodegen_encodeBinary</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>dataAndTemp</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>qrcode</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>enum qrcodegen_Ecc</type>
+          <declname>ecl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minVersion</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxVersion</declname>
+        </param>
+        <param>
+          <type>enum qrcodegen_Mask</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>boostEcl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="191" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="191" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1a41164e2a41efb324b919395ffde14fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qrcodegen_encodeSegments</definition>
+        <argsstring>(const struct qrcodegen_Segment segs[], size_t len, enum qrcodegen_Ecc ecl, uint8_t tempBuffer[], uint8_t qrcode[])</argsstring>
+        <name>qrcodegen_encodeSegments</name>
+        <param>
+          <type>const struct <ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref></type>
+          <declname>segs</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>enum qrcodegen_Ecc</type>
+          <declname>ecl</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>tempBuffer</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>qrcode</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="209" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="209" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1a7df325ca1714e2a5a1305b9b75436f8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qrcodegen_encodeSegmentsAdvanced</definition>
+        <argsstring>(const struct qrcodegen_Segment segs[], size_t len, enum qrcodegen_Ecc ecl, int minVersion, int maxVersion, int mask, bool boostEcl, uint8_t tempBuffer[], uint8_t qrcode[])</argsstring>
+        <name>qrcodegen_encodeSegmentsAdvanced</name>
+        <param>
+          <type>const struct <ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref></type>
+          <declname>segs</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>enum qrcodegen_Ecc</type>
+          <declname>ecl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minVersion</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxVersion</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>boostEcl</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>tempBuffer</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>qrcode</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="228" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="228" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1a25856a1d9c76851f8b83640ba3c6a3fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qrcodegen_isAlphanumeric</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>qrcodegen_isAlphanumeric</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="237" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="237" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1aa873e0a91056118719064ea4f2a15013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qrcodegen_isNumeric</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>qrcodegen_isNumeric</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="244" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="244" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1a15e9a13d5e49596089d6506558f6e506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t qrcodegen_calcSegmentBufferSize</definition>
+        <argsstring>(enum qrcodegen_Mode mode, size_t numChars)</argsstring>
+        <name>qrcodegen_calcSegmentBufferSize</name>
+        <param>
+          <type>enum qrcodegen_Mode</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>numChars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="258" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="258" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1a5b28f0f89765839d8f4c8a803edc4ad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref></type>
+        <definition>struct qrcodegen_Segment qrcodegen_makeBytes</definition>
+        <argsstring>(const uint8_t data[], size_t len, uint8_t buf[])</argsstring>
+        <name>qrcodegen_makeBytes</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>data</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>buf</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="258" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="258" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1aa1c8b8a85f121c8cd1be89ddab684d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref></type>
+        <definition>struct qrcodegen_Segment qrcodegen_makeNumeric</definition>
+        <argsstring>(const char *digits, uint8_t buf[])</argsstring>
+        <name>qrcodegen_makeNumeric</name>
+        <param>
+          <type>const char *</type>
+          <declname>digits</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>buf</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="258" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="258" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1aaed32d45f095ce02e6718c8a48f4393d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref></type>
+        <definition>struct qrcodegen_Segment qrcodegen_makeAlphanumeric</definition>
+        <argsstring>(const char *text, uint8_t buf[])</argsstring>
+        <name>qrcodegen_makeAlphanumeric</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>buf</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="258" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="258" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1a27c3b3d01e91f9532689adbb01c1ff2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref></type>
+        <definition>struct qrcodegen_Segment qrcodegen_makeEci</definition>
+        <argsstring>(long assignVal, uint8_t buf[])</argsstring>
+        <name>qrcodegen_makeEci</name>
+        <param>
+          <type>long</type>
+          <declname>assignVal</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>buf</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="258" column="8" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="258" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1afe30b8ff2b6218f37a2945871e6f11b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int qrcodegen_getSize</definition>
+        <argsstring>(const uint8_t qrcode[])</argsstring>
+        <name>qrcodegen_getSize</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>qrcode</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="298" column="5" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="298" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1a495cb24d97c9b90a9c1e8a62903debf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qrcodegen_getModule</definition>
+        <argsstring>(const uint8_t qrcode[], int x, int y)</argsstring>
+        <name>qrcodegen_getModule</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>qrcode</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="306" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="306" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1af4c81f8d440eaa1a5aebf17a4d8ab51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int qrcodegen_version2size</definition>
+        <argsstring>(int version)</argsstring>
+        <name>qrcodegen_version2size</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="311" column="5" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="311" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="qrcodegen_8h_1ac90fae8dd32872553aa99a20978dc22c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int qrcodegen_getMinFitVersion</definition>
+        <argsstring>(enum qrcodegen_Ecc ecl, size_t dataLen)</argsstring>
+        <name>qrcodegen_getMinFitVersion</name>
+        <param>
+          <type>enum qrcodegen_Ecc</type>
+          <declname>ecl</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" line="315" column="5" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h" declline="315" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>QR<sp/>Code<sp/>generator<sp/>library<sp/>(C)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Project<sp/>Nayuki.<sp/>(MIT<sp/>License)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>https://www.nayuki.io/page/qr-code-generator-library</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy<sp/>of</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>-<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>-<sp/>The<sp/>Software<sp/>is<sp/>provided<sp/>&quot;as<sp/>is&quot;,<sp/>without<sp/>warranty<sp/>of<sp/>any<sp/>kind,<sp/>express<sp/>or</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>implied,<sp/>including<sp/>but<sp/>not<sp/>limited<sp/>to<sp/>the<sp/>warranties<sp/>of<sp/>merchantability,</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>fitness<sp/>for<sp/>a<sp/>particular<sp/>purpose<sp/>and<sp/>noninfringement.<sp/>In<sp/>no<sp/>event<sp/>shall<sp/>the</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>authors<sp/>or<sp/>copyright<sp/>holders<sp/>be<sp/>liable<sp/>for<sp/>any<sp/>claim,<sp/>damages<sp/>or<sp/>other</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/>liability,<sp/>whether<sp/>in<sp/>an<sp/>action<sp/>of<sp/>contract,<sp/>tort<sp/>or<sp/>otherwise,<sp/>arising<sp/>from,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/>out<sp/>of<sp/>or<sp/>in<sp/>connection<sp/>with<sp/>the<sp/>Software<sp/>or<sp/>the<sp/>use<sp/>or<sp/>other<sp/>dealings<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Software.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>creates<sp/>QR<sp/>Code<sp/>symbols,<sp/>which<sp/>is<sp/>a<sp/>type<sp/>of<sp/>two-dimension<sp/>barcode.</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>Invented<sp/>by<sp/>Denso<sp/>Wave<sp/>and<sp/>described<sp/>in<sp/>the<sp/>ISO/IEC<sp/>18004<sp/>standard.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>A<sp/>QR<sp/>Code<sp/>structure<sp/>is<sp/>an<sp/>immutable<sp/>square<sp/>grid<sp/>of<sp/>black<sp/>and<sp/>white<sp/>cells.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>The<sp/>library<sp/>provides<sp/>functions<sp/>to<sp/>create<sp/>a<sp/>QR<sp/>Code<sp/>from<sp/>text<sp/>or<sp/>binary<sp/>data.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>The<sp/>library<sp/>covers<sp/>the<sp/>QR<sp/>Code<sp/>Model<sp/>2<sp/>specification,<sp/>supporting<sp/>all<sp/>versions<sp/>(sizes)</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>from<sp/>1<sp/>to<sp/>40,<sp/>all<sp/>4<sp/>error<sp/>correction<sp/>levels,<sp/>and<sp/>4<sp/>character<sp/>encoding<sp/>modes.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>Ways<sp/>to<sp/>create<sp/>a<sp/>QR<sp/>Code<sp/>object:</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>-<sp/>High<sp/>level:<sp/>Take<sp/>the<sp/>payload<sp/>data<sp/>and<sp/>call<sp/>qrcodegen_encodeText()<sp/>or<sp/>qrcodegen_encodeBinary().</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>-<sp/>Low<sp/>level:<sp/>Custom-make<sp/>the<sp/>list<sp/>of<sp/>segments<sp/>and<sp/>call</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/>qrcodegen_encodeSegments()<sp/>or<sp/>qrcodegen_encodeSegmentsAdvanced().</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>(Note<sp/>that<sp/>all<sp/>ways<sp/>require<sp/>supplying<sp/>the<sp/>desired<sp/>error<sp/>correction<sp/>level<sp/>and<sp/>various<sp/>byte<sp/>buffers.)</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*----<sp/>Enum<sp/>and<sp/>struct<sp/>types----*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>The<sp/>error<sp/>correction<sp/>level<sp/>in<sp/>a<sp/>QR<sp/>Code<sp/>symbol.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Ecc<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Must<sp/>be<sp/>declared<sp/>in<sp/>ascending<sp/>order<sp/>of<sp/>error<sp/>protection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>that<sp/>an<sp/>internal<sp/>qrcodegen<sp/>function<sp/>works<sp/>properly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Ecc_LOW<sp/>=<sp/>0<sp/>,<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>QR<sp/>Code<sp/>can<sp/>tolerate<sp/>about<sp/><sp/>7%<sp/>erroneous<sp/>codewords</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Ecc_MEDIUM<sp/><sp/>,<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>QR<sp/>Code<sp/>can<sp/>tolerate<sp/>about<sp/>15%<sp/>erroneous<sp/>codewords</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Ecc_QUARTILE,<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>QR<sp/>Code<sp/>can<sp/>tolerate<sp/>about<sp/>25%<sp/>erroneous<sp/>codewords</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Ecc_HIGH<sp/><sp/><sp/><sp/>,<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>QR<sp/>Code<sp/>can<sp/>tolerate<sp/>about<sp/>30%<sp/>erroneous<sp/>codewords</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>The<sp/>mask<sp/>pattern<sp/>used<sp/>in<sp/>a<sp/>QR<sp/>Code<sp/>symbol.</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Mask<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>special<sp/>value<sp/>to<sp/>tell<sp/>the<sp/>QR<sp/>Code<sp/>encoder<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>automatically<sp/>select<sp/>an<sp/>appropriate<sp/>mask<sp/>pattern</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_AUTO<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>eight<sp/>actual<sp/>mask<sp/>patterns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_0<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_1,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_2,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_3,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_4,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_5,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_6,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mask_7,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/>Describes<sp/>how<sp/>a<sp/>segment&apos;s<sp/>data<sp/>bits<sp/>are<sp/>interpreted.</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Mode<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mode_NUMERIC<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mode_ALPHANUMERIC<sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mode_BYTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mode_KANJI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x8,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>qrcodegen_Mode_ECI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x7,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/>A<sp/>segment<sp/>of<sp/>character/binary/control<sp/>data<sp/>in<sp/>a<sp/>QR<sp/>Code<sp/>symbol.</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>The<sp/>mid-level<sp/>way<sp/>to<sp/>create<sp/>a<sp/>segment<sp/>is<sp/>to<sp/>take<sp/>the<sp/>payload<sp/>data</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>and<sp/>call<sp/>a<sp/>factory<sp/>function<sp/>such<sp/>as<sp/>qrcodegen_makeNumeric().</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>The<sp/>low-level<sp/>way<sp/>to<sp/>create<sp/>a<sp/>segment<sp/>is<sp/>to<sp/>custom-make<sp/>the<sp/>bit<sp/>buffer</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/>and<sp/>initialize<sp/>a<sp/>qrcodegen_Segment<sp/>struct<sp/>with<sp/>appropriate<sp/>values.</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*<sp/>Even<sp/>in<sp/>the<sp/>most<sp/>favorable<sp/>conditions,<sp/>a<sp/>QR<sp/>Code<sp/>can<sp/>only<sp/>hold<sp/>7089<sp/>characters<sp/>of<sp/>data.</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/>Any<sp/>segment<sp/>longer<sp/>than<sp/>this<sp/>is<sp/>meaningless<sp/>for<sp/>the<sp/>purpose<sp/>of<sp/>generating<sp/>QR<sp/>Codes.</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*<sp/>Moreover,<sp/>the<sp/>maximum<sp/>allowed<sp/>bit<sp/>length<sp/>is<sp/>32767<sp/>because</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/>the<sp/>largest<sp/>QR<sp/>Code<sp/>(version<sp/>40)<sp/>has<sp/>31329<sp/>modules.</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="structqrcodegen__Segment" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>mode<sp/>indicator<sp/>of<sp/>this<sp/>segment.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Mode<sp/>mode;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>length<sp/>of<sp/>this<sp/>segment&apos;s<sp/>unencoded<sp/>data.<sp/>Measured<sp/>in<sp/>characters<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>numeric/alphanumeric/kanji<sp/>mode,<sp/>bytes<sp/>for<sp/>byte<sp/>mode,<sp/>and<sp/>0<sp/>for<sp/>ECI<sp/>mode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Always<sp/>zero<sp/>or<sp/>positive.<sp/>Not<sp/>the<sp/>same<sp/>as<sp/>the<sp/>data&apos;s<sp/>bit<sp/>length.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numChars;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>data<sp/>bits<sp/>of<sp/>this<sp/>segment,<sp/>packed<sp/>in<sp/>bitwise<sp/>big<sp/>endian.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Can<sp/>be<sp/>null<sp/>if<sp/>the<sp/>bit<sp/>length<sp/>is<sp/>zero.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*data;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>number<sp/>of<sp/>valid<sp/>data<sp/>bits<sp/>used<sp/>in<sp/>the<sp/>buffer.<sp/>Requires</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>&lt;=<sp/>bitLength<sp/>&lt;=<sp/>32767,<sp/>and<sp/>bitLength<sp/>&lt;=<sp/>(capacity<sp/>of<sp/>data<sp/>array)<sp/>*<sp/>8.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>character<sp/>count<sp/>(numChars)<sp/>must<sp/>agree<sp/>with<sp/>the<sp/>mode<sp/>and<sp/>the<sp/>bit<sp/>buffer<sp/>length.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bitLength;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*----<sp/>Macro<sp/>constants<sp/>and<sp/>functions<sp/>----*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>qrcodegen_VERSION_MIN<sp/><sp/><sp/>1<sp/><sp/>//<sp/>The<sp/>minimum<sp/>version<sp/>number<sp/>supported<sp/>in<sp/>the<sp/>QR<sp/>Code<sp/>Model<sp/>2<sp/>standard</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>qrcodegen_VERSION_MAX<sp/><sp/>40<sp/><sp/>//<sp/>The<sp/>maximum<sp/>version<sp/>number<sp/>supported<sp/>in<sp/>the<sp/>QR<sp/>Code<sp/>Model<sp/>2<sp/>standard</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Calculates<sp/>the<sp/>number<sp/>of<sp/>bytes<sp/>needed<sp/>to<sp/>store<sp/>any<sp/>QR<sp/>Code<sp/>up<sp/>to<sp/>and<sp/>including<sp/>the<sp/>given<sp/>version<sp/>number,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/>as<sp/>a<sp/>compile-time<sp/>constant.<sp/>For<sp/>example,<sp/>&apos;uint8_t<sp/>buffer[qrcodegen_BUFFER_LEN_FOR_VERSION(25)];&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>can<sp/>store<sp/>any<sp/>single<sp/>QR<sp/>Code<sp/>from<sp/>version<sp/>1<sp/>to<sp/>25<sp/>(inclusive).<sp/>The<sp/>result<sp/>fits<sp/>in<sp/>an<sp/>int<sp/>(or<sp/>int16).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Requires<sp/>qrcodegen_VERSION_MIN<sp/>&lt;=<sp/>n<sp/>&lt;=<sp/>qrcodegen_VERSION_MAX.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>qrcodegen_BUFFER_LEN_FOR_VERSION(n)<sp/><sp/>((((n)<sp/>*<sp/>4<sp/>+<sp/>17)<sp/>*<sp/>((n)<sp/>*<sp/>4<sp/>+<sp/>17)<sp/>+<sp/>7)<sp/>/<sp/>8<sp/>+<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>worst-case<sp/>number<sp/>of<sp/>bytes<sp/>needed<sp/>to<sp/>store<sp/>one<sp/>QR<sp/>Code,<sp/>up<sp/>to<sp/>and<sp/>including</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//<sp/>version<sp/>40.<sp/>This<sp/>value<sp/>equals<sp/>3918,<sp/>which<sp/>is<sp/>just<sp/>under<sp/>4<sp/>kilobytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>this<sp/>more<sp/>convenient<sp/>value<sp/>to<sp/>avoid<sp/>calculating<sp/>tighter<sp/>memory<sp/>bounds<sp/>for<sp/>buffers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>qrcodegen_BUFFER_LEN_MAX<sp/><sp/>qrcodegen_BUFFER_LEN_FOR_VERSION(qrcodegen_VERSION_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">/*----<sp/>Functions<sp/>(high<sp/>level)<sp/>to<sp/>generate<sp/>QR<sp/>Codes<sp/>----*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/>*<sp/>Encodes<sp/>the<sp/>given<sp/>text<sp/>string<sp/>to<sp/>a<sp/>QR<sp/>Code,<sp/>returning<sp/>true<sp/>if<sp/>encoding<sp/>succeeded.</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/>*<sp/>If<sp/>the<sp/>data<sp/>is<sp/>too<sp/>long<sp/>to<sp/>fit<sp/>in<sp/>any<sp/>version<sp/>in<sp/>the<sp/>given<sp/>range</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*<sp/>at<sp/>the<sp/>given<sp/>ECC<sp/>level,<sp/>then<sp/>false<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*<sp/>-<sp/>The<sp/>input<sp/>text<sp/>must<sp/>be<sp/>encoded<sp/>in<sp/>UTF-8<sp/>and<sp/>contain<sp/>no<sp/>NULs.</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*<sp/>-<sp/>The<sp/>variables<sp/>ecl<sp/>and<sp/>mask<sp/>must<sp/>correspond<sp/>to<sp/>enum<sp/>constant<sp/>values.</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/>-<sp/>Requires<sp/>1<sp/>&lt;=<sp/>minVersion<sp/>&lt;=<sp/>maxVersion<sp/>&lt;=<sp/>40.</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*<sp/>-<sp/>The<sp/>arrays<sp/>tempBuffer<sp/>and<sp/>qrcode<sp/>must<sp/>each<sp/>have<sp/>a<sp/>length</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/>*<sp/><sp/><sp/>of<sp/>at<sp/>least<sp/>qrcodegen_BUFFER_LEN_FOR_VERSION(maxVersion).</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*<sp/>-<sp/>After<sp/>the<sp/>function<sp/>returns,<sp/>tempBuffer<sp/>contains<sp/>no<sp/>useful<sp/>data.</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>*<sp/>-<sp/>If<sp/>successful,<sp/>the<sp/>resulting<sp/>QR<sp/>Code<sp/>may<sp/>use<sp/>numeric,</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*<sp/><sp/><sp/>alphanumeric,<sp/>or<sp/>byte<sp/>mode<sp/>to<sp/>encode<sp/>the<sp/>text.</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/>*<sp/>-<sp/>In<sp/>the<sp/>most<sp/>optimistic<sp/>case,<sp/>a<sp/>QR<sp/>Code<sp/>at<sp/>version<sp/>40<sp/>with<sp/>low<sp/>ECC</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/><sp/><sp/>can<sp/>hold<sp/>any<sp/>UTF-8<sp/>string<sp/>up<sp/>to<sp/>2953<sp/>bytes,<sp/>or<sp/>any<sp/>alphanumeric<sp/>string</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*<sp/><sp/><sp/>up<sp/>to<sp/>4296<sp/>characters,<sp/>or<sp/>any<sp/>digit<sp/>string<sp/>up<sp/>to<sp/>7089<sp/>characters.</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/><sp/><sp/>These<sp/>numbers<sp/>represent<sp/>the<sp/>hard<sp/>upper<sp/>limit<sp/>of<sp/>the<sp/>QR<sp/>Code<sp/>standard.</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*<sp/>-<sp/>Please<sp/>consult<sp/>the<sp/>QR<sp/>Code<sp/>specification<sp/>for<sp/>information<sp/>on</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/><sp/><sp/>data<sp/>capacities<sp/>per<sp/>version,<sp/>ECC<sp/>level,<sp/>and<sp/>text<sp/>encoding<sp/>mode.</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>qrcodegen_encodeText(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text,<sp/>uint8_t<sp/>tempBuffer[],<sp/>uint8_t<sp/>qrcode[],</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Ecc<sp/>ecl,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minVersion,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxVersion,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Mask<sp/>mask,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>boostEcl);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/>*<sp/>Encodes<sp/>the<sp/>given<sp/>binary<sp/>data<sp/>to<sp/>a<sp/>QR<sp/>Code,<sp/>returning<sp/>true<sp/>if<sp/>encoding<sp/>succeeded.</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*<sp/>If<sp/>the<sp/>data<sp/>is<sp/>too<sp/>long<sp/>to<sp/>fit<sp/>in<sp/>any<sp/>version<sp/>in<sp/>the<sp/>given<sp/>range</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/>*<sp/>at<sp/>the<sp/>given<sp/>ECC<sp/>level,<sp/>then<sp/>false<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*<sp/>-<sp/>The<sp/>input<sp/>array<sp/>range<sp/>dataAndTemp[0<sp/>:<sp/>dataLen]<sp/>should<sp/>normally<sp/>be</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/><sp/><sp/>valid<sp/>UTF-8<sp/>text,<sp/>but<sp/>is<sp/>not<sp/>required<sp/>by<sp/>the<sp/>QR<sp/>Code<sp/>standard.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*<sp/>-<sp/>The<sp/>variables<sp/>ecl<sp/>and<sp/>mask<sp/>must<sp/>correspond<sp/>to<sp/>enum<sp/>constant<sp/>values.</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*<sp/>-<sp/>Requires<sp/>1<sp/>&lt;=<sp/>minVersion<sp/>&lt;=<sp/>maxVersion<sp/>&lt;=<sp/>40.</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>-<sp/>The<sp/>arrays<sp/>dataAndTemp<sp/>and<sp/>qrcode<sp/>must<sp/>each<sp/>have<sp/>a<sp/>length</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*<sp/><sp/><sp/>of<sp/>at<sp/>least<sp/>qrcodegen_BUFFER_LEN_FOR_VERSION(maxVersion).</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/>-<sp/>After<sp/>the<sp/>function<sp/>returns,<sp/>the<sp/>contents<sp/>of<sp/>dataAndTemp<sp/>may<sp/>have<sp/>changed,</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*<sp/><sp/><sp/>and<sp/>does<sp/>not<sp/>represent<sp/>useful<sp/>data<sp/>anymore.</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>*<sp/>-<sp/>If<sp/>successful,<sp/>the<sp/>resulting<sp/>QR<sp/>Code<sp/>will<sp/>use<sp/>byte<sp/>mode<sp/>to<sp/>encode<sp/>the<sp/>data.</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/>-<sp/>In<sp/>the<sp/>most<sp/>optimistic<sp/>case,<sp/>a<sp/>QR<sp/>Code<sp/>at<sp/>version<sp/>40<sp/>with<sp/>low<sp/>ECC<sp/>can<sp/>hold<sp/>any<sp/>byte</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*<sp/><sp/><sp/>sequence<sp/>up<sp/>to<sp/>length<sp/>2953.<sp/>This<sp/>is<sp/>the<sp/>hard<sp/>upper<sp/>limit<sp/>of<sp/>the<sp/>QR<sp/>Code<sp/>standard.</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>*<sp/>-<sp/>Please<sp/>consult<sp/>the<sp/>QR<sp/>Code<sp/>specification<sp/>for<sp/>information<sp/>on</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/>*<sp/><sp/><sp/>data<sp/>capacities<sp/>per<sp/>version,<sp/>ECC<sp/>level,<sp/>and<sp/>text<sp/>encoding<sp/>mode.</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>qrcodegen_encodeBinary(uint8_t<sp/>dataAndTemp[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>dataLen,<sp/>uint8_t<sp/>qrcode[],</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Ecc<sp/>ecl,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minVersion,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxVersion,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Mask<sp/>mask,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>boostEcl);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">/*----<sp/>Functions<sp/>(low<sp/>level)<sp/>to<sp/>generate<sp/>QR<sp/>Codes<sp/>----*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/>*<sp/>Renders<sp/>a<sp/>QR<sp/>Code<sp/>representing<sp/>the<sp/>given<sp/>segments<sp/>at<sp/>the<sp/>given<sp/>error<sp/>correction<sp/>level.</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/>*<sp/>The<sp/>smallest<sp/>possible<sp/>QR<sp/>Code<sp/>version<sp/>is<sp/>automatically<sp/>chosen<sp/>for<sp/>the<sp/>output.<sp/>Returns<sp/>true<sp/>if</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/>*<sp/>QR<sp/>Code<sp/>creation<sp/>succeeded,<sp/>or<sp/>false<sp/>if<sp/>the<sp/>data<sp/>is<sp/>too<sp/>long<sp/>to<sp/>fit<sp/>in<sp/>any<sp/>version.<sp/>The<sp/>ECC<sp/>level</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>result<sp/>may<sp/>be<sp/>higher<sp/>than<sp/>the<sp/>ecl<sp/>argument<sp/>if<sp/>it<sp/>can<sp/>be<sp/>done<sp/>without<sp/>increasing<sp/>the<sp/>version.</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>allows<sp/>the<sp/>user<sp/>to<sp/>create<sp/>a<sp/>custom<sp/>sequence<sp/>of<sp/>segments<sp/>that<sp/>switches</highlight></codeline>
+<codeline lineno="203"><highlight class="comment"><sp/>*<sp/>between<sp/>modes<sp/>(such<sp/>as<sp/>alphanumeric<sp/>and<sp/>byte)<sp/>to<sp/>encode<sp/>text<sp/>in<sp/>less<sp/>space.</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>a<sp/>low-level<sp/>API;<sp/>the<sp/>high-level<sp/>API<sp/>is<sp/>qrcodegen_encodeText()<sp/>and<sp/>qrcodegen_encodeBinary().</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"><sp/>*<sp/>To<sp/>save<sp/>memory,<sp/>the<sp/>segments&apos;<sp/>data<sp/>buffers<sp/>can<sp/>alias/overlap<sp/>tempBuffer,<sp/>and<sp/>will</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/>*<sp/>result<sp/>in<sp/>them<sp/>being<sp/>clobbered,<sp/>but<sp/>the<sp/>QR<sp/>Code<sp/>output<sp/>will<sp/>still<sp/>be<sp/>correct.</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/>*<sp/>But<sp/>the<sp/>qrcode<sp/>array<sp/>must<sp/>not<sp/>overlap<sp/>tempBuffer<sp/>or<sp/>any<sp/>segment&apos;s<sp/>data<sp/>buffer.</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>qrcodegen_encodeSegments(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref><sp/>segs[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Ecc<sp/>ecl,<sp/>uint8_t<sp/>tempBuffer[],<sp/>uint8_t<sp/>qrcode[]);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/>*<sp/>Renders<sp/>a<sp/>QR<sp/>Code<sp/>representing<sp/>the<sp/>given<sp/>segments<sp/>with<sp/>the<sp/>given<sp/>encoding<sp/>parameters.</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/>*<sp/>Returns<sp/>true<sp/>if<sp/>QR<sp/>Code<sp/>creation<sp/>succeeded,<sp/>or<sp/>false<sp/>if<sp/>the<sp/>data<sp/>is<sp/>too<sp/>long<sp/>to<sp/>fit<sp/>in<sp/>the<sp/>range<sp/>of<sp/>versions.</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*<sp/>The<sp/>smallest<sp/>possible<sp/>QR<sp/>Code<sp/>version<sp/>within<sp/>the<sp/>given<sp/>range<sp/>is<sp/>automatically</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/>*<sp/>chosen<sp/>for<sp/>the<sp/>output.<sp/>Iff<sp/>boostEcl<sp/>is<sp/>true,<sp/>then<sp/>the<sp/>ECC<sp/>level<sp/>of<sp/>the<sp/>result</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/>*<sp/>may<sp/>be<sp/>higher<sp/>than<sp/>the<sp/>ecl<sp/>argument<sp/>if<sp/>it<sp/>can<sp/>be<sp/>done<sp/>without<sp/>increasing<sp/>the</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/>*<sp/>version.<sp/>The<sp/>mask<sp/>number<sp/>is<sp/>either<sp/>between<sp/>0<sp/>to<sp/>7<sp/>(inclusive)<sp/>to<sp/>force<sp/>that</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/>*<sp/>mask,<sp/>or<sp/>-1<sp/>to<sp/>automatically<sp/>choose<sp/>an<sp/>appropriate<sp/>mask<sp/>(which<sp/>may<sp/>be<sp/>slow).</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>allows<sp/>the<sp/>user<sp/>to<sp/>create<sp/>a<sp/>custom<sp/>sequence<sp/>of<sp/>segments<sp/>that<sp/>switches</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/>*<sp/>between<sp/>modes<sp/>(such<sp/>as<sp/>alphanumeric<sp/>and<sp/>byte)<sp/>to<sp/>encode<sp/>text<sp/>in<sp/>less<sp/>space.</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>a<sp/>low-level<sp/>API;<sp/>the<sp/>high-level<sp/>API<sp/>is<sp/>qrcodegen_encodeText()<sp/>and<sp/>qrcodegen_encodeBinary().</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/>*<sp/>To<sp/>save<sp/>memory,<sp/>the<sp/>segments&apos;<sp/>data<sp/>buffers<sp/>can<sp/>alias/overlap<sp/>tempBuffer,<sp/>and<sp/>will</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*<sp/>result<sp/>in<sp/>them<sp/>being<sp/>clobbered,<sp/>but<sp/>the<sp/>QR<sp/>Code<sp/>output<sp/>will<sp/>still<sp/>be<sp/>correct.</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*<sp/>But<sp/>the<sp/>qrcode<sp/>array<sp/>must<sp/>not<sp/>overlap<sp/>tempBuffer<sp/>or<sp/>any<sp/>segment&apos;s<sp/>data<sp/>buffer.</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>qrcodegen_encodeSegmentsAdvanced(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref><sp/>segs[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Ecc<sp/>ecl,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minVersion,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxVersion,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>boostEcl,<sp/>uint8_t<sp/>tempBuffer[],<sp/>uint8_t<sp/>qrcode[]);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/>*<sp/>Tests<sp/>whether<sp/>the<sp/>given<sp/>string<sp/>can<sp/>be<sp/>encoded<sp/>as<sp/>a<sp/>segment<sp/>in<sp/>alphanumeric<sp/>mode.</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/>*<sp/>A<sp/>string<sp/>is<sp/>encodable<sp/>iff<sp/>each<sp/>character<sp/>is<sp/>in<sp/>the<sp/>following<sp/>set:<sp/>0<sp/>to<sp/>9,<sp/>A<sp/>to<sp/>Z</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/>*<sp/>(uppercase<sp/>only),<sp/>space,<sp/>dollar,<sp/>percent,<sp/>asterisk,<sp/>plus,<sp/>hyphen,<sp/>period,<sp/>slash,<sp/>colon.</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>qrcodegen_isAlphanumeric(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/>*<sp/>Tests<sp/>whether<sp/>the<sp/>given<sp/>string<sp/>can<sp/>be<sp/>encoded<sp/>as<sp/>a<sp/>segment<sp/>in<sp/>numeric<sp/>mode.</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/>*<sp/>A<sp/>string<sp/>is<sp/>encodable<sp/>iff<sp/>each<sp/>character<sp/>is<sp/>in<sp/>the<sp/>range<sp/>0<sp/>to<sp/>9.</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>qrcodegen_isNumeric(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>number<sp/>of<sp/>bytes<sp/>(uint8_t)<sp/>needed<sp/>for<sp/>the<sp/>data<sp/>buffer<sp/>of<sp/>a<sp/>segment</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/>*<sp/>containing<sp/>the<sp/>given<sp/>number<sp/>of<sp/>characters<sp/>using<sp/>the<sp/>given<sp/>mode.<sp/>Notes:</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/>*<sp/>-<sp/>Returns<sp/>SIZE_MAX<sp/>on<sp/>failure,<sp/>i.e.<sp/>numChars<sp/>&gt;<sp/>INT16_MAX<sp/>or</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/>*<sp/><sp/><sp/>the<sp/>number<sp/>of<sp/>needed<sp/>bits<sp/>exceeds<sp/>INT16_MAX<sp/>(i.e.<sp/>32767).</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>*<sp/>-<sp/>Otherwise,<sp/>all<sp/>valid<sp/>results<sp/>are<sp/>in<sp/>the<sp/>range<sp/>[0,<sp/>ceil(INT16_MAX<sp/>/<sp/>8)],<sp/>i.e.<sp/>at<sp/>most<sp/>4096.</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*<sp/>-<sp/>It<sp/>is<sp/>okay<sp/>for<sp/>the<sp/>user<sp/>to<sp/>allocate<sp/>more<sp/>bytes<sp/>for<sp/>the<sp/>buffer<sp/>than<sp/>needed.</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*<sp/>-<sp/>For<sp/>byte<sp/>mode,<sp/>numChars<sp/>measures<sp/>the<sp/>number<sp/>of<sp/>bytes,<sp/>not<sp/>Unicode<sp/>code<sp/>points.</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>*<sp/>-<sp/>For<sp/>ECI<sp/>mode,<sp/>numChars<sp/>must<sp/>be<sp/>0,<sp/>and<sp/>the<sp/>worst-case<sp/>number<sp/>of<sp/>bytes<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/>*<sp/><sp/><sp/>An<sp/>actual<sp/>ECI<sp/>segment<sp/>can<sp/>have<sp/>shorter<sp/>data.<sp/>For<sp/>non-ECI<sp/>modes,<sp/>the<sp/>result<sp/>is<sp/>exact.</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>qrcodegen_calcSegmentBufferSize(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Mode<sp/>mode,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>numChars);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>segment<sp/>representing<sp/>the<sp/>given<sp/>binary<sp/>data<sp/>encoded<sp/>in</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>*<sp/>byte<sp/>mode.<sp/>All<sp/>input<sp/>byte<sp/>arrays<sp/>are<sp/>acceptable.<sp/>Any<sp/>text<sp/>string</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*<sp/>can<sp/>be<sp/>converted<sp/>to<sp/>UTF-8<sp/>bytes<sp/>and<sp/>encoded<sp/>as<sp/>a<sp/>byte<sp/>mode<sp/>segment.</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref><sp/>qrcodegen_makeBytes(const<sp/>uint8_t<sp/>data[],<sp/>size_t<sp/>len,<sp/>uint8_t<sp/>buf[]);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>segment<sp/>representing<sp/>the<sp/>given<sp/>string<sp/>of<sp/>decimal<sp/>digits<sp/>encoded<sp/>in<sp/>numeric<sp/>mode.</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref><sp/>qrcodegen_makeNumeric(const<sp/>char<sp/>*digits,<sp/>uint8_t<sp/>buf[]);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>segment<sp/>representing<sp/>the<sp/>given<sp/>text<sp/>string<sp/>encoded<sp/>in<sp/>alphanumeric<sp/>mode.</highlight></codeline>
+<codeline lineno="277"><highlight class="comment"><sp/>*<sp/>The<sp/>characters<sp/>allowed<sp/>are:<sp/>0<sp/>to<sp/>9,<sp/>A<sp/>to<sp/>Z<sp/>(uppercase<sp/>only),<sp/>space,</highlight></codeline>
+<codeline lineno="278"><highlight class="comment"><sp/>*<sp/>dollar,<sp/>percent,<sp/>asterisk,<sp/>plus,<sp/>hyphen,<sp/>period,<sp/>slash,<sp/>colon.</highlight></codeline>
+<codeline lineno="279"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref><sp/>qrcodegen_makeAlphanumeric(const<sp/>char<sp/>*text,<sp/>uint8_t<sp/>buf[]);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>segment<sp/>representing<sp/>an<sp/>Extended<sp/>Channel<sp/>Interpretation</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*<sp/>(ECI)<sp/>designator<sp/>with<sp/>the<sp/>given<sp/>assignment<sp/>value.</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structqrcodegen__Segment" kindref="compound">qrcodegen_Segment</ref><sp/>qrcodegen_makeEci(long<sp/>assignVal,<sp/>uint8_t<sp/>buf[]);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">/*----<sp/>Functions<sp/>to<sp/>extract<sp/>raw<sp/>data<sp/>from<sp/>QR<sp/>Codes<sp/>----*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="293"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>side<sp/>length<sp/>of<sp/>the<sp/>given<sp/>QR<sp/>Code,<sp/>assuming<sp/>that<sp/>encoding<sp/>succeeded.</highlight></codeline>
+<codeline lineno="294"><highlight class="comment"><sp/>*<sp/>The<sp/>result<sp/>is<sp/>in<sp/>the<sp/>range<sp/>[21,<sp/>177].<sp/>Note<sp/>that<sp/>the<sp/>length<sp/>of<sp/>the<sp/>array<sp/>buffer</highlight></codeline>
+<codeline lineno="295"><highlight class="comment"><sp/>*<sp/>is<sp/>related<sp/>to<sp/>the<sp/>side<sp/>length<sp/>-<sp/>every<sp/>&apos;uint8_t<sp/>qrcode[]&apos;<sp/>must<sp/>have<sp/>length<sp/>at<sp/>least</highlight></codeline>
+<codeline lineno="296"><highlight class="comment"><sp/>*<sp/>qrcodegen_BUFFER_LEN_FOR_VERSION(version),<sp/>which<sp/>equals<sp/>ceil(size^2<sp/>/<sp/>8<sp/>+<sp/>1).</highlight></codeline>
+<codeline lineno="297"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>qrcodegen_getSize(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>qrcode[]);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="302"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>color<sp/>of<sp/>the<sp/>module<sp/>(pixel)<sp/>at<sp/>the<sp/>given<sp/>coordinates,<sp/>which<sp/>is<sp/>false</highlight></codeline>
+<codeline lineno="303"><highlight class="comment"><sp/>*<sp/>for<sp/>white<sp/>or<sp/>true<sp/>for<sp/>black.<sp/>The<sp/>top<sp/>left<sp/>corner<sp/>has<sp/>the<sp/>coordinates<sp/>(x=0,<sp/>y=0).</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"><sp/>*<sp/>If<sp/>the<sp/>given<sp/>coordinates<sp/>are<sp/>out<sp/>of<sp/>bounds,<sp/>then<sp/>false<sp/>(white)<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="305"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>qrcodegen_getModule(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>qrcode[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="309"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>qrcode<sp/>size<sp/>of<sp/>the<sp/>specified<sp/>version.<sp/>Returns<sp/>-1<sp/>on<sp/>failure</highlight></codeline>
+<codeline lineno="310"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>qrcodegen_version2size(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="313"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>min<sp/>version<sp/>of<sp/>the<sp/>data<sp/>that<sp/>can<sp/>be<sp/>stored.<sp/>Returns<sp/>-1<sp/>on<sp/>failure</highlight></codeline>
+<codeline lineno="314"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>qrcodegen_getMinFitVersion(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>qrcodegen_Ecc<sp/>ecl,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>dataLen);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/qrcode/qrcodegen.h"/>
+  </compounddef>
+</doxygen>

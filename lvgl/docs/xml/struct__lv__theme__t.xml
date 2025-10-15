@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__theme__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_theme_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__theme__t_1afdcd5f4cc8b69d66774fa59354e456c3" prot="public" static="no" mutable="no">
+        <type>lv_theme_apply_cb_t</type>
+        <definition>lv_theme_apply_cb_t _lv_theme_t::apply_cb</definition>
+        <argsstring></argsstring>
+        <name>apply_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="32" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1abd82cf0edfed752683cd843b8254cd25" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__theme__t" kindref="compound">_lv_theme_t</ref> *</type>
+        <definition>struct _lv_theme_t* _lv_theme_t::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply the current theme&apos;s style on top of this theme. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="33" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1ad8228ef9435918bda4cd726ad56283e7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_theme_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="34" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1adb00588d976275c443b12ba979af2dc3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref> *</type>
+        <definition>struct _lv_disp_t* _lv_theme_t::disp</definition>
+        <argsstring></argsstring>
+        <name>disp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="35" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1a9c89cb48faebdb6f948b9ef2c26cf43b" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t _lv_theme_t::color_primary</definition>
+        <argsstring></argsstring>
+        <name>color_primary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="36" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1aacb9014f400e490c87dd17ba9c36551d" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t _lv_theme_t::color_secondary</definition>
+        <argsstring></argsstring>
+        <name>color_secondary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="37" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1a1cf7c76c97ce0ba177dd318f08166066" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+        <definition>const lv_font_t* _lv_theme_t::font_small</definition>
+        <argsstring></argsstring>
+        <name>font_small</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="38" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1a652f050438f5525e36392a85a64c0204" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+        <definition>const lv_font_t* _lv_theme_t::font_normal</definition>
+        <argsstring></argsstring>
+        <name>font_normal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="39" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1ace34cf6ea1a92036f1a0b5f962f304cf" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__font_8h_1a11e3396cab33231964d98046c4e436af" kindref="member">lv_font_t</ref> *</type>
+        <definition>const lv_font_t* _lv_theme_t::font_large</definition>
+        <argsstring></argsstring>
+        <name>font_large</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="40" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__theme__t_1a04d271501d5d6dac9968a6c5092427ad" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_theme_t::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="41" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="16">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="5">
+        <label>_lv_draw_layer_ctx_t</label>
+        <link refid="struct__lv__draw__layer__ctx__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>area_act</edgelabel>
+          <edgelabel>area_full</edgelabel>
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_disp_drv_t</label>
+        <link refid="struct__lv__disp__drv__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>draw_ctx</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>draw_buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_draw_ctx_t</label>
+        <link refid="struct__lv__draw__ctx__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>layer_init</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="1">
+        <label>_lv_theme_t</label>
+        <link refid="struct__lv__theme__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>disp</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>apply_cb</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>font_normal</edgelabel>
+          <edgelabel>font_small</edgelabel>
+          <edgelabel>font_large</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>_lv_timer_t</label>
+        <link refid="struct__lv__timer__t"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>timer_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_disp_t</label>
+        <link refid="struct__lv__disp__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>driver</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>top_layer</edgelabel>
+          <edgelabel>act_scr</edgelabel>
+          <edgelabel>sys_layer</edgelabel>
+          <edgelabel>prev_scr</edgelabel>
+          <edgelabel>screens</edgelabel>
+          <edgelabel>scr_to_load</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>refr_timer</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>inv_areas</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>theme</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>sync_areas</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>_lv_font_t</label>
+        <link refid="struct__lv__font__t"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>fallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_disp_draw_buf_t</label>
+        <link refid="struct__lv__disp__draw__buf__t"/>
+      </node>
+      <node id="10">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="9">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" line="31" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_theme.h" bodystart="31" bodyend="42"/>
+    <listofallmembers>
+      <member refid="struct__lv__theme__t_1afdcd5f4cc8b69d66774fa59354e456c3" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>apply_cb</name></member>
+      <member refid="struct__lv__theme__t_1a9c89cb48faebdb6f948b9ef2c26cf43b" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>color_primary</name></member>
+      <member refid="struct__lv__theme__t_1aacb9014f400e490c87dd17ba9c36551d" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>color_secondary</name></member>
+      <member refid="struct__lv__theme__t_1adb00588d976275c443b12ba979af2dc3" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>disp</name></member>
+      <member refid="struct__lv__theme__t_1a04d271501d5d6dac9968a6c5092427ad" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>flags</name></member>
+      <member refid="struct__lv__theme__t_1ace34cf6ea1a92036f1a0b5f962f304cf" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>font_large</name></member>
+      <member refid="struct__lv__theme__t_1a652f050438f5525e36392a85a64c0204" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>font_normal</name></member>
+      <member refid="struct__lv__theme__t_1a1cf7c76c97ce0ba177dd318f08166066" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>font_small</name></member>
+      <member refid="struct__lv__theme__t_1abd82cf0edfed752683cd843b8254cd25" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>parent</name></member>
+      <member refid="struct__lv__theme__t_1ad8228ef9435918bda4cd726ad56283e7" prot="public" virt="non-virtual"><scope>_lv_theme_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

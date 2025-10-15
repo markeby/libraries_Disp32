@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__font__glyph__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_font_glyph_dsc_t</compoundname>
+    <includes refid="lv__font_8h" local="no">lv_font.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__font__glyph__dsc__t_1a667508fcd5ac9fc4a82d0c3140f8de7f" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct__lv__font__t" kindref="compound">_lv_font_t</ref> *</type>
+        <definition>const struct _lv_font_t* lv_font_glyph_dsc_t::resolved_font</definition>
+        <argsstring></argsstring>
+        <name>resolved_font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a font where the glyph was actually found after handling fallbacks </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="43" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__font__glyph__dsc__t_1af270ea3d337c8aabde5fde0eaf89c03d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_font_glyph_dsc_t::adv_w</definition>
+        <argsstring></argsstring>
+        <name>adv_w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The glyph needs this space. Draw the next glyph after this width. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="44" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__font__glyph__dsc__t_1a022b928638ae67252a0ba5ca0e02194f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_font_glyph_dsc_t::box_w</definition>
+        <argsstring></argsstring>
+        <name>box_w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the glyph&apos;s bounding box </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="45" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__font__glyph__dsc__t_1af268a2d7d09f9d39730dd2f51d686876" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_font_glyph_dsc_t::box_h</definition>
+        <argsstring></argsstring>
+        <name>box_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Height of the glyph&apos;s bounding box </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="46" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__font__glyph__dsc__t_1a1783ed58651f60f9aea13ad6beeb5fbb" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_font_glyph_dsc_t::ofs_x</definition>
+        <argsstring></argsstring>
+        <name>ofs_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>x offset of the bounding box </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="47" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__font__glyph__dsc__t_1a39db997d742b572c38fbc2f24b525c00" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_font_glyph_dsc_t::ofs_y</definition>
+        <argsstring></argsstring>
+        <name>ofs_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>y offset of the bounding box </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="48" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__font__glyph__dsc__t_1aeeddfdcd24731d3b4e7cab1284368c52" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_font_glyph_dsc_t::bpp</definition>
+        <argsstring></argsstring>
+        <name>bpp</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit-per-pixel: 1, 2, 4, 8 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="49" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__font__glyph__dsc__t_1a6fad34b9b29f20af392350627e4ee848" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_font_glyph_dsc_t::is_placeholder</definition>
+        <argsstring></argsstring>
+        <name>is_placeholder</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="50" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes the properties of a glyph. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_lv_font_t</label>
+        <link refid="struct__lv__font__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lv_font_glyph_dsc_t</label>
+        <link refid="structlv__font__glyph__dsc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>resolved_font</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" line="41" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font.h" bodystart="41" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structlv__font__glyph__dsc__t_1af270ea3d337c8aabde5fde0eaf89c03d" prot="public" virt="non-virtual"><scope>lv_font_glyph_dsc_t</scope><name>adv_w</name></member>
+      <member refid="structlv__font__glyph__dsc__t_1af268a2d7d09f9d39730dd2f51d686876" prot="public" virt="non-virtual"><scope>lv_font_glyph_dsc_t</scope><name>box_h</name></member>
+      <member refid="structlv__font__glyph__dsc__t_1a022b928638ae67252a0ba5ca0e02194f" prot="public" virt="non-virtual"><scope>lv_font_glyph_dsc_t</scope><name>box_w</name></member>
+      <member refid="structlv__font__glyph__dsc__t_1aeeddfdcd24731d3b4e7cab1284368c52" prot="public" virt="non-virtual"><scope>lv_font_glyph_dsc_t</scope><name>bpp</name></member>
+      <member refid="structlv__font__glyph__dsc__t_1a6fad34b9b29f20af392350627e4ee848" prot="public" virt="non-virtual"><scope>lv_font_glyph_dsc_t</scope><name>is_placeholder</name></member>
+      <member refid="structlv__font__glyph__dsc__t_1a1783ed58651f60f9aea13ad6beeb5fbb" prot="public" virt="non-virtual"><scope>lv_font_glyph_dsc_t</scope><name>ofs_x</name></member>
+      <member refid="structlv__font__glyph__dsc__t_1a39db997d742b572c38fbc2f24b525c00" prot="public" virt="non-virtual"><scope>lv_font_glyph_dsc_t</scope><name>ofs_y</name></member>
+      <member refid="structlv__font__glyph__dsc__t_1a667508fcd5ac9fc4a82d0c3140f8de7f" prot="public" virt="non-virtual"><scope>lv_font_glyph_dsc_t</scope><name>resolved_font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

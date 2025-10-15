@@ -1,0 +1,1102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__meter_8h" kind="file" language="C++">
+    <compoundname>lv_meter.h</compoundname>
+    <innerclass refid="structlv__meter__scale__t" prot="public">lv_meter_scale_t</innerclass>
+    <innerclass refid="structlv__meter__indicator__t" prot="public">lv_meter_indicator_t</innerclass>
+    <innerclass refid="structlv__meter__t" prot="public">lv_meter_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__meter_8h_1a77867ab4129f63159b37bca3b652a798" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@38</name>
+        <enumvalue id="lv__meter_8h_1a77867ab4129f63159b37bca3b652a798a65decef4ec1106d912258f99d8d59645" prot="public">
+          <name>LV_METER_INDICATOR_TYPE_NEEDLE_IMG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__meter_8h_1a77867ab4129f63159b37bca3b652a798aaa4f9d9915bfb4793dfdcd502a84205a" prot="public">
+          <name>LV_METER_INDICATOR_TYPE_NEEDLE_LINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__meter_8h_1a77867ab4129f63159b37bca3b652a798a4b4f1497bd6f6bfb9ead44a20e73c351" prot="public">
+          <name>LV_METER_INDICATOR_TYPE_SCALE_LINES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__meter_8h_1a77867ab4129f63159b37bca3b652a798a30d509567230936c1a60d3e62b03d830" prot="public">
+          <name>LV_METER_INDICATOR_TYPE_ARC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="53" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_meter_draw_part_type_t</name>
+        <enumvalue id="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929eaa912394f446248068ba5adfdf6115679" prot="public">
+          <name>LV_METER_DRAW_PART_ARC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The arc indicator </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929ea9f695301a47bf4d5f8e1c0f10d6551f4" prot="public">
+          <name>LV_METER_DRAW_PART_NEEDLE_LINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The needle lines </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929ea8a6a60827954d73c037d68813c27b783" prot="public">
+          <name>LV_METER_DRAW_PART_NEEDLE_IMG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The needle images </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929eab34833fabcef28107729b595fe65ebc8" prot="public">
+          <name>LV_METER_DRAW_PART_TICK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The tick lines and labels </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>type</computeroutput> field in <computeroutput><ref refid="structlv__obj__draw__part__dsc__t" kindref="compound">lv_obj_draw_part_dsc_t</ref></computeroutput> if <computeroutput>class_p = lv_meter_class</computeroutput> Used in <computeroutput>LV_EVENT_DRAW_PART_BEGIN</computeroutput> and <computeroutput>LV_EVENT_DRAW_PART_END</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="105" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="105" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__meter_8h_1a80642291bafb3cc1f90451c0ec6a0da0" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_meter_indicator_type_t</definition>
+        <argsstring></argsstring>
+        <name>lv_meter_indicator_type_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="59" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__meter_8h_1ab4c9ad85750a6ba7fc01e7529dc4c02c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_meter_class</definition>
+        <argsstring></argsstring>
+        <name>lv_meter_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="99" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="99" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__meter_8h_1a2b302557cebe8d033b7594d9208cc802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_meter_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_meter_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a Meter object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new bar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created meter </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="121" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="121" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1ad3a0e46e93f6ac0ac6f6026268ee29e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref> *</type>
+        <definition>lv_meter_scale_t* lv_meter_add_scale</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_meter_add_scale</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new scale to the meter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the new scale </para>
+</simplesect>
+<simplesect kind="note"><para>Indicators can be attached to scales. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="133" column="19" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="133" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1aa88b402d72ae9e2abe7cd488746253b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_meter_set_scale_ticks</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_scale_t *scale, uint16_t cnt, uint16_t width, uint16_t len, lv_color_t color)</argsstring>
+        <name>lv_meter_set_scale_ticks</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref> *</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>cnt</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the properties of the ticks of a scale <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to scale (added to <computeroutput>meter</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of tick lines </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of tick lines </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of tick lines </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color of tick lines </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="144" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="144" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1a6998743cbbb5ea31f1859738dd30aa7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_meter_set_scale_major_ticks</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_scale_t *scale, uint16_t nth, uint16_t width, uint16_t len, lv_color_t color, int16_t label_gap)</argsstring>
+        <name>lv_meter_set_scale_major_ticks</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref> *</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>nth</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>label_gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make some &quot;normal&quot; ticks major ticks and set their attributes. Texts with the current value are also added to the major ticks. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to scale (added to <computeroutput>meter</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>make every Nth normal tick major tick. (start from the first on the left) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the major ticks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the major ticks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color of the major ticks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label_gap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gap between the major ticks and the labels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="158" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="158" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1af340a1e2618900cd58ebf877fcae9d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_meter_set_scale_range</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_scale_t *scale, int32_t min, int32_t max, uint32_t angle_range, uint32_t rotation)</argsstring>
+        <name>lv_meter_set_scale_range</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref> *</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>angle_range</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value and angular range of a scale. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to scale (added to <computeroutput>meter</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximal value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the angular range of the scale </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the angular offset from the 3 o&apos;clock position (clock-wise) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="170" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="170" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1a02353a70555f6c088df2869805953cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref> *</type>
+        <definition>lv_meter_indicator_t* lv_meter_add_needle_line</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_scale_t *scale, uint16_t width, lv_color_t color, int16_t r_mod)</argsstring>
+        <name>lv_meter_add_needle_line</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref> *</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>r_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a needle line indicator the scale <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to scale (added to <computeroutput>meter</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the line </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color of the line </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r_mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the radius modifier (added to the scale&apos;s radius) to get the lines length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the new indicator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="186" column="23" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="186" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1a9c135057b152853f4cf3937ce94b81ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref> *</type>
+        <definition>lv_meter_indicator_t* lv_meter_add_needle_img</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_scale_t *scale, const void *src, lv_coord_t pivot_x, lv_coord_t pivot_y)</argsstring>
+        <name>lv_meter_add_needle_img</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref> *</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>pivot_x</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>pivot_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a needle image indicator the scale <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to scale (added to <computeroutput>meter</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the image source of the indicator. path or pointer to <ref refid="structlv__img__dsc__t" kindref="compound">lv_img_dsc_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pivot_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the X pivot point of the needle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pivot_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Y pivot point of the needle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the new indicator </para>
+</simplesect>
+<simplesect kind="note"><para>the needle image should point to the right, like -O--<mdash/>&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="199" column="23" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="199" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1afc0883972373fc0ac0cfa8f3011018ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref> *</type>
+        <definition>lv_meter_indicator_t* lv_meter_add_arc</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_scale_t *scale, uint16_t width, lv_color_t color, int16_t r_mod)</argsstring>
+        <name>lv_meter_add_arc</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref> *</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>r_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an arc indicator the scale <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to scale (added to <computeroutput>meter</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the arc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color of the arc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r_mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the radius modifier (added to the scale&apos;s radius) to get the outer radius of the arc </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the new indicator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="211" column="23" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="211" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1a2b526def129d74ba035b9002d692cdbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref> *</type>
+        <definition>lv_meter_indicator_t* lv_meter_add_scale_lines</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_scale_t *scale, lv_color_t color_start, lv_color_t color_end, bool local, int16_t width_mod)</argsstring>
+        <name>lv_meter_add_scale_lines</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref> *</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color_start</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color_end</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>local</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>width_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a scale line indicator the scale. It will modify the ticks. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to scale (added to <computeroutput>meter</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>local</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tell how to map start and end color. true: the indicator&apos;s start and end_value; false: the scale&apos;s min max value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width_mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>add this the affected tick&apos;s width </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the new indicator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="224" column="23" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="224" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1a67c33eaa37fca3322a726d550e9cc364" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_meter_set_indicator_value</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_indicator_t *indic, int32_t value)</argsstring>
+        <name>lv_meter_set_indicator_value</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref> *</type>
+          <declname>indic</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value of the indicator. It will set start and and value to the same value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an indicator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="237" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="237" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1a23ce99cb4163903c76d77333a8113ab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_meter_set_indicator_start_value</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_indicator_t *indic, int32_t value)</argsstring>
+        <name>lv_meter_set_indicator_start_value</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref> *</type>
+          <declname>indic</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the start value of the indicator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an indicator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="245" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="245" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__meter_8h_1ab128c03bd7fbec455d0dbe35fa0dbb7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_meter_set_indicator_end_value</definition>
+        <argsstring>(lv_obj_t *obj, lv_meter_indicator_t *indic, int32_t value)</argsstring>
+        <name>lv_meter_set_indicator_end_value</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref> *</type>
+          <declname>indic</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the start value of the indicator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a meter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an indicator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" line="253" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h" declline="253" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_METER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_METER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lvgl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_METER<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*Testing<sp/>of<sp/>dependencies*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_DRAW_COMPLEX<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;lv_meter:<sp/>Complex<sp/>drawing<sp/>is<sp/>required.<sp/>Enable<sp/>it<sp/>in<sp/>lv_conf.h<sp/>(LV_DRAW_COMPLEX<sp/>1)&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structlv__meter__scale__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/>tick_color;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tick_cnt;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tick_length;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tick_width;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/>tick_major_color;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tick_major_nth;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tick_major_length;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tick_major_width;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>label_gap;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>min;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>max;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>r_mod;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>angle_range;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>rotation;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_METER_INDICATOR_TYPE_NEEDLE_IMG,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_METER_INDICATOR_TYPE_NEEDLE_LINE,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_METER_INDICATOR_TYPE_SCALE_LINES,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_METER_INDICATOR_TYPE_ARC,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_meter_indicator_type_t;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structlv__meter__indicator__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/>scale;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_meter_indicator_type_t<sp/>type;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_opa_t<sp/>opa;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>start_value;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>end_value;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>src;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>pivot;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>needle_img;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>width;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/>r_mod;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_color_t<sp/>color;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>needle_line;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>width;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>src;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_color_t<sp/>color;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/>r_mod;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>arc;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/>width_mod;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_color_t<sp/>color_start;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_color_t<sp/>color_end;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>local_grad<sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>scale_lines;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>type_data;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*Data<sp/>of<sp/>line<sp/>meter*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="structlv__meter__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref><sp/>scale_ll;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref><sp/>indicator_ll;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}<sp/><ref refid="structlv__meter__t" kindref="compound">lv_meter_t</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_meter_class;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="106" refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929eaa912394f446248068ba5adfdf6115679" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929eaa912394f446248068ba5adfdf6115679" kindref="member">LV_METER_DRAW_PART_ARC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929ea9f695301a47bf4d5f8e1c0f10d6551f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929ea9f695301a47bf4d5f8e1c0f10d6551f4" kindref="member">LV_METER_DRAW_PART_NEEDLE_LINE</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929ea8a6a60827954d73c037d68813c27b783" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929ea8a6a60827954d73c037d68813c27b783" kindref="member">LV_METER_DRAW_PART_NEEDLE_IMG</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929eab34833fabcef28107729b595fe65ebc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929eab34833fabcef28107729b595fe65ebc8" kindref="member">LV_METER_DRAW_PART_TICK</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}<sp/><ref refid="lv__meter_8h_1a1b2d659c6465dcfc0b55316a9fd3929e" kindref="member">lv_meter_draw_part_type_t</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__meter_8h_1a2b302557cebe8d033b7594d9208cc802" kindref="member">lv_meter_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>*<sp/>Add<sp/>scale</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/><ref refid="lv__meter_8h_1ad3a0e46e93f6ac0ac6f6026268ee29e4" kindref="member">lv_meter_add_scale</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__meter_8h_1aa88b402d72ae9e2abe7cd488746253b5" kindref="member">lv_meter_set_scale_ticks</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/>scale,<sp/>uint16_t<sp/>cnt,<sp/>uint16_t<sp/>width,<sp/>uint16_t<sp/>len,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_color_t<sp/>color);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__meter_8h_1a6998743cbbb5ea31f1859738dd30aa7c" kindref="member">lv_meter_set_scale_major_ticks</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/>scale,<sp/>uint16_t<sp/>nth,<sp/>uint16_t<sp/>width,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>len,<sp/>lv_color_t<sp/>color,<sp/>int16_t<sp/>label_gap);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__meter_8h_1af340a1e2618900cd58ebf877fcae9d94" kindref="member">lv_meter_set_scale_range</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/>scale,<sp/>int32_t<sp/>min,<sp/>int32_t<sp/>max,<sp/>uint32_t<sp/>angle_range,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>rotation);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/>*<sp/>Add<sp/>indicator</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref><sp/>*<sp/><ref refid="lv__meter_8h_1a02353a70555f6c088df2869805953cf4" kindref="member">lv_meter_add_needle_line</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/>scale,<sp/>uint16_t<sp/>width,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_color_t<sp/>color,<sp/>int16_t<sp/>r_mod);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref><sp/>*<sp/><ref refid="lv__meter_8h_1a9c135057b152853f4cf3937ce94b81ef" kindref="member">lv_meter_add_needle_img</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/>scale,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>src,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>pivot_x,<sp/>lv_coord_t<sp/>pivot_y);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref><sp/>*<sp/><ref refid="lv__meter_8h_1afc0883972373fc0ac0cfa8f3011018ba" kindref="member">lv_meter_add_arc</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/>scale,<sp/>uint16_t<sp/>width,<sp/>lv_color_t<sp/>color,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/>r_mod);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref><sp/>*<sp/><ref refid="lv__meter_8h_1a2b526def129d74ba035b9002d692cdbe" kindref="member">lv_meter_add_scale_lines</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__scale__t" kindref="compound">lv_meter_scale_t</ref><sp/>*<sp/>scale,<sp/>lv_color_t<sp/>color_start,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_color_t<sp/>color_end,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>local,<sp/>int16_t<sp/>width_mod);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*<sp/>Set<sp/>indicator<sp/>value</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__meter_8h_1a67c33eaa37fca3322a726d550e9cc364" kindref="member">lv_meter_set_indicator_value</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref><sp/>*<sp/>indic,<sp/>int32_t<sp/>value);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__meter_8h_1a23ce99cb4163903c76d77333a8113ab9" kindref="member">lv_meter_set_indicator_start_value</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref><sp/>*<sp/>indic,<sp/>int32_t<sp/>value);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__meter_8h_1ab128c03bd7fbec455d0dbe35fa0dbb7a" kindref="member">lv_meter_set_indicator_end_value</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__meter__indicator__t" kindref="compound">lv_meter_indicator_t</ref><sp/>*<sp/>indic,<sp/>int32_t<sp/>value);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_METER*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_METER_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter/lv_meter.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__style__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_style_t</compoundname>
+    <includes refid="lv__style_8h" local="no">lv_style.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__style__t_1a224f5df27e61983c7529532c829e5a47" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_style_t::sentinel</definition>
+        <argsstring></argsstring>
+        <name>sentinel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="322" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__t_1adf199b523ec95d17a644255be350bdc3" prot="public" static="no" mutable="no">
+        <type><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref></type>
+        <definition>lv_style_value_t lv_style_t::value1</definition>
+        <argsstring></argsstring>
+        <name>value1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="328" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__t_1a7b4271468b96fe9fb5181996fc8fa506" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* lv_style_t::values_and_props</definition>
+        <argsstring></argsstring>
+        <name>values_and_props</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="329" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__t_1ad803cba185ee38cac18c79ac1113fc50" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structlv__style__const__prop__t" kindref="compound">lv_style_const_prop_t</ref> *</type>
+        <definition>const lv_style_const_prop_t* lv_style_t::const_props</definition>
+        <argsstring></argsstring>
+        <name>const_props</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="330" column="38" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__t_1a7a035094afd94396b1cd3ba003851073" prot="public" static="no" mutable="no">
+        <type>union lv_style_t::@68</type>
+        <definition>union lv_style_t::@68 lv_style_t::v_p</definition>
+        <argsstring></argsstring>
+        <name>v_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="331" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__t_1a460a9466bd1218b0e3b5d5bcfe7bf914" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_style_t::prop1</definition>
+        <argsstring></argsstring>
+        <name>prop1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="333" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__t_1a4fc3b69ed07adcfd3c60b2f974d83118" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_style_t::has_group</definition>
+        <argsstring></argsstring>
+        <name>has_group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="334" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__style__t_1a9917583e63aebe6757c0ffe37ae6a835" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_style_t::prop_cnt</definition>
+        <argsstring></argsstring>
+        <name>prop_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="335" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Descriptor of a style (a collection of properties and values). </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="1">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="319" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="319" bodyend="336"/>
+    <listofallmembers>
+      <member refid="structlv__style__t_1ad803cba185ee38cac18c79ac1113fc50" prot="public" virt="non-virtual"><scope>lv_style_t</scope><name>const_props</name></member>
+      <member refid="structlv__style__t_1a4fc3b69ed07adcfd3c60b2f974d83118" prot="public" virt="non-virtual"><scope>lv_style_t</scope><name>has_group</name></member>
+      <member refid="structlv__style__t_1a460a9466bd1218b0e3b5d5bcfe7bf914" prot="public" virt="non-virtual"><scope>lv_style_t</scope><name>prop1</name></member>
+      <member refid="structlv__style__t_1a9917583e63aebe6757c0ffe37ae6a835" prot="public" virt="non-virtual"><scope>lv_style_t</scope><name>prop_cnt</name></member>
+      <member refid="structlv__style__t_1a224f5df27e61983c7529532c829e5a47" prot="public" virt="non-virtual"><scope>lv_style_t</scope><name>sentinel</name></member>
+      <member refid="structlv__style__t_1a7a035094afd94396b1cd3ba003851073" prot="public" virt="non-virtual"><scope>lv_style_t</scope><name>v_p</name></member>
+      <member refid="structlv__style__t_1adf199b523ec95d17a644255be350bdc3" prot="public" virt="non-virtual"><scope>lv_style_t</scope><name>value1</name></member>
+      <member refid="structlv__style__t_1a7b4271468b96fe9fb5181996fc8fa506" prot="public" virt="non-virtual"><scope>lv_style_t</scope><name>values_and_props</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

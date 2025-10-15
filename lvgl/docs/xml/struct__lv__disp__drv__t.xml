@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__disp__drv__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_disp_drv_t</compoundname>
+    <includes refid="lv__hal__disp_8h" local="no">lv_hal_disp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a9a46dcf72a366efa819bccc6c243c52e" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_disp_drv_t::hor_res</definition>
+        <argsstring></argsstring>
+        <name>hor_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Horizontal resolution. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="80" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a629f3773b25f0321cf19c67983e62b75" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_disp_drv_t::ver_res</definition>
+        <argsstring></argsstring>
+        <name>ver_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vertical resolution. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="81" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a9e4127d0410de5e8401ab96ad5c7731f" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_disp_drv_t::physical_hor_res</definition>
+        <argsstring></argsstring>
+        <name>physical_hor_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Horizontal resolution of the full / physical display. Set to -1 for fullscreen mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="84" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1ad835a17e54002d23fe136d13ce29ad6d" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_disp_drv_t::physical_ver_res</definition>
+        <argsstring></argsstring>
+        <name>physical_ver_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vertical resolution of the full / physical display. Set to -1 for fullscreen mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="86" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1ab4c7bb6df22f3ea73ebad5cddfdaed3b" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_disp_drv_t::offset_x</definition>
+        <argsstring></argsstring>
+        <name>offset_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Horizontal offset from the full / physical display. Set to 0 for fullscreen mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="88" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a80999403d167ad631404dab2ac6f85c6" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t _lv_disp_drv_t::offset_y</definition>
+        <argsstring></argsstring>
+        <name>offset_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vertical offset from the full / physical display. Set to 0 for fullscreen mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="89" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a76b0d49876861b2e2f848c0b3f5c4792" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__hal__disp_8h_1aabc7592e4a01c99ac13c46aa45296ca3" kindref="member">lv_disp_draw_buf_t</ref> *</type>
+        <definition>lv_disp_draw_buf_t* _lv_disp_drv_t::draw_buf</definition>
+        <argsstring></argsstring>
+        <name>draw_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a buffer initialized with <computeroutput><ref refid="lv__hal__disp_8h_1a06fe2e658c41b550e6ede53f1a267a0a" kindref="member">lv_disp_draw_buf_init()</ref></computeroutput>. LVGL will use this buffer(s) to draw the screens contents </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="93" column="25" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a8c282533fa38e2c02e7bd59543ebe21a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_disp_drv_t::direct_mode</definition>
+        <argsstring></argsstring>
+        <name>direct_mode</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: Use screen-sized buffers and draw to absolute coordinates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="95" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1acdff28b6362847710348e09a80329a8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_disp_drv_t::full_refresh</definition>
+        <argsstring></argsstring>
+        <name>full_refresh</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: Always make the whole screen redrawn </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="96" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a292c93471eee2cd218898281273da44e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_disp_drv_t::sw_rotate</definition>
+        <argsstring></argsstring>
+        <name>sw_rotate</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: use software rotation (slower) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="97" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a5140627de9920d06824f64ba22a5a245" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_disp_drv_t::antialiasing</definition>
+        <argsstring></argsstring>
+        <name>antialiasing</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: anti-aliasing is enabled on this display. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="98" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1aa57abbd61258b5f8fb2af5a1e2b379d1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_disp_drv_t::rotated</definition>
+        <argsstring></argsstring>
+        <name>rotated</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: turn the display by 90 degree. <simplesect kind="warning"><para>Does not update coordinates for you! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="99" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a1f20bba3ab4e29515004e70e3fb0b725" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_disp_drv_t::screen_transp</definition>
+        <argsstring></argsstring>
+        <name>screen_transp</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="100" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a45c3688e1af458041ca334d2e297adb6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_disp_drv_t::dpi</definition>
+        <argsstring></argsstring>
+        <name>dpi</name>
+        <bitfield> 10</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle if the screen doesn&apos;t have a solid (opa == LV_OPA_COVER) background. Use only if required because it&apos;s slower. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="103" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a0579966c493920404caac738f467b614" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::flush_cb) (struct _lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)</argsstring>
+        <name>flush_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DPI (dot per inch) of the display. Default value is <computeroutput>LV_DPI_DEF</computeroutput>. MANDATORY: Write the internal buffer (draw_buf) to the display. &apos;lv_disp_flush_ready()&apos; has to be called when finished </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="107" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a151ea253d8396ea15ca79662cb8de3a7" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::rounder_cb) (struct _lv_disp_drv_t *disp_drv, lv_area_t *area)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv, lv_area_t *area)</argsstring>
+        <name>rounder_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OPTIONAL: Extend the invalidated areas to match with the display drivers requirements E.g. round <computeroutput>y</computeroutput> to, 8, 16 ..) on a monochrome display </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="111" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a05e48a3ce29ceae24aa6106719dfc23e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::set_px_cb) (struct _lv_disp_drv_t *disp_drv, uint8_t *buf, lv_coord_t buf_w, lv_coord_t x, lv_coord_t y, lv_color_t color, lv_opa_t opa)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv, uint8_t *buf, lv_coord_t buf_w, lv_coord_t x, lv_coord_t y, lv_color_t color, lv_opa_t opa)</argsstring>
+        <name>set_px_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OPTIONAL: Set a pixel in a buffer according to the special requirements of the display Can be used for color format not supported in LittelvGL. E.g. 2 bit -&gt; 4 gray scales <simplesect kind="note"><para>Much slower then drawing with supported color formats. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="116" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a20ab453ebd6b1026dc010bb75c3fb9c3" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::clear_cb) (struct _lv_disp_drv_t *disp_drv, uint8_t *buf, uint32_t size)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv, uint8_t *buf, uint32_t size)</argsstring>
+        <name>clear_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="119" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1ab8e9021bc4401273f9e5e159baddc5a3" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::monitor_cb) (struct _lv_disp_drv_t *disp_drv, uint32_t time, uint32_t px)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv, uint32_t time, uint32_t px)</argsstring>
+        <name>monitor_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OPTIONAL: Called after every refresh cycle to tell the rendering and flushing time + the number of flushed pixels </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="123" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a8a2da37af8c2236f72b54a008bb60206" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::wait_cb) (struct _lv_disp_drv_t *disp_drv)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv)</argsstring>
+        <name>wait_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OPTIONAL: Called periodically while lvgl waits for operation to be completed. For example flushing or GPU User can execute very simple tasks here or yield the task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="128" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a8f580334339f58469ce29aee4b8c97ac" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::clean_dcache_cb) (struct _lv_disp_drv_t *disp_drv)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv)</argsstring>
+        <name>clean_dcache_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OPTIONAL: Called when lvgl needs any CPU cache that affects rendering to be cleaned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="131" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a89a4b6012925cfe99c33659131b5d269" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::drv_update_cb) (struct _lv_disp_drv_t *disp_drv)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv)</argsstring>
+        <name>drv_update_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OPTIONAL: called when driver parameters are updated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="134" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1adc85d7b0662c4ca1f1df6744d82a6850" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::render_start_cb) (struct _lv_disp_drv_t *disp_drv)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv)</argsstring>
+        <name>render_start_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OPTIONAL: called when start rendering </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="137" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1adb7820a88a8b1726e7ba12e7c5538c70" prot="public" static="no" mutable="no">
+        <type>lv_color_t</type>
+        <definition>lv_color_t _lv_disp_drv_t::color_chroma_key</definition>
+        <argsstring></argsstring>
+        <name>color_chroma_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On CHROMA_KEYED images this color will be transparent. <computeroutput>LV_COLOR_CHROMA_KEY</computeroutput> by default. (lv_conf.h) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="141" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1aeda0cfc7260f834eeaa1c53fab492293" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+        <definition>lv_draw_ctx_t* _lv_disp_drv_t::draw_ctx</definition>
+        <argsstring></argsstring>
+        <name>draw_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="143" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1aba7ab4c879b0f4b798a1eaee6c6b0f47" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::draw_ctx_init) (struct _lv_disp_drv_t *disp_drv, lv_draw_ctx_t *draw_ctx)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv, lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>draw_ctx_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="144" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1ad8917c67e7bd427b5af306f7af7d9de9" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_disp_drv_t::draw_ctx_deinit) (struct _lv_disp_drv_t *disp_drv, lv_draw_ctx_t *draw_ctx)</definition>
+        <argsstring>)(struct _lv_disp_drv_t *disp_drv, lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>draw_ctx_deinit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="145" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1a820833f0ad76968bc152aee6654a398d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _lv_disp_drv_t::draw_ctx_size</definition>
+        <argsstring></argsstring>
+        <name>draw_ctx_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="146" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__drv__t_1af5fdca24bab6f48c437c21a6d29864bd" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_disp_drv_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom display driver user data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="149" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Display Driver structure to be registered by HAL. Only its pointer will be saved in <computeroutput>lv_disp_t</computeroutput> so it should be declared as <computeroutput>static lv_disp_drv_t my_drv</computeroutput> or allocated dynamically. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>_lv_draw_layer_ctx_t</label>
+        <link refid="struct__lv__draw__layer__ctx__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>area_act</edgelabel>
+          <edgelabel>area_full</edgelabel>
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_lv_disp_drv_t</label>
+        <link refid="struct__lv__disp__drv__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>draw_ctx</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>draw_buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_draw_ctx_t</label>
+        <link refid="struct__lv__draw__ctx__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>layer_init</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="5">
+        <label>_lv_disp_draw_buf_t</label>
+        <link refid="struct__lv__disp__draw__buf__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="78" column="29" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="78" bodyend="152"/>
+    <listofallmembers>
+      <member refid="struct__lv__disp__drv__t_1a5140627de9920d06824f64ba22a5a245" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>antialiasing</name></member>
+      <member refid="struct__lv__disp__drv__t_1a8f580334339f58469ce29aee4b8c97ac" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>clean_dcache_cb</name></member>
+      <member refid="struct__lv__disp__drv__t_1a20ab453ebd6b1026dc010bb75c3fb9c3" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>clear_cb</name></member>
+      <member refid="struct__lv__disp__drv__t_1adb7820a88a8b1726e7ba12e7c5538c70" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>color_chroma_key</name></member>
+      <member refid="struct__lv__disp__drv__t_1a8c282533fa38e2c02e7bd59543ebe21a" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>direct_mode</name></member>
+      <member refid="struct__lv__disp__drv__t_1a45c3688e1af458041ca334d2e297adb6" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>dpi</name></member>
+      <member refid="struct__lv__disp__drv__t_1a76b0d49876861b2e2f848c0b3f5c4792" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>draw_buf</name></member>
+      <member refid="struct__lv__disp__drv__t_1aeda0cfc7260f834eeaa1c53fab492293" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>draw_ctx</name></member>
+      <member refid="struct__lv__disp__drv__t_1ad8917c67e7bd427b5af306f7af7d9de9" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>draw_ctx_deinit</name></member>
+      <member refid="struct__lv__disp__drv__t_1aba7ab4c879b0f4b798a1eaee6c6b0f47" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>draw_ctx_init</name></member>
+      <member refid="struct__lv__disp__drv__t_1a820833f0ad76968bc152aee6654a398d" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>draw_ctx_size</name></member>
+      <member refid="struct__lv__disp__drv__t_1a89a4b6012925cfe99c33659131b5d269" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>drv_update_cb</name></member>
+      <member refid="struct__lv__disp__drv__t_1a0579966c493920404caac738f467b614" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>flush_cb</name></member>
+      <member refid="struct__lv__disp__drv__t_1acdff28b6362847710348e09a80329a8e" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>full_refresh</name></member>
+      <member refid="struct__lv__disp__drv__t_1a9a46dcf72a366efa819bccc6c243c52e" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>hor_res</name></member>
+      <member refid="struct__lv__disp__drv__t_1ab8e9021bc4401273f9e5e159baddc5a3" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>monitor_cb</name></member>
+      <member refid="struct__lv__disp__drv__t_1ab4c7bb6df22f3ea73ebad5cddfdaed3b" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>offset_x</name></member>
+      <member refid="struct__lv__disp__drv__t_1a80999403d167ad631404dab2ac6f85c6" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>offset_y</name></member>
+      <member refid="struct__lv__disp__drv__t_1a9e4127d0410de5e8401ab96ad5c7731f" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>physical_hor_res</name></member>
+      <member refid="struct__lv__disp__drv__t_1ad835a17e54002d23fe136d13ce29ad6d" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>physical_ver_res</name></member>
+      <member refid="struct__lv__disp__drv__t_1adc85d7b0662c4ca1f1df6744d82a6850" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>render_start_cb</name></member>
+      <member refid="struct__lv__disp__drv__t_1aa57abbd61258b5f8fb2af5a1e2b379d1" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>rotated</name></member>
+      <member refid="struct__lv__disp__drv__t_1a151ea253d8396ea15ca79662cb8de3a7" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>rounder_cb</name></member>
+      <member refid="struct__lv__disp__drv__t_1a1f20bba3ab4e29515004e70e3fb0b725" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>screen_transp</name></member>
+      <member refid="struct__lv__disp__drv__t_1a05e48a3ce29ceae24aa6106719dfc23e" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>set_px_cb</name></member>
+      <member refid="struct__lv__disp__drv__t_1a292c93471eee2cd218898281273da44e" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>sw_rotate</name></member>
+      <member refid="struct__lv__disp__drv__t_1af5fdca24bab6f48c437c21a6d29864bd" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>user_data</name></member>
+      <member refid="struct__lv__disp__drv__t_1a629f3773b25f0321cf19c67983e62b75" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>ver_res</name></member>
+      <member refid="struct__lv__disp__drv__t_1a8a2da37af8c2236f72b54a008bb60206" prot="public" virt="non-virtual"><scope>_lv_disp_drv_t</scope><name>wait_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

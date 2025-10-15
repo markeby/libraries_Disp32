@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_c29156f6f2ce8fb34575d697fb7db380" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets</compoundname>
+    <innerdir refid="dir_a3ad183e6729aef947e71bb606126691">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/animimg</innerdir>
+    <innerdir refid="dir_8873bd118bd94723ee59026a7ed5af6e">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar</innerdir>
+    <innerdir refid="dir_11ec2745bae84dfb58603c9850ba4f88">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart</innerdir>
+    <innerdir refid="dir_936283e1bdf04bff5976dbd3140a7958">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/colorwheel</innerdir>
+    <innerdir refid="dir_f16d45216e60e7423535d4ad8b4f30a2">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/imgbtn</innerdir>
+    <innerdir refid="dir_f0f3ae1cdf18b63056cc2daf450e8d0b">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/keyboard</innerdir>
+    <innerdir refid="dir_93fc4c59c896b3f7f27d5d602d5605ea">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/led</innerdir>
+    <innerdir refid="dir_5ad1b259f98be96c1509149f4b65f4f9">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/list</innerdir>
+    <innerdir refid="dir_559a7baf5f6196a31ec7923fa58fce72">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/menu</innerdir>
+    <innerdir refid="dir_c3a52cc1ce4340871c46d9649cda8e98">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/meter</innerdir>
+    <innerdir refid="dir_7490e1c0a7b5c66102ba12e7bb438708">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/msgbox</innerdir>
+    <innerdir refid="dir_a6240247784f58b61b483be18a2fd3ae">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/span</innerdir>
+    <innerdir refid="dir_75b49f3ffa155055c81483f5a3689894">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/spinbox</innerdir>
+    <innerdir refid="dir_017707da6756003b11ee0ed26bc27345">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/spinner</innerdir>
+    <innerdir refid="dir_188a4c0cc357bf554300e57e1dadaca6">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/tabview</innerdir>
+    <innerdir refid="dir_2799b01acb1e71fa4eb62167bbf60d3e">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/tileview</innerdir>
+    <innerdir refid="dir_7c0d84e2f6e7fe8df66c19342685878c">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/win</innerdir>
+    <innerfile refid="lv__widgets_8h">lv_widgets.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/"/>
+  </compounddef>
+</doxygen>

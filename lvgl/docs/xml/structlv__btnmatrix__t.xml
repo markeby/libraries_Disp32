@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__btnmatrix__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_btnmatrix_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__btnmatrix__t_1a7396366477c5ee77ab0e9af1e827b795" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_btnmatrix_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="57" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__btnmatrix__t_1a33b1a3da68197f846dc18913c47ee3ee" prot="public" static="no" mutable="no">
+        <type>const char **</type>
+        <definition>const char** lv_btnmatrix_t::map_p</definition>
+        <argsstring></argsstring>
+        <name>map_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="58" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__btnmatrix__t_1a9a3e40816f9c98919abaeef3ee1bc856" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+        <definition>lv_area_t* lv_btnmatrix_t::button_areas</definition>
+        <argsstring></argsstring>
+        <name>button_areas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="59" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__btnmatrix__t_1ab865ffddd2801c2ba943368a6b7bbcf1" prot="public" static="no" mutable="no">
+        <type>lv_btnmatrix_ctrl_t *</type>
+        <definition>lv_btnmatrix_ctrl_t* lv_btnmatrix_t::ctrl_bits</definition>
+        <argsstring></argsstring>
+        <name>ctrl_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="60" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__btnmatrix__t_1a1331ad834db4e8fc6cb74e35b1348904" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_btnmatrix_t::btn_cnt</definition>
+        <argsstring></argsstring>
+        <name>btn_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="61" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__btnmatrix__t_1a427d6ebfb3bd75b0af4c19848755542c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_btnmatrix_t::row_cnt</definition>
+        <argsstring></argsstring>
+        <name>row_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="62" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__btnmatrix__t_1a8c603aac385ca527a7f8c7ec2e4ba250" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_btnmatrix_t::btn_id_sel</definition>
+        <argsstring></argsstring>
+        <name>btn_id_sel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="63" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__btnmatrix__t_1a8c3b78171bd12621bdb6edd9dc5ec570" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_btnmatrix_t::one_check</definition>
+        <argsstring></argsstring>
+        <name>one_check</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="64" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="1">
+        <label>lv_btnmatrix_t</label>
+        <link refid="structlv__btnmatrix__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>button_areas</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" line="56" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_btnmatrix.h" bodystart="56" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structlv__btnmatrix__t_1a1331ad834db4e8fc6cb74e35b1348904" prot="public" virt="non-virtual"><scope>lv_btnmatrix_t</scope><name>btn_cnt</name></member>
+      <member refid="structlv__btnmatrix__t_1a8c603aac385ca527a7f8c7ec2e4ba250" prot="public" virt="non-virtual"><scope>lv_btnmatrix_t</scope><name>btn_id_sel</name></member>
+      <member refid="structlv__btnmatrix__t_1a9a3e40816f9c98919abaeef3ee1bc856" prot="public" virt="non-virtual"><scope>lv_btnmatrix_t</scope><name>button_areas</name></member>
+      <member refid="structlv__btnmatrix__t_1ab865ffddd2801c2ba943368a6b7bbcf1" prot="public" virt="non-virtual"><scope>lv_btnmatrix_t</scope><name>ctrl_bits</name></member>
+      <member refid="structlv__btnmatrix__t_1a33b1a3da68197f846dc18913c47ee3ee" prot="public" virt="non-virtual"><scope>lv_btnmatrix_t</scope><name>map_p</name></member>
+      <member refid="structlv__btnmatrix__t_1a7396366477c5ee77ab0e9af1e827b795" prot="public" virt="non-virtual"><scope>lv_btnmatrix_t</scope><name>obj</name></member>
+      <member refid="structlv__btnmatrix__t_1a8c3b78171bd12621bdb6edd9dc5ec570" prot="public" virt="non-virtual"><scope>lv_btnmatrix_t</scope><name>one_check</name></member>
+      <member refid="structlv__btnmatrix__t_1a427d6ebfb3bd75b0af4c19848755542c" prot="public" virt="non-virtual"><scope>lv_btnmatrix_t</scope><name>row_cnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

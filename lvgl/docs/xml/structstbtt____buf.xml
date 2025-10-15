@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstbtt____buf" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt__buf</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt____buf_1a547bd8e6e0b950868f00e5ba27a80164" prot="public" static="no" mutable="no">
+        <type>STBTT_STREAM_TYPE</type>
+        <definition>STBTT_STREAM_TYPE stbtt__buf::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" line="546" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt____buf_1a475d8735c6fe1c75e3034d70ab897d26" prot="public" static="no" mutable="no">
+        <type>stbtt_uint32</type>
+        <definition>stbtt_uint32 stbtt__buf::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" line="547" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt____buf_1a376d8cdacbc8295a7e88567ad52a0ac4" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* stbtt__buf::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" line="549" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt____buf_1ac047fda650726920531272c28aa354fb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt__buf::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" line="551" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt____buf_1a0f6f2d06981ab4a5697233bbd0cafb5b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt__buf::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" line="552" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" line="544" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h" bodystart="544" bodyend="553"/>
+    <listofallmembers>
+      <member refid="structstbtt____buf_1ac047fda650726920531272c28aa354fb" prot="public" virt="non-virtual"><scope>stbtt__buf</scope><name>cursor</name></member>
+      <member refid="structstbtt____buf_1a547bd8e6e0b950868f00e5ba27a80164" prot="public" virt="non-virtual"><scope>stbtt__buf</scope><name>data</name></member>
+      <member refid="structstbtt____buf_1a376d8cdacbc8295a7e88567ad52a0ac4" prot="public" virt="non-virtual"><scope>stbtt__buf</scope><name>data</name></member>
+      <member refid="structstbtt____buf_1a475d8735c6fe1c75e3034d70ab897d26" prot="public" virt="non-virtual"><scope>stbtt__buf</scope><name>offset</name></member>
+      <member refid="structstbtt____buf_1a0f6f2d06981ab4a5697233bbd0cafb5b" prot="public" virt="non-virtual"><scope>stbtt__buf</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_da7a00ddfc6553d5135dd14f05570ba8" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/themes</compoundname>
+    <innerdir refid="dir_84b7bceeb8679bb485f9cad6dc1e3e00">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/themes/basic</innerdir>
+    <innerdir refid="dir_e39b03300741c12d9204ee3e8d12dd3f">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/themes/default</innerdir>
+    <innerdir refid="dir_8bb137b5469ca6bbf3bd5c25efb36032">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/themes/mono</innerdir>
+    <innerfile refid="lv__themes_8h">lv_themes.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/themes/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_c69fd5ade0cb8088a158f93e20e74c45" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/layouts</compoundname>
+    <innerdir refid="dir_a643ba6f8f3e1a3920ac978bb57b9b28">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/layouts/flex</innerdir>
+    <innerdir refid="dir_6f20dc7c07a5224f3d28935b5b0b530e">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/layouts/grid</innerdir>
+    <innerfile refid="lv__example__layout_8h">lv_example_layout.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/layouts/"/>
+  </compounddef>
+</doxygen>

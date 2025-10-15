@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__font__fmt__txt__glyph__cache__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_font_fmt_txt_glyph_cache_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__font__fmt__txt__glyph__cache__t_1aaa270718fdb2990d77b3223a744ea226" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_font_fmt_txt_glyph_cache_t::last_letter</definition>
+        <argsstring></argsstring>
+        <name>last_letter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font_fmt_txt.h" line="155" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font_fmt_txt.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__font__fmt__txt__glyph__cache__t_1a0ae99ecbea99a26458fc02dc716ad459" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_font_fmt_txt_glyph_cache_t::last_glyph_id</definition>
+        <argsstring></argsstring>
+        <name>last_glyph_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font_fmt_txt.h" line="156" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font_fmt_txt.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font_fmt_txt.h" line="154" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/font/lv_font_fmt_txt.h" bodystart="154" bodyend="157"/>
+    <listofallmembers>
+      <member refid="structlv__font__fmt__txt__glyph__cache__t_1a0ae99ecbea99a26458fc02dc716ad459" prot="public" virt="non-virtual"><scope>lv_font_fmt_txt_glyph_cache_t</scope><name>last_glyph_id</name></member>
+      <member refid="structlv__font__fmt__txt__glyph__cache__t_1aaa270718fdb2990d77b3223a744ea226" prot="public" virt="non-virtual"><scope>lv_font_fmt_txt_glyph_cache_t</scope><name>last_letter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_2mnt_2c_2Users_2markeby_2Documents_2Arduino_2libraries_2lvgl_2src_2misc_2lv_style_8h-example" kind="example">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Register a new style property for custom usage <simplesect kind="return"><para>a new property ID, or LV_STYLE_PROP_INV if there are no more available.</para>
+</simplesect>
+lv_style_prop_t MY_PROP; static inline void lv_style_set_my_prop(lv_style_t * style, lv_color_t value) { <ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref> v = {.color = value}; lv_style_set_prop(style, MY_PROP, v); }</para>
+<para>... MY_PROP = lv_style_register_prop(); ... lv_style_set_my_prop(&amp;style1, lv_palette_main(LV_PALETTE_RED)); <programlisting filename="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h"><codeline></codeline>
+<codeline><highlight class="preprocessor">#ifndef<sp/>LV_STYLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../font/lv_font.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__color_8h" kindref="compound">lv_color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__area_8h" kindref="compound">lv_area.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__anim_8h" kindref="compound">lv_anim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__txt_8h" kindref="compound">lv_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__types_8h" kindref="compound">lv_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__assert_8h" kindref="compound">lv_assert.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__bidi_8h" kindref="compound">lv_bidi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_SENTINEL_VALUE<sp/><sp/><sp/><sp/><sp/>0xAABBCCDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_FLAG_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_INHERIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/><sp/></highlight><highlight class="comment">/*Inherited*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_EXT_DRAW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/><sp/></highlight><highlight class="comment">/*Requires<sp/>ext.<sp/>draw<sp/>size<sp/>update<sp/>when<sp/>changed*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_LAYOUT_REFR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/><sp/></highlight><highlight class="comment">/*Requires<sp/>layout<sp/>update<sp/>when<sp/>changed*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_PARENT_LAYOUT_REFR<sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)<sp/><sp/></highlight><highlight class="comment">/*Requires<sp/>layout<sp/>update<sp/>on<sp/>parent<sp/>when<sp/>changed*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_LAYER_REFR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>4)<sp/><sp/></highlight><highlight class="comment">/*Affects<sp/>layer<sp/>handling*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Indicating<sp/>all<sp/>flags*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="preprocessor">#define<sp/>LV_IMG_ZOOM_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Value<sp/>for<sp/>not<sp/>zooming<sp/>the<sp/>image*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">LV_EXPORT_CONST_INT(LV_IMG_ZOOM_NONE);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>*INDENT-OFF*</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_ASSERT_STYLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_CONST_INIT(var_name,<sp/>prop_array)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>lv_style_t<sp/>var_name<sp/>=<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.sentinel<sp/>=<sp/>LV_STYLE_SENTINEL_VALUE,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.v_p<sp/>=<sp/>{<sp/>.const_props<sp/>=<sp/>prop_array<sp/>},<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.has_group<sp/>=<sp/>0xFF,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.prop1<sp/>=<sp/>LV_STYLE_PROP_ANY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.prop_cnt<sp/>=<sp/>(sizeof(prop_array)<sp/>/<sp/>sizeof((prop_array)[0])),<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_CONST_INIT(var_name,<sp/>prop_array)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>lv_style_t<sp/>var_name<sp/>=<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.v_p<sp/>=<sp/>{<sp/>.const_props<sp/>=<sp/>prop_array<sp/>},<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.has_group<sp/>=<sp/>0xFF,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.prop1<sp/>=<sp/>LV_STYLE_PROP_ANY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.prop_cnt<sp/>=<sp/>(sizeof(prop_array)<sp/>/<sp/>sizeof((prop_array)[0])),<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>*INDENT-ON*</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_META_INHERIT<sp/>0x8000</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_META_INITIAL<sp/>0x4000</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_META_MASK<sp/>(LV_STYLE_PROP_META_INHERIT<sp/>|<sp/>LV_STYLE_PROP_META_INITIAL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STYLE_PROP_ID_MASK(prop)<sp/>((lv_style_prop_t)((prop)<sp/>&amp;<sp/>~LV_STYLE_PROP_META_MASK))</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3aad57a0fd5e04f5691d8f417ee5434b7e" kindref="member">LV_BLEND_MODE_NORMAL</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3aa35a45cbb14d375c4456ca9fa0bb738c" kindref="member">LV_BLEND_MODE_ADDITIVE</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a632a80f5de7303b6f69c97dde652ac75" kindref="member">LV_BLEND_MODE_SUBTRACTIVE</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a4ebd0867a05fc12d714a937bbcfaa91e" kindref="member">LV_BLEND_MODE_MULTIPLY</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a2f80701c36e79c0640d91c788feee0b3a29d36360b69dffbc1d9154f953381afd" kindref="member">LV_BLEND_MODE_REPLACE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_blend_mode_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_TEXT_DECOR_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_TEXT_DECOR_UNDERLINE<sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_TEXT_DECOR_STRIKETHROUGH<sp/>=<sp/>0x02,</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_text_decor_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_NONE<sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_BOTTOM<sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_TOP<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_LEFT<sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_RIGHT<sp/><sp/><sp/><sp/>=<sp/>0x08,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_BORDER_SIDE_FULL<sp/><sp/><sp/><sp/><sp/>=<sp/>0x0F,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a9334a5b9057f32da96db9b5c6a045d67ae90b8d5d4dd0b95b34b42faa13e813a1" kindref="member">LV_BORDER_SIDE_INTERNAL</ref><sp/>=<sp/>0x10,<sp/></highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_border_side_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a60a3da887d76575265882bdf7be3e3ae" kindref="member">LV_GRAD_DIR_NONE</ref>,<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a213ea9c1af983a3b7d4dbe131e30ec67" kindref="member">LV_GRAD_DIR_VER</ref>,<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a8628933cde20921c453a6d2607bdad62a79ffa390d3d116ed50fd14551298ddc2" kindref="member">LV_GRAD_DIR_HOR</ref>,<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_grad_dir_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260a02582eae16823f771c18e07455d3464c" kindref="member">LV_DITHER_NONE</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260a9fa39743532b7075d9ccbef81e06458e" kindref="member">LV_DITHER_ORDERED</ref>,<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1ade9ca5088d171ad20b4c237f1c2d6260ac914ec43ff59c9e73de5d7ef51cd0857" kindref="member">LV_DITHER_ERR_DIFF</ref>,<sp/></highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_dither_mode_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/>color;<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/>frac;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">}<sp/><ref refid="structlv__gradient__stop__t" kindref="compound">lv_gradient_stop_t</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__gradient__stop__t" kindref="compound">lv_gradient_stop_t</ref><sp/><sp/><sp/>stops[LV_GRADIENT_MAX_STOPS];<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stops_count;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_grad_dir_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir<sp/>:<sp/>3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_dither_mode_t<sp/><sp/><sp/><sp/><sp/>dither<sp/>:<sp/>3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">}<sp/><ref refid="structlv__grad__dsc__t" kindref="compound">lv_grad_dsc_t</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>num;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptr;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/>color;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">}<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PROP_INV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>0*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_MIN_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_MAX_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_MIN_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_MAX_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_Y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ALIGN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LAYOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_RADIUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>1*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_TOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>16,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_BOTTOM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>17,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_LEFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>18,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_RIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>19,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_ROW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PAD_COLUMN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>21,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BASE_DIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>22,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_CLIP_CORNER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>23,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>2*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>32,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>33,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_GRAD_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>34,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_GRAD_DIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>35,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_MAIN_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>36,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_GRAD_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>37,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_GRAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>38,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_DITHER_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>39,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_SRC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>40,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>41,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_RECOLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>42,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_RECOLOR_OPA<sp/><sp/><sp/><sp/><sp/>=<sp/>43,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BG_IMG_TILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>44,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>3*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>48,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>49,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>50,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_SIDE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>51,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BORDER_POST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>52,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OUTLINE_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>53,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OUTLINE_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>54,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OUTLINE_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>55,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OUTLINE_PAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>56,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>4*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>64,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_OFS_X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>65,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_OFS_Y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>66,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_SPREAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>67,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>68,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_SHADOW_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>69,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_IMG_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>70,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_IMG_RECOLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>71,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_IMG_RECOLOR_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>72,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>73,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_DASH_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>74,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_DASH_GAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>75,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_ROUNDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>76,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>77,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_LINE_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>78,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>5*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>80,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_ROUNDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>81,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>82,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>83,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ARC_IMG_SRC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>84,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>85,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>86,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_FONT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>87,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_LETTER_SPACE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>88,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_LINE_SPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>89,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_DECOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>90,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TEXT_ALIGN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>91,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Group<sp/>6*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>96,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_OPA_LAYERED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>97,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_COLOR_FILTER_DSC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>98,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_COLOR_FILTER_OPA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>99,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ANIM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>100,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ANIM_TIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>101,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_ANIM_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>102,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSITION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>103,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_BLEND_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>104,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>105,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>106,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSLATE_X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>107,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSLATE_Y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>108,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_ZOOM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>109,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_ANGLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>110,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_PIVOT_X<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>111,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_TRANSFORM_PIVOT_Y<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>112,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_LAST_BUILT_IN_PROP<sp/><sp/><sp/><sp/><sp/>=<sp/>112,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_NUM_BUILT_IN_PROPS<sp/><sp/><sp/><sp/><sp/>=<sp/>_LV_STYLE_LAST_BUILT_IN_PROP<sp/>+<sp/>1,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_PROP_ANY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFFFF,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_STYLE_PROP_CONST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFFFF<sp/></highlight><highlight class="comment">/*<sp/>magic<sp/>value<sp/>for<sp/>const<sp/>styles<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_RES_NOT_FOUND,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_RES_FOUND,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LV_STYLE_RES_INHERIT</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_style_res_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>*<sp/>props;<sp/></highlight></codeline>
+<codeline><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__anim_8h_1a32c487fbcd8daa37b095ddc4a34630ac" kindref="member">lv_anim_path_cb_t</ref><sp/>path_xcb;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>time;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>delay;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">}<sp/><ref refid="structlv__style__transition__dsc__t" kindref="compound">lv_style_transition_dsc_t</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>value;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/><ref refid="structlv__style__const__prop__t" kindref="compound">lv_style_const_prop_t</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_ASSERT_STYLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sentinel;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*If<sp/>there<sp/>is<sp/>only<sp/>one<sp/>property<sp/>store<sp/>it<sp/>directly.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*For<sp/>more<sp/>properties<sp/>allocate<sp/>an<sp/>array*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>value1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*<sp/>values_and_props;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__const__prop__t" kindref="compound">lv_style_const_prop_t</ref><sp/>*<sp/>const_props;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>v_p;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>prop1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>has_group;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>prop_cnt;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a327db2c3050bd2d1a1693aa6981205dd" kindref="member">lv_style_init</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1afd91dc8011c22491bae7010959267741" kindref="member">lv_style_reset</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>lv_style_register_prop(uint8_t<sp/>flag);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/><ref refid="lv__style_8h_1aa04566bb5235a758912e3cb46a21d2e4" kindref="member">lv_style_get_num_custom_props</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a7d2d6138592056144847db78feba2320" kindref="member">lv_style_remove_prop</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a29e7e4bbafc2bcc964bbff48942d894c" kindref="member">lv_style_set_prop</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a0e8a0d11e2d01d58ac1262fabb01c46d" kindref="member">lv_style_set_prop_meta</ref>(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/>uint16_t<sp/>meta);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">lv_style_res_t<sp/><ref refid="lv__style_8h_1a3d1f0f0816bf24c58ea748ee38fb4a2e" kindref="member">lv_style_get_prop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_transition_dsc_init(<ref refid="structlv__style__transition__dsc__t" kindref="compound">lv_style_transition_dsc_t</ref><sp/>*<sp/>tr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>props[],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lv__anim_8h_1a32c487fbcd8daa37b095ddc4a34630ac" kindref="member">lv_anim_path_cb_t</ref><sp/>path_cb,<sp/>uint32_t<sp/>time,<sp/>uint32_t<sp/>delay,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/><ref refid="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" kindref="member">lv_style_prop_get_default</ref>(<ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_style_res_t<sp/>lv_style_get_prop_inlined(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*<sp/>value)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(style-&gt;prop1<sp/>==<sp/>LV_STYLE_PROP_ANY)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__const__prop__t" kindref="compound">lv_style_const_prop_t</ref><sp/>*<sp/>const_prop;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>style-&gt;prop_cnt;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const_prop<sp/>=<sp/>style-&gt;v_p.const_props<sp/>+<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop_id<sp/>=<sp/>LV_STYLE_PROP_ID_MASK(const_prop-&gt;prop);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prop_id<sp/>==<sp/>prop)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(const_prop-&gt;prop<sp/>&amp;<sp/>LV_STYLE_PROP_META_INHERIT)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_INHERIT;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*value<sp/>=<sp/>(const_prop-&gt;prop<sp/>&amp;<sp/>LV_STYLE_PROP_META_INITIAL)<sp/>?<sp/><ref refid="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" kindref="member">lv_style_prop_get_default</ref>(prop_id)<sp/>:<sp/>const_prop-&gt;value;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_FOUND;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_NOT_FOUND;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(style-&gt;prop_cnt<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_NOT_FOUND;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(style-&gt;prop_cnt<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*<sp/>tmp<sp/>=<sp/>style-&gt;v_p.values_and_props<sp/>+<sp/>style-&gt;prop_cnt<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>*<sp/>props<sp/>=<sp/>(uint16_t<sp/>*)tmp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>style-&gt;prop_cnt;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop_id<sp/>=<sp/>LV_STYLE_PROP_ID_MASK(props[i]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prop_id<sp/>==<sp/>prop)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(props[i]<sp/>&amp;<sp/>LV_STYLE_PROP_META_INHERIT)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_INHERIT;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(props[i]<sp/>&amp;<sp/>LV_STYLE_PROP_META_INITIAL)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*value<sp/>=<sp/><ref refid="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" kindref="member">lv_style_prop_get_default</ref>(prop_id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*<sp/>values<sp/>=<sp/>(<ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>*)style-&gt;v_p.values_and_props;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*value<sp/>=<sp/>values[i];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_FOUND;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(LV_STYLE_PROP_ID_MASK(style-&gt;prop1)<sp/>==<sp/>prop)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(style-&gt;prop1<sp/>&amp;<sp/>LV_STYLE_PROP_META_INHERIT)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_INHERIT;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*value<sp/>=<sp/>(style-&gt;prop1<sp/>&amp;<sp/>LV_STYLE_PROP_META_INITIAL)<sp/>?<sp/><ref refid="lv__style_8h_1ac0c2eb5a726aea484d0254282be82538" kindref="member">lv_style_prop_get_default</ref>(LV_STYLE_PROP_ID_MASK(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style-&gt;prop1))<sp/>:<sp/>style-&gt;v_p.value1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_FOUND;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LV_STYLE_RES_NOT_FOUND;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a3343d3e8d42132d6e280b80f0995eb64" kindref="member">lv_style_is_empty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/><ref refid="lv__style_8h_1a2843a91a10d17b909ac91509449a279c" kindref="member">_lv_style_get_prop_group</ref>(<ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/><ref refid="lv__style_8h_1a2ac9ea9edea707f93ffeea47508f5adb" kindref="member">_lv_style_prop_lookup_flags</ref>(<ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lv_style_gen.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_size(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_width(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_height(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_pad_all(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_left(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_right(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_top(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_bottom(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_pad_hor(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_left(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_right(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_pad_ver(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_top(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_bottom(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_pad_gap(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_coord_t<sp/>value)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_row(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lv_style_set_pad_column(style,<sp/>value);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lv_style_prop_has_flag(<ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>prop,<sp/>uint8_t<sp/>flag)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a2ac9ea9edea707f93ffeea47508f5adb" kindref="member">_lv_style_prop_lookup_flags</ref>(prop)<sp/>&amp;<sp/>flag;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*************************</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>GLOBAL<sp/>VARIABLES</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_ASSERT_STYLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LV_ASSERT_STYLE(style_p)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LV_ASSERT_MSG(style_p<sp/>!=<sp/>NULL,<sp/>&quot;The<sp/>style<sp/>is<sp/>NULL&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LV_ASSERT_MSG(style_p-&gt;sentinel<sp/>==<sp/>LV_STYLE_SENTINEL_VALUE,<sp/>&quot;Style<sp/>is<sp/>not<sp/>initialized<sp/>or<sp/>corrupted&quot;);<sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LV_ASSERT_STYLE(p)<sp/>do{}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_STYLE_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

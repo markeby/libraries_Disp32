@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__gpu__stm32__dma2d_8h" kind="file" language="C++">
+    <compoundname>lv_gpu_stm32_dma2d.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__gpu__stm32__dma2d_8h_1a8c351f41aa9ac1683ac3159e981d0343" prot="public" static="no" strong="no">
+        <type></type>
+        <name>dma2d_color_format</name>
+        <enumvalue id="lv__gpu__stm32__dma2d_8h_1a8c351f41aa9ac1683ac3159e981d0343af540c373a71dee269827b0d12026de80" prot="public">
+          <name>ARGB8888</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__gpu__stm32__dma2d_8h_1a8c351f41aa9ac1683ac3159e981d0343acbcf87c79628b8c7fed02f39f7cbd15f" prot="public">
+          <name>RGB888</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__gpu__stm32__dma2d_8h_1a8c351f41aa9ac1683ac3159e981d0343a183737a1f19f772782bc5e24cfd662e7" prot="public">
+          <name>RGB565</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__gpu__stm32__dma2d_8h_1a8c351f41aa9ac1683ac3159e981d0343a66e27c375f215479d72627409ae54441" prot="public">
+          <name>ARGB1555</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__gpu__stm32__dma2d_8h_1a8c351f41aa9ac1683ac3159e981d0343aea426a787765b5d248202ab4c2373993" prot="public">
+          <name>ARGB4444</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__gpu__stm32__dma2d_8h_1a8c351f41aa9ac1683ac3159e981d0343af3ba956cfc94b23b44487413b27c646a" prot="public">
+          <name>A8</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__gpu__stm32__dma2d_8h_1a8c351f41aa9ac1683ac3159e981d0343adb29f51e8818eebf58eaf92ba47467c9" prot="public">
+          <name>UNSUPPORTED</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="41" column="24" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" bodystart="41" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__gpu__stm32__dma2d_8h_1ad829f909de20d2b6f2763f1ca1a04479" prot="public" static="no">
+        <type>enum dma2d_color_format</type>
+        <definition>typedef enum dma2d_color_format dma2d_color_format_t</definition>
+        <argsstring></argsstring>
+        <name>dma2d_color_format_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="1" column="0" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__gpu__stm32__dma2d_8h_1a70cb9a89ac6493daa67054895b41b0bd" prot="public" static="no">
+        <type><ref refid="structlv__draw__sw__ctx__t" kindref="compound">lv_draw_sw_ctx_t</ref></type>
+        <definition>typedef lv_draw_sw_ctx_t lv_draw_stm32_dma2d_ctx_t</definition>
+        <argsstring></argsstring>
+        <name>lv_draw_stm32_dma2d_ctx_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="51" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__gpu__stm32__dma2d_8h_1abbde5c86f6935dc10c7ba4161f36d664" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_stm32_dma2d_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_draw_stm32_dma2d_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="57" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__stm32__dma2d_8h_1a8e0a08ea7a4bc6d1551fb95b75ff480a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_stm32_dma2d_ctx_init</definition>
+        <argsstring>(struct _lv_disp_drv_t *drv, lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>lv_draw_stm32_dma2d_ctx_init</name>
+        <param>
+          <type>struct <ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref> *</type>
+          <declname>drv</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="58" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__stm32__dma2d_8h_1a8fd9f2313f2f14ef7ca140c0f5bec042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_draw_stm32_dma2d_ctx_deinit</definition>
+        <argsstring>(struct _lv_disp_drv_t *drv, lv_draw_ctx_t *draw_ctx)</argsstring>
+        <name>lv_draw_stm32_dma2d_ctx_deinit</name>
+        <param>
+          <type>struct <ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref> *</type>
+          <declname>drv</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+          <declname>draw_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="59" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__stm32__dma2d_8h_1aac2aa465c4a6186101114554ac83e1cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_draw_stm32_dma2d_copy_buffer</definition>
+        <argsstring>(const lv_color_t *dest_buf, lv_coord_t dest_stride, const lv_area_t *draw_area, const lv_color_t *src_buf, lv_coord_t src_stride, const lv_point_t *src_offset)</argsstring>
+        <name>_lv_draw_stm32_dma2d_copy_buffer</name>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>dest_buf</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>dest_stride</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>draw_area</declname>
+        </param>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>src_buf</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>src_stride</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+          <declname>src_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="60" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__stm32__dma2d_8h_1a2c79ae5bf437e24a907f3eaefd9e8bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_gpu_stm32_dma2d_invalidate_cache</definition>
+        <argsstring>(uint32_t address, lv_coord_t offset, lv_coord_t width, lv_coord_t height, uint8_t pixel_size)</argsstring>
+        <name>_lv_gpu_stm32_dma2d_invalidate_cache</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>pixel_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="64" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__gpu__stm32__dma2d_8h_1aced4c88292449e097cf6c5b2d26337b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_gpu_stm32_dma2d_clean_cache</definition>
+        <argsstring>(uint32_t address, lv_coord_t offset, lv_coord_t width, lv_coord_t height, uint8_t pixel_size)</argsstring>
+        <name>_lv_gpu_stm32_dma2d_clean_cache</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>pixel_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" line="66" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h" declline="66" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_GPU_STM32_DMA2D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_GPU_STM32_DMA2D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../misc/lv_color.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../hal/lv_hal_disp.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../sw/lv_draw_sw.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_GPU_STM32_DMA2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>LV_GPU_DMA2D_CMSIS_INCLUDE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LV_STM32_DMA2D_TEST)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>removes<sp/>&quot;static&quot;<sp/>modifier<sp/>for<sp/>some<sp/>internal<sp/>methods<sp/>in<sp/>order<sp/>to<sp/>test<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STM32_DMA2D_STATIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STM32_DMA2D_STATIC<sp/>static</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__DCACHE_PRESENT)<sp/>&amp;&amp;<sp/>(__DCACHE_PRESENT<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_STM32_DMA2D_USE_M7_CACHE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>dma2d_color_format<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ARGB8888<sp/>=<sp/>0x0,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>RGB888<sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>RGB565<sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>ARGB1555<sp/>=<sp/>0x03,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>ARGB4444<sp/>=<sp/>0x04,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>A8<sp/>=<sp/>0x09,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>UNSUPPORTED<sp/>=<sp/>0xff,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>dma2d_color_format<sp/>dma2d_color_format_t;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__sw__ctx__t" kindref="compound">lv_draw_sw_ctx_t</ref><sp/><ref refid="structlv__draw__sw__ctx__t" kindref="compound">lv_draw_stm32_dma2d_ctx_t</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_stm32_dma2d_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_stm32_dma2d_ctx_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>drv,<sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_draw_stm32_dma2d_ctx_deinit(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__disp__drv__t" kindref="compound">_lv_disp_drv_t</ref><sp/>*<sp/>drv,<sp/><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref><sp/>*<sp/>draw_ctx);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_lv_draw_stm32_dma2d_copy_buffer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>dest_buf,<sp/>lv_coord_t<sp/>dest_stride,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>draw_area,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>src_buf,<sp/>lv_coord_t<sp/>src_stride,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>src_offset);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(LV_STM32_DMA2D_USE_M7_CACHE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_lv_gpu_stm32_dma2d_invalidate_cache(uint32_t<sp/>address,<sp/>lv_coord_t<sp/>offset,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>width,<sp/>lv_coord_t<sp/>height,<sp/>uint8_t<sp/>pixel_size);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_lv_gpu_stm32_dma2d_clean_cache(uint32_t<sp/>address,<sp/>lv_coord_t<sp/>offset,<sp/>lv_coord_t<sp/>width,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>height,<sp/>uint8_t<sp/>pixel_size);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*LV_USE_GPU_STM32_DMA2D*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_GPU_STM32_DMA2D_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h"/>
+  </compounddef>
+</doxygen>

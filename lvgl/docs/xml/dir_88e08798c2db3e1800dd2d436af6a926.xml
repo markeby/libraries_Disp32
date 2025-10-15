@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_88e08798c2db3e1800dd2d436af6a926" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp</compoundname>
+    <innerdir refid="dir_00fd930c924f8d1f7ef79a8fbf752077">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/pxp</innerdir>
+    <innerdir refid="dir_44e3d63b3898fef886580dd7bc8678d2">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/"/>
+  </compounddef>
+</doxygen>

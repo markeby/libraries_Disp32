@@ -1,0 +1,870 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__flex_8h" kind="file" language="C++">
+    <compoundname>lv_flex.h</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__flex_8h_1a66b5aed9b72f4e6a3a366f80619425ab" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_flex_align_t</name>
+        <enumvalue id="lv__flex_8h_1a66b5aed9b72f4e6a3a366f80619425abaeafe4002609e09b8de2219937484aaa5" prot="public">
+          <name>LV_FLEX_ALIGN_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1a66b5aed9b72f4e6a3a366f80619425aba721da3ab71e6e4b7bd088f5d2726f4fd" prot="public">
+          <name>LV_FLEX_ALIGN_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1a66b5aed9b72f4e6a3a366f80619425abac7d41c560d833fc0229f228667e134e3" prot="public">
+          <name>LV_FLEX_ALIGN_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1a66b5aed9b72f4e6a3a366f80619425aba21cc37837d0f143f3ca5e9b291d8fd8d" prot="public">
+          <name>LV_FLEX_ALIGN_SPACE_EVENLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1a66b5aed9b72f4e6a3a366f80619425ababad8cd0623f0eaafb3af6b7231076c50" prot="public">
+          <name>LV_FLEX_ALIGN_SPACE_AROUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1a66b5aed9b72f4e6a3a366f80619425abadda09496ae42f687d98b12a16e6e2d3b" prot="public">
+          <name>LV_FLEX_ALIGN_SPACE_BETWEEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="37" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_flex_flow_t</name>
+        <enumvalue id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187a587bbc811c2b2a15c4f8a5d57654acd0" prot="public">
+          <name>LV_FLEX_FLOW_ROW</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187aa5d3d8faeb677348ac8ce95347a8f507" prot="public">
+          <name>LV_FLEX_FLOW_COLUMN</name>
+          <initializer>= _LV_FLEX_COLUMN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187ab2bfb7ee0fbaa3c9f7fec543cf3d7f38" prot="public">
+          <name>LV_FLEX_FLOW_ROW_WRAP</name>
+          <initializer>= LV_FLEX_FLOW_ROW | _LV_FLEX_WRAP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187a706bb2452fb3383f959e879828a412dd" prot="public">
+          <name>LV_FLEX_FLOW_ROW_REVERSE</name>
+          <initializer>= LV_FLEX_FLOW_ROW | _LV_FLEX_REVERSE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187a8e7cdea944e48fa83b40c61cc12b6c4b" prot="public">
+          <name>LV_FLEX_FLOW_ROW_WRAP_REVERSE</name>
+          <initializer>= LV_FLEX_FLOW_ROW | _LV_FLEX_WRAP | _LV_FLEX_REVERSE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187aeb0396d6751beaf26ad4c92533fb83d9" prot="public">
+          <name>LV_FLEX_FLOW_COLUMN_WRAP</name>
+          <initializer>= LV_FLEX_FLOW_COLUMN | _LV_FLEX_WRAP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187a7035ac84bbd4aacf43b8e801422a8c78" prot="public">
+          <name>LV_FLEX_FLOW_COLUMN_REVERSE</name>
+          <initializer>= LV_FLEX_FLOW_COLUMN | _LV_FLEX_REVERSE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__flex_8h_1aa591169a4b8b936b35e3e9fc84d3a187af4d45ff09fe026c49422b2d1d222af72" prot="public">
+          <name>LV_FLEX_FLOW_COLUMN_WRAP_REVERSE</name>
+          <initializer>= LV_FLEX_FLOW_COLUMN | _LV_FLEX_WRAP | _LV_FLEX_REVERSE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="46" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" bodystart="46" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__flex_8h_1ac6e849ced3f8c6c75dc758f25ac9979d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LV_LAYOUT_FLEX</definition>
+        <argsstring></argsstring>
+        <name>LV_LAYOUT_FLEX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="60" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="60" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__flex_8h_1a94c2f9434a821701a63b4352c51e7c1d" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_FLEX_FLOW</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_FLEX_FLOW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="61" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="61" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__flex_8h_1abf7893d5c6892f827625188d7cc82eeb" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_FLEX_MAIN_PLACE</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_FLEX_MAIN_PLACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="62" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="62" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__flex_8h_1afbd141557d590d83e2a53f2aeccbb78a" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_FLEX_CROSS_PLACE</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_FLEX_CROSS_PLACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="63" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="63" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__flex_8h_1a72a7b499fcf6fdd24cfe95515163ec9f" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_FLEX_TRACK_PLACE</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_FLEX_TRACK_PLACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="64" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="64" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="lv__flex_8h_1ad2de1ff10fd59340f57bb14b9cd74ccd" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref></type>
+        <definition>lv_style_prop_t LV_STYLE_FLEX_GROW</definition>
+        <argsstring></argsstring>
+        <name>LV_STYLE_FLEX_GROW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="65" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="65" declcolumn="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__flex_8h_1ab5077c097ccf2f94b31049c3fd04a13e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LV_EXPORT_CONST_INT</definition>
+        <argsstring>(LV_OBJ_FLAG_FLEX_IN_NEW_TRACK)</argsstring>
+        <name>LV_EXPORT_CONST_INT</name>
+        <param>
+          <type>LV_OBJ_FLAG_FLEX_IN_NEW_TRACK</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="24" column="1" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="24" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1adc17494d2a747e76966581dced09fd74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_flex_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_flex_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a flex layout the default values <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a flex layout descriptor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="75" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="75" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1afe0e90502eefb9f215b641a818bceb50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_flex_flow</definition>
+        <argsstring>(lv_obj_t *obj, lv_flex_flow_t flow)</argsstring>
+        <name>lv_obj_set_flex_flow</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_flex_flow_t</type>
+          <declname>flow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set hot the item should flow <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a flex layout descriptor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an element of <computeroutput>lv_flex_flow_t</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="82" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1a738059b5970caa4a6fbaa925e692c2df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_flex_align</definition>
+        <argsstring>(lv_obj_t *obj, lv_flex_align_t main_place, lv_flex_align_t cross_place, lv_flex_align_t track_cross_place)</argsstring>
+        <name>lv_obj_set_flex_align</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>main_place</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>cross_place</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>track_cross_place</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set how to place (where to align) the items and tracks <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer: to a flex layout descriptor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>main_place</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to place the items on main axis (in their track). Any value of <computeroutput>lv_flex_align_t</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cross_place</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to place the item in their track on the cross axis. <computeroutput>LV_FLEX_ALIGN_START/END/CENTER</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>track_place</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to place the tracks in the cross direction. Any value of <computeroutput>lv_flex_align_t</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="91" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="91" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1a5aa092bfcef60f9e61eb84b66c266878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_flex_grow</definition>
+        <argsstring>(lv_obj_t *obj, uint8_t grow)</argsstring>
+        <name>lv_obj_set_flex_grow</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>grow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the width or height (on main axis) to grow the object in order fill the free space <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object. The parent must have flex layout else nothing will happen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a value to set how much free space to take proportionally to other growing items. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="99" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="99" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1afc8290e7bbf9df2fe6dfc8ff18b7e36a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_flex_flow</definition>
+        <argsstring>(lv_style_t *style, lv_flex_flow_t value)</argsstring>
+        <name>lv_style_set_flex_flow</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_flex_flow_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="101" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="101" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1ae2db65defb6316bcac5e1316accbcdab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_flex_main_place</definition>
+        <argsstring>(lv_style_t *style, lv_flex_align_t value)</argsstring>
+        <name>lv_style_set_flex_main_place</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="102" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="102" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1a502cd7f75f4ceab5d6903f5680173c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_flex_cross_place</definition>
+        <argsstring>(lv_style_t *style, lv_flex_align_t value)</argsstring>
+        <name>lv_style_set_flex_cross_place</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="103" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="103" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1a364102c949ec1973218bc804d92c7590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_flex_track_place</definition>
+        <argsstring>(lv_style_t *style, lv_flex_align_t value)</argsstring>
+        <name>lv_style_set_flex_track_place</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="104" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1adc0fcc295a5b244667955584ed09ceda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_style_set_flex_grow</definition>
+        <argsstring>(lv_style_t *style, uint8_t value)</argsstring>
+        <name>lv_style_set_flex_grow</name>
+        <param>
+          <type><ref refid="structlv__style__t" kindref="compound">lv_style_t</ref> *</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="105" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="105" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1a558ca369ea4fe2b35959e5d06143ca7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_flex_flow</definition>
+        <argsstring>(lv_obj_t *obj, lv_flex_flow_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_flex_flow</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_flex_flow_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="106" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="106" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1a98c850945fdc21610a783484eba8b60e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_flex_main_place</definition>
+        <argsstring>(lv_obj_t *obj, lv_flex_align_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_flex_main_place</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="107" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="107" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1af622908bd7135ca054bae03c2b6f81f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_flex_cross_place</definition>
+        <argsstring>(lv_obj_t *obj, lv_flex_align_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_flex_cross_place</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="108" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="108" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1ae41110e75313f908edb93e8786e4bdd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_flex_track_place</definition>
+        <argsstring>(lv_obj_t *obj, lv_flex_align_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_flex_track_place</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_flex_align_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="109" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="109" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1ace0240cd1bed7d0fb783babf431705d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_style_flex_grow</definition>
+        <argsstring>(lv_obj_t *obj, uint8_t value, lv_style_selector_t selector)</argsstring>
+        <name>lv_obj_set_style_flex_grow</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>lv_style_selector_t</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="110" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" declline="110" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1aae3036ad66f9309b3b2e5480295fb6b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_flex_flow_t</type>
+        <definition>static lv_flex_flow_t lv_obj_get_style_flex_flow</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_flex_flow</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="112" column="30" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1ae0abc1076ea201fca5c3706330684233" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_flex_align_t</type>
+        <definition>static lv_flex_align_t lv_obj_get_style_flex_main_place</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_flex_main_place</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="118" column="31" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1a2c28e578e7410aa705fb2e5f293872bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_flex_align_t</type>
+        <definition>static lv_flex_align_t lv_obj_get_style_flex_cross_place</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_flex_cross_place</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="124" column="31" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1a564170c4785fa0b85104856df1370bd7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>lv_flex_align_t</type>
+        <definition>static lv_flex_align_t lv_obj_get_style_flex_track_place</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_flex_track_place</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="130" column="31" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__flex_8h_1ae37b62c66cc7d2674de91e160d532d1c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t lv_obj_get_style_flex_grow</definition>
+        <argsstring>(const lv_obj_t *obj, uint32_t part)</argsstring>
+        <name>lv_obj_get_style_flex_grow</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" line="136" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h" bodystart="136" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_FLEX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_FLEX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../core/lv_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_FLEX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_OBJ_FLAG_FLEX_IN_NEW_TRACK<sp/><sp/><sp/>LV_OBJ_FLAG_LAYOUT_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">LV_EXPORT_CONST_INT(LV_OBJ_FLAG_FLEX_IN_NEW_TRACK);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LV_FLEX_COLUMN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LV_FLEX_WRAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LV_FLEX_REVERSE<sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*Can&apos;t<sp/>include<sp/>lv_obj.h<sp/>because<sp/>it<sp/>includes<sp/>this<sp/>header<sp/>file*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_ALIGN_START,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_ALIGN_END,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_ALIGN_CENTER,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_ALIGN_SPACE_EVENLY,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_ALIGN_SPACE_AROUND,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_ALIGN_SPACE_BETWEEN,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/>lv_flex_align_t;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_FLOW_ROW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_FLOW_COLUMN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_LV_FLEX_COLUMN,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_FLOW_ROW_WRAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LV_FLEX_FLOW_ROW<sp/>|<sp/>_LV_FLEX_WRAP,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_FLOW_ROW_REVERSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LV_FLEX_FLOW_ROW<sp/>|<sp/>_LV_FLEX_REVERSE,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_FLOW_ROW_WRAP_REVERSE<sp/><sp/><sp/><sp/>=<sp/>LV_FLEX_FLOW_ROW<sp/>|<sp/>_LV_FLEX_WRAP<sp/>|<sp/>_LV_FLEX_REVERSE,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_FLOW_COLUMN_WRAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LV_FLEX_FLOW_COLUMN<sp/>|<sp/>_LV_FLEX_WRAP,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_FLOW_COLUMN_REVERSE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LV_FLEX_FLOW_COLUMN<sp/>|<sp/>_LV_FLEX_REVERSE,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_FLEX_FLOW_COLUMN_WRAP_REVERSE<sp/>=<sp/>LV_FLEX_FLOW_COLUMN<sp/>|<sp/>_LV_FLEX_WRAP<sp/>|<sp/>_LV_FLEX_REVERSE,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/>lv_flex_flow_t;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>VARIABLES</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint16_t<sp/>LV_LAYOUT_FLEX;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_FLEX_FLOW;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_FLEX_MAIN_PLACE;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_FLEX_CROSS_PLACE;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_FLEX_TRACK_PLACE;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__style_8h_1a1cc3fc02ad523b88130a21e3e7d116a5" kindref="member">lv_style_prop_t</ref><sp/>LV_STYLE_FLEX_GROW;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__flex_8h_1adc17494d2a747e76966581dced09fd74" kindref="member">lv_flex_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__flex_8h_1afe0e90502eefb9f215b641a818bceb50" kindref="member">lv_obj_set_flex_flow</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_flex_flow_t<sp/>flow);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__flex_8h_1a738059b5970caa4a6fbaa925e692c2df" kindref="member">lv_obj_set_flex_align</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_flex_align_t<sp/>main_place,<sp/>lv_flex_align_t<sp/>cross_place,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_flex_align_t<sp/>track_cross_place);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__flex_8h_1a5aa092bfcef60f9e61eb84b66c266878" kindref="member">lv_obj_set_flex_grow</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint8_t<sp/>grow);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_flex_flow(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_flex_flow_t<sp/>value);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_flex_main_place(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_flex_align_t<sp/>value);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_flex_cross_place(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_flex_align_t<sp/>value);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_flex_track_place(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>lv_flex_align_t<sp/>value);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_style_set_flex_grow(<ref refid="structlv__style__t" kindref="compound">lv_style_t</ref><sp/>*<sp/>style,<sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_flex_flow(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_flex_flow_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_flex_main_place(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_flex_align_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_flex_cross_place(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_flex_align_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_flex_track_place(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_flex_align_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lv_obj_set_style_flex_grow(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint8_t<sp/>value,<sp/>lv_style_selector_t<sp/>selector);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_flex_flow_t<sp/>lv_obj_get_style_flex_flow(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_FLEX_FLOW);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_flex_flow_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_flex_align_t<sp/>lv_obj_get_style_flex_main_place(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_FLEX_MAIN_PLACE);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_flex_align_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_flex_align_t<sp/>lv_obj_get_style_flex_cross_place(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_FLEX_CROSS_PLACE);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_flex_align_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>lv_flex_align_t<sp/>lv_obj_get_style_flex_track_place(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_FLEX_TRACK_PLACE);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lv_flex_align_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_obj_get_style_flex_grow(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint32_t<sp/>part)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionlv__style__value__t" kindref="compound">lv_style_value_t</ref><sp/>v<sp/>=<sp/><ref refid="lv__obj__style_8h_1ac497f3b04f60b6e76cea85194f2f2fed" kindref="member">lv_obj_get_style_prop</ref>(obj,<sp/>part,<sp/>LV_STYLE_FLEX_GROW);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint8_t)v.<ref refid="unionlv__style__value__t_1a6daa225f23d73c54762739757d59ee6b" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*LV_USE_FLEX*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_FLEX_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/layouts/flex/lv_flex.h"/>
+  </compounddef>
+</doxygen>

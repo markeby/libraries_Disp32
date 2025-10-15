@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core</compoundname>
+    <innerfile refid="lv__disp_8h">lv_disp.h</innerfile>
+    <innerfile refid="lv__event_8h">lv_event.h</innerfile>
+    <innerfile refid="lv__group_8h">lv_group.h</innerfile>
+    <innerfile refid="lv__indev_8h">lv_indev.h</innerfile>
+    <innerfile refid="lv__indev__scroll_8h">lv_indev_scroll.h</innerfile>
+    <innerfile refid="lv__obj_8h">lv_obj.h</innerfile>
+    <innerfile refid="lv__obj__class_8h">lv_obj_class.h</innerfile>
+    <innerfile refid="lv__obj__draw_8h">lv_obj_draw.h</innerfile>
+    <innerfile refid="lv__obj__pos_8h">lv_obj_pos.h</innerfile>
+    <innerfile refid="lv__obj__scroll_8h">lv_obj_scroll.h</innerfile>
+    <innerfile refid="lv__obj__style_8h">lv_obj_style.h</innerfile>
+    <innerfile refid="lv__obj__style__gen_8h">lv_obj_style_gen.h</innerfile>
+    <innerfile refid="lv__obj__tree_8h">lv_obj_tree.h</innerfile>
+    <innerfile refid="lv__refr_8h">lv_refr.h</innerfile>
+    <innerfile refid="lv__theme_8h">lv_theme.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__fragment__class__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_fragment_class_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1ab73e26c72cc8a63d13bb1e5533888ac0" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_fragment_class_t::constructor_cb) (lv_fragment_t *self, void *args)</definition>
+        <argsstring>)(lv_fragment_t *self, void *args)</argsstring>
+        <name>constructor_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor function for fragment class <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments assigned by fragment manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="64" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1a6689e45c688904124e4d45256f6e6980" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_fragment_class_t::destructor_cb) (lv_fragment_t *self)</definition>
+        <argsstring>)(lv_fragment_t *self)</argsstring>
+        <name>destructor_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor function for fragment class <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance, will be freed after this call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="70" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1a3bbc3b1579a9bca8caebc5feef40a848" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_fragment_class_t::attached_cb) (lv_fragment_t *self)</definition>
+        <argsstring>)(lv_fragment_t *self)</argsstring>
+        <name>attached_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fragment attached to manager <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="76" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1ae7c5c9f65eeee6c1f99bfe1e362b0aaa" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_fragment_class_t::detached_cb) (lv_fragment_t *self)</definition>
+        <argsstring>)(lv_fragment_t *self)</argsstring>
+        <name>detached_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fragment detached from manager <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="82" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1af7419b22aa24efd92088fc68c032301b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *(*</type>
+        <definition>lv_obj_t*(* _lv_fragment_class_t::create_obj_cb) (lv_fragment_t *self, lv_obj_t *container)</definition>
+        <argsstring>)(lv_fragment_t *self, lv_obj_t *container)</argsstring>
+        <name>create_obj_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create objects <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container of the objects should be created upon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Created object, NULL if multiple objects has been created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="90" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1a4180c178f934f0db7e9fadf0f0ae6b80" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_fragment_class_t::obj_created_cb) (lv_fragment_t *self, lv_obj_t *obj)</definition>
+        <argsstring>)(lv_fragment_t *self, lv_obj_t *obj)</argsstring>
+        <name>obj_created_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lv_obj returned by create_obj_cb </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="97" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1a08511d154d4958ba6a83209891adc8be" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_fragment_class_t::obj_will_delete_cb) (lv_fragment_t *self, lv_obj_t *obj)</definition>
+        <argsstring>)(lv_fragment_t *self, lv_obj_t *obj)</argsstring>
+        <name>obj_will_delete_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called before objects in the fragment will be deleted.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object with this fragment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="105" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1a9026786d55318f0aa11c340976e795ba" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _lv_fragment_class_t::obj_deleted_cb) (lv_fragment_t *self, lv_obj_t *obj)</definition>
+        <argsstring>)(lv_fragment_t *self, lv_obj_t *obj)</argsstring>
+        <name>obj_deleted_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the object created by fragment received <computeroutput>LV_EVENT_DELETE</computeroutput> event <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object with this fragment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="112" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1a18165de53f656e4bb6a4b3adf8d8c542" prot="public" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* _lv_fragment_class_t::event_cb) (lv_fragment_t *self, int code, void *userdata)</definition>
+        <argsstring>)(lv_fragment_t *self, int code, void *userdata)</argsstring>
+        <name>event_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle event <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fragment instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User-defined ID of event </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User-defined data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User-defined data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="121" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__fragment__class__t_1ad26d9b440e2ef59b74bf59ab73837a43" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _lv_fragment_class_t::instance_size</definition>
+        <argsstring></argsstring>
+        <name>instance_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><emphasis>REQUIRED</emphasis>: Allocation size of fragment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="126" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="1">
+        <label>_lv_fragment_class_t</label>
+        <link refid="struct__lv__fragment__class__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>create_obj_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" line="58" column="27" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/fragment/lv_fragment.h" bodystart="58" bodyend="127"/>
+    <listofallmembers>
+      <member refid="struct__lv__fragment__class__t_1a3bbc3b1579a9bca8caebc5feef40a848" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>attached_cb</name></member>
+      <member refid="struct__lv__fragment__class__t_1ab73e26c72cc8a63d13bb1e5533888ac0" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>constructor_cb</name></member>
+      <member refid="struct__lv__fragment__class__t_1af7419b22aa24efd92088fc68c032301b" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>create_obj_cb</name></member>
+      <member refid="struct__lv__fragment__class__t_1a6689e45c688904124e4d45256f6e6980" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>destructor_cb</name></member>
+      <member refid="struct__lv__fragment__class__t_1ae7c5c9f65eeee6c1f99bfe1e362b0aaa" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>detached_cb</name></member>
+      <member refid="struct__lv__fragment__class__t_1a18165de53f656e4bb6a4b3adf8d8c542" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>event_cb</name></member>
+      <member refid="struct__lv__fragment__class__t_1ad26d9b440e2ef59b74bf59ab73837a43" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>instance_size</name></member>
+      <member refid="struct__lv__fragment__class__t_1a4180c178f934f0db7e9fadf0f0ae6b80" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>obj_created_cb</name></member>
+      <member refid="struct__lv__fragment__class__t_1a9026786d55318f0aa11c340976e795ba" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>obj_deleted_cb</name></member>
+      <member refid="struct__lv__fragment__class__t_1a08511d154d4958ba6a83209891adc8be" prot="public" virt="non-virtual"><scope>_lv_fragment_class_t</scope><name>obj_will_delete_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

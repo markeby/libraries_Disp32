@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__dropdown__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_dropdown_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__dropdown__t_1af35b03a7301eaab2939db5d58d36df37" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_dropdown_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="41" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1a65bf93133bb9a636f74abe03cb85d1b5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_dropdown_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The dropped down list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="42" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1ad7b514c473eca67c68f3f4e2cdfe1883" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* lv_dropdown_t::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Text to display on the dropdown&apos;s button </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="43" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1a0f64b0e6cc1a7ca665c744ef4d0dfbc6" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_dropdown_t::symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Arrow or other icon when the drop-down list is closed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="44" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1a7cbd3e0156080b0a8e5cadad04a74cca" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* lv_dropdown_t::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Options in a &apos;<linebreak/>
+&apos; separated list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="45" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1a4b7454635f155de1cba822a1d5c65498" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_dropdown_t::option_cnt</definition>
+        <argsstring></argsstring>
+        <name>option_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of options </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="46" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1aaf2088f44a3e7a8bb48a8f7bc10577f6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_dropdown_t::sel_opt_id</definition>
+        <argsstring></argsstring>
+        <name>sel_opt_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the currently selected option </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="47" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1a19872bd62234fc98eee4cc7c64f83be7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_dropdown_t::sel_opt_id_orig</definition>
+        <argsstring></argsstring>
+        <name>sel_opt_id_orig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store the original index on focus </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="48" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1a5a72c4ce96850eb79a63c3b8145012a9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_dropdown_t::pr_opt_id</definition>
+        <argsstring></argsstring>
+        <name>pr_opt_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the currently pressed option </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="49" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1a79c4ab3debf1dd9aaf790c3c56e53066" prot="public" static="no" mutable="no">
+        <type>lv_dir_t</type>
+        <definition>lv_dir_t lv_dropdown_t::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Direction in which the list should open </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="50" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1a5f3bcf8ebeff868cd8a714a635149c86" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_dropdown_t::static_txt</definition>
+        <argsstring></argsstring>
+        <name>static_txt</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: Only a pointer is saved in <computeroutput>options</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="51" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__dropdown__t_1ae573dad8680430a861f642ff73fbbcd9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_dropdown_t::selected_highlight</definition>
+        <argsstring></argsstring>
+        <name>selected_highlight</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: Make the selected option highlighted in the list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="52" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="1">
+        <label>lv_dropdown_t</label>
+        <link refid="structlv__dropdown__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj</edgelabel>
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="12">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" line="38" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_dropdown.h" bodystart="38" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structlv__dropdown__t_1a79c4ab3debf1dd9aaf790c3c56e53066" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>dir</name></member>
+      <member refid="structlv__dropdown__t_1a65bf93133bb9a636f74abe03cb85d1b5" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>list</name></member>
+      <member refid="structlv__dropdown__t_1af35b03a7301eaab2939db5d58d36df37" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>obj</name></member>
+      <member refid="structlv__dropdown__t_1a4b7454635f155de1cba822a1d5c65498" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>option_cnt</name></member>
+      <member refid="structlv__dropdown__t_1a7cbd3e0156080b0a8e5cadad04a74cca" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>options</name></member>
+      <member refid="structlv__dropdown__t_1a5a72c4ce96850eb79a63c3b8145012a9" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>pr_opt_id</name></member>
+      <member refid="structlv__dropdown__t_1aaf2088f44a3e7a8bb48a8f7bc10577f6" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>sel_opt_id</name></member>
+      <member refid="structlv__dropdown__t_1a19872bd62234fc98eee4cc7c64f83be7" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>sel_opt_id_orig</name></member>
+      <member refid="structlv__dropdown__t_1ae573dad8680430a861f642ff73fbbcd9" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>selected_highlight</name></member>
+      <member refid="structlv__dropdown__t_1a5f3bcf8ebeff868cd8a714a635149c86" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>static_txt</name></member>
+      <member refid="structlv__dropdown__t_1a0f64b0e6cc1a7ca665c744ef4d0dfbc6" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>symbol</name></member>
+      <member refid="structlv__dropdown__t_1ad7b514c473eca67c68f3f4e2cdfe1883" prot="public" virt="non-virtual"><scope>lv_dropdown_t</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

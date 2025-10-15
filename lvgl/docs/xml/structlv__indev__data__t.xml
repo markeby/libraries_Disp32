@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__indev__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_indev_data_t</compoundname>
+    <includes refid="lv__hal__indev_8h" local="no">lv_hal_indev.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__indev__data__t_1afaecb3fba20bd3d6f798dea8b207f257" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t lv_indev_data_t::point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For LV_INDEV_TYPE_POINTER the currently pressed point </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="76" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__indev__data__t_1a5f93f90c6ffe0f7db54a0fc43a1cef9c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_indev_data_t::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For LV_INDEV_TYPE_KEYPAD the currently pressed key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="77" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__indev__data__t_1a5c9452fed20a2e6f91bfff86d0bcc6d6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_indev_data_t::btn_id</definition>
+        <argsstring></argsstring>
+        <name>btn_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For LV_INDEV_TYPE_BUTTON the currently pressed button </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="78" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__indev__data__t_1a13b86f5548c334dc240f85a74c96195e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t lv_indev_data_t::enc_diff</definition>
+        <argsstring></argsstring>
+        <name>enc_diff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For LV_INDEV_TYPE_ENCODER number of steps since the previous read </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="79" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__indev__data__t_1aed0de26ed88301e92bc3d95020a9893b" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" kindref="member">lv_indev_state_t</ref></type>
+        <definition>lv_indev_state_t lv_indev_data_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LV_INDEV_STATE_REL or LV_INDEV_STATE_PR </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="81" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__indev__data__t_1aa8048e6188372c0050640b1eb341f093" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lv_indev_data_t::continue_reading</definition>
+        <argsstring></argsstring>
+        <name>continue_reading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to true, the read callback is invoked again </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="82" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Data structure passed to an input driver to fill </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>lv_indev_data_t</label>
+        <link refid="structlv__indev__data__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>point</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="75" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="75" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structlv__indev__data__t_1a5c9452fed20a2e6f91bfff86d0bcc6d6" prot="public" virt="non-virtual"><scope>lv_indev_data_t</scope><name>btn_id</name></member>
+      <member refid="structlv__indev__data__t_1aa8048e6188372c0050640b1eb341f093" prot="public" virt="non-virtual"><scope>lv_indev_data_t</scope><name>continue_reading</name></member>
+      <member refid="structlv__indev__data__t_1a13b86f5548c334dc240f85a74c96195e" prot="public" virt="non-virtual"><scope>lv_indev_data_t</scope><name>enc_diff</name></member>
+      <member refid="structlv__indev__data__t_1a5f93f90c6ffe0f7db54a0fc43a1cef9c" prot="public" virt="non-virtual"><scope>lv_indev_data_t</scope><name>key</name></member>
+      <member refid="structlv__indev__data__t_1afaecb3fba20bd3d6f798dea8b207f257" prot="public" virt="non-virtual"><scope>lv_indev_data_t</scope><name>point</name></member>
+      <member refid="structlv__indev__data__t_1aed0de26ed88301e92bc3d95020a9893b" prot="public" virt="non-virtual"><scope>lv_indev_data_t</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

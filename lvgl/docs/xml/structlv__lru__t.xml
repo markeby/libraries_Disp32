@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__lru__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_lru_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__lru__t_1a6416ac4abc6fa60ac89a4c43cf6dcb90" prot="public" static="no" mutable="no">
+        <type>lv_lru_item_t **</type>
+        <definition>lv_lru_item_t** lv_lru_t::items</definition>
+        <argsstring></argsstring>
+        <name>items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="45" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1a7562abe32f87f43445a127131d47f179" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t lv_lru_t::access_count</definition>
+        <argsstring></argsstring>
+        <name>access_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="46" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1a834b1ba3d56697bd7b7f6d8dce712ef9" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t lv_lru_t::free_memory</definition>
+        <argsstring></argsstring>
+        <name>free_memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="47" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1ad3a245bbc77dc18da6a85a6a9c912e15" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t lv_lru_t::total_memory</definition>
+        <argsstring></argsstring>
+        <name>total_memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="48" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1a4f59805ad13b086bf15852d5b2d94651" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t lv_lru_t::average_item_length</definition>
+        <argsstring></argsstring>
+        <name>average_item_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="49" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1aa1ec92f2100e79e0dccd3d15e88c2dbf" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t lv_lru_t::hash_table_size</definition>
+        <argsstring></argsstring>
+        <name>hash_table_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="50" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1a63aa87c1a281a7f60418f31d061cc6cb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_lru_t::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="51" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1a61a76e9599b72be9636c725078c6f20e" prot="public" static="no" mutable="no">
+        <type>lv_lru_free_t *</type>
+        <definition>lv_lru_free_t* lv_lru_t::value_free</definition>
+        <argsstring></argsstring>
+        <name>value_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="52" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1af757cbe23454799881e0ff1f7fd99541" prot="public" static="no" mutable="no">
+        <type>lv_lru_free_t *</type>
+        <definition>lv_lru_free_t* lv_lru_t::key_free</definition>
+        <argsstring></argsstring>
+        <name>key_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="53" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__lru__t_1a4cbb4640d762ec1392476c22197c3515" prot="public" static="no" mutable="no">
+        <type>lv_lru_item_t *</type>
+        <definition>lv_lru_item_t* lv_lru_t::free_items</definition>
+        <argsstring></argsstring>
+        <name>free_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="54" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" line="44" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_lru.h" bodystart="44" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structlv__lru__t_1a7562abe32f87f43445a127131d47f179" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>access_count</name></member>
+      <member refid="structlv__lru__t_1a4f59805ad13b086bf15852d5b2d94651" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>average_item_length</name></member>
+      <member refid="structlv__lru__t_1a4cbb4640d762ec1392476c22197c3515" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>free_items</name></member>
+      <member refid="structlv__lru__t_1a834b1ba3d56697bd7b7f6d8dce712ef9" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>free_memory</name></member>
+      <member refid="structlv__lru__t_1aa1ec92f2100e79e0dccd3d15e88c2dbf" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>hash_table_size</name></member>
+      <member refid="structlv__lru__t_1a6416ac4abc6fa60ac89a4c43cf6dcb90" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>items</name></member>
+      <member refid="structlv__lru__t_1af757cbe23454799881e0ff1f7fd99541" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>key_free</name></member>
+      <member refid="structlv__lru__t_1a63aa87c1a281a7f60418f31d061cc6cb" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>seed</name></member>
+      <member refid="structlv__lru__t_1ad3a245bbc77dc18da6a85a6a9c912e15" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>total_memory</name></member>
+      <member refid="structlv__lru__t_1a61a76e9599b72be9636c725078c6f20e" prot="public" virt="non-virtual"><scope>lv_lru_t</scope><name>value_free</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__obj__draw__part__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_obj_draw_part_dsc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a38e09025499b1087f56d6402a0404202" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__draw__ctx__t" kindref="compound">lv_draw_ctx_t</ref> *</type>
+        <definition>lv_draw_ctx_t* lv_obj_draw_part_dsc_t::draw_ctx</definition>
+        <argsstring></argsstring>
+        <name>draw_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw context </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="43" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a369f77530d63ba2f746509aab679c3ed" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct__lv__obj__class__t" kindref="compound">_lv_obj_class_t</ref> *</type>
+        <definition>const struct _lv_obj_class_t* lv_obj_draw_part_dsc_t::class_p</definition>
+        <argsstring></argsstring>
+        <name>class_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The class that sent the event </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="44" column="33" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a189881350ac98d5fecba96b353f501be" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_obj_draw_part_dsc_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type if part being draw. Element of <computeroutput>lv_&lt;name&gt;_draw_part_type_t</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="45" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a9101d813965c1fa5ebe8a597ef629444" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+        <definition>lv_area_t* lv_obj_draw_part_dsc_t::draw_area</definition>
+        <argsstring></argsstring>
+        <name>draw_area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The area of the part being drawn </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="46" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a890dfc7829e4cf749b975a5f0f1ee73a" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__draw__rect__dsc__t" kindref="compound">lv_draw_rect_dsc_t</ref> *</type>
+        <definition>lv_draw_rect_dsc_t* lv_obj_draw_part_dsc_t::rect_dsc</definition>
+        <argsstring></argsstring>
+        <name>rect_dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A draw descriptor that can be modified to changed what LVGL will draw. Set only for rectangle-like parts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="48" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a13ef9df5d2947c39cb39d69a7b4197de" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__draw__label__dsc__t" kindref="compound">lv_draw_label_dsc_t</ref> *</type>
+        <definition>lv_draw_label_dsc_t* lv_obj_draw_part_dsc_t::label_dsc</definition>
+        <argsstring></argsstring>
+        <name>label_dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A draw descriptor that can be modified to changed what LVGL will draw. Set only for text-like parts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="50" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a5fc1d10af81624e1157926143346623f" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__draw__line__dsc__t" kindref="compound">lv_draw_line_dsc_t</ref> *</type>
+        <definition>lv_draw_line_dsc_t* lv_obj_draw_part_dsc_t::line_dsc</definition>
+        <argsstring></argsstring>
+        <name>line_dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A draw descriptor that can be modified to changed what LVGL will draw. Set only for line-like parts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="52" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a1dc6d797401696ce0433e67362abc16d" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref> *</type>
+        <definition>lv_draw_img_dsc_t* lv_obj_draw_part_dsc_t::img_dsc</definition>
+        <argsstring></argsstring>
+        <name>img_dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A draw descriptor that can be modified to changed what LVGL will draw. Set only for image-like parts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="54" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a6d94fb42d76569e8cd959285fdbfbb61" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__draw__arc__dsc__t" kindref="compound">lv_draw_arc_dsc_t</ref> *</type>
+        <definition>lv_draw_arc_dsc_t* lv_obj_draw_part_dsc_t::arc_dsc</definition>
+        <argsstring></argsstring>
+        <name>arc_dsc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A draw descriptor that can be modified to changed what LVGL will draw. Set only for arc-like parts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="56" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a6d0898b3ba8ec5d21124e8a805c2a59f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+        <definition>const lv_point_t* lv_obj_draw_part_dsc_t::p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A point calculated during drawing. E.g. a point of chart or the center of an arc. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="58" column="5" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a5503bac64b2dfaa43d3b034894794fdf" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+        <definition>const lv_point_t* lv_obj_draw_part_dsc_t::p2</definition>
+        <argsstring></argsstring>
+        <name>p2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A point calculated during drawing. E.g. a point of chart. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="59" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a70b5d68f3c0b469fb6d27e141e8612aa" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* lv_obj_draw_part_dsc_t::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A text calculated during drawing. Can be modified. E.g. tick labels on a chart axis. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="60" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1ab0ea5ce2c4c4de3d648c78d89cfdad16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_obj_draw_part_dsc_t::text_length</definition>
+        <argsstring></argsstring>
+        <name>text_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the text buffer containing null-terminated text string calculated during drawing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="61" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1afd4837df6558644ecbc1b024df952f8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_obj_draw_part_dsc_t::part</definition>
+        <argsstring></argsstring>
+        <name>part</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current part for which the event is sent </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="62" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a42de730be272f85fd21e5c7c7cbbd029" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_obj_draw_part_dsc_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The index of the part. E.g. a button&apos;s index on button matrix or table cell index. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="63" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a558145826bf54e9f785ce4d2e4e2be2d" prot="public" static="no" mutable="no">
+        <type>lv_coord_t</type>
+        <definition>lv_coord_t lv_obj_draw_part_dsc_t::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. the radius of an arc (not the corner radius). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="64" column="16" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a1fa86da634787ec8eaef51501c581bf0" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_obj_draw_part_dsc_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A value calculated during drawing. E.g. Chart&apos;s tick line value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="65" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__obj__draw__part__dsc__t_1a593f8542f3189368ffc2ddb12620560e" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* lv_obj_draw_part_dsc_t::sub_part_ptr</definition>
+        <argsstring></argsstring>
+        <name>sub_part_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer the identifies something in the part. E.g. chart series. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="66" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>_lv_draw_layer_ctx_t</label>
+        <link refid="struct__lv__draw__layer__ctx__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>area_act</edgelabel>
+          <edgelabel>area_full</edgelabel>
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lv_draw_img_dsc_t</label>
+        <link refid="structlv__draw__img__dsc__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>pivot</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lv_obj_draw_part_dsc_t</label>
+        <link refid="structlv__obj__draw__part__dsc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>line_dsc</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>draw_ctx</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>img_dsc</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>rect_dsc</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>draw_area</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>arc_dsc</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>p1</edgelabel>
+          <edgelabel>p2</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>label_dsc</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lv_draw_arc_dsc_t</label>
+        <link refid="structlv__draw__arc__dsc__t"/>
+      </node>
+      <node id="10">
+        <label>lv_grad_dsc_t</label>
+        <link refid="structlv__grad__dsc__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>stops</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lv_draw_rect_dsc_t</label>
+        <link refid="structlv__draw__rect__dsc__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>bg_grad</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_draw_ctx_t</label>
+        <link refid="struct__lv__draw__ctx__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>layer_init</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>buf_area</edgelabel>
+          <edgelabel>clip_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="6">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="3">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>_lv_font_t</label>
+        <link refid="struct__lv__font__t"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>fallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lv_draw_line_dsc_t</label>
+        <link refid="structlv__draw__line__dsc__t"/>
+      </node>
+      <node id="13">
+        <label>lv_draw_label_dsc_t</label>
+        <link refid="structlv__draw__label__dsc__t"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>font</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lv_gradient_stop_t</label>
+        <link refid="structlv__gradient__stop__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" line="42" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_obj_draw.h" bodystart="42" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structlv__obj__draw__part__dsc__t_1a6d94fb42d76569e8cd959285fdbfbb61" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>arc_dsc</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a369f77530d63ba2f746509aab679c3ed" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>class_p</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a9101d813965c1fa5ebe8a597ef629444" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>draw_area</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a38e09025499b1087f56d6402a0404202" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>draw_ctx</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a42de730be272f85fd21e5c7c7cbbd029" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>id</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a1dc6d797401696ce0433e67362abc16d" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>img_dsc</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a13ef9df5d2947c39cb39d69a7b4197de" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>label_dsc</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a5fc1d10af81624e1157926143346623f" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>line_dsc</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a6d0898b3ba8ec5d21124e8a805c2a59f" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>p1</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a5503bac64b2dfaa43d3b034894794fdf" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>p2</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1afd4837df6558644ecbc1b024df952f8e" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>part</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a558145826bf54e9f785ce4d2e4e2be2d" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>radius</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a890dfc7829e4cf749b975a5f0f1ee73a" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>rect_dsc</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a593f8542f3189368ffc2ddb12620560e" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>sub_part_ptr</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a70b5d68f3c0b469fb6d27e141e8612aa" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>text</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1ab0ea5ce2c4c4de3d648c78d89cfdad16" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>text_length</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a189881350ac98d5fecba96b353f501be" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>type</name></member>
+      <member refid="structlv__obj__draw__part__dsc__t_1a1fa86da634787ec8eaef51501c581bf0" prot="public" virt="non-virtual"><scope>lv_obj_draw_part_dsc_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

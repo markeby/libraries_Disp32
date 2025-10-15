@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__bar__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_bar_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__bar__t_1a5f0736872cbd31a563fdf6498a978c3f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref></type>
+        <definition>lv_obj_t lv_bar_t::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="48" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__bar__t_1ac83638fd768247cde559444353a515e4" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_bar_t::cur_value</definition>
+        <argsstring></argsstring>
+        <name>cur_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current value of the bar </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="49" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__bar__t_1a86819ced58a5f06b1c764f264cda69bb" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_bar_t::min_value</definition>
+        <argsstring></argsstring>
+        <name>min_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum value of the bar </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="50" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__bar__t_1af334f25f348aeb607f8eac7b3c7d13dc" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_bar_t::max_value</definition>
+        <argsstring></argsstring>
+        <name>max_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum value of the bar </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="51" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__bar__t_1a7b726c34859700dcb122ff38df5831f3" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t lv_bar_t::start_value</definition>
+        <argsstring></argsstring>
+        <name>start_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start value of the bar </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="52" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__bar__t_1a511c40de2e6b95c6bbaec3d6275b2dec" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref></type>
+        <definition>lv_area_t lv_bar_t::indic_area</definition>
+        <argsstring></argsstring>
+        <name>indic_area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save the indicator area. Might be used by derived types </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="53" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__bar__t_1af29ca27025e609f32b4562a9b6ec53ae" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__bar__anim__t" kindref="compound">_lv_bar_anim_t</ref></type>
+        <definition>_lv_bar_anim_t lv_bar_t::cur_value_anim</definition>
+        <argsstring></argsstring>
+        <name>cur_value_anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="54" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__bar__t_1accda3093ee93358c45fae1795dc8b358" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lv__bar__anim__t" kindref="compound">_lv_bar_anim_t</ref></type>
+        <definition>_lv_bar_anim_t lv_bar_t::start_value_anim</definition>
+        <argsstring></argsstring>
+        <name>start_value_anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="55" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__bar__t_1a00bae1ab027f2df645d74f3986d33cae" prot="public" static="no" mutable="no">
+        <type>lv_bar_mode_t</type>
+        <definition>lv_bar_mode_t lv_bar_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of bar </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="56" column="19" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>lv_style_value_t</label>
+        <link refid="unionlv__style__value__t"/>
+      </node>
+      <node id="1">
+        <label>lv_bar_t</label>
+        <link refid="structlv__bar__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>start_value_anim</edgelabel>
+          <edgelabel>cur_value_anim</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>indic_area</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_lv_obj_t</label>
+        <link refid="struct__lv__obj__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>spec_attr</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>class_p</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lv_style_t</label>
+        <link refid="structlv__style__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value1</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>const_props</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lv_point_t</label>
+        <link refid="structlv__point__t"/>
+      </node>
+      <node id="9">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+      <node id="13">
+        <label>lv_style_const_prop_t</label>
+        <link refid="structlv__style__const__prop__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>_lv_obj_class_t</label>
+        <link refid="struct__lv__obj__class__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>base_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_lv_group_t</label>
+        <link refid="struct__lv__group__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj_focus</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>edge_cb</edgelabel>
+          <edgelabel>focus_cb</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>obj_ll</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>_lv_obj_style_t</label>
+        <link refid="struct__lv__obj__style__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_ll_t</label>
+        <link refid="structlv__ll__t"/>
+      </node>
+      <node id="2">
+        <label>_lv_bar_anim_t</label>
+        <link refid="struct__lv__bar__anim__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>bar</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_lv_obj_spec_attr_t</label>
+        <link refid="struct__lv__obj__spec__attr__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>group_p</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" line="47" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_bar.h" bodystart="47" bodyend="57"/>
+    <listofallmembers>
+      <member refid="structlv__bar__t_1ac83638fd768247cde559444353a515e4" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>cur_value</name></member>
+      <member refid="structlv__bar__t_1af29ca27025e609f32b4562a9b6ec53ae" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>cur_value_anim</name></member>
+      <member refid="structlv__bar__t_1a511c40de2e6b95c6bbaec3d6275b2dec" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>indic_area</name></member>
+      <member refid="structlv__bar__t_1af334f25f348aeb607f8eac7b3c7d13dc" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>max_value</name></member>
+      <member refid="structlv__bar__t_1a86819ced58a5f06b1c764f264cda69bb" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>min_value</name></member>
+      <member refid="structlv__bar__t_1a00bae1ab027f2df645d74f3986d33cae" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>mode</name></member>
+      <member refid="structlv__bar__t_1a5f0736872cbd31a563fdf6498a978c3f" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>obj</name></member>
+      <member refid="structlv__bar__t_1a7b726c34859700dcb122ff38df5831f3" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>start_value</name></member>
+      <member refid="structlv__bar__t_1accda3093ee93358c45fae1795dc8b358" prot="public" virt="non-virtual"><scope>lv_bar_t</scope><name>start_value_anim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

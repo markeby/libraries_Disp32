@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct__lv__disp__draw__buf__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_disp_draw_buf_t</compoundname>
+    <includes refid="lv__hal__disp_8h" local="no">lv_hal_disp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__disp__draw__buf__t_1aaf879cfaa7bcaa2b13b4b968c0506dcd" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_disp_draw_buf_t::buf1</definition>
+        <argsstring></argsstring>
+        <name>buf1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>First display buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="52" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__draw__buf__t_1ab8e7578487bb68dae44dfd0d6cc7afca" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_disp_draw_buf_t::buf2</definition>
+        <argsstring></argsstring>
+        <name>buf2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Second display buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="53" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__draw__buf__t_1a0341ae8d316886df8cf3aec7a5b7a682" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_disp_draw_buf_t::buf_act</definition>
+        <argsstring></argsstring>
+        <name>buf_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="56" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__draw__buf__t_1a7663f2323bd87f312af4106ff932b644" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_disp_draw_buf_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="57" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__draw__buf__t_1ab0041b03e5113dbde1b8e05de44af68d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>volatile int _lv_disp_draw_buf_t::flushing</definition>
+        <argsstring></argsstring>
+        <name>flushing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="59" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__draw__buf__t_1a0f19ee85aaffa51f958539127ead1bd2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>volatile int _lv_disp_draw_buf_t::flushing_last</definition>
+        <argsstring></argsstring>
+        <name>flushing_last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="61" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__draw__buf__t_1a3c38f1b9c8efbebc92f3857535f575f2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t _lv_disp_draw_buf_t::last_area</definition>
+        <argsstring></argsstring>
+        <name>last_area</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="62" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__disp__draw__buf__t_1a993e6cfa33172a55886a8c8bc235b942" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t _lv_disp_draw_buf_t::last_part</definition>
+        <argsstring></argsstring>
+        <name>last_part</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="63" column="23" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure for holding display buffer information. </para>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" line="51" column="34" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_disp.h" bodystart="51" bodyend="64"/>
+    <listofallmembers>
+      <member refid="struct__lv__disp__draw__buf__t_1aaf879cfaa7bcaa2b13b4b968c0506dcd" prot="public" virt="non-virtual"><scope>_lv_disp_draw_buf_t</scope><name>buf1</name></member>
+      <member refid="struct__lv__disp__draw__buf__t_1ab8e7578487bb68dae44dfd0d6cc7afca" prot="public" virt="non-virtual"><scope>_lv_disp_draw_buf_t</scope><name>buf2</name></member>
+      <member refid="struct__lv__disp__draw__buf__t_1a0341ae8d316886df8cf3aec7a5b7a682" prot="public" virt="non-virtual"><scope>_lv_disp_draw_buf_t</scope><name>buf_act</name></member>
+      <member refid="struct__lv__disp__draw__buf__t_1ab0041b03e5113dbde1b8e05de44af68d" prot="public" virt="non-virtual"><scope>_lv_disp_draw_buf_t</scope><name>flushing</name></member>
+      <member refid="struct__lv__disp__draw__buf__t_1a0f19ee85aaffa51f958539127ead1bd2" prot="public" virt="non-virtual"><scope>_lv_disp_draw_buf_t</scope><name>flushing_last</name></member>
+      <member refid="struct__lv__disp__draw__buf__t_1a3c38f1b9c8efbebc92f3857535f575f2" prot="public" virt="non-virtual"><scope>_lv_disp_draw_buf_t</scope><name>last_area</name></member>
+      <member refid="struct__lv__disp__draw__buf__t_1a993e6cfa33172a55886a8c8bc235b942" prot="public" virt="non-virtual"><scope>_lv_disp_draw_buf_t</scope><name>last_part</name></member>
+      <member refid="struct__lv__disp__draw__buf__t_1a7663f2323bd87f312af4106ff932b644" prot="public" virt="non-virtual"><scope>_lv_disp_draw_buf_t</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

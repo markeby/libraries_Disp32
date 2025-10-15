@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__grad__dsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_grad_dsc_t</compoundname>
+    <includes refid="lv__style_8h" local="no">lv_style.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__grad__dsc__t_1aef52df36a9ba617bf65e71ead1f94105" prot="public" static="no" mutable="no">
+        <type><ref refid="structlv__gradient__stop__t" kindref="compound">lv_gradient_stop_t</ref></type>
+        <definition>lv_gradient_stop_t lv_grad_dsc_t::stops[LV_GRADIENT_MAX_STOPS]</definition>
+        <argsstring>[LV_GRADIENT_MAX_STOPS]</argsstring>
+        <name>stops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A gradient stop array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="156" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__grad__dsc__t_1a9bc6aa40e9b42a10389d99877cdb65ac" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_grad_dsc_t::stops_count</definition>
+        <argsstring></argsstring>
+        <name>stops_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of used stops in the array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="157" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__grad__dsc__t_1a63223754438f889dc8b358701f301b5f" prot="public" static="no" mutable="no">
+        <type>lv_grad_dir_t</type>
+        <definition>lv_grad_dir_t lv_grad_dsc_t::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The gradient direction. Any of LV_GRAD_DIR_HOR, LV_GRAD_DIR_VER, LV_GRAD_DIR_NONE </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="158" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__grad__dsc__t_1abab13dc2759b597005b6bce3ba0b008e" prot="public" static="no" mutable="no">
+        <type>lv_dither_mode_t</type>
+        <definition>lv_dither_mode_t lv_grad_dsc_t::dither</definition>
+        <argsstring></argsstring>
+        <name>dither</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether to dither the gradient or not. Any of LV_DITHER_NONE, LV_DITHER_ORDERED, LV_DITHER_ERR_DIFF </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="160" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A descriptor of a gradient. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>lv_grad_dsc_t</label>
+        <link refid="structlv__grad__dsc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>stops</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lv_gradient_stop_t</label>
+        <link refid="structlv__gradient__stop__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" line="155" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/misc/lv_style.h" bodystart="155" bodyend="162"/>
+    <listofallmembers>
+      <member refid="structlv__grad__dsc__t_1a63223754438f889dc8b358701f301b5f" prot="public" virt="non-virtual"><scope>lv_grad_dsc_t</scope><name>dir</name></member>
+      <member refid="structlv__grad__dsc__t_1abab13dc2759b597005b6bce3ba0b008e" prot="public" virt="non-virtual"><scope>lv_grad_dsc_t</scope><name>dither</name></member>
+      <member refid="structlv__grad__dsc__t_1aef52df36a9ba617bf65e71ead1f94105" prot="public" virt="non-virtual"><scope>lv_grad_dsc_t</scope><name>stops</name></member>
+      <member refid="structlv__grad__dsc__t_1a9bc6aa40e9b42a10389d99877cdb65ac" prot="public" virt="non-virtual"><scope>lv_grad_dsc_t</scope><name>stops_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

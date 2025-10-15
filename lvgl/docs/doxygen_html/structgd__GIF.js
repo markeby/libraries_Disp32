@@ -1,0 +1,26 @@
+var structgd__GIF =
+[
+    [ "anim_start", "structgd__GIF.html#a84ae89f0be45fb8049738af0c0f1a5f2", null ],
+    [ "application", "structgd__GIF.html#a14266a12b867142dd733127bd54be240", null ],
+    [ "bgindex", "structgd__GIF.html#afdc337bda17ecc028dc83cd6b3f2edf6", null ],
+    [ "canvas", "structgd__GIF.html#a584629446cc26d33a0edad823014ef0d", null ],
+    [ "comment", "structgd__GIF.html#a96d0327bc585002c84e0d6f88db7da73", null ],
+    [ "data", "structgd__GIF.html#ad399ae1f14567fb8132ce0fa53e5ba9c", null ],
+    [ "depth", "structgd__GIF.html#a6701d670df0930ea18e79f9dea855af5", null ],
+    [ "f_rw_p", "structgd__GIF.html#af897d3414d49aa7fa7fd39c27ef5ac47", null ],
+    [ "fd", "structgd__GIF.html#a35406d1e920a32f523cf84b0f31d6622", null ],
+    [ "fh", "structgd__GIF.html#a3753da9559a1c83cde13a99319669baf", null ],
+    [ "frame", "structgd__GIF.html#a2343d81d1399b736be19cf59e33f04cd", null ],
+    [ "fw", "structgd__GIF.html#a7758481fa96d3a10d25bc81260ff9b57", null ],
+    [ "fx", "structgd__GIF.html#a33be940b9c76174882250c260cef2f07", null ],
+    [ "fy", "structgd__GIF.html#aaa6afd80885ab06edec6fc88edc92d9a", null ],
+    [ "gce", "structgd__GIF.html#ac2c53127427fb99001949faa7a8ab0b1", null ],
+    [ "gct", "structgd__GIF.html#abfc5ecfc4b3e7693e35db3c1446725ca", null ],
+    [ "height", "structgd__GIF.html#a34279410536962cfe5aa1dc1d5c02673", null ],
+    [ "is_file", "structgd__GIF.html#a80e3b17df036ac28bcc1e3e3b3e3872a", null ],
+    [ "lct", "structgd__GIF.html#a9f87754fd73a131e87dd5a842c4bbacb", null ],
+    [ "loop_count", "structgd__GIF.html#a75203cffbd32b114852c5b345ae04064", null ],
+    [ "palette", "structgd__GIF.html#a2c5c576c73466e660af9b40c8725cd63", null ],
+    [ "plain_text", "structgd__GIF.html#a7a3ac10759f531cfb3ade6f112ff78e3", null ],
+    [ "width", "structgd__GIF.html#a8539c56d989fa90474ac5b7ffa38a87d", null ]
+];

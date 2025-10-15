@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__draw__vglite__blend_8h" kind="file" language="C++">
+    <compoundname>lv_draw_vglite_blend.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__draw__vglite__blend_8h_1a73d90f7f765f630085f89e03d8b0c411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_res_t</type>
+        <definition>lv_res_t lv_gpu_nxp_vglite_fill</definition>
+        <argsstring>(const lv_area_t *dest_area, lv_color_t color, lv_opa_t opa)</argsstring>
+        <name>lv_gpu_nxp_vglite_fill</name>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>dest_area</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>lv_opa_t</type>
+          <declname>opa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill area, with optional opacity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dest_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Area with relative coordinates of destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opacity (255 = full, 128 = 50% background/50% color, 0 = no fill)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>LV_RES_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fill completed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LV_RES_INV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error occurred (</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>LV_GPU_NXP_VG_LITE_LOG_ERRORS) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" line="83" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" declline="83" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__vglite__blend_8h_1a42a3344a9db086dc1267fb22c42b9aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_res_t</type>
+        <definition>lv_res_t lv_gpu_nxp_vglite_blit_split</definition>
+        <argsstring>(lv_color_t *dest_buf, lv_area_t *dest_area, lv_coord_t dest_stride, const lv_color_t *src_buf, lv_area_t *src_area, lv_coord_t src_stride, lv_opa_t opa)</argsstring>
+        <name>lv_gpu_nxp_vglite_blit_split</name>
+        <param>
+          <type>lv_color_t *</type>
+          <declname>dest_buf</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>dest_area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>dest_stride</declname>
+        </param>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>src_buf</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>src_area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>src_stride</declname>
+        </param>
+        <param>
+          <type>lv_opa_t</type>
+          <declname>opa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BLock Image Transfer - copy rectangular image from src_buf to dst_buf with effects. By default, image is copied directly, with optional opacity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[in/out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dest_buf Destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dest_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Area with relative coordinates of destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dest_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of destination buffer in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source area with relative coordinates of source buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of source buffer in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opacity</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>LV_RES_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer complete </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LV_RES_INV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error occurred (</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>LV_GPU_NXP_VG_LITE_LOG_ERRORS) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" line="101" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" declline="101" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__vglite__blend_8h_1a2a2c91e5802b8219d96be3d58759d0de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_res_t</type>
+        <definition>lv_res_t lv_gpu_nxp_vglite_blit</definition>
+        <argsstring>(const lv_area_t *dest_area, const lv_color_t *src_buf, const lv_area_t *src_area, lv_coord_t src_stride, lv_opa_t opa)</argsstring>
+        <name>lv_gpu_nxp_vglite_blit</name>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>dest_area</declname>
+        </param>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>src_buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>src_area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>src_stride</declname>
+        </param>
+        <param>
+          <type>lv_opa_t</type>
+          <declname>opa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BLock Image Transfer - copy rectangular image from src_buf to dst_buf with effects. By default, image is copied directly, with optional opacity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dest_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of destination buffer in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source area with relative coordinates of source buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of source buffer in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opacity</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>LV_RES_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer complete </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LV_RES_INV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error occurred (</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>LV_GPU_NXP_VG_LITE_LOG_ERRORS) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" line="118" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" declline="118" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__vglite__blend_8h_1acab14c301728f47a0c1863d09da32d22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_res_t</type>
+        <definition>lv_res_t lv_gpu_nxp_vglite_blit_transform</definition>
+        <argsstring>(const lv_area_t *dest_area, const lv_area_t *clip_area, const lv_color_t *src_buf, const lv_area_t *src_area, lv_coord_t src_stride, const lv_draw_img_dsc_t *dsc)</argsstring>
+        <name>lv_gpu_nxp_vglite_blit_transform</name>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>dest_area</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>clip_area</declname>
+        </param>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>src_buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>src_area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>src_stride</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref> *</type>
+          <declname>dsc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BLock Image Transfer - copy rectangular image from src_buf to dst_buf with transformation. By default, image is copied directly, with optional opacity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dest_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Area with relative coordinates of destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">clip_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clip area with relative coordinates of destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source area with relative coordinates of source buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of source buffer in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image descriptor</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>LV_RES_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer complete </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LV_RES_INV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error occurred (</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>LV_GPU_NXP_VG_LITE_LOG_ERRORS) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" line="136" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" declline="136" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__draw__vglite__blend_8h_1af3ee78220dd6495a3632bf8c47e5e3c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_res_t</type>
+        <definition>lv_res_t lv_gpu_nxp_vglite_buffer_copy</definition>
+        <argsstring>(lv_color_t *dest_buf, const lv_area_t *dest_area, lv_coord_t dest_stride, const lv_color_t *src_buf, const lv_area_t *src_area, lv_coord_t src_stride)</argsstring>
+        <name>lv_gpu_nxp_vglite_buffer_copy</name>
+        <param>
+          <type>lv_color_t *</type>
+          <declname>dest_buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>dest_area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>dest_stride</declname>
+        </param>
+        <param>
+          <type>const lv_color_t *</type>
+          <declname>src_buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+          <declname>src_area</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>src_stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BLock Image Transfer - simple copy of rectangular image from source to destination.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dest_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dest_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Area with relative coordinates of destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dest_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of destination buffer in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source area with relative coordinates of source buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stride of source buffer in pixels</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>LV_RES_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer complete </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LV_RES_INV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error occurred (</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>LV_GPU_NXP_VG_LITE_LOG_ERRORS) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" line="155" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h" declline="155" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="30"><highlight class="preprocessor">#ifndef<sp/>LV_DRAW_VGLITE_BLEND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_DRAW_VGLITE_BLEND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_GPU_NXP_VG_LITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lv__vglite__utils_8h" kindref="compound">lv_vglite_utils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor">#define<sp/>RT595_BLIT_WRKRND_ENABLED<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Internal<sp/>compound<sp/>symbol<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined(CPU_MIMXRT595SFFOB)<sp/>||<sp/>defined(CPU_MIMXRT595SFFOB_cm33)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>defined(CPU_MIMXRT595SFFOC)<sp/>||<sp/>defined(CPU_MIMXRT595SFFOC_cm33))<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>RT595_BLIT_WRKRND_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VG_LITE_BLIT_SPLIT_ENABLED<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VG_LITE_BLIT_SPLIT_ENABLED<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">lv_res_t<sp/><ref refid="lv__draw__vglite__blend_8h_1a73d90f7f765f630085f89e03d8b0c411" kindref="member">lv_gpu_nxp_vglite_fill</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>dest_area,<sp/>lv_color_t<sp/>color,<sp/>lv_opa_t<sp/>opa);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>VG_LITE_BLIT_SPLIT_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">lv_res_t<sp/><ref refid="lv__draw__vglite__blend_8h_1a42a3344a9db086dc1267fb22c42b9aca" kindref="member">lv_gpu_nxp_vglite_blit_split</ref>(lv_color_t<sp/>*<sp/>dest_buf,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>dest_area,<sp/>lv_coord_t<sp/>dest_stride,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>src_buf,<sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>src_area,<sp/>lv_coord_t<sp/>src_stride,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_opa_t<sp/>opa);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">lv_res_t<sp/><ref refid="lv__draw__vglite__blend_8h_1a2a2c91e5802b8219d96be3d58759d0de" kindref="member">lv_gpu_nxp_vglite_blit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>dest_area,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>src_buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>src_area,<sp/>lv_coord_t<sp/>src_stride,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_opa_t<sp/>opa);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">lv_res_t<sp/><ref refid="lv__draw__vglite__blend_8h_1acab14c301728f47a0c1863d09da32d22" kindref="member">lv_gpu_nxp_vglite_blit_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>dest_area,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>clip_area,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>src_buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>src_area,<sp/>lv_coord_t<sp/>src_stride,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__draw__img__dsc__t" kindref="compound">lv_draw_img_dsc_t</ref><sp/>*<sp/>dsc);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*VG_LITE_BLIT_SPLIT_ENABLED*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">lv_res_t<sp/><ref refid="lv__draw__vglite__blend_8h_1af3ee78220dd6495a3632bf8c47e5e3c0" kindref="member">lv_gpu_nxp_vglite_buffer_copy</ref>(lv_color_t<sp/>*<sp/>dest_buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>dest_area,<sp/>lv_coord_t<sp/>dest_stride,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lv_color_t<sp/>*<sp/>src_buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>*<sp/>src_area,<sp/>lv_coord_t<sp/>src_stride);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_GPU_NXP_VG_LITE*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_DRAW_VGLITE_BLEND_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h"/>
+  </compounddef>
+</doxygen>

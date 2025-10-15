@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_8873bd118bd94723ee59026a7ed5af6e" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar</compoundname>
+    <innerfile refid="lv__calendar_8h">lv_calendar.h</innerfile>
+    <innerfile refid="lv__calendar__header__arrow_8h">lv_calendar_header_arrow.h</innerfile>
+    <innerfile refid="lv__calendar__header__dropdown_8h">lv_calendar_header_dropdown.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/calendar/"/>
+  </compounddef>
+</doxygen>

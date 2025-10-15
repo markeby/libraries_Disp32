@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__msg_8h" kind="file" language="C++">
+    <compoundname>lv_msg.h</compoundname>
+    <innerclass refid="structlv__msg__t" prot="public">lv_msg_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__msg_8h_1a56b711451618805881a34136ca461a41" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_msg_subscribe_cb_t) (void *s, lv_msg_t *msg)</definition>
+        <argsstring>)(void *s, lv_msg_t *msg)</argsstring>
+        <name>lv_msg_subscribe_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="36" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__msg_8h_1a2d441396ff26f0c0a9261837b185b424" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_msg_request_cb_t) (void *r, uint32_t msg_id)</definition>
+        <argsstring>)(void *r, uint32_t msg_id)</argsstring>
+        <name>lv_msg_request_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="38" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__msg_8h_1aa2c2996e136a38d4c2d24f4983afd157" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771" kindref="member">lv_event_code_t</ref></type>
+        <definition>lv_event_code_t LV_EVENT_MSG_RECEIVED</definition>
+        <argsstring></argsstring>
+        <name>LV_EVENT_MSG_RECEIVED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="133" column="24" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="133" declcolumn="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__msg_8h_1aeb693f73d13e6272f3ffe542b0d08ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LV_EXPORT_CONST_INT</definition>
+        <argsstring>(LV_MSG_ID_ANY)</argsstring>
+        <name>LV_EXPORT_CONST_INT</name>
+        <param>
+          <type>LV_MSG_ID_ANY</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="23" column="1" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="23" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a26790556c4ac45ffb686dff0d95414e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_msg_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_msg_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called internally to initialize the message module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="47" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1ac3bcccbec536369e8f879a0119a7d998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lv_msg_subsribe</definition>
+        <argsstring>(uint32_t msg_id, lv_msg_subscribe_cb_t cb, void *user_data)</argsstring>
+        <name>lv_msg_subsribe</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type>lv_msg_subscribe_cb_t</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subscribe to an <computeroutput>msg_id</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message ID to listen to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback to call if a message with <computeroutput>msg_id</computeroutput> was sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbitrary data which will be available in <computeroutput>cb</computeroutput> too </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to a &quot;subscribe object&quot;. It can be used the unsubscribe. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="56" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="56" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a226944c95c7300c0f64217919518bcf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lv_msg_subsribe_obj</definition>
+        <argsstring>(uint32_t msg_id, lv_obj_t *obj, void *user_data)</argsstring>
+        <name>lv_msg_subsribe_obj</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subscribe an <computeroutput>lv_obj</computeroutput> to a message. <computeroutput>LV_EVENT_MSG_RECEIVED</computeroutput> will be triggered if a message with matching ID was sent <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message ID to listen to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <computeroutput>lv_obj</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbitrary data which will be available in <computeroutput>cb</computeroutput> too </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to a &quot;subscribe object&quot;. It can be used the unsubscribe. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="66" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="66" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a464adf78be6d2dcda4e62698c245e04d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_msg_unsubscribe</definition>
+        <argsstring>(void *s)</argsstring>
+        <name>lv_msg_unsubscribe</name>
+        <param>
+          <type>void *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel a previous subscription <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a &quot;subscibe object&quot;. Return value of <computeroutput>lv_msg_subsribe</computeroutput> or <computeroutput>lv_msg_subsribe_obj</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="73" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="73" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1af18f7bcd200efd53ddff029969c159e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_msg_unsubscribe_obj</definition>
+        <argsstring>(uint32_t msg_id, lv_obj_t *obj)</argsstring>
+        <name>lv_msg_unsubscribe_obj</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unsubscribe an object from a message ID <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message ID to unsubcribe from or <computeroutput>LV_MSG_ID_ANY</computeroutput> for any message ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object to unsubscribe or NULL for any object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of unsubscriptions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="81" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="81" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a78243ba1a3a01372133ec81fda6e4ac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_msg_send</definition>
+        <argsstring>(uint32_t msg_id, const void *payload)</argsstring>
+        <name>lv_msg_send</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a message with a given ID and payload <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the message to send </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the data to send </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="88" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a5ea3e0da6298769ad763e9f89e51460b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_msg_get_id</definition>
+        <argsstring>(lv_msg_t *m)</argsstring>
+        <name>lv_msg_get_id</name>
+        <param>
+          <type><ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the ID of a message object. Typically used in the subscriber callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a message object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the ID of the message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="95" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="95" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a307a1ae2875c371c7f68667778ff6612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void* lv_msg_get_payload</definition>
+        <argsstring>(lv_msg_t *m)</argsstring>
+        <name>lv_msg_get_payload</name>
+        <param>
+          <type><ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the payload of a message object. Typically used in the subscriber callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a message object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the payload of the message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="102" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="102" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a6f6e1bf93d45ab9010f623a70e934a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lv_msg_get_user_data</definition>
+        <argsstring>(lv_msg_t *m)</argsstring>
+        <name>lv_msg_get_user_data</name>
+        <param>
+          <type><ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the user data of a message object. Typically used in the subscriber callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a message object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the user data of the message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="109" column="7" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="109" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a80524d65495f392cac850004552d6ce2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref> *</type>
+        <definition>lv_msg_t* lv_event_get_msg</definition>
+        <argsstring>(lv_event_t *e)</argsstring>
+        <name>lv_event_get_msg</name>
+        <param>
+          <type><ref refid="struct__lv__event__t" kindref="compound">lv_event_t</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the message object from an event object. Can be used in <computeroutput>LV_EVENT_MSG_RECEIVED</computeroutput> events. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an event object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the message object or NULL if called with unrelated event code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="116" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" declline="116" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1a91fd5b94f7262e8c9fc70ca005a2c284" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* lv_msg_subscribe</definition>
+        <argsstring>(uint32_t msg_id, lv_msg_subscribe_cb_t cb, void *user_data)</argsstring>
+        <name>lv_msg_subscribe</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type>lv_msg_subscribe_cb_t</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="119" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__msg_8h_1ae8fd48e29a8c261849182023861c0013" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* lv_msg_subscribe_obj</definition>
+        <argsstring>(uint32_t msg_id, lv_obj_t *obj, void *user_data)</argsstring>
+        <name>lv_msg_subscribe_obj</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" line="124" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h" bodystart="124" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_MSG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_MSG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../core/lv_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_MSG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_MSG_ID_ANY<sp/>UINT32_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">LV_EXPORT_CONST_INT(LV_MSG_ID_ANY);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structlv__msg__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Identifier<sp/>of<sp/>the<sp/>message*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Set<sp/>the<sp/>the<sp/>user_data<sp/>set<sp/>in<sp/>`lv_msg_subscribe`*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>_priv_data;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Used<sp/>internally*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>payload;<sp/><sp/><sp/></highlight><highlight class="comment">/*Pointer<sp/>to<sp/>the<sp/>data<sp/>of<sp/>the<sp/>message*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*lv_msg_subscribe_cb_t)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>s,<sp/><ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref><sp/>*<sp/>msg);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*lv_msg_request_cb_t)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>r,<sp/>uint32_t<sp/>msg_id);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__msg_8h_1a26790556c4ac45ffb686dff0d95414e1" kindref="member">lv_msg_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__msg_8h_1ac3bcccbec536369e8f879a0119a7d998" kindref="member">lv_msg_subsribe</ref>(uint32_t<sp/>msg_id,<sp/>lv_msg_subscribe_cb_t<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__msg_8h_1a226944c95c7300c0f64217919518bcf5" kindref="member">lv_msg_subsribe_obj</ref>(uint32_t<sp/>msg_id,<sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__msg_8h_1a464adf78be6d2dcda4e62698c245e04d" kindref="member">lv_msg_unsubscribe</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>s);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">uint32_t<sp/><ref refid="lv__msg_8h_1af18f7bcd200efd53ddff029969c159e3" kindref="member">lv_msg_unsubscribe_obj</ref>(uint32_t<sp/>msg_id,<sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__msg_8h_1a78243ba1a3a01372133ec81fda6e4ac3" kindref="member">lv_msg_send</ref>(uint32_t<sp/>msg_id,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>payload);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">uint32_t<sp/><ref refid="lv__msg_8h_1a5ea3e0da6298769ad763e9f89e51460b" kindref="member">lv_msg_get_id</ref>(<ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref><sp/>*<sp/>m);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__msg_8h_1a307a1ae2875c371c7f68667778ff6612" kindref="member">lv_msg_get_payload</ref>(<ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref><sp/>*<sp/>m);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="lv__msg_8h_1a6f6e1bf93d45ab9010f623a70e934a16" kindref="member">lv_msg_get_user_data</ref>(<ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref><sp/>*<sp/>m);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><ref refid="structlv__msg__t" kindref="compound">lv_msg_t</ref><sp/>*<sp/><ref refid="lv__msg_8h_1a80524d65495f392cac850004552d6ce2" kindref="member">lv_event_get_msg</ref>(<ref refid="struct__lv__event__t" kindref="compound">lv_event_t</ref><sp/>*<sp/>e);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">/*Fix<sp/>typo*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>lv_msg_subscribe(uint32_t<sp/>msg_id,<sp/>lv_msg_subscribe_cb_t<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="lv__msg_8h_1ac3bcccbec536369e8f879a0119a7d998" kindref="member">lv_msg_subsribe</ref>(msg_id,<sp/>cb,<sp/>user_data);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>lv_msg_subscribe_obj(uint32_t<sp/>msg_id,<sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="lv__msg_8h_1a226944c95c7300c0f64217919518bcf5" kindref="member">lv_msg_subsribe_obj</ref>(msg_id,<sp/>obj,<sp/>user_data);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>VARIABLES</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771" kindref="member">lv_event_code_t</ref><sp/>LV_EVENT_MSG_RECEIVED;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_MSG*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_MSG_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/others/msg/lv_msg.h"/>
+  </compounddef>
+</doxygen>

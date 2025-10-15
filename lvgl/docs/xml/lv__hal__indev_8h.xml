@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__hal__indev_8h" kind="file" language="C++">
+    <compoundname>lv_hal_indev.h</compoundname>
+    <innerclass refid="structlv__indev__data__t" prot="public">lv_indev_data_t</innerclass>
+    <innerclass refid="struct__lv__indev__drv__t" prot="public">_lv_indev_drv_t</innerclass>
+    <innerclass refid="struct__lv__indev__proc__t" prot="public">_lv_indev_proc_t</innerclass>
+    <innerclass refid="struct__lv__indev__t" prot="public">_lv_indev_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_indev_type_t</name>
+        <enumvalue id="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba5c2a83039d7a8073d24569b85b6048f4" prot="public">
+          <name>LV_INDEV_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Uninitialized state </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba266ddfccb1f31d538489eea5667ebebf" prot="public">
+          <name>LV_INDEV_TYPE_POINTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Touch pad, mouse, external button </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba9f8299c12ea91ab8e7a6e783b9b0664d" prot="public">
+          <name>LV_INDEV_TYPE_KEYPAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Keypad or keyboard </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5baa9b43a6f629907e83436dd9cf7973f84" prot="public">
+          <name>LV_INDEV_TYPE_BUTTON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>External (hardware button) which is assigned to a specific point of the screen </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5bac14b17fb683f428c1bb935748ce0d5aa" prot="public">
+          <name>LV_INDEV_TYPE_ENCODER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Encoder with only Left, Right turn and a Button </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible input device types </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="60" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_indev_state_t</name>
+        <enumvalue id="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956aa17473382979b77cb5f5388ff3e11b2e" prot="public">
+          <name>LV_INDEV_STATE_RELEASED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956aae8cba42264e264514d9789425c14d39" prot="public">
+          <name>LV_INDEV_STATE_PRESSED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>States for input devices </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="69" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__hal__indev_8h_1aa608bb96b6aeff54d2f1c2280f4e970d" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref></type>
+        <definition>typedef struct _lv_indev_drv_t lv_indev_drv_t</definition>
+        <argsstring></argsstring>
+        <name>lv_indev_drv_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialized by the user and registered by &apos;lv_indev_add()&apos; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="125" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__hal__indev_8h_1a1f362694bc0ad34e5c8689ac7b35cc58" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__indev__proc__t" kindref="compound">_lv_indev_proc_t</ref></type>
+        <definition>typedef struct _lv_indev_proc_t _lv_indev_proc_t</definition>
+        <argsstring></argsstring>
+        <name>_lv_indev_proc_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run time data of input devices Internally used by the library, you should not need to touch it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="170" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" prot="public" static="no">
+        <type>struct <ref refid="struct__lv__indev__t" kindref="compound">_lv_indev_t</ref></type>
+        <definition>typedef struct _lv_indev_t lv_indev_t</definition>
+        <argsstring></argsstring>
+        <name>lv_indev_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The main input device descriptor with driver, runtime data (&apos;proc&apos;) and some additional information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="181" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__hal__indev_8h_1a84785b93e8b9e127d3bb0e742f4f2fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_indev_drv_init</definition>
+        <argsstring>(struct _lv_indev_drv_t *driver)</argsstring>
+        <name>lv_indev_drv_init</name>
+        <param>
+          <type>struct <ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref> *</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an input device driver with default values. It is used to surely have known values in the fields and not memory junk. After it you can set the fields. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>driver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to driver variable to initialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="193" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" declline="193" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__indev_8h_1a44232c7c01e49c5a76a6cf7d76b88ca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" kindref="member">lv_indev_t</ref> *</type>
+        <definition>lv_indev_t* lv_indev_drv_register</definition>
+        <argsstring>(struct _lv_indev_drv_t *driver)</argsstring>
+        <name>lv_indev_drv_register</name>
+        <param>
+          <type>struct <ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref> *</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register an initialized input device driver. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>driver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized &apos;lv_indev_drv_t&apos; variable (can be local variable) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the new input device or NULL on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="200" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" declline="200" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__indev_8h_1a4e3a5f1579c8114a1435785c22b43de4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_indev_drv_update</definition>
+        <argsstring>(lv_indev_t *indev, struct _lv_indev_drv_t *new_drv)</argsstring>
+        <name>lv_indev_drv_update</name>
+        <param>
+          <type><ref refid="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" kindref="member">lv_indev_t</ref> *</type>
+          <declname>indev</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref> *</type>
+          <declname>new_drv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the driver in run time. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an input device. (return value of <computeroutput>lv_indev_drv_register</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_drv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new driver </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="207" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" declline="207" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__indev_8h_1a15a817e6f1ce962760106c056abcf1b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_indev_delete</definition>
+        <argsstring>(lv_indev_t *indev)</argsstring>
+        <name>lv_indev_delete</name>
+        <param>
+          <type><ref refid="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" kindref="member">lv_indev_t</ref> *</type>
+          <declname>indev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove the provided input device. Make sure not to use the provided input device afterwards anymore. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to delete </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="213" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" declline="213" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__indev_8h_1adb9ab2d384afe15273206e6565ca6442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" kindref="member">lv_indev_t</ref> *</type>
+        <definition>lv_indev_t* lv_indev_get_next</definition>
+        <argsstring>(lv_indev_t *indev)</argsstring>
+        <name>lv_indev_get_next</name>
+        <param>
+          <type><ref refid="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" kindref="member">lv_indev_t</ref> *</type>
+          <declname>indev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next input device. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the current input device. NULL to initialize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the next input device or NULL if there are no more. Provide the first input device when the parameter is NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="221" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" declline="221" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__hal__indev_8h_1a9ca30c7936b17a3dc9bb3d8fb205585a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _lv_indev_read</definition>
+        <argsstring>(lv_indev_t *indev, lv_indev_data_t *data)</argsstring>
+        <name>_lv_indev_read</name>
+        <param>
+          <type><ref refid="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" kindref="member">lv_indev_t</ref> *</type>
+          <declname>indev</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__indev__data__t" kindref="compound">lv_indev_data_t</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data from an input device. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an input device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input device will write its data here </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" line="228" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h" declline="228" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>@description Input Device HAL interface layer header file </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>LV_HAL_INDEV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_HAL_INDEV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../lv_conf_internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_area.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/lv_timer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*Drag<sp/>threshold<sp/>in<sp/>pixels*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_INDEV_DEF_SCROLL_LIMIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*Drag<sp/>throw<sp/>slow-down<sp/>in<sp/>[%].<sp/>Greater<sp/>value<sp/>-&gt;<sp/>faster<sp/>slow-down*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_INDEV_DEF_SCROLL_THROW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*Long<sp/>press<sp/>time<sp/>in<sp/>milliseconds.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*Time<sp/>to<sp/>send<sp/>`LV_EVENT_LONG_PRESSSED`)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_INDEV_DEF_LONG_PRESS_TIME<sp/><sp/><sp/><sp/><sp/><sp/>400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*Repeated<sp/>trigger<sp/>period<sp/>in<sp/>long<sp/>press<sp/>[ms]</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*Time<sp/>between<sp/>`LV_EVENT_LONG_PRESSED_REPEAT*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_INDEV_DEF_LONG_PRESS_REP_TIME<sp/><sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*Gesture<sp/>threshold<sp/>in<sp/>pixels*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_INDEV_DEF_GESTURE_LIMIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*Gesture<sp/>min<sp/>velocity<sp/>at<sp/>release<sp/>before<sp/>swipe<sp/>(pixels)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_INDEV_DEF_GESTURE_MIN_VELOCITY<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__group__t" kindref="compound">_lv_group_t</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__indev__t" kindref="compound">_lv_indev_t</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="61" refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba5c2a83039d7a8073d24569b85b6048f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba5c2a83039d7a8073d24569b85b6048f4" kindref="member">LV_INDEV_TYPE_NONE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba266ddfccb1f31d538489eea5667ebebf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba266ddfccb1f31d538489eea5667ebebf" kindref="member">LV_INDEV_TYPE_POINTER</ref>,<sp/></highlight></codeline>
+<codeline lineno="63" refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba9f8299c12ea91ab8e7a6e783b9b0664d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5ba9f8299c12ea91ab8e7a6e783b9b0664d" kindref="member">LV_INDEV_TYPE_KEYPAD</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5baa9b43a6f629907e83436dd9cf7973f84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5baa9b43a6f629907e83436dd9cf7973f84" kindref="member">LV_INDEV_TYPE_BUTTON</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5bac14b17fb683f428c1bb935748ce0d5aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5bac14b17fb683f428c1bb935748ce0d5aa" kindref="member">LV_INDEV_TYPE_ENCODER</ref>,<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}<sp/><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5b" kindref="member">lv_indev_type_t</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_INDEV_STATE_RELEASED<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_INDEV_STATE_PRESSED</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/><ref refid="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" kindref="member">lv_indev_state_t</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="structlv__indev__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76" refid="structlv__indev__data__t_1afaecb3fba20bd3d6f798dea8b207f257" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/><ref refid="structlv__indev__data__t_1afaecb3fba20bd3d6f798dea8b207f257" kindref="member">point</ref>;<sp/></highlight></codeline>
+<codeline lineno="77" refid="structlv__indev__data__t_1a5f93f90c6ffe0f7db54a0fc43a1cef9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlv__indev__data__t_1a5f93f90c6ffe0f7db54a0fc43a1cef9c" kindref="member">key</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="structlv__indev__data__t_1a5c9452fed20a2e6f91bfff86d0bcc6d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlv__indev__data__t_1a5c9452fed20a2e6f91bfff86d0bcc6d6" kindref="member">btn_id</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="structlv__indev__data__t_1a13b86f5548c334dc240f85a74c96195e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="structlv__indev__data__t_1a13b86f5548c334dc240f85a74c96195e" kindref="member">enc_diff</ref>;<sp/></highlight></codeline>
+<codeline lineno="81" refid="structlv__indev__data__t_1aed0de26ed88301e92bc3d95020a9893b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" kindref="member">lv_indev_state_t</ref><sp/><ref refid="structlv__indev__data__t_1aed0de26ed88301e92bc3d95020a9893b" kindref="member">state</ref>;<sp/></highlight></codeline>
+<codeline lineno="82" refid="structlv__indev__data__t_1aa8048e6188372c0050640b1eb341f093" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlv__indev__data__t_1aa8048e6188372c0050640b1eb341f093" kindref="member">continue_reading</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<sp/><ref refid="structlv__indev__data__t" kindref="compound">lv_indev_data_t</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="struct__lv__indev__drv__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="struct__lv__indev__drv__t_1afcf65997bfa34ba6277814d214b5ef55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1a11213c9864502e382d5f19b9e6b2de5b" kindref="member">lv_indev_type_t</ref><sp/><ref refid="struct__lv__indev__drv__t_1afcf65997bfa34ba6277814d214b5ef55" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*read_cb)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref><sp/>*<sp/>indev_drv,<sp/><ref refid="structlv__indev__data__t" kindref="compound">lv_indev_data_t</ref><sp/>*<sp/>data);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="struct__lv__indev__drv__t_1a2761f98ff5415e7522b7a389f3b89e70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct__lv__indev__drv__t_1a2761f98ff5415e7522b7a389f3b89e70" kindref="member">feedback_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref><sp/>*,<sp/>uint8_t);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_USER_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="struct__lv__indev__drv__t_1a4d308304de2658bd31a9c5826cd16480" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__disp__t" kindref="compound">_lv_disp_t</ref><sp/>*<sp/><ref refid="struct__lv__indev__drv__t_1a4d308304de2658bd31a9c5826cd16480" kindref="member">disp</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="struct__lv__indev__drv__t_1a2bec6f260af2d2568d85dc73d5874bdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__timer__t" kindref="compound">lv_timer_t</ref><sp/>*<sp/><ref refid="struct__lv__indev__drv__t_1a2bec6f260af2d2568d85dc73d5874bdf" kindref="member">read_timer</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="struct__lv__indev__drv__t_1a54861fb3efdb2e9c8037ec5dbdd5c7a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__indev__drv__t_1a54861fb3efdb2e9c8037ec5dbdd5c7a0" kindref="member">scroll_limit</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="struct__lv__indev__drv__t_1a23226c4cd9c78a7e8c6672b810eb45d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__indev__drv__t_1a23226c4cd9c78a7e8c6672b810eb45d8" kindref="member">scroll_throw</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="struct__lv__indev__drv__t_1a881f1834d3f8666fb3d86c37734f0e3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__indev__drv__t_1a881f1834d3f8666fb3d86c37734f0e3a" kindref="member">gesture_min_velocity</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="struct__lv__indev__drv__t_1a2e83d20954f4d4056e2f21b67893ac7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct__lv__indev__drv__t_1a2e83d20954f4d4056e2f21b67893ac7b" kindref="member">gesture_limit</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="struct__lv__indev__drv__t_1aed13a62b3f85ab444db64e8f6e9fa215" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct__lv__indev__drv__t_1aed13a62b3f85ab444db64e8f6e9fa215" kindref="member">long_press_time</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>long_press_repeat_time;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}<sp/><ref refid="lv__hal__indev_8h_1aa608bb96b6aeff54d2f1c2280f4e970d" kindref="member">lv_indev_drv_t</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="struct__lv__indev__proc__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__indev__proc__t" kindref="compound">_lv_indev_proc_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="131" refid="struct__lv__indev__proc__t_1a993ced14d531f55381346cebf8a978d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" kindref="member">lv_indev_state_t</ref><sp/><ref refid="struct__lv__indev__proc__t_1a993ced14d531f55381346cebf8a978d8" kindref="member">state</ref>;<sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Flags*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>long_pr_sent<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>reset_query<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>disabled<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>wait_until_release<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Pointer<sp/>and<sp/>button<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="struct__lv__indev__proc__t_1a07c31da6ce2d8bf13495979a4cfde167" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/><ref refid="struct__lv__indev__proc__t_1a07c31da6ce2d8bf13495979a4cfde167" kindref="member">act_point</ref>;<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>indev_point;</highlight></codeline>
+<codeline lineno="143" refid="struct__lv__indev__proc__t_1a1cdaaba80366c5e69643ce39e9ccfe54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/><ref refid="struct__lv__indev__proc__t_1a1cdaaba80366c5e69643ce39e9ccfe54" kindref="member">last_point</ref>;<sp/></highlight></codeline>
+<codeline lineno="144" refid="struct__lv__indev__proc__t_1a5ef2276c058ae14671e0b2c95fcd0efd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/><ref refid="struct__lv__indev__proc__t_1a5ef2276c058ae14671e0b2c95fcd0efd" kindref="member">last_raw_point</ref>;<sp/></highlight></codeline>
+<codeline lineno="145" refid="struct__lv__indev__proc__t_1a311ca773c25e7719b27ec09a36bf17e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/><ref refid="struct__lv__indev__proc__t_1a311ca773c25e7719b27ec09a36bf17e1" kindref="member">vect</ref>;<sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>scroll_sum;<sp/></highlight><highlight class="comment">/*Count<sp/>the<sp/>dragged<sp/>pixels<sp/>to<sp/>check<sp/>LV_INDEV_DEF_SCROLL_LIMIT*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>scroll_throw_vect;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>scroll_throw_vect_ori;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>act_obj;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>object<sp/>being<sp/>pressed*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>last_obj;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>last<sp/>object<sp/>which<sp/>was<sp/>pressed*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>scroll_obj;<sp/><sp/><sp/></highlight><highlight class="comment">/*The<sp/>object<sp/>being<sp/>scrolled*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/>last_pressed;<sp/></highlight><highlight class="comment">/*The<sp/>lastly<sp/>pressed<sp/>object*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__area__t" kindref="compound">lv_area_t</ref><sp/>scroll_area;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>gesture_sum;<sp/></highlight><highlight class="comment">/*Count<sp/>the<sp/>gesture<sp/>pixels<sp/>to<sp/>check<sp/>LV_INDEV_DEF_GESTURE_LIMIT*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Flags*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_dir_t<sp/>scroll_dir<sp/>:<sp/>4;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_dir_t<sp/>gesture_dir<sp/>:<sp/>4;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>gesture_sent<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>pointer;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Keypad<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lv__hal__indev_8h_1aacdf3efce400e71895f5efb42ee24956" kindref="member">lv_indev_state_t</ref><sp/>last_state;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>last_key;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>keypad;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>types;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="struct__lv__indev__proc__t_1a610fbc71cd450b55c0ad5fdf38dfaf5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__indev__proc__t_1a610fbc71cd450b55c0ad5fdf38dfaf5a" kindref="member">pr_timestamp</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="struct__lv__indev__proc__t_1a943cbd9cf549902dc4cfae4fbcea181f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__lv__indev__proc__t_1a943cbd9cf549902dc4cfae4fbcea181f" kindref="member">longpr_rep_timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}<sp/><ref refid="lv__hal__indev_8h_1a1f362694bc0ad34e5c8689ac7b35cc58" kindref="member">_lv_indev_proc_t</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="struct__lv__indev__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__indev__t" kindref="compound">_lv_indev_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref><sp/>*<sp/>driver;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__indev__proc__t" kindref="compound">_lv_indev_proc_t</ref><sp/>proc;</highlight></codeline>
+<codeline lineno="177" refid="struct__lv__indev__t_1afca94f9275c3ca669979477d56fd884d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">_lv_obj_t</ref><sp/>*<sp/><ref refid="struct__lv__indev__t_1afca94f9275c3ca669979477d56fd884d" kindref="member">cursor</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178" refid="struct__lv__indev__t_1abe81eefe10ba7f66ff9ffe3a48db3a31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lv__group__t" kindref="compound">_lv_group_t</ref><sp/>*<sp/><ref refid="struct__lv__indev__t_1abe81eefe10ba7f66ff9ffe3a48db3a31" kindref="member">group</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179" refid="struct__lv__indev__t_1aa7c40dc6d671c802427db39a7181237b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/><ref refid="struct__lv__indev__t_1aa7c40dc6d671c802427db39a7181237b" kindref="member">btn_points</ref>;<sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}<sp/><ref refid="lv__hal__indev_8h_1a7fc4c271f4ad53b4949e26b2999a1785" kindref="member">lv_indev_t</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__indev_8h_1a84785b93e8b9e127d3bb0e742f4f2fc5" kindref="member">lv_indev_drv_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref><sp/>*<sp/>driver);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><ref refid="struct__lv__indev__t" kindref="compound">lv_indev_t</ref><sp/>*<sp/><ref refid="lv__hal__indev_8h_1a44232c7c01e49c5a76a6cf7d76b88ca4" kindref="member">lv_indev_drv_register</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref><sp/>*<sp/>driver);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__indev_8h_1a4e3a5f1579c8114a1435785c22b43de4" kindref="member">lv_indev_drv_update</ref>(<ref refid="struct__lv__indev__t" kindref="compound">lv_indev_t</ref><sp/>*<sp/>indev,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__lv__indev__drv__t" kindref="compound">_lv_indev_drv_t</ref><sp/>*<sp/>new_drv);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__indev_8h_1a15a817e6f1ce962760106c056abcf1b0" kindref="member">lv_indev_delete</ref>(<ref refid="struct__lv__indev__t" kindref="compound">lv_indev_t</ref><sp/>*<sp/>indev);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><ref refid="struct__lv__indev__t" kindref="compound">lv_indev_t</ref><sp/>*<sp/><ref refid="lv__hal__indev_8h_1adb9ab2d384afe15273206e6565ca6442" kindref="member">lv_indev_get_next</ref>(<ref refid="struct__lv__indev__t" kindref="compound">lv_indev_t</ref><sp/>*<sp/>indev);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__hal__indev_8h_1a9ca30c7936b17a3dc9bb3d8fb205585a" kindref="member">_lv_indev_read</ref>(<ref refid="struct__lv__indev__t" kindref="compound">lv_indev_t</ref><sp/>*<sp/>indev,<sp/><ref refid="structlv__indev__data__t" kindref="compound">lv_indev_data_t</ref><sp/>*<sp/>data);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/hal/lv_hal_indev.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_0e3c392b78d80c8cca9bd188462c97da" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl</compoundname>
+    <innerfile refid="lv__draw__sdl_8h">lv_draw_sdl.h</innerfile>
+    <innerfile refid="lv__draw__sdl__composite_8h">lv_draw_sdl_composite.h</innerfile>
+    <innerfile refid="lv__draw__sdl__img_8h">lv_draw_sdl_img.h</innerfile>
+    <innerfile refid="lv__draw__sdl__layer_8h">lv_draw_sdl_layer.h</innerfile>
+    <innerfile refid="lv__draw__sdl__mask_8h">lv_draw_sdl_mask.h</innerfile>
+    <innerfile refid="lv__draw__sdl__priv_8h">lv_draw_sdl_priv.h</innerfile>
+    <innerfile refid="lv__draw__sdl__rect_8h">lv_draw_sdl_rect.h</innerfile>
+    <innerfile refid="lv__draw__sdl__stack__blur_8h">lv_draw_sdl_stack_blur.h</innerfile>
+    <innerfile refid="lv__draw__sdl__texture__cache_8h">lv_draw_sdl_texture_cache.h</innerfile>
+    <innerfile refid="lv__draw__sdl__utils_8h">lv_draw_sdl_utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/draw/sdl/"/>
+  </compounddef>
+</doxygen>

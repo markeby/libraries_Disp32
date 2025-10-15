@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structgd__GCE" kind="struct" language="C++" prot="public">
+    <compoundname>gd_GCE</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgd__GCE_1a4b143eb0a4fc09fa1cc7b2055a11ca7e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gd_GCE::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="15" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GCE_1aa78838338018ea6a79760a0afdec9ec9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gd_GCE::tindex</definition>
+        <argsstring></argsstring>
+        <name>tindex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="16" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GCE_1a172172aa5eb3af38d848e7c6972667d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gd_GCE::disposal</definition>
+        <argsstring></argsstring>
+        <name>disposal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="17" column="13" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GCE_1a5d3dec137f16c75b6e7bfdeb4c841d82" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gd_GCE::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="18" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgd__GCE_1a11dece8fb453ac8c8cb8e46b18447a49" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gd_GCE::transparency</definition>
+        <argsstring></argsstring>
+        <name>transparency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="19" column="9" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" line="14" column="21" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/gif/gifdec.h" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structgd__GCE_1a4b143eb0a4fc09fa1cc7b2055a11ca7e" prot="public" virt="non-virtual"><scope>gd_GCE</scope><name>delay</name></member>
+      <member refid="structgd__GCE_1a172172aa5eb3af38d848e7c6972667d4" prot="public" virt="non-virtual"><scope>gd_GCE</scope><name>disposal</name></member>
+      <member refid="structgd__GCE_1a5d3dec137f16c75b6e7bfdeb4c841d82" prot="public" virt="non-virtual"><scope>gd_GCE</scope><name>input</name></member>
+      <member refid="structgd__GCE_1aa78838338018ea6a79760a0afdec9ec9" prot="public" virt="non-virtual"><scope>gd_GCE</scope><name>tindex</name></member>
+      <member refid="structgd__GCE_1a11dece8fb453ac8c8cb8e46b18447a49" prot="public" virt="non-virtual"><scope>gd_GCE</scope><name>transparency</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

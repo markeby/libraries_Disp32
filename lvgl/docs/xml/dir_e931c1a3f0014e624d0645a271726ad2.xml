@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_e931c1a3f0014e624d0645a271726ad2" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples</compoundname>
+    <innerdir refid="dir_29779e6d32c7dd6ccf7a44a7b2cdf5df">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/anim</innerdir>
+    <innerdir refid="dir_f8d55017133ed0f058b91092ffc5f43a">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/event</innerdir>
+    <innerdir refid="dir_efcc9e51e3e02e558da2512e89f66bcc">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/get_started</innerdir>
+    <innerdir refid="dir_c69fd5ade0cb8088a158f93e20e74c45">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/layouts</innerdir>
+    <innerdir refid="dir_c0f4b10e3d3d709a1640f9690743393f">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/libs</innerdir>
+    <innerdir refid="dir_b4243ef983bed9f708abbf9bac169288">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others</innerdir>
+    <innerdir refid="dir_9ac1b42ab4f09f9bff836294729e4c0f">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/porting</innerdir>
+    <innerdir refid="dir_c0afe1fd50b254b3d6a744d26056bea4">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/scroll</innerdir>
+    <innerdir refid="dir_decc481a7ec46082812b60859500a59d">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/styles</innerdir>
+    <innerdir refid="dir_0457a7d57ff14a02640b83f55d30be9b">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/widgets</innerdir>
+    <innerfile refid="lv__examples_8h">lv_examples.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/"/>
+  </compounddef>
+</doxygen>

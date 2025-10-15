@@ -1,0 +1,2207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lv__chart_8h" kind="file" language="C++">
+    <compoundname>lv_chart.h</compoundname>
+    <innerclass refid="structlv__chart__series__t" prot="public">lv_chart_series_t</innerclass>
+    <innerclass refid="structlv__chart__cursor__t" prot="public">lv_chart_cursor_t</innerclass>
+    <innerclass refid="structlv__chart__tick__dsc__t" prot="public">lv_chart_tick_dsc_t</innerclass>
+    <innerclass refid="structlv__chart__t" prot="public">lv_chart_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@30</name>
+        <enumvalue id="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebba3781231f7433084a6882833b90b2b287" prot="public">
+          <name>LV_CHART_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Don&apos;t draw the series </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebbabff0662492b645adf865b30f5b0d2b89" prot="public">
+          <name>LV_CHART_TYPE_LINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Connect the points with lines </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebba1c1977e71f2de8d1857ae0b0306b0080" prot="public">
+          <name>LV_CHART_TYPE_BAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Draw columns </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebbaac2fdf46d72a93a8fb6a92309e7ac643" prot="public">
+          <name>LV_CHART_TYPE_SCATTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Draw points and lines in 2D (x,y coordinates) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Chart types </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="39" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__chart_8h_1a0944a4353780132eeab7b06e3e42291d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@31</name>
+        <enumvalue id="lv__chart_8h_1a0944a4353780132eeab7b06e3e42291da9a0b47047328265061fc1ea51dc08f46" prot="public">
+          <name>LV_CHART_UPDATE_MODE_SHIFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Shift old data to the left and add the new one the right </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a0944a4353780132eeab7b06e3e42291da515b1f581d44fc656b1dc7a3b560b6f6" prot="public">
+          <name>LV_CHART_UPDATE_MODE_CIRCULAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Add the new data in a circular way </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Chart update mode for <computeroutput>lv_chart_set_next</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="50" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__chart_8h_1a4790f45dcc812c1b00184a2edccdddf5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@32</name>
+        <enumvalue id="lv__chart_8h_1a4790f45dcc812c1b00184a2edccdddf5ab4d56111d313fae7564ace970f5030de" prot="public">
+          <name>LV_CHART_AXIS_PRIMARY_Y</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a4790f45dcc812c1b00184a2edccdddf5af7adb009e843a6b0688afb27b3cb3fe2" prot="public">
+          <name>LV_CHART_AXIS_SECONDARY_Y</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a4790f45dcc812c1b00184a2edccdddf5adbe8d91826e765e7311711dc50248c9b" prot="public">
+          <name>LV_CHART_AXIS_PRIMARY_X</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a4790f45dcc812c1b00184a2edccdddf5ac12b08c4a60cb602ee68eee2c632f8db" prot="public">
+          <name>LV_CHART_AXIS_SECONDARY_X</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a4790f45dcc812c1b00184a2edccdddf5a87d8aedcf1ced7e7aaf8a1283e1c6b38" prot="public">
+          <name>_LV_CHART_AXIS_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of the axis&apos; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="59" column="6" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_chart_draw_part_type_t</name>
+        <enumvalue id="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca3050f90c6723e37bcd893d5aa7460343" prot="public">
+          <name>LV_CHART_DRAW_PART_DIV_LINE_INIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Used before/after drawn the div lines </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca722876a8cd6fa8278ca018744d95dae5" prot="public">
+          <name>LV_CHART_DRAW_PART_DIV_LINE_HOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Used for each horizontal division lines </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045caf0255d41066fb68d5f4f481cc5236ab0" prot="public">
+          <name>LV_CHART_DRAW_PART_DIV_LINE_VER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Used for each vertical division lines </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca846b7792ad712b4e3ef7ba630a7d9396" prot="public">
+          <name>LV_CHART_DRAW_PART_LINE_AND_POINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Used on line and scatter charts for lines and points </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca7b29ff7bf60a5970c607c535794c4d45" prot="public">
+          <name>LV_CHART_DRAW_PART_BAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Used on bar charts for the rectangles </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045caed8288127ebed96b9614a326f6f6d96f" prot="public">
+          <name>LV_CHART_DRAW_PART_CURSOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Used on cursor lines and points </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca2fbbdfc19d8bd750ab21c289d93ae6f9" prot="public">
+          <name>LV_CHART_DRAW_PART_TICK_LABEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Used on tick lines and labels </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>type</computeroutput> field in <computeroutput><ref refid="structlv__obj__draw__part__dsc__t" kindref="compound">lv_obj_draw_part_dsc_t</ref></computeroutput> if <computeroutput>class_p = lv_chart_class</computeroutput> Used in <computeroutput>LV_EVENT_DRAW_PART_BEGIN</computeroutput> and <computeroutput>LV_EVENT_DRAW_PART_END</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="126" column="14" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="126" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__chart_8h_1a498d916927185ea0556e99215a10d235" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_chart_type_t</definition>
+        <argsstring></argsstring>
+        <name>lv_chart_type_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="45" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__chart_8h_1acd87f4dcd0cfbdfd1da0d8ecc9a05f2d" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_chart_update_mode_t</definition>
+        <argsstring></argsstring>
+        <name>lv_chart_update_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="54" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__chart_8h_1a970a24c47bd4458f21a0230f69045d54" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t lv_chart_axis_t</definition>
+        <argsstring></argsstring>
+        <name>lv_chart_axis_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="66" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__chart_8h_1ae7d2ac58b6dc4028517083b684995355" prot="public" static="no" mutable="no">
+        <type>const <ref refid="lv__obj__class_8h_1a45f1eead6ce2fb12e215ea3e0558f168" kindref="member">lv_obj_class_t</ref></type>
+        <definition>const lv_obj_class_t lv_chart_class</definition>
+        <argsstring></argsstring>
+        <name>lv_chart_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="120" column="29" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="120" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lv__chart_8h_1ac435574fc6e418c9622592b3710d110f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LV_EXPORT_CONST_INT</definition>
+        <argsstring>(LV_CHART_POINT_NONE)</argsstring>
+        <name>LV_EXPORT_CONST_INT</name>
+        <param>
+          <type>LV_CHART_POINT_NONE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="30" column="1" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="30" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a4e94ae73a3cca396c556306829e038a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t* lv_chart_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_chart_create</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a chart object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object, it will be the parent of the new chart </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created chart </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="145" column="11" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="145" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ab564480b52da2510727a9eb470045f39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_type</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_type_t type)</argsstring>
+        <name>lv_chart_set_type</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_chart_type_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a new type for a chart <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new type of the chart (from &apos;lv_chart_type_t&apos; enum) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="152" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="152" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a715027c242dc73f6d15538968c98d7f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_point_count</definition>
+        <argsstring>(lv_obj_t *obj, uint16_t cnt)</argsstring>
+        <name>lv_chart_set_point_count</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of points on a data line on a chart <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new number of points on the data lines </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="158" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="158" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ae56fe53c2a06b3015e391c9c6e728358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_range</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_axis_t axis, lv_coord_t min, lv_coord_t max)</argsstring>
+        <name>lv_chart_set_range</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_chart_axis_t</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the minimal and maximal y values on an axis <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>LV_CHART_AXIS_PRIMARY_Y</computeroutput> or <computeroutput>LV_CHART_AXIS_SECONDARY_Y</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value of the y axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value of the y axis </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="167" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="167" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a93ad4bb5e42fb4d789f162110d9a9142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_update_mode</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_update_mode_t update_mode)</argsstring>
+        <name>lv_chart_set_update_mode</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_chart_update_mode_t</type>
+          <declname>update_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set update mode of the chart object. Affects <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the update mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="174" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="174" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a2e7134a6552d46ce4d0e2ce1fc7eb48d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_div_line_count</definition>
+        <argsstring>(lv_obj_t *obj, uint8_t hdiv, uint8_t vdiv)</argsstring>
+        <name>lv_chart_set_div_line_count</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>hdiv</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>vdiv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of horizontal and vertical division lines <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hdiv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of horizontal division lines </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vdiv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vertical division lines </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="182" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="182" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a7b32ebe14643c2f2644766e4b7fa3753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_zoom_x</definition>
+        <argsstring>(lv_obj_t *obj, uint16_t zoom_x)</argsstring>
+        <name>lv_chart_set_zoom_x</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>zoom_x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Zoom into the chart in X direction <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zoom_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zoom in x direction. LV_ZOOM_NONE or 256 for no zoom, 512 double zoom </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="189" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="189" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1aa67c1f90efa21a88b71dcb49c3acb193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_zoom_y</definition>
+        <argsstring>(lv_obj_t *obj, uint16_t zoom_y)</argsstring>
+        <name>lv_chart_set_zoom_y</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>zoom_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Zoom into the chart in Y direction <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zoom_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zoom in y direction. LV_ZOOM_NONE or 256 for no zoom, 512 double zoom </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="196" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="196" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1aa7a242c85c350d016fb853e3d48459b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_get_zoom_x</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_chart_get_zoom_x</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get X zoom of a chart <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the X zoom value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="203" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="203" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ac285227dea895e74b61252547b50f15b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_get_zoom_y</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_chart_get_zoom_y</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Y zoom of a chart <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the Y zoom value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="210" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="210" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1aef074a755a71c43f7e2c5025f864479a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_axis_tick</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_axis_t axis, lv_coord_t major_len, lv_coord_t minor_len, lv_coord_t major_cnt, lv_coord_t minor_cnt, bool label_en, lv_coord_t draw_size)</argsstring>
+        <name>lv_chart_set_axis_tick</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_chart_axis_t</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>major_len</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>minor_len</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>major_cnt</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>minor_cnt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>label_en</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>draw_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of tick lines on an axis <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an axis which ticks count should be set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>major_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of major ticks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minor_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of minor ticks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>major_cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of major ticks on the axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minor_cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of minor ticks between two major ticks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: enable label drawing on major ticks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>draw_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra size required to draw the tick and labels (start with 20 px and increase if the ticks/labels are clipped) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="224" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="224" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a13500555e10ee92cbd723db16a2d959c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_chart_type_t</type>
+        <definition>lv_chart_type_t lv_chart_get_type</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_chart_get_type</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the type of a chart <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to chart object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>type of the chart (from &apos;<ref refid="structlv__chart__t" kindref="compound">lv_chart_t</ref>&apos; enum) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="232" column="17" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="232" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1aeadaef1a4d5b05d128d27e9ab3b5dee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_get_point_count</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_chart_get_point_count</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the data point number per data line on chart <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to chart object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>point number on each data line </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="239" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="239" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a9b206dff6e3dc100a82a8daeb5cddc26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_chart_get_x_start_point</definition>
+        <argsstring>(const lv_obj_t *obj, lv_chart_series_t *ser)</argsstring>
+        <name>lv_chart_get_x_start_point</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current index of the x-axis start point in the data array <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the current x start point in the data array </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="247" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="247" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1af19e67e6c0024464987578a6e9c7f65f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_get_point_pos_by_id</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, uint16_t id, lv_point_t *p_out)</argsstring>
+        <name>lv_chart_get_point_pos_by_id</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+          <declname>p_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the position of a point to the chart. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to series </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>store the result position here </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="256" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="256" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a63b3c0e87e5f6286318c2973c95f1a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_refresh</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_chart_refresh</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Refresh a chart if its data line has changed <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to chart object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="262" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="262" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ad11e79d555311f74f93d716676a7e94e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+        <definition>lv_chart_series_t* lv_chart_add_series</definition>
+        <argsstring>(lv_obj_t *obj, lv_color_t color, lv_chart_axis_t axis)</argsstring>
+        <name>lv_chart_add_series</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>lv_chart_axis_t</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate and add a data series to the chart <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color of the data series </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y axis to which the series should be attached (::LV_CHART_AXIS_PRIMARY_Y or ::LV_CHART_AXIS_SECONDARY_Y) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the allocated data series </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="275" column="20" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="275" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ae487fb2863bf944effb41e943d18ac18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_remove_series</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *series)</argsstring>
+        <name>lv_chart_remove_series</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>series</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deallocate and remove a data series from a chart <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>series</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="282" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="282" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a5e5d862b392e536043c1a0c7f69ef7ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_hide_series</definition>
+        <argsstring>(lv_obj_t *chart, lv_chart_series_t *series, bool hide)</argsstring>
+        <name>lv_chart_hide_series</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>chart</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>series</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hide</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hide/Unhide a single series of a chart. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>series</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a series object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hide</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: hide the series </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="290" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="290" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1adba2ced7eec01909e9eb70f5fe192ce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_series_color</definition>
+        <argsstring>(lv_obj_t *chart, lv_chart_series_t *series, lv_color_t color)</argsstring>
+        <name>lv_chart_set_series_color</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>chart</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>series</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the color of a series <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>series</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a series object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new color of the series </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="298" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="298" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1af4587e7edc5a7d95bcde8532a81e7ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_x_start_point</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, uint16_t id)</argsstring>
+        <name>lv_chart_set_x_start_point</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the index of the x-axis start point in the data array. This point will be considers the first (left) point and the other points will be drawn after it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the x point in the data array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="307" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="307" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ac402b10725e0dd91d42fa8fcf5d50338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+        <definition>lv_chart_series_t* lv_chart_get_series_next</definition>
+        <argsstring>(const lv_obj_t *chart, const lv_chart_series_t *ser)</argsstring>
+        <name>lv_chart_get_series_next</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>chart</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next series. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the previous series or NULL to get the first </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the next series or NULL if there is no more. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="315" column="20" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="315" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1aaff6a034eb9f03295ca4bf9df438b897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref> *</type>
+        <definition>lv_chart_cursor_t* lv_chart_add_cursor</definition>
+        <argsstring>(lv_obj_t *obj, lv_color_t color, lv_dir_t dir)</argsstring>
+        <name>lv_chart_add_cursor</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>lv_color_t</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>lv_dir_t</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a cursor with a given color <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color of the cursor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>direction of the cursor. <computeroutput>LV_DIR_RIGHT/LEFT/TOP/DOWN/HOR/VER/ALL</computeroutput>. OR-ed values are possible </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created cursor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="328" column="21" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="328" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a24fcab0e1c494936ba03fa5a8ed276ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_cursor_pos</definition>
+        <argsstring>(lv_obj_t *chart, lv_chart_cursor_t *cursor, lv_point_t *pos)</argsstring>
+        <name>lv_chart_set_cursor_pos</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>chart</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> *</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the coordinate of the cursor with respect to the paddings <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cursor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the cursor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new coordinate of cursor relative to the chart </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="336" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="336" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ace11d8c88aab5f2019a6f4f5747d5265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_cursor_point</definition>
+        <argsstring>(lv_obj_t *chart, lv_chart_cursor_t *cursor, lv_chart_series_t *ser, uint16_t point_id)</argsstring>
+        <name>lv_chart_set_cursor_point</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>chart</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>point_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stick the cursor to a point <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cursor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the cursor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a series </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the point&apos;s index or <computeroutput>LV_CHART_POINT_NONE</computeroutput> to not assign to any points. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="345" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="345" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a605ecf3aa1f3d9a03228d74818945794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref></type>
+        <definition>lv_point_t lv_chart_get_cursor_point</definition>
+        <argsstring>(lv_obj_t *chart, lv_chart_cursor_t *cursor)</argsstring>
+        <name>lv_chart_get_cursor_point</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>chart</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the coordinate of the cursor with respect to the paddings <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cursor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to cursor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>coordinate of the cursor as <ref refid="structlv__point__t" kindref="compound">lv_point_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="354" column="12" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="354" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a8bba61a3c833eade5e3ea0a7ee9eb2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_all_value</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, lv_coord_t value)</argsstring>
+        <name>lv_chart_set_all_value</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize all data points of a series with a value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value for all points. <computeroutput>LV_CHART_POINT_NONE</computeroutput> can be used to hide the points. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="366" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="366" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a65d072352ea0eb36db0c0bf2c69b26d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_next_value</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, lv_coord_t value)</argsstring>
+        <name>lv_chart_set_next_value</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the next point&apos;s Y value according to the update mode policy. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value of the next data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="374" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="374" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ad0e4a3e10119be594d2e88fa48cd0e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_next_value2</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, lv_coord_t x_value, lv_coord_t y_value)</argsstring>
+        <name>lv_chart_set_next_value2</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x_value</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the next point&apos;s X and Y value according to the update mode policy. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new X value of the next data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new Y value of the next data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="383" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="383" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a66931cd76d431f089f754e40ffee6f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_value_by_id</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, uint16_t id, lv_coord_t value)</argsstring>
+        <name>lv_chart_set_value_by_id</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an individual point&apos;s y value of a chart&apos;s series directly based on its index <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the x point in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to assign to array point </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="392" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="392" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ad5f715f5d5a63d688849e57976cebcca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_value_by_id2</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, uint16_t id, lv_coord_t x_value, lv_coord_t y_value)</argsstring>
+        <name>lv_chart_set_value_by_id2</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>x_value</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>y_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an individual point&apos;s x and y value of a chart&apos;s series directly based on its index Can be used only with <computeroutput>LV_CHART_TYPE_SCATTER</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the x point in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new X value of the next data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new Y value of the next data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="403" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="403" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1aa188b0312b2ee4d75f0d85faf89cf10f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_ext_y_array</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, lv_coord_t array[])</argsstring>
+        <name>lv_chart_set_ext_y_array</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>array</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an external array for the y data points to use for the chart NOTE: It is the users responsibility to make sure the <computeroutput>point_cnt</computeroutput> matches the external array size. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>external array of points for chart </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="413" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="413" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ae5d5c86119817aae839b9e6ff3046d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_chart_set_ext_x_array</definition>
+        <argsstring>(lv_obj_t *obj, lv_chart_series_t *ser, lv_coord_t array[])</argsstring>
+        <name>lv_chart_set_ext_x_array</name>
+        <param>
+          <type><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <param>
+          <type>lv_coord_t</type>
+          <declname>array</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an external array for the x data points to use for the chart NOTE: It is the users responsibility to make sure the <computeroutput>point_cnt</computeroutput> matches the external array size. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>external array of points for chart </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="422" column="6" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="422" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1aed7b23fdc1efe5742c23fc39f6305e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t *</type>
+        <definition>lv_coord_t* lv_chart_get_y_array</definition>
+        <argsstring>(const lv_obj_t *obj, lv_chart_series_t *ser)</argsstring>
+        <name>lv_chart_get_y_array</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the array of y values of a series <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the array of values with &apos;point_count&apos; elements </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="430" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="430" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1ab1624b88b19f8eac533c03e35890d804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_coord_t *</type>
+        <definition>lv_coord_t* lv_chart_get_x_array</definition>
+        <argsstring>(const lv_obj_t *obj, lv_chart_series_t *ser)</argsstring>
+        <name>lv_chart_get_x_array</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref> *</type>
+          <declname>ser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the array of x values of a series <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data series on &apos;chart&apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the array of values with &apos;point_count&apos; elements </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="438" column="13" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="438" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__chart_8h_1a3df0e2ef309d5106bfa84950d005ec0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_chart_get_pressed_point</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_chart_get_pressed_point</name>
+        <param>
+          <type>const <ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of the currently pressed point. It&apos;s the same for every series. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a chart object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the point [0 .. point count] or LV_CHART_POINT_ID_NONE if no point is being pressed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" line="445" column="10" declfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h" declline="445" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LV_CHART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_CHART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>INCLUDES</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../../lvgl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LV_USE_CHART<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*********************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>DEFINES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor">#if<sp/>LV_USE_LARGE_COORD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_CHART_POINT_NONE<sp/>(INT32_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LV_CHART_POINT_NONE<sp/>(INT16_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">LV_EXPORT_CONST_INT(LV_CHART_POINT_NONE);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebba3781231f7433084a6882833b90b2b287" kindref="member">LV_CHART_TYPE_NONE</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebbabff0662492b645adf865b30f5b0d2b89" kindref="member">LV_CHART_TYPE_LINE</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebba3781231f7433084a6882833b90b2b287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebba1c1977e71f2de8d1857ae0b0306b0080" kindref="member">LV_CHART_TYPE_BAR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebbabff0662492b645adf865b30f5b0d2b89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebbaac2fdf46d72a93a8fb6a92309e7ac643" kindref="member">LV_CHART_TYPE_SCATTER</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebba1c1977e71f2de8d1857ae0b0306b0080" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45" refid="lv__chart_8h_1a0ed680fdb405e7195d9f14032851eebbaac2fdf46d72a93a8fb6a92309e7ac643" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_chart_type_t;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="lv__chart_8h_1a0944a4353780132eeab7b06e3e42291da9a0b47047328265061fc1ea51dc08f46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a0944a4353780132eeab7b06e3e42291da9a0b47047328265061fc1ea51dc08f46" kindref="member">LV_CHART_UPDATE_MODE_SHIFT</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="lv__chart_8h_1a0944a4353780132eeab7b06e3e42291da515b1f581d44fc656b1dc7a3b560b6f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a0944a4353780132eeab7b06e3e42291da515b1f581d44fc656b1dc7a3b560b6f6" kindref="member">LV_CHART_UPDATE_MODE_CIRCULAR</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_chart_update_mode_t;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_CHART_AXIS_PRIMARY_Y<sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_CHART_AXIS_SECONDARY_Y<sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_CHART_AXIS_PRIMARY_X<sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>LV_CHART_AXIS_SECONDARY_X<sp/><sp/><sp/>=<sp/>0x04,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>_LV_CHART_AXIS_LAST</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>lv_chart_axis_t;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="structlv__chart__series__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>*<sp/>x_points;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>*<sp/>y_points;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/>color;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>start_point;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>hidden<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>x_ext_buf_assigned<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>y_ext_buf_assigned<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>x_axis_sec<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>y_axis_sec<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structlv__chart__cursor__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>pos;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>point_id;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_color_t<sp/>color;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_dir_t<sp/>dir;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>pos_set:<sp/>1;<sp/></highlight><highlight class="comment">/*1:<sp/>pos<sp/>is<sp/>set;<sp/>0:<sp/>point_id<sp/>is<sp/>set*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structlv__chart__tick__dsc__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>major_len;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>minor_len;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>draw_size;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>minor_cnt<sp/>:<sp/>15;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>major_cnt<sp/>:<sp/>15;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>label_en<sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}<sp/><ref refid="structlv__chart__tick__dsc__t" kindref="compound">lv_chart_tick_dsc_t</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="structlv__chart__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="103" refid="structlv__chart__t_1a1e1c6909d2229a3894b89ddaca822ccc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref><sp/><ref refid="structlv__chart__t_1a1e1c6909d2229a3894b89ddaca822ccc" kindref="member">series_ll</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="structlv__chart__t_1a6fc35f467bab1b3c83f3801565ae38aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__ll__t" kindref="compound">lv_ll_t</ref><sp/><ref refid="structlv__chart__t_1a6fc35f467bab1b3c83f3801565ae38aa" kindref="member">cursor_ll</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlv__chart__tick__dsc__t" kindref="compound">lv_chart_tick_dsc_t</ref><sp/>tick[4];</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>ymin[2];</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>ymax[2];</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>xmin[2];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>xmax[2];</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_coord_t<sp/>pressed_point_id;</highlight></codeline>
+<codeline lineno="111" refid="structlv__chart__t_1af0e5db3cd182b868fb386f7358483af8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlv__chart__t_1af0e5db3cd182b868fb386f7358483af8" kindref="member">hdiv_cnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="structlv__chart__t_1a784a2762e94f3a70a96fd868e30e3548" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlv__chart__t_1a784a2762e94f3a70a96fd868e30e3548" kindref="member">vdiv_cnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="structlv__chart__t_1a3491fe1e6a097303ab090364e66481b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlv__chart__t_1a3491fe1e6a097303ab090364e66481b4" kindref="member">point_cnt</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>zoom_x;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>zoom_y;</highlight></codeline>
+<codeline lineno="116" refid="structlv__chart__t_1afac8a8ea212d9fa4c44469fdf7e78d85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_chart_type_t<sp/><ref refid="structlv__chart__t_1afac8a8ea212d9fa4c44469fdf7e78d85" kindref="member">type</ref><sp/><sp/>:<sp/>3;<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>lv_chart_update_mode_t<sp/>update_mode<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}<sp/><ref refid="structlv__chart__t" kindref="compound">lv_chart_t</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__class__t" kindref="compound">lv_obj_class_t</ref><sp/>lv_chart_class;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="127" refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca3050f90c6723e37bcd893d5aa7460343" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca3050f90c6723e37bcd893d5aa7460343" kindref="member">LV_CHART_DRAW_PART_DIV_LINE_INIT</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca722876a8cd6fa8278ca018744d95dae5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca722876a8cd6fa8278ca018744d95dae5" kindref="member">LV_CHART_DRAW_PART_DIV_LINE_HOR</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045caf0255d41066fb68d5f4f481cc5236ab0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045caf0255d41066fb68d5f4f481cc5236ab0" kindref="member">LV_CHART_DRAW_PART_DIV_LINE_VER</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca846b7792ad712b4e3ef7ba630a7d9396" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca846b7792ad712b4e3ef7ba630a7d9396" kindref="member">LV_CHART_DRAW_PART_LINE_AND_POINT</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca7b29ff7bf60a5970c607c535794c4d45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca7b29ff7bf60a5970c607c535794c4d45" kindref="member">LV_CHART_DRAW_PART_BAR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045caed8288127ebed96b9614a326f6f6d96f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045caed8288127ebed96b9614a326f6f6d96f" kindref="member">LV_CHART_DRAW_PART_CURSOR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca2fbbdfc19d8bd750ab21c289d93ae6f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045ca2fbbdfc19d8bd750ab21c289d93ae6f9" kindref="member">LV_CHART_DRAW_PART_TICK_LABEL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}<sp/><ref refid="lv__chart_8h_1a1f24110c4dc54ea249e6d05b660f045c" kindref="member">lv_chart_draw_part_type_t</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/>GLOBAL<sp/>PROTOTYPES</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/><ref refid="lv__chart_8h_1a4e94ae73a3cca396c556306829e038a3" kindref="member">lv_chart_create</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>parent);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1ab564480b52da2510727a9eb470045f39" kindref="member">lv_chart_set_type</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_chart_type_t<sp/>type);</highlight></codeline>
+<codeline lineno="158"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a715027c242dc73f6d15538968c98d7f1" kindref="member">lv_chart_set_point_count</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint16_t<sp/>cnt);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1ae56fe53c2a06b3015e391c9c6e728358" kindref="member">lv_chart_set_range</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_chart_axis_t<sp/>axis,<sp/>lv_coord_t<sp/>min,<sp/>lv_coord_t<sp/>max);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a93ad4bb5e42fb4d789f162110d9a9142" kindref="member">lv_chart_set_update_mode</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_chart_update_mode_t<sp/>update_mode);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a2e7134a6552d46ce4d0e2ce1fc7eb48d" kindref="member">lv_chart_set_div_line_count</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint8_t<sp/>hdiv,<sp/>uint8_t<sp/>vdiv);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a7b32ebe14643c2f2644766e4b7fa3753" kindref="member">lv_chart_set_zoom_x</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint16_t<sp/>zoom_x);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1aa67c1f90efa21a88b71dcb49c3acb193" kindref="member">lv_chart_set_zoom_y</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>uint16_t<sp/>zoom_y);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">uint16_t<sp/><ref refid="lv__chart_8h_1aa7a242c85c350d016fb853e3d48459b6" kindref="member">lv_chart_get_zoom_x</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">uint16_t<sp/><ref refid="lv__chart_8h_1ac285227dea895e74b61252547b50f15b" kindref="member">lv_chart_get_zoom_y</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1aef074a755a71c43f7e2c5025f864479a" kindref="member">lv_chart_set_axis_tick</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_chart_axis_t<sp/>axis,<sp/>lv_coord_t<sp/>major_len,<sp/>lv_coord_t<sp/>minor_len,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>major_cnt,<sp/>lv_coord_t<sp/>minor_cnt,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>label_en,<sp/>lv_coord_t<sp/>draw_size);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">lv_chart_type_t<sp/><ref refid="lv__chart_8h_1a13500555e10ee92cbd723db16a2d959c" kindref="member">lv_chart_get_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal">uint16_t<sp/><ref refid="lv__chart_8h_1aeadaef1a4d5b05d128d27e9ab3b5dee2" kindref="member">lv_chart_get_point_count</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">uint16_t<sp/><ref refid="lv__chart_8h_1a9b206dff6e3dc100a82a8daeb5cddc26" kindref="member">lv_chart_get_x_start_point</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1af19e67e6c0024464987578a6e9c7f65f" kindref="member">lv_chart_get_point_pos_by_id</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>p_out);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a63b3c0e87e5f6286318c2973c95f1a08" kindref="member">lv_chart_refresh</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">/*======================</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>*<sp/>Series</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"><sp/>*=====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/><ref refid="lv__chart_8h_1ad11e79d555311f74f93d716676a7e94e" kindref="member">lv_chart_add_series</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_color_t<sp/>color,<sp/>lv_chart_axis_t<sp/>axis);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1ae487fb2863bf944effb41e943d18ac18" kindref="member">lv_chart_remove_series</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>series);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a5e5d862b392e536043c1a0c7f69ef7ce" kindref="member">lv_chart_hide_series</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>chart,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>series,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hide);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1adba2ced7eec01909e9eb70f5fe192ce5" kindref="member">lv_chart_set_series_color</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>chart,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>series,<sp/>lv_color_t<sp/>color);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1af4587e7edc5a7d95bcde8532a81e7ea8" kindref="member">lv_chart_set_x_start_point</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/><ref refid="lv__chart_8h_1ac402b10725e0dd91d42fa8fcf5d50338" kindref="member">lv_chart_get_series_next</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>chart,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="318"><highlight class="comment"><sp/>*<sp/>Cursor</highlight></codeline>
+<codeline lineno="319"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref><sp/><sp/>*<sp/><ref refid="lv__chart_8h_1aaff6a034eb9f03295ca4bf9df438b897" kindref="member">lv_chart_add_cursor</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/>lv_color_t<sp/>color,<sp/>lv_dir_t<sp/>dir);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a24fcab0e1c494936ba03fa5a8ed276ae" kindref="member">lv_chart_set_cursor_pos</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>chart,<sp/><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref><sp/>*<sp/>cursor,<sp/><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/>*<sp/>pos);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1ace11d8c88aab5f2019a6f4f5747d5265" kindref="member">lv_chart_set_cursor_point</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>chart,<sp/><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref><sp/>*<sp/>cursor,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>point_id);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><ref refid="structlv__point__t" kindref="compound">lv_point_t</ref><sp/><ref refid="lv__chart_8h_1a605ecf3aa1f3d9a03228d74818945794" kindref="member">lv_chart_get_cursor_point</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>chart,<sp/><ref refid="structlv__chart__cursor__t" kindref="compound">lv_chart_cursor_t</ref><sp/>*<sp/>cursor);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="comment">/*=====================</highlight></codeline>
+<codeline lineno="357"><highlight class="comment"><sp/>*<sp/>Set/Get<sp/>value(s)</highlight></codeline>
+<codeline lineno="358"><highlight class="comment"><sp/>*====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a8bba61a3c833eade5e3ea0a7ee9eb2f8" kindref="member">lv_chart_set_all_value</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a65d072352ea0eb36db0c0bf2c69b26d5" kindref="member">lv_chart_set_next_value</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1ad0e4a3e10119be594d2e88fa48cd0e64" kindref="member">lv_chart_set_next_value2</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>lv_coord_t<sp/>x_value,<sp/>lv_coord_t<sp/>y_value);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1a66931cd76d431f089f754e40ffee6f29" kindref="member">lv_chart_set_value_by_id</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>lv_coord_t<sp/>value);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1ad5f715f5d5a63d688849e57976cebcca" kindref="member">lv_chart_set_value_by_id2</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>lv_coord_t<sp/>x_value,</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lv_coord_t<sp/>y_value);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1aa188b0312b2ee4d75f0d85faf89cf10f" kindref="member">lv_chart_set_ext_y_array</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>lv_coord_t<sp/>array[]);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lv__chart_8h_1ae5d5c86119817aae839b9e6ff3046d38" kindref="member">lv_chart_set_ext_x_array</ref>(<ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser,<sp/>lv_coord_t<sp/>array[]);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal">lv_coord_t<sp/>*<sp/><ref refid="lv__chart_8h_1aed7b23fdc1efe5742c23fc39f6305e60" kindref="member">lv_chart_get_y_array</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser);</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal">lv_coord_t<sp/>*<sp/><ref refid="lv__chart_8h_1ab1624b88b19f8eac533c03e35890d804" kindref="member">lv_chart_get_x_array</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj,<sp/><ref refid="structlv__chart__series__t" kindref="compound">lv_chart_series_t</ref><sp/>*<sp/>ser);</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal">uint32_t<sp/><ref refid="lv__chart_8h_1a3df0e2ef309d5106bfa84950d005ec0f" kindref="member">lv_chart_get_pressed_point</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__lv__obj__t" kindref="compound">lv_obj_t</ref><sp/>*<sp/>obj);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="comment">/**********************</highlight></codeline>
+<codeline lineno="448"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>MACROS</highlight></codeline>
+<codeline lineno="449"><highlight class="comment"><sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_USE_CHART*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*LV_CHART_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/widgets/chart/lv_chart.h"/>
+  </compounddef>
+</doxygen>

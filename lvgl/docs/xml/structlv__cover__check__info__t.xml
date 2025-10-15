@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__cover__check__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_cover_check_info_t</compoundname>
+    <includes refid="lv__event_8h" local="no">lv_event.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__cover__check__info__t_1a785f81d0631f105162c34537ca6c7a0a" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__obj__draw_8h_1ab574311d5f23b50737c863f8c6259a41" kindref="member">lv_cover_res_t</ref></type>
+        <definition>lv_cover_res_t lv_cover_check_info_t::res</definition>
+        <argsstring></argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" line="130" column="20" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__cover__check__info__t_1a9da218cabf5ac009d29f93526b5b31e0" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> *</type>
+        <definition>const lv_area_t* lv_cover_check_info_t::area</definition>
+        <argsstring></argsstring>
+        <name>area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" line="131" column="22" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Used as the event parameter of <ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771a59dba93643f8aea4bb1517e26198d48f" kindref="member">LV_EVENT_COVER_CHECK</ref> to check if an area is covered by the object or not. In the event use <computeroutput>const <ref refid="structlv__area__t" kindref="compound">lv_area_t</ref> * area = lv_event_get_cover_area(e)</computeroutput> to get the area to check and <computeroutput>lv_event_set_cover_res(e, res)</computeroutput> to set the result. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>lv_cover_check_info_t</label>
+        <link refid="structlv__cover__check__info__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>area</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lv_area_t</label>
+        <link refid="structlv__area__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" line="129" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/core/lv_event.h" bodystart="129" bodyend="132"/>
+    <listofallmembers>
+      <member refid="structlv__cover__check__info__t_1a9da218cabf5ac009d29f93526b5b31e0" prot="public" virt="non-virtual"><scope>lv_cover_check_info_t</scope><name>area</name></member>
+      <member refid="structlv__cover__check__info__t_1a785f81d0631f105162c34537ca6c7a0a" prot="public" virt="non-virtual"><scope>lv_cover_check_info_t</scope><name>res</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

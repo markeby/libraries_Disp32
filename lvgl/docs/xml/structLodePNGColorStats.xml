@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structLodePNGColorStats" kind="struct" language="C++" prot="public">
+    <compoundname>LodePNGColorStats</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLodePNGColorStats_1add4c44f18dcafae2c07914bd0faffc01" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGColorStats::colored</definition>
+        <argsstring></argsstring>
+        <name>colored</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="706" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1a162ce4d4ee804a0136814ba469c82294" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGColorStats::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="707" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1af802f883e579161b78e210052bbbfb48" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short LodePNGColorStats::key_r</definition>
+        <argsstring></argsstring>
+        <name>key_r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="708" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1ae334ca1cbfbb36f27addb801cfecc867" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short LodePNGColorStats::key_g</definition>
+        <argsstring></argsstring>
+        <name>key_g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="709" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1a33724b799caf608319113a946c91406d" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short LodePNGColorStats::key_b</definition>
+        <argsstring></argsstring>
+        <name>key_b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="710" column="18" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1af81e4a84aa3d94849736b6689643c101" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGColorStats::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="711" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1aa63f09d5c0252962f3739cf296678bce" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGColorStats::numcolors</definition>
+        <argsstring></argsstring>
+        <name>numcolors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="712" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1a7eda029397c945602ecf49d5277c936e" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char LodePNGColorStats::palette[1024]</definition>
+        <argsstring>[1024]</argsstring>
+        <name>palette</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="713" column="17" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1a8db59a808dc9f57ccaba638be2a2946d" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGColorStats::bits</definition>
+        <argsstring></argsstring>
+        <name>bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="714" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1a9919718b21a89c1c8cb7f393ff80f696" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t LodePNGColorStats::numpixels</definition>
+        <argsstring></argsstring>
+        <name>numpixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="715" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1ad6de0a38622538aace50a99ff5f63854" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGColorStats::allow_palette</definition>
+        <argsstring></argsstring>
+        <name>allow_palette</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="718" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLodePNGColorStats_1a97c2e4db5de999cd92c1eabcdf80d431" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned LodePNGColorStats::allow_greyscale</definition>
+        <argsstring></argsstring>
+        <name>allow_greyscale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="719" column="12" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="719" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" line="705" column="32" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/extra/libs/png/lodepng.h" bodystart="705" bodyend="720"/>
+    <listofallmembers>
+      <member refid="structLodePNGColorStats_1a97c2e4db5de999cd92c1eabcdf80d431" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>allow_greyscale</name></member>
+      <member refid="structLodePNGColorStats_1ad6de0a38622538aace50a99ff5f63854" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>allow_palette</name></member>
+      <member refid="structLodePNGColorStats_1af81e4a84aa3d94849736b6689643c101" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>alpha</name></member>
+      <member refid="structLodePNGColorStats_1a8db59a808dc9f57ccaba638be2a2946d" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>bits</name></member>
+      <member refid="structLodePNGColorStats_1add4c44f18dcafae2c07914bd0faffc01" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>colored</name></member>
+      <member refid="structLodePNGColorStats_1a162ce4d4ee804a0136814ba469c82294" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>key</name></member>
+      <member refid="structLodePNGColorStats_1a33724b799caf608319113a946c91406d" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>key_b</name></member>
+      <member refid="structLodePNGColorStats_1ae334ca1cbfbb36f27addb801cfecc867" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>key_g</name></member>
+      <member refid="structLodePNGColorStats_1af802f883e579161b78e210052bbbfb48" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>key_r</name></member>
+      <member refid="structLodePNGColorStats_1aa63f09d5c0252962f3739cf296678bce" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>numcolors</name></member>
+      <member refid="structLodePNGColorStats_1a9919718b21a89c1c8cb7f393ff80f696" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>numpixels</name></member>
+      <member refid="structLodePNGColorStats_1a7eda029397c945602ecf49d5277c936e" prot="public" virt="non-virtual"><scope>LodePNGColorStats</scope><name>palette</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

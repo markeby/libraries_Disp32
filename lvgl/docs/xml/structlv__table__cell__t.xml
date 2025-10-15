@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlv__table__cell__t" kind="struct" language="C++" prot="public">
+    <compoundname>lv_table_cell_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlv__table__cell__t_1a326d61d1e242d44b720243089a384fca" prot="public" static="no" mutable="no">
+        <type>lv_table_cell_ctrl_t</type>
+        <definition>lv_table_cell_ctrl_t lv_table_cell_t::ctrl</definition>
+        <argsstring></argsstring>
+        <name>ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="51" column="26" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__cell__t_1a0506d2ac45403efb42eb0d05e228f612" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* lv_table_cell_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom user data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="53" column="11" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlv__table__cell__t_1affec146a490cf11706b29644ddab6222" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lv_table_cell_t::txt[]</definition>
+        <argsstring>[]</argsstring>
+        <name>txt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="55" column="10" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" line="50" column="15" bodyfile="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/widgets/lv_table.h" bodystart="50" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structlv__table__cell__t_1a326d61d1e242d44b720243089a384fca" prot="public" virt="non-virtual"><scope>lv_table_cell_t</scope><name>ctrl</name></member>
+      <member refid="structlv__table__cell__t_1affec146a490cf11706b29644ddab6222" prot="public" virt="non-virtual"><scope>lv_table_cell_t</scope><name>txt</name></member>
+      <member refid="structlv__table__cell__t_1a0506d2ac45403efb42eb0d05e228f612" prot="public" virt="non-virtual"><scope>lv_table_cell_t</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

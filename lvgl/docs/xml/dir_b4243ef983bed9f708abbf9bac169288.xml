@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_b4243ef983bed9f708abbf9bac169288" kind="dir">
+    <compoundname>/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others</compoundname>
+    <innerdir refid="dir_1755d16fb838837f7610e9ff9b0e70c6">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others/fragment</innerdir>
+    <innerdir refid="dir_7af6d8415e13f47a1d2ed751fa2fd39c">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others/gridnav</innerdir>
+    <innerdir refid="dir_1430cae35e4aabdd44860d81665fcb02">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others/ime</innerdir>
+    <innerdir refid="dir_e7d367802e9e049421657b9cabfb9468">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others/imgfont</innerdir>
+    <innerdir refid="dir_28cd3d44a9685e427a7f6af7620a446a">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others/monkey</innerdir>
+    <innerdir refid="dir_aaf7e17aaf99bbd5a95a11eb281f99ed">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others/msg</innerdir>
+    <innerdir refid="dir_925d2c74fcfc92be2e88186abd9a2f98">/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others/snapshot</innerdir>
+    <innerfile refid="lv__example__others_8h">lv_example_others.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/markeby/Documents/Arduino/libraries/lvgl/src/examples/others/"/>
+  </compounddef>
+</doxygen>
