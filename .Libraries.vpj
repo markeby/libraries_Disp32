@@ -1,0 +1,1503 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="Other C/C++"
+    Customized="1"
+    WorkingDir=".">
+    <Config
+        Name="Debug"
+        Type="cpp"
+        DebugCallbackName="gdb"
+        OutputFile="%bd"
+        CompilerConfigName="Latest Version">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                OutputExts="*.o"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec CmdLine='cc -c -g %i %defd -o "%bd%n.o" "%f"'/>
+            </Target>
+            <Target
+                Name="Link"
+                MenuCaption="&amp;Link">
+                <Exec CmdLine='cc -g -o "%o" %f %libs'/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" build "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" rebuild "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='vsdebugio -prog "%o"'/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%o"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Config
+        Name="Release"
+        Type="cpp"
+        DebugCallbackName="gdb"
+        OutputFile="%bd"
+        CompilerConfigName="Latest Version">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                OutputExts="*.o"
+                RunFromDir="%rw">
+                <Exec CmdLine='cc -c -O %i %defd -o "%bd%n.o" "%f"'/>
+            </Target>
+            <Target
+                Name="Link"
+                MenuCaption="&amp;Link">
+                <Exec CmdLine='cc -O -o "%o" %f %libs'/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" build "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" rebuild "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='vsdebugio -prog "%o"'/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%o"'/>
+            </Target>
+            <Target
+                Name="Monitor"
+                MenuCaption="Monitor"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveNone">
+                <Exec CmdLine='"arduino-cli monitor" -p COM10 -c baudrate=115200'/>
+            </Target>
+            <Target
+                Name="User1"
+                MenuCaption="User1"
+                RunFromDir="%rw"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveNone">
+                <Exec CmdLine="c:\Users\markeby\bin\arduino-cli monitor -p COM10 -c baudrate=115200"/>
+            </Target>
+            <Target
+                Name="usertool"
+                MenuCaption="usertool"
+                RunFromDir="%rw"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveNone">
+                <Exec CmdLine="c:\Users\markeby\bin\arduino-cli monitor -p COM10 -c baudrate=115200"/>
+            </Target>
+            <Target
+                Name="Monitor"
+                MenuCaption="Monitor"
+                RunFromDir="%rw"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveNone">
+                <Exec CmdLine="c:\Users\markeby\bin\arduino-cli monitor -p COM10 -c baudrate=115200"/>
+            </Target>
+            <Target
+                Name="Build-monitor"
+                MenuCaption="Build-monitor"
+                RunFromDir="%rw"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveNone">
+                <Exec CmdLine="c:\Users\markeby\bin\arduino-cli monitor -p COM10 -c baudrate=115200"/>
+            </Target>
+        </Menu>
+    </Config>
+    <Rules Name="Compile">
+        <Rule
+            InputExts="*.s"
+            OutputExts="*.o"
+            LinkObject="1">
+            <Exec CmdLine='as -o "%bd%n.o" "%f"'/>
+        </Rule>
+    </Rules>
+    <Files>
+        <Folder
+            Name="ESP32_Display_Panel"
+            AutoCustom="1"
+            GUID="{AD794DA8-92F2-4EC1-BA72-627C88968535}">
+            <Folder
+                Name="examples"
+                AutoCustom="1"
+                GUID="{D6CDBEAE-E182-4DA4-B5D1-4E6DD2AE42D7}">
+                <Folder
+                    Name="LCD"
+                    AutoCustom="1"
+                    GUID="{A9505309-2981-4E8E-BC41-5968CA66286F}">
+                    <Folder
+                        Name="3wireSPI_RGB"
+                        AutoCustom="1"
+                        GUID="{3E2DDF8E-70F6-4C32-9FE2-2426A0F6AE17}">
+                        <F N="ESP32_Display_Panel/examples/LCD/3wireSPI_RGB/ESP_Panel_Conf.h"/>
+                    </Folder>
+                    <Folder
+                        Name="QSPI"
+                        AutoCustom="1"
+                        GUID="{0FF3ED86-F67E-411D-8072-55DFB5EC3E5A}">
+                        <F N="ESP32_Display_Panel/examples/LCD/QSPI/ESP_Panel_Conf.h"/>
+                    </Folder>
+                    <Folder
+                        Name="RGB"
+                        AutoCustom="1"
+                        GUID="{38FA744B-46F3-499F-8E72-B22FCE99E7EB}">
+                        <F N="ESP32_Display_Panel/examples/LCD/RGB/ESP_Panel_Conf.h"/>
+                    </Folder>
+                    <Folder
+                        Name="SPI"
+                        AutoCustom="1"
+                        GUID="{207C33FD-1D25-4448-8A88-335D696C2679}">
+                        <F N="ESP32_Display_Panel/examples/LCD/SPI/ESP_Panel_Conf.h"/>
+                    </Folder>
+                </Folder>
+                <Folder
+                    Name="LVGL"
+                    AutoCustom="1"
+                    GUID="{F824F15C-42C1-4D5F-A905-3EC590E14646}">
+                    <Folder
+                        Name="v8"
+                        AutoCustom="1"
+                        GUID="{DF7AB634-C9C4-42B3-9407-490EA22003D9}">
+                        <Folder
+                            Name="Porting"
+                            AutoCustom="1"
+                            GUID="{EC8B012D-D88D-4AF6-9C1B-934131AF2A48}">
+                            <F N="ESP32_Display_Panel/examples/LVGL/v8/Porting/ESP_Panel_Board_Custom.h"/>
+                            <F N="ESP32_Display_Panel/examples/LVGL/v8/Porting/ESP_Panel_Board_Supported.h"/>
+                            <F N="ESP32_Display_Panel/examples/LVGL/v8/Porting/ESP_Panel_Conf.h"/>
+                            <F N="ESP32_Display_Panel/examples/LVGL/v8/Porting/lvgl_port_v8.h"/>
+                        </Folder>
+                        <Folder
+                            Name="Rotation"
+                            AutoCustom="1"
+                            GUID="{211D2B51-8355-4080-BDE0-61BF3A4133C0}">
+                            <F N="ESP32_Display_Panel/examples/LVGL/v8/Rotation/ESP_Panel_Board_Custom.h"/>
+                            <F N="ESP32_Display_Panel/examples/LVGL/v8/Rotation/ESP_Panel_Board_Supported.h"/>
+                            <F N="ESP32_Display_Panel/examples/LVGL/v8/Rotation/ESP_Panel_Conf.h"/>
+                            <F N="ESP32_Display_Panel/examples/LVGL/v8/Rotation/lvgl_port_v8.h"/>
+                        </Folder>
+                    </Folder>
+                </Folder>
+                <Folder
+                    Name="Panel"
+                    AutoCustom="1"
+                    GUID="{00860E4A-E382-4D02-9F1E-73FBEDEC0D53}">
+                    <Folder
+                        Name="PanelTest"
+                        AutoCustom="1"
+                        GUID="{B4872CE1-7DC9-489D-8551-32050CB568B0}">
+                        <F N="ESP32_Display_Panel/examples/Panel/PanelTest/ESP_Panel_Board_Custom.h"/>
+                        <F N="ESP32_Display_Panel/examples/Panel/PanelTest/ESP_Panel_Board_Supported.h"/>
+                        <F N="ESP32_Display_Panel/examples/Panel/PanelTest/ESP_Panel_Conf.h"/>
+                    </Folder>
+                </Folder>
+                <Folder
+                    Name="PlatformIO"
+                    AutoCustom="1"
+                    GUID="{28D6DD24-B1B0-4DDC-A15A-4425E0896B8A}">
+                    <Folder
+                        Name="src"
+                        AutoCustom="1"
+                        GUID="{D642689F-2524-455A-A2B6-575260C89C28}">
+                        <F N="ESP32_Display_Panel/examples/PlatformIO/src/ESP_Panel_Board_Custom.h"/>
+                        <F N="ESP32_Display_Panel/examples/PlatformIO/src/ESP_Panel_Board_Supported.h"/>
+                        <F N="ESP32_Display_Panel/examples/PlatformIO/src/ESP_Panel_Conf.h"/>
+                        <F N="ESP32_Display_Panel/examples/PlatformIO/src/lvgl_port_v8.h"/>
+                    </Folder>
+                </Folder>
+                <Folder
+                    Name="SquareLine"
+                    AutoCustom="1"
+                    GUID="{7A5D82D5-3652-4302-92B8-74BE98142ABA}">
+                    <Folder
+                        Name="v8"
+                        AutoCustom="1"
+                        GUID="{7ABFFB0F-5B77-4735-87E1-3AB3CF51B8B1}">
+                        <Folder
+                            Name="Porting"
+                            AutoCustom="1"
+                            GUID="{91D372A6-0D7C-4ED4-B84D-E30896C0461E}">
+                            <Folder
+                                Name="libraries"
+                                AutoCustom="1"
+                                GUID="{AD6363E7-3872-4FFF-A484-80E54C0B9566}">
+                                <Folder
+                                    Name="ui"
+                                    AutoCustom="1"
+                                    GUID="{BC6DAA20-6904-42E2-930B-CC1B97A0172B}">
+                                    <Folder
+                                        Name="src"
+                                        AutoCustom="1"
+                                        GUID="{DD27B599-6635-4F77-BA0B-23D5FCAA3B4D}">
+                                        <F N="ESP32_Display_Panel/examples/SquareLine/v8/Porting/libraries/ui/src/ui.h"/>
+                                        <F N="ESP32_Display_Panel/examples/SquareLine/v8/Porting/libraries/ui/src/ui_events.h"/>
+                                        <F N="ESP32_Display_Panel/examples/SquareLine/v8/Porting/libraries/ui/src/ui_helpers.h"/>
+                                    </Folder>
+                                    <F N="ESP32_Display_Panel/examples/SquareLine/v8/Porting/libraries/ui/ui.h"/>
+                                </Folder>
+                            </Folder>
+                            <F N="ESP32_Display_Panel/examples/SquareLine/v8/Porting/ESP_Panel_Board_Custom.h"/>
+                            <F N="ESP32_Display_Panel/examples/SquareLine/v8/Porting/ESP_Panel_Board_Supported.h"/>
+                            <F N="ESP32_Display_Panel/examples/SquareLine/v8/Porting/ESP_Panel_Conf.h"/>
+                            <F N="ESP32_Display_Panel/examples/SquareLine/v8/Porting/lvgl_port_v8.h"/>
+                        </Folder>
+                        <Folder
+                            Name="WiFiClock"
+                            AutoCustom="1"
+                            GUID="{76885EC3-E451-44DC-88F0-902A2C9F136F}">
+                            <Folder
+                                Name="libraries"
+                                AutoCustom="1"
+                                GUID="{2D1CBC95-ABF2-4268-8F13-9BD9DE09C6C6}">
+                                <Folder
+                                    Name="ui"
+                                    AutoCustom="1"
+                                    GUID="{A7263ADE-068A-419B-911E-868CDB3009A4}">
+                                    <Folder
+                                        Name="src"
+                                        AutoCustom="1"
+                                        GUID="{CFFAA345-35B4-4138-BC11-5616D9E15282}">
+                                        <F N="ESP32_Display_Panel/examples/SquareLine/v8/WiFiClock/libraries/ui/src/ui.h"/>
+                                        <F N="ESP32_Display_Panel/examples/SquareLine/v8/WiFiClock/libraries/ui/src/ui_events.h"/>
+                                        <F N="ESP32_Display_Panel/examples/SquareLine/v8/WiFiClock/libraries/ui/src/ui_helpers.h"/>
+                                    </Folder>
+                                    <F N="ESP32_Display_Panel/examples/SquareLine/v8/WiFiClock/libraries/ui/ui.h"/>
+                                </Folder>
+                            </Folder>
+                            <F N="ESP32_Display_Panel/examples/SquareLine/v8/WiFiClock/ESP_Panel_Board_Custom.h"/>
+                            <F N="ESP32_Display_Panel/examples/SquareLine/v8/WiFiClock/ESP_Panel_Board_Supported.h"/>
+                            <F N="ESP32_Display_Panel/examples/SquareLine/v8/WiFiClock/ESP_Panel_Conf.h"/>
+                            <F N="ESP32_Display_Panel/examples/SquareLine/v8/WiFiClock/lvgl_port_v8.h"/>
+                        </Folder>
+                    </Folder>
+                </Folder>
+                <Folder
+                    Name="Touch"
+                    AutoCustom="1"
+                    GUID="{C509868F-881E-4248-AF65-44DF470B98C6}">
+                    <Folder
+                        Name="I2C"
+                        AutoCustom="1"
+                        GUID="{22C7DD1E-740D-470F-A721-A9CD04323050}">
+                        <F N="ESP32_Display_Panel/examples/Touch/I2C/ESP_Panel_Conf.h"/>
+                    </Folder>
+                    <Folder
+                        Name="SPI"
+                        AutoCustom="1"
+                        GUID="{97E7E62A-AC2F-4A2D-BE24-05E3EFECB416}">
+                        <F N="ESP32_Display_Panel/examples/Touch/SPI/ESP_Panel_Conf.h"/>
+                    </Folder>
+                </Folder>
+            </Folder>
+            <Folder
+                Name="src"
+                AutoCustom="1"
+                GUID="{FB223482-B4A0-401E-81D5-2EE1F06682A9}">
+                <Folder
+                    Name="backlight"
+                    AutoCustom="1"
+                    GUID="{C666D211-894E-4A8E-9395-11D4C7063EB2}">
+                    <F N="ESP32_Display_Panel/src/backlight/ESP_PanelBacklight.h"/>
+                </Folder>
+                <Folder
+                    Name="board"
+                    AutoCustom="1"
+                    GUID="{B7FA9887-93DB-427F-9C17-EA58D2FD64BE}">
+                    <Folder
+                        Name="elecrow"
+                        AutoCustom="1"
+                        GUID="{D045C12A-CD3F-42B8-BA9B-590BA3411F5B}">
+                        <F N="ESP32_Display_Panel/src/board/elecrow/CROWPANEL_7_0.h"/>
+                    </Folder>
+                    <Folder
+                        Name="espressif"
+                        AutoCustom="1"
+                        GUID="{BCE19B44-F6ED-4D8B-9159-5379A464709A}">
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_C3_LCDKIT.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_BOX.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_BOX_3.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_BOX_3_BETA.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_BOX_LITE.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_EYE.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_KORVO_2.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_LCD_EV_BOARD.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_LCD_EV_BOARD_2.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_LCD_EV_BOARD_2_V1_5.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_LCD_EV_BOARD_V1_5.h"/>
+                        <F N="ESP32_Display_Panel/src/board/espressif/ESP32_S3_USB_OTG.h"/>
+                    </Folder>
+                    <Folder
+                        Name="jingcai"
+                        AutoCustom="1"
+                        GUID="{3F4601BD-A908-4B34-A3C1-3D6F073A7390}">
+                        <F N="ESP32_Display_Panel/src/board/jingcai/ESP32_4848S040C_I_Y_3.h"/>
+                    </Folder>
+                    <Folder
+                        Name="m5stack"
+                        AutoCustom="1"
+                        GUID="{94EEB512-6CD2-458E-B0E3-DC06FE692C3C}">
+                        <F N="ESP32_Display_Panel/src/board/m5stack/M5CORE2.h"/>
+                        <F N="ESP32_Display_Panel/src/board/m5stack/M5CORES3.h"/>
+                        <F N="ESP32_Display_Panel/src/board/m5stack/M5DIAL.h"/>
+                    </Folder>
+                    <Folder
+                        Name="waveshare"
+                        AutoCustom="1"
+                        GUID="{CD241EF9-7D5B-43E6-86CE-BE901945B470}">
+                        <F N="ESP32_Display_Panel/src/board/waveshare/ESP32_S3_Touch_LCD_4.3.h"/>
+                    </Folder>
+                    <F N="ESP32_Display_Panel/src/board/ESP_PanelBoard.h"/>
+                </Folder>
+                <Folder
+                    Name="bus"
+                    AutoCustom="1"
+                    GUID="{FFB35CE6-9D15-44B1-8B1A-D8D396DEFA30}">
+                    <Folder
+                        Name="base"
+                        AutoCustom="1"
+                        GUID="{9C668214-9F93-48AD-B776-C689140D6516}">
+                        <F N="ESP32_Display_Panel/src/bus/base/esp_lcd_panel_io_additions.h"/>
+                    </Folder>
+                    <F N="ESP32_Display_Panel/src/bus/ESP_PanelBus.h"/>
+                    <F N="ESP32_Display_Panel/src/bus/I2C.h"/>
+                    <F N="ESP32_Display_Panel/src/bus/QSPI.h"/>
+                    <F N="ESP32_Display_Panel/src/bus/RGB.h"/>
+                    <F N="ESP32_Display_Panel/src/bus/SPI.h"/>
+                </Folder>
+                <Folder
+                    Name="host"
+                    AutoCustom="1"
+                    GUID="{A215C7E2-D9E7-491C-BD6F-A05446D1CB73}">
+                    <F N="ESP32_Display_Panel/src/host/ESP_PanelHost.h"/>
+                </Folder>
+                <Folder
+                    Name="lcd"
+                    AutoCustom="1"
+                    GUID="{109133A0-9908-41B1-ACD3-E81BE8AC6CD3}">
+                    <Folder
+                        Name="base"
+                        AutoCustom="1"
+                        GUID="{8F0929DB-A8C7-4D62-8935-C59F89E69F1C}">
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_custom_types.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_gc9503.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_gc9a01.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_gc9b71.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_ili9341.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_nv3022b.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_sh8601.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_spd2010.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_st7701.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_st7789.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_st77916.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_st77922.h"/>
+                        <F N="ESP32_Display_Panel/src/lcd/base/esp_lcd_st7796.h"/>
+                    </Folder>
+                    <F N="ESP32_Display_Panel/src/lcd/EK9716B.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/ESP_PanelLcd.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/GC9503.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/GC9A01.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/GC9B71.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/ILI9341.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/NV3022B.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/SH8601.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/SPD2010.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/ST7262.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/ST7701.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/ST7789.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/ST77916.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/ST77922.h"/>
+                    <F N="ESP32_Display_Panel/src/lcd/ST7796.h"/>
+                </Folder>
+                <Folder
+                    Name="touch"
+                    AutoCustom="1"
+                    GUID="{17AF0F00-2B87-4E2D-B97A-753043CBAD6C}">
+                    <Folder
+                        Name="base"
+                        AutoCustom="1"
+                        GUID="{AB2BCBED-5695-4709-AD5C-61776649A8DC}">
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch.h"/>
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch_cst816s.h"/>
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch_ft5x06.h"/>
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch_gt1151.h"/>
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch_gt911.h"/>
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch_st1633.h"/>
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch_st7123.h"/>
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch_tt21100.h"/>
+                        <F N="ESP32_Display_Panel/src/touch/base/esp_lcd_touch_xpt2046.h"/>
+                    </Folder>
+                    <F N="ESP32_Display_Panel/src/touch/CST816S.h"/>
+                    <F N="ESP32_Display_Panel/src/touch/ESP_PanelTouch.h"/>
+                    <F N="ESP32_Display_Panel/src/touch/FT5x06.h"/>
+                    <F N="ESP32_Display_Panel/src/touch/GT1151.h"/>
+                    <F N="ESP32_Display_Panel/src/touch/GT911.h"/>
+                    <F N="ESP32_Display_Panel/src/touch/ST1633.h"/>
+                    <F N="ESP32_Display_Panel/src/touch/ST7123.h"/>
+                    <F N="ESP32_Display_Panel/src/touch/TT21100.h"/>
+                    <F N="ESP32_Display_Panel/src/touch/XPT2046.h"/>
+                </Folder>
+                <F N="ESP32_Display_Panel/src/ESP_Panel.h"/>
+                <F N="ESP32_Display_Panel/src/ESP_PanelLog.h"/>
+                <F N="ESP32_Display_Panel/src/ESP_PanelTypes.h"/>
+                <F N="ESP32_Display_Panel/src/ESP_PanelVersions.h"/>
+                <F N="ESP32_Display_Panel/src/ESP_Panel_Board_Internal.h"/>
+                <F N="ESP32_Display_Panel/src/ESP_Panel_Conf_Internal.h"/>
+                <F N="ESP32_Display_Panel/src/ESP_Panel_Library.h"/>
+            </Folder>
+            <F N="ESP32_Display_Panel/ESP_Panel_Board_Custom.h"/>
+            <F N="ESP32_Display_Panel/ESP_Panel_Board_Supported.h"/>
+            <F N="ESP32_Display_Panel/ESP_Panel_Conf.h"/>
+        </Folder>
+        <Folder
+            Name="ESP32_IO_Expander"
+            AutoCustom="1"
+            GUID="{69168E68-65BB-4B83-9568-84D27CA81D7D}">
+            <Folder
+                Name="src"
+                AutoCustom="1"
+                GUID="{39FC6A69-F6A6-4ECC-BF0D-EEBE2D307CD7}">
+                <Folder
+                    Name="base"
+                    AutoCustom="1"
+                    GUID="{A9A4AC87-927B-4792-ADD7-2F0DEB62D602}">
+                    <F N="ESP32_IO_Expander/src/base/esp_io_expander.h"/>
+                </Folder>
+                <Folder
+                    Name="chip"
+                    AutoCustom="1"
+                    GUID="{A779CA52-1EB5-40EC-B616-92722ACD9104}">
+                    <F N="ESP32_IO_Expander/src/chip/CH422G.h"/>
+                    <F N="ESP32_IO_Expander/src/chip/HT8574.h"/>
+                    <F N="ESP32_IO_Expander/src/chip/TCA95xx_16bit.h"/>
+                    <F N="ESP32_IO_Expander/src/chip/TCA95xx_8bit.h"/>
+                </Folder>
+                <Folder
+                    Name="private"
+                    AutoCustom="1"
+                    GUID="{1E3DD9C9-9969-44E8-A380-12123B31A9E7}">
+                    <F N="ESP32_IO_Expander/src/private/CheckResult.h"/>
+                </Folder>
+                <F N="ESP32_IO_Expander/src/ESP_IOExpander.h"/>
+                <F N="ESP32_IO_Expander/src/ESP_IOExpander_Library.h"/>
+            </Folder>
+        </Folder>
+        <Folder
+            Name="lvgl"
+            AutoCustom="1"
+            GUID="{19289BBF-B392-490E-B821-673BF0A75E77}">
+            <Folder
+                Name="demos"
+                AutoCustom="1"
+                GUID="{278A91A2-97FA-46B9-8ABC-1047233AF7E3}">
+                <Folder
+                    Name="benchmark"
+                    AutoCustom="1"
+                    GUID="{418D0F93-496D-4F5D-836E-48658BD06B9D}">
+                    <F N="lvgl/demos/benchmark/lv_demo_benchmark.h"/>
+                </Folder>
+                <Folder
+                    Name="keypad_encoder"
+                    AutoCustom="1"
+                    GUID="{2D51B08F-5953-4F5F-9B67-4AB043D98B8B}">
+                    <F N="lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.h"/>
+                </Folder>
+                <Folder
+                    Name="music"
+                    AutoCustom="1"
+                    GUID="{ED346C43-99F9-4BBF-8628-E73E1969BE86}">
+                    <Folder
+                        Name="assets"
+                        AutoCustom="1"
+                        GUID="{E9103024-E83E-4EC9-A1F9-FF83D8B93D50}">
+                        <F N="lvgl/demos/music/assets/spectrum_1.h"/>
+                        <F N="lvgl/demos/music/assets/spectrum_2.h"/>
+                        <F N="lvgl/demos/music/assets/spectrum_3.h"/>
+                    </Folder>
+                    <F N="lvgl/demos/music/lv_demo_music.h"/>
+                    <F N="lvgl/demos/music/lv_demo_music_list.h"/>
+                    <F N="lvgl/demos/music/lv_demo_music_main.h"/>
+                </Folder>
+                <Folder
+                    Name="stress"
+                    AutoCustom="1"
+                    GUID="{016DC847-C588-4324-9969-FA6DB3D13C96}">
+                    <F N="lvgl/demos/stress/lv_demo_stress.h"/>
+                </Folder>
+                <Folder
+                    Name="widgets"
+                    AutoCustom="1"
+                    GUID="{979CAD57-DE5A-433B-9545-86DD7CD4B754}">
+                    <F N="lvgl/demos/widgets/lv_demo_widgets.h"/>
+                </Folder>
+                <F N="lvgl/demos/lv_demos.h"/>
+            </Folder>
+            <Folder
+                Name="env_support"
+                AutoCustom="1"
+                GUID="{B11CC25A-9585-47C2-BF2D-6E1DF48F2B8D}">
+                <Folder
+                    Name="cmsis-pack"
+                    AutoCustom="1"
+                    GUID="{2DB5FAE9-A790-409C-9F6C-BD7E4BF21E33}">
+                    <F N="lvgl/env_support/cmsis-pack/lv_conf_cmsis.h"/>
+                </Folder>
+                <Folder
+                    Name="rt-thread"
+                    AutoCustom="1"
+                    GUID="{E9E9BB35-09F3-4CC5-8B6D-2E249E8A375B}">
+                    <Folder
+                        Name="squareline"
+                        AutoCustom="1"
+                        GUID="{0EDED6A0-12D8-43E1-A4E0-2BFB3C30A5DC}">
+                        <Folder
+                            Name="ui"
+                            AutoCustom="1"
+                            GUID="{45BB5EA8-8693-44F4-8434-4AA3AE614A00}">
+                            <Folder
+                                Name="lvgl"
+                                AutoCustom="1"
+                                GUID="{806F262F-9BFE-474B-BCED-8FEED40D5843}">
+                                <F N="lvgl/env_support/rt-thread/squareline/ui/lvgl/lvgl.h"/>
+                            </Folder>
+                        </Folder>
+                    </Folder>
+                    <F N="lvgl/env_support/rt-thread/lv_rt_thread_conf.h"/>
+                </Folder>
+            </Folder>
+            <Folder
+                Name="examples"
+                AutoCustom="1"
+                GUID="{BB3DD2BA-BEF5-4D5E-9140-FDE41C41FC96}">
+                <Folder
+                    Name="anim"
+                    AutoCustom="1"
+                    GUID="{805CC37F-E050-4C47-933A-A533E284B81E}">
+                    <F N="lvgl/examples/anim/lv_example_anim.h"/>
+                </Folder>
+                <Folder
+                    Name="event"
+                    AutoCustom="1"
+                    GUID="{03019215-8A38-4C4A-8F38-6B8EFE34DCEA}">
+                    <F N="lvgl/examples/event/lv_example_event.h"/>
+                </Folder>
+                <Folder
+                    Name="get_started"
+                    AutoCustom="1"
+                    GUID="{91EF1468-6801-4FA7-A49B-4AF2864F597D}">
+                    <F N="lvgl/examples/get_started/lv_example_get_started.h"/>
+                </Folder>
+                <Folder
+                    Name="layouts"
+                    AutoCustom="1"
+                    GUID="{5C7D40B2-D38C-483A-98DC-51B978D2156B}">
+                    <Folder
+                        Name="flex"
+                        AutoCustom="1"
+                        GUID="{82B628D5-01BD-49A2-9C90-B980B9BCF57C}">
+                        <F N="lvgl/examples/layouts/flex/lv_example_flex.h"/>
+                    </Folder>
+                    <Folder
+                        Name="grid"
+                        AutoCustom="1"
+                        GUID="{34EF9FC4-75BD-4A22-930B-40D3A65A9D42}">
+                        <F N="lvgl/examples/layouts/grid/lv_example_grid.h"/>
+                    </Folder>
+                    <F N="lvgl/examples/layouts/lv_example_layout.h"/>
+                </Folder>
+                <Folder
+                    Name="libs"
+                    AutoCustom="1"
+                    GUID="{FCEE0F99-5E03-4B98-9518-2375A4A08B17}">
+                    <Folder
+                        Name="bmp"
+                        AutoCustom="1"
+                        GUID="{00AD8F00-0D95-4D0C-A6B4-C378F1FF2C61}">
+                        <F N="lvgl/examples/libs/bmp/lv_example_bmp.h"/>
+                    </Folder>
+                    <Folder
+                        Name="ffmpeg"
+                        AutoCustom="1"
+                        GUID="{9FBA0886-B097-4A42-B5A3-5AD1A9824681}">
+                        <F N="lvgl/examples/libs/ffmpeg/lv_example_ffmpeg.h"/>
+                    </Folder>
+                    <Folder
+                        Name="freetype"
+                        AutoCustom="1"
+                        GUID="{0C1C550C-E4EF-4E08-8CCA-31A700A47883}">
+                        <F N="lvgl/examples/libs/freetype/lv_example_freetype.h"/>
+                    </Folder>
+                    <Folder
+                        Name="gif"
+                        AutoCustom="1"
+                        GUID="{AC1170FF-29E3-4C07-B09F-9BDB1ADC30E6}">
+                        <F N="lvgl/examples/libs/gif/lv_example_gif.h"/>
+                    </Folder>
+                    <Folder
+                        Name="png"
+                        AutoCustom="1"
+                        GUID="{8E30F25F-9C8A-4C9F-8226-E72B32FB92E4}">
+                        <F N="lvgl/examples/libs/png/lv_example_png.h"/>
+                    </Folder>
+                    <Folder
+                        Name="qrcode"
+                        AutoCustom="1"
+                        GUID="{619DB9D6-3D51-4BE4-98E8-4F3AFDA0EE2E}">
+                        <F N="lvgl/examples/libs/qrcode/lv_example_qrcode.h"/>
+                    </Folder>
+                    <Folder
+                        Name="rlottie"
+                        AutoCustom="1"
+                        GUID="{DB5F741E-829B-41CA-8428-6FEE3EBD1154}">
+                        <F N="lvgl/examples/libs/rlottie/lv_example_rlottie.h"/>
+                    </Folder>
+                    <Folder
+                        Name="sjpg"
+                        AutoCustom="1"
+                        GUID="{9B4CF60F-1245-44C4-BF50-799058A0178B}">
+                        <F N="lvgl/examples/libs/sjpg/lv_example_sjpg.h"/>
+                    </Folder>
+                    <F N="lvgl/examples/libs/lv_example_libs.h"/>
+                </Folder>
+                <Folder
+                    Name="others"
+                    AutoCustom="1"
+                    GUID="{25B02E53-BFCC-493A-AB1E-30F18D7A413D}">
+                    <Folder
+                        Name="fragment"
+                        AutoCustom="1"
+                        GUID="{1A89EDF3-4F7C-405B-B7F6-07E2C34F867D}">
+                        <F N="lvgl/examples/others/fragment/lv_example_fragment.h"/>
+                    </Folder>
+                    <Folder
+                        Name="gridnav"
+                        AutoCustom="1"
+                        GUID="{DE25F283-1594-4959-9259-14A9D8AA0189}">
+                        <F N="lvgl/examples/others/gridnav/lv_example_gridnav.h"/>
+                    </Folder>
+                    <Folder
+                        Name="ime"
+                        AutoCustom="1"
+                        GUID="{701DC755-29EC-422F-AF8E-95F9D637350D}">
+                        <F N="lvgl/examples/others/ime/lv_example_ime_pinyin.h"/>
+                    </Folder>
+                    <Folder
+                        Name="imgfont"
+                        AutoCustom="1"
+                        GUID="{3B42715D-82F3-4174-8D38-9BAF1AD20698}">
+                        <F N="lvgl/examples/others/imgfont/lv_example_imgfont.h"/>
+                    </Folder>
+                    <Folder
+                        Name="monkey"
+                        AutoCustom="1"
+                        GUID="{BA1856E6-9003-4925-B93B-A5F6CAF3D522}">
+                        <F N="lvgl/examples/others/monkey/lv_example_monkey.h"/>
+                    </Folder>
+                    <Folder
+                        Name="msg"
+                        AutoCustom="1"
+                        GUID="{63DBA361-C762-49F5-9BF1-D5B47B1E0678}">
+                        <F N="lvgl/examples/others/msg/lv_example_msg.h"/>
+                    </Folder>
+                    <Folder
+                        Name="snapshot"
+                        AutoCustom="1"
+                        GUID="{6E683E90-690B-4DA7-9688-24E089E7370F}">
+                        <F N="lvgl/examples/others/snapshot/lv_example_snapshot.h"/>
+                    </Folder>
+                    <F N="lvgl/examples/others/lv_example_others.h"/>
+                </Folder>
+                <Folder
+                    Name="porting"
+                    AutoCustom="1"
+                    GUID="{12BDD031-91E5-4F86-88FE-43D5C8C48067}">
+                    <F N="lvgl/examples/porting/lv_port_disp_template.h"/>
+                    <F N="lvgl/examples/porting/lv_port_fs_template.h"/>
+                    <F N="lvgl/examples/porting/lv_port_indev_template.h"/>
+                </Folder>
+                <Folder
+                    Name="scroll"
+                    AutoCustom="1"
+                    GUID="{6CE9430A-E428-4C19-B6F7-599D69265F1F}">
+                    <F N="lvgl/examples/scroll/lv_example_scroll.h"/>
+                </Folder>
+                <Folder
+                    Name="styles"
+                    AutoCustom="1"
+                    GUID="{D52C5FEB-41DD-4201-AB4C-B93CC4E27C82}">
+                    <F N="lvgl/examples/styles/lv_example_style.h"/>
+                </Folder>
+                <Folder
+                    Name="widgets"
+                    AutoCustom="1"
+                    GUID="{82E2565C-223F-4863-94D7-313650C381C5}">
+                    <F N="lvgl/examples/widgets/lv_example_widgets.h"/>
+                </Folder>
+                <F N="lvgl/examples/lv_examples.h"/>
+            </Folder>
+            <Folder
+                Name="src"
+                AutoCustom="1"
+                GUID="{2A432F86-49D8-49D7-8621-40FD04B640F6}">
+                <Folder
+                    Name="core"
+                    AutoCustom="1"
+                    GUID="{22EB3E0D-DCCA-45D6-A485-DAF2298D4B0C}">
+                    <F N="lvgl/src/core/lv_disp.h"/>
+                    <F N="lvgl/src/core/lv_event.h"/>
+                    <F N="lvgl/src/core/lv_group.h"/>
+                    <F N="lvgl/src/core/lv_indev.h"/>
+                    <F N="lvgl/src/core/lv_indev_scroll.h"/>
+                    <F N="lvgl/src/core/lv_obj.h"/>
+                    <F N="lvgl/src/core/lv_obj_class.h"/>
+                    <F N="lvgl/src/core/lv_obj_draw.h"/>
+                    <F N="lvgl/src/core/lv_obj_pos.h"/>
+                    <F N="lvgl/src/core/lv_obj_scroll.h"/>
+                    <F N="lvgl/src/core/lv_obj_style.h"/>
+                    <F N="lvgl/src/core/lv_obj_style_gen.h"/>
+                    <F N="lvgl/src/core/lv_obj_tree.h"/>
+                    <F N="lvgl/src/core/lv_refr.h"/>
+                    <F N="lvgl/src/core/lv_theme.h"/>
+                </Folder>
+                <Folder
+                    Name="demos"
+                    AutoCustom="1"
+                    GUID="{E3CF7AA3-B49B-44EF-AC8A-6F7CB627DAEE}">
+                    <Folder
+                        Name="benchmark"
+                        AutoCustom="1"
+                        GUID="{5AD15BED-089E-43C9-BFDE-DBD1CDF89C4B}">
+                        <F N="lvgl/src/demos/benchmark/lv_demo_benchmark.h"/>
+                    </Folder>
+                    <Folder
+                        Name="keypad_encoder"
+                        AutoCustom="1"
+                        GUID="{FAAE87A6-65B0-46C3-BB73-F385DE9E9E0A}">
+                        <F N="lvgl/src/demos/keypad_encoder/lv_demo_keypad_encoder.h"/>
+                    </Folder>
+                    <Folder
+                        Name="music"
+                        AutoCustom="1"
+                        GUID="{C12DA254-1BDC-4868-BE32-171A7312CEBC}">
+                        <Folder
+                            Name="assets"
+                            AutoCustom="1"
+                            GUID="{837F3818-750B-412E-A802-190E0CA46724}">
+                            <F N="lvgl/src/demos/music/assets/spectrum_1.h"/>
+                            <F N="lvgl/src/demos/music/assets/spectrum_2.h"/>
+                            <F N="lvgl/src/demos/music/assets/spectrum_3.h"/>
+                        </Folder>
+                        <F N="lvgl/src/demos/music/lv_demo_music.h"/>
+                        <F N="lvgl/src/demos/music/lv_demo_music_list.h"/>
+                        <F N="lvgl/src/demos/music/lv_demo_music_main.h"/>
+                    </Folder>
+                    <Folder
+                        Name="stress"
+                        AutoCustom="1"
+                        GUID="{672CC5E1-FA65-49DC-8DD4-96D1C83E815F}">
+                        <F N="lvgl/src/demos/stress/lv_demo_stress.h"/>
+                    </Folder>
+                    <Folder
+                        Name="widgets"
+                        AutoCustom="1"
+                        GUID="{A4106A09-CA63-49CE-903F-49C7E92BE1A9}">
+                        <F N="lvgl/src/demos/widgets/lv_demo_widgets.h"/>
+                    </Folder>
+                    <F N="lvgl/src/demos/lv_demos.h"/>
+                </Folder>
+                <Folder
+                    Name="draw"
+                    AutoCustom="1"
+                    GUID="{66B4686A-9A26-470E-9D22-50DFE0ABC689}">
+                    <Folder
+                        Name="arm2d"
+                        AutoCustom="1"
+                        GUID="{3A51BAF6-C865-4B80-99E6-80DD5456E1EC}">
+                        <F N="lvgl/src/draw/arm2d/lv_gpu_arm2d.h"/>
+                    </Folder>
+                    <Folder
+                        Name="nxp"
+                        AutoCustom="1"
+                        GUID="{0BB998E6-B553-47E7-81DA-5406C61CA8F1}">
+                        <Folder
+                            Name="pxp"
+                            AutoCustom="1"
+                            GUID="{975BB6C1-4279-495A-A633-9FC4CEB449AB}">
+                            <F N="lvgl/src/draw/nxp/pxp/lv_draw_pxp.h"/>
+                            <F N="lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.h"/>
+                            <F N="lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.h"/>
+                            <F N="lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.h"/>
+                        </Folder>
+                        <Folder
+                            Name="vglite"
+                            AutoCustom="1"
+                            GUID="{40A41C0B-2EE2-47A1-958D-68CD190D9EAD}">
+                            <F N="lvgl/src/draw/nxp/vglite/lv_draw_vglite.h"/>
+                            <F N="lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.h"/>
+                            <F N="lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h"/>
+                            <F N="lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.h"/>
+                            <F N="lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.h"/>
+                            <F N="lvgl/src/draw/nxp/vglite/lv_vglite_buf.h"/>
+                            <F N="lvgl/src/draw/nxp/vglite/lv_vglite_utils.h"/>
+                        </Folder>
+                    </Folder>
+                    <Folder
+                        Name="renesas"
+                        AutoCustom="1"
+                        GUID="{10CA63CB-D73D-4305-AEDF-073ACCDAB215}">
+                        <F N="lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h"/>
+                    </Folder>
+                    <Folder
+                        Name="sdl"
+                        AutoCustom="1"
+                        GUID="{A6137E42-9983-4B44-B090-F0723B768A56}">
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_composite.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_img.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_layer.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_mask.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_priv.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_rect.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h"/>
+                        <F N="lvgl/src/draw/sdl/lv_draw_sdl_utils.h"/>
+                    </Folder>
+                    <Folder
+                        Name="stm32_dma2d"
+                        AutoCustom="1"
+                        GUID="{7BD54110-6611-465C-A6F1-9428EB27A57B}">
+                        <F N="lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h"/>
+                    </Folder>
+                    <Folder
+                        Name="sw"
+                        AutoCustom="1"
+                        GUID="{A4DE6779-11AA-4E6D-A405-238DC63AE62F}">
+                        <F N="lvgl/src/draw/sw/lv_draw_sw.h"/>
+                        <F N="lvgl/src/draw/sw/lv_draw_sw_blend.h"/>
+                        <F N="lvgl/src/draw/sw/lv_draw_sw_dither.h"/>
+                        <F N="lvgl/src/draw/sw/lv_draw_sw_gradient.h"/>
+                    </Folder>
+                    <Folder
+                        Name="swm341_dma2d"
+                        AutoCustom="1"
+                        GUID="{B52AD63E-BE70-42D5-9A92-A1CD2D60F74A}">
+                        <F N="lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.h"/>
+                    </Folder>
+                    <F N="lvgl/src/draw/lv_draw.h"/>
+                    <F N="lvgl/src/draw/lv_draw_arc.h"/>
+                    <F N="lvgl/src/draw/lv_draw_img.h"/>
+                    <F N="lvgl/src/draw/lv_draw_label.h"/>
+                    <F N="lvgl/src/draw/lv_draw_layer.h"/>
+                    <F N="lvgl/src/draw/lv_draw_line.h"/>
+                    <F N="lvgl/src/draw/lv_draw_mask.h"/>
+                    <F N="lvgl/src/draw/lv_draw_rect.h"/>
+                    <F N="lvgl/src/draw/lv_draw_transform.h"/>
+                    <F N="lvgl/src/draw/lv_draw_triangle.h"/>
+                    <F N="lvgl/src/draw/lv_img_buf.h"/>
+                    <F N="lvgl/src/draw/lv_img_cache.h"/>
+                    <F N="lvgl/src/draw/lv_img_decoder.h"/>
+                </Folder>
+                <Folder
+                    Name="examples"
+                    AutoCustom="1"
+                    GUID="{C3403BAF-3A84-4221-A7B5-F409DA7C640D}">
+                    <Folder
+                        Name="anim"
+                        AutoCustom="1"
+                        GUID="{84E9AF99-7514-4DA5-8237-250BDFAA3AFE}">
+                        <F N="lvgl/src/examples/anim/lv_example_anim.h"/>
+                    </Folder>
+                    <Folder
+                        Name="event"
+                        AutoCustom="1"
+                        GUID="{410A587E-7042-4A93-A8E7-65733BE3B2CD}">
+                        <F N="lvgl/src/examples/event/lv_example_event.h"/>
+                    </Folder>
+                    <Folder
+                        Name="get_started"
+                        AutoCustom="1"
+                        GUID="{31097A3D-8E82-4C41-B361-1CDC197492C4}">
+                        <F N="lvgl/src/examples/get_started/lv_example_get_started.h"/>
+                    </Folder>
+                    <Folder
+                        Name="layouts"
+                        AutoCustom="1"
+                        GUID="{74123663-CE68-4294-9051-40614CD6AB8C}">
+                        <Folder
+                            Name="flex"
+                            AutoCustom="1"
+                            GUID="{59782DF5-9F9D-4269-A454-BDE4D0388E3D}">
+                            <F N="lvgl/src/examples/layouts/flex/lv_example_flex.h"/>
+                        </Folder>
+                        <Folder
+                            Name="grid"
+                            AutoCustom="1"
+                            GUID="{4FFC8271-8B99-42FD-A5F7-39544944B2D7}">
+                            <F N="lvgl/src/examples/layouts/grid/lv_example_grid.h"/>
+                        </Folder>
+                        <F N="lvgl/src/examples/layouts/lv_example_layout.h"/>
+                    </Folder>
+                    <Folder
+                        Name="libs"
+                        AutoCustom="1"
+                        GUID="{9ECCC090-C03E-495D-9111-FE8B156A389A}">
+                        <Folder
+                            Name="bmp"
+                            AutoCustom="1"
+                            GUID="{16D4D6DD-6F7A-4A83-AA61-98795FBD66DD}">
+                            <F N="lvgl/src/examples/libs/bmp/lv_example_bmp.h"/>
+                        </Folder>
+                        <Folder
+                            Name="ffmpeg"
+                            AutoCustom="1"
+                            GUID="{451C23FE-A82A-4C47-8FC0-B0D764EF5792}">
+                            <F N="lvgl/src/examples/libs/ffmpeg/lv_example_ffmpeg.h"/>
+                        </Folder>
+                        <Folder
+                            Name="freetype"
+                            AutoCustom="1"
+                            GUID="{DCBAB6AD-71AC-4026-BA25-71EB9762FC4D}">
+                            <F N="lvgl/src/examples/libs/freetype/lv_example_freetype.h"/>
+                        </Folder>
+                        <Folder
+                            Name="gif"
+                            AutoCustom="1"
+                            GUID="{49E92155-10D5-4F10-AAC7-CAB2E9B2D5E1}">
+                            <F N="lvgl/src/examples/libs/gif/lv_example_gif.h"/>
+                        </Folder>
+                        <Folder
+                            Name="png"
+                            AutoCustom="1"
+                            GUID="{AB2BE34E-7277-4050-8004-C78F0233B987}">
+                            <F N="lvgl/src/examples/libs/png/lv_example_png.h"/>
+                        </Folder>
+                        <Folder
+                            Name="qrcode"
+                            AutoCustom="1"
+                            GUID="{C86ECEF6-63A7-498A-BFA7-481FF1A6A4B0}">
+                            <F N="lvgl/src/examples/libs/qrcode/lv_example_qrcode.h"/>
+                        </Folder>
+                        <Folder
+                            Name="rlottie"
+                            AutoCustom="1"
+                            GUID="{0D408B34-C8AF-48AC-BD6E-68383E87DB03}">
+                            <F N="lvgl/src/examples/libs/rlottie/lv_example_rlottie.h"/>
+                        </Folder>
+                        <Folder
+                            Name="sjpg"
+                            AutoCustom="1"
+                            GUID="{220E6C83-B9EF-49F1-A7B4-CA81201A5F9F}">
+                            <F N="lvgl/src/examples/libs/sjpg/lv_example_sjpg.h"/>
+                        </Folder>
+                        <F N="lvgl/src/examples/libs/lv_example_libs.h"/>
+                    </Folder>
+                    <Folder
+                        Name="others"
+                        AutoCustom="1"
+                        GUID="{D2EAC5C1-0154-453E-B603-85F7C18BE955}">
+                        <Folder
+                            Name="fragment"
+                            AutoCustom="1"
+                            GUID="{53F77389-B435-4321-B74F-EC02712E7C80}">
+                            <F N="lvgl/src/examples/others/fragment/lv_example_fragment.h"/>
+                        </Folder>
+                        <Folder
+                            Name="gridnav"
+                            AutoCustom="1"
+                            GUID="{80076B93-664C-4A75-AD43-0EFB155D55FC}">
+                            <F N="lvgl/src/examples/others/gridnav/lv_example_gridnav.h"/>
+                        </Folder>
+                        <Folder
+                            Name="ime"
+                            AutoCustom="1"
+                            GUID="{677D6212-BA0E-4B83-9FB5-158C645B92CB}">
+                            <F N="lvgl/src/examples/others/ime/lv_example_ime_pinyin.h"/>
+                        </Folder>
+                        <Folder
+                            Name="imgfont"
+                            AutoCustom="1"
+                            GUID="{A327EE88-CD06-43CF-9DA0-ACDFB8EECB4C}">
+                            <F N="lvgl/src/examples/others/imgfont/lv_example_imgfont.h"/>
+                        </Folder>
+                        <Folder
+                            Name="monkey"
+                            AutoCustom="1"
+                            GUID="{E844F66B-F2A9-434B-AB81-CBE6F0EB1BAD}">
+                            <F N="lvgl/src/examples/others/monkey/lv_example_monkey.h"/>
+                        </Folder>
+                        <Folder
+                            Name="msg"
+                            AutoCustom="1"
+                            GUID="{6008CF8B-4250-4741-A103-B29987F46618}">
+                            <F N="lvgl/src/examples/others/msg/lv_example_msg.h"/>
+                        </Folder>
+                        <Folder
+                            Name="snapshot"
+                            AutoCustom="1"
+                            GUID="{BC6F600A-252E-4326-B243-7D2B99294502}">
+                            <F N="lvgl/src/examples/others/snapshot/lv_example_snapshot.h"/>
+                        </Folder>
+                        <F N="lvgl/src/examples/others/lv_example_others.h"/>
+                    </Folder>
+                    <Folder
+                        Name="porting"
+                        AutoCustom="1"
+                        GUID="{69AE88F4-FFC1-47D3-8A7C-641FE61A0985}">
+                        <F N="lvgl/src/examples/porting/lv_port_disp_template.h"/>
+                        <F N="lvgl/src/examples/porting/lv_port_fs_template.h"/>
+                        <F N="lvgl/src/examples/porting/lv_port_indev_template.h"/>
+                    </Folder>
+                    <Folder
+                        Name="scroll"
+                        AutoCustom="1"
+                        GUID="{38E442D4-F0AC-46FF-BEC1-2D98DDAD531F}">
+                        <F N="lvgl/src/examples/scroll/lv_example_scroll.h"/>
+                    </Folder>
+                    <Folder
+                        Name="styles"
+                        AutoCustom="1"
+                        GUID="{4AD4397E-3921-436A-A69F-DDACE74D5AFC}">
+                        <F N="lvgl/src/examples/styles/lv_example_style.h"/>
+                    </Folder>
+                    <Folder
+                        Name="widgets"
+                        AutoCustom="1"
+                        GUID="{1C08D981-2248-4CC6-B3DA-D3DA4B733CF1}">
+                        <F N="lvgl/src/examples/widgets/lv_example_widgets.h"/>
+                    </Folder>
+                    <F N="lvgl/src/examples/lv_examples.h"/>
+                </Folder>
+                <Folder
+                    Name="extra"
+                    AutoCustom="1"
+                    GUID="{4BB2392D-ED64-482D-B092-9289E0714406}">
+                    <Folder
+                        Name="layouts"
+                        AutoCustom="1"
+                        GUID="{1347FA52-E429-4E63-A0FC-7BDA7B2FD301}">
+                        <Folder
+                            Name="flex"
+                            AutoCustom="1"
+                            GUID="{4CBE7D87-A727-4C75-B36D-80C8296B74BA}">
+                            <F N="lvgl/src/extra/layouts/flex/lv_flex.h"/>
+                        </Folder>
+                        <Folder
+                            Name="grid"
+                            AutoCustom="1"
+                            GUID="{73F94251-093F-4568-84DD-45BEAAB306CE}">
+                            <F N="lvgl/src/extra/layouts/grid/lv_grid.h"/>
+                        </Folder>
+                        <F N="lvgl/src/extra/layouts/lv_layouts.h"/>
+                    </Folder>
+                    <Folder
+                        Name="libs"
+                        AutoCustom="1"
+                        GUID="{EB886C41-E604-4CC8-937D-53DEA94EC34F}">
+                        <Folder
+                            Name="bmp"
+                            AutoCustom="1"
+                            GUID="{F127703F-D6D6-4C97-82FD-D74890F8C972}">
+                            <F N="lvgl/src/extra/libs/bmp/lv_bmp.h"/>
+                        </Folder>
+                        <Folder
+                            Name="ffmpeg"
+                            AutoCustom="1"
+                            GUID="{6D537D34-51F3-45D8-BE2B-BCDB47713E1F}">
+                            <F N="lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h"/>
+                        </Folder>
+                        <Folder
+                            Name="freetype"
+                            AutoCustom="1"
+                            GUID="{3F8E35EF-924F-4A7C-B24C-CD557034C5CE}">
+                            <F N="lvgl/src/extra/libs/freetype/lv_freetype.h"/>
+                        </Folder>
+                        <Folder
+                            Name="fsdrv"
+                            AutoCustom="1"
+                            GUID="{859F2FF1-DB3F-406D-BC2C-EF0CE9033B7E}">
+                            <F N="lvgl/src/extra/libs/fsdrv/lv_fsdrv.h"/>
+                        </Folder>
+                        <Folder
+                            Name="gif"
+                            AutoCustom="1"
+                            GUID="{A23995F8-B7F1-4304-B534-DC2B540C7931}">
+                            <F N="lvgl/src/extra/libs/gif/gifdec.h"/>
+                            <F N="lvgl/src/extra/libs/gif/lv_gif.h"/>
+                        </Folder>
+                        <Folder
+                            Name="png"
+                            AutoCustom="1"
+                            GUID="{CB4524EF-C687-4920-B2F9-66F7D918645A}">
+                            <F N="lvgl/src/extra/libs/png/lodepng.h"/>
+                            <F N="lvgl/src/extra/libs/png/lv_png.h"/>
+                        </Folder>
+                        <Folder
+                            Name="qrcode"
+                            AutoCustom="1"
+                            GUID="{B1584684-D98F-4B58-8F5E-BEF869150C1D}">
+                            <F N="lvgl/src/extra/libs/qrcode/lv_qrcode.h"/>
+                            <F N="lvgl/src/extra/libs/qrcode/qrcodegen.h"/>
+                        </Folder>
+                        <Folder
+                            Name="rlottie"
+                            AutoCustom="1"
+                            GUID="{22DE4DBE-AE01-4257-A578-3249907D74C5}">
+                            <F N="lvgl/src/extra/libs/rlottie/lv_rlottie.h"/>
+                        </Folder>
+                        <Folder
+                            Name="sjpg"
+                            AutoCustom="1"
+                            GUID="{86867E98-65BD-4036-ACC5-6BC63AB1A14E}">
+                            <F N="lvgl/src/extra/libs/sjpg/lv_sjpg.h"/>
+                            <F N="lvgl/src/extra/libs/sjpg/tjpgd.h"/>
+                            <F N="lvgl/src/extra/libs/sjpg/tjpgdcnf.h"/>
+                        </Folder>
+                        <Folder
+                            Name="tiny_ttf"
+                            AutoCustom="1"
+                            GUID="{14B615DB-EA93-4969-8115-6F70739D1309}">
+                            <F N="lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.h"/>
+                            <F N="lvgl/src/extra/libs/tiny_ttf/stb_rect_pack.h"/>
+                            <F N="lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h"/>
+                        </Folder>
+                        <F N="lvgl/src/extra/libs/lv_libs.h"/>
+                    </Folder>
+                    <Folder
+                        Name="others"
+                        AutoCustom="1"
+                        GUID="{C6423B76-776F-4825-96B8-BCB2A5B122F9}">
+                        <Folder
+                            Name="fragment"
+                            AutoCustom="1"
+                            GUID="{440959AE-8C34-44E5-95D8-47F3277F2F3F}">
+                            <F N="lvgl/src/extra/others/fragment/lv_fragment.h"/>
+                        </Folder>
+                        <Folder
+                            Name="gridnav"
+                            AutoCustom="1"
+                            GUID="{5B8DB0AC-9BE1-47EC-9CC0-BF2067AC9A39}">
+                            <F N="lvgl/src/extra/others/gridnav/lv_gridnav.h"/>
+                        </Folder>
+                        <Folder
+                            Name="ime"
+                            AutoCustom="1"
+                            GUID="{59A87382-977D-4387-A3F7-487C32A09B50}">
+                            <F N="lvgl/src/extra/others/ime/lv_ime_pinyin.h"/>
+                        </Folder>
+                        <Folder
+                            Name="imgfont"
+                            AutoCustom="1"
+                            GUID="{070ABB07-B3FF-45BB-8EB8-3D361C7A0C8D}">
+                            <F N="lvgl/src/extra/others/imgfont/lv_imgfont.h"/>
+                        </Folder>
+                        <Folder
+                            Name="monkey"
+                            AutoCustom="1"
+                            GUID="{647E8E7F-5B5A-4CB6-AF26-D00489279AE3}">
+                            <F N="lvgl/src/extra/others/monkey/lv_monkey.h"/>
+                        </Folder>
+                        <Folder
+                            Name="msg"
+                            AutoCustom="1"
+                            GUID="{425CA88A-E69F-4C29-B409-9D2BFA4A3526}">
+                            <F N="lvgl/src/extra/others/msg/lv_msg.h"/>
+                        </Folder>
+                        <Folder
+                            Name="snapshot"
+                            AutoCustom="1"
+                            GUID="{D89EEBD3-8D9A-4FB5-80CC-02304D78FD20}">
+                            <F N="lvgl/src/extra/others/snapshot/lv_snapshot.h"/>
+                        </Folder>
+                        <F N="lvgl/src/extra/others/lv_others.h"/>
+                    </Folder>
+                    <Folder
+                        Name="themes"
+                        AutoCustom="1"
+                        GUID="{8E6A75EB-5359-4F82-A18C-DE829F91C724}">
+                        <Folder
+                            Name="basic"
+                            AutoCustom="1"
+                            GUID="{B6A8419D-AEF1-4544-9F63-3304F965D038}">
+                            <F N="lvgl/src/extra/themes/basic/lv_theme_basic.h"/>
+                        </Folder>
+                        <Folder
+                            Name="default"
+                            AutoCustom="1"
+                            GUID="{AE371DDF-7D35-4194-8090-D4E8D5EDA754}">
+                            <F N="lvgl/src/extra/themes/default/lv_theme_default.h"/>
+                        </Folder>
+                        <Folder
+                            Name="mono"
+                            AutoCustom="1"
+                            GUID="{3308DAF1-696E-4447-B38C-874B17768EBB}">
+                            <F N="lvgl/src/extra/themes/mono/lv_theme_mono.h"/>
+                        </Folder>
+                        <F N="lvgl/src/extra/themes/lv_themes.h"/>
+                    </Folder>
+                    <Folder
+                        Name="widgets"
+                        AutoCustom="1"
+                        GUID="{C19B0EAE-4FAD-4B0B-A8D0-F27927478530}">
+                        <Folder
+                            Name="animimg"
+                            AutoCustom="1"
+                            GUID="{537C87E7-31EF-400B-901E-7D8CB001C47B}">
+                            <F N="lvgl/src/extra/widgets/animimg/lv_animimg.h"/>
+                        </Folder>
+                        <Folder
+                            Name="calendar"
+                            AutoCustom="1"
+                            GUID="{4EAF8FAD-8F09-4353-9AC2-EA580644546F}">
+                            <F N="lvgl/src/extra/widgets/calendar/lv_calendar.h"/>
+                            <F N="lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.h"/>
+                            <F N="lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.h"/>
+                        </Folder>
+                        <Folder
+                            Name="chart"
+                            AutoCustom="1"
+                            GUID="{56243046-3E3C-48F9-B271-89A4A6174B22}">
+                            <F N="lvgl/src/extra/widgets/chart/lv_chart.h"/>
+                        </Folder>
+                        <Folder
+                            Name="colorwheel"
+                            AutoCustom="1"
+                            GUID="{482052EA-F8DF-4D6C-A34C-38E96CEBE022}">
+                            <F N="lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h"/>
+                        </Folder>
+                        <Folder
+                            Name="imgbtn"
+                            AutoCustom="1"
+                            GUID="{6C11950D-6C3E-4E8D-B5B9-5012B5C8FE85}">
+                            <F N="lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h"/>
+                        </Folder>
+                        <Folder
+                            Name="keyboard"
+                            AutoCustom="1"
+                            GUID="{59620BB5-D096-46F8-A873-5111420A7A3A}">
+                            <F N="lvgl/src/extra/widgets/keyboard/lv_keyboard.h"/>
+                        </Folder>
+                        <Folder
+                            Name="led"
+                            AutoCustom="1"
+                            GUID="{311B8DD4-D37C-4912-B83C-3E079A70A122}">
+                            <F N="lvgl/src/extra/widgets/led/lv_led.h"/>
+                        </Folder>
+                        <Folder
+                            Name="list"
+                            AutoCustom="1"
+                            GUID="{DB632B91-17AF-4C6D-8EB4-EB951F9B346D}">
+                            <F N="lvgl/src/extra/widgets/list/lv_list.h"/>
+                        </Folder>
+                        <Folder
+                            Name="menu"
+                            AutoCustom="1"
+                            GUID="{6FD315D5-B5C8-418E-AF50-036FA7438CC2}">
+                            <F N="lvgl/src/extra/widgets/menu/lv_menu.h"/>
+                        </Folder>
+                        <Folder
+                            Name="meter"
+                            AutoCustom="1"
+                            GUID="{6A41C534-025A-449E-A089-FA1A64188211}">
+                            <F N="lvgl/src/extra/widgets/meter/lv_meter.h"/>
+                        </Folder>
+                        <Folder
+                            Name="msgbox"
+                            AutoCustom="1"
+                            GUID="{9FF5AF9C-8AE1-4782-B6B3-DBE72880CC4A}">
+                            <F N="lvgl/src/extra/widgets/msgbox/lv_msgbox.h"/>
+                        </Folder>
+                        <Folder
+                            Name="span"
+                            AutoCustom="1"
+                            GUID="{3C7E2232-F5E4-4449-BA02-F6667F4E5BA5}">
+                            <F N="lvgl/src/extra/widgets/span/lv_span.h"/>
+                        </Folder>
+                        <Folder
+                            Name="spinbox"
+                            AutoCustom="1"
+                            GUID="{8AE41A3A-E56F-41F0-952B-EE1385933920}">
+                            <F N="lvgl/src/extra/widgets/spinbox/lv_spinbox.h"/>
+                        </Folder>
+                        <Folder
+                            Name="spinner"
+                            AutoCustom="1"
+                            GUID="{B6FF490C-BDC0-429E-AD43-BCA6A650367A}">
+                            <F N="lvgl/src/extra/widgets/spinner/lv_spinner.h"/>
+                        </Folder>
+                        <Folder
+                            Name="tabview"
+                            AutoCustom="1"
+                            GUID="{6E73D4FC-9A0D-44D9-BAF9-ED74922B3A40}">
+                            <F N="lvgl/src/extra/widgets/tabview/lv_tabview.h"/>
+                        </Folder>
+                        <Folder
+                            Name="tileview"
+                            AutoCustom="1"
+                            GUID="{04EBFDB0-29A8-4204-A334-5CAB8F17C029}">
+                            <F N="lvgl/src/extra/widgets/tileview/lv_tileview.h"/>
+                        </Folder>
+                        <Folder
+                            Name="win"
+                            AutoCustom="1"
+                            GUID="{D66DBDE0-9146-41CE-98AF-B73C43C33898}">
+                            <F N="lvgl/src/extra/widgets/win/lv_win.h"/>
+                        </Folder>
+                        <F N="lvgl/src/extra/widgets/lv_widgets.h"/>
+                    </Folder>
+                    <F N="lvgl/src/extra/lv_extra.h"/>
+                </Folder>
+                <Folder
+                    Name="font"
+                    AutoCustom="1"
+                    GUID="{949E1524-D09F-4532-A0A2-6846ACDC505E}">
+                    <F N="lvgl/src/font/lv_font.h"/>
+                    <F N="lvgl/src/font/lv_font_fmt_txt.h"/>
+                    <F N="lvgl/src/font/lv_font_loader.h"/>
+                    <F N="lvgl/src/font/lv_symbol_def.h"/>
+                </Folder>
+                <Folder
+                    Name="hal"
+                    AutoCustom="1"
+                    GUID="{4E5F204D-A0EA-4B88-9D98-5741EE6497BD}">
+                    <F N="lvgl/src/hal/lv_hal.h"/>
+                    <F N="lvgl/src/hal/lv_hal_disp.h"/>
+                    <F N="lvgl/src/hal/lv_hal_indev.h"/>
+                    <F N="lvgl/src/hal/lv_hal_tick.h"/>
+                </Folder>
+                <Folder
+                    Name="misc"
+                    AutoCustom="1"
+                    GUID="{0AC1368A-29A6-4782-BA92-49DCA69F57B5}">
+                    <F N="lvgl/src/misc/lv_anim.h"/>
+                    <F N="lvgl/src/misc/lv_anim_timeline.h"/>
+                    <F N="lvgl/src/misc/lv_area.h"/>
+                    <F N="lvgl/src/misc/lv_assert.h"/>
+                    <F N="lvgl/src/misc/lv_async.h"/>
+                    <F N="lvgl/src/misc/lv_bidi.h"/>
+                    <F N="lvgl/src/misc/lv_color.h"/>
+                    <F N="lvgl/src/misc/lv_fs.h"/>
+                    <F N="lvgl/src/misc/lv_gc.h"/>
+                    <F N="lvgl/src/misc/lv_ll.h"/>
+                    <F N="lvgl/src/misc/lv_log.h"/>
+                    <F N="lvgl/src/misc/lv_lru.h"/>
+                    <F N="lvgl/src/misc/lv_math.h"/>
+                    <F N="lvgl/src/misc/lv_mem.h"/>
+                    <F N="lvgl/src/misc/lv_printf.h"/>
+                    <F N="lvgl/src/misc/lv_style.h"/>
+                    <F N="lvgl/src/misc/lv_style_gen.h"/>
+                    <F N="lvgl/src/misc/lv_templ.h"/>
+                    <F N="lvgl/src/misc/lv_timer.h"/>
+                    <F N="lvgl/src/misc/lv_tlsf.h"/>
+                    <F N="lvgl/src/misc/lv_txt.h"/>
+                    <F N="lvgl/src/misc/lv_txt_ap.h"/>
+                    <F N="lvgl/src/misc/lv_types.h"/>
+                    <F N="lvgl/src/misc/lv_utils.h"/>
+                </Folder>
+                <Folder
+                    Name="widgets"
+                    AutoCustom="1"
+                    GUID="{49692145-3661-4922-9A48-1FBFB9637C45}">
+                    <F N="lvgl/src/widgets/lv_arc.h"/>
+                    <F N="lvgl/src/widgets/lv_bar.h"/>
+                    <F N="lvgl/src/widgets/lv_btn.h"/>
+                    <F N="lvgl/src/widgets/lv_btnmatrix.h"/>
+                    <F N="lvgl/src/widgets/lv_canvas.h"/>
+                    <F N="lvgl/src/widgets/lv_checkbox.h"/>
+                    <F N="lvgl/src/widgets/lv_dropdown.h"/>
+                    <F N="lvgl/src/widgets/lv_img.h"/>
+                    <F N="lvgl/src/widgets/lv_label.h"/>
+                    <F N="lvgl/src/widgets/lv_line.h"/>
+                    <F N="lvgl/src/widgets/lv_objx_templ.h"/>
+                    <F N="lvgl/src/widgets/lv_roller.h"/>
+                    <F N="lvgl/src/widgets/lv_slider.h"/>
+                    <F N="lvgl/src/widgets/lv_switch.h"/>
+                    <F N="lvgl/src/widgets/lv_table.h"/>
+                    <F N="lvgl/src/widgets/lv_textarea.h"/>
+                </Folder>
+                <F N="lvgl/src/lvgl.h"/>
+                <F N="lvgl/src/lv_api_map.h"/>
+                <F N="lvgl/src/lv_conf_internal.h"/>
+                <F N="lvgl/src/lv_conf_kconfig.h"/>
+            </Folder>
+            <Folder
+                Name="tests"
+                AutoCustom="1"
+                GUID="{FD654BB7-42CA-4E4A-B36D-CEAEC3EF0FF9}">
+                <Folder
+                    Name="src"
+                    AutoCustom="1"
+                    GUID="{FAB112AB-569E-4C76-AA4C-DF185E4E2866}">
+                    <F N="lvgl/tests/src/lv_test_conf.h"/>
+                    <F N="lvgl/tests/src/lv_test_helpers.h"/>
+                    <F N="lvgl/tests/src/lv_test_indev.h"/>
+                    <F N="lvgl/tests/src/lv_test_init.h"/>
+                </Folder>
+                <Folder
+                    Name="unity"
+                    AutoCustom="1"
+                    GUID="{74B52FC5-2D92-4756-A63C-6EB28A5A7CB4}">
+                    <F N="lvgl/tests/unity/unity.h"/>
+                    <F N="lvgl/tests/unity/unity_internals.h"/>
+                    <F N="lvgl/tests/unity/unity_support.h"/>
+                </Folder>
+            </Folder>
+            <F N="lvgl/lvgl.h"/>
+            <F N="lvgl/lv_conf_template.h"/>
+        </Folder>
+    </Files>
+    <List Name="RTE">
+    </List>
+</Project>
